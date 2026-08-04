@@ -33,5 +33,7 @@ def test_overlapping_family_raises(tmp_path):
 
 def test_empty_config_passes(tmp_path):
     path = tmp_path / "models.yaml"
-    path.write_text("generator_model_families: []\nevaluator_model_families: []\n", encoding="utf-8")
+    path.write_text(
+        "generator_model_families: []\nevaluator_model_families: []\n", encoding="utf-8"
+    )
     assert_generator_evaluator_disjoint(path)  # should not raise

@@ -1,0 +1,1077 @@
+Clinical Infectious Diseases                                                                                                                                                                               Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+
+   IDSA GUIDELINE
+
+Official American Thoracic Society/Centers for Disease
+Control and Prevention/Infectious Diseases Society of
+America Clinical Practice Guidelines: Treatment of
+Drug-Susceptible Tuberculosis
+
+Payam Nahid,1 Susan E. Dorman,2 Narges Alipanah,1 Pennan M. Barry,3 Jan L. Brozek,4 Adithya Cattamanchi,1 Lelia H. Chaisson,1 Richard E. Chaisson,2
+Charles L. Daley,5 Malgosia Grzemska,6 Julie M. Higashi,7 Christine S. Ho,8 Philip C. Hopewell,1 Salmaan A. Keshavjee,9 Christian Lienhardt,6
+Richard Menzies,10 Cynthia Merrifield,1 Masahiro Narita,12 Rick O'Brien,13 Charles A. Peloquin,14 Ann Raftery,1 Jussi Saukkonen,15 H. Simon Schaaf,16
+Giovanni Sotgiu,17 Jeffrey R. Starke,18 Giovanni Battista Migliori,11 and Andrew Vernon8
+
+1University of California, San Francisco; 2Johns Hopkins University, Baltimore, Maryland; 3California Department of Public Health, Richmond; 4McMaster University, Hamilton, Ontario, Canada;
+5National Jewish Health, Denver, Colorado; 6World Health Organization, Geneva, Switzerland; 7Tuberculosis Control Section, San Francisco Department of Public Health, California; 8Division of
+Tuberculosis Elimination, National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, Centers for Disease Control and Prevention, Atlanta, Georgia; 9Harvard Medical School, Boston,
+Massachusetts; 10McGill University, Montreal, Quebec, Canada; 11WHO Collaborating Centre for TB and Lung Diseases, Fondazione S. Maugeri Care and Research Institute, Tradate, Italy;
+12Tuberculosis Control Program, Seattle and King County Public Health, and University of Washington, Seattle; 13Ethics Advisory Group, International Union Against TB and Lung Disease, Paris, France;
+14University of Florida, Gainesville; 15Boston University, Massachusetts; 16Department of Paediatrics and Child Health, Stellenbosch University, Cape Town, South Africa; 17University of Sassari, Italy;
+and 18Baylor College of Medicine, Houston, Texas
+
+The American Thoracic Society, Centers for Disease Control and Prevention, and Infectious Diseases Society of America jointly
+sponsored the development of this guideline for the treatment of drug-susceptible tuberculosis, which is also endorsed by the Eu-
+ropean Respiratory Society and the US National Tuberculosis Controllers Association. Representatives from the American Academy
+of Pediatrics, the Canadian Thoracic Society, the International Union Against Tuberculosis and Lung Disease, and the World Health
+Organization also participated in the development of the guideline. This guideline provides recommendations on the clinical and
+public health management of tuberculosis in children and adults in settings in which mycobacterial cultures, molecular and phe-
+notypic drug susceptibility tests, and radiographic studies, among other diagnostic tools, are available on a routine basis. For all
+recommendations, literature reviews were performed, followed by discussion by an expert committee according to the Grading of
+Recommendations, Assessment, Development and Evaluation methodology. Given the public health implications of prompt diag-
+nosis and effective management of tuberculosis, empiric multidrug treatment is initiated in almost all situations in which active
+tuberculosis is suspected. Additional characteristics such as presence of comorbidities, severity of disease, and response to treatment
+influence management decisions. Specific recommendations on the use of case management strategies (including directly observed
+therapy), regimen and dosing selection in adults and children (daily vs intermittent), treatment of tuberculosis in the presence of
+HIV infection (duration of tuberculosis treatment and timing of initiation of antiretroviral therapy), as well as treatment of extrap-
+ulmonary disease (central nervous system, pericardial among other sites) are provided. The development of more potent and better-
+tolerated drug regimens, optimization of drug exposure for the component drugs, optimal management of tuberculosis in special
+populations, identification of accurate biomarkers of treatment effect, and the assessment of new strategies for implementing regi-
+mens in the field remain key priority areas for research. See the full-text online version of the document for detailed discussion of the
+management of tuberculosis and recommendations for practice.
+
+   Keywords. Mycobacterium tuberculosis; HIV infections; antitubercular agents; case management; public health.
+
+   Received 4 June 2016; accepted 6 June 2016.                                                       EXECUTIVE SUMMARY
+   These guidelines were endorsed by the European Respiratory Society (ERS) and the US Na-
+tional Tuberculosis Controllers Association (NTCA). It is important to realize that guidelines can-  The American Thoracic Society (ATS), Centers for Disease Con-
+not always account for individual variation among patients. They are not intended to supplant        trol and Prevention (CDC), and Infectious Diseases Society of
+physician judgment with respect to particular patients or special clinical situations. The spon-     America (IDSA) jointly sponsored the development of this
+soring and endorsing societies consider adherence to these guidelines to be voluntary, with the      guideline on the treatment of drug-susceptible tuberculosis,
+ultimate determination regarding their application to be made by the physician in the light of       which is also endorsed by the European Respiratory Society
+each patient's individual circumstances.                                                             (ERS) and the US National Tuberculosis Controllers Association
+   Correspondence: P. Nahid, University of California, San Francisco, San Francisco General Hos-     (NTCA). This guideline provides recommendations on the clin-
+pital, Pulmonary and Critical Care Medicine, 1001 Potrero Ave, 5K1, San Francisco, CA 94110          ical and public health management of tuberculosis in children
+( pnahid@ucsf.edu).                                                                                  and adults in settings in which mycobacterial cultures, molecular
+
+Clinical Infectious Diseases® 2016;63(7):853­67
+© The Author 2016. Published by Oxford University Press for the Infectious Diseases Society
+of America. All rights reserved. For permissions, e-mail journals.permissions@oup.com.
+DOI: 10.1093/cid/ciw566
+
+ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 853
+Table 1. Interpretation of "Strong" and "Conditional" Grading of Recommendations Assessment, Development, and Evaluation-Based Recommendations
+
+Implications  Strong Recommendation                                                              Conditional Recommendation
+for:
+Patients      Most individuals in this situation would want the recommended course               The majority of individuals in this situation would want the suggested
+Clinicians       of action, and only a small proportion would not.                                  course of action, but many would not.
+
+Policy        Most individuals should receive the intervention. Adherence to this                Recognize that different choices will be appropriate for individual
+                 recommendation according to the guideline could be used as a                       patients and that you must help each patient arrive at a management
+                 quality criterion or performance indicator. Formal decision aids are               decision consistent with his or her values and preferences. Decision
+                 not likely to be needed to help individuals make decisions consistent              aids may be useful in helping individuals to make decisions
+                 with their values and preferences.                                                 consistent with their values and preferences.
+
+              The recommendation can be adopted as policy in most situations.                    Policymaking will require substantial debate and involvement of various
+                                                                                                    stakeholders.
+
+Source: Grading of Recommendations Assessment, Development and Evaluation Working Group [1, 2].
+
+and phenotypic drug susceptibility tests, and radiographic stud-      a disorder suspicious for tuberculosis, empiric treatment with a                                    Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+ies, among other diagnostic tools, are available on a routine basis.  4-drug regimen (Tables 2 and 3) should be initiated promptly
+Nine PICO (population, intervention, comparators, outcomes)           even before the results of acid-fast bacilli (AFB) smear micros-
+questions and associated recommendations, developed based             copy, molecular tests, and mycobacterial culture are known.
+on the evidence that was appraised using GRADE (Grading of
+Recommendations Assessment, Development, and Evaluation)                 Sixty-five years of investigation, including many clinical tri-
+methodology [1, 2], are summarized below. A carefully selected        als, have consistently supported the necessity of treating with
+panel of experts, screened for conflicts of interest, including spe-  multiple drugs to achieve these treatment objectives, minimize
+cialists in pulmonary medicine, infectious diseases, pharmacoki-      drug toxicity, and maximize the likelihood of treatment com-
+netics, pediatrics, primary care, public health, and systematic       pletion [3, 4]. The success of drug treatment, however, depends
+review methodology were assembled and used GRADE methods              upon many factors, and numerous studies have found an in-
+to assess the certainty in the evidence (also known as the quality    creased risk of relapse among patients with signs of more exten-
+of evidence) and strength of the recommendations (see Supple-         sive disease (ie, cavitation or more extensive disease on chest
+mentary Appendix A: Methods and Table 1). This executive              radiograph) [5­9], and/or slower response to treatment (ie, de-
+summary is a condensed version of the panel's recommenda-             layed culture conversion at 2­3 months) [4, 6, 10, 11].
+tions. Additional detailed discussion of the management of pul-
+monary and extrapulmonary tuberculosis is available in the full-      ORGANIZATION AND SUPERVISION OF TREATMENT
+text version of this guideline.
+                                                                      Because of the public health implications of prompt diagnosis and
+OBJECTIVES OF ANTITUBERCULOSIS THERAPY                                effective treatment of tuberculosis, most low-incidence countries
+                                                                      designate a government public health agency as legal authority for
+Treatment of tuberculosis is focused on both curing the individ-      controlling tuberculosis [12, 13]. The optimal organization of tu-
+ual patient and minimizing the transmission of Mycobacterium          berculosis treatment often requires the coordination of public and
+tuberculosis to other persons, thus, successful treatment of tu-      private sectors [14­16]. In most settings, a patient is assigned a
+berculosis has benefits both for the individual patient and the       public health case manager who assesses needs and barriers that
+community in which the patient resides.                               may interfere with treatment adherence [17]. With active input
+                                                                      from the patient and healthcare providers, the case manager, to-
+   The objectives of tuberculosis therapy are (1) to rapidly re-      gether with the patient, develops an individualized "case manage-
+duce the number of actively growing bacilli in the patient, there-    ment plan" with interventions to address the identified needs and
+by decreasing severity of the disease, preventing death and           barriers [18­20] (see PICO Question 1 and Supplementary Ap-
+halting transmission of M. tuberculosis; (2) to eradicate popula-     pendix B, Evidence Profiles 1­3). The least restrictive public
+tions of persisting bacilli in order to achieve durable cure ( pre-   health interventions that are effective are used to achieve adher-
+vent relapse) after completion of therapy; and (3) to prevent         ence, thereby balancing the rights of the patient and public safety.
+acquisition of drug resistance during therapy.                        Given that tuberculosis treatment requires multiple drugs be given
+                                                                      for several months, it is crucial that the patient be involved in a
+   The decision to initiate combination chemotherapy for tu-          meaningful way in making decisions concerning treatment supervi-
+berculosis is based on clinical, radiographic, laboratory, patient,   sion and overall care. International standards have been developed
+and public health factors (Figure 1). In addition, clinical judg-     that also emphasize the importance of using patient-centered
+ment and the index of suspicion for tuberculosis are critical in      approaches to the management of tuberculosis [14­16].
+making a decision to initiate treatment. For example, in patients
+(children and adults) who, based on these considerations, have           Key considerations when developing a case management plan
+a high likelihood of having tuberculosis or are seriously ill with    include (1) improving "treatment literacy" by educating the
+
+854 · CID 2016:63 (1 October) · Nahid et al
+Figure 1. Factors to be considered in deciding to initiate treatment empirically for active tuberculosis (TB) ( prior to microbiologic confirmation). Abbreviations: AFB, acid-fast  Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+bacilli; HIV, human immunodeficiency virus; IGRA, interferon- release assay; Mtb, Mycobacterium tuberculosis; TNF, tumor necrosis factor; TST, tuberculin skin test.
+
+patient about tuberculosis and its treatment, including possible           Given the critical importance of chemotherapy, both to the
+adverse effects [21, 22]; (2) discussing expected outcomes of treat-    patient and to the public, approaches to ensuring adherence
+ment, specifically the ability to cure the patient of the disease; (3)  to the treatment regimen are a major focus of the overall man-
+reviewing methods of adherence support and plans for assessing          agement plan. To maximize completion of therapy, manage-
+response to therapy; and (4) discussing infectiousness and infec-       ment strategies should utilize a broad range of approaches
+tion control measures using terminology that is appropriate to          (see "Patient-Centered Care and Case Management" in the
+the culture, language, age, and reading level of the patient [23].      full-text version of the guideline). Among these, directly ob-
+For non-English-speaking patients, the use of medical interpreter       served therapy (DOT), the practice of observing the patient
+services is preferred over using family or friends as interpreters      swallow their antituberculosis medications, has been widely
+[24]. Relevant information should be reinforced at each visit.          used as the standard of practice in many tuberculosis programs,
+Other components of the case management plan include, but               and deserves special emphasis (see PICO Question 2 and Sup-
+are not limited to, setting up patient reminders and systems to         plementary Appendix B, Evidence Profile 4). The systematic re-
+follow-up missed appointments [23, 25­29], use of incentives            view conducted to obtain evidence in support of this practice
+and enablers [30, 31], field and home visits [32], and integration      guideline did not find any significant differences between self-
+and coordination of tuberculosis care with the patient's primary        administered therapy (SAT) and DOT when assessing several
+and specialty care (including mental health services, if appropri-      outcomes of interest, including mortality, treatment comple-
+ate and requested by the patient) (Table 4).                            tion, and relapse. However, DOT was significantly associated
+                                                                        with improved treatment success (the sum of patients cured
+PICO Question 1: Does adding case management interventions to           and patients completing treatment) and with increased sputum
+curative therapy improve outcomes compared to curative therapy          smear conversion during treatment, as compared to SAT. Be-
+alone among patients with tuberculosis? (Case management is             cause DOT is a multifaceted public health intervention that is
+defined as patient education/counseling, field/home visits,             not amenable to the conventional clinical trial approaches to as-
+integration/coordination of care with specialists and medical home,     sessing benefits, and because participation in DOT can be ad-
+patient reminders, and incentives/enablers).                            vantageous for early recognition of adverse drug reactions and
+Recommendation 1: We suggest using case management                      treatment irregularities, for allowing providers to establish
+interventions during treatment of patients with tuberculosis
+(conditional recommendation; very low certainty in the evidence).
+
+ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 855
+Table 2. Drug Regimens for Microbiologically Confirmed Pulmonary Tuberculosis Caused by Drug-Susceptible Organisms
+
+               Intensive Phase     Continuation Phase
+
+Regimen Druga  Interval and Doseb  Drugs     Interval and Doseb,  Range of                           Commentsc,d                      Regimen
+               (Minimum Duration)                c (Minimum         Total                                                          Effectiveness
+                                                                   Doses    This is the preferred regimen for patients with newly
+                                                   Duration)                   diagnosed pulmonary tuberculosis.                       Greater
+
+1  INH 7 d/wk for 56 doses         INH 7 d/wk for 126             182­130   Preferred alternative regimen in situations in which
+                                                                               more frequent DOT during continuation phase is
+   RIF         (8 wk), or          RIF       doses (18 wk),                    difficult to achieve.
+
+   PZA 5 d/wk for 40 doses                   or                             Use regimen with caution in patients with HIV and/or
+                                                                               cavitary disease. Missed doses can lead to
+   EMB (8 wk)                                5 d/wk for 90                     treatment failure, relapse, and acquired drug
+                                                                               resistance.
+                                             doses (18 wk)
+                                                                            Do not use twice-weekly regimens in HIV-infected
+2  INH 7 d/wk for 56 doses         INH 3 times weekly for 110­94               patients or patients with smear-positive and/or
+                                                                               cavitary disease. If doses are missed, then
+   RIF         (8 wk), or          RIF       54 doses (18                      therapy is equivalent to once weekly, which is
+                                                                               inferior.
+   PZA 5 d/wk for 40 doses                   wk)
+
+   EMB (8 wk)
+
+3  INH 3 times weekly for 24 INH 3 times weekly for 78
+
+   RIF         doses (8 wk)        RIF       54 doses (18
+
+   PZA                                       wk)
+
+   EMB
+
+4  INH 7 d/wk for 14 doses         INH Twice weekly for 62
+
+   RIF         then twice weekly RIF         36 doses (18
+
+   PZA         for 12 dosese                 wk)
+
+   EMB
+
+                                                                                                                                   Lesser                                                          Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+
+Abbreviations: DOT, directly observed therapy; EMB, ethambutol; HIV, human immunodeficiency virus; INH, isoniazid; PZA, pyrazinamide; RIF, rifampin.
+a Other combinations may be appropriate in certain circumstances; additional details are provided in the section "Recommended Treatment Regimens."
+b When DOT is used, drugs may be given 5 days per week and the necessary number of doses adjusted accordingly. Although there are no studies that compare 5 with 7 daily doses, extensive
+experience indicates this would be an effective practice. DOT should be used when drugs are administered <7 days per week.
+c Based on expert opinion, patients with cavitation on initial chest radiograph and positive cultures at completion of 2 months of therapy should receive a 7-month (31-week) continuation phase.
+d Pyridoxine (vitamin B6), 25­50 mg/day, is given with INH to all persons at risk of neuropathy (eg, pregnant women; breastfeeding infants; persons with HIV; patients with diabetes, alcoholism,
+malnutrition, or chronic renal failure; or patients with advanced age). For patients with peripheral neuropathy, experts recommend increasing pyridoxine dose to 100 mg/day.
+e See [426]. Alternatively, some US tuberculosis control programs have administered intensive-phase regimens 5 days per week for 15 doses (3 weeks), then twice weekly for 12 doses.
+
+rapport with the patient and for addressing treatment compli-       and Supplementary Appendix C) [3, 36, 37]. The intensive
+cations expeditiously, DOT remains the standard of practice in      phase of treatment consists of 4 drugs (INH, RIF, PZA, EMB)
+the majority of tuberculosis programs in the United States [33­     because of the current proportion of new tuberculosis cases
+35] and Europe [15] (Table 5). To be consistent with the prin-      worldwide caused by organisms that are resistant to INH [38­
+ciples of patient-centered care noted previously, decisions re-     41]; however, if therapy is being initiated after drug susceptibil-
+garding the use of DOT must be made in concert with the             ity test results are known and the patient's isolate is susceptible
+patient [14­16]. For example, DOT can be provided in the of-        to both INH and RIF, EMB is not necessary, and the intensive
+fice, clinic, or in the "field" ( patient's home, place of employ-  phase can consist of INH, RIF, and PZA only. EMB can be dis-
+ment, school, or any other site that is mutually agreeable) by      continued as soon as the results of drug susceptibility studies
+appropriately trained personnel [32].                               demonstrate that the isolate is susceptible to INH and RIF. Pyr-
+                                                                    idoxine (vitamin B6) is given with INH to all persons at risk of
+PICO Question 2: Does self-administered therapy (SAT) have similar  neuropathy (eg, pregnant women; breastfeeding infants; per-
+outcomes compared to directly observed therapy (DOT) in patients    sons infected with human immunodeficiency virus [HIV]; pa-
+with various forms of tuberculosis?                                 tients with diabetes, alcoholism, malnutrition, or chronic renal
+Recommendation 2: We suggest using DOT rather than SAT for          failure; or those who are of advanced age) [42, 43].
+routine treatment of patients with all forms of tuberculosis
+(conditional recommendation; low certainty in the evidence).           With respect to administration schedule, the preferred fre-
+                                                                    quency is once daily for both the intensive and continuation
+RECOMMENDED TREATMENT REGIMENS                                      phases (see PICO Questions 3 and 4 and Supplementary Ap-
+                                                                    pendix B, Evidence Profiles 5­11). Although administration of
+The preferred regimen for treating adults with tuberculosis         antituberculosis drugs using DOT 5 days a week has been re-
+caused by organisms that are not known or suspected to be           ported in a large number of studies, it has not been compared
+drug resistant is a regimen consisting of an intensive phase of     with 7-day administration in a clinical trial. Nonetheless, on the
+2 months of isoniazid (INH), rifampin (RIF), pyrazinamide           basis of substantial clinical experience, experts believe that
+(PZA), and ethambutol (EMB) followed by a continuation              5-days-a-week drug administration by DOT is an acceptable
+phase of 4 months of INH and RIF (see Tables 2, 3, 10, 11,          alternative to 7-days-a-week administration, and either approach
+
+856 · CID 2016:63 (1 October) · Nahid et al
+Table 3. Dosesa of Antituberculosis Drugs for Adults and Childrenb
+
+Drug                         Preparation                             Population  Daily                  Once-Weekly Twice-Weekly     Thrice-Weekly
+
+First-line drugs   Tablets (50 mg, 100 mg, 300 mg); elixir (50       Adults      5 mg/kg (typically     15 mg/kg       15 mg/kg (typically 15 mg/kg (typically
+   Isoniazid          mg/5 mL); aqueous solution (100 mg/mL)         Children       300 mg)                (typically
+                      for intravenous or intramuscular injection.                                          900 mg)     900 mg)       900 mg)
+   Rifampin           Note: Pyridoxine (vitamin B6), 25­50 mg/       Adultsc     10­15 mg/kg
+   Rifabutin          day, is given with INH to all persons at risk  Children                                  ...     20­30 mg/kg                  . . .b
+                      of neuropathy (eg, pregnant women;             Adultsd
+                      breastfeeding infants; persons with HIV;       Children    10 mg/kg (typically    ...            10 mg/kg (typically 10 mg/kg (typically
+                      patients with diabetes, alcoholism,            Adults         600 mg)
+                      malnutrition, or chronic renal failure; or     Children                                          600 mg)       600 mg)
+                      patients with advanced age). For patients                  10­20 mg/kg
+                      with peripheral neuropathy, experts            Adults                             ...            10­20 mg/kg                  . . .b
+                      recommend increasing pyridoxine dose to        Children
+                      100 mg/d.                                      Adults      5 mg/kg (typically     ...            Not recommended Not recommended
+                                                                     Childrenf      300 mg)
+                   Capsule (150 mg, 300 mg). Powder may be           Adultsg
+                      suspended for oral administration.
+                                                                     Children
+                   Aqueous solution for intravenous injection.       Adultsh
+
+                   Capsule (150 mg)                                  Children
+                                                                     Adults
+                                                                     Children    Appropriate dosing for children is unknown. Estimated at 5 mg/kg.
+                                                                     Adults
+Rifapentine        Tablet (150 mg film coated)                       Children                           10­20 mg/kge   ...                          ...
+                                                                     Adults
+                                                                                 Active tuberculosis: for children 12 y of age, same dosing as for adults,             Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+                                                                     Children    administered once weekly. Rifapentine is not FDA-approved for treatment of active
+                                                                     Adults      tuberculosis in children <12 y of age.
+                                                                     Children
+Pyrazinamide Tablet (500 mg scored)                                              See Table 10           ...            See Table 10  See Table 10
+                                                                     Adults      35 (30­40) mg/kg
+                                                                     Children                           ...            50 mg/kg                     . . .b
+
+Ethambutol         Tablet (100 mg; 400 mg)                                       See Table 11           ...            See Table 11  See Table 11
+                                                                                 20 (15­25) mg/kg
+                                                                                                        ...            50 mg/kg                     . . .b
+
+Second-line drugs
+
+Cycloserine        Capsule (250 mg)                                              10­15 mg/kg total      There are inadequate data to support intermittent
+                                                                                    (usually 250­500                           administration.
+                                                                                    mg once or twice
+
+                                                                                    daily)
+
+                                                                                 15­20 mg/kg total
+                                                                                    (divided 1­2 times
+                                                                                    daily)
+
+Ethionamide Tablet (250 mg)                                                      15­20 mg/kg total      There are inadequate data to support intermittent
+                                                                                    (usually 250­500                           administration.
+                                                                                    mg once or twice
+
+                                                                                    daily)
+
+                                                                                 15­20 mg/kg total
+                                                                                    (divided 1­2 times
+                                                                                    daily)
+
+Streptomycin Aqueous solution (1 g vials) for IM or IV                           15 mg/kg daily. Some clinicians prefer 25 mg/kg 3 times weekly.
+                           administration.                                       Patients with decreased renal function may require the 15 mg/kg dose to be given
+
+                                                                                    only 3 times weekly to allow for drug clearance.
+
+                                                                                 15­20 mg/kg [427]      ...            25­30 mg/kgi                 ...
+
+Amikacin/          Aqueous solution (500 mg and 1 g vials) for                   15 mg/kg daily. Some clinicians prefer 25 mg/kg 3 times weekly.
+kanamycin             IM or IV administration.                                   Patients with decreased renal function, including older patients, may require the 15
+
+                                                                                    mg/kg dose to be given only 3 times weekly to allow for drug clearance.
+
+                                                                                 15­20 mg/kg [427]      ...            25­30 mg/kgi                 ...
+
+Capreomycin        Aqueous solution (1 g vials) for IM or IV                     15 mg/kg daily. Some clinicians prefer 25 mg/kg 3 times weekly.
+                      administration.                                            Patients with decreased renal function, including older patients, may require the 15
+
+                                                                                    mg/kg dose to be given only 3 times weekly to allow for drug clearance.
+
+                                                                                 15­20 mg/kg [427]      ...            25­30 mg/kgi                 ...
+
+Para-amino         Granules (4 g packets) can be mixed in and                    8­12 g total (usually  There are inadequate data to support intermittent
+   salicylic acid     ingested with soft food (granules should                      4000 mg 2­3                                administration.
+                      not be chewed). Tablets (500 mg) are still                    times daily)
+                      available in some countries, but not in the
+                      United States. A solution for IV                           200­300 mg/kg total
+                      administration is available in Europe.                        (usually divided
+                                                                                    100 mg/kg given 2
+                                                                                    to 3 times daily)
+
+Levofloxacin       Tablets (250 mg, 500 mg, 750 mg); aqueous                     500­1000 mg daily      There are inadequate data to support intermittent
+                      solution (500 mg vials) for IV injection.                                                                administration.
+
+                                                                                 The optimal dose is not known, but clinical data suggest 15­20 mg/kg [427]
+
+                                                ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 857
+Table 3 continued.
+
+Drug                Preparation                                  Population             Daily  Once-Weekly Twice-Weekly  Thrice-Weekly
+   Moxifloxacin
+                    Tablets (400 mg); aqueous solution (400 mg/  Adults      400 mg daily      There are inadequate data to support intermittent
+                       250 mL) for IV injection                  Children                                            administration.j
+
+                                                                             The optimal dose is not known. Some experts use 10 mg/kg daily dosing, though
+                                                                                   lack of formulations makes such titration challenging. Aiming for serum
+
+                                                                             concentrations of 3­5 µL/mL 2 h postdose is proposed by experts as a reasonable
+                                                                                                                               target.
+
+Abbreviations: FDA, US Food and Drug Administration; HIV, human immunodeficiency virus; IM, intramuscular; INH, isoniazid; IV, intravenous.                                                        Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+a Dosing based on actual weight is acceptable in patients who are not obese. For obese patients (>20% above ideal body weight [IBW]), dosing based on IBW may be preferred for initial doses.
+Some clinicians prefer a modified IBW (IBW + [0.40 × (actual weight ­ IBW)]) as is done for initial aminoglycoside doses. Because tuberculosis drug dosing for obese patients has not been
+established, therapeutic drug monitoring may be considered for such patients.
+b For purposes of this document, adult dosing begins at age 15 years or at a weight of >40 kg in younger children. The optimal doses for thrice-weekly therapy in children and adolescents have
+not been established. Some experts use in adolescents the same doses as recommended for adults, and for younger children the same doses as recommended for twice-weekly therapy.
+c Higher doses of rifampin, currently as high as 35 mg/kg, are being studied in clinical trials.
+d Rifabutin dose may need to be adjusted when there is concomitant use of protease inhibitors or nonnucleoside reverse transcriptase inhibitors.
+e TBTC Study 22 used rifapentine (RPT) dosage of 10 mg/kg in the continuation phase of treatment for active disease [9]. However, RIFAQUIN and PREVENT TB safely used higher dosages of
+RPT, administered once weekly [164, 210]. Daily doses of 1200 mg RPT are being studied in clinical trials for active tuberculosis disease.
+f As an approach to avoiding ethambutol (EMB) ocular toxicity, some clinicians use a 3-drug regimen (INH, rifampin, and pyrazinamide) in the initial 2 months of treatment for children who are
+HIV-uninfected, have no prior tuberculosis treatment history, are living in an area of low prevalence of drug-resistant tuberculosis, and have no exposure to an individual from an area of high
+prevalence of drug-resistant tuberculosis. However, because the prevalence of and risk for drug-resistant tuberculosis can be difficult to ascertain, the American Academy of Pediatrics and most
+experts include EMB as part of the intensive-phase regimen for children with tuberculosis.
+g Clinicians experienced with using cycloserine suggest starting with 250 mg once daily and gradually increasing as tolerated. Serum concentrations often are useful in determining the
+appropriate dose for a given patient. Few patients tolerate 500 mg twice daily.
+h Ethionamide can be given at bedtime or with a main meal in an attempt to reduce nausea. Clinicians experienced with using ethionamide suggest starting with 250 mg once daily and gradually
+increasing as tolerated. Serum concentrations may be useful in determining the appropriate dose for a given patient. Few patients tolerate 500 mg twice daily.
+i Modified from adult intermittent dose of 25 mg/kg, and accounting for larger total body water content and faster clearance of injectable drugs in most children. Dosing can be guided by serum
+concentrations.
+j RIFAQUIN trial studied a 6-month regimen. Daily isoniazid was replaced by daily moxifloxacin 400 mg for the first 2 months, followed by once-weekly doses of moxifloxacin 400 mg and RPT
+1200 mg for the remaining 4 months. Two hundred twelve patients were studied (each dose of RPT was preceded by a meal of 2 hard-boiled eggs and bread). This regimen was shown to be
+noninferior to a standard daily administered 6-month regimen [164].
+
+may be considered as meeting the definition of "daily" dosing.               Recommendation 3b: Use of thrice-weekly therapy in the intensive
+There are alternative regimens that are variations of the pre-               phase (with or without an initial 2 weeks of daily therapy) may be
+ferred regimen, which may be acceptable in certain clinical                  considered in patients who are not HIV infected and are also at low
+and/or public health situations (see "Other Regimens" and                    risk of relapse (pulmonary tuberculosis caused by drug-susceptible
+"Treatment in Special Situations" in the full-text version of                organisms, that at the start of treatment is noncavitary and/or smear
+the guideline).                                                              negative) (conditional recommendation; low certainty in the
+                                                                             evidence).
+PICO Question 3: Does intermittent dosing in the intensive phase             Recommendation 3c: In situations where daily or thrice-weekly DOT
+have similar outcomes compared to daily dosing in the intensive              therapy is difficult to achieve, use of twice-weekly therapy after an
+phase for treatment of drug-susceptible pulmonary tuberculosis?              initial 2 weeks of daily therapy may be considered for patients who
+Recommendation 3a: We recommend the use of daily rather than                 are not HIV-infected and are also at low risk of relapse (pulmonary
+intermittent dosing in the intensive phase of therapy for drug-              tuberculosis caused by drug-susceptible organisms, that at the start
+susceptible pulmonary tuberculosis (strong recommendation;                   of treatment is noncavitary and/or smear negative) (conditional
+moderate certainty in the evidence).                                         recommendation; very low certainty in the evidence). Note: If doses
+                                                                             are missed in a regimen using twice-weekly dosing, then therapy is
+                                                                             equivalent to once weekly, which is inferior (see PICO Question 4).
+
+Table 4. Possible Components of a Multifaceted, Patient-Centered Treatment Strategy
+
+                                                    Enablers                                                                   Incentives
+                                                                                        Interventions to motivate the patient, tailored to individual patient
+Interventions to assist the patient in completing therapy [130]
+                                                                                           wishes and needs and, thus, meaningful to the patient [130]
+Transportation vouchers [30]                                                            Food stamps or snacks and meals [30]
+Convenient clinic hours and locations [30]                                              Restaurant and grocery store coupons [30]
+Clinic personnel who speak the languages of the populations served [428]                Assistance in finding or provision of housing [429]
+Reminder systems and follow-up of missed appointments [28]                              Clothing or other personal products [30]
+Social service assistance (referrals for substance abuse treatment and counseling,      Books [428]
+
+   housing, and other services) [429]                                                   Stipends [30]
+Outreach workers (bilingual/bicultural as needed; can provide many services related
+                                                                                        Patient contract [30]
+   to maintaining patient adherence, including provision of directly observed therapy,
+   follow-up on missed appointments, monthly monitoring, transportation, sputum
+   collection, social service assistance, and educational reinforcement) [428]
+Integration of care for tuberculosis with care for other conditions [428]
+
+858 · CID 2016:63 (1 October) · Nahid et al
+Table 5. Examples of Priority Situations for the Use of Directly Observed         Figure 2. Baseline and follow-up evaluations for patients treated with first-line              Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+Therapy                                                                           tuberculosis medications. Shading around boxes indicates activities that are optional
+                                                                                  or contingent on other information. 1Obtain sputa for smear and culture at baseline,
+Patients With the Following Conditions/Circumstances [17, 130, 137, 139,          then monthly until 2 consecutive specimens are negative. Collecting sputa more
+   430, 431]:                                                                     often early in treatment for assessment of treatment response and at end of treat-
+                                                                                  ment is optional. At least one baseline specimen should be tested using a rapid
+· Positive sputum smears                                                          molecular test. 2Drug susceptibility for isoniazid, rifampin, ethambutol (EMB), and
+· Delayed culture conversion (sputum obtained at/after                            pyrazinamide should be obtained. Repeat drug susceptibility testing if patient re-
+                                                                                  mains culture positive after completing 3 months of treatment. Molecular resistance
+   completion of intensive-phase therapy is culture-positive)                     testing should be performed for patients with risk for drug resistance. 3Obtain chest
+· Treatment failure                                                               radiograph at baseline for all patients, and also at month 2 if baseline cultures are
+· Relapse                                                                         negative. End-of-treatment chest radiograph is optional. Other imaging for monitor-
+· Drug resistance                                                                 ing of extrapulmonary disease. 4Monitor weight monthly to assess response to treat-
+· Homelessness                                                                    ment; adjust medication dose if needed. 5Assess adherence and monitor
+· Current or prior substance abuse                                                improvement in tuberculosis symptoms (eg, cough, fever, fatigue, night sweats) as
+· Use of intermittent dosing                                                      well as development of medication adverse effects (eg, jaundice, dark urine, nausea,
+· HIV infection                                                                   vomiting, abdominal pain, fever, rash, anorexia, malaise, neuropathy, arthralgias).
+· Previous nonadherence to therapy                                                6Patients on EMB: baseline visual acuity (Snellen test) and color discrimination
+· Children and adolescents                                                        tests, followed by monthly inquiry about visual disturbance and monthly color dis-
+· Mental, emotional or physical disability (ie, cognitive deficits such as        crimination tests. 7Liver function tests only at baseline unless there were abnormal-
+                                                                                  ities at baseline, symptoms consistent with hepatotoxicity develop, or for patients
+   dementia; neurological deficits; medically fragile patients; or patients with  who chronically consume alcohol, take other potentially hepatotoxic medications, or
+   blindness or severe loss of vision)                                            have viral hepatitis or history of liver disease, human immunodeficiency virus (HIV)
+· Resident at correctional or long-term care facility                             infection, or prior drug-induced liver injury. 8Baseline for all patients. Further mon-
+· Previous treatment for active or latent tuberculosis                            itoring if there are baseline abnormalities or as clinically indicated. 9HIV testing in all
+                                                                                  patients. CD4 lymphocyte count and HIV RNA load if positive. 10Patients with hep-
+Abbreviation: HIV, human immunodeficiency virus.                                  atitis B or C risk factor (eg, injection drug use, birth in Asia or Africa, or HIV infection)
+                                                                                  should have screening tests for these viruses. 11Fasting glucose or hemoglobin A1c
+   Recommended baseline and follow-up evaluations for                             for patients with risk factors for diabetes according to the American Diabetes As-
+patients suspected of having tuberculosis and treated with                        sociation including: age >45 years, body mass index >25 kg/m2, first-degree relative
+first-line medications are summarized in Figure 2. During treat-                  with diabetes, and race/ethnicity of African American, Asian, Hispanic, American
+ment, a sputum specimen for AFB smear and culture are ob-                         Indian/Alaska Native, or Hawaiian Native/Pacific Islander. Abbreviations: ALT, ala-
+tained at monthly intervals until 2 consecutive specimens are                     nine aminotransferase; AST, aspartate aminotransferase.
+negative on culture. Duration of the continuation phase regi-
+men hinges on the microbiological status at the end of the in-                    other immunosuppressing condition; or having extensive dis-
+tensive phase of treatment; thus, obtaining sputum specimens                      ease on chest radiograph [46, 48­52].
+at the time of completion of 2 months of treatment is critical if
+sputum culture conversion to negative has not already been                           Interruptions in therapy are common in the treatment of tu-
+documented. The culture result of a sputum specimen ob-
+tained at the completion of the intensive phase of treatment                      berculosis. When interruptions occur, the person responsible for
+(2 months) has been shown to correlate with the likelihood
+of relapse after completion of treatment for pulmonary tuber-                     supervision must decide whether to restart a complete course of
+culosis, albeit with low sensitivity [9, 44­46]. Cavitation on the
+initial chest radiograph has also been shown to be a risk factor                  treatment or simply to continue as intended originally. In gene-
+for relapse [9, 47]. In patients treated for 6 months, having
+both cavitation and a positive culture at completion of 2                         ral, the earlier the break in therapy and the longer its duration,
+months of therapy has been associated with rates of relapse
+of approximately 20% compared with 2% among patients                              the more serious the effect and the greater the need to restart
+with neither factor [9, 45].
+                                                                                  treatment from the beginning (Table 6). Continuous treatment
+   In view of this evidence, for patients who have cavitation on
+the initial chest radiograph and who have positive cultures at                    is more important in the intensive phase of therapy when the ba-
+completion of 2 months of therapy, expert opinion is to extend
+the continuation phase with INH and RIF for an additional 3                       cillary population is highest and the chance of developing drug
+months (ie, a continuation phase of 7 months in duration, cor-
+responding to a total of 9 months of therapy). Additional factors                 resistance greatest. During the continuation phase, the number
+to be considered in deciding to prolong treatment in patients
+with either cavitation or a positive culture at 2 months (but                     of bacilli is much smaller and the goal of therapy is to kill the
+not both) might include being >10% below ideal body weight;
+being an active smoker; having diabetes, HIV infection, or any                    persisting organisms. The duration of the interruption and the
+
+                                                                                  bacteriologic status of the patient prior to and after the
+
+ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 859
+Table 6. Management of Treatment Interruptionsa
+
+Time Point of                             Details of Interruption                                                    Approach
+Interruption         Lapse is <14 d in duration
+                                                                          Continue treatment to complete planned total number of doses (as long as
+During intensive     Lapse is 14 d in duration                               all doses are completed within 3 mo)
+   phase             Received 80% of doses and sputum was AFB smear
+                                                                          Restart treatment from the beginning
+During continuation     negative on initial testing                       Further therapy may not be necessary
+   phase             Received 80% of doses and sputum was AFB smear
+                                                                          Continue therapy until all doses are completed
+                        positive on initial testing
+                     Received <80% of doses and accumulative lapse is <3  Continue therapy until all doses are completed (full course), unless
+                                                                             consecutive lapse is >2 mo
+                        mo in duration
+                                                                          If treatment cannot be completed within recommended time frame for
+                     Received <80% of doses and lapse is 3 mo in             regimen, restart therapy from the beginning (ie, restart intensive phase,
+                        duration                                             to be followed by continuation phase)b
+
+                                                                          Restart therapy from the beginning, new intensive and continuation phases
+                                                                             (ie, restart intensive phase, to be followed by continuation phase)
+
+Abbreviation: AFB, acid-fast bacilli.
+a According to expert opinion, patients who are lost to follow-up (on treatment) and brought back to therapy, with interim treatment interruption, should have sputum resent for AFB smear,
+culture, and drug susceptibility testing.
+b The recommended time frame for regimen, in tuberculosis control programs in the United States and in several European countries, is to administer all of the specified number of doses for the
+intensive phase within 3 months and those for the 4-month continuation phase within 6 months, so that the 6-month regimen is completed within 9 months.
+
+interruption are also important considerations (see "Interrup-            situations, consultation with local and state health departments                                                        Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+tions in Therapy" in the full-text version of the guideline).             is advised. In the United States, the Centers for Disease Control
+                                                                          and Prevention's Division of Tuberculosis Elimination funds tu-
+PICO Question 4: Does intermittent dosing in the continuation phase       berculosis regional training and medical consultation centers
+have similar outcomes compared to daily dosing in the continuation        (http://www.cdc.gov/tb/education/rtmc/), which provide medical
+phase in patients with drug-susceptible pulmonary tuberculosis            consultation to programs and health providers on management
+patients?                                                                 of tuberculosis. In Europe, the World Health Organization
+Recommendation 4a: We recommend the use of daily or thrice-               (WHO)/ERS Tuberculosis Consilium (https://www.tbconsilium.
+weekly dosing in the continuation phase of therapy for drug-              org) provides similar consultation services regarding the diagno-
+susceptible pulmonary tuberculosis (strong recommendation;                sis and treatment of tuberculosis.
+moderate certainty in the evidence).
+Recommendation 4b: If intermittent therapy is to be administered in          Gastrointestinal reactions are common, especially early in
+the continuation phase, then we suggest use of thrice-weekly instead      therapy [53]. The optimum approach to management of epigas-
+of twice-weekly therapy (conditional recommendation; low certainty        tric distress or nausea with tuberculosis drugs is not clear. To
+in the evidence). This recommendation allows for the possibility of       minimize symptoms, patients receiving SAT may take the med-
+some doses being missed; with twice-weekly therapy, if doses are          ications at bedtime. Gastrointestinal intolerance not associated
+missed then therapy is equivalent to once weekly, which is inferior.      with hepatotoxicity can be treated with antacids, which have
+Recommendation 4c: We recommend against use of once-weekly                less impact on absorption or peak concentration of first-line
+therapy with INH 900 mg and rifapentine 600 mg in the continuation        drugs than administration with food [54]. Any combination
+phase (strong recommendation; high certainty in the evidence). In         of otherwise unexplained nausea, vomiting, and abdominal
+uncommon situations where more than once-weekly DOT is difficult          pain is evaluated with a physical examination and liver function
+to achieve, once-weekly continuation phase therapy with INH 900 mg        tests, including alanine aminotransferase (ALT), aspartate ami-
+plus rifapentine 600 mg may be considered for use only in HIV-            notransferase (AST), bilirubin, and alkaline phosphatase to as-
+uninfected persons without cavitation on chest radiography.               sess for possible hepatotoxicity [55]. Drug-induced hepatitis is
+                                                                          the most frequent serious adverse reaction to the first-line
+PRACTICAL ASPECTS OF TREATMENT                                            drugs. INH, RIF, and PZA can cause drug-induced liver injury
+                                                                          (DILI), which is suspected when the ALT level is 3 times the
+Guidance on the practical aspects of tuberculosis treatment,              upper limit of normal in the presence of hepatitis symptoms, or
+drug­drug interactions, therapeutic drug monitoring (TDM),                5 the upper limit of normal in the absence of symptoms. In
+and management of adverse effects are available in the full-text          either situation, hepatotoxic drugs are stopped immediately
+version of this guideline. In brief, mild adverse effects usually         and the patient is evaluated carefully. Other causes of abnormal
+can be managed with treatment directed at controlling the symp-           liver function tests must be excluded before diagnosing drug-
+toms; severe effects usually require the offending drug(s) to be          induced hepatotoxicity (Table 7). An official American Thoracic
+discontinued, and may require expert consultation on manage-              Society statement on the hepatotoxicity of antituberculosis
+ment. If a drug is permanently discontinued, then a replacement
+drug, typically from a different drug class, is included in the reg-
+imen. Patients with severe tuberculosis often require the initiation
+of an alternate regimen during the time the offending drug(s) are
+held. In general, for complicated diagnostic or management
+
+860 · CID 2016:63 (1 October) · Nahid et al
+Table 7. Other Causes of Abnormal Liver Function Tests That Should Be        version of the guideline). As discussed below, based on data             Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+Excluded                                                                     that show significant reductions in mortality and AIDS-defining
+                                                                             illnesses, patients with HIV infection and tuberculosis should
+Viral hepatitis (hepatitis A, B, and C in all patients; Epstein-Barr virus,  receive ART in conjunction with daily antituberculosis medica-
+   cytomegalovirus, and herpes simplex in immunosuppressed patients)         tions. For HIV-infected patients receiving ART, we suggest
+                                                                             using the standard 6-month daily regimen consisting of an in-
+Biliary tract disease                                                        tensive phase of 2 months of INH, RIF, PZA, and EMB followed
+Alcohol                                                                      by a continuation phase of 4 months of INH and RIF for the
+Other hepatotoxic drugs (eg, acetaminophen, acetaminophen-containing         treatment of drug-susceptible pulmonary tuberculosis. In the
+                                                                             uncommon situation in which an HIV-infected patient does
+   multiagent preparations, lipid-lowering agents, other drugs)              not receive ART during tuberculosis treatment, we suggest ex-
+Select herbal and dietary supplements                                        tending the continuation phase with INH and RIF for an addi-
+                                                                             tional 3 months (ie, a continuation phase of 7 months in
+Source: American Thoracic Society [56].                                      duration, corresponding to a total of 9 months of therapy) for
+                                                                             treatment of drug-susceptible pulmonary tuberculosis (see
+therapy (http://www.thoracic.org/statements/resources/mtpi/                  PICO Question 5 and Supplementary Appendix B, Evidence
+hepatotoxicity-of-antituberculosis-therapy.pdf ) provides addi-              Profile 12). As is noted for drug-susceptible pulmonary tuber-
+tional details on the management of tuberculosis in the set-                 culosis in patients without HIV coinfection, the continuation
+ting of drug-induced liver injury, as well as suggestions on                 phase is extended in specific situations that are known to in-
+drug rechallenge [56]; however, the optimal approach to rein-                crease risk for relapse, as well as for selected extrapulmonary
+troducing tuberculosis treatment after hepatotoxicity is still               sites of disease, namely tuberculous meningitis, and bone,
+not known [57, 58].                                                          joint, and spinal tuberculosis (see "Identification and Manage-
+                                                                             ment of Patients at Increased Risk of Relapse" and "Extrapul-
+TREATMENT IN SPECIAL SITUATIONS                                              monary Tuberculosis" in the full-text version of the guideline).
+
+Detailed recommendations on the management of tuberculosis in                PICO Question 5: Does extending treatment beyond 6 months improve
+special situations (HIV infection, extrapulmonary tuberculosis,              outcomes compared to the standard 6-month treatment regimen
+culture-negative pulmonary tuberculosis, advanced age, children,             among pulmonary tuberculosis patients coinfected with HIV?
+tuberculosis during pregnancy and breastfeeding, renal disease,              Recommendation 5a: For HIV-infected patients receiving ART, we
+and hepatic disease, among others) are available in the full-text            suggest using the standard 6-month daily regimen consisting of an
+version of this guideline. Five PICO questions with summary rec-             intensive phase of 2 months of INH, RIF, PZA, and EMB followed by a
+ommendations pertinent to the management of tuberculosis in                  continuation phase of 4 months of INH and RIF for the treatment of
+HIV patients, steroid use in pericardial or meningeal tuberculosis,          drug-susceptible pulmonary tuberculosis (conditional
+and culture-negative tuberculosis are summarized below.                      recommendation; very low certainty in the evidence).
+                                                                             Recommendation 5b: In uncommon situations in which HIV-infected
+HIV Infection                                                                patients do NOT receive ART during tuberculosis treatment, we
+                                                                             suggest extending the continuation phase with INH and RIF for an
+Treatment of tuberculosis in patients with HIV infection has                 additional 3 months (ie, a continuation phase of 7 months in duration,
+several important differences compared with treatment of pa-                 corresponding to a total of 9 months of therapy) for treatment of drug-
+tients who do not have HIV infection. The need for antiretrovi-              susceptible pulmonary tuberculosis (conditional recommendation; very
+ral therapy (ART), the potential for drug­drug interactions,                 low certainty in the evidence).
+especially between the rifamycins and antiretroviral agents
+(Table 8), paradoxical reactions that may be interpreted as clin-               Use of intermittent tuberculosis treatment regimens in HIV-
+ical worsening, and the potential for developing resistance to ri-           infected patients has been associated with high rates of relapse
+famycins when using intermittent tuberculosis therapy are                    and the emergence of drug resistance [9, 59]. In a trial of rifabu-
+some of these differences. Detailed information on these topics              tin (RFB)­based antituberculosis therapy in combination with
+is provided in the full-text version of this practice guideline. In          antiretroviral drugs, patients treated with twice-weekly RFB
+regard to duration of treatment for drug-susceptible pulmonary               had a relapse rate of 5.3%, but 8 of 9 patients with relapse
+tuberculosis in the presence of HIV infection, our updated sys-              had acquired rifamycin resistance [60]. Relapse and resistance
+tematic review of randomized trials and cohort studies compar-               were associated with low CD4 lymphocyte counts, as all recur-
+ing various durations of tuberculosis therapy (6 months vs 8                 rences occurred in patients with baseline CD4 lymphocyte
+months or longer), most of which were conducted prior to                     counts <100 cells/µL. In the pharmacokinetic substudy of the
+the era of highly active ART, showed that the risk of recurrence             trial, lower plasma concentrations of RFB and INH were iden-
+is lower when the continuation phase of treatment is extended.               tified as key risk factors for acquiring rifamycin resistance [61].
+However, it is important to note that the majority of these stud-            More recently, the use of a thrice-weekly RIF-based regimen
+ies were reports on nonrandomized cohorts, most were com-                    during the intensive and continuation phases of treatment
+pleted prior to the era of routine antiretroviral use, many                  was associated with a higher rate of relapse and emergence of
+tested intermittent regimens and few distinguished between re-
+infection and relapse (see "HIV Infection" in the full-text
+
+ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 861
+Table 8. Clinically Significant Drug­Drug Interactions Involving the Rifamycinsa
+
+Drug Class                   Drugs Whose Concentrations Are Substantially                                                    Comments                               Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+Antiretroviral agents                      Decreased by Rifamycins
+                                                                                   RFB preferred with protease inhibitors. For ritonavir-boosted regimens, give
+Anti-infectives        HIV-1 protease inhibitors (lopinavir/ritonavir, darunavir/     RFB 150 mg daily. Double-dose lopinavir/ritonavir can be used with RIF
+                          ritonavir, atazanavir, atazanavir/ritonavir)                but toxicity increased. Do not use RIF with other protease inhibitors.
+Hormone therapy
+Narcotics              NNRTIs                                                      RIF decreases exposure to all NNRTIs. If nevirapine is used with RIF, lead-in
+Anticoagulants         Nevirapine                                                     nevirapine dose of 200 mg daily should be omitted and 400 mg daily
+Immunosuppressive      Efavirenz                                                      nevirapine dosage given. With RIF, many experts advise that efavirenz be
+                       Rilpivirine                                                    given at standard dosage of 600 mg daily, although FDA recommends
+   agents              Complera (fixed-dose combination tablet containing             increasing efavirenz to 800 mg daily in persons >60 kg. In young children
+Anticonvulsants                                                                       double-dose lopinavir/ritonavir given with RIF results in inadequate
+Cardiovascular            emtricitabine, rilpivirine, TDF)                            concentrations ­ super-boosted Lopinavir/ritonavir is advised (if available)
+agents                 Etravirine                                                     by some experts. Rilpivirine and etravirine should not be given with RIF.
+                                                                                      RFB can be used with nevirapine and etravirine at usual dosing. Efavirenz
+Theophylline           INSTIs                                                         and RFB use requires dose increase of RFB to 600 mg daily, as such RIF is
+Sulfonylurea           Raltegravir                                                    preferred. Rilpivirine should not be given with RFB.
+hypoglycemics          Dolutegravir
+Hypolipidemics         Elvitegravir (coformulated with cobicistat, tenofovir and   Increase dose of raltegravir to 800 mg twice daily with RIF, although clinical
+                                                                                      trial data show similar efficacy using 400 mg twice daily. Dolutegravir
+                          emtricitabine as Stribild)                                  dose should be increased to 50 mg every 12 h with RIF. Do not use RIF
+                       Genvoya (fixed-dose combination tablet containing              with elvitegravir. RFB can be used with all INSTIs.
+
+                          elvitegravir, cobicistat, emtricitabine, and tenofovir   RIF should not be used with maraviroc. RFB can be used with maraviroc.
+                          alafenamide)
+                       CCR5 inhibitors                                             Azithromycin has no significant interaction with rifamycins. Coadministration
+                       Maraviroc                                                      of clarithromycin and RFB results in significant bidirectional interactions
+                       Macrolide antibiotics (azithromycin, clarithromycin,           that can increase RFB to toxic levels increasing the risk of uveitis.
+                          erythromycin)                                               Erythromycin is a CYP3A4 substrate and clearance may increase in setting
+                                                                                      of rifamycin use.
+                       Doxycycline
+                       Azole antifungal agents (ketoconazole, itraconazole,        May require use of a drug other than doxycycline.
+                                                                                   Itraconazole, ketoconazole, and voriconazole concentrations may be
+                          voriconazole, fluconazole, posaconazole,
+                          isavuconazole)                                              subtherapeutic with any of the rifamycins. Fluconazole can be used with
+                       Atovaquone                                                     rifamycins, but the dose of fluconazole may have to be increased.
+                       Chloramphenicol                                             Consider alternate form of Pneumocystis jirovecii treatment or prophylaxis.
+                       Mefloquine                                                  Consider an alternative antibiotic.
+                       Ethinylestradiol, norethindrone                             Consider alternate form of malaria prophylaxis.
+                                                                                   Women of reproductive potential on oral contraceptives should be advised to
+                       Tamoxifen                                                      add a barrier method of contraception when on a rifamycin.
+                       Levothyroxine                                               May require alternate therapy or use of a non-rifamycin-containing regimen.
+                                                                                   Monitoring of serum TSH recommended; may require increased dose of
+                       Methadone                                                      levothyroxine.
+                                                                                   RIF and RPT use may require methadone dose increase.
+                       Warfarin                                                    RFB infrequently causes methadone withdrawal.
+                       Cyclosporine, tacrolimus                                    Monitor prothrombin time; may require 2- to 3-fold warfarin dose increase.
+                                                                                   RFB may allow concomitant use of cyclosporine and a rifamycin; monitoring
+                       Corticosteroids                                                of cyclosporine and tacrolimus serum concentrations may assist with
+                       Phenytoin, lamotrigine                                         dosing.
+                       Verapamil, nifedipine, diltiazem (a similar interaction is  Monitor clinically; may require 2- to 3-fold increase in corticosteroid dose.
+                                                                                   TDM recommended; may require anticonvulsant dose increase.
+                          also predicted for felodipine and nisoldipine)           Clinical monitoring recommended; may require change to an alternate
+                       Propranolol, metoprolol                                        cardiovascular agent.
+                                                                                   Clinical monitoring recommended; may require dose increase or change to
+                       Enalapril, losartan                                            an alternate cardiovascular drug.
+                                                                                   Monitor clinically; may require a dose increase or use of an alternate
+                       Digoxin (among patients with renal insufficiency),             cardiovascular drug.
+                          digitoxin                                                TDM recommended; may require digoxin or digitoxin dose increase.
+
+                       Quinidine                                                   TDM recommended; may require quinidine dose increase.
+                       Mexiletine, tocainide, propafenone                          Clinical monitoring recommended; may require change to an alternate
+
+                       Theophylline                                                   cardiovascular drug.
+                       Tolbutamide, chlorpropamide, glyburide, glimepiride,        TDM recommended; may require theophylline dose increase.
+                                                                                   Monitor blood glucose; may require dose increase or change to an alternate
+                          repaglinide
+                       Simvastatin, fluvastatin                                       hypoglycemic drug.
+                                                                                   Monitor hypolipidemic effect; may require use of an alternate
+
+                                                                                      antihyperlipidemic drug.
+
+862 · CID 2016:63 (1 October) · Nahid et al
+Table 8 continued.
+
+Drug Class                Drugs Whose Concentrations Are Substantially                                              Comments
+Psychotropic drugs                      Decreased by Rifamycins
+                                                                          TDM recommended; may require dose increase or change to alternate
+                    Nortriptyline                                            psychotropic drug.
+
+                    Haloperidol, quetiapine                               Monitor clinically; may require a dose increase or use of an alternate
+                                                                             psychotropic drug.
+                    Benzodiazepines (eg, diazepam, triazolam), zolpidem,
+                       buspirone)                                         Monitor clinically; may require a dose increase or use of an alternate
+                                                                             psychotropic drug.
+
+Abbreviations: CCR5, C chemokine receptor type 5; CYP, cytochrome P450; FDA, US Food and Drug Administration; HIV, human immunodeficiency virus; INSTI, integrase strand transfer
+inhibitor; NNRTI, nonnucleoside reverse transcriptase inhibitor; RFB, rifabutin; RIF, rifampin; RPT, rifapentine; TDF, tenofovir disoproxil fumarate; TDM, therapeutic drug monitoring; TSH,
+thyroid-stimulating hormone.
+a See the following useful websites for updated information regarding drug interactions: AIDSinfo, Centers for Disease Control and Prevention, University of California San Francisco, University
+of Liverpool, Indiana University, and University of Maryland.
+
+rifamycin resistance in HIV-infected individuals not receiving            PICO Question 6: Does initiation of ART during tuberculosis                                                              Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+antiretrovirals compared with HIV-infected patients also re-              treatment compared to at the end of tuberculosis treatment improve
+ceiving antiretrovirals or HIV-uninfected patients [62]. Based            outcomes among tuberculosis patients coinfected with HIV?
+in part on systematic reviews conducted to obtain evidence in             Recommendation 6: We recommend initiating ART during
+support of this guideline, our expert opinion is that treatment           tuberculosis treatment. ART should ideally be initiated within the first
+of HIV-related tuberculosis be given daily in both the intensive          2 weeks of tuberculosis treatment for patients with CD4 counts <50
+and continuation phases to avoid recurrent disease and the                cells/µL and by 8­12 weeks of tuberculosis treatment initiation for
+emergence of rifamycin resistance (see "Recommended Treat-                patients with CD4 counts 50 cells/µL (strong recommendation; high
+ment Regimens" in the full-text version of the guideline).                certainty in the evidence). Note: an exception is patients with HIV
+                                                                          infection and tuberculous meningitis (see Immune Reconstitution
+   Mortality among patients with HIV and tuberculosis is high,            Inflammatory Syndrome).
+principally due to complications of immunosuppression and oc-
+currence of other HIV-related opportunistic diseases. Co-                    Patients with HIV infection and tuberculosis are at increased
+trimoxazole (trimethoprim-sulfamethoxazole) prophylaxis has               risk of developing paradoxical worsening of symptoms, signs,
+been shown to reduce morbidity and mortality in HIV-infected              or clinical manifestations of tuberculosis after beginning anti-
+patients with newly diagnosed tuberculosis [63­65]. Whereas co-           tuberculosis and antiretroviral treatments. These reactions pre-
+trimoxazole is recommended by WHO for all HIV-infected peo-               sumably develop as a consequence of reconstitution of immune
+ple with active tuberculosis disease regardless of the CD4 cell           responsiveness brought about by ART, and are designated as the
+count [66], in high-income countries, co-trimoxazole is primarily         immune reconstitution inflammatory syndrome (IRIS). Tuber-
+used in HIV-infected patients with CD4 counts <200 cells/µL               culosis IRIS has been noted to be more common in participants
+[67]. The use of ART during tuberculosis treatment in persons             with earlier ART initiation and CD4+ cell counts <50 cells/µL
+with HIV infection also reduces mortality rates significantly             [68]. Signs of IRIS may include high fevers, worsening respira-
+and decreases the risk of developing AIDS-related conditions.             tory symptoms, increase in size and inflammation of involved
+We performed a systematic review and meta-analysis to address             lymph nodes, new lymphadenopathy, expanding central ner-
+the concurrent initiation of ART with tuberculosis treatment. On          vous system lesions, worsening of pulmonary parenchymal in-
+the basis of high certainty in the evidence that the benefits out-        filtrations, new or increasing pleural effusions, and development
+weigh the harms, we recommend that patients with tuberculosis             of intra-abdominal or retroperitoneal abscesses [69]. Such find-
+and HIV infection receive ART during antituberculosis treat-              ings are attributed to IRIS only after excluding other possible
+ment. ART should ideally be started within 2 weeks for those pa-          causes, especially tuberculosis treatment failure from drug-resis-
+tients with a CD4 count <50 cells/µL and by 8­12 weeks for those          tant tuberculosis or another opportunistic disease, such as non-
+with a CD4 count 50 cells/µL (see PICO Question 6 and Sup-                Hodgkin lymphoma or infection.
+plementary Appendix B, Evidence Profile 13). An exception is
+HIV-infected patients with tuberculous meningitis, in whom                   Management of IRIS is symptomatic. Based on expert opin-
+ART is not initiated in the first 8 weeks of antituberculosis ther-       ion, for most patients with mild IRIS, tuberculosis and an-
+apy (see full-text version of the guideline). The concurrent ad-          tiretroviral therapies can be continued with the addition of
+ministration of antiretrovirals and rifamycins is a major                 anti-inflammatory agents such as ibuprofen. For patients with
+therapeutic challenge, and additional details on the coadminis-           worsening pleural effusions or abscesses, drainage may be nec-
+tration of these medications, including the use of RFB, are avail-        essary. For more severe cases of IRIS, treatment with corticoste-
+able in the full-text version of this guideline.                          roids is effective. In a placebo-controlled trial of prednisone for
+                                                                          patients with moderate IRIS, prednisone 1.25 mg/kg/day signif-
+                                                                          icantly reduced the need for hospitalization or surgical
+
+                    ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 863
+procedures [70]. For patients who develop IRIS, prednisone               committee prefers using EMB as the fourth drug in the regi-           Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+may be given at a dose of 1.25 mg/kg/day (50­80 mg/day) for              men for tuberculous meningitis.
+2­4 weeks, with tapering over a period of 6­12 weeks or longer.
+                                                                            The role of adjunctive corticosteroid therapy in the treatment
+Tuberculous Pericarditis                                                 of tuberculous meningitis has been reported by numerous stud-
+                                                                         ies [79­91], and our updated systematic review found a mortal-
+Based on small studies that have shown mortality and morbidity           ity benefit from the use of adjuvant corticosteroids. Therefore,
+benefits [71­73], corticosteroids have previously been universally       we recommend adjunctive corticosteroid therapy with dexame-
+recommended in combination with a standard 6-month regimen               thasone or prednisolone tapered over 6­8 weeks for patients
+(Table 2) for treating tuberculosis pericarditis; however, a recent      with tuberculous meningitis (see PICO Question 8 and Supple-
+placebo-controlled randomized clinical trial with 1400 partici-          mentary Appendix B, Evidence Profile 15).
+pants did not find a difference in the combined primary endpoint
+of the trial, which included mortality, cardiac tamponade, or con-       PICO Question 8: Does the use of adjuvant corticosteroids in
+strictive pericarditis, between patients treated with adjunctive cor-    tuberculous meningitis provide mortality and morbidity benefits?
+ticosteroids vs placebo [74]. A subgroup analysis, however, did          Recommendation 8: We recommend initial adjunctive corticosteroid
+suggest a benefit in preventing constrictive pericarditis. Similarly,    therapy with dexamethasone or prednisolone tapered over 6­8
+a systematic review conducted to obtain evidence in support of           weeks for patients with tuberculous meningitis (strong
+this guideline did not find a statistically significant benefit in       recommendation; moderate certainty in the evidence).
+terms of mortality or constrictive pericarditis from the use of cor-
+ticosteroids [71­75]. Therefore, we suggest that adjunctive corti-       Culture-Negative Pulmonary Tuberculosis in Adults
+costeroids should not be used routinely in the treatment of
+patients with pericardial tuberculosis (see PICO Question 7 and          Failure to isolate M. tuberculosis from appropriately collected
+Supplementary Appendix B, Evidence Profile 14). However, se-             sputum specimens in persons who, because of clinical or radio-
+lective use of corticosteroids in patients who are at the highest        graphic findings, are suspected of having pulmonary tuberculo-
+risk for inflammatory complications might be appropriate.                sis does not exclude a diagnosis of active tuberculosis. Some
+Such patients might include those with large pericardial effusions,      causes of failure to isolate organisms include low bacillary pop-
+those with high levels of inflammatory cells or markers in pericar-      ulations, inadequate sputum specimens, temporal variations in
+dial fluid, or those with early signs of constriction [76].              the number of expelled bacilli, overgrowth of cultures with other
+                                                                         microorganisms, and errors in specimen processing [92]. Alter-
+PICO Question 7: Does the use of adjuvant corticosteroids in             native diagnoses must be considered and appropriate diagnostic
+tuberculous pericarditis provide mortality and morbidity benefits?       studies undertaken in patients who appear to have culture-
+Recommendation 7: We suggest initial adjunctive corticosteroid           negative tuberculosis. At a minimum, patients suspected of hav-
+therapy not be routinely used in patients with tuberculous pericarditis  ing pulmonary tuberculosis have 2 sputum specimens (using
+(conditional recommendation; very low certainty in the evidence).        sputum induction with hypertonic saline if necessary) for
+                                                                         AFB smears and cultures for mycobacteria or for rapid molec-
+Tuberculous Meningitis                                                   ular testing for M. tuberculosis as part of the diagnostic evalua-
+                                                                         tion. Other diagnostic procedures, such as bronchoscopy with
+Chemotherapy for tuberculous meningitis is initiated with                bronchoalveolar lavage and biopsy, are considered before mak-
+INH, RIF, PZA, and EMB in an initial 2-month phase.                      ing a presumptive diagnosis of culture-negative tuberculosis.
+After 2 months of 4-drug therapy, for meningitis known or
+presumed to be caused by susceptible strains, PZA and                       Patients who, on the basis of careful clinical and radiographic
+EMB may be discontinued, and INH and RIF continued for                   evaluation, are thought to have pulmonary tuberculosis should
+an additional 7­10 months, although the optimal duration                 have treatment initiated with INH, RIF, PZA, and EMB even
+of chemotherapy is not defined. Based on expert opinion, re-             when the initial sputum smears are negative. If M. tuberculosis
+peated lumbar punctures should be considered to monitor                  is isolated in culture or a rapid molecular test is positive, treat-
+changes in cerebrospinal fluid cell count, glucose, and protein,         ment for active disease is continued for a full, standard 6-month
+especially early in the course of therapy. In children with tu-          course (Table 2), if appropriate based on drug susceptibility test
+berculous meningitis, the American Academy of Pediatrics                 results. Patients who have negative cultures but who still are pre-
+(AAP) lists an initial 4-drug regimen composed of INH,                   sumed to have pulmonary tuberculosis should have thorough
+RIF, PZA, and ethionamide, if possible, or an aminoglycoside,            clinical and radiographic follow-up after 2­3 months of therapy
+followed by 7­10 months of INH and RIF as the preferred reg-             [93]. If there is clinical or radiographic improvement and no
+imen [77]. There are no data from controlled trials to guide             other etiology is identified, treatment should be continued.
+the selection of EMB vs an injectable or ethionamide as the
+fourth drug for tuberculosis meningitis [78]. Most societies                The optimum treatment regimens and duration for smear-
+and experts recommend the use of either an injectable or                 negative, culture-negative tuberculosis have not been convincing-
+EMB. For adults, based on expert opinion, our guideline                  ly established. We performed a systematic review that evaluated
+                                                                         treatment regimens of varying durations in adult patients with
+
+864 · CID 2016:63 (1 October) · Nahid et al
+culture-negative, paucibacillary tuberculosis, and we suggest         Supplementary Data                                                              Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+that a 4-month treatment regimen is adequate for smear-
+negative, culture-negative pulmonary tuberculosis (see PICO           Supplementary materials are available at http://cid.oxfordjournals.org.
+Question 9 and Supplementary Appendix B, Evidence Profile             Consisting of data provided by the author to benefit the reader, the posted
+16). Operationally, treatment is initiated with an intensive          materials are not copyedited and are the sole responsibility of the author, so
+phase of INH, RIF, PZA, and EMB daily and continued even              questions or comments should be addressed to the author.
+when the initial bacteriologic studies are negative. If all cultures
+on adequate samples are negative (defining culture-negative tu-       Notes
+berculosis) and there is clinical or radiographic response after 2
+months of intensive phase therapy, the continuation phase with           Acknowledgments. Our sincerest gratitude for the support provided by
+INH and RIF can be shortened to 2 months. Alternatively, if           Kevin Wilson, MD (Chief, Documents and Patient Education, American
+there is concern about the adequacy of workup or the accuracy         Thoracic Society); Judy Corn (Director, Documents and Patient Education,
+of the microbiologic evaluations, a standard 6-month regimen re-      American Thoracic Society); Jennifer Padberg (Director of Clinical Affairs,
+mains preferred (see Table 2 and "Culture-Negative Pulmonary          Infectious Diseases Society of America [IDSA]); and Phil LoBue, MD (Di-
+Tuberculosis" in the full-text version of the guideline) [14, 15].    rector of the Division of Tuberculosis Elimination, Centers for Disease Con-
+                                                                      trol and Prevention [CDC]) in the development of this guideline.
+PICO Question 9: Does a shorter duration of treatment have similar
+outcomes compared to the standard 6-month treatment duration             Guideline Writing Committee Chairs, Members, And Methodologists.
+among HIV-uninfected patients with paucibacillary tuberculosis (ie,   Guideline Committee Chairs: Payam Nahid, MD, MPH, University of
+smear negative, culture negative)?                                    California, San Francisco (Chair, American Thoracic Society); Susan
+Recommendation 9: We suggest that a 4-month treatment regimen is      E. Dorman, MD, Johns Hopkins University, Maryland (Chair, IDSA); Gio-
+adequate for treatment of HIV-uninfected adult patients with AFB      vanni Battista Migliori, MD, World Health Organization (WHO) Collabo-
+smear- and culture-negative pulmonary tuberculosis (conditional       rating Centre for TB and Lung Diseases, Fondazione S. Maugeri Care and
+recommendation; very low certainty in the evidence).                  Research Institute, Tradate, Italy (Chair, European Respiratory Society); An-
+                                                                      drew Vernon, MD, MHS, Division of Tuberculosis Elimination, National
+CONCLUSIONS                                                           Center for Human Immunodeficiency Virus (HIV)/AIDS, Viral Hepatitis,
+                                                                      Sexually Transmitted Disease (STD), and TB Prevention, CDC, Georgia
+Treatment of tuberculosis is focused on both curing the individ-      (Chair, CDC).
+ual patient and minimizing the transmission of M. tuberculosis
+to other persons, thus, successful treatment of tuberculosis has         Writing Committee Members. Narges Alipanah, MD, University of Cal-
+benefits both for the individual patient and the community in         ifornia, San Francisco; Pennan Barry, MD, MPH, California Department of
+which the patient resides. A 4-drug regimen of INH, RIF, PZA,         Public Health; Jan Brozek, MD, PhD, McMaster University, Ontario, Can-
+and EMB remains the preferred initial treatment for drug-             ada; Adithya Cattamanchi, MD, MAS, University of California,
+susceptible pulmonary tuberculosis. Treatment is initiated            San Francisco; Lelia Chaisson, MSc, University of California,
+promptly even before AFB smear microscopy, molecular tests,           San Francisco; Richard Chaisson, MD, Johns Hopkins University, Mary-
+and mycobacterial culture results are known in patients with          land; Charles L. Daley, MD, National Jewish Health, Colorado; Susan
+high likelihood of having tuberculosis or those seriously ill         E. Dorman, MD, Johns Hopkins University, Maryland; Malgosia Grzemska,
+with a disorder suspicious for tuberculosis. Initiation of treat-     MD, PhD, World Health Organization, Geneva, Switzerland; Julie Higashi,
+ment should not be delayed because of negative AFB smears             MD, San Francisco Department of Public Health, TB Control, California;
+for patients in whom tuberculosis is suspected and who have           Christine S. Ho, MD, Division of Tuberculosis Elimination, National Center
+a life-threatening condition. There are variations of the pre-        for HIV, STD, and TB Prevention, CDC, Georgia; Philip Hopewell, MD,
+ferred regimen that are appropriate in certain public health sit-     University of California, San Francisco; Salmaan A. Keshavjee, MD, PhD,
+uations or in special clinical situations. Additional detailed and    Harvard Medical School, Massachusetts; Christian Lienhardt, MD, PhD,
+extensively referenced information on treatment of tuberculosis       World Health Organization, Geneva, Switzerland; Richard Menzies, MD,
+in special situations ( patients with renal disease or hepatic dis-   McGill University, Quebec, Canada; Cynthia Merrifield, RN, University of
+ease, those of advanced age, etc), the use of case management         California, San Francisco; Giovanni Battista Migliori, MD, WHO Collabo-
+strategies (including DOT), regimen and dosing selection in           rating Centre for TB and Lung Diseases, Fondazione S. Maugeri Care and
+adults and children (daily vs intermittent), the role of TDM,         Research Institute, Tradate, Italy; Payam Nahid, MD, MPH, University of
+treatment of tuberculosis in the presence of HIV infection (du-       California, San Francisco; Masahiro Narita, MD, Seattle and King County
+ration of tuberculosis treatment and timing of initiation of          TB Control and University of Washington; Rick O'Brien, MD, Ethics Advi-
+ART), treatment of tuberculosis in children, treatment of tuber-      sory Group, International Union against TB and Lung Disease, Paris,
+culosis during pregnancy, and treatment of extrapulmonary tu-         France; Charles Peloquin, Pharm. D., University of Florida; Ann Raftery,
+berculosis, as well as key research priorities, are provided in the   RN, PHN, MS, University of California, San Francisco; Jussi Saukkonen,
+full-text version of this practice guideline.                         MD, Boston University, Massachusetts; H. Simon Schaaf, MD, Department
+                                                                      of Paediatrics and Child Health, Stellenbosch University, Cape Town, South
+                                                                      Africa; Giovanni Sotgiu, MD, PhD, University of Sassari, Sassari, Italy; Jef-
+                                                                      frey R. Starke, MD, Baylor College of Medicine, Texas; Andrew Vernon,
+                                                                      MD, MHS, Division of Tuberculosis Elimination, National Center for
+                                                                      HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, CDC, Georgia.
+
+                                                                         GRADE Methodology Group. Narges Alipanah, MD, University of
+                                                                      California, San Francisco; Jan Brozek, MD, PhD, McMaster University,
+                                                                      Ontario, Canada; Adithya Cattamanchi, MD, MAS, University of California,
+                                                                      San Francisco; Lelia Chaisson, MSc, University of California, San Francisco;
+                                                                      Richard Menzies, MD, McGill University, Quebec, Canada; Payam Nahid,
+                                                                      MD, MPH, University of California, San Francisco; Giovanni Sotgiu, MD,
+                                                                      University of Sassari, Sassari, Italy.
+
+                                                                         Financial support. Support for this guideline was provided by the
+                                                                      American Thoracic Society, the IDSA, and the CDC.
+
+                                                                         Potential conflicts of interest. The authors have reported to the Amer-
+                                                                      ican Thoracic Society the following: P. M. B. reported that his spouse
+
+ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 865
+previously owned stocks or options of Merck. R. E. C. reported service as a               17. Centers for Disease Control and Prevention. Managing tuberculosis patients and             Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+consultant and ownership of stocks or options for Merck. C. L. D. received                     improving adherence. Atlanta, GA: CDC, 2014.
+research support from Insmed and served on data and safety monitoring
+boards of Otsuka America Pharmaceutical and Sanofi Pasteur. C. A. P. re-                  18. Munro SA, Lewin SA, Smith HJ, Engel ME, Fretheim A, Volmink J. Patient adher-
+ceived research support from Jacobus Pharmaceuticals. J. S. reported service                   ence to tuberculosis treatment: a systematic review of qualitative research. PLoS
+on a data safety and monitoring board of Otsuka Pharmaceuticals. A. V. re-                     Med 2007; 4:e238.
+ported serving as the chief of a CDC clinical research branch doing clinical
+trials in tuberculosis, which supports and works with the TB Trials Consor-               19. Tahan HA. A ten-step process to develop case management plans. Lippincotts
+tium (TBTC) that collaborates with pharmaceutical companies, which may                         Case Manag 2002; 7:231­42.
+provide support such as drug supplies or laboratory funding for pharmaco-
+kinetic substudies. Specifically, Sanofi Aventis has provided approximately               20. Garner P, Smith H, Munro S, Volmink J. Promoting adherence to tuberculosis
+$2.8 million in unrestricted grants to the CDC Foundation to facilitate or                     treatment. Bull World Health Organ 2007; 85:404­6.
+support TBTC work related to rifapentine, including contract research
+staff, pharmacokinetic substudies, travel to TBTC scientific meetings for in-             21. Clark PM, Karagoz T, Apikoglu-Rabus S, Izzettin FV. Effect of pharmacist-led pa-
+vited speakers, and expenses related to fulfillment of company requests for                    tient education on adherence to tuberculosis treatment. Am J Health Syst Pharm
+data and data formats as part of use of TBTC data in support of regulatory                     2007; 64:497­505.
+filings. TBTC has studies under way involving rifapentine and levofloxacin
+that may have relevance for future regimens for drug-susceptible tuberculo-               22. Liefooghe R, Suetens C, Meulemans H, Moran MB, De Muynck A. A randomised
+sis and for multidrug-resistant tuberculosis. All other authors report no po-                  trial of the impact of counselling on treatment adherence of tuberculosis patients
+tential conflicts. All authors have submitted the ICMJE Form for Disclosure                    in Sialkot, Pakistan. Int J Tuberc Lung Dis 1999; 3:1073­80.
+of Potential Conflicts of Interest. Conflicts that the editors consider relevant
+to the content of the manuscript have been disclosed.                                     23. M'Imunya JM, Kredo T, Volmink J. Patient education and counselling for promot-
+                                                                                               ing adherence to treatment for tuberculosis. Cochrane Database Syst Rev 2012; 5:
+References                                                                                     CD006591.
+
+ 1. Schunemann HJ, Jaeschke R, Cook DJ, et al. An official ATS statement: grading the     24. Flores G. The impact of medical interpreter services on the quality of health care: a
+     quality of evidence and strength of recommendations in ATS guidelines and rec-            systematic review. Med Care Res Rev 2005; 62:255­99.
+     ommendations. Am J Respir Crit Care Med 2006; 174:605­14.
+                                                                                          25. Krishnaswami KV, Somasundaram PR, Tripathy SP, Vaidyanathan B, Radhakrish-
+ 2. Guyatt GH, Oxman AD, Vist GE, et al. GRADE: an emerging consensus                          na S, Fox W. A randomised study of two policies for managing default in out-pa-
+     on rating quality of evidence and strength of recommendations. BMJ 2008;                  tients collecting supplies of drugs for pulmonary tuberculosis in a large city in
+     336:924­6.                                                                                South India. Tubercle 1981; 62:103­12.
+
+ 3. Fox W, Ellard GA, Mitchison DA. Studies on the treatment of tuberculosis under-       26. Kunawararak P, Pongpanich S, Chantawong S, et al. Tuberculosis treatment with
+     taken by the British Medical Research Council tuberculosis units, 1946­1986, with         mobile-phone medication reminders in northern Thailand. Southeast Asian J
+     relevant subsequent publications. Int J Tuberc Lung Dis 1999; 3(10 suppl 2):              Trop Med Public Health 2011; 42:1444­51.
+     S231­79.
+                                                                                          27. Tanke ED, Leirer VO. Automated telephone reminders in tuberculosis care. Med
+ 4. Mitchison D, Davies G. The chemotherapy of tuberculosis: past, present and fu-             Care 1994; 32:380­9.
+     ture. Int J Tuberc Lung Dis 2012; 16:724­32.
+                                                                                          28. Liu Q, Abba K, Alejandria MM, Sinclair D, Balanag VM, Lansang MA.
+ 5. Gillespie SH, Crook AM, McHugh TD, et al. Four-month moxifloxacin-based reg-               Reminder systems to improve patient adherence to tuberculosis clinic appoint-
+     imens for drug-sensitive tuberculosis. N Engl J Med 2014; 371:1577­87.                    ments for diagnosis and treatment. Cochrane Database Syst Rev 2014; 11:
+                                                                                               CD006594.
+ 6. Zierski M, Bek E. Side-effects of drug regimens used in short-course chemotherapy
+     for pulmonary tuberculosis. A controlled clinical study. Tubercle 1980; 61:41­9.     29. Iribarren S, Beck S, Pearce PF, et al. TextTB: a mixed method pilot study evaluating
+                                                                                               acceptance, feasibility, and exploring initial efficacy of a text messaging intervention
+ 7. Phillips PP, Fielding K, Nunn AJ. An evaluation of culture results during treatment        to support TB treatment adherence. Tuberc Res Treat 2013; 2013:349394.
+     for tuberculosis as surrogate endpoints for treatment failure and relapse. PLoS One
+     2013; 8:e63840.                                                                      30. Lutge EE, Wiysonge CS, Knight SE, Volmink J. Material incentives and enablers in
+                                                                                               the management of tuberculosis. Cochrane Database Syst Rev 2012; 1:CD007952.
+ 8. Aber VR, Nunn AJ. Short term chemotherapy of tuberculosis. Factors affecting
+     relapse following short term chemotherapy [in French]. Bull Int Union Tuberc         31. Martins N, Morris P, Kelly PM. Food incentives to improve completion of tuber-
+     1978; 53:276­80.                                                                          culosis treatment: randomised controlled trial in Dili, Timor-Leste. BMJ 2009;
+                                                                                               339:b4248.
+ 9. Benator D, Bhattacharya M, Bozeman L, et al. Rifapentine and isoniazid once a
+     week versus rifampicin and isoniazid twice a week for treatment of drug-suscep-      32. Wright CM, Westerkamp L, Korver S, Dobler CC. Community-based directly ob-
+     tible pulmonary tuberculosis in HIV-negative patients: a randomised clinical trial.       served therapy (DOT) versus clinic DOT for tuberculosis: a systematic review and
+     Lancet 2002; 360:528­34.                                                                  meta-analysis of comparative effectiveness. BMC Infect Dis 2015; 15:210.
+
+10. Menzies D, Elwood K. Treatment of tuberculosis disease. Canadian Tuberculosis         33. Chaulk CP, Kazandjian VA. Directly observed therapy for treatment completion of
+     Standards. 7th ed. Centre for Communicable Diseases and Infection Control, Pub-           pulmonary tuberculosis: consensus statement of the Public Health Tuberculosis
+     lic Health Agency of Canada, 2014. Available at: http://www.respiratoryguidelines.        Guidelines Panel. JAMA 1998; 279:943­8.
+     ca/sites/all/files/Canadian_TB_Standards_7th_Edition_ ENG.pdf.
+                                                                                          34. Liu SY, Li JH, Schluger NW. DOT and timely treatment completion among Asian-
+11. Weiner M, Burman W, Vernon A, et al. Low isoniazid concentrations and out-                 born immigrant tuberculosis patients. Int J Tuberc Lung Dis 2005; 9:884­9.
+     come of tuberculosis treatment with once-weekly isoniazid and rifapentine. Am
+     J Respir Crit Care Med 2003; 167:1341­7.                                             35. Stop TB USA Tuberculosis Elimination Plan Committee. A call for action on
+                                                                                               the tuberculosis elimination plan for the United States. 2010. Available at:
+12. Essential components of a tuberculosis prevention and control program. Recom-              http://www.thoracic.org/advocacy/stop-tb/Eliminate_TB_USA.pdf. Accessed 23
+     mendations of the Advisory Council for the Elimination of Tuberculosis. MMWR              December 2015.
+     Recomm Rep 1995; 44(RR-11):1­16.
+                                                                                          36. Menzies D, Benedetti A, Paydar A, et al. Effect of duration and intermittency of
+13. Taylor Z, Nolan CM, Blumberg HM. Controlling tuberculosis in the United States.            rifampin on tuberculosis treatment outcomes: a systematic review and meta-anal-
+     Recommendations from the American Thoracic Society, CDC, and the                          ysis. PLoS Med 2009; 6:e1000146.
+     Infectious Diseases Society of America. MMWR Recomm Rep 2005; 54
+     (RR-12):1­81.                                                                        37. Menzies D, Benedetti A, Paydar A, et al. Standardized treatment of active tuber-
+                                                                                               culosis in patients with previous treatment and/or with mono-resistance to isoni-
+14. Hopewell PC, Pai M, Maher D, Uplekar M, Raviglione MC. International stan-                 azid: a systematic review and meta-analysis. PLoS Med 2009; 6:e1000150.
+     dards for tuberculosis care. Lancet Infect Dis 2006; 6:710­25.
+                                                                                          38. LoBue PA, Moser KS. Isoniazid- and rifampin-resistant tuberculosis in San Diego
+15. Migliori GB, Zellweger JP, Abubakar I, et al. European Union standards for tuber-          County, California, United States, 1993­2002. Int J Tuberc Lung Dis 2005;
+     culosis care. Eur Respir J 2012; 39:807­19.                                               9:501­6.
+
+16. Hopewell PC, Fair EL, Uplekar M. Updating the International Standards for Tu-         39. Hoopes AJ, Kammerer JS, Harrington TA, Ijaz K, Armstrong LR. Isoniazid-mono-
+     berculosis Care. Entering the era of molecular diagnostics. Ann Am Thorac Soc             resistant tuberculosis in the United States, 1993 to 2003. Arch Intern Med 2008;
+     2014; 11:277­85.                                                                          168:1984­92.
+
+                                                                                          40. Jenkins HE, Zignol M, Cohen T. Quantifying the burden and trends of isoniazid
+                                                                                               resistant tuberculosis, 1994­2009. PLoS One 2011; 6:e22927.
+
+                                                                                          41. Yuen CM, Jenkins HE, Rodriguez CA, Keshavjee S, Becerra MC. Global and re-
+                                                                                               gional burden of isoniazid-resistant tuberculosis. Pediatrics 2015; 136:e50­9.
+
+                                                                                          42. Snider DE Jr. Pyridoxine supplementation during isoniazid therapy. Tubercle
+                                                                                               1980; 61:191­6.
+
+                                                                                          43. Visser ME, Texeira-Swiegelaar C, Maartens G. The short-term effects of anti-
+                                                                                               tuberculosis therapy on plasma pyridoxine levels in patients with pulmonary
+                                                                                               tuberculosis. Int J Tuberc Lung Dis 2004; 8:260­2.
+
+866 · CID 2016:63 (1 October) · Nahid et al
+44. Mitchison DA. Assessment of new sterilizing drugs for treating pulmonary tuber-        68. Luetkemeyer AF, Kendall MA, Nyirenda M, et al. Tuberculosis immune reconsti-            Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+     culosis by culture at 2 months. Am Rev Respir Dis 1993; 147:1062­3.                        tution inflammatory syndrome in A5221 STRIDE: timing, severity, and implica-
+                                                                                                tions for HIV-TB programs. J Acquir Immune Defic Syndr 2014; 65:423­8.
+45. Jo KW, Yoo JW, Hong Y, et al. Risk factors for 1-year relapse of pulmonary tuber-
+     culosis treated with a 6-month daily regimen. Respir Med 2014; 108:654­9.             69. Meintjes G, Lawn SD, Scano F, et al. Tuberculosis-associated immune reconstitu-
+                                                                                                tion inflammatory syndrome: case definitions for use in resource-limited settings.
+46. Horne DJ, Royce SE, Gooze L, et al. Sputum monitoring during tuberculosis treat-            Lancet Infect Dis 2008; 8:516­23.
+     ment for predicting outcome: systematic review and meta-analysis. Lancet Infect
+     Dis 2010; 10:387­94.                                                                  70. Meintjes G, Wilkinson RJ, Morroni C, et al. Randomized placebo-controlled trial
+                                                                                                of prednisone for paradoxical tuberculosis-associated immune reconstitution in-
+47. Chang KC, Leung CC, Yew WW, Ho SC, Tam CM. A nested case-control study on                   flammatory syndrome. AIDS 2010; 24:2381­90.
+     treatment-related risk factors for early relapse of tuberculosis. Am J Respir Crit
+     Care Med 2004; 170:1124­30.                                                           71. Strang JI, Kakaza HH, Gibson DG, Girling DJ, Nunn AJ, Fox W. Controlled trial of
+                                                                                                prednisolone as adjuvant in treatment of tuberculous constrictive pericarditis in
+48. Khan A, Sterling TR, Reves R, Vernon A, Horsburgh CR. Lack of weight gain and               Transkei. Lancet 1987; 2:1418­22.
+     relapse risk in a large tuberculosis treatment trial. Am J Respir Crit Care Med
+     2006; 174:344­8.                                                                      72. Strang JI, Kakaza HH, Gibson DG, et al. Controlled clinical trial of complete open
+                                                                                                surgical drainage and of prednisolone in treatment of tuberculous pericardial ef-
+49. Baker MA, Harries AD, Jeon CY, et al. The impact of diabetes on tuberculosis                fusion in Transkei. Lancet 1988; 2:759­64.
+     treatment outcomes: a systematic review. BMC Med 2011; 9:81.
+                                                                                           73. Hakim JG, Ternouth I, Mushangi E, Siziya S, Robertson V, Malin A. Double blind
+50. Wang JY, Lee MC, Shu CC, et al. Optimal duration of anti-TB treatment in pa-                randomised placebo controlled trial of adjunctive prednisolone in the treatment of
+     tients with diabetes: nine or six months? Chest 2015; 147:520­8.                           effusive tuberculous pericarditis in HIV seropositive patients. Heart 2000;
+                                                                                                84:183­8.
+51. Leung CC, Yew WW, Chan CK, et al. Smoking adversely affects treatment re-
+     sponse, outcome and relapse in tuberculosis. Eur Respir J 2015; 45:738­45.            74. Mayosi BM, Ntsekhe M, Smieja M. Immunotherapy for tuberculous pericarditis.
+                                                                                                N Engl J Med 2014; 371:2534.
+52. Ahmad Khan F, Minion J, Al-Motairi A, Benedetti A, Harries AD, Menzies D. An
+     updated systematic review and meta-analysis on the treatment of active tubercu-       75. Reuter H, Burgess LJ, Louw VJ, Doubell AF. Experience with adjunctive cortico-
+     losis in patients with HIV infection. Clin Infect Dis 2012; 55:1154­63.                    steroids in managing tuberculous pericarditis. Cardiovasc J S Afr 2006; 17:233­8.
+
+53. Centers for Disease Control and Prevention. Core curriculum on tuberculosis:           76. Chaisson RE, Post WS. Immunotherapy for tuberculous pericarditis. N Engl J Med
+     what the clinician should know. 6th ed. Atlanta, GA: CDC, 2013.                            2014; 371:2535.
+
+54. Lin MY, Lin SJ, Chan LC, Lu YC. Impact of food and antacids on the pharmaco-           77. American Academy of Pediatrics. Committee on Infectious Diseases. 2015 Red
+     kinetics of anti-tuberculosis drugs: systematic review and meta-analysis. Int J Tu-        Book: Report of the Committee on Infectious Diseases. 30th ed. Elk Grove Village,
+     berc Lung Dis 2010; 14:806­18.                                                             IL: AAP, 2015.
+
+55. Navarro VJ, Senior JR. Drug-related hepatotoxicity. N Engl J Med 2006;                 78. Thwaites G, Fisher M, Hemingway C, et al. British Infection Society guidelines for
+     354:731­9.                                                                                 the diagnosis and treatment of tuberculosis of the central nervous system in adults
+                                                                                                and children. J Infect 2009; 59:167­87.
+56. Saukkonen JJ, Cohn DL, Jasmer RM, et al. An official ATS statement: hepatotox-
+     icity of antituberculosis therapy. Am J Respir Crit Care Med 2006; 174:935­52.        79. Ashby M, Grant H. Tuberculous meningitis treated with cortisone. Lancet 1955;
+                                                                                                268:65­6.
+57. Sharma SK, Singla R, Sarda P, et al. Safety of 3 different reintroduction regimens of
+     antituberculosis drugs after development of antituberculosis treatment-induced        80. O'Toole RD, Thornton GF, Mukherjee MK, Nath RL. Dexamethasone in tubercu-
+     hepatotoxicity. Clin Infect Dis 2010; 50:833­9.                                            lous meningitis. Relationship of cerebrospinal fluid effects to therapeutic efficacy.
+                                                                                                Ann Intern Med 1969; 70:39­48.
+58. Chang KC, Leung CC. The best approach to reintroducing tuberculosis treatment
+     after hepatotoxicity is still open to debate. Clin Infect Dis 2010; 51:366­7; author  81. Escobar JA, Belsey MA, Duenas A, Medina P. Mortality from tuberculous menin-
+     reply 367­8.                                                                               gitis reduced by steroid therapy. Pediatrics 1975; 56:1050­5.
+
+59. Vernon A, Burman W, Benator D, Khan A, Bozeman L. Acquired rifamycin                   82. Girgis NI, Farid Z, Hanna LS, Yassin MW, Wallace CK. The use of dexamethasone
+     monoresistance in patients with HIV-related tuberculosis treated with once-week-           in preventing ocular complications in tuberculous meningitis. Trans R Soc Trop
+     ly rifapentine and isoniazid. Tuberculosis Trials Consortium. Lancet 1999;                 Med Hyg 1983; 77:658­9.
+     353:1843­7.
+                                                                                           83. Girgis NI, Farid Z, Kilpatrick ME, Sultan Y, Mikhail IA. Dexamethasone
+60. Burman W, Benator D, Vernon A, et al. Acquired rifamycin resistance with twice-             adjunctive treatment for tuberculous meningitis. Pediatr Infect Dis J 1991;
+     weekly treatment of HIV-related tuberculosis. Am J Respir Crit Care Med 2006;              10:179­83.
+     173:350­6.
+                                                                                           84. Kumarvelu S, Prasad K, Khosla A, Behari M, Ahuja GK. Randomized controlled
+61. Weiner M, Benator D, Burman W, et al. Association between acquired rifamycin                trial of dexamethasone in tuberculous meningitis. Tuber Lung Dis 1994; 75:203­7.
+     resistance and the pharmacokinetics of rifabutin and isoniazid among patients
+     with HIV and tuberculosis. Clin Infect Dis 2005; 40:1481­91.                          85. Chotmongkol V, Jitpimolmard S, Thavornpitak Y. Corticosteroid in tuberculous
+                                                                                                meningitis. J Med Assoc Thai 1996; 79:83­90.
+62. Narendran G, Menon PA, Venkatesan P, et al. Acquired rifampicin resistance in
+     thrice-weekly antituberculosis therapy: impact of HIV and antiretroviral therapy.     86. Dooley DP, Carpenter JL, Rademacher S. Adjunctive corticosteroid therapy for
+     Clin Infect Dis 2014; 59:1798­804.                                                         tuberculosis: a critical reappraisal of the literature. Clin Infect Dis 1997; 25:
+                                                                                                872­87.
+63. Nunn AJ, Mwaba P, Chintu C, et al. Role of co-trimoxazole prophylaxis in reduc-
+     ing mortality in HIV infected adults being treated for tuberculosis: randomised       87. Schoeman JF, Van Zyl LE, Laubscher JA, Donald PR. Effect of corticosteroids on
+     clinical trial. BMJ 2008; 337:a257.                                                        intracranial pressure, computed tomographic findings, and clinical outcome in
+                                                                                                young children with tuberculous meningitis. Pediatrics 1997; 99:226­31.
+64. Suthar AB, Granich R, Mermin J, Van Rie A. Effect of cotrimoxazole on mortality
+     in HIV-infected adults on antiretroviral therapy: a systematic review and meta-       88. Thwaites GE, Nguyen DB, Nguyen HD, et al. Dexamethasone for the treatment of
+     analysis. Bull World Health Organ 2012; 90:128C­38C.                                       tuberculous meningitis in adolescents and adults. N Engl J Med 2004;
+                                                                                                351:1741­51.
+65. Wiktor SZ, Sassan-Morokro M, Grant AD, et al. Efficacy of trimethoprim-sulpha-
+     methoxazole prophylaxis to decrease morbidity and mortality in HIV-1-infected         89. Prasad K, Singh MB. Corticosteroids for managing tuberculous meningitis. Co-
+     patients with tuberculosis in Abidjan, Cote d'Ivoire: a randomised controlled trial.       chrane Database Syst Rev 2008; 1:CD002244.
+     Lancet 1999; 353:1469­75.
+                                                                                           90. Malhotra HS, Garg RK, Singh MK, Agarwal A, Verma R. Corticosteroids (dexa-
+66. Guidelines on post-exposure prophylaxis for HIV and the use of co-trimoxazole               methasone versus intravenous methylprednisolone) in patients with tuberculous
+     prophylaxis for HIV-related infections among adults, adolescents and children:             meningitis. Ann Trop Med Parasitol 2009; 103:625­34.
+     recommendations for a public health approach: December 2014 supplement to
+     the 2013 consolidated guidelines on the use of antiretroviral drugs for treating      91. Critchley JA, Young F, Orton L, Garner P. Corticosteroids for prevention of mor-
+     and preventing HIV infection. Geneva, Switzerland: WHO, 2014.                              tality in people with tuberculosis: a systematic review and meta-analysis. Lancet
+                                                                                                Infect Dis 2013; 13:223­37.
+67. Masur H, Brooks JT, Benson CA, et al. Prevention and treatment of opportunistic
+     infections in HIV-infected adults and adolescents: updated Guidelines from the        92. Ho J, Marks GB, Fox GJ. The impact of sputum quality on tuberculosis diagnosis: a
+     Centers for Disease Control and Prevention, National Institutes of Health, and             systematic review. Int J Tuberc Lung Dis 2015; 19:537­44.
+     HIV Medicine Association of the Infectious Diseases Society of America. Clin In-
+     fect Dis 2014; 58:1308­11.                                                            93. Gordin FM, Slutkin G, Schecter G, Goodman PC, Hopewell PC. Presumptive di-
+                                                                                                agnosis and treatment of pulmonary tuberculosis based on radiographic findings.
+                                                                                                Am Rev Respir Dis 1989; 139:1090­3.
+
+ATS/CDC/IDSA Clinical Practice Guidelines for Drug-Susceptible TB · CID 2016:63 (1 October) · 867
+

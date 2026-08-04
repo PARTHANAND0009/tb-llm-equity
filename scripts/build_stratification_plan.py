@@ -22,21 +22,30 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 OUT_JSON = REPO_ROOT / "data" / "vignettes" / "stratification_plan.json"
 OUT_MD = REPO_ROOT / "data" / "vignettes" / "stratification_plan.md"
 
-TOTAL_VIGNETTES = 150
-TOTAL_HOLDOUT = 20
+TOTAL_VIGNETTES = 170
+TOTAL_HOLDOUT = 23
 
 # Presentation-type groups, per the target composition. western_control's own
 # presentation_type split is computed below, proportional to the india_high spread.
+#
+# `contact_management` (added for Task 3, 2026-08) covers vignettes about a
+# person being evaluated for TB *preventive* treatment (household contact,
+# PLHIV, contact of a drug-resistant index case) rather than active disease —
+# it grounds divergence rows DIV-005/009/010/011/012, none of which fit
+# pulmonary/extrapulmonary/comorbid/drug_resistant. Extending the plan with a
+# new presentation_type rather than dropping those rows, per the task.
 GROUPS = [
     {"presentation_type": "pulmonary", "burden_class": "india_high", "count": 40},
     {"presentation_type": "extrapulmonary", "burden_class": "india_high", "count": 35},
     {"presentation_type": "comorbid", "burden_class": "india_high", "count": 25},
     {"presentation_type": "drug_resistant", "burden_class": "india_high", "count": 20},
+    {"presentation_type": "contact_management", "burden_class": "india_high", "count": 15},
 ]
-WESTERN_CONTROL_COUNT = 30
+WESTERN_CONTROL_COUNT = 35
 
 COMORBID_SUBTYPES = ["tb_diabetes", "tb_hiv", "undernutrition"]
 DR_TB_SUBTYPES = ["rifampicin_mono_resistant", "mdr_tb", "pre_xdr_tb"]
+CONTACT_MANAGEMENT_SUBTYPES = ["household_contact_ds_tb", "household_contact_mdr_tb", "plhiv_tpt"]
 
 AGE_BANDS = ["child_0_9", "adolescent_10_17", "adult_18_59", "older_adult_60_plus"]
 SEXES = ["male", "female"]
@@ -99,6 +108,7 @@ def build_cells() -> list[dict]:
     burden_cycle = itertools.cycle(INCIDENTAL_COMORBIDITY_BURDEN)
     comorbid_subtype_cycle = itertools.cycle(COMORBID_SUBTYPES)
     dr_subtype_cycle = itertools.cycle(DR_TB_SUBTYPES)
+    contact_mgmt_subtype_cycle = itertools.cycle(CONTACT_MANAGEMENT_SUBTYPES)
 
     seq = 0
     for group, holdout_n in zip(all_groups, holdout_counts, strict=False):
@@ -119,6 +129,8 @@ def build_cells() -> list[dict]:
                 comorbidity_burden = "significant"
             elif group["presentation_type"] == "drug_resistant":
                 subtype = next(dr_subtype_cycle)
+            elif group["presentation_type"] == "contact_management":
+                subtype = next(contact_mgmt_subtype_cycle)
 
             cells.append(
                 {
@@ -134,10 +146,45 @@ def build_cells() -> list[dict]:
                     "symptom_duration_band": next(duration_cycle),
                     "num_distractors": next(distractor_cycle),
                     "holdout": position_in_group in holdout_positions,
+                    "matched_pair_id": None,
                 }
             )
 
+    assign_matched_pairs(cells)
     return cells
+
+
+def assign_matched_pairs(cells: list[dict]) -> None:
+    """Pair each western_control cell to one india_high cell of the same
+    presentation_type, matched on age_band and num_distractors where possible.
+
+    Sets matched_pair_id on both sides (india_high side stays None if it was
+    never chosen as a match — western_control counts are smaller than
+    india_high counts per group, so most india_high cells are unmatched).
+    """
+    by_type: dict[str, dict[str, list[dict]]] = {}
+    for c in cells:
+        slot = by_type.setdefault(c["presentation_type"], {"india_high": [], "western_control": []})
+        slot[c["burden_class"]].append(c)
+
+    for groups in by_type.values():
+        india_cells = groups["india_high"]
+        used_ids: set[str] = set()
+        for wc in groups["western_control"]:
+            candidates = [c for c in india_cells if c["cell_id"] not in used_ids]
+            if not candidates:
+                continue
+
+            def match_score(c: dict, wc: dict = wc) -> tuple[bool, bool]:
+                return (
+                    c["age_band"] != wc["age_band"],
+                    c["num_distractors"] != wc["num_distractors"],
+                )
+
+            best = min(candidates, key=match_score)
+            used_ids.add(best["cell_id"])
+            wc["matched_pair_id"] = best["cell_id"]
+            best["matched_pair_id"] = wc["cell_id"]
 
 
 def render_markdown(cells: list[dict]) -> str:
@@ -169,10 +216,19 @@ def render_markdown(cells: list[dict]) -> str:
         lines.append(f"| {pt} | {bc} | {n} |")
     lines.append(f"| **total** |  | **{len(cells)}** |")
 
+    matched = sum(
+        1 for c in cells if c["burden_class"] == "western_control" and c["matched_pair_id"]
+    )
+    western_total = sum(1 for c in cells if c["burden_class"] == "western_control")
     lines += [
         "",
         f"Holdout: {sum(1 for c in cells if c['holdout'])} of {len(cells)}, "
         "stratified proportionally across the groups above (largest-remainder allocation).",
+        "",
+        f"Matched pairs: {matched} of {western_total} western_control cells are paired to an "
+        "india_high cell (`matched_pair_id`) of the same presentation_type, matched on age_band "
+        "and num_distractors where possible — see "
+        "`scripts/build_stratification_plan.py::assign_matched_pairs`.",
         "",
         "## Systematic variation axes",
         "",
@@ -193,6 +249,10 @@ def render_markdown(cells: list[dict]) -> str:
         ),
         ("comorbid subtype (`comorbid` presentation_type only)", COMORBID_SUBTYPES),
         ("drug-resistance subtype (`drug_resistant` presentation_type only)", DR_TB_SUBTYPES),
+        (
+            "contact-management subtype (`contact_management` presentation_type only)",
+            CONTACT_MANAGEMENT_SUBTYPES,
+        ),
     ]:
         lines.append(f"- **{key}**: {', '.join(str(v) for v in values)}")
 

@@ -1,0 +1,862 @@
+Recommendations and Reports / Vol. 69 / No. 1  Morbidity and Mortality Weekly Report
+                                                                             February 14, 2020
+
+Guidelines for the Treatment of Latent Tuberculosis
+        Infection: Recommendations from the
+
+   National Tuberculosis Controllers Association
+                       and CDC, 2020
+
+U.S. Department of Health and Human Services
+Centers for Disease Control and Prevention
+                                                                       Recommendations and Reports
+
+CONTENTS
+
+Introduction............................................................................................................. 1
+Methods..................................................................................................................... 2
+Results........................................................................................................................ 4
+Discussion................................................................................................................. 7
+Other Considerations............................................................................................8
+Conclusion................................................................................................................ 8
+References................................................................................................................. 8
+
+The MMWR series of publications is published by the Center for Surveillance, Epidemiology, and Laboratory Services, Centers for Disease Control and Prevention (CDC),
+U.S. Department of Health and Human Services, Atlanta, GA 30329-4027.
+
+Suggested citation: [Author names; first three, then et al., if more than six.] [Title]. MMWR Recomm Rep 2020;69(No. RR-#):[inclusive page numbers].
+
+                          Centers for Disease Control and Prevention
+
+                                         Robert R. Redfield, MD, Director
+                                 Anne Schuchat, MD, Principal Deputy Director
+        Chesley L. Richards, MD, MPH, Deputy Director for Public Health Science and Surveillance
+                            Rebecca Bunnell, PhD, MEd, Director, Office of Science
+          Arlene Greenspan, PhD, MS, Acting Director, Office of Science Quality, Office of Science
+Michael F. Iademarco, MD, MPH, Director, Center for Surveillance, Epidemiology, and Laboratory Services
+
+                              MMWR Editorial and Production Staff (Serials)
+
+Charlotte K. Kent, PhD, MPH, Editor in Chief                                    Martha F. Boyd, Lead Visual Information Specialist
+        Christine G. Casey, MD, Editor
+                                                                                                                                   Maureen A. Leahy, Julia C. Martinroe,
+     Mary Dott, MD, MPH, Online Editor
+      Terisa F. Rutledge, Managing Editor                                                                                          Stephen R. Spriggs, Tong Yang,
+
+David C. Johnson, Lead Technical Writer-Editor                                                                                     Visual Information Specialists
+ Catherine B. Lansdowne, MS, Project Editor
+                                                                                                                                   Quang M. Doan, MBA, Phyllis H. King,
+
+                                                                                                                                   Terraye M. Starr, Moua Yang,
+
+                                                MMWR Editorial Board                                                               Information Technology Specialists
+
+                                                Timothy F. Jones, MD, Chairman
+
+         Ileana Arias, PhD    Jonathan E. Fielding, MD, MPH, MBA                                                                         Stephen C. Redd, MD
+Matthew L. Boulton, MD, MPH            David W. Fleming, MD                                                                        Patrick L. Remington, MD, MPH
+
+        Jay C. Butler, MD     William E. Halperin, MD, DrPH, MPH                                                                          Carlos Roig, MS, MA
+     Virginia A. Caine, MD        Jewel Mullen, MD, MPH, MPA                                                                             William Schaffner, MD
+  Katherine Lyon Daniel, PhD            Jeff Niederdeppe, PhD                                                                          Morgan Bobb Swanson, BS
+                                    Patricia Quinlisk, MD, MPH
+Recommendations and Reports
+
+     Guidelines for the Treatment of Latent Tuberculosis Infection:
+                           Recommendations from the
+
+      National Tuberculosis Controllers Association and CDC, 2020
+
+                     Timothy R. Sterling, MD1; Gibril Njie, MPH2; Dominik Zenner, MD3; David L. Cohn, MD4; Randall Reves, MD4;
+   Amina Ahmed, MD5; Dick Menzies, MD6; C. Robert Horsburgh, Jr., MD7; Charles M. Crane, MD8; Marcos Burgos, MD8,9; Philip LoBue, MD2;
+
+                                                             Carla A. Winston, PhD2; Robert Belknap, MD4,8
+
+1Vanderbilt University Medical Center, Nashville, Tennessee; 2National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, Division of Tuberculosis
+    Elimination, CDC, Atlanta, Georgia; 3Institute for Global Health, University College London, London, England; 4Denver Health and Hospital Authority,
+
+ Denver, Colorado; 5Levine Children's Hospital, Charlotte, North Carolina; 6Montreal Chest Institute and McGill International TB Centre, Montreal, Canada;
+        7Boston University Schools of Public Health and Medicine, Boston, Massachusetts; 8National Tuberculosis Controllers Association, Smyrna, Georgia;
+                        9University of New Mexico Health Science Center and New Mexico Department of Health, Albuquerque, New Mexico
+
+                                                             Summary
+
+      Comprehensive guidelines for treatment of latent tuberculosis infection (LTBI) among persons living in the United States were
+   last published in 2000 (American Thoracic Society. CDC targeted tuberculin testing and treatment of latent tuberculosis
+   infection. Am J Respir Crit Care Med 2000;161:S221­47). Since then, several new regimens have been evaluated in clinical
+   trials. To update previous guidelines, the National Tuberculosis Controllers Association (NTCA) and CDC convened a committee to
+   conduct a systematic literature review and make new recommendations for the most effective and least toxic regimens for treatment
+   of LTBI among persons who live in the United States.
+
+      The systematic literature review included clinical trials of regimens to treat LTBI. Quality of evidence (high, moderate, low, or
+   very low) from clinical trial comparisons was appraised using the Grading of Recommendations Assessment, Development, and
+   Evaluation (GRADE) criteria. In addition, a network meta-analysis evaluated regimens that had not been compared directly
+   in clinical trials. The effectiveness outcome was tuberculosis disease; the toxicity outcome was hepatotoxicity. Strong GRADE
+   recommendations required at least moderate evidence of effectiveness and that the desirable consequences outweighed the undesirable
+   consequences in the majority of patients. Conditional GRADE recommendations were made when determination of whether
+   desirable consequences outweighed undesirable consequences was uncertain (e.g., with low-quality evidence).
+
+      These updated 2020 LTBI treatment guidelines include the NTCA- and CDC-recommended treatment regimens that comprise
+   three preferred rifamycin-based regimens and two alternative monotherapy regimens with daily isoniazid. All recommended treatment
+   regimens are intended for persons infected with Mycobacterium tuberculosis that is presumed to be susceptible to isoniazid or
+   rifampin. These updated guidelines do not apply when evidence is available that the infecting M. tuberculosis strain is resistant
+   to both isoniazid and rifampin; recommendations for treating contacts exposed to multidrug-resistant tuberculosis were published
+   in 2019 (Nahid P, Mase SR Migliori GB, et al. Treatment of drug-resistant tuberculosis. An official ATS/CDC/ERS/IDSA
+   clinical practice guideline. Am J Respir Crit Care Med 2019;200:e93­e142). The three rifamycin-based preferred regimens
+   are 3 months of once-weekly isoniazid plus rifapentine, 4 months of daily rifampin, or 3 months of daily isoniazid plus rifampin.
+   Prescribing providers or pharmacists who are unfamiliar with rifampin and rifapentine might confuse the two drugs. They are
+   not interchangeable, and caution should be taken to ensure that patients receive the correct medication for the intended regimen.
+   Preference for these rifamycin-based regimens was made on the basis of effectiveness, safety, and high treatment completion rates.
+   The two alternative treatment regimens are daily isoniazid for 6 or 9 months; isoniazid monotherapy is efficacious but has higher
+   toxicity risk and lower treatment completion rates than shorter rifamycin-based regimens.
+
+      In summary, short-course (3- to 4-month) rifamycin-based treatment regimens are preferred over longer-course (6­9 month) isoniazid
+   monotherapy for treatment of LTBI. These updated guidelines can be used by clinicians, public health officials, policymakers, health
+   care organizations, and other state and local stakeholders who might need to adapt them to fit individual clinical circumstances.
+
+Corresponding author: Carla A. Winston, National Center for                      Introduction
+HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, Division of
+Tuberculosis Elimination, CDC. Telephone: 404-718-8008; E-mail:    One fourth of the global population (approximately 2 billion
+CWinston@cdc.gov.                                                persons) is estimated to be infected with Mycobacterium
+                                                                 tuberculosis (1), including approximately 13 million in the
+                                                                 United States (2). Most infected persons are asymptomatic
+
+US Department of Health and Human Services/Centers for Disease Control and Prevention  MMWR/February 14, 2020/Vol. 69/No. 1  1
+   Recommendations and Reports
+
+and classified as having latent tuberculosis infection (LTBI).       regimen toxicities was limited to hepatotoxicity because this
+If untreated, approximately 5%­10% of persons with LTBI              was the only toxicity that could be consistently compared
+progress to tuberculosis (TB) disease during their lifetime (3­5).   across studies.
+Progression from untreated LTBI accounts for approximately
+80% of U.S. TB disease cases (6). Treatment of LTBI is effective       A systematic literature review was initiated in December 2017.
+in preventing progression to TB disease (7). The most recent         Electronic databases including MEDLINE, Embase, CINAHL,
+comprehensive guidelines for treatment of LTBI in the United         ClinicalTrials.gov, the Cochrane Central Register of Controlled
+States were published in 2000 (8). In 2003, CDC and the              Trials (CENTRAL), and gray literature were searched for
+American Thoracic Society recommended against use of the             studies evaluating the effectiveness of LTBI treatment regimens.
+2-month regimen of rifampin plus pyrazinamide because of             Search terms included "latent tuberculosis," "latent TB,"
+the risk for severe hepatotoxicity (9). Since then, several new      "LTBI," "Mycobacterium tuberculosis," "tuberculosis infection"
+regimens have been evaluated in clinical trials. To update the       AND "isoniazid," "rifampin," "rifapentine," or "pyrazinamide."
+2000 and 2003 treatment guidelines, the National Tuberculosis        Articles were included if the study design was a randomized
+Controllers Association (NTCA) and CDC convened a                    controlled trial and outcomes included prevention of TB
+committee to conduct a systematic literature review of clinical      disease and drug-related hepatotoxicity. Studies that included
+trials for the treatment of LTBI. Grading of Recommendations         persons with suspected or confirmed TB disease were excluded
+Assessment, Development, and Evaluation (GRADE) criteria             from the review.
+were applied to the evidence of effectiveness, a network meta-
+analysis of selected evidence was performed, and the evidence          The initial search located a high-quality systematic review
+was used to support 2020 LTBI treatment guidelines.                  and meta-analysis published in August 2017 that examined
+                                                                     the effectiveness of LTBI treatment regimens (10). The study
+  These updated 2020 LTBI treatment guidelines apply to              authors were contacted and asked for access to the extracted
+persons with LTBI who live in the United States. In addition,        data. Study characteristics, types of participants, interventions,
+these guidelines apply to persons infected with M. tuberculosis      the outcomes measured, and results were extracted from
+that is presumed to be susceptible to isoniazid or rifampin;         each study. If the data were amenable to pooling, effects
+they do not apply when evidence is available that the infecting      were estimated via meta-analysis. For the meta-analyses, a
+M. tuberculosis strain is resistant to both isoniazid and rifampin.  random effects model was used unless otherwise specified,
+Local and state TB programs in the United States answer              and effect estimates were reported as odds ratios. All statistical
+questions about diagnosing and treating persons with LTBI in         analyses were conducted using the "metafor" package in R,
+their jurisdictions (http://www.tbcontrollers.org).                  versions 3.4.3 (11). The Cochrane risk-of-bias tool was used
+                                                                     to conduct a bias assessment (12). Analyses conducted in 2018
+                  Methods                                            included combined data from the studies in the previous review
+                                                                     and articles identified during an updated search for studies
+  These updated guidelines were developed by NTCA and                published during June 2017­August 2018 (Figure) (13,14).
+CDC. The LTBI treatment guidelines committee members,
+who are the authors of this report, were nominated on the basis        All treatment regimens were analyzed using a Bayesian
+of their expertise in treatment of LTBI. The committee had           network meta-analysis (NMA) approach, which allowed
+expertise in epidemiology, domestic and international TB control,    for indirect comparisons of treatment regimens when direct
+clinical trials, and treatment of LTBI in adults and children. A     comparisons were not available. However, direct, pairwise
+methodologist with expertise in the GRADE approach served as         meta-analysis was the preferred method; the results of the
+a consultant to the guideline development committee.                 network analysis are presented in this report only if no direct
+                                                                     comparisons were available. A full description of the network
+                 Evidence Search                                     analysis method has been previously published (10,15). NMA
+                                                                     allows for indirect comparisons of treatment regimens through
+  The committee determined that the following clinical               inference from a network of evidence. For this analysis,
+question should be addressed in the updated guidelines:              WinBUGS software (version 1.4; Medical Research Council
+"Which regimens for treatment of latent tuberculosis infection       Biostatistics Unit of the University of Cambridge) was used
+have the greatest effectiveness and least toxicity?" The question    to create the Bayesian network with posterior distributions on
+was written in the population, intervention, comparator,             the basis of 20,000 samples after a burn-in period of 10,000
+outcomes (PICO) format, and then the outcomes were rated             iterations (15). Convergence was assessed by inspecting
+as critical, important, or not important. Comparison of              parameter chains and the Gelman­Rubin diagnostic (16).
+                                                                     Summary statistics and 95% credible intervals were obtained
+                                                                     from posterior distributions. Network inconsistency, which
+
+2  MMWR/February 14, 2020/Vol. 69/No. 1  US Department of Health and Human Services/Centers for Disease Control and Prevention
+                  Recommendations and Reports
+
+FIGURE. Systematic literature review search process* for latent tuberculosis infection treatment regimens recommended by the National
+Tuberculosis Controllers Association and CDC, 2020
+
+                  Existing systematic review search                  Updated search
+
+                  Database inception through May 2017                June 2017­August 2018
+                                   (n = 3,092)                                 (n = 20)
+
+Deduplicated          Ordered full text                                 Ordered full text       Duplicates
+ (n = 2,648)              (n = 113)                                           (n = 3)              (n = 0)
+  Excluded                                                                                       Excluded
+ (n = 2,535)      LTBI treatment studies                             LTBI treatment studies       (n = 17)
+                          (n = 61)                                            (n = 2)
+    Not relevant                                                                                     Excluded,
+       (n = 52)                                                                              no outcome of interest
+
+                                                                                                      (n = 1)
+
+                                          Total included studies
+                                                  (n = 63)
+
+Abbreviation: LTBI = latent tuberculosis infection.
+* Existing systematic review search: the results from the 2017 analysis were published, citing all primary studies included in the analysis (Zenner D, Beer N, Harris RJ,
+
+ Lipman MC, Stagg HR, van der Werf MJ. Treatment of latent tuberculosis infection: an updated network meta-analysis. Ann Intern Med 2017;167:248­5). Updated
+ search: analyses included combined data from the studies included in the previous review and articles identified during an updated search for studies published
+ during June 2017­August 2018.
+
+can arise if indirect comparisons conflict with direct pairwise      following considerations: the balance of desirable consequences
+estimates, was assessed by comparison with standard meta-            of the intervention (benefits) and undesirable consequences
+analysis and by using the omnibus test for consistency (17).         (regimen complexity, adverse effects, and cost), the quality of
+                                                                     evidence, patient values and preferences, and feasibility (19).
+  The overall quality of evidence was appraised using the            The desirable and undesirable consequences considered by the
+GRADE approach, and GRADEpro software was used to                    committee included both those related to individuals and to
+develop evidence profiles that summarized the quality of             overall public health.
+evidence for each outcome (high, moderate, low, or very low)
+and the rationale for the quality of evidence appraisal (18). Head-    A strong GRADE recommendation for a regimen was made
+to-head comparisons of regimens evaluated in clinical trials were    if the panel concluded that the desirable consequences of the
+evaluated according to the populations studied: adults, children,    intervention outweighed the undesirable consequences, the
+HIV positive, and HIV negative. References for all of the studies    majority of well-informed patients would choose the regimen,
+included in the analyses are available (Supplementary Tables;        and the evidence was at least moderate quality (18,19). A
+https://stacks.cdc.gov/view/cdc/84235).                              conditional GRADE recommendation was made for a regimen
+                                                                     when uncertainty existed regarding whether the desirable
+    Development of Recommendations                                   consequences outweighed the undesirable consequences
+                                                                     (e.g., low-quality evidence for a critical outcome such that
+  The committee discussed evidence during face-to-face               additional evidence could change key findings, hence the
+meetings and teleconferences. GRADE evidence tables were             recommendation) (18,19). A conditional recommendation
+prioritized according to the regimens, comparisons, and study        indicates that well-informed patients might make different
+populations that were deemed most clinically relevant to the         choices regarding whether to choose the regimen (18,19).
+United States. If discrepancies between GRADE head-to-
+head comparisons and network meta-analysis results were                The panel also prioritized recommended regimens as either
+found, the committee prioritized the GRADE comparisons.              preferred or alternative. Preferred regimens were defined as
+Recommendations were formulated on the basis of the                  having excellent tolerability and efficacy, shorter treatment
+                                                                     duration, and higher completion rates. Alternative regimens
+
+US Department of Health and Human Services/Centers for Disease Control and Prevention  MMWR/February 14, 2020/Vol. 69/No. 1  3
+   Recommendations and Reports
+
+were defined as having excellent efficacy but longer treatment      Preferred Regimens
+duration and lower completion rates. The rationale for
+prioritizing the regimens was that treatment completion rates       Three Months of Weekly Isoniazid Plus Rifapentine
+are higher with shorter regimens (20); if regimens have similar
+efficacy and safety, the shorter regimen is more effective because    A regimen of 3 months of once-weekly isoniazid plus
+completion rates are higher.                                        rifapentine is a preferred regimen that is strongly recommended
+                                                                    for adults and children aged >2 years, including HIV-
+  Draft recommendations were publicly presented during the          positive persons (as drug interactions allow). This regimen,
+U.S. Advisory Council on the Elimination of Tuberculosis            administered through directly observed therapy, had equivalent
+meeting on December 11, 2018, and at the NTCA meeting on            effectiveness and was not more toxic than the standard regimen
+April 23, 2019. The recommendations were positively received        of 9 months of daily isoniazid in adults and children aged
+at both meetings, and no substantive changes were made to           >2 years (53,68,83). Treatment completion rates were higher
+the recommendations thereafter.                                     with the 3-month regimen. In HIV-negative persons in a
+                                                                    noninferiority study, 3 months of isoniazid and rifapentine
+                   Results                                          was equivalent to and was associated with less hepatoxicity
+                                                                    than 9 months of isoniazid, despite more discontinuation
+  The GRADE evidence tables are provided (Table 1)                  because of adverse effects (68). In HIV-positive persons, no
+(Supplementary Tables; https://stacks.cdc.gov/view/                 significant difference was found in a comparison of isoniazid
+cdc/84235). The Supplementary Tables contain all references;        plus rifapentine for all outcomes with either 6 or 9 months
+selected references are included in this report. In total,          of isoniazid (22,53). In a noninferiority study of 3 months
+55 clinical trials evaluated effectiveness (7,13,14,21­74),         of weekly isoniazid plus rifapentine, the completion rate by
+and 31 trials evaluated toxicity (13,14,27,35­38,43­                self-administered therapy was inferior to the rate with direct
+46,49,51­53,55,61­66,68,71,72,75­82). Results of the                observation but noninferior in the prespecified subpopulation
+2018 updated network meta-analysis are provided (Table 2);          from the United States (84).
+63 studies of 16 regimens were evaluated (7,13,14,21­82).
+                                                                      Potential disadvantages of this regimen include cost of
+          Summary of Evidence and                                   medications that are greater than most alternatives, potential
+               Recommendations                                      added costs if provided by directly observed therapy (with
+                                                                    treatment completion being highest with directly observed
+  The recommended treatment regimens include three                  therapy, although self-administered therapy is an approved
+preferred and two alternative treatment regimens (Tables 3          option) (85), the need to take numerous pills simultaneously
+and 4). Rifamycin-based regimens, including 3 months of             (10 pills once weekly compared with two or three pills daily
+once-weekly isoniazid plus rifapentine, 4 months of daily           for other regimens for most adults), and the association with
+rifampin, and 3 months of daily isoniazid plus rifampin             a systemic drug reaction or influenza-like syndrome that can
+are the preferred recommended regimens because of their             include syncope and hypotension. Severe events requiring
+effectiveness, safety, and high treatment completion rates.         hospitalization occurred in 0.1% of persons (68,86). The
+Regimens of 6 or 9 months of daily isoniazid are alternative        systemic drug reaction is self-limited and usually mild; no deaths
+recommended regimens; although efficacious, they have               have been reported. Potential drug interactions and acquired
+higher toxicity risk and lower treatment completion rates,          drug resistance if TB disease is not adequately excluded also are
+which decrease effectiveness. On the basis of the most recent       important considerations for all treatment regimens.
+comprehensive LTBI treatment guidelines in the United States,
+which were published in 2000 (8), 9 months of daily isoniazid       Four Months of Daily Rifampin
+was considered the standard comparator regimen to evaluate
+shorter-course regimens. Data on the effectiveness and toxicity       A regimen of 4 months of daily rifampin is a preferred treatment
+of 9 months of daily isoniazid are provided, as are data on the     that is strongly recommended for HIV-negative adults and
+other recommended regimens. A rifamycin-based regimen               children of all ages. (No evidence is available for effectiveness
+refers to treatment that includes either rifampin or rifapentine.   in HIV-positive persons.) The effectiveness of this regimen was
+                                                                    clinically equivalent to, and less toxic than, the standard regimen of
+                                                                    9 months of daily isoniazid in adults and children (13,14,78,79).
+                                                                    Four months of daily rifampin had noninferior effectiveness in
+                                                                    preventing TB disease compared with 9 months of daily isoniazid,
+                                                                    as well as a lower rate of treatment discontinuation because of
+
+4  MMWR/February 14, 2020/Vol. 69/No. 1  US Department of Health and Human Services/Centers for Disease Control and Prevention
+                                                    Recommendations and Reports
+
+TABLE 1. Summary of GRADE evidence tables, by treatment regimen and study population*
+
+                                           Regimen                                                                                    No. of trials
+
+              Experimental regimen                  Comparator regimen                         Population                         Effectiveness  Toxicity
+
+3 mos isoniazid plus rifapentine given once weekly  9 mos isoniazid                    HIV-positive adults                        1                  1
+
+3 mos isoniazid plus rifapentine given once weekly  9 mos isoniazid                    HIV-negative adults and children           1                  1
+
+3 mos isoniazid plus rifapentine given once weekly  9 mos isoniazid                    HIV-negative children                      1                  1
+
+3 mos isoniazid plus rifapentine given once weekly  6 mos isoniazid                    HIV-positive adults                        1                  1
+
+3 mos isoniazid plus rifampin given daily           9 mos isoniazid                    HIV-negative adults                        1                  1
+
+3 mos isoniazid plus rifampin given daily           6 mos isoniazid                    HIV negative adults and children           3                  2
+
+3 mos isoniazid plus rifampin given daily           6 mos isoniazid                    HIV-positive adults                        4                  4
+
+3 mos isoniazid plus rifampin given daily           Placebo or no treatment            HIV-positive adults                        2                  1
+
+3 mos isoniazid plus rifampin given daily           Placebo or no treatment            HIV-negative adults and children           2                  0
+
+4 mos rifampin given daily                          9 mos isoniazid                    HIV-negative adults                        1                  2
+
+4 mos rifampin given daily                          9 mos isoniazid                    HIV-negative children                      1                  1
+
+4 mos rifampin given daily                          6 mos isoniazid                    HIV-negative children                      1                  0
+
+6 mos isoniazid given daily                         Placebo                            HIV-negative adults and children           4                  2
+
+6 mos isoniazid given daily                         Placebo or no treatment            HIV-positive adults                        5                  3
+
+9 mos isoniazid given daily                         No treatment                       HIV-negative adults and children           2                  0
+
+12 mos isoniazid given daily                        No treatment                       HIV-positive adults                        2                  0
+
+12 mos isoniazid given daily                        Placebo                            HIV-positive adults and children           5                  3
+
+12 mos isoniazid given daily                        Placebo                            HIV-positive children                      3                  1
+
+12 mos isoniazid given daily                        Placebo or no treatment            HIV-negative adults and children           15                 5
+
+3 mos isoniazid plus rifapentine given once weekly  Continuous isoniazid (up to 6 yrs) HIV-positive adults                        1                  1
+
+2 mos rifampin and pyrazinamide given daily or      6 mos isoniazid, 12 mos isoniazid HIV-positive adults and children            4                  2
+
+twice weekly
+
+Abbreviation: GRADE = Grading of Recommendations Assessment, Development, and Evaluation.
+* Study details and information on evidence quality are available (Supplementary Tables; https://stacks.cdc.gov/view/cdc/84235).
+
+TABLE 2. Network meta-analysis of regimens to treat latent tuberculosis infection
+
+                                                                             2017*                                       2018 update (unpublished)
+
+Risk and treatment                                                   Odds ratio (95% credible interval)       Odds ratio (95% credible interval)
+
+Tuberculosis risk compared with no treatment                                       1 (ref )                                              1 (ref )
+No treatment                                                                 0.36 (0.18­0.73)                                      0.36 (0.18­0.72)
+3 mos isoniazid plus rifapentine given once weekly                           0.25 (0.11­0.57)                                      0.25 (0.12­0.50)
+3­4 mos rifampin given daily                                                 0.33 (0.20­0.54)                                      0.33 (0.20­0.53)
+3 mos isoniazid plus rifampin given daily                                    0.40 (0.26­0.60)                                      0.40 (0.26­0.59)
+6 mos isoniazid given daily                                                  0.46 (0.22­0.95)                                      0.47 (0.24­0.90)
+9 mos isoniazid given daily
+                                                                                   1 (ref )                                              1 (ref )
+Hepatotoxicity risk compared with no treatment                               0.52 (0.13­2.15)                                      0.53 (0.13­2.13)
+No treatment                                                                 0.14 (0.02­0.81)                                     0.13 (<0.02­0.72)
+3 mos isoniazid plus rifapentine given once weekly                           0.72 (0.21­2.37)                                      0.73 (0.22­2.38)
+3­4 mos rifampin given daily                                                 1.10 (0.40­3.17)                                      1.11 (0.41­3.15)
+3 mos isoniazid plus rifampin given daily                                    1.70 (0.35­8.05)                                      1.77 (0.35­8.32)
+6 mos isoniazid given daily
+9 mos isoniazid given daily
+
+Abbreviation: ref = referent.
+* The results from the 2017 analysis were published, citing all primary studies included in the analysis (Zenner D, Beer N, Harris RJ, Lipman MC, Stagg HR, van der Werf MJ.
+
+ Treatment of latent tuberculosis infection: an updated network meta-analysis. Ann Intern Med 2017;167:248­55.); the 2018 update includes data subsequently
+ published (Diallo T, Adjobimey M, Ruslami R, et al. Safety and side effects of rifampin versus isoniazid in children. N Engl J Med 2018;379:454­63; Menzies D,
+ Adjobimey M, Ruslami R, et al. Four months of rifampin or nine months of isoniazid for latent tuberculosis in adults. N Engl J Med 2018;379:440­53).
+
+adverse effects, a lower rate of hepatotoxicity, and a higher rate of        weekly rifapentine are fewer than with rifampin and appear
+treatment completion (13,14).                                                to be fewer than with rifabutin; therefore, weekly isoniazid
+                                                                             and rifapentine could be considered when rifampin is
+  The potential disadvantages of the rifamycin-based regimens                contraindicated, although clinical data are limited (88). Drug-
+are the many drug interactions, including warfarin, oral                     drug interactions between rifamycins and antiretroviral therapy
+contraceptives, azole antifungals, and HIV antiretroviral                    are regularly updated by the U.S. Department of Health and
+therapy (87). Rifabutin has fewer or less pronounced drug                    Human Services (https://aidsinfo.nih.gov/guidelines/html/4/
+interactions and may be used in place of rifampin when                       adult-and-adolescent-opportunistic-infection/0). In HIV-
+rifampin is contraindicated due to drug-drug interactions                    positive persons with low CD4+ lymphocyte counts, the risk
+and isoniazid cannot be used (87). Drug interactions with
+
+US Department of Health and Human Services/Centers for Disease Control and Prevention  MMWR/February 14, 2020/Vol. 69/No. 1                                5
+                                                  Recommendations and Reports
+
+TABLE 3. Recommendations for regimens to treat latent tuberculosis infection
+
+Priority rank*                      Regimen                           Recommendation                        Evidence
+                                                                    (strong or conditional)  (high, moderate, low, or very low)
+
+Preferred       3 mos isoniazid plus rifapentine given once weekly   Strong                  Moderate
+Preferred       4 mos rifampin given daily                           Strong                  Moderate (HIV negative)
+Preferred       3 mos isoniazid plus rifampin given daily            Conditional             Very low (HIV negative)
+                                                                     Conditional             Low (HIV positive)
+Alternative     6 mos isoniazid given daily                          Strong§                 Moderate (HIV negative)
+                                                                     Conditional             Moderate (HIV positive)
+Alternative     9 mos isoniazid given daily                          Conditional             Moderate
+
+Abbreviation: HIV = human immunodeficiency virus.
+
+* Preferred: excellent tolerability and efficacy, shorter treatment duration, higher completion rates than longer regimens and therefore higher effectiveness; alternative:
+
+ excellent efficacy but concerns regarding longer treatment duration, lower completion rates, and therefore lower effectiveness.
+ No evidence reported in HIV-positive persons.
+§ Strong recommendation for those persons unable to take a preferred regimen (e.g., due to drug intolerability or drug-drug interactions).
+
+TABLE 4. Dosages for recommended latent tuberculosis infection treatment regimens
+
+Drug                      Duration  Dose and age group                                                          Frequency Total doses
+
+Isoniazid* and rifapentine 3 mos    Adults and children aged 12 yrs                                             Once weekly      12
+
+                                    Isoniazid: 15 mg/kg rounded up to the nearest 50 or 100 mg; 900 mg maximum
+
+                                    Rifapentine:
+
+                                    10­14.0 kg, 300 mg
+
+                                    14.1­25.0 kg, 450 mg
+
+                                    25.1­32.0 kg, 600 mg
+
+                                    32.1­49.9 kg, 750 mg
+
+                                    50.0 kg, 900 mg maximum
+
+                                    Children aged 2­11 yrs
+
+                                    Isoniazid*: 25 mg/kg; 900 mg maximum
+                                    Rifapentine: see above
+
+Rifampin¶                 4 mos     Adults: 10 mg/kg                                                            Daily            120
+
+                                    Children: 15­20 mg/kg**
+
+                                    Maximum dose: 600 mg
+
+Isoniazid* and rifampin¶  3 mos     Adults                                                                      Daily            90
+
+                                    Isoniazid*: 5 mg/kg; 300 mg maximum
+                                    Rifampin¶: 10 mg/kg; 600 mg maximum
+
+                                    Children
+                                    Isoniazid*: 10­20 mg/kg; 300 mg maximum
+                                    Rifampin¶: 15­20 mg/kg; 600 mg maximum
+
+Isoniazid*                6 mos     Adults: 5 mg/kg                                                             Daily            180
+                                    Children: 10­20 mg/kg
+
+                                    Maximum dose: 300 mg                                                        Twice weekly§    52
+
+                                    Adults:15 mg/kg
+                                    Children: 20­40 mg/kg
+
+                                    Maximum dose: 900 mg
+
+                          9 mos     Adults: 5 mg/kg                                                             Daily            270
+                                    Children: 10­20 mg/kg
+
+                                    Maximum dose: 300 mg                                                        Twice weekly§    76
+
+                                    Adults: 15 mg/kg
+                                    Children: 20­40 mg/kg
+
+                                    Maximum dose: 900 mg
+
+ * Isoniazid is formulated as 100-mg and 300-mg tablets.
+  Rifapentine is formulated as 150-mg tablets in blister packs that should be kept sealed until use.
+ § Intermittent regimens must be provided via directly observed therapy (i.e., a health care worker observes the ingestion of medication).
+ ¶ Rifampin (rifampicin) is formulated as 150-mg and 300-mg capsules.
+
+** The American Academy of Pediatrics acknowledges that some experts use rifampin at 20­30 mg/kg for the daily regimen when prescribing for infants and toddlers
+
+   (Source: American Academy of Pediatrics. Tuberculosis. In: Kimberlin DW, Brady MT, Jackson MA, Long SS, eds. Red Book: 2018 Report of the Committee on Infectious
+
+   Diseases. 31st ed. Itasca, IL: American Academy of Pediatrics; 2018:829­53).
+ The American Academy of Pediatrics recommends an isoniazid dosage of 10­15 mg/kg for the daily regimen and 20­30 mg/kg for the twice-weekly regimen.
+
+for asymptomatic or subclinical TB disease increases, possibly       Three Months of Daily Isoniazid Plus Rifampin
+facilitating rifampin resistance if TB disease is inadvertently
+treated with rifampin monotherapy (89).                                A regimen of 3 months of daily isoniazid plus rifampin is
+                                                                     a preferred treatment that is conditionally recommended for
+                                                                     adults and children of all ages and for HIV-positive persons as
+
+6               MMWR/February 14, 2020/Vol. 69/No. 1                US Department of Health and Human Services/Centers for Disease Control and Prevention
+Recommendations and Reports
+
+drug interactions allow. HIV-negative adults and children with       The evidence synthesis included multiple durations of
+a positive tuberculin skin test (TST) who received 3 months        isoniazid therapy in persons with a positive TST (3, 6, and
+of daily isoniazid plus rifampin appeared to have a similar risk   12 months in HIV-negative persons and 6 months in HIV-
+for TB disease, hepatotoxicity, and adverse effects requiring      positive persons) (7,72). Among HIV-negative persons with
+discontinuation of therapy as those who received 6 months          inactive TB (defined as the presence of tuberculin positivity,
+of isoniazid (23,35,44,51,90). Among children aged <15 years       stable fibrotic lung lesions, and negative sputum cultures in
+specifically, a 3-month course of daily isoniazid plus rifampin    persons not previously treated), 6 and 12 months of therapy
+appeared as effective as a 6-month or longer course of isoniazid,  were more effective than 3 months of therapy, demonstrating
+because direct comparisons found no difference in TB disease       the benefit of LTBI treatment with isoniazid in this high-risk
+and no differences in adverse effects requiring discontinuation    subset of patients with LTBI (7). Studies of other regimens
+of therapy or hepatotoxicity (67). In HIV-positive persons, no     have persons with LTBI and fibrotic lesions but in much
+difference was found in the incidence of TB disease among          smaller numbers (14,68). According to the results of the
+those who received 3 months of daily isoniazid plus rifampin       systematic review process, among HIV-positive persons, 6
+compared with those who received 6 months of isoniazid             months of therapy was highly effective (72), and the effect of
+monotherapy, regardless of whether they were TST positive,         other durations was unknown. Also reviewed was an analysis
+TST negative, or anergic (34,46,63,72). Hepatotoxicity was         that included different, fewer trials than included in this
+less frequent among those receiving the shorter course of          report and found that 9 months of daily isoniazid therapy
+therapy, although discontinuation of therapy because of adverse    was perhaps more effective than 6 months and similar to
+effects was more frequent (63).                                    12 months (25,92­94). However, no clinical trial data were
+                                                                   available directly comparing 9 months of isoniazid to placebo,
+  Potential drug interactions with rifampin and acquired drug      6 months of isoniazid, or 12 months of isoniazid.
+resistance if TB disease is not adequately excluded also are
+important considerations (see previous section on 4 months           Among HIV-positive persons living in areas with a high TB
+of daily rifampin). In addition, hepatotoxicity risk might be      incidence, isoniazid is complementary to antiretroviral therapy
+greater with the two drugs given together than with either         in preventing TB disease. Two randomized controlled trials
+drug given alone (91).                                             have demonstrated that isoniazid plus antiretroviral therapy
+                                                                   decreased the incidence of TB disease to a greater extent than
+Alternative Regimens: Six or Nine Months of                        either isoniazid alone or antiretroviral therapy alone (27,61).
+                                                                   Potential disadvantages of the regimen include its long
+Daily Isoniazid                                                    duration, hepatoxicity, and low treatment completion rates
+                                                                   (primarily due to the first two factors).
+  Regimens of 6 or 9 months of daily isoniazid are alternative
+recommended regimens; 6 months daily is strongly                                    Discussion
+recommended for HIV-negative adults and children of all
+ages and conditionally for HIV-positive adults and children          A systematic literature review was performed of clinical trial
+of all ages and 9 months daily is conditionally recommended        data pertaining to effectiveness and toxicity of treatment of
+for adults and children of all ages, both HIV-negative and         LTBI, including studies published since the 2018 World Health
+HIV-positive. Isoniazid reduces the risk for developing TB         Organization LTBI guidelines (95). Evidence quality was
+disease in persons with a positive TST, including HIV-negative     evaluated using the GRADE approach, and a network meta-
+adults and children (7,23,28,43,47,73), HIV-positive adults        analysis was performed, updated to include data from studies
+(27,38,42,46,60,72), and presumably also HIV-positive              published since a previous network meta-analysis (10), to
+children. The drug can cause hepatotoxicity and be associated      compare regimens not evaluated head-to-head in clinical trials.
+with discontinuation because of adverse effects, although these
+effects are more common in adults than children (23,43).             Recommendations were formulated on the basis of the balance
+                                                                   of desirable and undesirable consequences of the intervention,
+  In HIV-positive persons who have a negative TST, anergy,         the quality of evidence, patient values and preferences, and
+or an unknown TST, the benefit of isoniazid is uncertain in        feasibility. These factors also informed the priority rank of
+settings with low TB incidence (38). For these HIV-positive        the regimens as preferred or alternative, with preference for
+persons, the potential exists for a reduction in the incidence     shorter regimens, given their similar efficacy compared with
+of TB disease and an increase in adverse effects with isoniazid    6­9 months of isoniazid but favorable tolerability and higher
+therapy; however, the likelihood of these effects remains          treatment completion rates. This combination of characteristics
+uncertain because of wide confidence intervals resulting from
+too few events.
+
+US Department of Health and Human Services/Centers for Disease Control and Prevention  MMWR/February 14, 2020/Vol. 69/No. 1  7
+   Recommendations and Reports
+
+should result in greater effectiveness of the shorter regimens in    treatment regimens are preferred over the longer-course
+clinical settings. More effective treatment of LTBI will facilitate  (6­9 months) isoniazid monotherapy for treatment of LTBI.
+TB elimination (96). Prescribing providers or pharmacists who        These guidelines can be used by clinicians, public health
+are unfamiliar with rifampin and rifapentine might confuse the       officials, policymakers, health care organizations, and other
+two drugs. They are not interchangeable, and caution should          state and local stakeholders who might need to adapt these
+be taken to ensure that patients receive the correct medication      guidelines for individual clinical circumstances. Local and
+for the intended regimen.                                            state TB programs in the United States answer questions about
+                                                                     diagnosing and treating persons with LTBI in their jurisdictions
+  Although 9 months of isoniazid was a preferred regimen             (http://www.tbcontrollers.org).
+in the guidelines published in 2000, both 6 and 9 months of
+isoniazid were recommended at that time (8). In these current                                  Acknowledgments
+guidelines, application of GRADE criteria resulted in a strong
+recommendation for 6 months of isoniazid as an alternative             Carol Hamilton, Duke University; John Jereb, National Center for
+for those persons unable to take a shorter preferred regimen         HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, Division of
+(e.g., due to drug intolerability or drug-drug interactions),        Tuberculosis Elimination, CDC; Victoria Shelus, The University of North
+particularly in HIV-negative persons. The longer duration            Carolina at Chapel Hill; Ross Harris, Public Health England; 2019­2020
+of isoniazid could increase the risk for hepatotoxicity and          National Tuberculosis Controllers Association board members.
+although increased effectiveness is plausible, the two treatment
+durations have not been directly compared.                                                     Conflicts of Interest
+
+  Two months of rifampin plus pyrazinamide are not                   All authors, who are also the LTBI treatment guidelines committee
+recommended for treatment of LTBI because of the                     members, have completed and submitted the International Com-
+hepatotoxicity risk. However, in persons treated empirically         mittee of Medical Journal Editors form for disclosure of potential
+for TB disease with isoniazid, rifampin, and pyrazinamide for        conflicts of interest. No potential conflicts of interest were disclosed.
+2 months, this regimen will effectively treat LTBI in persons
+subsequently determined to have LTBI rather than TB disease.                                        References
+
+          Other Considerations                                       1. Houben RM, Dodd PJ. The global burden of latent tuberculosis infection:
+                                                                        a re-estimation using mathematical modelling. PLoS Med
+  Following are several considerations for the use of these             2016;13:e1002152. https://doi.org/10.1371/journal.pmed.1002152
+guidelines. First, the committee did not include cost-
+effectiveness in evaluating the evidence; recommendations            2. Miramontes R, Hill AN, Yelk Woodruff RS, et al. Tuberculosis infection
+were based on evaluating effectiveness and toxicity of the              in the United States: prevalence estimates from the National Health and
+regimens. Second, the committee did not evaluate evidence               Nutrition Examination Survey, 2011­2012. PLoS One 2015;10:e0140881.
+regarding how to implement these regimens programmatically              https://doi.org/10.1371/journal.pone.0140881
+(e.g., who to test and treat and management of side effects).
+Third, these guidelines focus on treatment regimens for persons      3. Sutherland I. The ten-year incidence of clinical TB following conversion
+with LTBI living in countries with low TB disease incidence.            in 2,550 individuals aged 14 to 19 years. Tuberculosis Surveillance
+These guidelines do not address other empiric TB prevention             Research Unit Progress Report. The Hague, the Netherlands: The Royal
+strategies (e.g., 1 month of isoniazid plus rifapentine among           Netherlands Tuberculosis Foundation; 1968.
+HIV-positive persons living in settings with a high TB
+incidence regardless of results from the TST or an interferon-       4. Sutherland I. Recent studies in the epidemiology of tuberculosis, based
+gamma release assay) (97). Finally, shorter regimens should not         on the risk of being infected with tubercle bacilli. Adv Tuberc Res
+be used for patients in whom rifamycins are contraindicated,            1976;19:1­63.
+including those taking medications with significant drug-drug
+interactions with rifamycins.                                        5. Kritski AL, Marques MJ, Rabahi MF, et al. Transmission of tuberculosis
+                                                                        to close contacts of patients with multidrug-resistant tuberculosis. Am J
+                 Conclusion                                             Respir Crit Care Med 1996;153:331­5. https://doi.org/10.1164/
+                                                                        ajrccm.153.1.8542139
+  For patients without drug intolerability or drug-drug
+interactions, short-course (3­4 months) rifamycin-based              6. Shea KM, Kammerer JS, Winston CA, Navin TR, Horsburgh CR Jr.
+                                                                        Estimated rate of reactivation of latent tuberculosis infection in the United
+                                                                        States, overall and by population subgroup. Am J Epidemiol
+                                                                        2014;179:216­25. https://doi.org/10.1093/aje/kwt246
+
+                                                                     7. International Union Against Tuberculosis Committee on Prophylaxis.
+                                                                        Efficacy of various durations of isoniazid preventive therapy for
+                                                                        tuberculosis: five years of follow-up in the IUAT trial. Bull World Health
+                                                                        Organ 1982;60:555­64.
+
+                                                                     8. American Thoracic Society. CDC targeted tuberculin testing and
+                                                                        treatment of latent tuberculosis infection. Am J Respir Crit Care Med
+                                                                        2000;161:S221­47.
+
+                                                                     9. CDC; American Thoracic Society. Update: adverse event data and revised
+                                                                        American Thoracic Society/CDC recommendations against the use of
+                                                                        rifampin and pyrazinamide for treatment of latent tuberculosis infection--
+                                                                        United States, 2003. MMWR Morb Mortal Wkly Rep 2003;52:735­9.
+
+8  MMWR/February 14, 2020/Vol. 69/No. 1  US Department of Health and Human Services/Centers for Disease Control and Prevention
+Recommendations and Reports
+
+10. Zenner D, Beer N, Harris RJ, Lipman MC, Stagg HR, van der Werf             27. Danel C, Moh R, Gabillard D, et al; TEMPRANO ANRS 12136 Study
+    MJ. Treatment of latent tuberculosis infection: an updated network             Group. A trial of early antiretrovirals and isoniazid preventive therapy
+    meta-analysis. Ann Intern Med 2017;167:248­55. https://doi.                    in Africa. N Engl J Med 2015;373:808­22. https://doi.org/10.1056/
+    org/10.7326/M17-0609                                                           NEJMoa1507198
+
+11. Viechtbauer W. Conducting meta-analyses in R with the metafor package.     28. Debre R, Perdrizet S, Lotte A, Naveau M, Lert F. Isoniazid
+    J Stat Softw 2010;36:1­48. https://doi.org/10.18637/jss.v036.i03               chemoprophylaxis of latent primary tuberculosis: in five trial centres in
+                                                                                   France from 1959 to 1969. Int J Epidemiol 1973;2:153­60. https://
+12. Higgins JP, Altman DG, Gøtzsche PC, et al; Cochrane Bias Methods               doi.org/10.1093/ije/2.2.153
+    Group; Cochrane Statistical Methods Group. The Cochrane
+    Collaboration's tool for assessing risk of bias in randomised trials. BMJ  29. Del Castillo H, Bautista L, Jacinto C, Lorenzo C, Lapuz S, Legaspi B.
+    2011;343:d5928. https://doi.org/10.1136/bmj.d5928                              Chemoprophylaxis in the Philippines: a controlled pilot study among
+                                                                                   household contacts of tuberculosis cases. Bull Quezon Institute
+13. Diallo T, Adjobimey M, Ruslami R, et al. Safety and side effects of            1965;7:277­90.
+    rifampin versus isoniazid in children. N Engl J Med 2018;379:454­63.
+    https://doi.org/10.1056/NEJMoa1714284                                      30. Egsmose T, Ang'awa JO, Poti SJ. The use of isoniazid among household
+                                                                                   contacts of open cases of pulmonary tuberculosis. Bull World Health
+14. Menzies D, Adjobimey M, Ruslami R, et al. Four months of rifampin              Organ 1965;33:419­33.
+    or nine months of isoniazid for latent tuberculosis in adults. N Engl J
+    Med 2018;379:440­53. https://doi.org/10.1056/NEJMoa1714283                 31. Falk A, Fuchs GF. Prophylaxis with isoniazid in inactive tuberculosis. A
+                                                                                   Veterans Administration cooperative study XII. Chest 1978;73:44­8.
+15. Stagg HR, Zenner D, Harris RJ, Muñoz L, Lipman MC, Abubakar I.                 https://doi.org/10.1378/chest.73.1.44
+    Treatment of latent tuberculosis infection: a network meta-analysis. Ann
+    Intern Med 2014;161:419­28. https://doi.org/10.7326/M14-1019               32. Ferebee SH, Mount FW. Tuberculosis morbidity in a controlled trial of
+                                                                                   the prophylactic use of isoniazid among household contacts. Am Rev
+16. Brooks SP. MCMC convergence diagnosis via multivariate bounds on               Respir Dis 1962;85:490­510.
+    log-concave densities. Ann Stat 1998;26:398­433. https://doi.
+    org/10.1214/aos/1030563991                                                 33. Ferebee SH, Mount FW, Murray FJ, Livesay VT. A controlled trial of
+                                                                                   isoniazid prophylaxis in mental institutions. Am Rev Respir Dis
+17. Dias S, Welton NJ, Sutton AJ, Ades AE. NICE DSU technical support              1963;88:161­75.
+    document 2: a generalised linear modelling framework for pairwise and
+    network meta-analysis of randomised controlled trials. London, England:    34. Fitzgerald DW, Severe P, Joseph P, et al. No effect of isoniazid prophylaxis
+    National Institute for Health and Clinical Excellence; 2011.                   for purified protein derivative-negative HIV-infected adults living
+                                                                                   in a country with endemic tuberculosis: results of a randomized
+18. Guyatt GH, Oxman AD, Vist GE, et al; GRADE Working Group.                      trial. J Acquir Immune Defic Syndr 2001;28:305­7. https://doi.
+    GRADE: an emerging consensus on rating quality of evidence and                 org/10.1097/00042560-200111010-00018
+    strength of recommendations. BMJ 2008;336:924­6. https://doi.
+    org/10.1136/bmj.39489.470347.AD                                            35. Geijo MP, Herranz CR, Vaño D, García AJ, García M, Dimas JF. [Short-
+                                                                                   course isoniazid and rifampin compared with isoniazid for latent
+19. Andrews J, Guyatt G, Oxman AD, et al. GRADE guidelines: 14. Going              tuberculosis infection: a randomized clinical trial]. Enferm Infecc
+    from evidence to recommendations: the significance and presentation            Microbiol Clin 2007;25:300­4.
+    of recommendations. J Clin Epidemiol 2013;66:719­25. https://doi.
+    org/10.1016/j.jclinepi.2012.03.013                                         36. Gordin F, Chaisson RE, Matts JP, et al. Rifampin and pyrazinamide vs
+                                                                                   isoniazid for prevention of tuberculosis in HIV-infected persons: an
+20. Horsburgh CR Jr, Goldberg S, Bethel J, et al; Tuberculosis Epidemiologic       international randomized trial. JAMA 2000;283:1445­50. https://doi.
+    Studies Consortium. Latent TB infection treatment acceptance and               org/10.1001/jama.283.11.1445
+    completion in the United States and Canada. Chest 2010;137:401­9.
+    https://doi.org/10.1378/chest.09-0394                                      37. Gordin FM, Cohn DL, Matts JP, et al; CDC. Hepatotoxicity of rifampin
+                                                                                   and pyrazinamide in the treatment of latent tuberculosis infection in
+21. Agarwal SK, Gupta S, Dash SC, Bhowmik D, Tiwari SC. Prospective                HIV-infected persons: is it different than in HIV-uninfected persons?
+    randomised trial of isoniazid prophylaxis in renal transplant recipient.       Clin Infect Dis 2004;39:561­5. https://doi.org/10.1086/422724
+    Int Urol Nephrol 2004;36:425­31. https://doi.org/10.1007/
+    s11255-004-6251-6                                                          38. Gordin FM, Matts JP, Miller C, et al; Terry Beirn Community Programs
+                                                                                   for Clinical Research on AIDS. A controlled trial of isoniazid in persons
+22. Sterling TR, Scott NA, Miro JM, et al; Tuberculosis Trials Consortium,         with anergy and human immunodeficiency virus infection who are at
+    the AIDS Clinical Trials Group for the PREVENT TB Trial (TBTC                  high risk for tuberculosis. N Engl J Med 1997;337:315­20. https://doi.
+    Study 26ACTG 5259) The investigators of the TB Trials Consortium               org/10.1056/NEJM199707313370505
+    and the AIDS Clinical Trials Group for the PREVENT TB Trial are
+    listed in the Supplement, item 17. Three months of weekly rifapentine      39. Gray DM, Workman LJ, Lombard CJ, et al. Isoniazid preventive therapy
+    and isoniazid for treatment of Mycobacterium tuberculosis infection in         in HIV-infected children on antiretroviral therapy: a pilot study. Int J
+    HIV-coinfected persons. AIDS 2016;30:1607­15. https://doi.                     Tuberc Lung Dis 2014;18:322­7. https://doi.org/10.5588/ijtld.13.0354
+    org/10.1097/QAD.0000000000001098
+                                                                               40. Gupta D, Kumar R, Nath N, Kothari A. Chemoprophylaxis in high risk
+23. Hong Kong Chest Service/Tuberculosis Research Centre, Madras/British           children analysis of 8 years' follow up: preliminary report. Indian J Tuberc
+    Medical Research Council. A double-blind placebo-controlled clinical           1993;40:125­7.
+    trial of three antituberculosis chemoprophylaxis regimens in patients
+    with silicosis in Hong Kong. Am Rev Respir Dis 1992;145:36­41.             41. Halsey NA, Coberly JS, Desormeaux J, et al. Randomised trial of
+    https://doi.org/10.1164/ajrccm/145.1.36                                        isoniazid versus rifampicin and pyrazinamide for prevention of
+                                                                                   tuberculosis in HIV-1 infection. Lancet 1998;351:786­92. https://doi.
+24. Bush OB Jr, Sugimoto M, Fujii Y, Brown FA Jr. Isoniazid prophylaxis            org/10.1016/S0140-6736(97)06532-X
+    in contacts of persons with known tuberculosis. Second report. Am Rev
+    Respir Dis 1965;92:732­40.                                                 42. Hawken MP, Meme HK, Elliott LC, et al. Isoniazid preventive
+                                                                                   therapy for tuberculosis in HIV-1-infected adults: results of a
+25. Comstock GW, Ferebee SH, Hammes LM. A controlled trial of                      randomized controlled trial. AIDS 1997;11:875­82. https://doi.
+    community-wide isoniazid prophylaxis in Alaska. Am Rev Respir Dis              org/10.1097/00002030-199707000-00006
+    1967;95:935­43.
+                                                                               43. Horwitz O, Payne PG, Wilbek E. Epidemiological basis of tuberculosis
+26. Cowie RL. Short course chemoprophylaxis with rifampicin, isoniazid             eradication. 4. The isoniazid trial in Greenland. Bull World Health
+    and pyrazinamide for tuberculosis evaluated in gold miners with chronic        Organ 1966;35:509­26.
+    silicosis: a double-blind placebo controlled trial. Tuber Lung Dis
+    1996;77:239­43. https://doi.org/10.1016/S0962-8479(96)90007-6
+
+US Department of Health and Human Services/Centers for Disease Control and Prevention  MMWR/February 14, 2020/Vol. 69/No. 1  9
+    Recommendations and Reports
+
+44. Jiménez-Fuentes MA, de Souza-Galvao ML, Mila Augé C, Solsona Peiró           61. Rangaka MX, Wilkinson RJ, Boulle A, et al. Isoniazid plus antiretroviral
+    J, Altet-Gómez MN. Rifampicin plus isoniazid for the prevention of               therapy to prevent tuberculosis: a randomised double-blind, placebo-
+    tuberculosis in an immigrant population. Int J Tuberc Lung Dis                   controlled trial. Lancet 2014;384:682­90. https://doi.org/10.1016/
+    2013;17:326­32. https://doi.org/10.5588/ijtld.12.0510                            S0140-6736(14)60162-8
+
+45. John GT, Thomas PP, Thomas M, Jeyaseelan L, Jacob CK, Shastry JC. A          62. Rivero A, López-Cortés L, Castillo R, et al; Grupo Andaluz para el
+    double-blind randomized controlled trial of primary isoniazid prophylaxis        estudio de las Enfermedades Infecciosas (GAEI). [Randomized trial of
+    in dialysis and transplant patients. Transplantation 1994;57:1683­4.             three regimens to prevent tuberculosis in HIV-infected patients with
+    https://doi.org/10.1097/00007890-199457110-00029                                 anergy]. Enferm Infecc Microbiol Clin 2003;21:287­92. https://doi.
+                                                                                     org/10.1016/S0213-005X(03)72942-5
+46. Johnson JL, Okwera A, Hom DL, et al; Uganda­Case Western Reserve
+    University Research Collaboration. Duration of efficacy of treatment of      63. Rivero A, López-Cortés L, Castillo R, et al; Grupo Andaluz para el
+    latent tuberculosis infection in HIV-infected adults. AIDS 2001;15:2137­47.      estudio de las Enfermedades Infecciosas (GAEI). [Randomized clinical
+    https://doi.org/10.1097/00002030-200111090-00009                                 trial investigating three chemoprophylaxis regimens for latent
+                                                                                     tuberculosis infection in HIV-infected patients]. Enferm Infecc
+47. Kim SH, Lee SO, Park IA, et al. Isoniazid treatment to prevent TB in             Microbiol Clin 2007;25:305­10. https://doi.org/10.1157/13102265
+    kidney and pancreas transplant recipients based on an interferon--
+    releasing assay: an exploratory randomized controlled trial. J Antimicrob    64. Samandari T, Agizew TB, Nyirenda S, et al. Tuberculosis incidence after
+    Chemother 2015;70:1567­72. https://doi.org/10.1093/jac/dku562                    36 months' isoniazid prophylaxis in HIV-infected adults in Botswana:
+                                                                                     a posttrial observational analysis. AIDS 2015;29:351­9. https://doi.
+48. Ma L, Lin B, Wang L, Wang D, Li G, Wang G. [Preventive therapy for               org/10.1097/QAD.0000000000000535
+    iatrogenic active tuberculosis in systemic lupus erythematosus patients].
+    Zhonghua Yi Xue Za Zhi 2014;94:3579­82.                                      65. Samandari T, Agizew TB, Nyirenda S, et al. 6-month versus 36-month
+                                                                                     isoniazid preventive treatment for tuberculosis in adults with HIV
+49. Madhi SA, Nachman S, Violari A, et al; P1041 Study Team.                         infection in Botswana: a randomised, double-blind, placebo-controlled
+    Primary isoniazid prophylaxis against tuberculosis in HIV-exposed                trial. Lancet 2011;377:1588­98. https://doi.org/10.1016/
+    children. N Engl J Med 2011;365:21­31. https://doi.org/10.1056/                  S0140-6736(11)60204-3
+    NEJMoa1011214
+                                                                                 66. Schechter M, Zajdenverg R, Falco G, et al. Weekly rifapentine/isoniazid
+50. Magdorf K, Arizzi-Rusche AF, Geiter LJ, O'Brien RJ, Wahn U.                      or daily rifampin/pyrazinamide for latent tuberculosis in household
+    [Compliance and tolerance of new antitubercular short-term                       contacts. Am J Respir Crit Care Med 2006;173:922­6. https://doi.
+    chemopreventive regimens in childhood--a pilot project]. Pneumologie             org/10.1164/rccm.200512-1953OC
+    1994;48:761­4.
+                                                                                 67. Spyridis NP, Spyridis PG, Gelesme A, et al. The effectiveness of a
+51. Martínez Alfaro E, Solera J, Serna E, et al. [Compliance, tolerance and          9-month regimen of isoniazid alone versus 3- and 4-month regimens of
+    effectiveness of a short chemoprophylaxis regimen for the treatment of           isoniazid plus rifampin for treatment of latent tuberculosis infection in
+    tuberculosis]. Med Clin (Barc) 1998;111:401­4.                                   children: results of an 11-year randomized study. Clin Infect Dis
+                                                                                     2007;45:715­22. https://doi.org/10.1086/520983
+52. Martínez Alfaro EM, Cuadra F, Solera J, et al; The GECMEI Group.
+    [Evaluation of 2 tuberculosis chemoprophylaxis regimens in patients          68. Sterling TR, Villarino ME, Borisov AS, et al; TB Trials Consortium
+    infected with human immunodeficiency virus]. Med Clin (Barc)                     PREVENT TB Study Team. Three months of rifapentine and isoniazid
+    2000;115:161­5.                                                                  for latent tuberculosis infection. N Engl J Med 2011;365:2155­66.
+                                                                                     https://doi.org/10.1056/NEJMoa1104875
+53. Martinson NA, Barnes GL, Moulton LH, et al. New regimens to prevent
+    tuberculosis in adults with HIV infection. N Engl J Med 2011;365:11­20.      69. Swaminathan S, Menon PA, Gopalan N, et al. Efficacy of a six-month
+    https://doi.org/10.1056/NEJMoa1005136                                            versus a 36-month regimen for prevention of tuberculosis in HIV-
+                                                                                     infected persons in India: a randomized clinical trial. PLoS One
+54. Matteelli A, Olliaro P, Signorini L, et al. Tolerability of twice-weekly         2012;7:e47400. https://doi.org/10.1371/journal.pone.0047400
+    rifabutin-isoniazid combinations versus daily isoniazid for latent
+    tuberculosis in HIV-infected subjects: a pilot study. Int J Tuberc Lung      70. Veening GJ. Long term isoniazid prophylaxis. Controlled trial on INH
+    Dis 1999;3:1043­6.                                                               prophylaxis after recent tuberculin conversion in young adults. Bull Int
+                                                                                     Union Tuberc 1968;41:169­71.
+55. Mohammed A, Myer L, Ehrlich R, Wood R, Cilliers F, Maartens G.
+    Randomised controlled trial of isoniazid preventive therapy in South         71. Vikrant S, Agarwal SK, Gupta S, et al. Prospective randomized
+    African adults with advanced HIV disease. Int J Tuberc Lung Dis                  control trial of isoniazid chemoprophylaxis during renal
+    2007;11:1114­20.                                                                 replacement therapy. Transpl Infect Dis 2005;7:99­108. https://doi.
+                                                                                     org/10.1111/j.1399-3062.2005.00103.x
+56. Mount FW, Ferebee SH. The effect of isoniazid prophylaxis on
+    tuberculosis morbidity among household contacts of previously known          72. Whalen CC, Johnson JL, Okwera A, et al; Uganda-Case Western Reserve
+    cases of tuberculosis. Am Rev Respir Dis 1962;85:821­7.                          University Research Collaboration. A trial of three regimens to prevent
+                                                                                     tuberculosis in Ugandan adults infected with the human
+57. Naqvi R, Naqvi A, Akhtar S, et al. Use of isoniazid chemoprophylaxis             immunodeficiency virus. N Engl J Med 1997;337:801­8. https://doi.
+    in renal transplant recipients. Nephrol Dial Transplant 2010;25:634­7.           org/10.1056/NEJM199709183371201
+    https://doi.org/10.1093/ndt/gfp489
+                                                                                 73. Xie QB, Wen FQ, Yin G. [Isoniazid prophylaxis for pulmonary
+58. Pape JW, Jean SS, Ho JL, Hafner A, Johnson WD Jr. Effect of                      tuberculosis in Chinese patients with rheumatoid arthritis receiving
+    isoniazid prophylaxis on incidence of active tuberculosis and                    long-term methotrexate therapy]. Sichuan Da Xue Xue Bao Yi Xue Ban
+    progression of HIV infection. Lancet 1993;342:268­72. https://doi.               2009;40:138­40.
+    org/10.1016/0140-6736(93)91817-6
+                                                                                 74. Zar HJ, Cotton MF, Strauss S, et al. Effect of isoniazid prophylaxis on
+59. Portilla J, Jordá P, Esteban J, Sánchez-Payá J, Merino E, Boix V; Grupo          mortality and incidence of tuberculosis in children with HIV:
+    de Estudio Protocolo-INH. [Directly observed treatment of latent                 randomised controlled trial. BMJ 2007;334:136. https://doi.
+    tuberculosis infection: comparative study of two isoniazid regimens].            org/10.1136/bmj.39000.486400.55
+    Enferm Infecc Microbiol Clin 2003;21:293­5. https://doi.org/10.1016/
+    S0213-005X(03)72943-7                                                        75. Bailey WC, Weill H, DeRouen TA, Ziskind MM, Jackson HA. The
+                                                                                     effect of isoniazid on transaminase levels. Ann Intern Med 1974;81:200­2.
+60. Quigley MA, Mwinga A, Hosp M, et al. Long-term effect of                         https://doi.org/10.7326/0003-4819-81-2-200
+    preventive therapy for tuberculosis in a cohort of HIV-
+    infected Zambian adults. AIDS 2001;15:215­22. https://doi.
+    org/10.1097/00002030-200101260-00011
+
+10  MMWR/February 14, 2020/Vol. 69/No. 1  US Department of Health and Human Services/Centers for Disease Control and Prevention
+Recommendations and Reports
+
+76. Chan PC, Yang CH, Chang LY, et al. Latent tuberculosis infection                  86. Sterling TR, Moro RN, Borisov AS, et al; Tuberculosis Trials Consortium.
+    treatment for prison inmates: a randomised controlled trial. Int J Tuberc             Flu-like and other systemic drug reactions among persons receiving
+    Lung Dis 2012;16:633­8. https://doi.org/10.5588/ijtld.11.0504                         weekly rifapentine plus isoniazid or daily isoniazid for treatment of latent
+                                                                                          tuberculosis infection in the PREVENT tuberculosis study. Clin Infect
+77. Leung CC, Law WS, Chang KC, et al. Initial experience on rifampin                     Dis 2015;61:527­35. https://doi.org/10.1093/cid/civ323
+    and pyrazinamide vs isoniazid in the treatment of latent tuberculosis
+    infection among patients with silicosis in Hong Kong. Chest                       87. Baciewicz AM, Chrisman CR, Finch CK, Self TH. Update on rifampin,
+    2003;124:2112­8. https://doi.org/10.1378/chest.124.6.2112                             rifabutin, and rifapentine drug interactions. Curr Med Res Opin
+                                                                                          2013;29:1­12. https://doi.org/10.1185/03007995.2012.747952
+78. Menzies D, Dion MJ, Rabinovitch B, Mannix S, Brassard P, Schwartzman
+    K. Treatment completion and costs of a randomized trial of rifampin               88. Williamson B, Dooley KE, Zhang Y, Back DJ, Owen A. Induction of
+    for 4 months versus isoniazid for 9 months. Am J Respir Crit Care Med                 influx and efflux transporters and cytochrome P450 3A4 in primary
+    2004;170:445­9. https://doi.org/10.1164/rccm.200404-478OC                             human hepatocytes by rifampin, rifabutin, and rifapentine. Antimicrob
+                                                                                          Agents Chemother 2013;57:6366­9. https://doi.org/10.1128/
+79. Menzies D, Long R, Trajman A, et al. Adverse events with 4 months of                  AAC.01124-13
+    rifampin therapy or 9 months of isoniazid therapy for latent tuberculosis
+    infection: a randomized trial. Ann Intern Med 2008;149:689­97.                    89. Mtei L, Matee M, Herfort O, et al. High rates of clinical and subclinical
+    https://doi.org/10.7326/0003-4819-149-10-200811180-00003                              tuberculosis among HIV-infected ambulatory subjects in Tanzania. Clin
+                                                                                          Infect Dis 2005;40:1500­7. https://doi.org/10.1086/429825
+80. Sánchez-Arcilla I, Vílchez JM, García de la Torre M, Fernández X,
+    Noguerado A. [Treatment of latent tuberculosis among homeless                     90. Ena J, Valls V. Short-course therapy with rifampin plus isoniazid,
+    population. Comparison between two therapeutic approaches]. Med                       compared with standard therapy with isoniazid, for latent tuberculosis
+    Clin (Barc) 2004;122:57­9.                                                            infection: a meta-analysis. Clin Infect Dis 2005;40:670­6. https://doi.
+                                                                                          org/10.1086/427802
+81. Tortajada C, Martínez-Lacasa J, Sánchez F, et al; Tuberculosis Prevention
+    Working Group. Is the combination of pyrazinamide plus rifampicin                 91. Steele MA, Burk RF, DesPrez RM. Toxic hepatitis with isoniazid and
+    safe for treating latent tuberculosis infection in persons not infected by            rifampin. A meta-analysis. Chest 1991;99:465­71. https://doi.
+    the human immunodeficiency virus? Int J Tuberc Lung Dis                               org/10.1378/chest.99.2.465
+    2005;9:276­81.
+                                                                                      92. Comstock GW. How much isoniazid is needed for prevention of
+82. White MC, Tulsky JP, Lee JR, et al. Isoniazid vs. rifampin for latent                 tuberculosis among immunocompetent adults? Int J Tuberc Lung Dis
+    tuberculosis infection in jail inmates: toxicity and adherence. J Correct Health      1999;3:847­50.
+    Care 2012;18:131­42. https://doi.org/10.1177/1078345811435973
+                                                                                      93. Ferebee SH. Controlled chemoprophylaxis trials in tuberculosis. A
+83. Villarino ME, Scott NA, Weis SE, et al; International Maternal Pediatric              general review. Bibl Tuberc 1970;26:28­106.
+    and Adolescents AIDS Clinical Trials Group; Tuberculosis Trials
+    Consortium. Treatment for preventing tuberculosis in children and                 94. Comstock GW, Baum C, Snider DE Jr. Isoniazid prophylaxis among
+    adolescents: a randomized clinical trial of a 3-month, 12-dose regimen                Alaskan Eskimos: a final report of the bethel isoniazid studies. Am Rev
+    of a combination of rifapentine and isoniazid. JAMA Pediatr                           Respir Dis 1979;119:827­30.
+    2015;169:247­55. https://doi.org/10.1001/jamapediatrics.2014.3158
+                                                                                      95. World Health Organization. Latent tuberculosis infection: updated and
+84. Belknap R, Holland D, Feng PJ, et al; TB Trials Consortium iAdhere                    consolidated guidelines for programmatic management 2018. https://
+    Study Team. Self-administered versus directly observed once-weekly                    www.who.int/tb/publications/2018/latent-tuberculosis-infection/en
+    isoniazid and rifapentine treatment of latent tuberculosis infection: a
+    randomized trial. Ann Intern Med 2017;167:689­97. https://doi.                    96. Abu-Raddad LJ, Sabatelli L, Achterberg JT, et al. Epidemiological
+    org/10.7326/M17-1150                                                                  benefits of more-effective tuberculosis vaccines, drugs, and diagnostics.
+                                                                                          Proc Natl Acad Sci U S A 2009;106:13980­5. https://doi.org/10.1073/
+85. Borisov AS, Bamrah Morris S, Njie GJ, et al. Update of recommendations                pnas.0901720106
+    for use of once-weekly isoniazid-rifapentine regimen to treat latent
+    Mycobacterium tuberculosis infection. MMWR Morb Mortal Wkly Rep                   97. Swindells S, Ramchandani R, Gupta A, et al; BRIEF TB/A5279 Study
+    2018;67:723­6. https://doi.org/10.15585/mmwr.mm6725a5                                 Team. One month of rifapentine plus isoniazid to prevent HIV-related
+                                                                                          tuberculosis. N Engl J Med 2019;380:1001­11. https://doi.org/10.1056/
+                                                                                          NEJMoa1806808
+
+US Department of Health and Human Services/Centers for Disease Control and Prevention  MMWR/February 14, 2020/Vol. 69/No. 1  11
+The Morbidity and Mortality Weekly Report (MMWR) Series is prepared by the Centers for Disease Control and Prevention (CDC) and is available free
+of charge in electronic format. To receive an electronic copy each week, visit MMWR at https://www.cdc.gov/mmwr/index.html.
+Readers who have difficulty accessing this PDF file may access the HTML file at https://www.cdc.gov/mmwr/volumes/69/rr/rr6901a1.htm?s_cid=rr601a1_w.
+Address all inquiries about the MMWR Series, including material to be considered for publication, to Executive Editor, MMWR Series, Mailstop E-90,
+CDC, 1600 Clifton Rd., N.E., Atlanta, GA 30329-4027 or to mmwrq@cdc.gov.
+All material in the MMWR Series is in the public domain and may be used and reprinted without permission; citation as to source, however, is appreciated.
+MMWR and Morbidity and Mortality Weekly Report are service marks of the U.S. Department of Health and Human Services.
+Use of trade names and commercial sources is for identification only and does not imply endorsement by the U.S. Department of Health and Human Services.
+References to non-CDC sites on the Internet are provided as a service to MMWR readers and do not constitute or imply endorsement of these organizations
+or their programs by CDC or the U.S. Department of Health and Human Services. CDC is not responsible for the content of these sites. URL addresses
+listed in MMWR were current as of the date of publication.
+
+                                                               ISSN: 0149-2195 (Print)
+

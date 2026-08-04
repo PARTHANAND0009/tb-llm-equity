@@ -1,5 +1,6 @@
 .PHONY: setup test lint run-arms score analyze figures manifest-check \
-        stratify generate-vignettes critique-vignettes review-packet clinician-review
+        stratify generate-vignettes generate-vignettes-claude-code critique-vignettes \
+        review-packet clinician-review
 
 setup:
 	uv sync --all-extras
@@ -21,7 +22,13 @@ stratify:
 	uv run python scripts/build_stratification_plan.py
 
 generate-vignettes:
-	uv run python scripts/generate_vignettes.py
+	uv run python scripts/generate_vignettes.py --mode=api
+
+# No API key required -- writes per-cell prompts to data/vignettes/prompts/
+# for a coding agent to answer by hand. Safe to re-run repeatedly; see
+# CLAUDE.md "Generation modes".
+generate-vignettes-claude-code:
+	uv run python scripts/generate_vignettes.py --mode=claude-code
 
 critique-vignettes:
 	uv run python scripts/critique_vignettes.py

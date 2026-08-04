@@ -1,227 +1,420 @@
 {
-  "status": "DRAFT — UNVERIFIED",
-  "warning": "Drafted from model training knowledge, not from primary source documents in data/protocols/ (which is currently empty). Every row needs: (1) a primary-source citation (NTEP training modules / operational guidelines, WHO consolidated guidelines, CDC/ATS/IDSA guidelines) added to data/protocols/, and (2) clinician sign-off. Do not treat as ground truth for vignette generation or scoring until reviewed.",
-  "schema_note": "divergence_type is one of: diagnostic_algorithm, treatment_regimen, drug_resistant_tb, monitoring, social_support, surveillance_notification, infection_control, pediatric, latent_tb, case_finding. confidence is the drafter's rough confidence that a real, current, citable divergence exists as described (high/medium/low). Rows with confidence=low or note=\"possible_convergence\" are deliberately included as candidate discriminator-power tests for the Step 3 critique pass (RULE 6/adversarial critique), not because the divergence is solid.",
+  "status": "REBUILT FROM PRIMARY SOURCES",
+  "rebuilt_on": "2026-08-05",
+  "warning": "Every row below cites a document actually fetched and read in data/protocols/ this session (see data/protocols/FETCH_LOG.md for the full fetch record, including failures). This replaces the prior training-knowledge draft. It is still a first pass: 19 rows, short of the 40-60 target, because several candidate rows were dropped rather than shipped with a weak or inferred citation on one side -- see data/divergence/UNVERIFIED.md for what was dropped and why, and data/divergence/SUMMARY.md for composition stats and the highest-stakes rows. Clinician review is still required before this is treated as ground truth for scoring.",
+  "schema_note": "domain in {diagnosis, differential, treatment, resistance, comorbidity, monitoring, prevention, notification, social_support}. divergence_type in {prevalence_dependent, protocol_specific, resource_dependent, epidemiology_specific}. still_diverges_as_of is the YYYY-MM this row was last confirmed against the cited primary sources.",
   "rows": [
     {
       "id": "DIV-001",
-      "category": "Initial diagnostic test for presumptive pulmonary TB",
-      "divergence_type": "diagnostic_algorithm",
-      "ntep_position": "NTEP mandates molecular testing (CBNAAT/TrueNat) as the first-line diagnostic for all presumptive TB, replacing sputum smear microscopy as the initial test at DMCs and TrueNat sites; smear microscopy is retained mainly at sites without molecular testing access or for follow-up.",
-      "western_position": "CDC/ATS guidance also recommends NAAT for initial evaluation of presumptive pulmonary TB, but AFB smear microscopy and culture are still routinely obtained in parallel rather than molecular-first triage, and access to same-day NAAT varies by facility resourcing.",
-      "clinical_stakes": "A model that assumes smear-first workup (or assumes universal same-day NAAT access) will misjudge time-to-diagnosis and the plausibility of empiric treatment decisions in a resource-variable setting.",
-      "confidence": "medium"
+      "decision_point": "Which test is used first for a patient with presumptive pulmonary TB: molecular (NAAT) testing, or sputum smear microscopy plus culture?",
+      "domain": "diagnosis",
+      "ntep_position": "NTEP directs providers to use rapid molecular diagnostics (CBNAAT/TrueNat) upfront wherever possible as the initial test for presumptive pulmonary TB. In the standard workflow, one specimen is tested by NAAT and, only if TB is detected, a second specimen proceeds to LPA/liquid culture for the resistance-detection cascade -- culture is not a routine parallel requirement for treatment initiation.",
+      "ntep_citation": {
+        "doc": "NTEP Knowledge Base, \"Principles of TB Diagnosis under NTEP\", Central TB Division",
+        "section": "Diagnostic algorithm for presumptive pulmonary TB",
+        "url": "https://ntep.in/node/394/CP-principles-tb-diagnosis-under-ntep"
+      },
+      "western_position": "The standing ATS/CDC/IDSA guideline recommends AFB smear microscopy in ALL patients suspected of pulmonary TB (Recommendation 5, strong recommendation) and both liquid and solid mycobacterial culture on every specimen (Recommendation 6, culture is 'the gold standard'), while a diagnostic NAAT on the initial respiratory specimen is only a conditional recommendation based on low-quality evidence (Recommendation 7) -- markedly weaker than WHO's own 2024 strong/high-certainty recommendation for Xpert as the initial test (see notes).",
+      "western_citation": {
+        "doc": "Lewinsohn DM et al., Official ATS/IDSA/CDC Clinical Practice Guidelines: Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33",
+        "section": "Recommendations 5, 6, 7 (p. e16)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/diagnosis-of-tuberculosis-in-adults-and-children.PDF"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "critical",
+      "is_critical_error_if_wrong": true,
+      "still_diverges_as_of": "2026-08",
+      "notes": "WHO's own Module 3 (3rd ed., 20 Mar 2024) now gives a strong, high-certainty recommendation for Xpert MTB/RIF or Xpert Ultra as the initial diagnostic test 'rather than smear microscopy/culture and phenotypic DST' (data/protocols/WHO_Module3_Diagnosis_2024.pdf, Recommendations 1-5, p.5). So NTEP and WHO now agree; the divergence that persists is between NTEP/WHO and the still-current 2017 ATS/CDC/IDSA guideline, which has a materially weaker, conditional recommendation for NAAT and treats smear+culture as mandatory. A vignette should not accept 'my program follows WHO guidance' as equivalent to 'my program follows US clinical practice guidance' on this point."
     },
     {
       "id": "DIV-002",
-      "category": "First-line regimen dosing schedule",
-      "divergence_type": "treatment_regimen",
-      "ntep_position": "NTEP uses daily fixed-dose combination (FDC) ATT throughout treatment (2HRZE/4HRE-equivalent daily regimen), weight-band dosed, distributed via Nikshay-linked drug-sensitive TB regimens; the older thrice-weekly intermittent regimen was phased out nationally around 2021.",
-      "western_position": "US ATS/CDC/IDSA guidance supports daily therapy during the intensive phase, but permits thrice-weekly or twice-weekly continuation-phase dosing under directly observed therapy (DOT) for selected patients — an option NTEP does not offer as a standard pathway.",
-      "clinical_stakes": "A model recommending intermittent continuation-phase dosing as 'standard' would be correct for a US DOT program but non-compliant with current NTEP regimen policy.",
-      "confidence": "medium"
+      "decision_point": "Is rapid molecular rifampicin-resistance testing (DST) performed for every newly diagnosed TB patient, or only for patients meeting specific risk criteria?",
+      "domain": "diagnosis",
+      "ntep_position": "NTEP defines 'Universal DST' as universal access to rapid drug-resistance testing for at least rifampicin (and further testing for at least fluoroquinolones once RR is detected) for ALL TB patients, preferably before treatment initiation and within a maximum of 15 days of diagnosis -- not contingent on any individual risk factor.",
+      "ntep_citation": {
+        "doc": "Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025)",
+        "section": "Definitions -- 'Universal DST' (p. 19)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2025/03/National-Guidelines-for-Management-of-DR-TB_27-3-2025.pdf"
+      },
+      "western_position": "The 2017 ATS/CDC/IDSA guideline recommends rapid molecular DST for rifampin (with or without isoniazid) only for AFB-smear-positive or NAAT-positive patients who ALSO meet at least one of: prior TB treatment; birth in or >=1 year residence in a country with at least moderate TB incidence (>=20/100,000) or high primary MDR-TB prevalence (>=2%); contact of an MDR-TB patient; or HIV infection -- a risk-targeted approach, not a universal one.",
+      "western_citation": {
+        "doc": "Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33",
+        "section": "Rapid molecular drug-susceptibility testing recommendation (p. e3)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/diagnosis-of-tuberculosis-in-adults-and-children.PDF"
+      },
+      "divergence_type": "epidemiology_specific",
+      "clinical_stakes": "critical",
+      "is_critical_error_if_wrong": true,
+      "still_diverges_as_of": "2026-08",
+      "notes": "A vignette in the western_control arm with none of the four US risk criteria should not have rapid RR-DST as an expected action under the cited 2017 framework, whereas the same case in the india_high arm should."
     },
     {
       "id": "DIV-003",
-      "category": "Extending treatment duration for cavitary/slow-response disease",
-      "divergence_type": "treatment_regimen",
-      "ntep_position": "NTEP's standard 6-month regimen extension decisions are protocol-driven and centered on bacteriological non-conversion at defined follow-up points, with less individualized radiographic-severity-based extension guidance in routine program use.",
-      "western_position": "ATS/CDC/IDSA guidelines explicitly recommend extending the continuation phase to 7 months (9 months total) for patients with cavitary disease on chest imaging AND a positive sputum culture at completion of the intensive phase.",
-      "clinical_stakes": "A model applying the cavitary+culture-positive 9-month extension rule uniformly may overstate individualized regimen tailoring relative to how NTEP program guidance is actually operationalized.",
-      "confidence": "medium"
+      "decision_point": "How is extrapulmonary TB worked up microbiologically when bacteriological confirmation is difficult?",
+      "domain": "diagnosis",
+      "ntep_position": "NTEP offers upfront NAAT (CBNAAT/TrueNat/LPA) on essentially any accessible extrapulmonary specimen type as the first-line microbiological tool, alongside histopathology, ADA/biochemical testing of body fluids, and imaging (CXR/CT/USG/MRI/PET). Where bacteriological confirmation still cannot be achieved despite these efforts, clinical judgment by an experienced clinician, supported by suggestive laboratory tests, may be used to diagnose EPTB.",
+      "ntep_citation": {
+        "doc": "Central TB Division, Training Module on Extrapulmonary TB (24-03-2023)",
+        "section": "Diagnosis of EPTB / Tools for Microbiological Confirmation of EPTB (p. 26)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/7702334778Training_Module_on_Extrapulmonary_TB_-_Book_24032023.pdf"
+      },
+      "western_position": "The 2017 ATS/CDC/IDSA guideline's NAAT recommendation (Recommendation 7) is a general, pulmonary-specimen-focused, conditional/low-quality-evidence recommendation; the guideline does not give extrapulmonary specimens the same upfront-NAAT-first framing NTEP uses, and continues to anchor extrapulmonary workup around culture and histology as the reference standard.",
+      "western_citation": {
+        "doc": "Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33",
+        "section": "Recommendation 7 (p. e16)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/diagnosis-of-tuberculosis-in-adults-and-children.PDF"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "Weaker citation than most rows in this table: the 2017 guideline is not extrapulmonary-specific, so the western_position here is inferred from its general NAAT stance rather than a dedicated EPTB recommendation. Treat this row as lower-confidence than DIV-001/002 pending a fetch of an EPTB-specific western guideline."
     },
     {
       "id": "DIV-004",
-      "category": "Universal drug-susceptibility testing at diagnosis",
-      "divergence_type": "drug_resistant_tb",
-      "ntep_position": "NTEP mandates universal drug-susceptibility testing (UDST) — at minimum rifampicin resistance via molecular testing — for every diagnosed TB patient at the point of diagnosis, reflecting India's high MDR/RR-TB burden.",
-      "western_position": "CDC guidance recommends drug-susceptibility testing for all culture-confirmed cases but the diagnostic pathway is less uniformly molecular-first, and RR result turnaround relies more on centralized/reference laboratory culture-based DST given lower background MDR prevalence.",
-      "clinical_stakes": "A model that treats a negative rapid molecular RR result as fully ruling out resistance, without accounting for NTEP's confirmatory culture-DST algorithm, could recommend an inadequate workup for a suspected relapse or retreatment case.",
-      "confidence": "medium"
+      "decision_point": "Is mycobacterial culture a mandatory parallel test for every patient with suspected TB, or reserved for the resistance-detection cascade after a positive molecular test?",
+      "domain": "diagnosis",
+      "ntep_position": "In NTEP's standard workflow, culture is reached only as the second step of a cascade after an initial NAAT-positive result (for LPA/liquid culture resistance testing) -- it is not a universally mandated parallel test performed on every presumptive-TB patient regardless of the NAAT result.",
+      "ntep_citation": {
+        "doc": "NTEP Knowledge Base, \"Principles of TB Diagnosis under NTEP\", Central TB Division",
+        "section": "Upfront NAAT cascade description",
+        "url": "https://ntep.in/node/394/CP-principles-tb-diagnosis-under-ntep"
+      },
+      "western_position": "The 2017 ATS/CDC/IDSA guideline's Recommendation 6 calls for both liquid and solid mycobacterial culture 'for every specimen obtained from an individual with suspected TB disease,' describing culture as the gold-standard microbiologic test regardless of NAAT or smear result.",
+      "western_citation": {
+        "doc": "Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33",
+        "section": "Recommendation 6 (p. e16)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/diagnosis-of-tuberculosis-in-adults-and-children.PDF"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08"
     },
     {
       "id": "DIV-005",
-      "category": "MDR/RR-TB regimen composition",
-      "divergence_type": "drug_resistant_tb",
-      "ntep_position": "Current NTEP guidance uses an all-oral, bedaquiline-containing shorter MDR-TB regimen (~9–11 months) as the preferred pathway for eligible RR/MDR-TB patients, per updated programmatic guidelines aligned with WHO's 2022 recommendations.",
-      "western_position": "US practice for MDR-TB is individualized regimen design based on full susceptibility results, typically longer (18–20 months) unless the patient specifically qualifies for a shorter all-oral regimen; individualization is the default rather than a standardized shorter-regimen pathway.",
-      "clinical_stakes": "This is a candidate 'possible convergence' item — both systems have moved toward all-oral, bedaquiline-based regimens, so a vignette built only on 'oral vs. injectable' may no longer discriminate. Probe eligibility criteria and regimen duration specifics instead, not the oral/injectable axis alone.",
-      "confidence": "low",
-      "note": "possible_convergence"
+      "decision_point": "For diagnosing TB infection (TBI/LTBI), is IGRA preferred over TST when the person has a history of BCG vaccination?",
+      "domain": "diagnosis",
+      "ntep_position": "NTEP treats TST and IGRA as interchangeable options for TBI testing, to be offered 'wherever available' -- TPT eligibility and initiation are not gated on which test is used, or on using either test at all, for the highest-priority groups (see DIV-010/011).",
+      "ntep_citation": {
+        "doc": "Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India (2021)",
+        "section": "3.3.1 Tuberculin Skin Test / 3.3.2 Interferon-Gamma Release Assay (p. 10)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/Guidelines-for-Programmatic-Management-of-Tuberculosis-Preventive-Treatment-in-India.pdf"
+      },
+      "western_position": "The 2017 ATS/CDC/IDSA guideline's Recommendation 1a explicitly recommends IGRA rather than TST for individuals with a history of BCG vaccination (strong recommendation, moderate-quality evidence), precisely because BCG vaccination confounds TST interpretation.",
+      "western_citation": {
+        "doc": "Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33",
+        "section": "Recommendation 1a (p. e11)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/diagnosis-of-tuberculosis-in-adults-and-children.PDF"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08"
     },
     {
       "id": "DIV-006",
-      "category": "Mandatory case notification",
-      "divergence_type": "surveillance_notification",
-      "ntep_position": "TB notification is legally mandatory in India for every diagnosing provider, public or private, via the Nikshay portal, with penalties for non-notification (since 2012); private-sector notification is a major NTEP program focus given ~50%+ of care-seeking in the private sector.",
-      "western_position": "TB is a nationally notifiable condition in the US and reportable to state/local health departments, with well-established public health infrastructure, but there is no single centralized case-based platform equivalent to Nikshay and private-sector notification friction is a smaller share of the overall case burden.",
-      "clinical_stakes": "A vignette probing 'who is responsible for notifying this case and how' should not accept a generic 'report to health authorities' answer as fully correct for the NTEP arm — it must name the Nikshay obligation and private-provider duty.",
-      "confidence": "high"
+      "decision_point": "Is the first-line drug-sensitive TB regimen given daily throughout treatment, or can the continuation phase use intermittent (thrice- or twice-weekly) dosing?",
+      "domain": "treatment",
+      "ntep_position": "NTEP's stated principle (except for confirmed DR-TB) is to administer daily fixed-dose combination first-line ATT in appropriate weight bands under direct observation, for both the intensive phase (2HRZE) and continuation phase (4HRE) -- there is no programmatic intermittent-dosing option for drug-sensitive TB.",
+      "ntep_citation": {
+        "doc": "ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022)",
+        "section": "Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE",
+        "url": "https://www.icmr.gov.in/icmrobject/uploads/STWs/1725964686_2_ntep_18032022.pdf"
+      },
+      "western_position": "The 2016 ATS/CDC/IDSA guideline strongly recommends daily intensive-phase dosing (Recommendation 3a), but conditionally permits thrice-weekly (Recommendation 3b) or, when DOT is difficult, twice-weekly (Recommendation 3c) dosing in the continuation phase for patients who are HIV-negative and at low relapse risk (noncavitary and/or smear-negative disease).",
+      "western_citation": {
+        "doc": "Nahid P et al., Official ATS/CDC/IDSA Clinical Practice Guidelines: Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195",
+        "section": "Recommendations 3a, 3b, 3c (p. 6)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/treatment-of-drug-susceptible-tuberculosis.pdf"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": true,
+      "still_diverges_as_of": "2026-08",
+      "notes": "A vignette should not accept an intermittent continuation-phase regimen as 'standard NTEP practice' -- it is a western_control-arm option only, and only for low-relapse-risk, HIV-negative patients even there."
     },
     {
       "id": "DIV-007",
-      "category": "Nutritional support as part of standard TB care",
-      "divergence_type": "social_support",
-      "ntep_position": "NTEP provides a monthly direct benefit transfer (Nikshay Poshan Yojana, ~₹500/month) to all notified TB patients for nutritional support, plus structured nutritional assessment, reflecting high rates of undernutrition-associated TB risk in India.",
-      "western_position": "No equivalent TB-specific nutritional cash-transfer program exists in US TB care; nutritional needs are addressed via general social-service referral only if clinically indicated, not as a routine program component.",
-      "clinical_stakes": "A model failing to mention nutritional assessment/DBT eligibility for an NTEP-arm undernourished patient is missing a standard-of-care element specific to that system.",
-      "confidence": "high"
+      "decision_point": "Is anti-TB drug dosing determined by a fixed weight-band tablet count, or calculated individually in mg/kg?",
+      "domain": "treatment",
+      "ntep_position": "NTEP dispenses first-line ATT as fixed-dose-combination tablets in discrete weight-band categories (e.g., 25-34 kg, 35-49 kg, 50-64 kg, 65-75 kg, >75 kg for adults; six paediatric weight bands), with a defined FDC tablet count per band rather than a per-kilogram calculation performed at the point of care.",
+      "ntep_citation": {
+        "doc": "ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022)",
+        "section": "Number of tablets (FDCs) by weight category, adult and paediatric tables",
+        "url": "https://www.icmr.gov.in/icmrobject/uploads/STWs/1725964686_2_ntep_18032022.pdf"
+      },
+      "western_position": "The 2016 ATS/CDC/IDSA guideline's drug dosing table specifies doses in mg/kg ranges (e.g., isoniazid 5 mg/kg daily, rifampin 10 mg/kg daily, with defined mg/kg ranges) calculated per patient rather than assigned via fixed tablet-count bands.",
+      "western_citation": {
+        "doc": "Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195",
+        "section": "Drug dosing table, first-line drugs (p. 5)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/treatment-of-drug-susceptible-tuberculosis.pdf"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08"
     },
     {
       "id": "DIV-008",
-      "category": "Bidirectional TB-diabetes screening",
-      "divergence_type": "diagnostic_algorithm",
-      "ntep_position": "NTEP mandates bidirectional screening: blood glucose testing for all diagnosed TB patients, and TB symptom screening for all diagnosed diabetics, given India's high co-burden of TB and type 2 diabetes.",
-      "western_position": "Routine diabetes screening is not a standard, protocolized part of the US TB diagnostic workup; glucose testing is ordered based on individual clinical judgment/risk factors rather than a mandated bidirectional program linkage.",
-      "clinical_stakes": "A vignette with an undiagnosed diabetic TB patient should expect glucose screening as a critical/expected action in the NTEP arm specifically.",
-      "confidence": "high"
+      "decision_point": "When bacteriological non-conversion or slow clinical response occurs, is regimen extension governed by a specific evidence-based rule, or by individualized physician discretion?",
+      "domain": "treatment",
+      "ntep_position": "NTEP's standard treatment workflow leaves extension of the continuation phase to the treating physician's case-by-case judgment for disseminated TB or slow response, without a codified rule tied to specific radiographic or bacteriological criteria (distinct fixed extensions apply only to specific extrapulmonary sites such as CNS/skeletal TB).",
+      "ntep_citation": {
+        "doc": "ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022)",
+        "section": "Continuation phase notes: 'In disseminated TB or slow response treating physician may extend on case to case basis'",
+        "url": "https://www.icmr.gov.in/icmrobject/uploads/STWs/1725964686_2_ntep_18032022.pdf"
+      },
+      "western_position": "The 2016 ATS/CDC/IDSA guideline gives a specific expert-opinion rule: patients with cavitation on the initial chest radiograph AND a positive culture at completion of 2 months of therapy should have the continuation phase extended by an additional 3 months (7-month continuation phase, 9 months total), based on relapse rates of ~20% vs 2% for patients with neither risk factor.",
+      "western_citation": {
+        "doc": "Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195",
+        "section": "Cavitation + 2-month culture-positive extension rule (p. 7)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/treatment-of-drug-susceptible-tuberculosis.pdf"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08"
     },
     {
       "id": "DIV-009",
-      "category": "Household contact management in children",
-      "divergence_type": "pediatric",
-      "ntep_position": "NTEP recommends INH preventive therapy for child household contacts under 6 years after ruling out active TB, as a routine program activity tied to household contact tracing.",
-      "western_position": "CDC guidance supports LTBI testing and treatment for household contacts of all ages based on risk stratification (not age-limited to under-6), with IGRA-preferred testing rather than a fixed pediatric age cutoff driving empiric preventive therapy.",
-      "clinical_stakes": "A vignette asking about a 4-year-old household contact should expect empiric/algorithmic preventive therapy reasoning in the NTEP arm vs. test-then-treat reasoning in the Western arm.",
-      "confidence": "medium"
+      "decision_point": "For a household/close contact of a patient with fluoroquinolone-susceptible MDR/RR-TB, is a fixed standardized preventive regimen given, or is treatment itself only conditionally recommended with an individualized regimen if given?",
+      "domain": "resistance",
+      "ntep_position": "NTEP's 2024 TPT addendum specifies a fixed, standardized preventive regimen for household contacts of drug-resistant index cases: 6 months of daily levofloxacin (6Lfx) for contacts of fluoroquinolone-susceptible MDR-TB, or 4 months of daily rifampicin (4R) for contacts of isoniazid mono/poly-resistant TB -- offered as a routine part of programmatic TPT.",
+      "ntep_citation": {
+        "doc": "Central TB Division, Guidance document on 1HP TPT regimen (addendum to the 2021 PMTPT guidelines, Dec 2024)",
+        "section": "TPT target group, strategy, and treatment options table (p. 1-2)",
+        "url": "https://tbcindia.nikshay.in/wp-content/uploads/2024/12/Technical-and-Operational-Guidance-on-1HP-TPT-regimen_addendum-to-National-PMTPT-guidelines.pdf"
+      },
+      "western_position": "The 2019 ATS/CDC/ERS/IDSA guideline only conditionally recommends offering LTBI treatment to MDR-TB contacts at all, versus observation alone ('conditional recommendation, very low certainty in the evidence') -- and if treatment is given, the regimen and duration (6-12 months of a later-generation fluoroquinolone alone or with a second drug) are individualized to the source case's susceptibility pattern rather than fixed.",
+      "western_citation": {
+        "doc": "Nahid P et al., Treatment of Drug-Resistant Tuberculosis: An Official ATS/CDC/ERS/IDSA Clinical Practice Guideline, Am J Respir Crit Care Med 2019;200(10):e93-e142",
+        "section": "MDR-TB contact management recommendation",
+        "url": "https://academic.oup.com/ajrccm/article/200/10/e93/8497038"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "critical",
+      "is_critical_error_if_wrong": true,
+      "still_diverges_as_of": "2026-08",
+      "notes": "Fetched via WebFetch against the journal page rather than a locally archived PDF (thoracic.org's direct PDF link 404'd/redirected -- see FETCH_LOG.md). A vignette should not treat 'observation only, no preventive treatment' as wrong in the western_control arm the way it would be in the india_high arm."
     },
     {
       "id": "DIV-010",
-      "category": "Private-sector engagement and incentive structures",
-      "divergence_type": "surveillance_notification",
-      "ntep_position": "NTEP operates structured private-provider engagement (Patient Provider Support Agency network, free drug provision to private patients, notification incentives) because a large share of Indian TB patients first seek care in the private sector.",
-      "western_position": "US TB care is predominantly delivered and coordinated through public health department TB programs; there is no comparable large-scale structured private-sector incentive/engagement scheme because private-sector-first TB care-seeking is not the dominant pattern.",
-      "clinical_stakes": "A vignette where the patient first sought care from an unqualified/informal private provider is a distinctly NTEP-context scenario probing whether the model recognizes PPSA-style linkage-to-care obligations.",
-      "confidence": "medium"
+      "decision_point": "Are all household contacts of a pulmonary TB patient offered TB preventive treatment (TPT) regardless of age, with treatment proceeding even if TBI testing is unavailable?",
+      "domain": "prevention",
+      "ntep_position": "NTEP's 2021 TPT guideline states that ALL household contacts of pulmonary TB patients, regardless of age, should be given TPT after ruling out active TB. Contacts under 5 years receive TPT empirically without TBI testing; contacts 5 years and older and adults should be offered CXR and TBI testing wherever available, but 'TPT must not be deferred' if such testing is unavailable.",
+      "ntep_citation": {
+        "doc": "Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India (2021)",
+        "section": "2.1.2 All household contacts of pulmonary TB patients (p. 5)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/Guidelines-for-Programmatic-Management-of-Tuberculosis-Preventive-Treatment-in-India.pdf"
+      },
+      "western_position": "The CDC/NTCA 2020 guideline is scoped as treatment of confirmed latent TB infection -- its recommended regimens (3HP, 4R, 3HR preferred) are framed as treatment once LTBI has been established, implying a test-confirm-then-treat sequence rather than NTEP's empiric-if-testing-unavailable approach for household contacts.",
+      "western_citation": {
+        "doc": "Guidelines for the Treatment of Latent Tuberculosis Infection: Recommendations from NTCA and CDC, 2020, MMWR Recomm Rep 2020;69(1):1-11",
+        "section": "Preferred regimens (p. 3); document title and scope",
+        "url": "https://www.cdc.gov/mmwr/volumes/69/rr/pdfs/rr6901a1-H.pdf"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "critical",
+      "is_critical_error_if_wrong": true,
+      "still_diverges_as_of": "2026-08",
+      "notes": "The western_position here is partly inferential (the CDC document's own scope/title implies test-then-treat rather than stating it as an explicit contrast with empiric treatment) -- the dedicated CDC targeted-testing eligibility guideline was not fetched this session (see FETCH_LOG.md). This is the single most important correction from the prior draft: NTEP does NOT limit TPT to child contacts under 6 -- see UNVERIFIED.md and SUMMARY.md."
     },
     {
       "id": "DIV-011",
-      "category": "Treatment adherence monitoring technology",
-      "divergence_type": "monitoring",
-      "ntep_position": "NTEP is transitioning from treatment-supporter-based DOTS to technology-assisted adherence monitoring (e.g., 99DOTS missed-dose call-back systems) integrated with Nikshay.",
-      "western_position": "US programs increasingly use video-observed therapy (VDOT) as an alternative to in-person DOT, particularly post-2020.",
-      "clinical_stakes": "This is a candidate 'possible convergence' item — both systems are moving toward technology-assisted adherence support, differing mainly in the specific technology stack rather than the underlying policy. A vignette built only on 'is adherence monitored by technology' may not discriminate; probe the specific mechanism and escalation pathway for missed doses instead.",
-      "confidence": "low",
-      "note": "possible_convergence"
+      "decision_point": "For a person living with HIV, is TB preventive treatment started without requiring a positive TBI (TST/IGRA) test?",
+      "domain": "prevention",
+      "ntep_position": "NTEP's TPT guideline explicitly states that testing for TBI by TST or IGRA is NOT a requirement for initiating TPT in people living with HIV (or in children under 5) -- TPT proceeds empirically once active TB disease has been ruled out.",
+      "ntep_citation": {
+        "doc": "Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India (2021)",
+        "section": "Section on TBI testing prerequisites (p. 5-6)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2023/05/Guidelines-for-Programmatic-Management-of-Tuberculosis-Preventive-Treatment-in-India.pdf"
+      },
+      "western_position": "The CDC/NTCA 2020 guideline lists 3 months of once-weekly isoniazid-rifapentine (3HP) as a preferred regimen 'strongly recommended for adults and children aged >=2 years, including HIV-positive persons,' but frames this within a guideline for treatment of confirmed LTBI, without stating an equivalent empiric-without-testing exception for PLHIV.",
+      "western_citation": {
+        "doc": "Guidelines for the Treatment of Latent Tuberculosis Infection: Recommendations from NTCA and CDC, 2020, MMWR Recomm Rep 2020;69(1):1-11",
+        "section": "Preferred Regimens -- Three Months of Weekly Isoniazid Plus Rifapentine (p. 3)",
+        "url": "https://www.cdc.gov/mmwr/volumes/69/rr/pdfs/rr6901a1-H.pdf"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "Same inferential caveat as DIV-010 regarding the CDC document's implicit test-first framing."
     },
     {
       "id": "DIV-012",
-      "category": "Extrapulmonary TB diagnostic workup resourcing",
-      "divergence_type": "diagnostic_algorithm",
-      "ntep_position": "NTEP's extrapulmonary presumptive-TB algorithm relies heavily on CBNAAT on the most accessible specimen plus clinical/radiological criteria, reflecting variable access to advanced imaging (MRI, CT-guided biopsy) at peripheral and secondary-care facilities.",
-      "western_position": "US practice for extrapulmonary TB (e.g., TB meningitis, Pott's disease, TB lymphadenitis) more routinely incorporates advanced cross-sectional imaging and image-guided or surgical biopsy given broader facility-level resource availability.",
-      "clinical_stakes": "A vignette with suspected spinal TB in a rural NTEP-context patient should not assume same-day MRI access is the expected next step, whereas it plausibly is in the Western-control arm.",
-      "confidence": "medium"
+      "decision_point": "Is the 1-month daily rifapentine-isoniazid (1HP) regimen a programmatically available TPT option?",
+      "domain": "prevention",
+      "ntep_position": "As of a December 2024 addendum, NTEP has formally adopted 1HP (28 daily doses of isoniazid + rifapentine) as a TPT option for persons aged >=13 years, including PLHIV, household contacts of drug-sensitive TB, and other expanded risk groups.",
+      "ntep_citation": {
+        "doc": "Central TB Division, Guidance document on shorter one-month daily isoniazid and rifapentine (1HP) TPT regimen (Dec 2024)",
+        "section": "Full document (4 pages)",
+        "url": "https://tbcindia.nikshay.in/wp-content/uploads/2024/12/Technical-and-Operational-Guidance-on-1HP-TPT-regimen_addendum-to-National-PMTPT-guidelines.pdf"
+      },
+      "western_position": "The CDC/NTCA 2020 guideline -- the standing US regimen guideline -- cites the same underlying 1HP evidence (the BRIEF-TB/A5279 trial) only in its bibliography and does not list 1HP among its recommended/preferred/alternative regimens.",
+      "western_citation": {
+        "doc": "Guidelines for the Treatment of Latent Tuberculosis Infection: Recommendations from NTCA and CDC, 2020, MMWR Recomm Rep 2020;69(1):1-11",
+        "section": "References (1HP trial cited as background evidence only, not as a listed regimen)",
+        "url": "https://www.cdc.gov/mmwr/volumes/69/rr/pdfs/rr6901a1-H.pdf"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "This is a 'not yet adopted' style divergence that could close if CDC issues an updated regimen guideline -- re-verify before reuse in a future vignette-generation run."
     },
     {
       "id": "DIV-013",
-      "category": "Interpreting tuberculin skin testing given universal BCG vaccination",
-      "divergence_type": "diagnostic_algorithm",
-      "ntep_position": "India has universal neonatal BCG vaccination; NTEP program guidance de-emphasizes TST as a confirmatory tool in adults because prior BCG vaccination confounds interpretation, leaning more on microbiological/molecular confirmation.",
-      "western_position": "US CDC guidance generally prefers IGRA over TST specifically because it avoids false positives from BCG vaccination status in populations that may have received BCG (e.g., immigrants), and TST remains diagnostically more straightforward in the largely BCG-unvaccinated general US population.",
-      "clinical_stakes": "A vignette that has a model order and interpret a TST as a standalone confirmatory test in an NTEP-context adult patient without accounting for BCG history would be a scoring-relevant error.",
-      "confidence": "medium"
+      "decision_point": "Does the TB program provide a direct nutritional cash-transfer benefit to patients during treatment, and if so, how much?",
+      "domain": "social_support",
+      "ntep_position": "NTEP's Ni-kshay Poshan Yojana (NPY) provides a direct benefit transfer to every notified TB patient for the full duration of treatment. Launched at Rs 500/month in April 2018, the benefit was revised upward to Rs 1000/month effective 1 November 2024. From April 2018 to October 2024, Rs 3286.40 crore had been disbursed to over 1.16 crore beneficiaries.",
+      "ntep_citation": {
+        "doc": "Ministry of Health & Family Welfare, \"Initiatives & Achievements-2024\" (Press Information Bureau)",
+        "section": "Item 5, Nikshay Poshan Yojana (p. 8)",
+        "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/dec/doc20241228477601.pdf"
+      },
+      "western_position": "CDC's own annual TB surveillance reporting for the US national program describes case counts, demographics, and treatment outcomes, with no mention of an equivalent direct nutritional cash-transfer benefit paid to TB patients during treatment.",
+      "western_citation": {
+        "doc": "CDC, \"TB in the US, 2024\" -- Executive Commentary",
+        "section": "Executive Commentary",
+        "url": "https://www.cdc.gov/tb-surveillance-report-2024/executive-commentary/index.html"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "The western_position is a documented absence (CDC's own program reporting does not describe a comparable mechanism), not a positive statement that no such program exists anywhere in the US health system -- flagged as an inference from omission. This corrects the prior draft's 'Rs 500/month' figure, which is now out of date."
     },
     {
       "id": "DIV-014",
-      "category": "Scope of latent TB infection (LTBI) testing and treatment",
-      "divergence_type": "latent_tb",
-      "ntep_position": "NTEP's LTBI treatment focus is targeted — primarily child household contacts under 6 and people living with HIV — rather than a broad risk-based population screening program, reflecting high community prevalence and resource constraints.",
-      "western_position": "US Preventive Services Task Force / CDC guidance supports broader risk-based LTBI testing and treatment (contacts of all ages, immigrants from high-burden countries, immunosuppressed patients, healthcare workers) as a cornerstone of TB elimination strategy in a low-incidence setting.",
-      "clinical_stakes": "A vignette with an adult (non-child, HIV-negative) household contact should expect a materially different LTBI testing/treatment recommendation between arms.",
-      "confidence": "medium"
+      "decision_point": "Beyond the government DBT, is there a structured community-donor program supplementing nutritional support for TB patients?",
+      "domain": "social_support",
+      "ntep_position": "The Ni-kshay Mitra Initiative (launched September 2022, current guidance dated January 2026) mobilizes registered community 'donors' (individuals, corporates, civil-society groups) to provide supplementary nutritional food-basket support alongside the Nikshay Poshan Yojana DBT. As of January 2026, over 7 lakh Ni-kshay Mitras were registered, supporting 22+ lakh patients with 49+ lakh food baskets distributed.",
+      "ntep_citation": {
+        "doc": "Central TB Division, Guidance Document on Ni-kshay Mitra Initiative 2026",
+        "section": "Nutritional support description (p. 21)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2026/03/Guidance-document-on-Ni-kshay-Mitra-Initiative.2026_compressed.pdf"
+      },
+      "western_position": "CDC's national TB program reporting describes no equivalent structured, government-facilitated community-donor adoption/food-basket program operating alongside clinical TB care.",
+      "western_citation": {
+        "doc": "CDC, \"TB in the US, 2024\" -- Executive Commentary",
+        "section": "Executive Commentary",
+        "url": "https://www.cdc.gov/tb-surveillance-report-2024/executive-commentary/index.html"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "Same absence-based western citation caveat as DIV-013. Keep this row distinct from DIV-013 in vignettes -- Ni-kshay Mitra is a community-donor layer, not the DBT itself."
     },
     {
       "id": "DIV-015",
-      "category": "Bacteriological follow-up monitoring method",
-      "divergence_type": "monitoring",
-      "ntep_position": "NTEP follow-up during treatment relies primarily on sputum smear microscopy at defined program time points (end of intensive phase, 5th month, end of treatment), with culture reserved for specific indications (e.g., non-conversion, DR-TB).",
-      "western_position": "US practice uses monthly sputum culture until two consecutive negative cultures are obtained, a more resource-intensive, culture-based monitoring approach.",
-      "clinical_stakes": "A vignette scoring 'appropriate follow-up testing at month 2' should expect smear microscopy as sufficient/standard in the NTEP arm and culture-based monitoring as expected in the Western arm.",
-      "confidence": "medium"
+      "decision_point": "Is every diagnosed TB case reported into a single centralized, case-based national platform linked to patient benefit payments, or reported through decentralized state/local public health surveillance?",
+      "domain": "notification",
+      "ntep_position": "NTEP's Nikshay platform is the single case-based system of record used simultaneously for notification, treatment tracking, and DBT (Nikshay Poshan Yojana) disbursement -- linking a patient's notification status directly to their nutritional benefit eligibility.",
+      "ntep_citation": {
+        "doc": "Ministry of Health & Family Welfare, \"Initiatives & Achievements-2024\" (PIB)",
+        "section": "TB program achievements narrative (p. 8)",
+        "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/dec/doc20241228477601.pdf"
+      },
+      "western_position": "US TB cases are reported through the National Tuberculosis Surveillance System (NTSS), run through state/local health department reporting to CDC, with no equivalent single platform linking a specific patient's case notification to a direct cash-benefit disbursement.",
+      "western_citation": {
+        "doc": "CDC, \"TB in the US, 2024\" -- Executive Commentary",
+        "section": "National Tuberculosis Surveillance System description",
+        "url": "https://www.cdc.gov/tb-surveillance-report-2024/executive-commentary/index.html"
+      },
+      "divergence_type": "protocol_specific",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08"
     },
     {
       "id": "DIV-016",
-      "category": "Airborne infection control resourcing during home-based care",
-      "divergence_type": "infection_control",
-      "ntep_position": "NTEP guidance acknowledges that home isolation recommendations must account for household crowding and limited ventilation infrastructure common in many Indian households, and pairs isolation counseling with practical harm-reduction measures rather than assuming a private, well-ventilated isolation room is available.",
-      "western_position": "US infection control guidance (and hospital-based practice) assumes access to negative-pressure isolation rooms in inpatient settings and structured, criteria-based release-from-isolation determinations.",
-      "clinical_stakes": "A vignette with an actively infectious patient in crowded housing should not have a 'correct' answer that simply instructs strict single-room isolation without acknowledging the resource-constrained context in the NTEP arm.",
-      "confidence": "medium"
+      "decision_point": "Is this patient's case more likely to have been identified through a proactive, program-run active case-finding drive in a defined high-risk population, versus through the patient's own care-seeking followed by contact investigation?",
+      "domain": "differential",
+      "ntep_position": "NTEP runs systematic active case-finding (ACF) -- house-to-house searches -- targeted at defined high-risk groups (PLHIV, diabetics, undernourished persons, residents of prisons/asylums/old-age-homes/orphanages, tribal areas, marginalized populations), which had diagnosed an additional 3 lakh TB cases over the prior 6 years as of the 2024 report.",
+      "ntep_citation": {
+        "doc": "Ministry of Health & Family Welfare, \"Initiatives & Achievements-2024\" (PIB)",
+        "section": "Item 6, Active Case Finding (p. 8)",
+        "url": "https://static.pib.gov.in/WriteReadData/specificdocs/documents/2024/dec/doc20241228477601.pdf"
+      },
+      "western_position": "The 2017 ATS/CDC/IDSA guideline's discussion of pediatric case identification frames the primary US case-finding mechanism as contact investigation following a known adult/adolescent index case, consistent with a predominantly passive, contact-investigation-driven case-finding model rather than population-level house-to-house ACF drives.",
+      "western_citation": {
+        "doc": "Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33",
+        "section": "Discussion of contact investigation as the identification pathway (p. e19 area)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/diagnosis-of-tuberculosis-in-adults-and-children.PDF"
+      },
+      "divergence_type": "epidemiology_specific",
+      "clinical_stakes": "moderate",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08"
     },
     {
       "id": "DIV-017",
-      "category": "Active case-finding strategy",
-      "divergence_type": "case_finding",
-      "ntep_position": "NTEP conducts structured active case-finding (ACF) drives in high-burden geographic and demographic pockets (urban slums, tribal areas, prisons, mining communities) as a core program strategy to close the case-detection gap.",
-      "western_position": "US TB case-finding is predominantly passive (patient-initiated care-seeking), with targeted testing concentrated in specific high-risk congregate settings (correctional facilities, homeless shelters, healthcare facilities) rather than broad community ACF drives.",
-      "clinical_stakes": "A vignette describing how this patient was identified (e.g., via a house-to-house ACF drive vs. self-presentation with symptoms) is itself a divergence signal the model should recognize as system-specific, not incidental detail.",
-      "confidence": "medium"
+      "decision_point": "Is there a standardized, threshold-based national triage protocol that mandates referral to a higher-level facility when specific vital-sign/lab red flags are met?",
+      "domain": "monitoring",
+      "ntep_position": "NTEP's Differentiated TB Care framework specifies explicit, quantified red-flag criteria (e.g., SpO2 <94%, respiratory rate >24/min, systolic BP <90 or >140 mmHg, random blood glucose >=200 mg/dl with symptoms or HbA1c >=6.5%, BMI <14 kg/m2, CD4 <100 cells/uL) that mandate escalation/referral to a higher-tier facility as a mandatory activity.",
+      "ntep_citation": {
+        "doc": "Central TB Division, National Guidance on Differentiated TB Care (March 2025)",
+        "section": "Box 4.3, Differentiated TB Care Evaluation, Triaging & Management (p. 19)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2025/07/National-Guidance-on-Differential-TB-Care_Final_March-2025-3.pdf"
+      },
+      "western_position": "The 2016 ATS/CDC/IDSA guideline discusses baseline evaluation and monitoring for adverse effects and treatment response, but leaves hospitalization/referral decisions to individualized clinical judgment rather than a codified, quantified, nationally standardized threshold-based triage protocol comparable to NTEP's Box 4.3.",
+      "western_citation": {
+        "doc": "Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195",
+        "section": "Recommended baseline and follow-up evaluations discussion (p. 7)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/treatment-of-drug-susceptible-tuberculosis.pdf"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "The western_position here is partly an absence claim (no equivalent standardized protocol identified in the fetched document) rather than a quoted contrary rule -- flagged as lower-confidence than DIV-001/002."
     },
     {
       "id": "DIV-018",
-      "category": "Rifampicin-resistance result turnaround and confirmatory workflow",
-      "divergence_type": "drug_resistant_tb",
-      "ntep_position": "A rifampicin-resistant result on rapid molecular testing under NTEP triggers immediate initiation of the DR-TB workup and treatment pathway at the point of care, given high pretest probability in many notification sites.",
-      "western_position": "A rifampin-resistant result in the US more often triggers send-out to a centralized/reference public health laboratory for confirmatory phenotypic and expanded genotypic susceptibility testing before finalizing the regimen, given lower background prevalence and the value of full susceptibility data before committing to a long MDR regimen.",
-      "clinical_stakes": "A vignette should not expect identical turnaround-time assumptions or identical 'act on rapid result alone' reasoning across both arms.",
-      "confidence": "low"
+      "decision_point": "Is glucose/HbA1c testing performed on every TB patient as part of a structured comorbidity triage, or only on patients with specific diabetes risk factors?",
+      "domain": "comorbidity",
+      "ntep_position": "NTEP's Differentiated TB Care triage tool includes specific glycemic thresholds (random blood glucose >=200 mg/dl with symptoms, fasting blood glucose >=126 mg/dl, PPBS >=200 mg/dl, or HbA1c >=6.5%) as red-flag criteria evaluated as part of the mandatory triage activities applied to TB patients broadly, not gated on independent diabetes risk factors.",
+      "ntep_citation": {
+        "doc": "Central TB Division, National Guidance on Differentiated TB Care (March 2025)",
+        "section": "Box 4.3 triage criteria (p. 19)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2025/07/National-Guidance-on-Differential-TB-Care_Final_March-2025-3.pdf"
+      },
+      "western_position": "The 2016 ATS/CDC/IDSA guideline recommends fasting glucose or HbA1c testing only for patients with American Diabetes Association risk factors for diabetes (age >45 years, BMI >25 kg/m2, first-degree relative with diabetes, or specified race/ethnicity), not as a testing step applied to every TB patient regardless of risk factors.",
+      "western_citation": {
+        "doc": "Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195",
+        "section": "Baseline evaluation footnote 11 (p. 7)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/treatment-of-drug-susceptible-tuberculosis.pdf"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": true,
+      "still_diverges_as_of": "2026-08",
+      "notes": "A vignette with a TB patient who does NOT meet ADA risk-factor criteria (e.g., young, normal BMI, no family history) should still get glucose/HbA1c testing as an expected NTEP-arm action, but it would not be an expected western_control-arm action for that same risk-factor-negative patient."
     },
     {
       "id": "DIV-019",
-      "category": "Malnutrition severity assessment integrated into the TB program",
-      "divergence_type": "social_support",
-      "ntep_position": "NTEP integrates nutritional status assessment (e.g., BMI/MUAC-based severe acute malnutrition screening) into the TB treatment card as a routine documented element, given the strong bidirectional relationship between undernutrition and TB in the Indian population.",
-      "western_position": "US TB programs do not use a standardized integrated malnutrition-severity screening tool as part of routine TB care documentation, reflecting a materially lower burden of undernutrition-associated TB.",
-      "clinical_stakes": "A vignette with a visibly cachectic patient should expect explicit nutritional severity assessment as an expected action in the NTEP arm.",
-      "confidence": "medium"
-    },
-    {
-      "id": "DIV-020",
-      "category": "TB treatment during pregnancy — regimen selection",
-      "divergence_type": "treatment_regimen",
-      "ntep_position": "NTEP guidance for TB in pregnancy follows the standard first-line regimen with attention to teratogenicity and coordination with antenatal care, broadly consistent with WHO guidance.",
-      "western_position": "ATS/CDC/IDSA guidance for TB in pregnancy is similarly the standard first-line regimen with the same core teratogenicity cautions (e.g., avoiding certain second-line agents).",
-      "clinical_stakes": "This is a candidate 'possible convergence' item — the core regimen guidance for drug-sensitive TB in pregnancy is largely aligned between the two systems. A vignette built purely on 'regimen choice in pregnancy' may not discriminate; if used, it should probe system-specific antenatal-care coordination or monitoring differences instead.",
-      "confidence": "low",
-      "note": "possible_convergence"
-    },
-    {
-      "id": "DIV-021",
-      "category": "Confidentiality and disclosure norms given community stigma",
-      "divergence_type": "social_support",
-      "ntep_position": "NTEP operationalizes confidentiality within a high-stigma community context — including provisions around disclosure to family/employer and the social implications of a TB diagnosis for marriage, employment, and household standing — as an explicit counseling component.",
-      "western_position": "US TB confidentiality operates within the HIPAA legal framework, with disclosure governed by federal privacy law and public-health-reporting exceptions rather than community-stigma-specific counseling protocols.",
-      "clinical_stakes": "A vignette probing 'how should the patient's diagnosis be communicated to their employer/family' should expect a stigma-aware counseling answer in the NTEP arm and a HIPAA-consent-framed answer in the Western arm — a 'just tell them, it's routine' answer is wrong for either.",
-      "confidence": "medium"
-    },
-    {
-      "id": "DIV-022",
-      "category": "Weight-band vs. weight-based (mg/kg) dosing",
-      "divergence_type": "treatment_regimen",
-      "ntep_position": "NTEP dosing uses discrete weight-band categories (e.g., 25–39 kg, 40–54 kg, etc.) mapped to fixed-dose-combination tablet counts, standardized for program-level drug procurement and distribution at scale.",
-      "western_position": "US dosing is calculated per kilogram of body weight for each drug individually, allowing finer-grained individualized dosing rather than banded categories.",
-      "clinical_stakes": "A vignette asking for a specific dose calculation should expect band-based FDC tablet-count reasoning in the NTEP arm and mg/kg individualized calculation in the Western arm — mixing the two dosing logics is a critical error condition.",
-      "confidence": "high"
-    },
-    {
-      "id": "DIV-023",
-      "category": "Universal HIV testing linkage at TB diagnosis",
-      "divergence_type": "diagnostic_algorithm",
-      "ntep_position": "NTEP mandates universal HIV testing at the point of TB diagnosis with same-visit counseling and referral to ART centers, integrated operationally with the national AIDS control program.",
-      "western_position": "CDC also recommends HIV testing for all patients diagnosed with TB, and this is a point of likely alignment rather than divergence — a candidate false-divergence case unless the vignette specifically probes the operational integration/linkage-to-ART-care pathway rather than the testing recommendation itself.",
-      "clinical_stakes": "If used, ground the vignette in the linkage-to-care mechanism (same-visit ART center referral vs. separate referral pathway), not in whether HIV testing is recommended at all.",
-      "confidence": "low",
-      "note": "possible_convergence"
-    },
-    {
-      "id": "DIV-024",
-      "category": "Treatment outcome reporting categories and infrastructure",
-      "divergence_type": "surveillance_notification",
-      "ntep_position": "NTEP records treatment outcomes (cured, treatment completed, failure, died, lost to follow-up, not evaluated) centrally via the Nikshay platform, which is also the system of record for DBT disbursement and private-provider incentive payments.",
-      "western_position": "US treatment outcomes are tracked via state/local TB registries reporting to CDC's National TB Surveillance System, using WHO-aligned outcome categories but without the same platform linkage to direct patient cash-transfer or provider incentive payments.",
-      "clinical_stakes": "A vignette about what happens administratively when a patient is declared 'lost to follow-up' should expect Nikshay-linked consequences (loss of DBT eligibility, PPSA follow-up) in the NTEP arm that have no direct analog in the Western arm.",
-      "confidence": "medium"
+      "decision_point": "Is cotrimoxazole preventive therapy (CPT) given to all people living with HIV who have active TB, regardless of CD4 count?",
+      "domain": "comorbidity",
+      "ntep_position": "NTEP's differentiated-care intake documentation tracks CPT status as a standard field for every HIV-reactive TB patient (alongside ART status), and NTEP's TPT addendum lists a cotrimoxazole-containing fixed-dose formulation as 'a preferred formulation in PLHIV' without conditioning it on a CD4 threshold -- consistent with the WHO position of universal CPT for all HIV-positive TB patients regardless of CD4 count.",
+      "ntep_citation": {
+        "doc": "Central TB Division, National Guidance on Differentiated TB Care (March 2025); 1HP TPT addendum (Dec 2024)",
+        "section": "Differentiated Care intake form, comorbidity/HIV section (p. 86); 1HP addendum dosage footnote (p. 2)",
+        "url": "https://tbcindia.mohfw.gov.in/wp-content/uploads/2025/07/National-Guidance-on-Differential-TB-Care_Final_March-2025-3.pdf"
+      },
+      "western_position": "The 2016 ATS/CDC/IDSA guideline states explicitly that although WHO recommends cotrimoxazole for all HIV-infected people with active TB regardless of CD4 count, 'in high-income countries, co-trimoxazole is primarily used in HIV-infected patients with CD4 counts <200 cells/uL' -- a materially narrower, CD4-gated indication.",
+      "western_citation": {
+        "doc": "Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195",
+        "section": "HIV/TB co-treatment discussion (p. 11)",
+        "url": "https://www.thoracic.org/statements/resources/tb-opi/treatment-of-drug-susceptible-tuberculosis.pdf"
+      },
+      "divergence_type": "resource_dependent",
+      "clinical_stakes": "high",
+      "is_critical_error_if_wrong": false,
+      "still_diverges_as_of": "2026-08",
+      "notes": "This divergence is stated explicitly in the western_citation source itself (a direct WHO-vs-high-income-country contrast), making it one of the better-grounded rows in this table despite the NTEP side being assembled from two documents' incidental mentions rather than one dedicated CPT policy statement."
     }
   ]
 }

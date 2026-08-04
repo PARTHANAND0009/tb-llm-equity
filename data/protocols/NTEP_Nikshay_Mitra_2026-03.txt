@@ -1,0 +1,1568 @@
+                                                                                                   1
+Guidance Document on Ni-kshay Mitra Initiative 2026
+2
+                        Guidance Document on Ni-kshay Mitra Initiative 2026
+Guidance Document on
+Ni-kshay Mitra Initiative
+
+             2026
+
+                                                                                                                        3
+                    Guidance Document on Ni-kshay Mitra Initiative 2026
+4
+                        Guidance Document on Ni-kshay Mitra Initiative 2026
+                                                   PREFACE
+
+    India's ambitious journey toward TB Mukt Bharat reflects not only our remarkable progress in public
+health but also our extraordinary capacity to galvanize a whole-of-society response. The Ni-kshay Mitra
+Initiative, launched in September 2022 under the TB Mukt Bharat Abhiyaan, embodies this transformative
+vision for uniting citizens, institutions, civil society, and frontline workers in a compassionate alliance
+to deliver person-centered, holistic care to those affected by tuberculosis. This transformative approach-
+mobilizing society at large to provide dignified, person-centered and holistic support to individuals affected
+by tuberculosis.
+
+This release of Guidance Document on Ni-kshay Mitra Initiative embarks as a new step in our national
+response towards TB elimination. It draws from on-ground experiences across states and districts, adapts to
+emerging realities, and offers all stakeholders a streamlined, inclusive, and sustainable operational framework
+that is both ambitious and achievable. This comprehensive guidance addresses key implementation
+challenges within the Ni-kshay Mitra programme, including fragmented food basket delivery, patient-only
+nutrition models, gaps in psychosocial care, delays in donor­patient linkages, underutilization of MY Bharat
+volunteers and self-help groups, limited real-time monitoring, and constraints in the effective collection and
+mobilization of funds. The guidance complements the National TB Elimination Programme (NTEP) by
+strengthening medical care through structured, community-based engagement.
+
+This guidance integrates core pillars: broadening the support ecosystem by involving MY Bharat Volunteer,
+defining models of engagement for Ni-kshay Mitras for Nutrition, ensuring integrated operations through
+digital technology system and TB Mukt Bharat App, establishing real-time impact monitoring, and clearly
+defining structured responsibilities with accountability at all levels.
+
+I commend the Central TB Division for leading a robust and participatory revision process, incorporating
+valuable inputs from State TB Officers, district administrators, Ni-kshay Mitras, health workers, and, most
+importantly, people affected by TB and their families. I urge stakeholders across ministries, sectors, and
+civil society to embrace this guidance as a shared roadmap for amplifying impact, accelerating progress, and
+building a sustainable, people-centered response to TB.
+
+Let us renew our collective resolve to ensure that no individual affected by TB is left without support, no
+family is overlooked, and every community is empowered to withstand and overcome tuberculosis. I am
+confident that this document will strengthen and invigorate India's united pursuit of a TB-free future.
+
+Dated: 30th Jan, 2026
+
+                                                                                                                             5
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+6
+                        Guidance Document on Ni-kshay Mitra Initiative 2026
+                                             FOREWORD
+    The Ni-kshay Mitra Initiative represents a defining milestone in India's journey toward TB
+Mukt Bharat, reaffirming that the elimination of tuberculosis is not merely a medical endeavor
+but a shared social responsibility. Rooted in the spirit of Jan Bhagidari, the initiative underscores
+that sustained progress against TB requires the active engagement of communities, institutions, and
+citizens, working alongside the public health system.
+
+Initially conceived as a nutritional support intervention for TB patients, the initiative has grown
+into a dynamic, decentralized people's movement. Through the collective efforts of individuals,
+civil society, corporates, youth groups, and community institutions, it has evolved into a nationwide
+framework of care and solidarity. Currently, approximately 23 lakh TB patients is supported by
+7 lakh Ni-kshay Mitras which underscores the profound impact of collective action and shared
+responsibility.
+
+The Ni-kshay Mitra Guidance Document 2026 builds on these achievements and presents a
+simplified, structured, and implementation-oriented framework to further strengthen the initiative
+across the country.
+
+The distinct initiative incorporates real-time bank accounts with digital dashboards to monitor MY
+Bharat service delivery and patient progress, efficient donor-patient linkage to ensure support reaches
+the most vulnerable, expanded household-centric interventions addressing the wider familial impact
+of TB, strengthened grievance redressal mechanisms, and deeper engagement with youth networks,
+self-help groups, and community-based platforms.
+
+I encourage administrators, donors, volunteers, community leaders, and all stakeholders to actively
+engage with and adapt this document to local contexts, contributing to a future where clinical
+excellence and vibrant community participation together bring the vision of TB Mukt Bharat to
+fruition.
+
+                                                                                                                         7
+                     Guidance Document on Ni-kshay Mitra Initiative 2026
+8
+                        Guidance Document on Ni-kshay Mitra Initiative 2026
+                                                      MESSAGE
+
+    Tuberculosis continues to be one of the most significant public health challenges of our time. Its elimination
+demands not only scientific rigor, clinical excellence, and sustained programmatic investment, but also a
+compassionate, community-led response grounded in human dignity, social solidarity, and respect for the lived
+realities of person affected by the disease.
+Experience has shown that medical interventions achieve their greatest impact when communities are informed
+and empowered, stigma is addressed, and patients and families are treated as active partners in care. Globally, the
+most successful TB programs demonstrate that clinical excellence and community compassion are complementary
+forces, together fostering healing, dignity, and sustainable TB elimination.
+The Ni-kshay Mitra Initiative embodies this powerful synergy melding rigorous clinical science with grassroots
+community engagement to deliver holistic, person-centered care that addresses not only the medical dimensions
+of TB but also the social, economic, and psychosocial dimensions that shape treatment outcomes.
+The document introduces streamlined operational pathways that reduce implementation challenges and accelerate
+support delivery; robust monitoring tools enabling transparency, accountability, and real-time course correction;
+and enhanced nutritional and psychosocial support designed to strengthen treatment adherence, improve clinical
+outcomes, and foster meaningful multi-sectoral collaboration.
+These include the underutilization of MY Bharat Volunteer and self-help groups in providing psychosocial
+support and enhancing community engagement; the need to establish dynamic, real-time monitoring systems with
+genuine accountability; the imperative to strengthen transparency in donor-patient linkages and support delivery;
+and, perhaps most importantly, the commitment to ensure that no patient, no household, and no community is
+left behind.
+This document will serve not just as a technical guide for program managers and administrators, but as a
+testament to what we can achieve when clinical excellence and community compassion unite we recognize
+that TB elimination is not the work of government or health systems alone, but a shared national responsibility
+requiring the active participation of all.
+Together, let us renew our commitment to a TB Mukt Bharat led by science, strengthened by solidarity, and
+sustained by shared resolve. The operational frameworks are now in place. The tools are in hand. The moment to
+act decisively is now.
+
+                                                                                                                                9
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+10
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+                                            ACKNOWLEDGEMENT
+
+     The preparation of this Guidance Document for the Ni-kshay Mitra Initiative, on Community Engagement
+for TB Mukt Bharat, has been a collaborative, participatory, and consultative effort involving stakeholders at
+National, State, District, and grassroots levels. It reflects our shared commitment to strengthen community
+participation, enhance accountability, and accelerate India's mission to eliminate tuberculosis.
+We express our profound gratitude to Ms. Aradhana Patnaik, IAS, Additional Secretary and Mission Director
+(NHM), for her visionary leadership, unwavering strategic guidance, and steadfast support in shaping the
+overarching vision and priorities of this initiative
+We extend our sincere appreciation to Shri Nikhil Gajraj, IAS, Joint Secretary, for his continued encouragement,
+strategic foresight, and steadfast dedication to fostering system-wide convergence, inter-departmental
+collaboration, and innovation within the TB Programme
+We extend heartfelt appreciation to Dr. Shobini Rajan, Deputy Director General (TB) for her insightful guidance,
+technical leadership, and mentorship throughout the document development process. We also acknowledge
+Prof. (Dr.) Urvashi B. Singh, former Deputy Director General (TB), for her invaluable technical expertise and
+support during the initial phases of this revision.
+We acknowledge the critical technical contributions from Dr. Veena Dhawan, Dr. Sanjay Kumar Mattoo,
+Dr. Vinay Kumar Garg, Dr. Raghuram Rao, and Dr. Nishant Kumar and all officers of the Central TB Division,
+whose unwavering commitment to advancing inclusive, community-centered TB care is reflected throughout
+this document.
+We sincerely thank State TB Officers, District TB Officers, TB Unit Coordinators, CHOS, ANMs, and ASHAS
+across the country, whose field-level insights, dedicated engagement, and ongoing feedback have shaped the
+practical applicability and effectiveness of this guidance.
+Special appreciation is extended to Mr. Gangadhar Das, Mr. D. Dharma Rao, Mr. Mohit Sharma, Dr. Mrigen Deka,
+Dr Bhoomi Shah, Shri Ashish Bhardwaj, Dr. Paranjoy Bordoloi, CA Rahul Sharma, Dr. Akhilesh Srivastava,
+Ms. Shilpi Pandey, Ms. Hansa Lala and Mr. Pradeep Rawat for their invaluable technical input, inter-departmental
+coordination support, analytical rigor, and commitment to ensuring technical quality and operational feasibility.
+We acknowledge all Ni-kshay Mitras, individuals, institutions, corporates, civil society organizations, self-help
+groups, Panchayati Raj Institutions, urban local bodies, youth networks, faith-based organizations, and elected
+representatives, whose dedication and active support to TB patients highlight the profound impact of community
+engagement.
+
+                                                                                                                               11
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+12
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Abbreviations
+
+ACF      Active Case Finding
+ADM      Adherence Monitoring
+ANM      Auxiliary Nurse Midwife
+ASHA     Accredited Social Health Activist
+BCG      Bacillus Calmette­Guérin
+BHI      Bharat Health Initiative
+BMV      Bharat Volunteers
+CBNAAT   Cartridge Based Nucleic Acid Amplification Test
+CHC      Community Health Centre
+CHO      Community Health Officer
+CP Gram  Centralised Public Grievance Redress and Monitoring System
+CSO      Civil Society Organiztion
+CSR      Corporate Social Responsibility
+CTD      Central TB Division
+DBT
+DHS      Direct Benefit Transfer
+DMC      District Health Society
+DTO      Designated Microscopy Centre
+GMS      District TB Officer
+HR       Grievance Management System
+ICDS     Human Resource
+IEC      Integrated Child Development Services
+IMPACT   Information, Education and Communication
+ICTC     India's Most Powerful Action to Control Tuberculosis
+JEET     Integrated Counselling and Testing Centre
+KYP      Joint Effort for Elimination of Tuberculosis
+         Know Your Patient
+
+                                                                                   1i3
+
+         Guidance Document on Ni-kshay Mitra Initiative 2026
+MoHFW    Ministry of Health & Family Welfare
+NACP     National AIDS Control Programme
+NGO      Non-Governmental Organization
+NHM      National Health Mission
+NPY      Ni-kshay Poshan Yojana
+NTEP     National Tuberculosis Elimination Programme
+NSS      National Service Scheme
+NYK      Nehru Yuva Kendra
+NCC      National Cadet Corps
+OPD      Outpatient Department
+PHC      Primary Health Centre
+PLHIV    People Living with HIV
+PMTBMBA  Pradhan Mantri TB Mukt Bharat Abhiyan
+PPTCT    Prevention of Parent to Child Transmission
+RKS      Rogi Kalyan Samiti
+RNTCP    Revised National Tuberculosis Control Programme
+SHG      Self Help Group
+         State Program Officer
+SPO      Senior Treatment Laboratory Supervisor
+STLS     Senior Treatment Supervisor
+STS      Tuberculosis
+TB       TB Health Visitor
+TBHV     TB Mukt Bharat Kosh
+TBMBK    TB Preventive Treatment
+TPT      Tuberculosis Unit
+TU       Urban Primary Health Centre
+UPHC     Village Health, Sanitation and Nutrition Day
+VHSND
+
+1i4i
+
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Table of Contents
+
+1. Executive Summary ......................................................................................            1
+
+2. Background ...................................................................................................      5
+
+3. Rationale ........................................................................................................  6
+
+4. Key Objectives ...............................................................................................      9
+
+5. Implementation Strategy & Core Intervention ........................................ 12
+
+6. Ni-kshay Mitra: ............................................................................................. 13
+
+        Identification, Registration, Support Services, Certification & Grievance Redressal .........
+
+7. Roles & Responsibilities of Stakeholders ................................................... 35
+      Monitoring Indicators .......................................................................................... 37
+      Review Mechanisms .............................................................................................. 37
+
+8. List of Contributors ....................................................................................... 39
+
+                                                                          1ii5i
+
+Guidance Document on Ni-kshay Mitra Initiative 2026
+16
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Executive Summary
+
+This comprehensive guidance tackles implementation challenges in the Ni-kshay Mitra
+program, such as fragmented food basket delivery, patient-only nutrition models,
+absent psychosocial care, delayed donor-patient linkages, underutilized MY Bharat
+volunteers and SHGs, and limited real-time monitoring. It proposes eight objectives:
+equitable nutrition, household vulnerability support, psychosocial integration, digital
+matching, youth engagement, frontline capacity building, robust evaluation, and
+multi-sectoral governance.
+
+Key strategies include three nutrition models--Model-I (donations to District TB Mukt
+Bharat Kosh for admin-led procurement/distribution), Model-II (Mitra procurement
+with community distribution), Model-III (Mitra end-to-end)--all with geo-tagged digital
+validation. Additional pillars cover psychosocial aid via youth platforms (NSS, NYK,
+NCC), beneficiary prioritization (DR-TB, comorbid families, children/pregnant women),
+TB Mukt Bharat Mobile App with AI chatbot Khushi for multilingual reminders/FAQs,
+real-time dashboards for automated matching, and Mitra recognition via certificates.
+Effective from November 2024 family basket updates, the initiative promotes Jan
+Bhagidari to strengthen treatment adherence, reduce stigma and advance efforts in
+TB elimination.
+
+The document highlights operational gaps despite broad stakeholder mobilization:
+food basket delays from poor coordination among health workers (ASHAs, ANMs,
+CHOs), donors, and suppliers; patient-centric models ignoring household malnutrition
+in children, pregnant women, elderly; nutrition-only aid neglecting stigma, income
+loss, mental health; onboarding delays causing mismatches/duplication; minimal MY
+Bharat/NSS/NYK/SHG roles in adherence/delivery and static Ni-kshay portal lacking
+interactive dashboards for bottlenecks. These erode trust, timeliness, and impact,
+risking vulnerability cycles
+
+Eight goals drive enhancement: (1) Timely, standardized nutrition via logistics
+coordination (2) Family food basket to provide nutrition support to whole family
+(3) Psychosocial support institutionalization against stigma and discrimination (4)
+Real-time Ni-kshay integration (5) Involvement of MY Bharat volunteers and SHG
+for awareness generation, treatment adherence and timely food basket delivery (6)
+
+                                                                                                                                1
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+leveraging Self-help groups, civil society organizations and volunteers (7) Monitoring
+through TB Mukt Bharat mobile application. ( 8 ) Multi-Sectoral Governance and
+Convergence. This roadmap standardizes processes, clarifies roles, and boosts last-
+mile accountability for TB-free India.
+
+Support Types and Nutrition Models: Nutritional support features 18kg monthly family
+baskets (~81,000 kcal: pulses like chana/moong dal, grains, eggs/milk/oil, regionally
+adapted; FSSAI-vetted via DHS-empaneled vendors/SHGs). Model I - Mitra donates to
+TB Mukt Bharat Bank Account (DHS child account), district procures & distributes via
+SHG/ Civil society organizations/volunteers/PRIs/ULBs with geo-photos. Model II - Ni-
+kshay Mitra only procures and provides to SHGs/volunteers for distribution. Model III
+- Ni-kshay Mitra handles full procurement and delivery in coordination with District
+administration.
+
+MY Bharat Volunteers Engagement: MY Bharat Volunteers, alongside NSS, NYK, NCC,
+and student networks, are leveraged as key community partners to scale psychosocial
+support, treatment adherence, and last-mile delivery under Ni-kshay Mitra. The
+District Youth Officers coordinates with DTO/CMOs for household visits, emotional
+support and counseling, facility escorts, BMI/adherence monitoring, and
+presumptive TB screenings--prioritizing adolescents, migrants and urban poor.
+
+Psychosocial Support: TB's multi-dimensional impact (stigma reduction, depression
+and income loss) demands continuum care: treatment-phase motivation, follow-
+ups against non-adherence; post-treatment reintegration/resilience via TB Vijetas/
+Champions. Delivered by youth (MY Bharat/NSS/NYK/NCC/SHGs/CSOs) for visits,
+counseling, facility escorts, BMI/adherence checks--prioritizing adolescents/migrants/
+urban poor. District Youth Officers converge with DTO/CMOs; ethical protocols
+(consent/confidentiality) integrate with Ni-kshay; mobilizes campaigns/screenings for
+mass movement.
+
+TB Mukt Bharat Kosh: The TB Mukt Bharat Kosh (TBMBK), a child account under District
+Health Society (DHS), channels Ni-kshay Mitra donations (individuals, corporates, CSR,
+philanthropists) for nutritional/psychosocial aid. District Administration oversees
+governance per financial rules. Ensures transparency in procurement/distribution
+via SHGs/volunteers, reducing leakages while enabling earmarked support for TB
+patients/families under TB Mukt Bharat Abhiyaan.
+
+    2
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+TB Mukt Bharat Mobile Application: This mobile app centralizes stakeholder
+coordination: TB patients track kits, access FAQs/reminders via Khushi AI chatbot (15
+languages, voice/chat, facility locator); Ni-kshay Mitras sponsor/track deliveries with
+verified updates; volunteers upload geo-tagged proofs; health staff verify adherence,
+approve kits, chat with users. Features patient allocation lists, toll-free integration
+(1800-11-6666), multilingual support for last-mile transparency, real-time notifications,
+and Ni-kshay integration to boost engagement and outcomes
+Beneficiary Prioritization: Prioritizes: (A) Undernourished/comorbid households
+(diabetes/HIV) for TPT/nutrition/screening; (B) DS/DR-TB patients for intensive medical/
+nutritional/psychosocial aid against dropout/complications; (C) Families with children
+under 5 or pregnant/breastfeeding women for early TB checks, higher nutritional
+needs. Targets vulnerability to prevent transmission, enhance adherence, and cut
+catastrophic costs.
+Recognition and Appreciation: Ni-kshay Mitras receive formal two-stage
+recognition: immediate Certificate of Registration upon Ni-kshay platform sign-up
+and acknowledging commitment to TB Mukt Bharat Abhiyaan. Performance-based
+awards follow for milestones like sustained sponsorships, verified deliveries, or high-
+impact contributions, issued via district events or digital badges. Motivates ongoing
+participation from individuals, corporates, youth groups, and institutions, fostering
+public appreciation and long-term Jan Bhagidari.
+
+                                                                                                                                3
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+4
+                        Guidance Document on Ni-kshay Mitra Initiative 2026
+Background
+
+Tuberculosis (TB) continues to be a major public health challenge in India and is closely
+associated with undernutrition, poverty, stigma, and social vulnerability. Undernutrition
+adversely affects immunity, increases the risk of disease progression, and negatively
+impacts treatment outcomes and recovery. TB patients and their families often face loss of
+livelihood, food insecurity, and social exclusion during treatment. These factors necessitate
+a holistic, patient-centric approach that complements clinical management with nutritional
+and psychosocial support.
+
+In this context, the Ni-kshay Mitra Initiative was launched under the TB Mukt Bharat
+Abhiyaan (TBMBA) to strengthen community participation in TB care and support. The
+initiative was formally launched by the Hon'ble President of India on 9th September 2022,
+with a call for Jan Bhagidari (people's participation) in the national effort to eliminate TB.
+The initiative underscores that TB elimination cannot be achieved by the health system
+alone and requires active engagement of individuals, institutions, corporates, civil society
+organisations, faith-based organisations, and community groups.
+
+The Ni-kshay Mitra Initiative aims to mobilize citizens and institutions as partners in care
+to provide nutritional, psychosocial, and social support to TB patients and their families.
+By addressing key social determinants of health, the initiative seeks to improve treatment
+adherence, continuity of care, and treatment outcomes, while also contributing to
+stigma reduction and community awareness. The initiative complements the National TB
+Elimination Programme (NTEP) by reinforcing medical care through structured, community-
+based engagement.
+
+Nutritional support is a core component of the initiative, recognizing the strong bidirectional
+relationship between TB and undernutrition. TB patients receive nutritional assistance
+through the Ni-kshay Poshan Yojana (NPY) in the form of direct benefit transfers, which is
+further supplemented by nutritional food basket support provided by Ni-kshay Mitras. This
+combined approach helps address household-level food insecurity and supports recovery
+during the treatment period.
+
+Since its launch, the Ni-kshay Mitra Initiative has scaled up significantly across the country.
+From September 2022 to January 2026, more than 7 lakh Ni-kshay Mitras have been
+registered, over 22 lakh TB patients have received nutritional support, and more than 49
+lakh nutritional food baskets have been distributed nationwide. These efforts reflect the
+growing ownership of TB elimination as a shared societal responsibility.
+
+As an integral component of the TB Mukt Bharat Abhiyaan, the Ni-kshay Mitra Initiative
+has strengthened the continuum of care through public-community partnerships and
+positioned TB elimination as a people-driven national movement, contributing towards the
+realization of the vision of a TB Mukt Bharat.
+
+                                                                                                                                5
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+Rationale
+
+1. Programme Challenges
+The initiative has successfully mobilized a broad network of community stakeholders.
+However, the implementation experiences have revealed gaps, as below:
+1.1 Constraints in delivery of Food Baskets
+The operational success of the initiative depends heavily on coordination among
+diverse stakeholders including health departments, donors, suppliers, community-
+based organizations, and frontline service providers like ASHAs, ANMs, and CHOs.
+However, existing processes often face fragmentation, leading to procedural delays,
+inconsistent quality in support packages, and challenges in last-mile delivery.
+Procurement and distribution systems, while adaptable to local preferences, can
+encounter logistical constraints that compromise timeliness and reliability. Moreover,
+
+frontline health workers often lack structured training on donor engagement, nutritional
+counselling, and use of digital tools. Strengthening institutional coordination, building
+capacity at the grassroots level, and simplifying operational protocols will be essential
+to ensure smoother delivery, greater accountability, and higher impact.
+
+    6
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+1.2 Only TB patient Centric Nutrition Model; No provisions for Household
+     (Family Members)
+
+The impact of TB extends beyond the individual patient to the entire household/family
+members. Family members especially children, pregnant women, and the elderly are
+particularly vulnerable to nutritional deficiencies, economic strain, and psychological
+stress when a family member is affected by TB. Yet, current support models remain
+largely patient-centric, leaving these indirect but significant burdens unaddressed.
+
+Excluding household needs risks perpetuating cycles of malnutrition and vulnerability,
+which may compromise TB prevention and long-term community health.
+
+1.3 No provision for Psychosocial Care, only Nutrition Centric Assistance
+
+Nutrition support remains
+the primary focus of Ni-
+kshay Mitra contributions;
+however, TB is a multifaceted
+disease with medical, social,
+and economic dimensions
+that nutrition alone cannot
+address. Patients often
+struggle with related
+challenges such as costs of
+diagnostic tests, the burden
+of income loss due to illness,
+and mental health stress
+from stigma and isolation.
+
+1.4 Constraint in Ni-kshay Mitra on-boarding
+
+Effective donor­patient linkages are crucial to the success of the Ni-kshay Mitra
+initiative, yet the current system suffers from gaps in real-time connectivity on the Ni-
+kshay portal and delays in linkages of TB Patient with Ni-kshay Mitra. These above gaps
+often result in duplication, mismatches, or delayed support, leaving donors uncertain
+about the beneficiaries they are assisting and patients without timely updates on
+available support. Such fragmentation erodes trust, reduces donor confidence,
+and risks depriving patients of essential support during critical treatment periods.
+Establishing an automated, transparent matching system integrated with standardized
+communication tools would ensure prompt, equitable, and reliable donor­patient
+connections, strengthening both confidence and continuity of care.
+
+                                                                                                                                7
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+1.5 Lack of Involvement of MY Bharat Volunteers (Youth) and Self-Help Groups
+Youth (MY Bharat Volunteers, NSS, NYK), NCC and Self-Help Groups (SHGs) are
+underutilized within the Ni kshay Mitra ecosystem, creating missed opportunities to
+scale psychosocial support, strengthen treatment adherence, and robust procurement
+and last mile delivery of family food baskets.
+
+1.6 Lack of Dynamic Monitoring & Validation of Delivery
+Robust monitoring is essential for accountability and impact assessment, yet the
+existing systems remain limited. While the Ni-kshay portal provides a framework for
+reporting, it does not yet offer real-time, interactive dashboards that track support
+delivery, donor activity, and patient progress. As a result, Programmeme managers
+often struggle to identify bottlenecks, such as delayed deliveries or incomplete follow
+ups and to intervene in a timely manner. This reduces transparency for donors and
+weakens evidence-based decision-making.
+
+    8
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+2. Key Objectives
+
+This guidance document aims to provide a structured framework for the effective
+implementation of the Ni-kshay Mitra Initiative under the TB Mukt Bharat Abhiyaan.
+Drawing from implementation experiences and identified programmatic gaps, the
+document seeks to strengthen the initiative by making it more effective, inclusive,
+and sustainable. It focuses on broadening the support ecosystem, strengthening
+multi-stakeholder engagement, integrating operations for efficient last-mile delivery,
+institutionalizing impact monitoring through digital systems, and ensuring clearly
+defined roles and accountability mechanisms. Collectively, these measures are
+intended to enhance patient-centric and family-sensitive TB care, while accelerating
+India's progress towards a TB-free future.
+
+ Ensure Equitable          Integrate           Leverage MY         Establish Robust
+     and Timely          Psychosocial       Bharat Volunteers,        Monitoring,
+                        Support within       Youth Platforms,
+Nutritional Support     Patient-Centred                            Evaluation, and
+   to TB Patients                            and Community          Accountability
+                            TB Care             Institutions         Mechanisms
+
+1                    2           3       4      5               6       7            8
+
+   Address Household-        Strengthen Ni-        Strengthen Capacity          Promote
+   Level Vulnerabilities  kshay Mitra­Patient           of Frontline        Multi-Sectoral
+                                                                           Convergence and
+      of TB-Affected       Linkages through          Health Workers           Governance
+          Families         Digital Integration       and Community
+
+                                                        Volunteers
+
+ 2.1 Ensure Equitable and Timely Nutritional Support to TB
+        Patients
+
+To strengthen the Ni-kshay Mitra mechanism for timely, quality-assured, and
+uninterrupted delivery of nutritional support to all notified TB patients, through
+standardized operational processes, improved logistics, and strengthened coordination
+at national, state, district, and block levels.
+
+                                                                                                                           9
+                        Guidance Document on Ni-kshay Mitra Initiative 2026
+ 2.2 Address Household-Level Vulnerabilities of TB-Affected
+        Families
+
+To progressively expand the nutrition support framework beyond the individual TB
+patient to include vulnerable household members, thereby addressing underlying
+determinants of malnutrition, reducing catastrophic costs, and supporting TB
+prevention and long-term community health outcomes.
+
+ 2.3 Integrate Psychosocial Support within Patient-Centred
+        TB Care
+
+To institutionalize psychosocial care as an integral component of the Ni-kshay Mitra
+initiative, addressing stigma, mental health distress, social isolation, income loss, and
+adherence-related challenges, in alignment with the comprehensive care approach
+under TB Mukt Bharat Abhiyaan.
+
+ 2.4 Strengthen Ni-kshay Mitra­Patient Linkages through
+        Digital Integration
+
+To enhance transparency, efficiency, and continuity of care by strengthening real-time
+onboarding, automated matching, and communication between Ni-kshay Mitras and
+TB patients through improved integration with the Ni-kshay Portal.
+
+ 2.5 Leverage MY Bharat Volunteers, Youth Platforms, and
+        Community Institutions
+
+To actively engage MY Bharat Volunteers, NSS, NYK, NCC, and Self-Help Groups as
+community partners in awareness generation, psychosocial support, treatment
+adherence facilitation, and last-mile delivery of support services, thereby strengthening
+community ownership of the TB Mukt Bharat movement.
+
+ 2.6 Strengthen Capacity of Frontline Health Workers and
+        Community Volunteers
+
+To build the capacity of ASHAs, ANMs, CHOs, and community volunteers through
+structured training on nutrition counselling, psychosocial care, donor engagement,
+and digital tools, enabling effective implementation of patient-centric and community-
+based TB care.
+
+   10
+                             Guidance Document on Ni-kshay Mitra Initiative 2026
+ 2.7 Establish Robust Monitoring, Evaluation, and
+        Accountability Mechanisms
+
+To develop and operationalize real-time monitoring and validation systems for
+tracking nutritional support delivery, donor engagement, patient follow-up, and
+treatment outcomes, thereby enabling evidence-based decision-making and enhanced
+accountability.
+
+ 2.8 Promote Multi-Sectoral Convergence and Governance
+
+To strengthen convergence among health systems, district administrations, youth
+platforms, civil society organizations, and private sector partners through clearly
+defined governance structures and simplified operational protocols, in line with the
+whole-of-society approach of TB Mukt Bharat Abhiyaan.
+
+In essence, this guidance document provides a comprehensive roadmap to strengthen
+the Ni-kshay Mitra Initiative by simplifying and standardizing operational processes,
+clarifying stakeholder roles, and embedding robust monitoring and accountability
+systems. By expanding support beyond individual patients to include household
+contacts and socio-economic needs, and by leveraging community institutions and
+digital platforms, the document seeks to ensure more accountable, equitable, and
+impactful TB care at the last mile. The implementation of this guidance will reinforce
+convergence, enhance community ownership, and contribute significantly to sustained
+treatment adherence and improved outcomes under the TB Mukt Bharat Abhiyaan.
+
+                                                                                                                                11
+                             Guidance Document on Ni-kshay Mitra Initiative 2026
+12
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+                                                                                                   13
+Guidance Document on Ni-kshay Mitra Initiative 2026
+   Type of Ni-kshay Mitra Support
+
+I                                     II                                      III
+
+Nutritional Support to TB Patient     Nutritional Support to Family   Psychosocial Support during
+                                         members of TB Patient        treatment and post treatment
+
+                                                                                 follow Uup
+
+   Procurement & Distribution of
+          Family Food Basket
+
+               MODEL-I                          MODEL-II                            MODEL-III
+                                      Procurement by Ni-kshay Mitra
+     Donation by Ni-kshay Mitra in                                    Procurement & Distribution directly by
+District TB Mukt Bharat Kosh (TBMBK)                                                Nikshay Mitra
+
+District Administration                  Distribution by Self Help
+will do the procurement               Group/Volunteers/Civil Society
+
+                                           Organisation, PRI etc.
+
+                TB Patient & Family Member
+
+14
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+3 Type of Ni-kshay Mitra Support
+
+3.1 Nutritional Support
+
+Nutritional support constitutes the cornerstone of Ni-kshay Mitra assistance, given
+the strong association between undernutrition, TB morbidity and poor treatment
+outcomes. This focuses on the provision of standardized Family Food Baskets to TB
+Patient, in alignment with national guidelines. Food baskets shall ensure uniformity
+in composition, adequacy of caloric and protein content, local dietary relevance and
+uninterrupted monthly distribution throughout the treatment period.
+
+To ensure efficiency and quality, District Health Societies (DHS) shall empanel
+FSSAI- licensed vendors, cooperatives or Self Help Groups (SHGs) for procurement
+and packaging. Distribution shall be digitally tracked through the Ni-kshay portal
+or approved district systems, with proof of delivery captured through geo-tagging,
+beneficiary acknowledgement. This digital tracking shall strengthen transparency,
+reduce leakages and ensure timely support to beneficiaries.
+
+4. Model of Nutrition Support
+
+4.1 MODEL-1: Donation by Ni-kshay Mitra in District TB Mukt Bharat Kosh
+       (TBMBK), Procurement and Distribution by District Administration
+
+Donation through the District TB Mukt Bharat Kosh (TBMBK) enables Ni-kshay Mitras
+to provide earmarked financial support while operational execution is managed locally
+under the overall supervision of the District Administration. The donor (Individuals,
+PSUs, Corporates, Elected representatives etc.) enters a formal funding agreement/
+MoU with the District TB Officer (DTO)/State TB Cell, clearly specifying the objectives,
+earmarking of funds, coverage, timelines, milestones, reporting obligations, and
+monitoring provisions. Ni-kshay Mitra will make Direct Payment to TB Mukt Bharat
+Kosh, it will be a child account under District Health Society (Rogi Kalyan Samiti).
+
+An approved third-party agency, empanelled by the district/state, undertakes
+competitive local procurement of standardized food baskets strictly in accordance
+with the Indicative Food Basket norms and procurement guidelines.
+
+Distribution is carried out at the community level through a network of Self-Help
+Groups (SHGs), trained volunteers (including MY Bharat, NSS, and NYK), NCC, Civil
+
+                                                                                                                            15
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Society Organizations (CSOs), and local bodies such as PRIs and ULBs, under the
+coordination of the district administration and the supervision of the District TB Officer.
+These partners support beneficiary identification, doorstep delivery, counselling, and
+follow- up Last-mile delivery is ensured through a structured validation mechanism,
+including beneficiary acknowledgement and digital proof of delivery in the form of
+time-stamped photographs, geo-tagging, and standardized digital checklists. All
+delivery data are uploaded on the TB Mukt Bharat Mobile Application and integrated
+with Ni-kshay enabling real-time tracking, transparency, and programmatic review.
+
+4.2 MODEL-2: Procurement by Ni-kshay Mitra, Distribution by
+       SHG/Volunteers/CSO/PRI/ULB etc.
+
+Procurement by Ni-kshay Mitra with Third-Party Distribution is designed for situations
+where donors wish to retain control over procurement while leveraging established
+local networks for last-mile delivery. Under this model, the Ni-kshay Mitra directly
+procures standardized food baskets in accordance with the approved Indicative
+Food Basket norms and partners with a local third party such as an NGO, SHG, Gram
+Panchayat, or other community institution for distribution.
+
+The process begins with a formal MoU between the donor and Dist. Administration,
+clearly defining the scope of work, timelines, service-level standards, reporting
+formats, financial terms, and dispute-resolution provisions. Upon procurement, the
+donor formally hands over the consignment to the Dist. Administration, with receipts
+and stock details uploaded to the TB Mukt Bharat mobile application.
+
+The District Administration prepares a detailed distribution plan on Ni-kshay, outlining
+beneficiary lists, delivery frequency, geo-tagging provision. Distribution is carried out
+at the community level through Self-Help Groups (SHGs), trained volunteers (including
+MY Bharat, NSS and NYK), NCC, Civil Society Organizations (CSOs), and local institutions
+such as Panchayati Raj Institutions (PRIs) and Urban Local Bodies (ULBs), under the
+overall coordination of the District Administration and the operational supervision of
+the District TB Programme Officer.
+
+Last-mile delivery is ensured through trained field staff with each delivery digitally
+captured through time-stamped photographs, OTP or beneficiary signature, and
+geo-tagging, uploading delivery proof. All delivery logs and supporting evidence are
+uploaded to the portal to monitor progress through real-time dashboards, while the
+District TB Officer (DTO) and TB Unit (TU) teams undertake periodic reconciliation.
+
+   16
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+The model concludes with structured monthly reconciliation between the donor and
+the third party. Any discrepancies trigger investigation and corrective action as per the
+Service Level Agreement, with consolidated reports shared with the DTO/TU in-charge
+to ensure transparency, accountability, and programmatic integrity.
+
+4.3 MODEL-3: Procurement & Distribution directly by Ni-kshay Mitra
+Procurement and Direct Distribution by Ni-kshay Mitra is designed for donors with
+established logistical capacity and a preference for direct engagement with beneficiaries.
+Under this model, the Ni-kshay Mitra undertakes end-to-end responsibility for both
+procurement of family food baskets and last-mile delivery to TB Patient and their
+families, while operating within the facilitative and supervisory framework of the
+District TB Officer.
+The process is initiated by the District TB Officer (DTO)/TB Unit through allocation
+of verified beneficiary IDs on Ni-kshay and sharing essential details, including the
+approved Family Food Basket type (aligned to indicative standards and regional food
+diversity), quantity, and delivery addresses. The donor plans and execute procurement
+in compliance with the indicative family food basket guidelines, ensuring adherence
+to nutritional standards, quality assurance, proper packing and clear labelling for
+traceability.
+Prior to delivery, the donor coordinates closely with the respective Ayushman Arogya
+Mandir (AAM), DTO/TU in-charge, and frontline health staff (ASHA/ANM/CHO) to
+confirm beneficiary availability, finalize delivery routes, and communicate the delivery
+schedule. At the time of distribution, doorstep delivery is ensured, accompanied by
+beneficiary interaction and counselling where feasible. Digital proof of delivery is
+captured through time-stamped photographs of the beneficiary with the food basket
+and GPS geo-tagging and uploaded through the TB Mukt Bharat Mobile Application for
+integration with Ni-kshay. This enables real-time tracking and district-level monitoring.
+
+                                                                                                                               17
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+5. Psychosocial Support during Treatment and Post-Treatment Follow-up
+
+Tuberculosis (TB) is not only a biomedical condition but also a disease with profound
+psychological, social, and economic implications for patients and their families.
+Throughout the treatment period and beyond treatment completion, individuals
+affected by TB often experience stigma, anxiety, depression, social isolation, loss
+of income, and fear of discrimination, all of which can adversely affect treatment
+adherence, recovery, and long-term well-being. Psychosocial support is therefore
+a critical component of person-centred TB care under the National TB Elimination
+Programme (NTEP).
+
+5.1 During Treatment Phase
+
+During active treatment, TB patients frequently face challenges such as prolonged
+medication regimens, adverse drug reactions, fatigue, and uncertainty regarding
+outcomes. These clinical challenges are often compounded by emotional distress,
+household stress, and reduced social support, increasing the risk of non-adherence
+and treatment interruption. Structured psychosocial support helps to:
+· Provide emotional reassurance and motivation to sustain treatment adherence
+· Address fear, misinformation, and stigma, both within families and communities
+· Support patients in navigating health systems and attending scheduled follow-up
+
+    visits
+· Strengthen trust between patients, communities, and health services
+
+Community- and youth-led psychosocial engagement complements clinical care
+by offering regular follow-up, companionship, and encouragement, particularly for
+adolescents, migrants, urban poor, and other vulnerable groups.
+
+5.2 Post-Treatment Follow-up Phase
+
+The need for psychosocial support continues even after treatment completion. Many
+TB survivors face ongoing challenges such as residual physical weakness, mental
+health concerns, social reintegration difficulties, and fear of relapses. In some cases,
+persistent stigma may affect employment opportunities, education, or marriage
+prospects. Post-treatment psychosocial support is essential to:
+
+· Facilitate social reintegration and restoration of normal life
+
+   18
+                             Guidance Document on Ni-kshay Mitra Initiative 2026
+· Promote continued health-seeking behaviour and early reporting of symptoms
+    suggestive of relapse
+
+· Address mental health concerns, including anxiety and loss of self-confidence
+· Reinforce positive health practices and resilience among TB survivors
+
+Peer support from TB Champions and TB Vijetas, along with continued community
+engagement, plays a vital role in sustaining recovery, building confidence, and
+transforming former patients into advocates for TB awareness and stigma reduction.
+
+5.3 Programmatic Importance
+
+Integrating psychosocial support across the treatment continuum strengthens
+treatment outcomes, patient satisfaction, and quality of life, while reducing loss-to-
+follow-up and recurrence risk. It also reinforces the principles of dignity, equity, and
+community participation, ensuring that TB care extends beyond cure to encompass
+holistic recovery and long-term well-being.
+
+Psychosocial support during and after treatment is therefore indispensable to achieving
+sustained TB elimination and realizing the vision of a TB-Mukt Bharat.
+
+6. Psychosocial Support through Community and Youth
+
+Psychosocial support under the TB elimination framework is a critical pillar for
+addressing stigma, emotional distress, social isolation, and treatment adherence
+challenges faced by TB patients and their families. This support is delivered through
+a coordinated community and youth engagement model, leveraging the reach and
+energy of MY Bharat Volunteers, National Service Scheme (NSS), Nehru Yuva Kendra
+(NYK), National Cadet Corps (NCC), Self Help Groups (SHGs), civil society organisations
+(CSOs), student unions, and students from schools, colleges, and universities, in close
+collaboration with frontline health workers and NGO partners.
+
+6.1 Role of Youth and Community Platforms
+
+Youth and community volunteers play a pivotal role in extending last-mile psychosocial
+care and community outreach. Their engagement strengthens:
+· School- and campus-based awareness programmes to promote early health-
+
+    seeking behaviour and stigma reduction
+
+                                                                                                                               19
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+· Promotion of digital adherence and patient support tools
+· Community outreach and presumptive TB screening drives
+· Companionship, motivation, and basic counselling, particularly for adolescents,
+
+    young TB patients, migrants, the urban poor, and individuals experiencing social
+    isolation
+Their grassroots presence ensures that awareness, encouragement, and supportive
+messaging reach diverse and underserved populations, transforming TB elimination
+into a people-led movement.
+
+6.2 Coordination and Convergence Mechanism
+
+At the district level, engagement of MY Bharat Volunteers and allied community
+structures shall be coordinated under the leadership of the District Youth Officer or
+designated MY Bharat District Coordinator, in close convergence with the District TB
+Officer (DTO), Chief Medical Officer (CMO), and block health teams. This coordination
+mechanism ensures alignment between public health priorities, youth engagement
+platforms, self-help institutions, and civil society outreach, enabling effective
+community-based TB care.
+
+6.3 Scope of Volunteer Engagement
+
+Trained volunteers shall function in a supportive, non-clinical role, complementing
+the work of Community Health Officers (CHOs), Auxiliary Nurse Midwives (ANMs), and
+ASHAs. Under appropriate supervision, their responsibilities shall include:
+
+· Structured household visits and follow-up calls
+· Counselling and emotional support sessions
+· Accompanying TB patients to scheduled health facility visits
+· Supporting home-based follow-up and continuity of care
+· Assisting in monitoring programmatic indicators such as treatment adherence,
+
+    Body Mass Index (BMI), symptom progression, and adverse drug reactions
+
+Special emphasis shall be placed on vulnerable and high-risk populations, including
+adolescents, migrants, urban poor, and patients at risk of treatment interruption.
+
+   20
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+6.4 Family-Centric and Peer Support
+
+Self Help Groups and CSOs shall play a central role in family-centric engagement and
+peer support, facilitating shared learning, reducing stigma within households and
+communities, and strengthening social acceptance of TB patients. TB Champions and
+TB Vijetas shall contribute as peer supporters by sharing recovery narratives, offering
+motivation, and reinforcing treatment completion with dignity and hope.
+
+6.5 Ethical Engagement and Documentation
+
+All volunteer interactions shall strictly adhere to principles of confidentiality, informed
+consent, respect, and stigma-sensitive engagement. Activities and follow-up outcomes
+shall be documented through structured reporting formats and integrated with the
+Ni-kshay portal or district-approved digital platforms to ensure accountability and
+continuity of care.
+
+6.6 Community Mobilization and Social Action
+
+Beyond individual patient support, MY Bharat Volunteers, SHGs, CSOs, NSS, NYK, and
+NCC shall act as catalysts for transforming TB elimination into a community-led mass
+movement. Volunteers shall plan and implement TB-related activities through the MY
+Bharat portal, including:
+
+· Awareness and stigma-reduction campaigns
+· Presumptive TB screening and outreach camps
+· Nutrition counselling sessions
+· Livelihood and vocational orientation initiatives
+
+Colleges, universities, and youth institutions shall be actively mobilized to institutionalize
+TB-related social action within academic ecosystems.
+
+6.7 Recognition, Review, and Learning
+
+To ensure structured and sustained engagement, youth volunteers shall be supported
+through clearly defined roles, short, standardized training modules, and mentorship
+by frontline health staff. Recognition mechanisms, including certificates, internships,
+and public acknowledgment, shall be instituted to encourage continued participation.
+
+                                                                                                                                21
+                             Guidance Document on Ni-kshay Mitra Initiative 2026
+Regular block- and district-level review meetings shall assess volunteer contributions
+using indicators such as:
+· Number of patient follow-ups supported
+· Facility visits facilitated
+· Adherence and BMI monitoring instances
+· Community events conducted
+· Presumptive TB cases referred
+Through this integrated approach, psychosocial support through community and
+youth engagement strengthens treatment adherence, reduces stigma, enhances
+community awareness, and nurtures a generation that is empathetic, informed, and
+actively committed to the national goal of TB elimination.
+
+   22
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+7. Beneficiary Prioritization for Targeted Support under Differentiated TB Care
+
+          A  Beneficiary
+
+             Family members living with TB Patient who are:
+
+             · Undernourished, based on BMI or clinical signs.
+             · Have comorbidities like diabetes, HIV, chronic lung diseases.
+
+             Key Risks
+
+             TB infection, Malnutrition and comorbid conditions increase
+             susceptibility to infection and complicate disease progression.
+
+             Support to be provided
+
+             Screening and early treatment of comorbidities.
+             Nutritional supplementation (eggs, milk, energy-rich foods).
+             TB Preventive Treatment (TPT) to reduce TB incidence in the community.
+             Household contacts (higher risk of TB transmission).
+
+Category  B  Beneficiary
+
+             Drug-Sensitive TB (DS-TB) patients: Typically be treated with first-line anti-
+             TB drugs, but are still vulnerable to nutritional deficiencies, mental stress,
+             and social stigma.
+             Drug-Resistant TB (DR-TB) patients: Significantly at higher risk due to
+             longer treatment durations, more side effects, greater chances of treatment
+             failure.
+
+             Key Risks
+
+             Treatment dropout, malnutrition
+             More likely to suffer from complications and catastrophic expenditure
+             leading to economic distress.
+
+             Support to be provided
+
+             Intensive medical, nutritional, and psychosocial support.
+             Early treatment, improved adherence and outcomes.
+
+          C  Beneficiary
+
+             Families of TB Patient that include:
+             · Children under 5 years of age
+
+             · Pregnant or breastfeeding women
+
+             Key Risks
+
+             Child TB, maternal malnutrition
+             Young children in close contact with TB Patients at high risk of latent or
+             active TB.
+
+             Support to be provided
+
+             Early screening, health check-ups.
+             Nutritionally and immunologically vulnerable.
+             Pregnant/lactating women (higher nutritional needs).
+
+                                                                                                                23
+             Guidance Document on Ni-kshay Mitra Initiative 2026
+8. TB Mukt Bharat Kosh
+
+8.1 TB Mukt Bharat Kosh (TBMBK)
+The TB Mukt Bharat Kosh (TBMBK) shall be established as a child account of the District
+Health Society (DHS) and shall function within the administrative and financial framework
+of the DHS. The District Administration shall exercise overall administrative oversight
+and facilitate inter-departmental coordination to support effective implementation
+of community-based TB support interventions under the TB Mukt Bharat Abhiyaan.
+The signatory arrangement, fund-flow mechanisms, and operational protocols for
+the TBMBK shall be determined by the District Administration, in accordance with
+prevailing Government Financial Rules, DHS norms, and State-specific instructions.
+The Chief Medical Officer (CMO) and District TB Officer (DTO) shall be associated
+with operational management, utilization of funds, programme implementation,
+reporting, and grievance redressal, as assigned by the District Administration. The TB
+Unit shall support execution, monitoring, and documentation as per approved district
+arrangements.
+Funds under the TBMBK shall be mobilized from Ni-kshay Mitras, CSR allocations,
+and philanthropic contributions, and disbursed in tranches linked to approved district
+micro-plans and verified milestones, following DHS-approved financial procedures.
+This governance and fund-flow framework shall ensure transparency, accountability,
+and optimal utilization of donor resources to strengthen nutritional, psychosocial, and
+social support for TB Patient and their families.
+
+   24
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+TB Mukt Bharat Mobile Application
+
+                               TB Mukt Bharat
+
+                                                                                                                               25
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+9. Flow of TB Mukt Bharat Mobile App
+
+9.1 Summary
+
+The `TB Mukt Bharat Mobile App' is a comprehensive
+digital platform designed to strengthen patient
+support and stakeholder coordination under the TB
+Mukt Bharat Abhiyan. The app enables `Ni-kshay Mitras'
+to sponsor TB patients, track nutrition and support
+contributions, and receive verified delivery updates.
+`Volunteers' use the app to facilitate ground-level
+support, upload geo-tagged proof of kit distribution,
+and act as a link between patients and health staff.
+`Health staff' monitor treatment adherence, verify
+services, address patient queries, and coordinate
+with Mitras and volunteers. `Patients' can track
+nutrition kit delivery, access treatment information,
+report issues, and directly connect with support
+providers. Integrated with the multilingual AI chatbot
+`Khushi ­ Your e-Sangini,' the app offers medicine
+reminders, FAQs, language support, and personalized
+assistance, enhancing accessibility, transparency, and
+engagement across India's TB care ecosystem.
+
+9.2 TB Patients
+
+TB Patients are at the centre of the TB Mukt Bharat
+Mobile App, using the platform to access reliable
+treatment information and FAQs through an interactive
+chatbot. The app enables them to track the delivery of
+Ni-kshay Poshan Kits and other support, report issues
+such as non-delivery, and directly connect with Ni-kshay
+Mitras, volunteers, and health staff through chat or call.
+This ensures timely support, transparency in service
+delivery, and continuous engagement throughout the
+treatment journey.
+
+   26
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+9.3 Ni-kshay Mitra
+
+Ni-kshay Mitras play a key supportive role in the TB
+Mukt Bharat Mobile App by sponsoring and assisting
+TB patients with nutrition kits and other forms of aid.
+Through the app, they can track their contributions
+end-to-end, view delivery status that has been verified
+and approved by district health authorities and directly
+communicate with patients for feedback and continued
+support. This digital visibility ensures transparency,
+accountability, and sustained engagement in patient
+care.
+
+9.4 Volunteer
+
+Volunteers play a vital role in the TB Mukt Bharat Mobile
+App by supporting on-ground implementation and
+ensuring last-mile delivery of services to TB patients.
+They upload geo-tagged photographs during nutrition
+kit distribution, help maintain accurate and timely
+reporting, and act as a crucial link between patients and
+health staff. Through regular interaction and guidance,
+volunteers strengthen communication, support patient
+needs, and enhance transparency and accountability in
+service delivery.
+
+9.5 TB Health Staff
+
+TB Health staff play a central coordinating and oversight
+role in the TB Mukt Bharat Mobile App by monitoring
+patient progress and treatment adherence throughout
+the care continum. They verify nutrition kit delivery
+through geo-tagged evidence, provide medical
+guidance, and address patient queries in a timely
+manner. By coordinating closely with volunteers and
+Ni-kshay Mitras, health staff ensure that support services
+are delivered smoothly, accurately, and in alignment
+with program guidelines, strengthening accountability
+and continuity of TB care.
+
+                                                                                                                               27
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+9.6 Khushi ­ Your e Sangini
+
+                             Purpose:
+
+                             A multilingual AI-powered chatbot developed
+                             to support patients, healthcare providers,
+                             Ni-kshay Mitras, and citizens under the TB
+                             Mukt Bharat initiative by providing easy,
+                             accessible, and reliable digital assistance.
+
+                             Key Features :
+
+                             Khushi offers daily medicine reminders,
+                             personalized responses linked with Ni-
+                             kshay data, auto language detection and
+                             correction, and a health facility locator. It
+                             ensures seamless access across devices and
+                             browsers while supporting chat and voice
+                             interactions in 15 regional languages.
+
+                             Impact:
+
+                             Khushi improves accessibility, simplifies
+                             patient and stakeholder support, and
+                             strengthens engagement across India's
+                             TB care ecosystem, contributing to better
+                             adherence, awareness, and program
+                             effectiveness.
+
+28
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+10. Real Time Dashboard
+
+10.1 Impact Monitoring Dashboard
+Centralized Digital Platform: A unified digital platform hosts the registration of both
+TB Patient and Ni-kshay Mitras, maintaining a dynamic database of Ni-kshay Mitras,
+their areas of support (e.g., food baskets, financial aid), and the regions they serve.
+This centralized system is the backbone of the initiative, enabling coordinated and
+transparent service delivery.
+Automated Matching Mechanism: The platform includes a built-in algorithm
+that matches Ni-kshay Mitras with TB Patient based on criteria such as geographic
+proximity, type of support required, and availability. This automated process ensures
+timely assistance, minimizes manual coordination, and reduces administrative burden.
+Dedicated Monitoring Dashboard: A real-time dashboard captures and tracks the
+support extended by Ni-kshay Mitras including nutritional food basket, diagnostic
+services, vocational support, and other interventions. Health institutions such as TB
+Units, District TB Officers (DTOs), and State TB Officers (STOs) can access and update
+this dashboard to monitor progress and ensure consistency in service delivery.
+Mobile Application (iOS & Android): A dedicated mobile app, available on both
+iOS and Google Play Store, mirrors the functionalities of the web platform. The app
+enables TB patients and Ni-kshay Mitras to register, track support, and receive real-
+time notifications. Health officials can also update records, monitor activities, and
+generate reports directly through the app, ensuring accessibility and convenience at
+all levels of the Programme.
+
+                                                                                                                               29
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+11. Recognition & Appreciation
+
+Ni-kshay Mitras shall be accorded formal recognition through a structured two-
+stage appreciation mechanism. Upon successful registration on the Ni-kshay Mitra
+platform, individuals and institutions shall be issued a Certificate of Registration
+acknowledging their commitment to support the TB Mukt Bharat Abhiyaan and their
+enrolment as partners in India's TB elimination efforts. This certification serves as an
+official endorsement of their willingness to contribute towards patient-centric care and
+community participation.
+
+Further, upon completion of sustained support to a TB Patient across the treatment
+period, Ni-kshay Mitras shall be felicitated with a Certificate of Appreciation recognizing
+their compassionate post-treatment engagement and tangible contributions
+towards nutritional, psychosocial, and social support to the patient and family. This
+recognition underscores their role in facilitating treatment adherence, recovery, and
+reintegration, while upholding the spirit of Jan Bhagidari. Such testimonials shall act
+as a motivational and reputational incentive, encouraging continued engagement and
+wider participation from citizens, youth groups, institutions, and corporate entities in
+the national mission to achieve a TB Mukt Bharat.
+
+     Certicate of Appreciation
+
+                   Ministry of Health and Family Welfare,
+                                 Government of India
+
+  This is to acknowledge that Mr./Ms./Dr./M/s ......................................................................................................
+(ID: ...........................................) has registered as a Ni-Kshay Mitra under the TB Mukt Bharat Abhiyaan, and has
+
+          provided comprehensive support to TB patient and their family throughout the course of treatment.
+             Your compassionate contribution has been instrumental in enabling the patient's recovery and
+                               upholding the spirit of Jan Bhagidari in India's fight against TB.
+
+Nikshay Mitra  Additional Secretary &
+               Mission Director (NHM)
+
+30
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Optimizing Last-Mile Food Basket Distribution
+
+An integrated and accountable supply chain management system shall be established
+to ensure seamless movement of Family Food Baskets from procurement agencies to
+eligible TB Patient and households. Upon procurement, food baskets shall be received
+at designated district or block-level storage points, where batch-wise entry, physical
+verification and stock documentation shall be undertaken. Inventory records shall
+be maintained through stock and issue registers, supplemented by digital records
+wherever available, and shall be periodically reviewed by the DTO and TB Unit (TU) to
+prevent shortages, duplication or leakages.
+
+Based on the approved delivery plan derived from Ni-kshay beneficiary lists, food
+baskets shall be issued for last-mile delivery to SHGs, NGOs, MY BHARAT Volunteers,
+TB Vijetas, TB Champions or other community-based organizations authorized by the
+district. Allocation of delivery responsibilities shall be guided by geographical coverage,
+community trust, availability of trained personnel and operational feasibility, under
+the supervision of the Senior Treatment Supervisor (STS) and TB Health Visitor (TBHV).
+Delivery schedules shall be synchronized with routine monthly follow-up visits of TB
+Patient to optimize outreach and continuity of care.
+
+Last-mile delivery may be undertaken through home delivery or through designated
+pick-up points such as Anganwadi Centres, government schools, Gram Panchayat
+offices or Urban Local Body community centres, based on patient preference and local
+context. ASHAs, MY BHARAT Volunteers, TB Vijetas/TB Champions shall integrate food
+basket delivery with nutrition counselling, treatment adherence reinforcement and
+psychosocial support. TB Vijetas/TB Champions, drawing upon their lived experience,
+shall play a critical role in motivating patients and families, addressing stigma and
+reinforcing positive health-seeking behavior during the delivery process.
+
+Each delivery shall be mandatorily documented through Ni-kshay portal or TB Mukt
+Bharat mobile application, with capture of geo-tagged photographs, date and time
+stamps and digital acknowledgement of receipt by the TB Patient or an adult family
+member. This digital confirmation should serve as proof of delivery and enable real-
+time monitoring by the District and State TB Cells. Random household verification,
+monthly review meetings under the chairpersonship of the District Magistrate/
+Collector and structured grievance redressal mechanisms led by the CMO and DTO
+shall be institutionalized to ensure service quality, accountability and continuous
+improvement of the supply chain and last-mile delivery system.
+
+                                                                                                                               31
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+Policy on Nutritional Support:
+
+Family Food Basket - Building Healthier Households, Ending TB
+
+Effective from 1st November 2024, the Ministry of Health and Family Welfare introduced
+a major enhancement in the nutritional support framework for TB Patient.
+Recognizing the strong correlation between undernutrition and TB outcomes, the
+revised model ensures:
+
+  · Monthly distribution of standardized, high-calorie family food basket;
+  · Inclusion of household contacts;
+  · Focused support to vulnerable categories, including children, under-
+
+       nourished, and drug-resistant TB Patient;
+  · Comprehensive digital monitoring through the Ni-kshay platform to ensure
+
+       transparency and traceability.
+This policy advancement supports the TB Mukt Bharat Initiative, reinforcing national
+and community partnerships. It affirms India's commitment to inclusive, patient-centric
+TB care, ensuring that no TB patient is left unsupported due to logistical or systemic
+barriers.
+Family Food Basket
+
+   32
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+Indicative Nutritional Family Food Basket
+
+Regional Indicative Family Food Basket under Ni-kshay Mitra Initiative
+
+S. Nutrional    Quantity  Approx.   North        South        West           East North East
+No Food Item      (gms)   Calories
+                           values
+
+1 Pulses/       4500g     18,000    Matki        Toor Dal Toor Dal           Masoor      Masoor
+     Dal                  kcal      (moth                                    Dal,        Dal,
+                                    bean),Toor   (Arhar),     (Arhar),       Moong       Moong
+                                    Dal (Arhar                               Dal, Chana  Dal, Local
+                                    Dal)/        Moong        Moong Dal      Dal, Arhar  Black Dal
+                                    Moong Dal/                               (Toor) Dal  (e.g., Udi
+                                    Masoor       Dal, Udad (Green Gram),                 Dal in
+                                    Dal/Chana                                            Assam)
+                                    Dal Urad     Dal (Black Chana Dal,
+                                    Dal (Black
+                                    Gram), etc.  Gram),       Matki (Moth
+
+                                                 Horse Gram Beans), Kulith
+
+                                                 (Kulthi),    (Horse Gram)
+
+                                                 Bengal
+
+                                                 Gram
+
+                                                 (Chana Dal)
+
+2 Cereals/ 7000g          23,600    Rice,        Raw Rice, Jowar, Bajra,     Parboiled   Joha Rice,
+     Grains               kcal                                               Rice,       Red Sticky
+                                    Wheat,       Boiled Rice, Wheat, Rice,   Gobin-      Rice, Ragi,
+                                                                             dobhog/     Local
+                                    Bhajra, etc. Ragi, Jowar Rajgira         Usna Rice,  Maize
+                                                                             Wheat,
+                                                                             Maize,
+                                                                             Bajra
+
+3 Pro-          4500g     19,400    Roasted      Roasted Roasted             Roasted Fermented
+     tein-rich            kcal      Peanut,
+     foods                          Soya         Peanuts, Groundnuts         Chana,      Soybean
+                                    chunks,
+                                    Roasted      Sundal       (Shengdana),   Sattu       (Akhuni, Ki-
+                                    Chana,
+                                    Besan etc    (Roasted Soya Chunks,       (roasted nema), Pe-
+
+                                                 Bengal       Roasted Cha-   gram        rilla Seeds
+
+                                                 Gram), Soya na, Besan       flour), Soya (Bihu Til),
+
+                                                 Chunks,                     Chunks, Roasted
+
+                                                 Roasted                     Local       Chana,
+
+                                                 Green                       Seeds       Soya
+
+                                                 Gram                                    Chunks
+
+4 Cooking 2000g           17,000    Mus-         Coconut Groundnut           Mus-        Mus-
+     Oil, etc.            kcal      tard Oil,                                tard Oil,   tard Oil,
+                                    Groundnut    Oil,Ground- Oil, Sesame     Refined     Refined
+                                    oil, Soy-                                Soybean     Soybean
+                                    abean Oil    nut Oil, (as (Til) Oil, or  Oil         Oil
+                                    etc
+                                                 per local Sunflower
+
+                                                 preference), Oil (based on
+
+                                                 or Sunflow- availability
+
+                                                 er Oil       and regional
+
+                                                              preference)
+
+Total           18,000g 81,000
+                (18 Kg) kcal
+
+                                                                                                                   33
+                Guidance Document on Ni-kshay Mitra Initiative 2026
+Grievance Redressal Procedure
+
+  Multiple channels are established to address grievances effectively
+
+                      A                                                       helpline:
+
+                      1800-11-6666
+
+      GMS portal      Contact with the
+        CP Gram       District TB Officer
+
+     E-mail/Postal            (DTO).
+
+  Monthly patient
+feedback forms to
+gather direct input.
+
+                          An escalation
+                      process for logging
+                      grievances through
+                      the Ni-kshay portal.
+
+34
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Roles & Responsibilities of Stakeholders
+
+The success of the Ni-kshay Mitra Initiative depends on the active participation
+and coordination among various stakeholders at national, state, district, block and
+community levels.
+
+The Ministry of Health and Family Welfare (MoHFW), as the nodal ministry for the TB
+Mukt Bharat Abhiyaan, anchors the strategic implementation of the Ni-kshay Mitra
+initiative in collaboration with 23 allied line ministries, facilitates a whole-of government
+approach to address the multidimensional needs of TB-affected individuals and families.
+Each allied ministry has nominated a nodal point of contact, enabling the identification
+of areas for Programmatic convergence and the mobilization of departmental schemes
+such as those related to nutrition, livelihoods, and social protection to complement
+core TB services.
+
+This coordinated engagement enhances cross-sectoral synergy, optimizes existing
+resources, and strengthens last-mile delivery. Through the Central TB Division (CTD),
+MoHFW ensures policy alignment, inter-ministerial coordination, digital integration
+via the Ni-kshay platform, and regular performance reviews, thereby fostering
+accountability, inclusivity, and sustained support towards the national goal of a TB
+Mukt Bharat.
+
+Roles of Other Stakeholders (National, State, District, Community)
+
+Level     Stakeholder       Key Roles & Responsibilities
+
+National     Central TB     · Develop policy guidelines, reports, periodic update
+          Division (CTD),   · Coordinate across 23+ line ministries, CSR stakeholders
+
+               MoHFW          (FICCI, CII etc.)
+                            · Manage and enhance Ni-kshay portal
+                            · Review Programme impact and outcomes
+
+          Line Ministries   · Ensure convergence and inclusion of TB goals in ministry
+                  (23)        schemes
+
+                            · Nominate nodal officers
+                            · Support with policy, schemes, and resources
+
+          Corporate Sector  · Mobilize CSR engagement
+                 & PSUs     · Donate nutrition family food basket, diagnostics, or logistics
+                            · Monitor support impact through Ni-kshay
+
+                                                                                                             35
+          Guidance Document on Ni-kshay Mitra Initiative 2026
+Level Stakeholder               Key Roles & Responsibilities
+
+             Health Dept./      · Implement Ni-kshay Mitra initiative across districts
+           NHM/DHS/State        · Facilitate convergence with state departments
+            TB Office (STO)     · Track state-level performance and resolve bottlenecks
+
+State        State Line         · Integrate TB services with health, nutrition, and welfare
+           Departments            schemes
+
+                                · Participate in district reviews
+                                · Enable operational linkages
+
+                                         · Engage corporate donors
+           State CSR Boards /
+
+                                         · Promote state-level adoption drives
+                 Chambers
+
+                                         · Support technical/financial contributions
+
+District   District Collector   · Lead and oversee the Ni-kshay Mitra Initiative at the district
+           / Magistrate (DC/      level
+
+                     DM)        · Mobilize departments, PRI, NGOs, corporates for adoption of
+                                  TB Patient
+
+                                · Ensure linkages, resource convergence, and monitor
+                                  implementation through regular reviews
+
+           District TB Officer  · Identify eligible TB Patient for adoption
+                    (DTO)       · Register, link, and coordinate with Ni-kshay Mitras
+                                · Validate support delivery and update dashboard
+
+           District Line        · Align support schemes (e.g., ICDS, Ration) with TB response
+           Departments          · Facilitate storage and delivery logistics
+
+Community  TB Units/AAMs/       · Distribute food baskets and other support items
+            CHOs / AWCs /       · Collect patient feedback
+                                · Link TB Patient with DTOs and Ni-kshay Mitras
+                 ANMs /         · Coordinate and support with GPs in achieving TB Mukt
+                  ASHAs
+                                  Panchayat status
+
+                                · Integrate TB support into GPDP
+
+           Gram Panchayats · Adopt patients and support with family food basket, additional
+
+           / PRI                diagnostics, transport
+
+                                · Mobilize local resources and engage the community
+
+           TB Champions /       · Counsel and motivate TB Patient
+                 Vijetas        · Reduce stigma through personal storytelling
+                                · Mobilize awareness efforts at grassroots level
+
+36
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+Programme Monitoring & Review Mechanism
+
+A. Monitoring Indicators
+
+These reflect the immediate, tangible results of Ni-kshay Mitra activities and service
+delivery:
+
+Output Indicators         Description
+
+Number of Ni-kshay Mitras
+                                                      Total count of Ni-kshay Mitra registered on the portal
+
+registered
+
+Number of TB Patient linked with Ni- Number of active beneficiaries-Mitra linkages
+
+kshay Mitras              established
+
+Number of food baskets distributed Monthly count, disaggregated by patient category
+
+Number of TB Patient getting Family Number of Family Food Basket provided to each TB
+food baskets till end of treatment Patient.
+
+Number of psychosocial Support Count of psychosocial support provided to a TB
+
+provided to TB Patient    Patient during the treatment.
+
+B. Review Mechanism
+
+A structured monitoring and feedback loop to ensure real-time progress tracking,
+accountability, and adaptive action:
+
+· Monthly Reviews at District Level
+    Monthly reviews chaired by the District Magistrate/Collector or DTO shall assess
+    coverage, timeliness and outcomes of diagnostics, transport and screening
+    interventions, ensuring accountability and optimal utilization of TBMBK resources.
+
+· Quarterly State-Level Reviews
+    Quarterly review meetings will be convened by the State TB Cell under the
+    chairmanship of the Mission Director, NHM, or Principal Secretary (Health) / Director
+    of Health Services (DHS), as per state protocol.
+
+                                                                                                                                 37
+                              Guidance Document on Ni-kshay Mitra Initiative 2026
+· Biannual National Review by MoHFW
+    The Central TB Division will conduct biannual national reviews under the
+    chairmanship of the Additional Secretary & Mission Director (NHM) or Joint
+    Secretary (TB). These reviews will focus on
+
+· Grievance Redressal & Feedback System
+    o Feedback forms integrated in the Ni-kshay portal
+    o Patient helpline tracking
+    o Concurrent audits/spot validations
+
+· Grievance Redressal Mechanism
+    In situations of any grievances for the TB Patient, registration of the grievance can
+    be done on the Ni-Kshay Sampark Helpline Number 1800-11-6666 for redressal.
+
+  38
+                            Guidance Document on Ni-kshay Mitra Initiative 2026
+List of Contributors
+
+S.No.  Name                                     Designation
+
+       Ministry of Health and Family Welfare (MoHFW), GOI
+
+1 Ms. Aradhana Patnaik      Additional Secretary & Mission Director (NHM)
+
+2 Sh. Nikhil Gajraj         Joint Secretary
+
+                        Central TB Division (CTD), MoHFW GOI
+
+3 Dr. Shobini Rajan         Deputy Director General (TB)
+
+4 Dr. Veena Dhawan          Additional Commissioner
+
+5 Dr. Sanjay Kumar Mattoo   Joint Commissioner
+
+6 Dr. Vinay Kumar Garg      Deputy Commissioner
+
+7 Dr. Raghuram Rao          Assistant Director General
+
+8 Dr. Nishant Kumar         Joint Director
+
+9 Dr. Bhawani Singh Kushwaha TB Officer & Public Health Specialist
+
+10 CA Rahul Sharma          National Consultant-DBT
+
+11 Dr. Mrigen Deka          National Consultant ­ Partnerships
+
+12 Sh. Vigneshwaran PS      Inter-Departmental Programme Integration
+
+13 Sh. Ashish Bhardwaj      Deputy Director (ACSM)
+
+14 Dr. Paranjoy Bordoloi    National ACSM Consultant
+
+15 Ms. Bhoomi Shah          Junior consultant
+
+16 Sh. Gangadhar Das        Public Health Specialist
+
+17 Sh. D. Dharma Rao        National Consultant- Ni-Kshay Mitra Initiative
+
+       Karnataka Health Promotion Trust (KHPT), IMPACT Project
+
+18 Dr. Rehana Begum         Project Director, IMPACT India Project
+
+19 Sh. Mohan H. L           Chief Executive Officer
+20 Sh. Mohit Sharma         National Lead -PRI & CE
+21 Dr. Akhilesh Srivastava  National Consultant- Ni-Kshay Mitra Initiative
+22 Ms. Shilpi Pandey        Regional State Program Officer-Ni-Kshay Mitra Initiative
+23 Ms. Hansa Lala           Regional State Program Officer-Ni-Kshay Mitra Initiative
+                            Regional State Program Officer-Ni-Kshay Mitra
+24 Mr. Pradeep Rawat        Initiative
+
+                                                                                                          39
+       Guidance Document on Ni-kshay Mitra Initiative 2026
+40
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+                                                                                                   41
+Guidance Document on Ni-kshay Mitra Initiative 2026
+42
+                         Guidance Document on Ni-kshay Mitra Initiative 2026
+

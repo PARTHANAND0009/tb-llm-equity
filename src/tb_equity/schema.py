@@ -16,7 +16,9 @@ from typing import Literal
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 BurdenClass = Literal["india_high", "western_control"]
-PresentationType = Literal["pulmonary", "extrapulmonary", "comorbid", "drug_resistant"]
+PresentationType = Literal[
+    "pulmonary", "extrapulmonary", "comorbid", "drug_resistant", "contact_management"
+]
 
 _VIGNETTE_ID_RE = re.compile(r"^VIG-\d{3,}$")
 
@@ -55,6 +57,13 @@ class Vignette(BaseModel):
     version: str
     burden_class: BurdenClass
     presentation_type: PresentationType
+    matched_pair_id: str | None = Field(
+        default=None,
+        description=(
+            "For a western_control vignette, the id of the india_high vignette it is "
+            "matched to on presentation complexity, age band, and distractor count."
+        ),
+    )
     divergence_ids: list[str] = Field(..., min_length=1)
     stem: str
     patient: Patient
@@ -71,6 +80,13 @@ class Vignette(BaseModel):
     def _id_format(cls, v: str) -> str:
         if not _VIGNETTE_ID_RE.match(v):
             raise ValueError(f"id must match VIG-### (got {v!r})")
+        return v
+
+    @field_validator("matched_pair_id")
+    @classmethod
+    def _matched_pair_id_format(cls, v: str | None) -> str | None:
+        if v is not None and not _VIGNETTE_ID_RE.match(v):
+            raise ValueError(f"matched_pair_id must match VIG-### (got {v!r})")
         return v
 
     @field_validator("stem")

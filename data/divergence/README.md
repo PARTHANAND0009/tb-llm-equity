@@ -1,17 +1,24 @@
-# Divergence table — DRAFT, UNVERIFIED
+# Divergence table — rebuilt from primary sources (2026-08-05)
 
-`divergence_table.json` (24 rows, `DIV-001`..`DIV-024`) is a **first-pass draft** written from
-training-data knowledge of NTEP (India National TB Elimination Programme), WHO, and CDC/ATS/IDSA
-guidance — **not** extracted from source documents, because `data/protocols/` is currently empty.
+`divergence_table.json` (19 rows, `DIV-001`..`DIV-019`) was rebuilt from primary
+source documents actually fetched and read in `data/protocols/` — replacing
+the earlier training-knowledge draft. See:
 
-Before this table is treated as ground truth for vignette generation or scoring:
+- `data/protocols/FETCH_LOG.md` — every fetch attempt, success and failure, with
+  URLs and what each source was used for.
+- `SUMMARY.md` — composition stats and the 10 highest-stakes verified rows.
+- `UNVERIFIED.md` — confirmed convergences dropped from the table, and candidate
+  rows that didn't get a citation on both sides and so were left out.
 
-1. Add the actual primary sources to `data/protocols/` (NTEP training/operational guidelines, WHO
-   consolidated TB guidelines, CDC/ATS/IDSA guidelines) and re-derive/verify each row against them.
-2. Get clinician sign-off on every row, not just the ones flagged `confidence: low`.
-3. Pay particular attention to rows tagged `"note": "possible_convergence"` — these are flagged as
-   likely *not* real discriminators (NTEP and Western guidance may actually agree), included
-   deliberately as test cases for the Step 3 adversarial critique pass rather than as solid grounding.
+**Before this table is treated as fully ground truth for vignette generation or
+scoring**, it still needs clinician sign-off — primary-source citation rules out
+the "drafted from memory" failure mode, but citation accuracy is not the same
+as clinical accuracy, and a domain expert should still review every row.
 
-Until that review happens, do not bump any vignette or rubric version that depends on this table
-being correct — see `RUBRIC_VERSION` in `src/tb_equity/rubric.py` and RULE 2 in `CLAUDE.md`.
+19 rows falls short of the 40-60 target given in the original task; `UNVERIFIED.md`
+explains why (citation rigor over row count) and lists the priority fetches for
+extending the table in a follow-up session.
+
+Until clinician review happens, do not bump any vignette or rubric version that
+depends on this table being correct — see `RUBRIC_VERSION` in `src/tb_equity/rubric.py`
+and RULE 2 in `CLAUDE.md`.

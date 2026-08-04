@@ -1,0 +1,146 @@
+March/ 2022
+
+                                                    Department of Health Research
+                                  Ministry of Health and Family Welfare, Government of India
+
+                    Standard Treatment Workflow (STW) Guidelines for
+
+            DRUG SENSITIVE-TB TREATMENT AS PER NTEP
+
+For all TB patients whether being treated in public or private sector, clinicians should follow Standards for TB care in India guidelines
+In NTEP, the principle of TB treatment (except confirmed DR-TB) is to administer daily FDC of 1st line ATT in appropriate weight bands,
+under direct observation
+For patients being treated in private sector, FDCs may be provided by NTEP whenever requested
+
+                                Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE
+
+             This regimen is for H & R sensitive TB cases and cases where the sensitivity pattern can not be established
+
+Treatment is given in two phases:
+1. Intensive phase consists of 8 weeks (56 doses) of isoniazid (H), rifampicin (R), pyrazinamide (Z) and ethambutol (E) given under
+
+   direct observation in daily dosages as per weight band categories
+2. Continuation phase consists of 16 weeks (112 doses) of isoniazid, rifampicin and ethambutol in daily dosages. Only pyrazinamide
+
+   will be stopped in the continuation phase. The CP needs to be extended upto 24 weeks in certain forms of TB like CNS TB,
+   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case basis.
+
+             Regimen for DS-TB                                           IP                                                 CP
+
+                         Drugs                                         2 HRZE                                             4 HRE
+
+                Doses                                                  56                                                 112
+
+                                                                       ADULT TB TREATMENT
+
+             Drug dosages for first-line anti- TB drugs     Special considerations for Adult TB                    Special considerations for Adult
+                                                                                Meningitis                                       abdominal TB
+Drugs           Doses
+                                                           Intensive Phase: 2 months of RHZE or                  Extend duration of treatment in
+Isoniazid (H)   5 mg/kg daily (4 to 6 mg/kg)               RHZS                                                  cases of inadequate response
+                                                           Continuation phase: 3 drugs-RHE for at                Refer for surgical management for
+Rifampicin (R)  10 mg/kg daily (8 to 12 mg/kg)             least 10 months*                                      complications [intestinal obstruction
+                                                           STEROIDS                                              (due to strictures), perforation]
+Pyrazinamide (Z) 25 mg/kg daily (20 to 30 mg/kg)                                                                 Consider endoscopic dilatation for
+                                                           > Preferably Dexamethasone 0.4                        treatment for accessible strictures
+Ethambutol (E) 15 mg/kg daily (12 to 18 mg/kg)               mg/kg/day intravenously in 3-4                      Refer for biliary drainage in case of
+                                                             divided doses during hospital stay                  Jaundice due to biliary obstruction
+Streptomycin (S)* 15 mg/kg daily (15 to 20 mg/kg)                                                                (hepatobiliary obstruction/pancreatic
+                                                           > If not feasible, give oral                          TB)
+*Streptomycin is administered only in certain situations,    Dexamethasone 0.4 mg/kg/day in
+like TB meningitis or if any first line drug need to be      divided doses or oral Prednisolone 1                     Special considerations for
+replaced due to ADR as per weight of the patient             mg/kg/day in a single morning dose                                intra-ocular TB
+
+Pyridoxine may be given at a dosage of 10 mg per day       > Discharge on oral steroids on tapering              ATT : 2 months of RHEZ + 7 months
+                                                             doses for total duration of 8-12 weeks              of RH depending on clinical response
+                Number of tablets (FDCs)                                                                         & side effects to treatment
+                                                           > Regular follow up is essential every                Add pyridoxine 10 mg/day
+ Weight         Intensive Phase       Continuation           month for at least first 3 months &                 Corticosteroids : Topical steroids eye
+category        H: 75mg; R: 150             Phase            can be increased thereafter till                    drops for severe/anterior chamber
+               mg; Z: 400 mg; E:                             treatment is stopped                                inflammation
+25 to 34 kg                       H: 75mg; R: 150 mg;                                                            For treatment in children refer to
+                      275 mg)           E: 275 mg)         > Monitor liver function tests & any                  paediatrician
+                                                             other features of drug toxicity                     Systemic corticosteroids for severe
+                2                 2                                                                              inflammation in consultation with
+                                                           > Observe for clinical improvement or                 Uveitits expert
+35 to 49 kg     3                 3                          any deterioration
+
+50 to 64 kg     4                 4                        > Closely observe for development of
+                                                             any complications
+65 to 75 kg     5                 5
+                                                           *treatment duration may be increased in
+> 75 kg         6                 6                        some cases as per the clinician decision
+
+Fixed Dose Combinations (FDCs) refer to products
+containing two or more active ingredients in fixed
+doses, used for a particular indication(s)
+
+In NTEP, for Adults: 4-FDC (given in IP) consists of
+HRZE and 3-FDC (given in CP) consists of HRE
+
+ During treatment if weight of the patient increases
+by > 5 kg and crosses the next weight band
+then patient should be given the next higher weight
+band FDC drugs
+
+                                                           PAEDIATRIC TB TREATMENT
+
+ Paediatric cases are to be treated under NTEP in                      Number of tablets (dispersible FDCs)              Special considerations for
+ daily dosages as per 6 weight band categories                                                                         paediatric osteoarticular TB
+ Children & adolescents up to 18 years of age              Weight      Intensive phase Continuation phase
+ weighing less than 39 kg, are to be treated using          Band                                                     Regimen : 2HRZE + 10HRE
+ paediatric weight bands. Those weighing                               HRZ                    E  HR       E          Follow up every month during
+ more than 39 kg to be treated with adult                                                                            treatment & subsequently every
+ weight bands.                                                         50/75/150 100 50/75                100        3 months: Potts spine
+Available paediatric dispersible FDCs and loose                                                                      with X-ray or MRI & Tubercular
+drugs                                                      4- 7 kg     1                      1  1        1          dactylitis or arthritis with plain
+1. Dispersible FDC, flavoured                                                                                        X-ray
+                                                           8- 11 kg    2                      2  2        2
+    Rifampicin 75 mg + Isoniazid 50 mg +                                                                               Special considerations for
+   Pyrazinamide 150 mg                                     12 - 15 kg  3                      3  3        3             paediatric Abdominal TB
+    Rifampicin 75 mg + Isoniazid 50 mg
+2. Dispersible Loose drugs                                 16 - 24 kg  4                      4  4        4          Steroids- Not recommended
+    Ethambutol 100 mg                                                                                                Supportive treatment-
+    Isoniazid 100 mg                                       25 - 29 kg  3 + 1A *               3 3 + 1A *  3          Management of SAM/Malnutrition
+                                                                                                                     as per national guidelines
+                                                           30- 39 kg   2 + 2A *               2 2 + 2A *  2          Surgical treatment:
+                                                                                                                      > Acute intestinal obstruction,
+                                                           *A=Adult FDC (HRZE = 75/150/400/275; HRE =
+                                                           75/150/275). It is added in higher weight band              Bowel perforation
+                                                           categories i.e. > 25 kg as these children may be able to   > Persistence of obstructive
+                                                           swallow tablets
+                                                           Pyridoxine may be given at a dosage of 10 mg per day        symptoms despite conservative
+                                                                                                                       management & ATT
+Drug dosages for first-line anti- TB drugs                    Special considerations for paediatric TB               DO NOT start Empirical ATT with
+                                                                                                                     isolated:
+Isoniazid (H)   7-15 mg/kg                                                          meningitis                        > Recurrent/Chronic abdominal
+Rifampicin (R)  (maximum dose 300 mg/day)                                                                              pain without danger signs
+                10-20 mg/kg                                ATT for paediatric TB Meningitis                           > Chronic diarrhoea without
+                                                             > 2 HRZE and 10 HRE (in appropriate doses)                proper evaluation
+                            (maximum dose 600 mg/day)
+Pyrazinamide (Z) 30-40 mg/kg                               Corticosteroids
+                                                             > Prednisolone 2 mg/kg/day for 4 weeks &
+                             (maximum 2000 mg/day)            then taper over 4 weeks*
+                                                            > Slower taper needed in some patients
+Ethambutol (E) 15-25 mg/kg
+                            (maximum 1500 mg/day)           *Equivalent dose of another steroid formulation may
+
+                                                            be used either injectable/oral
+
+                                                                       ABBREVIATIONS
+
+ADR: Adverse drug reaction        DR-TB: Drug resistant Tuberculosis   H: Isoniazid                                       R: Rifampicin
+ATT: Anti-Tubercular treatment    DS-TB: Drug sensitive Tuberculosis   IP: Intensive phase                                S: Streptomycin
+CNS: Central Nervous system       E: Ethambutol                        MRI: Magnetic Resonance imaging TB: Tuberculosis   SAM: Severe acute
+CP: Continuation phase            FDC: Fixed dose combination          NTEP: National TB Elimination Programme
+                                                                                                                                  malnutrition
+                                                                       REFERENCES                                         Z: Pyrazinamide
+
+ 1. National TB Elimination Programme, Central TB Division. Training modules for programme managers & Medical officers. Ministry of Health and Family Welfare, Government of India accessed at
+    https://tbcindia.gov.in/index1.php?lang=1&level=1&sublinkid=5465&lid=3540 on 24 February, 2022.
+
+This STW has been prepared by national experts of India with feasibility considerations for various levels of healthcare system in the country. These broad guidelines are advisory, and are
+based on expert opinions and available scientific evidence. There may be variations in the management of an individual patient based on his/her specific condition, as decided by the
+treating physician. There will be no indemnity for direct or indirect consequences. Kindly visit our web portal (stw.icmr.org.in) for more information.
+© Indian Council of Medical Research and Department of Health Research, Ministry of Health & Family Welfare, Government of India.
+

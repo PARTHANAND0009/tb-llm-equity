@@ -1,0 +1,228 @@
+                                                                    Guidance document of implementation of 1HP TPT regimen ­
+                                        Guidelines for programmatic management of TB preventive treatment in India 2021
+
+           NATIONAL TUBERCULOSIS ELIMINATION PROGRAMME
+Guidance document on shorter one-month daily isoniazid and rifapentine
+
+              (1HP) regimen option for TB Preventive Treatment
+
+Forward:
+
+This is a technical and operational guidance document on shorter one month daily isoniazid and
+rifapentine (1HP) TPT regimen option for implementation in age group 13 years. The guidance
+is presented as an addendum to and should be referred in context of the Guidelines for
+Programmatic Management of TB Preventive Treatment in India 2021.
+
+Evidence for 1HP:
+
+· A large randomized, open label trial1 compared the efficacy and safety of the shorter 1HP
+    regimen and reported that 1HP regimen is noninferior to 9 month daily isoniazid regimen
+    (9H) in PLHIV from high TB prevalence area or had evidence of TB infection.
+         o 3,000 patients were followed for a median of 3.3 years.
+         o Treatment completion was significantly higher in 1HP compared to 9H (97% versus
+             90%, p<0.001).
+         o Serious adverse event occurred 6% and 7% in the group given 1HP and 9H
+             respectively. Although lower in 1HP, the difference was not significant (p = 0.07).
+         o TB incidence was reported to be 0.65 and 0.67 per 100 person-years in the group
+             given 1HP and 9H respectively. The rate of difference in 1HP was -0.02 per 100
+             person-years; upper limit of 95% confidence interval was 0.30).
+
+· WHO's guidelines on TPT also recommends 1HP as alternative option for the use across all
+    disease burden settings and target populations including PLHIV.2
+
+TPT target group, strategy, and treatment options:
+
+Target population                               Strategy                Treatment option
+
+· People living with HIV                        TPT to all after ruling · 1HP (1 month of
+
+o PLHIV adults and children >12 months out active TB disease daily isoniazid and
+
+         irrespective of ART initiation status  TPT among TBI               rifapentine ­ 28
+    o Child living with HIV age <12 months      positive# after ruling      doses) in person 
+                                                out TB disease              13 years
+         in contact with active TB                                      Or
+· Household contact below 5 years of                                    · 3HP (3 months of
+pulmonary* TB patients                                                      weekly isoniazid
+· Household contacts 5 years and above of                                   and rifapentine ­
+                                                                            12 doses) in person
+    pulmonary* TB patients (testing would be
+    offered whenever available)
+
+1 Swindells S, Ramchandani R, Gupta A et. al. BRIEF TB/A5279 Study Team. One Month of Rifapentine plus Isoniazid
+to Prevent HIV-Related Tuberculosis. N Engl J Med. 2019 Mar 14;380(11):1001-1011. doi: 10.1056/NEJMoa1806808.
+PMID: 30865794; PMCID: PMC6563914.
+2 World Health Organization. WHO operational handbook on TB: Module 1 ­ TB Preventive Treatment, 2020
+
+                                                                                                                                1
+                                                    Guidance document of implementation of 1HP TPT regimen ­
+                         Guidelines for programmatic management of TB preventive treatment in India 2021
+
+· Other risk group                                 TPT after ruling out      older than 2 years
+
+o Children/adult on initiation of                  TB disease among Or
+
+immunosuppressive therapy or anti- TBI positive                          · 6H (6 months of
+
+TNF treatment,                                                               daily isoniazid ­
+
+o Person with silicosis,                                                     180 doses)$
+
+o Patient on dialysis,                                                   Or
+
+o Person considered for organ or                                         · 3RH (3 months of
+
+haematologically transplantation                                             daily rifampicin and
+
+                                                                             isoniazid - 84
+
+                                                                             dosages) in age
+
+                                                                             group < 15years
+
+· Household contacts of multi drug                 TPT after ruling out · 6Lfx (6 months of
+
+resistant TB (MDR-TB) patients with                TB disease among          daily levofloxacin)
+
+fluoroquinolone (FQ) sensitive                     TBI positive
+
+· Household contacts of Isoniazid                  TPT after ruling out · 4R (4 months of
+
+mono/poly resistant TB (Hr-TB) patients TB disease among                     daily rifampicin)
+
+with rifampicin (R) sensitive                      TBI positive
+
+* bacteriologically confirmed pulmonary TB patients will be prioritized for enumeration of the target
+population for TPT; # Chest X-ray (CXR) and testing for TB infection would be offered wherever available,
+but TPT must not be deferred in their absence; $ fixed-dose combination of Isoniazid + Pyridoxin (B6) +
+
+Cotrimoxazole (CPT) is a preferred formulation in PLHIV
+
+Recommended dosages of 1HP
+
+Regimen         Dose by age and weight band
+1HP ­ one       Age  13 years (regardless of weight band):
+month of        Isoniazid: 300 mg/day
+daily           Rifapentine: 600 mg/day
+rifapentine
+plus isoniazid  Formulations:                            Rifapentine     Isoniazid  Rifapentine
+(28 doses)       No. of pills HP FDC (Isoniazid             300mg         300mg        150mg
+                                        300mg +
+                                      Rifapentine
+                                        300nmg
+
+                2 pills
+
+                    OR
+
+                3 pills
+
+                    OR
+
+                5 pills                            --
+
+                                                                                                   2
+                                                     Guidance document of implementation of 1HP TPT regimen ­
+                          Guidelines for programmatic management of TB preventive treatment in India 2021
+
+1HP as a TPT treatment options
+
+                                              1HP
+
+Medicines          Isoniazid + Rifapentine
+
+Duration           1 month
+
+Interval           Daily
+
+Number of doses 28
+
+Pregnancy          Not known
+
+Interaction with Contraindicated: ­ All PIs, NVP/NNRTIs, TAF
+
+ART                Use with ­ TDF, EFV (600mg), DTG, RAL (without dose adjustment)
+
+Adverse Drug       Hepatotoxicity, hypersensitivity reaction, rash, GI upset, orange
+Reactions          discolouration of body fluids
+
+Absorption         Peak concentration is increased with given with a meal.
+
+Special situation
+
+· TPT among people who use drugs: people taking 3HP, 3RH, 4R or 1HP with Opioid
+    Substitution Therapy (OST) should be closely monitored for signs of opiate withdrawal and
+    other adverse events. Increasing the dose of methadone or buprenorphine when taking
+    rifamycin can lessen the risk of withdrawal.
+
+Management of interruptions
+
+Treatment interruptions with 1HP should be managed as is done in case of 6H, 6Lfx and 4R.
+
+  TPT Duration of                             Management steps
+regimen interruption
+
+1HP Less than 1 · If more than 23 (80%) doses out of 28 expected doses in the
+
+            weeks           regimen were taken, no action is required, just complete the
+
+                            remaining doses.
+
+                          · If less than 23 (80%) doses out of 28 expected doses in the
+                              regimen were taken, resume treatment immediately upon
+                              return and add the missed doses to the total treatment
+                              duration to complete the course within a maximum of 6 weeks
+                              from the first dose.
+
+            More than 1 · If more than 7 consecutive doses were missed, consider
+
+            weeks           restarting the complete course of 1HP regimen.
+
+                          · If more than 7 doses were missed intermittently, resume
+                              preventive treatment immediately upon return and add the
+                              missed doses to the total treatment duration to complete the
+                              course within a maximum of 8 weeks from the first dose.
+
+                          · If adherence to 1HP is not possible, consider discontinuing it
+                              and offering 3HP or an alternative daily regimen
+
+                                                                                            3
+                                                                    Guidance document of implementation of 1HP TPT regimen ­
+                                        Guidelines for programmatic management of TB preventive treatment in India 2021
+
+Treatment outcomes:
+
+· Treatment completion with 1HP: 80% of recommended dose (23/28) consumed within 133%
+    of planned TPT duration (40 days) for 1HP.
+
+Regimen Total duration      Expected       80% of      Extended time for treatment
+                 in months  number of  recommended           completion (days)
+                                       dosages (days)
+1HP      1                   dosages                    (treatment duration + 33%
+                                              23               additional time)
+                                 28                                    40
+
+(daily)
+
+· Loss to follow up in 1HP: TPT interrupted by person for 10 consecutive days for 1HP.
+· There is no difference in definitions of treatment failed, died, TPT discontinuation due to
+
+    toxicity and not evaluated. Refer Guidelines for Programmatic Management of TB Preventive
+    Treatment in India 2021
+
+Recording and reporting:
+
+Ni-kshay is the real-time case-based information management and surveillance system for TB in
+India. Records of enrolment, screening, TB diagnosis or TBI tests, treatment information, adverse
+event, dispensation etc. should be recorded in Ni-kshay TPT module. The operational aspects in
+terms of data entry points, health facility/ field level staff to perform the data entry can be
+referred in table 12.1 in the guidelines for programmatic management of TB preventive
+treatment. All the PLHIV eligible for TPT should be enrolled in Ni-kshay and follow-up through Ni-
+kshay TPT module. The data manager at the ART Centre (ARTC) should be responsible for
+complete entry of TPT care cascade in Ni-kshay under the guidance of ARTC In-charge.
+
+The TPT care cascade monitoring is possible through `TB Preventive Treatment dashboard'
+available in Ni-kshay.
+
+                                                                                    4
+

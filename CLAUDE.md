@@ -15,7 +15,8 @@ versus WHO/CDC ("Western") protocols, via paired vignettes.
 data/protocols/     raw NTEP + WHO + CDC source docs
 data/divergence/    structured NTEP-vs-Western divergence table
 data/vignettes/     vignette JSON files, versioned
-data/responses/     cached raw model responses
+data/vignettes/prompts/  per-cell generation prompts (--mode=claude-code only)
+data/responses/     cached raw model responses (--mode=api only)
 results/            scored outputs, stats, figures
 results/manifests/  one JSON manifest per experiment run
 src/tb_equity/      package code
@@ -83,8 +84,37 @@ never be merged into the headline number.
 
 ## RULE 7 — HOLDOUT
 
-20 vignettes are held out at generation time, tagged `holdout=true`, and
-excluded from all analysis until a final confirmation run.
+Vignettes are held out at generation time, tagged `holdout=true`, and
+excluded from all analysis until a final confirmation run. The holdout count
+is proportional to the vignette set size (`TOTAL_HOLDOUT` /
+`TOTAL_VIGNETTES` in `scripts/build_stratification_plan.py`) — currently 23
+of 170.
+
+## Generation modes
+
+`scripts/generate_vignettes.py` supports two modes. RULE 5 applies to
+**both** — `require_generation_model()` runs regardless of mode, so
+`config/models.yaml`'s `generation.model`/`generation.family` must be set
+either way, and must not overlap `evaluation.models`.
+
+- **`--mode=api`** (default) — calls the configured generator over its
+  provider API through `tb_equity.llm_client.CachingLLMClient` (sha256-cached
+  per RULE 4). Requires the provider's API key to be set in the environment.
+- **`--mode=claude-code`** — no API key required. Writes the per-cell
+  grounding prompt to `data/vignettes/prompts/<cell_id>.md` instead of
+  calling an API; a coding agent (e.g. Claude Code) reads each prompt file
+  and acts as the generator directly, hand-writing the resulting vignette to
+  `data/vignettes/<version>/<VIG-###>.json` per that file's embedded output
+  contract. Re-running `--mode=claude-code` skips cells that already have a
+  vignette file, validates whatever vignette files exist against
+  `tb_equity.schema.Vignette` (same location-leak check as `--mode=api`),
+  and writes a manifest — so it's safe to run repeatedly while an agent works
+  through the prompt files over multiple sessions. Token counts in the
+  manifest are 0 in this mode (no metered API call happens inside the
+  script); `generation.family`/`generation.model` still identify who is
+  acting as the generator for RULE 5 purposes.
+
+`scripts/critique_vignettes.py` currently only supports the API path.
 
 ## Tooling
 
@@ -92,8 +122,12 @@ excluded from all analysis until a final confirmation run.
 - `make test` — `uv run pytest`
 - `make lint` — `uv run ruff check src tests scripts`
 - `make stratify` — (re)generate `data/vignettes/stratification_plan.{json,md}`
-- `make generate-vignettes` — run the vignette generation pipeline (requires
-  `generation.model`/`generation.family` set in `config/models.yaml` first)
+- `make generate-vignettes` — run the vignette generation pipeline in
+  `--mode=api` (requires `generation.model`/`generation.family` set in
+  `config/models.yaml` first, plus that provider's API key)
+- `make generate-vignettes-claude-code` — same, but `--mode=claude-code`:
+  writes prompts to `data/vignettes/prompts/` for a coding agent to answer by
+  hand, no API key needed (see "Generation modes" below)
 - `make critique-vignettes` — run the adversarial critique pass over a
   generated vignette set
 - `make review-packet` — render `data/vignettes/REVIEW_PACKET.md`
@@ -109,11 +143,30 @@ excluded from all analysis until a final confirmation run.
 The vignette generation pipeline (schema, stratification plan, grounded
 generation, adversarial critique, review-packet rendering) is implemented in
 `src/tb_equity/` and `scripts/`, but has not been run against a live model:
-`config/models.yaml` has no `generation.model` configured yet, and
-`data/divergence/divergence_table.json` is a **draft** written from training
-knowledge, not yet verified against primary sources in `data/protocols/`
-(currently empty) or signed off by a clinician — see
-`data/divergence/README.md`. `generate_vignettes.py` and
-`critique_vignettes.py` both fail loudly (`GenerationNotConfiguredError`)
-until a generator model/family is set. No evaluation-arm/scoring code has
-been written yet.
+`config/models.yaml` has no `generation.model` configured yet.
+`generate_vignettes.py` and `critique_vignettes.py` both fail loudly
+(`GenerationNotConfiguredError`) until a generator model/family is set —
+this applies to `generate_vignettes.py` regardless of `--mode`.
+
+`data/divergence/divergence_table.json` was rebuilt (2026-08-05) from
+primary sources actually fetched into `data/protocols/` (13 PDFs + several
+HTML pages — see `data/protocols/FETCH_LOG.md`), replacing an earlier
+training-knowledge draft. It has 19 rows, each cited on both sides — short of
+the 40-60 target because rows without a real citation on both sides were
+dropped rather than shipped weak (see `data/divergence/UNVERIFIED.md` for
+what was cut and why, `data/divergence/SUMMARY.md` for composition stats).
+Still needs clinician sign-off before being treated as ground truth — see
+`data/divergence/README.md`.
+
+The stratification plan (`scripts/build_stratification_plan.py`) covers 170
+vignette slots across five `presentation_type` values — the original
+pulmonary/extrapulmonary/comorbid/drug_resistant plus `contact_management`
+(added to ground TPT/LTBI-focused divergence rows that don't fit an
+active-disease presentation) — each split across `burden_class`
+india_high/western_control, with every one of the 19 divergence rows
+grounding at least one vignette (`tests/test_divergence_coverage.py`). Each
+`western_control` cell carries a `matched_pair_id` linking it to one
+`india_high` cell matched on presentation complexity, age band, and
+distractor count.
+
+No evaluation-arm/scoring code has been written yet.

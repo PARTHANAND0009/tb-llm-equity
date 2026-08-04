@@ -1,0 +1,12 @@
+# Model family roster for RULE 5 — GENERATOR/EVALUATOR SEPARATION.
+#
+# "Family" means the underlying model provider/lineage (e.g. "anthropic",
+# "openai", "meta-llama"), not a specific version string. List every family
+# that will ever be used in each role. src/tb_equity/config.py asserts these
+# two sets are disjoint; a family may not appear in both.
+#
+# Fill in as models are chosen. Left empty for now (scaffold only).
+
+generator_model_families: []
+
+evaluator_model_families: []

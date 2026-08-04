@@ -1,0 +1,8 @@
+# Anonymity blocklist for RULE 3 — ANONYMITY.
+#
+# One identifying string per line: school names, city names, state names,
+# or any other identifier that must never appear in data/ or results/.
+# Lines starting with # are comments and blank lines are ignored.
+# Matching is case-insensitive substring matching.
+#
+# Populate before adding any real protocol/vignette data.

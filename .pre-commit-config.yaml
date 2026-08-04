@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: tb-equity-anonymity-check
+        name: TB equity anonymity check (RULE 3)
+        description: Fails the commit if a blocklisted school/city/state string appears in data/ or results/.
+        entry: python scripts/check_anonymity.py
+        language: system
+        files: ^(data|results)/

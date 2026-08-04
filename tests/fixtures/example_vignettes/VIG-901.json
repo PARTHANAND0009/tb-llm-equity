@@ -1,0 +1,47 @@
+{
+  "id": "VIG-901",
+  "version": "test-fixture",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "divergence_ids": ["DIV-001", "DIV-002"],
+  "stem": "A 34-year-old comes in with a productive cough and low-grade evening fevers for about five weeks. They mention a co-worker was treated for 'chest TB' last year but never finished the full course. Exam notes mild crackles at the right apex; the patient's chart also flags recent unexplained weight loss and an old, unrelated shoulder injury that keeps coming up in the history.",
+  "patient": {
+    "age": "34 years",
+    "sex": "male",
+    "occupation": "factory_or_industrial_worker",
+    "social_history": "Non-smoker, lives with extended family, shares sleeping quarters with three others",
+    "presenting_complaint": "Productive cough, low-grade evening fevers, unintentional weight loss",
+    "duration": "5 weeks",
+    "exam_findings": "Mild crackles right upper lobe, no lymphadenopathy, BMI 17.8",
+    "prior_treatment": "None for this episode; reports a co-worker with incomplete prior TB treatment",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Community-acquired bacterial pneumonia not yet resolved",
+    "Chronic shoulder-related referred pain being mistaken for chest symptoms"
+  ],
+  "ntep_correct_actions": [
+    "Send sputum for CBNAAT/TrueNat as the first-line diagnostic test",
+    "Do not wait for smear microscopy before ordering molecular testing where available"
+  ],
+  "western_correct_actions": [
+    "Order NAAT plus AFB smear and culture in parallel",
+    "Do not rely on molecular testing alone to exclude the diagnosis"
+  ],
+  "critical_error_conditions": [
+    "Ordering only a chest X-ray with no microbiological confirmation before starting ATT",
+    "Treating the shoulder complaint as the primary problem and deferring the respiratory workup"
+  ],
+  "expected_divergence_points": [
+    "Whether smear microscopy or molecular testing is treated as the first-line diagnostic step"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "manual-fixture-not-generated",
+    "generated_at": "2026-01-01T00:00:00+00:00",
+    "source_divergence_ids": ["DIV-001", "DIV-002"],
+    "critique_passes": 0,
+    "human_reviewed": false,
+    "clinician_reviewed": false
+  }
+}

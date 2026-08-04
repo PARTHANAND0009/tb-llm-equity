@@ -1,12 +1,26 @@
-# Model family roster for RULE 5 — GENERATOR/EVALUATOR SEPARATION.
+# Model configuration for RULE 5 — GENERATOR/EVALUATOR SEPARATION.
 #
-# "Family" means the underlying model provider/lineage (e.g. "anthropic",
-# "openai", "meta-llama"), not a specific version string. List every family
-# that will ever be used in each role. src/tb_equity/config.py asserts these
-# two sets are disjoint; a family may not appear in both.
+# generation.model/.family is the single model used to generate and critique
+# vignettes. evaluation.models is the roster of models under evaluation.
+# generation.family must never appear among evaluation.models[].family —
+# src/tb_equity/config.py asserts this and raises otherwise.
 #
-# Fill in as models are chosen. Left empty for now (scaffold only).
+# Left unconfigured (generation.model: null) until a generator is chosen.
+# Any script that generates or critiques vignettes must fail loudly, not
+# silently proceed, while this is unset — see
+# tb_equity.config.require_generation_model().
 
-generator_model_families: []
+generation:
+  model: null # e.g. "gpt-4.1" -- must be set before running generate_vignettes.py / critique_vignettes.py
+  family: null # e.g. "openai" -- provider/lineage identifier, must be set alongside `model`
+  temperature: 0.9
+  top_p: 1.0
+  max_tokens: 1600
+  seed: 42
 
-evaluator_model_families: []
+evaluation:
+  models: []
+  # - family: anthropic
+  #   model: claude-opus-5
+  # - family: google
+  #   model: gemini-2.5-pro

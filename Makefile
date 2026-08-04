@@ -1,4 +1,5 @@
-.PHONY: setup test lint run-arms score analyze figures manifest-check
+.PHONY: setup test lint run-arms score analyze figures manifest-check \
+        stratify generate-vignettes critique-vignettes review-packet clinician-review
 
 setup:
 	uv sync --all-extras
@@ -10,9 +11,30 @@ test:
 lint:
 	uv run ruff check src tests scripts
 
-# The following four targets are placeholders: no experiment code has been
-# written yet (scaffold only, per project setup). They will call into
-# src/tb_equity once that code exists.
+# The vignette generation pipeline (schema, stratification, generation,
+# critique, rendering) is implemented in scripts/ and src/tb_equity/. It has
+# not been run against a live model yet — config/models.yaml has no
+# generation.model configured (see CLAUDE.md RULE 5) — so generate-vignettes
+# and critique-vignettes will fail loudly until a generator is chosen.
+
+stratify:
+	uv run python scripts/build_stratification_plan.py
+
+generate-vignettes:
+	uv run python scripts/generate_vignettes.py
+
+critique-vignettes:
+	uv run python scripts/critique_vignettes.py
+
+review-packet:
+	uv run python scripts/render_review_packet.py
+
+clinician-review:
+	uv run python scripts/render_clinician_review.py
+
+# The following four targets are placeholders: no evaluation-arm/scoring
+# code has been written yet. They will call into src/tb_equity once that
+# code exists.
 
 run-arms:
 	@echo "run-arms: not implemented yet — no experiment code has been written."

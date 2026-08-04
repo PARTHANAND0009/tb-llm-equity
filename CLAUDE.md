@@ -65,12 +65,15 @@ parsed/extracted fields.
 ## RULE 5 — GENERATOR/EVALUATOR SEPARATION
 
 The model family used to generate or critique vignettes must never be a
-model family under evaluation. The roster of families in each role lives in
-`config/models.yaml` (`generator_model_families` / `evaluator_model_families`).
-Call `tb_equity.config.assert_generator_evaluator_disjoint()` at the start of
-any script that generates/critiques vignettes or runs evaluation arms — it
-raises `GeneratorEvaluatorOverlapError` if the sets intersect. Keep
-`config/models.yaml` up to date as models are added.
+model family under evaluation. `config/models.yaml` holds `generation.model`
+/ `generation.family` (the single model that generates and critiques
+vignettes) and `evaluation.models` (the roster under evaluation, each with
+its own `family`). Call `tb_equity.config.require_generation_model()` at the
+start of any script that generates/critiques vignettes — it raises
+`GenerationNotConfiguredError` if no generator is set yet, and
+`GeneratorEvaluatorOverlapError` if `generation.family` also appears in
+`evaluation.models[].family`. Keep `config/models.yaml` up to date as models
+are added.
 
 ## RULE 6 — DETERMINISTIC FIRST
 
@@ -88,6 +91,13 @@ excluded from all analysis until a final confirmation run.
 - `make setup` — `uv sync --all-extras` + install pre-commit hooks
 - `make test` — `uv run pytest`
 - `make lint` — `uv run ruff check src tests scripts`
+- `make stratify` — (re)generate `data/vignettes/stratification_plan.{json,md}`
+- `make generate-vignettes` — run the vignette generation pipeline (requires
+  `generation.model`/`generation.family` set in `config/models.yaml` first)
+- `make critique-vignettes` — run the adversarial critique pass over a
+  generated vignette set
+- `make review-packet` — render `data/vignettes/REVIEW_PACKET.md`
+- `make clinician-review` — render `data/vignettes/CLINICIAN_REVIEW.md`
 - `make run-arms` — run evaluation arms (not yet implemented)
 - `make score` — deterministic + LLM-judge scoring (not yet implemented)
 - `make analyze` — statistical analysis (not yet implemented)
@@ -96,7 +106,14 @@ excluded from all analysis until a final confirmation run.
 
 ## Status
 
-Scaffold only. No experiment code (vignette generation, model calls, scoring
-pipelines) has been written yet. Infrastructure that directly enforces the
-rules above (manifest schema/validator, generator/evaluator separation
-assertion, anonymity pre-commit check) is already in place.
+The vignette generation pipeline (schema, stratification plan, grounded
+generation, adversarial critique, review-packet rendering) is implemented in
+`src/tb_equity/` and `scripts/`, but has not been run against a live model:
+`config/models.yaml` has no `generation.model` configured yet, and
+`data/divergence/divergence_table.json` is a **draft** written from training
+knowledge, not yet verified against primary sources in `data/protocols/`
+(currently empty) or signed off by a clinician — see
+`data/divergence/README.md`. `generate_vignettes.py` and
+`critique_vignettes.py` both fail loudly (`GenerationNotConfiguredError`)
+until a generator model/family is set. No evaluation-arm/scoring code has
+been written yet.

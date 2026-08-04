@@ -1,0 +1,47 @@
+{
+  "id": "VIG-902",
+  "version": "test-fixture",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "divergence_ids": ["DIV-008", "DIV-006"],
+  "stem": "A 52-year-old presents with a two-month history of cough and fatigue. Random blood glucose drawn incidentally at a pharmacy last week was elevated, though the patient never followed up. They also mention joint aches they attribute to 'old age' and a recent course of over-the-counter cough syrup that briefly helped.",
+  "patient": {
+    "age": "52 years",
+    "sex": "female",
+    "occupation": "homemaker",
+    "social_history": "Lives with spouse, limited access to routine primary care follow-up",
+    "presenting_complaint": "Cough, fatigue, incidental elevated glucose",
+    "duration": "8 weeks",
+    "exam_findings": "Mild bibasilar crackles, BMI 24, no focal neuro deficits",
+    "prior_treatment": "Over-the-counter cough syrup only",
+    "comorbidities": ["suspected undiagnosed type 2 diabetes"]
+  },
+  "distractors": [
+    "Age-related joint pain unrelated to the respiratory complaint",
+    "Self-limited viral upper respiratory infection given brief symptomatic improvement with OTC syrup"
+  ],
+  "ntep_correct_actions": [
+    "Perform confirmatory blood glucose testing as part of the mandated bidirectional TB-diabetes screen",
+    "Notify the case via the national notification system regardless of care setting"
+  ],
+  "western_correct_actions": [
+    "Order glucose testing based on clinical judgment given the incidental abnormal result, not as a mandated protocol step",
+    "Report the case to the local/state health department as a notifiable condition"
+  ],
+  "critical_error_conditions": [
+    "Ignoring the incidental glucose abnormality entirely",
+    "Failing to notify the case through the appropriate surveillance channel"
+  ],
+  "expected_divergence_points": [
+    "Whether bidirectional diabetes screening is a mandated program step or a discretionary clinical judgment call"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "manual-fixture-not-generated",
+    "generated_at": "2026-01-01T00:00:00+00:00",
+    "source_divergence_ids": ["DIV-008", "DIV-006"],
+    "critique_passes": 1,
+    "human_reviewed": false,
+    "clinician_reviewed": false
+  }
+}

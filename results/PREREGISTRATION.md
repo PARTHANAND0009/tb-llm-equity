@@ -185,6 +185,92 @@ protocol-context contrast for two reasons:
 
 ## Amendments
 
-None as of this commit. Any future change to this document must be appended
-below with a date and a stated reason — never edited in place once a scored
-result exists that depended on the prior version.
+### 2026-08-06 (same day, later): reframed around NTEP-WHO consensus vs. US default
+
+Written before any vignette existed and before any data was collected —
+`data/vignettes/v1/` was empty at the time this amendment was appended, the
+same condition under which the original document above was committed. This
+is an amendment, not a correction: nothing above is edited in place, per
+this document's own rule; everything below records what changed and why.
+
+**What happened.** The divergence table above (data/divergence, "6 of 100"
+vignette slots and "`DIV-008`, `DIV-010`, `DIV-016`, `DIV-017`, `DIV-020`,
+`DIV-021`" as referenced in this document's original text) was the product
+of re-sourcing the original 19-row NTEP-vs-US table against WHO's
+consolidated guidelines. That re-sourcing pass found that NTEP and WHO
+**converge** on 11 of the original 19 axes — universal drug-susceptibility
+testing, molecular-first diagnosis, contact TPT breadth for MDR/RR-TB,
+1HP adoption, empiric TPT for PLHIV and household contacts under 5, and
+more. This was an unanticipated empirical result at the time the original
+research question (above) was written: that question presumed NTEP-vs-WHO
+divergence was itself the object of study, and did not anticipate that most
+of the original table would turn out to be NTEP-WHO agreement instead.
+
+**Why this changes the research question, not just the data.** Convergence
+between NTEP and WHO is not a null result to route around — it is the
+finding. It means India's national programme is closely aligned with
+international consensus, and the still-current 2016/2017 ATS/CDC/IDSA
+guidance — not NTEP — is the outlier both India and WHO have moved past.
+Treating the 11 converged rows as dead weight and analyzing only the
+residual 6 NTEP-vs-WHO differences would have thrown away the stronger,
+more legible claim sitting in the data: the US accounts for a fraction of a
+percent of global TB cases, India alone accounts for roughly 25%, so a
+model that defaults to US guidance where WHO and NTEP already agree against
+it systematically disadvantages the large majority of the world's TB
+patients, not just India's.
+
+**Revised research question**, replacing the one stated at the top of this
+document: do frontier LLMs follow NTEP-WHO international consensus on TB
+clinical decisions, or do they default to US national practice even where
+WHO and India's national TB programme agree against it?
+
+**Divergence table restructure.** Every row now carries three positions —
+`ntep_position`, `who_position`, `us_position` — plus a `divergence_class`:
+`consensus_divergence` (NTEP and WHO agree, US differs — the 11 reinstated
+rows, primary dataset) or `national_adaptation` (NTEP differs from WHO —
+6 rows, unchanged in substance from the version described earlier in this
+document, secondary dataset). 17 rows total. See
+`data/divergence/SUMMARY.md` and `data/divergence/UNVERIFIED.md` for the
+full disposition history of every row.
+
+**Revised primary outcome**, replacing "NTEP protocol deviation rate"
+above: **consensus deviation rate** — the proportion of
+`consensus_correct_actions` (the verbatim intersection of
+`ntep_correct_actions` and `who_correct_actions`, computed automatically by
+`tb_equity.schema.Vignette`) a model's response fails to take, scored only
+on `consensus_divergence`-grounded vignettes, since `consensus_position` —
+and therefore `consensus_correct_actions` — is only meaningfully defined
+where NTEP and WHO agree.
+
+**New secondary outcome: US-alignment rate** — the proportion of responses
+that match `us_correct_actions` specifically where `us_correct_actions`
+differs from the consensus position (i.e., on `consensus_divergence` rows,
+where matching the US action means NOT matching consensus). This is the
+outcome that directly tests the reframed hypothesis: a high US-alignment
+rate on exactly the rows where WHO and NTEP agree against US practice is
+direct evidence of default-to-US-practice behavior, not just a generic
+protocol-deviation number that can't distinguish "wrong in some
+idiosyncratic way" from "wrong in the specific direction of US guidance."
+
+**divergence_class stratifies every analysis** from this point forward:
+`consensus_divergence` rows test the primary hypothesis (consensus
+deviation rate, US-alignment rate); `national_adaptation` rows test the
+original secondary hypothesis from this document's "Research question"
+section (does the model track NTEP's specific adaptation vs. WHO's more
+conditional/discretionary position) and are analyzed separately, not pooled
+into the primary consensus-deviation number. The stratification plan
+(`scripts/build_stratification_plan.py`) targets roughly 75% of cells
+grounded primarily in `consensus_divergence` rows and 25% in
+`national_adaptation` rows, matching the relative importance of the two
+hypotheses.
+
+**Unchanged.** The four-arm design (baseline / location / epidemiological
+base rates / retrieved protocol text) and the `PGC_k ≥ 0.5`-plus-significance
+threshold for "substantially closes the gap" are unchanged from the
+"Design" and "Interpretation rule" sections above — only what `gap_k`
+is computed against shifts, from NTEP-vs-WHO deviation to consensus
+deviation on `consensus_divergence` rows (and, for `national_adaptation`
+rows, the original NTEP-vs-WHO framing still applies as-is). Multiple
+comparisons (Benjamini-Hochberg on secondary outcomes) and the holdout
+policy (RULE 7, unchanged proportion, now 15 of 100 per Task 3's rebuild)
+are also unchanged.

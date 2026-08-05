@@ -6,21 +6,23 @@ Systematic (deterministic round-robin), not random, assignment of strata to each
 
 | presentation_type | burden_class | count |
 |---|---|---|
-| comorbid | comparator_control | 4 |
+| comorbid | consensus_control | 4 |
 | comorbid | india_high | 10 |
-| contact_management | comparator_control | 3 |
+| contact_management | consensus_control | 3 |
 | contact_management | india_high | 8 |
-| drug_resistant | comparator_control | 4 |
+| drug_resistant | consensus_control | 4 |
 | drug_resistant | india_high | 8 |
-| extrapulmonary | comparator_control | 7 |
+| extrapulmonary | consensus_control | 7 |
 | extrapulmonary | india_high | 16 |
-| pulmonary | comparator_control | 12 |
+| pulmonary | consensus_control | 12 |
 | pulmonary | india_high | 28 |
 | **total** |  | **100** |
 
 Holdout: 15 of 100, stratified proportionally across the groups above (largest-remainder allocation).
 
-Matched pairs: 30 of 30 comparator_control cells are paired to an india_high cell (`matched_pair_id`) of the same presentation_type, matched on age_band and num_distractors where possible — see `scripts/build_stratification_plan.py::assign_matched_pairs`.
+Matched pairs: 30 of 30 consensus_control cells are paired to an india_high cell (`matched_pair_id`) of the same presentation_type, matched on age_band and num_distractors where possible — see `scripts/build_stratification_plan.py::assign_matched_pairs`.
+
+primary_divergence_class target split: 76 consensus_divergence / 24 national_adaptation (76% / 24%, target 75%/25%). This is a per-cell *request* honored by `scripts/generate_vignettes.py::divergence_rows_for` -- see `tests/test_divergence_coverage.py` for the check that grounding actually delivered on it.
 
 ## Systematic variation axes
 
@@ -36,6 +38,7 @@ Each vignette slot cycles deterministically through these value lists — no `ra
 - **comorbid subtype (`comorbid` presentation_type only)**: tb_diabetes, tb_hiv, undernutrition
 - **drug-resistance subtype (`drug_resistant` presentation_type only)**: rifampicin_mono_resistant, mdr_tb, pre_xdr_tb
 - **contact-management subtype (`contact_management` presentation_type only)**: household_contact_ds_tb, household_contact_mdr_tb, plhiv_tpt
+- **primary_divergence_class (target grounding class, period-25 cycle)**: consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, consensus_divergence, national_adaptation, national_adaptation, national_adaptation, national_adaptation, national_adaptation, national_adaptation
 
 ## Distribution by axis (sanity check)
 

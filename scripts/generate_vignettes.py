@@ -68,72 +68,106 @@ GENERATION_LOG_PATH = (
 # Candidate divergence rows per (presentation_type, subtype) combination.
 # subtype is None for pulmonary/extrapulmonary cells (no subtype axis).
 #
-# Rebuilt for the 6-row divergence_table.json (2026-08-06 WHO-comparator
-# rebuild -- see data/divergence/SUMMARY.md; most of the original 19 rows
-# converged with WHO once re-sourced and were dropped). This is a candidate
-# POOL, not the final grounding: divergence_rows_for() below filters each
-# pool down to rows whose `applicable_age_bands` field includes the cell's
-# actual age_band (Task 2 Bug B -- no vignette may be grounded in a row that
-# doesn't apply to its age), then caps the result at MAX_DIVERGENCE_IDS_PER_VIGNETTE
-# (Task 2 Bug A -- one clinical case can't meaningfully probe more decision
-# points than that), rotating deterministically across cells within a group
-# when the age-filtered pool exceeds the cap so that coverage of the full
-# pool is achieved across the group's vignettes rather than crammed into one.
+# Rebuilt for the 17-row three-way divergence_table.json (2026-08-06 --
+# see data/divergence/SUMMARY.md). This is a candidate POOL, not the final
+# grounding: divergence_rows_for() below (a) filters each pool down to rows
+# whose `applicable_age_bands` includes the cell's actual age_band (no
+# vignette may be grounded in a row outside its age), (b) within that
+# age-filtered set, prefers rows matching the cell's `primary_divergence_class`
+# (Task 3's 75%/25% consensus_divergence/national_adaptation weighting --
+# see build_stratification_plan.py) falling back to the other class only if
+# the preferred class has zero eligible rows, then (c) caps the result at
+# MAX_DIVERGENCE_IDS_PER_VIGNETTE, rotating deterministically across cells
+# within a group when the preferred, age-filtered pool exceeds the cap so
+# coverage of the full pool is achieved across the group's vignettes.
 #
-# DIV-016 (active case-finding) is deliberately included in every pool: its
-# applicable_age_bands spans all four age bands, so it also serves as the
-# universal fallback that guarantees no (presentation_type, subtype, age_band)
-# combination the stratification plan can produce is ever left with zero
-# eligible rows. tests/test_divergence_coverage.py asserts every row in the
-# table is used by at least one stratification cell.
+# DIV-016 (active case-finding, national_adaptation) is deliberately
+# included in every pool as the national_adaptation-side universal fallback
+# -- its applicable_age_bands spans all four bands. Every pool also carries
+# at least one age-broad consensus_divergence row (DIV-001/002/003/005/009,
+# depending on topical fit) so the 75% consensus_divergence request can
+# always be honored too. Verified by hand against every
+# (presentation_type, subtype, age_band) combination this plan can produce;
+# tests/test_divergence_coverage.py checks both that every row in the table
+# grounds at least one cell and that the realized consensus/adaptation
+# ratio lands within tolerance of the 75/25 target.
 DIVERGENCE_MAP: dict[tuple[str, str | None], list[str]] = {
     ("pulmonary", None): [
-        "DIV-008",  # treatment extension discretion (adult)
-        "DIV-016",  # active case-finding vs threshold-gated screening (all ages)
-        "DIV-017",  # differentiated-care triage thresholds (adolescent/adult)
-        "DIV-020",  # 4-month vs 6-month paediatric regimen (paediatric)
-        "DIV-021",  # paediatric treatment-decision algorithm (paediatric)
+        "DIV-001",  # consensus: molecular-first diagnosis (all ages)
+        "DIV-002",  # consensus: universal rifampicin-resistance DST (all ages)
+        "DIV-004",  # consensus: culture not mandatory in parallel (all ages)
+        "DIV-006",  # consensus: daily dosing throughout (adult)
+        "DIV-007",  # consensus: weight-band FDC dosing mechanism (all ages)
+        "DIV-008",  # national_adaptation: treatment extension discretion (adult)
+        "DIV-016",  # national_adaptation: active case-finding (all ages)
+        "DIV-017",  # national_adaptation: differentiated-care triage thresholds (adolescent/adult)
+        "DIV-020",  # national_adaptation: 4-month vs 6-month paediatric regimen (paediatric)
+        "DIV-021",  # national_adaptation: paediatric treatment-decision algorithm (paediatric)
     ],
     ("extrapulmonary", None): [
-        "DIV-016",  # active case-finding vs threshold-gated screening (all ages)
-        "DIV-017",  # differentiated-care triage thresholds (adolescent/adult)
-        "DIV-021",  # paediatric treatment-decision algorithm -- bacteriologically
-        # unconfirmed EPTB is a classic setting for it (paediatric)
+        "DIV-003",  # consensus: upfront NAAT on extrapulmonary specimens (all ages)
+        "DIV-016",  # national_adaptation: active case-finding (all ages)
+        "DIV-017",  # national_adaptation: differentiated-care triage thresholds (adolescent/adult)
+        "DIV-021",  # national_adaptation: paediatric TDA -- bacteriologically unconfirmed
+        # EPTB is a classic setting for it (paediatric)
     ],
     ("comorbid", "tb_diabetes"): [
-        "DIV-017",  # Box 4.3 glycemic threshold triage (adolescent/adult)
-        "DIV-016",  # universal age fallback
+        "DIV-002",  # consensus: universal DST still applies to any TB patient (all ages)
+        "DIV-007",  # consensus: weight-band dosing mechanism (all ages)
+        "DIV-017",  # national_adaptation: Box 4.3 glycemic threshold triage (adolescent/adult)
+        "DIV-016",  # national_adaptation: universal age fallback
     ],
     ("comorbid", "tb_hiv"): [
-        "DIV-017",  # Box 4.3 CD4 threshold triage (adolescent/adult)
-        "DIV-016",  # universal age fallback
+        "DIV-019",  # consensus: cotrimoxazole for all HIV+ TB patients regardless of CD4 (all ages)
+        "DIV-002",  # consensus: universal DST still applies (all ages)
+        "DIV-017",  # national_adaptation: Box 4.3 CD4 threshold triage (adolescent/adult)
+        "DIV-016",  # national_adaptation: universal age fallback
     ],
     ("comorbid", "undernutrition"): [
-        "DIV-017",  # Box 4.3 BMI threshold triage (adolescent/adult)
-        "DIV-016",  # universal age fallback
+        "DIV-002",  # consensus: universal DST still applies (all ages)
+        "DIV-007",  # consensus: weight-band dosing, relevant to BMI/undernutrition (all ages)
+        "DIV-017",  # national_adaptation: Box 4.3 BMI threshold triage (adolescent/adult)
+        "DIV-016",  # national_adaptation: universal age fallback
     ],
-    ("drug_resistant", "rifampicin_mono_resistant"): ["DIV-017", "DIV-016"],
-    ("drug_resistant", "mdr_tb"): ["DIV-017", "DIV-016"],
-    ("drug_resistant", "pre_xdr_tb"): ["DIV-017", "DIV-016"],
+    ("drug_resistant", "rifampicin_mono_resistant"): [
+        "DIV-002",  # consensus: universal rifampicin-resistance DST, direct fit (all ages)
+        "DIV-009",  # consensus: fixed regimen for MDR/RR-TB contacts, DR-TB-adjacent (all ages)
+        "DIV-017",  # national_adaptation: triage thresholds apply to any TB patient (adolescent+)
+        "DIV-016",  # national_adaptation: universal age fallback
+    ],
+    ("drug_resistant", "mdr_tb"): [
+        "DIV-002", "DIV-009", "DIV-017", "DIV-016",
+    ],
+    ("drug_resistant", "pre_xdr_tb"): [
+        "DIV-002", "DIV-009", "DIV-017", "DIV-016",
+    ],
     ("contact_management", "household_contact_ds_tb"): [
-        "DIV-010",  # household contact TPT breadth (adolescent/adult)
-        "DIV-016",  # universal age fallback (also covers contact screening directly)
+        "DIV-005",  # consensus: TST/IGRA interchangeable regardless of BCG (all ages)
+        "DIV-012",  # consensus: 1HP regimen availability (adolescent/adult)
+        "DIV-010",  # national_adaptation: household contact TPT breadth, direct fit (adolescent+)
+        "DIV-016",  # national_adaptation: universal age fallback
     ],
     ("contact_management", "household_contact_mdr_tb"): [
-        "DIV-010",  # household contact TPT breadth (adolescent/adult)
-        "DIV-016",  # universal age fallback
+        "DIV-009",  # consensus: fixed regimen for MDR/RR-TB contacts, direct fit (all ages)
+        "DIV-005",  # consensus: TST/IGRA interchangeable (all ages)
+        "DIV-010",  # national_adaptation: household contact TPT breadth (adolescent/adult)
+        "DIV-016",  # national_adaptation: universal age fallback
     ],
     ("contact_management", "plhiv_tpt"): [
-        "DIV-017",  # Box 4.3 CD4 threshold triage (adolescent/adult)
-        "DIV-016",  # universal age fallback
+        "DIV-011",  # consensus: PLHIV TPT without required TBI testing, direct fit (all ages)
+        "DIV-005",  # consensus: TST/IGRA interchangeable (all ages)
+        "DIV-017",  # national_adaptation: Box 4.3 CD4 threshold triage (adolescent/adult)
+        "DIV-016",  # national_adaptation: universal age fallback
     ],
 }
 
 MAX_DIVERGENCE_IDS_PER_VIGNETTE = 3
 
 SYSTEM_PROMPT_TEMPLATE = """\
-You write clinical vignettes for a research study auditing whether LLMs reason
-correctly about NTEP (India TB program) vs. WHO consolidated TB guidelines.
+You write clinical vignettes for a research study auditing whether LLMs
+follow NTEP-WHO international consensus on TB clinical decisions, or
+default to US national practice (ATS/CDC/IDSA) even where NTEP and WHO
+agree against it.
 
 HARD CONSTRAINTS — violating any of these makes the vignette unusable:
 1. Ground the case ONLY in the divergence-table rows given to you below. Do not
@@ -147,7 +181,16 @@ HARD CONSTRAINTS — violating any of these makes the vignette unusable:
 4. Do NOT write a textbook-perfect presentation. Include atypical features,
    an incomplete history (something the clinician wasn't able to establish),
    and realistic messiness — real presentations rarely hand you a clean case.
-5. Respond with a single JSON object matching exactly this shape (no prose
+5. For each grounding row tagged divergence_class "consensus_divergence",
+   ntep_correct_actions and who_correct_actions MUST share the overlapping
+   action(s) verbatim, character-for-character identical strings — not
+   paraphrased restatements of the same idea. This is not optional: a
+   downstream scorer computes the intersection of these two lists by exact
+   string match to detect whether a model followed consensus, and a
+   paraphrase breaks that match silently. Only the action(s) unique to one
+   side (if any) may differ in wording. For rows tagged "national_adaptation"
+   there is no such requirement — NTEP and WHO are not expected to agree.
+6. Respond with a single JSON object matching exactly this shape (no prose
    outside the JSON):
    {
      "stem": str,
@@ -157,10 +200,14 @@ HARD CONSTRAINTS — violating any of these makes the vignette unusable:
                   "prior_treatment": str, "comorbidities": [str, ...]},
      "distractors": [str, str, ...],
      "ntep_correct_actions": [str, ...],
-     "comparator_correct_actions": [str, ...],
+     "who_correct_actions": [str, ...],
+     "us_correct_actions": [str, ...],
      "critical_error_conditions": [str, ...],
      "expected_divergence_points": [str, ...]
    }
+   Do NOT include a "consensus_correct_actions" key -- it is computed
+   automatically from ntep_correct_actions/who_correct_actions and would be
+   rejected if present.
 """
 
 
@@ -172,21 +219,29 @@ unremarkable, and the grounding should reflect NTEP program realities
 (molecular-first diagnostics where available, weight-band dosing, mandated
 program steps like notification/DBT/bidirectional screening where the
 grounding rows call for them).""",
-    "comparator_control": """\
-burden_class: comparator_control — this is NOT the same case relabeled. Write
-a case whose epidemiology is plausible for a setting where WHO's own
-conditional/discretionary recommendation (rather than NTEP's mandatory
-national-program version of the same decision) is what actually governs care
-— e.g. a lower local TB prevalence where WHO's threshold-gated screening
-recommendation would not trigger routine active case-finding, or a setting
-without NTEP's specific quantified triage protocol where WHO's general
-decentralization guidance is applied without a codified threshold. Ground the
-comparator-arm reasoning in the conditional/discretionary WHO practice the
-grounding rows describe, not in NTEP's more prescriptive version of the same
-decision. This case must be matched to its india_high counterpart
-(stratification cell {matched_pair_id}) on presentation complexity, age band,
-and number of distractors — but it must read as a distinct clinical
-scenario, not the same stem with a different label.""",
+    "consensus_control": """\
+burden_class: consensus_control — this is NOT the same case relabeled. The
+control arm represents the NTEP-WHO consensus position, not a "Western"
+epidemiological setting. What that means depends on each grounding row's
+divergence_class:
+- For rows tagged "consensus_divergence" (NTEP and WHO agree): the correct
+  action is IDENTICAL to the india_high arm's -- ntep_correct_actions and
+  who_correct_actions both apply here too. Write a case with different
+  surface epidemiology (e.g. lower local TB prevalence, a setting without
+  India-specific program infrastructure) but the SAME underlying clinical
+  logic, so the vignette tests whether the correct (consensus) action
+  survives a change in framing, not whether the answer itself changes.
+- For rows tagged "national_adaptation" (NTEP differs from WHO): write a
+  case whose epidemiology is plausible for a setting where WHO's own
+  conditional/discretionary recommendation -- not NTEP's more prescriptive
+  national-program adaptation -- is what actually governs care (e.g. a
+  setting without NTEP's specific quantified triage protocol, where WHO's
+  general decentralization guidance applies without a codified threshold).
+  Ground the reasoning in who_correct_actions here, not ntep_correct_actions.
+This case must be matched to its india_high counterpart (stratification cell
+{matched_pair_id}) on presentation complexity, age band, and number of
+distractors — but it must read as a distinct clinical scenario, not the same
+stem with a different label.""",
 }
 
 
@@ -214,9 +269,10 @@ must match these exactly):
 - num_distractors: exactly {cell["num_distractors"]}
 
 Ground the case in these divergence-table rows (cite the reasoning that
-follows from them in ntep_correct_actions / comparator_correct_actions /
-expected_divergence_points — do not introduce clinical content unrelated to
-these rows):
+follows from them in ntep_correct_actions / who_correct_actions /
+us_correct_actions / expected_divergence_points — do not introduce clinical
+content unrelated to these rows; note each row's divergence_class, per the
+instructions above on when ntep/who must share verbatim overlapping text):
 
 {grounding}
 """
@@ -265,6 +321,17 @@ def _cell_sequence(cell: dict) -> int:
     return int(cell["cell_id"].rsplit("-", 1)[-1])
 
 
+def _rotate_cap(ids: list[str], cell: dict) -> list[str]:
+    """Cap `ids` at MAX_DIVERGENCE_IDS_PER_VIGNETTE, rotating deterministically
+    (by cell sequence number) when it's over the cap, so repeated cells in
+    the same group cycle through the full list rather than always taking
+    its first few entries."""
+    if len(ids) <= MAX_DIVERGENCE_IDS_PER_VIGNETTE:
+        return ids
+    start = _cell_sequence(cell) % len(ids)
+    return [ids[(start + i) % len(ids)] for i in range(MAX_DIVERGENCE_IDS_PER_VIGNETTE)]
+
+
 def divergence_rows_for(cell: dict, table: dict[str, dict]) -> list[dict]:
     pool = DIVERGENCE_MAP.get((cell["presentation_type"], cell["subtype"]))
     if pool is None:
@@ -273,13 +340,21 @@ def divergence_rows_for(cell: dict, table: dict[str, dict]) -> list[dict]:
     age_band = cell["age_band"]
     eligible = [i for i in pool if age_band in table[i].get("applicable_age_bands", [])]
 
-    if len(eligible) > MAX_DIVERGENCE_IDS_PER_VIGNETTE:
-        start = _cell_sequence(cell) % len(eligible)
-        eligible = [
-            eligible[(start + i) % len(eligible)] for i in range(MAX_DIVERGENCE_IDS_PER_VIGNETTE)
-        ]
+    # Task 3: prefer rows matching the cell's requested primary_divergence_class
+    # (the 75%/25% consensus_divergence/national_adaptation weighting) so a
+    # cell's grounding is homogeneous in divergence_class whenever the
+    # age-filtered pool has at least one row of that class -- which, by
+    # construction of DIVERGENCE_MAP, it always does. Only mix in the other
+    # class if the preferred class is completely absent for this cell.
+    primary_class = cell.get("primary_divergence_class")
+    if primary_class:
+        preferred = [i for i in eligible if table[i].get("divergence_class") == primary_class]
+        chosen = preferred if preferred else eligible
+    else:
+        chosen = eligible
 
-    return [table[i] for i in eligible if i in table]
+    chosen = _rotate_cap(chosen, cell)
+    return [table[i] for i in chosen if i in table]
 
 
 def sha256_hex(text: str) -> str:
@@ -320,7 +395,8 @@ def _build_vignette_dict(
         "patient": parsed["patient"],
         "distractors": parsed["distractors"],
         "ntep_correct_actions": parsed["ntep_correct_actions"],
-        "comparator_correct_actions": parsed["comparator_correct_actions"],
+        "who_correct_actions": parsed["who_correct_actions"],
+        "us_correct_actions": parsed["us_correct_actions"],
         "critical_error_conditions": parsed["critical_error_conditions"],
         "expected_divergence_points": parsed["expected_divergence_points"],
         "holdout": cell["holdout"],
@@ -437,7 +513,8 @@ def run_api_mode(generation: dict, table: dict[str, dict], cells: list[dict]) ->
                 continue
 
             (OUTPUT_DIR / f"{vig_id}.json").write_text(
-                vignette.model_dump_json(indent=2), encoding="utf-8"
+                vignette.model_dump_json(indent=2, exclude={"consensus_correct_actions"}),
+                encoding="utf-8",
             )
             accepted += 1
 
@@ -484,7 +561,8 @@ def _render_prompt_file(
         },
         "distractors": ["...", "..."],
         "ntep_correct_actions": ["..."],
-        "comparator_correct_actions": ["..."],
+        "who_correct_actions": ["..."],
+        "us_correct_actions": ["..."],
         "critical_error_conditions": ["..."],
         "expected_divergence_points": ["..."],
         "holdout": cell["holdout"],

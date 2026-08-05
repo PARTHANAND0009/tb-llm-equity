@@ -1,6 +1,6 @@
 .PHONY: setup test lint run-arms score analyze figures manifest-check \
         stratify generate-vignettes generate-vignettes-claude-code critique-vignettes \
-        review-packet clinician-review
+        review-packet clinician-review expand-arms
 
 setup:
 	uv sync --all-extras
@@ -38,6 +38,12 @@ review-packet:
 
 clinician-review:
 	uv run python scripts/render_clinician_review.py
+
+# Phase 3 arm expansion: pure deterministic templating, no model call. Fails
+# loudly if data/vignettes/<version>/ is empty -- generate-vignettes (or
+# generate-vignettes-claude-code) must run first. See CLAUDE.md.
+expand-arms:
+	uv run python scripts/expand_arms.py
 
 # The following four targets are placeholders: no evaluation-arm/scoring
 # code has been written yet. They will call into src/tb_equity once that

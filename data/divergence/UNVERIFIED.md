@@ -9,6 +9,43 @@ citation on both sides within this session's research budget, so it did not
 go in the table. Nothing here should be used for vignette generation until
 it is either promoted (with a real citation) or formally closed out.
 
+## 2026-08-06 (later same day): table restructured as three-way, 11 rows reinstated
+
+The WHO re-sourcing pass (previous section below) dropped 11 rows as
+"NTEP-WHO convergence." That convergence turned out to be the actual
+finding, not a dead end: NTEP is closely aligned with international
+consensus, and the still-current 2016/2017 ATS/CDC/IDSA guidance is the
+outlier. The table was restructured so each row carries `ntep_position`,
+`who_position`, and `us_position` simultaneously, plus a `divergence_class`
+(`consensus_divergence` when NTEP and WHO agree and US differs;
+`national_adaptation` when NTEP differs from WHO) and a `consensus_position`
+synthesizing the NTEP+WHO agreement for `consensus_divergence` rows.
+
+All 11 rows dropped immediately below as "NTEP-WHO convergence" were
+**reinstated** into `divergence_table.json`, tagged `consensus_divergence`:
+DIV-001, 002, 003, 004, 005, 006, 007, 009, 011, 012, 019. Each was
+re-examined against its *original* US citation (from the very first,
+pre-WHO-rebuild version of this table, `git show 482d938`) to confirm the US
+position still actually differs from the now-confirmed NTEP/WHO consensus.
+It does, for all 11, without exception. This is not a coincidence: each row
+was originally selected as a divergence row precisely because its US
+position differed from NTEP's; once WHO was confirmed to match NTEP on that
+same axis, the US position necessarily differs from the NTEP-WHO consensus
+too (transitively). None needed to move to a new "three-way convergence"
+bucket — see `divergence_table.json` for the full three-way citations.
+
+The 6 rows that survived the WHO-only rebuild (DIV-008, 010, 016, 017, 020,
+021) keep their `national_adaptation` tag and had a `us_position` added
+where a real US-side document addressing the specific point was on file
+(DIV-008, 010, 016, 017); DIV-020 and DIV-021 (both paediatric-specific) have
+`us_position: null` because no dedicated US pediatric-TB document covering
+regimen duration or diagnostic algorithms was fetched in any session —
+recorded as null, not filled with an inferred position.
+
+DIV-013, 014, 015, and 018 remain dropped as absence claims (see below) —
+unaffected by this restructure, since the fix here was re-adding a real US
+citation, and none of these four ever had one to re-examine.
+
 ## 2026-08-06: comparator changed from ATS/CDC/IDSA to WHO
 
 Everything below this heading documents what happened to the 19-row,

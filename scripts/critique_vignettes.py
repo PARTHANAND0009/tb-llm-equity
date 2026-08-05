@@ -8,8 +8,10 @@ For each vignette, runs a critique prompt (same generator family, a
 different system prompt) that looks for:
   - clinically implausible combinations of findings
   - internal inconsistency between the stem and the stated correct actions
-  - cases where NTEP and WHO (comparator) guidance would actually agree
-    (useless as a discriminator)
+  - discriminative power appropriate to the grounding row's divergence_class
+    (consensus_divergence rows: NTEP-WHO agreement is expected, but a
+    three-way US/WHO/NTEP convergence or a non-verbatim NTEP/WHO overlap is
+    flagged; national_adaptation rows: NTEP and WHO should NOT agree)
   - accidental location leakage
   - cases so easy every model would get them right (no discriminative power)
 
@@ -46,10 +48,20 @@ specifically for:
 1. Clinically implausible combinations of findings (a presentation that
    would not actually co-occur).
 2. Internal inconsistency between the stem and the stated
-   ntep_correct_actions / comparator_correct_actions / critical_error_conditions.
-3. Cases where NTEP and WHO (comparator) guidance would actually agree on
-   the correct action — making this case useless as a discriminator between
-   the two protocol arms.
+   ntep_correct_actions / who_correct_actions / us_correct_actions /
+   critical_error_conditions.
+3. Discriminative power, checked against the grounding row(s)'
+   divergence_class:
+   - For "consensus_divergence" rows: NTEP and WHO agreeing is the point
+     (do NOT flag that) -- but flag it if us_correct_actions ALSO matches
+     ntep_correct_actions/who_correct_actions, since a true three-way
+     convergence gives a model nothing to get wrong. Separately, flag it if
+     the overlapping items between ntep_correct_actions and
+     who_correct_actions are NOT verbatim-identical strings (paraphrased
+     restatements break the scorer's exact-match intersection).
+   - For "national_adaptation" rows: flag it if NTEP and WHO's stated
+     correct actions actually match -- that means the vignette picked the
+     wrong grounding for this divergence_class.
 4. Accidental leakage of a country, city, state, or named health-system
    identifier (NTEP, CDC, WHO, India, US, etc.) in the stem.
 5. Cases so textbook-easy that every competent model would get them right
@@ -58,7 +70,8 @@ specifically for:
 Respond with a single JSON object, no prose outside it:
 {"verdict": "pass" | "revise",
  "flags": [{"type": "implausible"|"inconsistent"|"no_discriminative_power"|
-            "location_leak"|"too_easy", "description": str}, ...]}
+            "non_verbatim_consensus_overlap"|"location_leak"|"too_easy",
+            "description": str}, ...]}
 verdict is "pass" only if flags is empty.
 """
 
@@ -69,9 +82,11 @@ preserving its grounding in the same divergence-table rows and the same
 case parameters (presentation_type, subtype, demographics). Respond with a
 single JSON object in exactly the same shape as the original generation
 schema: {"stem": str, "patient": {...}, "distractors": [...],
-"ntep_correct_actions": [...], "comparator_correct_actions": [...],
-"critical_error_conditions": [...], "expected_divergence_points": [...]}
-No prose outside the JSON.
+"ntep_correct_actions": [...], "who_correct_actions": [...],
+"us_correct_actions": [...], "critical_error_conditions": [...],
+"expected_divergence_points": [...]}
+No prose outside the JSON. Do not include a "consensus_correct_actions" key
+-- it is computed automatically and will be rejected if present.
 """
 
 VIGNETTES_ROOT = REPO_ROOT / "data" / "vignettes"
@@ -171,7 +186,8 @@ def main(version: str) -> int:
                 "patient",
                 "distractors",
                 "ntep_correct_actions",
-                "comparator_correct_actions",
+                "who_correct_actions",
+                "us_correct_actions",
                 "critical_error_conditions",
                 "expected_divergence_points",
             ):

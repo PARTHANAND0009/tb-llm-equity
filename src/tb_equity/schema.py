@@ -13,9 +13,9 @@ import re
 from datetime import datetime
 from typing import Literal
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, computed_field, field_validator
 
-BurdenClass = Literal["india_high", "comparator_control"]
+BurdenClass = Literal["india_high", "consensus_control"]
 PresentationType = Literal[
     "pulmonary", "extrapulmonary", "comorbid", "drug_resistant", "contact_management"
 ]
@@ -60,7 +60,7 @@ class Vignette(BaseModel):
     matched_pair_id: str | None = Field(
         default=None,
         description=(
-            "For a comparator_control vignette, the id of the india_high vignette it is "
+            "For a consensus_control vignette, the id of the india_high vignette it is "
             "matched to on presentation complexity, age band, and distractor count."
         ),
     )
@@ -76,11 +76,25 @@ class Vignette(BaseModel):
     patient: Patient
     distractors: list[str] = Field(..., min_length=2)
     ntep_correct_actions: list[str] = Field(..., min_length=1)
-    comparator_correct_actions: list[str] = Field(..., min_length=1)
+    who_correct_actions: list[str] = Field(..., min_length=1)
+    us_correct_actions: list[str] = Field(..., min_length=1)
     critical_error_conditions: list[str] = Field(..., min_length=1)
     expected_divergence_points: list[str] = Field(..., min_length=1)
     holdout: bool
     provenance: Provenance
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def consensus_correct_actions(self) -> list[str]:
+        """Derived, never authored directly: the intersection of
+        ntep_correct_actions and who_correct_actions (exact string match,
+        order follows ntep_correct_actions). For consensus_divergence rows
+        these two lists overlap substantially by construction, which is what
+        lets the scorer check consensus-alignment directly. For
+        national_adaptation rows this will legitimately be empty or small --
+        NTEP and WHO are not expected to agree there."""
+        who_set = set(self.who_correct_actions)
+        return [a for a in self.ntep_correct_actions if a in who_set]
 
     @field_validator("id")
     @classmethod

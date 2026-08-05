@@ -26,31 +26,26 @@ OUT_MD = REPO_ROOT / "data" / "vignettes" / "stratification_plan.md"
 TOTAL_VIGNETTES = 100
 TOTAL_HOLDOUT = 15
 
-# Presentation-type groups, per the target composition. comparator_control's
+# Presentation-type groups, per the target composition. consensus_control's
 # own presentation_type split is computed below, proportional to the
 # india_high spread.
 #
-# Trimmed from 170 to 100 cells (Task 3, 2026-08-06) and re-weighted toward
-# the 6-row WHO-comparator divergence table (data/divergence/SUMMARY.md),
-# which is much smaller than the 19-row table this plan was originally built
-# against -- statistical power comes from the arm contrast, not vignette
-# count, and hand-writing 170 vignettes in claude-code mode risked quality
-# drift. `pulmonary` gets the largest share because it grounds the widest
-# spread of surviving rows, including the two paediatric-only rows
-# (DIV-020, DIV-021) that Task 2 specifically needs age-appropriate coverage
-# for. `comorbid` and `drug_resistant` shrink relative to the old plan: their
-# old dedicated grounding rows (DIV-013/014/018/019 and DIV-002/007
-# respectively) all converged with WHO and were dropped, so both groups now
-# ground only in DIV-017's triage thresholds (glycemic/CD4/BMI for comorbid;
-# the same triage protocol applied to any TB patient for drug_resistant) plus
-# the DIV-016 universal fallback -- still real grounding, just less
-# distinctive than before, so they carry a smaller share of the set.
+# Trimmed from 170 to 100 cells (2026-08-06) and re-weighted toward the
+# divergence table then current (6 rows, all NTEP-vs-WHO). The table was
+# rebuilt again the same day into a 17-row three-way structure (NTEP/WHO/US)
+# after the WHO re-sourcing pass found NTEP converges with WHO on most axes
+# -- an unanticipated result that reframed the study around a stronger
+# hypothesis: does a model follow NTEP-WHO consensus, or default to US
+# practice even where the two agree against it? `pulmonary` keeps the
+# largest share because it grounds the widest spread of rows in both
+# divergence_class values, including the two paediatric-only
+# national_adaptation rows (DIV-020, DIV-021).
 #
-# `contact_management` (added in the prior session) covers vignettes about a
-# person being evaluated for TB *preventive* treatment (household contact,
-# PLHIV) rather than active disease -- it is now the home of DIV-010
-# (household contact TPT breadth), the table's only remaining
-# critical-error-flagged row.
+# `contact_management` covers vignettes about a person being evaluated for
+# TB *preventive* treatment (household contact, PLHIV) rather than active
+# disease -- home of DIV-009/011/012 (consensus_divergence) and DIV-010
+# (national_adaptation, the table's only remaining critical-error-flagged
+# national_adaptation row).
 GROUPS = [
     {"presentation_type": "pulmonary", "burden_class": "india_high", "count": 28},
     {"presentation_type": "extrapulmonary", "burden_class": "india_high", "count": 16},
@@ -58,7 +53,32 @@ GROUPS = [
     {"presentation_type": "drug_resistant", "burden_class": "india_high", "count": 8},
     {"presentation_type": "contact_management", "burden_class": "india_high", "count": 8},
 ]
-COMPARATOR_CONTROL_COUNT = 30
+CONSENSUS_CONTROL_COUNT = 30
+
+# Task 3 (2026-08-06, three-way reframe): each cell is tagged with which
+# divergence_class it should primarily ground in, so that roughly 75% of
+# cells target consensus_divergence (the primary dataset for the reframed
+# study) and 25% target national_adaptation (secondary). This tag is a
+# *request*, honored by generate_vignettes.py::divergence_rows_for -- every
+# (presentation_type, subtype, age_band) combination this plan can produce
+# has at least one eligible row of each divergence_class (verified by hand
+# against DIVERGENCE_MAP; tests/test_divergence_coverage.py checks the
+# resulting ratio holds within tolerance).
+#
+# Deliberately period 25 (19 consensus_divergence : 6 national_adaptation =
+# 76%/24%), not a clean 3:1 (period 4): AGE_BANDS also cycles with period 4,
+# and every other per-cell cycle here advances exactly once per cell just
+# like this one does. A class cycle with a period that shares a factor with
+# 4 (like period 4 itself) locks into a FIXED pairing with age_cycle's phase
+# -- e.g. "national_adaptation" would always land on the same one age band,
+# never the others, silently starving DIV-020/DIV-021 (paediatric-only
+# national_adaptation rows) of any national-primary cell to ground. Period
+# 25 is coprime with 4 (and with the sex/setting period-2 and subtype
+# period-3 cycles), so it decorrelates from all of them and every age band
+# gets paired with both classes across the full 100-cell plan.
+PRIMARY_DIVERGENCE_CLASS_CYCLE = (
+    ["consensus_divergence"] * 19 + ["national_adaptation"] * 6
+)
 
 COMORBID_SUBTYPES = ["tb_diabetes", "tb_hiv", "undernutrition"]
 DR_TB_SUBTYPES = ["rifampicin_mono_resistant", "mdr_tb", "pre_xdr_tb"]
@@ -104,18 +124,18 @@ def allocate(total: int, weights: list[float]) -> list[int]:
 def build_cells() -> list[dict]:
     cells: list[dict] = []
 
-    # comparator_control's presentation_type split, proportional to the india_high groups.
-    cc_split = allocate(COMPARATOR_CONTROL_COUNT, [g["count"] for g in GROUPS])
-    comparator_groups = [
+    # consensus_control's presentation_type split, proportional to the india_high groups.
+    cc_split = allocate(CONSENSUS_CONTROL_COUNT, [g["count"] for g in GROUPS])
+    consensus_groups = [
         {
             "presentation_type": g["presentation_type"],
-            "burden_class": "comparator_control",
+            "burden_class": "consensus_control",
             "count": n,
         }
         for g, n in zip(GROUPS, cc_split, strict=False)
     ]
 
-    all_groups = GROUPS + comparator_groups
+    all_groups = GROUPS + consensus_groups
 
     # Per-group holdout counts, proportional to group size, summing to TOTAL_HOLDOUT.
     holdout_counts = allocate(TOTAL_HOLDOUT, [g["count"] for g in all_groups])
@@ -130,6 +150,7 @@ def build_cells() -> list[dict]:
     comorbid_subtype_cycle = itertools.cycle(COMORBID_SUBTYPES)
     dr_subtype_cycle = itertools.cycle(DR_TB_SUBTYPES)
     contact_mgmt_subtype_cycle = itertools.cycle(CONTACT_MANAGEMENT_SUBTYPES)
+    primary_class_cycle = itertools.cycle(PRIMARY_DIVERGENCE_CLASS_CYCLE)
 
     seq = 0
     for group, holdout_n in zip(all_groups, holdout_counts, strict=False):
@@ -166,6 +187,7 @@ def build_cells() -> list[dict]:
                     "comorbidity_burden": comorbidity_burden,
                     "symptom_duration_band": next(duration_cycle),
                     "num_distractors": next(distractor_cycle),
+                    "primary_divergence_class": next(primary_class_cycle),
                     "holdout": position_in_group in holdout_positions,
                     "matched_pair_id": None,
                 }
@@ -176,24 +198,24 @@ def build_cells() -> list[dict]:
 
 
 def assign_matched_pairs(cells: list[dict]) -> None:
-    """Pair each comparator_control cell to one india_high cell of the same
+    """Pair each consensus_control cell to one india_high cell of the same
     presentation_type, matched on age_band and num_distractors where possible.
 
     Sets matched_pair_id on both sides (india_high side stays None if it was
-    never chosen as a match — comparator_control counts are smaller than
+    never chosen as a match — consensus_control counts are smaller than
     india_high counts per group, so most india_high cells are unmatched).
     """
     by_type: dict[str, dict[str, list[dict]]] = {}
     for c in cells:
         slot = by_type.setdefault(
-            c["presentation_type"], {"india_high": [], "comparator_control": []}
+            c["presentation_type"], {"india_high": [], "consensus_control": []}
         )
         slot[c["burden_class"]].append(c)
 
     for groups in by_type.values():
         india_cells = groups["india_high"]
         used_ids: set[str] = set()
-        for cc in groups["comparator_control"]:
+        for cc in groups["consensus_control"]:
             candidates = [c for c in india_cells if c["cell_id"] not in used_ids]
             if not candidates:
                 continue
@@ -240,18 +262,29 @@ def render_markdown(cells: list[dict]) -> str:
     lines.append(f"| **total** |  | **{len(cells)}** |")
 
     matched = sum(
-        1 for c in cells if c["burden_class"] == "comparator_control" and c["matched_pair_id"]
+        1 for c in cells if c["burden_class"] == "consensus_control" and c["matched_pair_id"]
     )
-    comparator_total = sum(1 for c in cells if c["burden_class"] == "comparator_control")
+    consensus_total = sum(1 for c in cells if c["burden_class"] == "consensus_control")
+    primary_class_counts = count_by("primary_divergence_class")
     lines += [
         "",
         f"Holdout: {sum(1 for c in cells if c['holdout'])} of {len(cells)}, "
         "stratified proportionally across the groups above (largest-remainder allocation).",
         "",
-        f"Matched pairs: {matched} of {comparator_total} comparator_control cells are paired to "
+        f"Matched pairs: {matched} of {consensus_total} consensus_control cells are paired to "
         "an india_high cell (`matched_pair_id`) of the same presentation_type, matched on "
         "age_band and num_distractors where possible — see "
         "`scripts/build_stratification_plan.py::assign_matched_pairs`.",
+        "",
+        f"primary_divergence_class target split: "
+        f"{primary_class_counts.get('consensus_divergence', 0)} consensus_divergence / "
+        f"{primary_class_counts.get('national_adaptation', 0)} national_adaptation "
+        f"({primary_class_counts.get('consensus_divergence', 0) / len(cells):.0%} / "
+        f"{primary_class_counts.get('national_adaptation', 0) / len(cells):.0%}, "
+        "target 75%/25%). This is a per-cell *request* honored by "
+        "`scripts/generate_vignettes.py::divergence_rows_for` -- see "
+        "`tests/test_divergence_coverage.py` for the check that grounding actually "
+        "delivered on it.",
         "",
         "## Systematic variation axes",
         "",
@@ -275,6 +308,10 @@ def render_markdown(cells: list[dict]) -> str:
         (
             "contact-management subtype (`contact_management` presentation_type only)",
             CONTACT_MANAGEMENT_SUBTYPES,
+        ),
+        (
+            "primary_divergence_class (target grounding class, period-25 cycle)",
+            PRIMARY_DIVERGENCE_CLASS_CYCLE,
         ),
     ]:
         lines.append(f"- **{key}**: {', '.join(str(v) for v in values)}")

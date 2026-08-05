@@ -3,17 +3,17 @@
   "version": "test-fixture",
   "burden_class": "india_high",
   "presentation_type": "comorbid",
-  "divergence_ids": ["DIV-008", "DIV-006"],
-  "stem": "A 52-year-old presents with a two-month history of cough and fatigue. Random blood glucose drawn incidentally at a pharmacy last week was elevated, though the patient never followed up. They also mention joint aches they attribute to 'old age' and a recent course of over-the-counter cough syrup that briefly helped.",
+  "divergence_ids": ["DIV-006", "DIV-008"],
+  "stem": "A 52-year-old presents with a two-month history of cough and fatigue, on drug-sensitive TB treatment for six weeks. Random blood glucose drawn incidentally at a pharmacy last week was elevated, though the patient never followed up. A repeat sputum smear at the end of the intensive phase remains positive, and the chest film taken at diagnosis showed a cavity in the right upper lobe.",
   "patient": {
     "age": "52 years",
     "sex": "female",
     "occupation": "homemaker",
     "social_history": "Lives with spouse, limited access to routine primary care follow-up",
-    "presenting_complaint": "Cough, fatigue, incidental elevated glucose",
+    "presenting_complaint": "Cough, fatigue, incidental elevated glucose, slow treatment response",
     "duration": "8 weeks",
     "exam_findings": "Mild bibasilar crackles, BMI 24, no focal neuro deficits",
-    "prior_treatment": "Over-the-counter cough syrup only",
+    "prior_treatment": "6 weeks of first-line ATT for drug-sensitive pulmonary TB",
     "comorbidities": ["suspected undiagnosed type 2 diabetes"]
   },
   "distractors": [
@@ -21,25 +21,29 @@
     "Self-limited viral upper respiratory infection given brief symptomatic improvement with OTC syrup"
   ],
   "ntep_correct_actions": [
-    "Perform confirmatory blood glucose testing as part of the mandated bidirectional TB-diabetes screen",
-    "Notify the case via the national notification system regardless of care setting"
+    "Administer daily fixed-dose combination ATT throughout both the intensive and continuation phases",
+    "Leave the decision to extend the continuation phase for slow response to the treating physician's case-by-case judgment"
   ],
-  "comparator_correct_actions": [
-    "Order glucose testing based on clinical judgment given the incidental abnormal result, not as a mandated protocol step",
-    "Report the case to the local/state health department as a notifiable condition"
+  "who_correct_actions": [
+    "Administer daily fixed-dose combination ATT throughout both the intensive and continuation phases",
+    "Do not extend the regimen based on bacteriological non-conversion at 2 months; the regimen is fixed-duration"
+  ],
+  "us_correct_actions": [
+    "Permit thrice-weekly or twice-weekly continuation-phase dosing in HIV-negative, low-relapse-risk patients",
+    "Extend the continuation phase by 3 months given cavitation on the initial chest radiograph plus a positive culture at 2 months"
   ],
   "critical_error_conditions": [
-    "Ignoring the incidental glucose abnormality entirely",
-    "Failing to notify the case through the appropriate surveillance channel"
+    "Switching to intermittent dosing without meeting any low-relapse-risk criteria",
+    "Ignoring the incidental glucose abnormality entirely"
   ],
   "expected_divergence_points": [
-    "Whether bidirectional diabetes screening is a mandated program step or a discretionary clinical judgment call"
+    "Whether continuation-phase extension for slow response follows physician discretion, a fixed no-extension rule, or a specific cavitation-plus-culture-based rule"
   ],
   "holdout": true,
   "provenance": {
     "generator_model": "manual-fixture-not-generated",
     "generated_at": "2026-01-01T00:00:00+00:00",
-    "source_divergence_ids": ["DIV-008", "DIV-006"],
+    "source_divergence_ids": ["DIV-006", "DIV-008"],
     "critique_passes": 1,
     "human_reviewed": false,
     "clinician_reviewed": false

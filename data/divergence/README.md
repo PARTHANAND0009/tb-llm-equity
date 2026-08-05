@@ -1,46 +1,60 @@
-# Divergence table — WHO comparator (rebuilt 2026-08-06)
+# Divergence table — three-way NTEP / WHO / US structure (2026-08-06)
 
-`divergence_table.json` (6 rows, `DIV-008`, `DIV-010`, `DIV-016`, `DIV-017`,
-`DIV-020`, `DIV-021` — non-contiguous IDs are intentional, see below) compares
-NTEP against the **WHO consolidated guidelines on tuberculosis**, not a US
-("Western") guideline. This replaces the 2026-08-05 table, which used
-ATS/CDC/IDSA as the comparator. See:
+`divergence_table.json` (17 rows) now carries three positions per row —
+`ntep_position`, `who_position`, `us_position` — plus `divergence_class`
+(`consensus_divergence` when NTEP and WHO agree and only the US differs;
+`national_adaptation` when NTEP differs from WHO) and, for
+`consensus_divergence` rows, a `consensus_position` synthesizing what NTEP
+and WHO jointly hold. This replaces the same-day, two-way (NTEP vs. WHO)
+version of this table.
 
-- `data/protocols/FETCH_LOG.md` — every fetch attempt, success and failure,
-  with URLs and what each source was used for.
-- `SUMMARY.md` — composition stats, why the comparator changed, and the
-  6 surviving rows.
-- `UNVERIFIED.md` — every one of the original 19 rows' disposition (11
-  converged with WHO, 5 dropped as absence claims), plus the 2 new rows'
-  provenance and candidates checked and found convergent.
+## Why a third position
 
-## Why the row IDs have gaps
+The two-way (NTEP vs. WHO) rebuild found that 11 of the original 19 rows
+converged: NTEP and WHO agree on universal DST, contact TPT breadth, 1HP
+adoption, MDR contact regimens, and empiric TPT for PLHIV/under-5s, among
+others. Dropping those rows would have thrown away the actual finding: NTEP
+tracks international consensus closely, and it's the still-current
+2016/2017 ATS/CDC/IDSA guidance that has fallen behind. Re-adding the
+original US citation to each of those 11 rows turns "NTEP and WHO agree" (a
+dead end for a two-way table) into "does a model follow consensus or
+default to US practice" (a live, testable question) — see:
 
-Rows that converged with WHO or were dropped as absence claims keep their
-original `DIV-0NN` ID in `UNVERIFIED.md` rather than being renumbered, so a
-reader can trace any ID back to its disposition. The surviving/reinstated
-rows (DIV-008, DIV-010, DIV-016, DIV-017) also kept their original IDs for
-the same reason. The two new rows continue the sequence as DIV-020/DIV-021.
+- `data/protocols/FETCH_LOG.md` — every fetch attempt, success and failure.
+- `SUMMARY.md` — composition stats, the reframed research question, and the
+  highest-stakes rows in each `divergence_class`.
+- `UNVERIFIED.md` — full disposition history: which rows converged and were
+  reinstated, which remain dropped as absence claims, and why.
 
-## Why only 6 rows
+## Row IDs
 
-Every axis Task 1 named as a likely source of new divergence — universal DST
-scope/timing, weight-band FDC dosing, contact TPT eligibility breadth,
-differentiated/decentralized care, DR-TB regimen choice — was checked
-against a WHO primary source actually fetched this session, and most of
-them converged. That is reported honestly rather than padded: see
-`SUMMARY.md`'s "What converged" section for the full list with citations.
-Fewer, fully defensible rows was the explicit instruction over a padded
+Non-contiguous IDs (DIV-001 through DIV-012, then DIV-016, 017, 019, 020,
+021) are intentional — every ID traces back through this table's several
+rebuilds, and a reader can look up any ID's full history in `UNVERIFIED.md`.
+DIV-013, 014, 015, and 018 remain dropped as absence claims (no WHO or US
+position exists to cite on the relevant axis) and do not appear in the live
 table.
+
+## Using divergence_class
+
+- **`consensus_divergence`** (11 rows) is the **primary dataset**: score
+  responses against `consensus_correct_actions` (NTEP ∩ WHO) as the primary
+  outcome, and separately check `us_correct_actions` alignment to test the
+  US-default hypothesis directly.
+- **`national_adaptation`** (6 rows) is **secondary**: NTEP and WHO
+  genuinely differ here, so there is no consensus to score against —
+  `consensus_position` is `null` by design for these rows. Use
+  `ntep_correct_actions` vs `who_correct_actions` the way the table's
+  original two-way design intended.
 
 **Before this table is treated as fully ground truth for vignette
 generation or scoring**, it still needs clinician sign-off — primary-source
 citation rules out the "drafted from memory" failure mode, but citation
-accuracy is not the same as clinical accuracy, and a domain expert should
-still review every row. Two rows (DIV-020, DIV-021) carry an explicit
-in-table caveat that their NTEP-side citation may already be out of date
-(NTEP may have adopted the WHO position in a document not yet found) — these
-should be re-verified before reuse in a future vignette-generation run.
+accuracy is not the same as clinical accuracy. Several rows carry an
+explicit lower-confidence flag in their own `notes` field (DIV-003, DIV-008,
+DIV-009's US-side currency, DIV-011, DIV-019's WHO citation being a
+secondary quotation, DIV-020, DIV-021) — read those before treating a row as
+unqualified ground truth.
 
 Until clinician review happens, do not bump any vignette or rubric version
 that depends on this table being correct — see `RUBRIC_VERSION` in

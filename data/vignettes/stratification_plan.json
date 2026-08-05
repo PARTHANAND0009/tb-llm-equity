@@ -11,6 +11,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-073"
   },
@@ -26,6 +27,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-074"
   },
@@ -41,6 +43,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-071"
   },
@@ -56,6 +59,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-072"
   },
@@ -71,6 +75,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-077"
   },
@@ -86,6 +91,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-078"
   },
@@ -101,6 +107,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-075"
   },
@@ -116,6 +123,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-076"
   },
@@ -131,6 +139,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-081"
   },
@@ -146,6 +155,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-082"
   },
@@ -161,6 +171,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-079"
   },
@@ -176,6 +187,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-080"
   },
@@ -191,6 +203,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -206,6 +219,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -221,6 +235,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": null
   },
@@ -236,6 +251,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -251,6 +267,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -266,6 +283,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -281,6 +299,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -296,6 +315,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -311,6 +331,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -326,6 +347,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": true,
     "matched_pair_id": null
   },
@@ -341,6 +363,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -356,6 +379,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -371,6 +395,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -386,6 +411,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -401,6 +427,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -416,6 +443,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -431,6 +459,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-085"
   },
@@ -446,6 +475,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-086"
   },
@@ -461,6 +491,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-083"
   },
@@ -476,6 +507,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-084"
   },
@@ -491,6 +523,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-089"
   },
@@ -506,6 +539,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -521,6 +555,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-087"
   },
@@ -536,6 +571,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-088"
   },
@@ -551,6 +587,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": null
   },
@@ -566,6 +603,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -581,6 +619,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -596,6 +635,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -611,6 +651,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -626,6 +667,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -641,6 +683,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -656,6 +699,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -671,6 +715,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": true,
     "matched_pair_id": "STRAT-093"
   },
@@ -686,6 +731,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-090"
   },
@@ -701,6 +747,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-091"
   },
@@ -716,6 +763,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-092"
   },
@@ -731,6 +779,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -746,6 +795,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": true,
     "matched_pair_id": null
   },
@@ -761,6 +811,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -776,6 +827,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -791,6 +843,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -806,6 +859,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -821,6 +875,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-095"
   },
@@ -836,6 +891,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-096"
   },
@@ -851,6 +907,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-097"
   },
@@ -866,6 +923,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-094"
   },
@@ -881,6 +939,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -896,6 +955,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -911,6 +971,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -926,6 +987,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -941,6 +1003,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-099"
   },
@@ -956,6 +1019,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-100"
   },
@@ -971,6 +1035,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -986,6 +1051,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-098"
   },
@@ -1001,6 +1067,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -1016,6 +1083,7 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -1031,6 +1099,7 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": null
   },
@@ -1046,13 +1115,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": null
   },
   {
     "cell_id": "STRAT-071",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1061,13 +1131,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": true,
     "matched_pair_id": "STRAT-003"
   },
   {
     "cell_id": "STRAT-072",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1076,13 +1147,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-004"
   },
   {
     "cell_id": "STRAT-073",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "child_0_9",
     "sex": "male",
@@ -1091,13 +1163,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-001"
   },
   {
     "cell_id": "STRAT-074",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1106,13 +1179,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-002"
   },
   {
     "cell_id": "STRAT-075",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1121,13 +1195,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-007"
   },
   {
     "cell_id": "STRAT-076",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1136,13 +1211,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-008"
   },
   {
     "cell_id": "STRAT-077",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "child_0_9",
     "sex": "male",
@@ -1151,13 +1227,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-005"
   },
   {
     "cell_id": "STRAT-078",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1166,13 +1243,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-006"
   },
   {
     "cell_id": "STRAT-079",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1181,13 +1259,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-011"
   },
   {
     "cell_id": "STRAT-080",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1196,13 +1275,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-012"
   },
   {
     "cell_id": "STRAT-081",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "child_0_9",
     "sex": "male",
@@ -1211,13 +1291,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-009"
   },
   {
     "cell_id": "STRAT-082",
     "presentation_type": "pulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1226,13 +1307,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-010"
   },
   {
     "cell_id": "STRAT-083",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1241,13 +1323,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-031"
   },
   {
     "cell_id": "STRAT-084",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1256,13 +1339,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-032"
   },
   {
     "cell_id": "STRAT-085",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "child_0_9",
     "sex": "male",
@@ -1271,13 +1355,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-029"
   },
   {
     "cell_id": "STRAT-086",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1286,13 +1371,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-030"
   },
   {
     "cell_id": "STRAT-087",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1301,13 +1387,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-035"
   },
   {
     "cell_id": "STRAT-088",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1316,13 +1403,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-036"
   },
   {
     "cell_id": "STRAT-089",
     "presentation_type": "extrapulmonary",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": null,
     "age_band": "child_0_9",
     "sex": "male",
@@ -1331,13 +1419,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-033"
   },
   {
     "cell_id": "STRAT-090",
     "presentation_type": "comorbid",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "tb_hiv",
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1346,13 +1435,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-046"
   },
   {
     "cell_id": "STRAT-091",
     "presentation_type": "comorbid",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "undernutrition",
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1361,13 +1451,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-047"
   },
   {
     "cell_id": "STRAT-092",
     "presentation_type": "comorbid",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "tb_diabetes",
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1376,13 +1467,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-048"
   },
   {
     "cell_id": "STRAT-093",
     "presentation_type": "comorbid",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "tb_hiv",
     "age_band": "child_0_9",
     "sex": "male",
@@ -1391,13 +1483,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": false,
     "matched_pair_id": "STRAT-045"
   },
   {
     "cell_id": "STRAT-094",
     "presentation_type": "drug_resistant",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "pre_xdr_tb",
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1406,13 +1499,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "consensus_divergence",
     "holdout": true,
     "matched_pair_id": "STRAT-058"
   },
   {
     "cell_id": "STRAT-095",
     "presentation_type": "drug_resistant",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "rifampicin_mono_resistant",
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1421,13 +1515,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-055"
   },
   {
     "cell_id": "STRAT-096",
     "presentation_type": "drug_resistant",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "mdr_tb",
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1436,13 +1531,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-056"
   },
   {
     "cell_id": "STRAT-097",
     "presentation_type": "drug_resistant",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "pre_xdr_tb",
     "age_band": "child_0_9",
     "sex": "male",
@@ -1451,13 +1547,14 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "2_4_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-057"
   },
   {
     "cell_id": "STRAT-098",
     "presentation_type": "contact_management",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "plhiv_tpt",
     "age_band": "adolescent_10_17",
     "sex": "female",
@@ -1466,13 +1563,14 @@
     "comorbidity_burden": "mild",
     "symptom_duration_band": "4_8_weeks",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-066"
   },
   {
     "cell_id": "STRAT-099",
     "presentation_type": "contact_management",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "household_contact_ds_tb",
     "age_band": "adult_18_59",
     "sex": "male",
@@ -1481,13 +1579,14 @@
     "comorbidity_burden": "significant",
     "symptom_duration_band": "8_12_weeks",
     "num_distractors": 2,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-063"
   },
   {
     "cell_id": "STRAT-100",
     "presentation_type": "contact_management",
-    "burden_class": "comparator_control",
+    "burden_class": "consensus_control",
     "subtype": "household_contact_mdr_tb",
     "age_band": "older_adult_60_plus",
     "sex": "female",
@@ -1496,6 +1595,7 @@
     "comorbidity_burden": "none",
     "symptom_duration_band": "12_plus_weeks_delayed_presentation",
     "num_distractors": 3,
+    "primary_divergence_class": "national_adaptation",
     "holdout": false,
     "matched_pair_id": "STRAT-064"
   }

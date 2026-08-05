@@ -1,150 +1,162 @@
 # Divergence table summary
 
-`divergence_table.json` rebuilt **2026-08-06** with the comparator changed
-from ATS/CDC/IDSA ("Western") guidance to the **WHO consolidated guidelines
-on tuberculosis** (Modules 1, 2, 3, 4, 5, plus the Module 4 operational
-handbook). See the table's own `warning`/`row_count_note` fields, and
-`UNVERIFIED.md`'s "2026-08-06: comparator changed from ATS/CDC/IDSA to WHO"
-section, for the full rationale and the complete accounting of what
-survived, what converged, and what was dropped as an absence claim.
+`divergence_table.json` restructured **2026-08-06** as a three-way table:
+every row now carries `ntep_position`, `who_position`, and `us_position`
+simultaneously, tagged `divergence_class`. See the table's own
+`warning`/`row_count_note` fields, and `UNVERIFIED.md`'s "table restructured
+as three-way" section, for the full rationale.
 
-**6 rows**, every row cited on both sides against a primary source actually
-fetched and read this session (see `data/protocols/FETCH_LOG.md`). This is
-well below the 10-16 rows anticipated going in. That is not a shortfall to
-paper over: of the original 19 rows, **11 converged with WHO** once
-re-sourced (DIV-001, 002, 003, 004, 005, 006, 007, 009, 011, 012, 019) and
-**5 more were dropped as absence claims** (DIV-013, 014, 015, 018, plus
-DIV-017 which was investigated and reinstated with a real citation — see
-below). Two new paediatric-specific rows were added (DIV-020, DIV-021)
-where WHO's newer guidance gives NTEP genuine room to diverge. Every axis
-Task 1 asked to be checked for a new divergence (universal DST scope/timing,
-weight-band dosing, contact TPT breadth, differentiated care, DR-TB regimen
-choice) was checked against a fetched WHO source; most converged and are
-documented as such rather than silently omitted.
+**17 rows.** Every row cited on the NTEP and WHO sides against a primary
+source actually fetched and read (`data/protocols/FETCH_LOG.md`); `us_position`
+is cited wherever a real US-side document addresses the point, and left
+explicitly `null` (not inferred) for the 2 rows where none was fetched
+(DIV-020, DIV-021).
 
-## Why the comparator changed
+## Why this reframe
 
-The prior (2026-08-05) table scored NTEP mostly against a 2016 (treatment)
-/2017 (diagnosis) ATS/CDC/IDSA US clinical practice guideline. That table's
-own notes on DIV-001 already showed WHO Module 3 (2024) giving molecular-first
-diagnosis a strong, high-certainty recommendation — meaning NTEP and WHO
-already agreed on the single highest-stakes original row, and the surviving
-"divergence" was really NTEP-vs-WHO-consensus vs. a US guideline that
-international consensus had moved past. Continuing on that comparator would
-have made the study's real question "do models follow 2017 US guidance or
-2025 Indian guidance," not a health-equity question about protocol
-adaptation to burden and resourcing. Switching to WHO as the comparator, and
-dropping every row where NTEP and WHO turn out to agree, isolates what's
-actually left: places where India's high-burden national program has made a
-different operational choice than WHO's own global guidance.
+The prior (WHO-only) rebuild found that NTEP converges with WHO on 11 of the
+original 19 axes — universal DST, contact TPT breadth, 1HP adoption, MDR
+contact regimens, empiric TPT for PLHIV and under-5s, and more. That is not
+a null result. It means India's national programme is closely aligned with
+international consensus, and the still-current 2016/2017 ATS/CDC/IDSA
+guidance — not NTEP — is the outlier both WHO and India have moved past.
+The study question is reframed accordingly:
+
+> Do frontier LLMs follow international consensus on TB clinical decisions,
+> or do they default to US national practice even where WHO and India's
+> national programme agree against it?
+
+This is a stronger equity claim than the prior framing: the US accounts for
+a fraction of a percent of global TB cases; India alone accounts for roughly
+25%. A model that anchors on US guidance where consensus says otherwise
+systematically disadvantages the large majority of the world's TB patients,
+not just India's.
+
+## divergence_class
+
+- **`consensus_divergence`** (11 rows) — NTEP and WHO agree; US guidance
+  differs. This is the **primary dataset** for the reframed study: it lets a
+  vignette test directly whether a model's response tracks consensus or
+  defaults to US practice.
+- **`national_adaptation`** (6 rows) — NTEP differs from WHO (WHO leaves the
+  point to national discretion, or the two programs made different
+  operational choices). **Secondary analysis**: this is the residual "India
+  vs the world" axis from the prior framing, kept because it's still a real,
+  well-cited difference — just not the primary hypothesis anymore.
 
 ## Composition
 
+### By divergence_class
+
+| divergence_class | count |
+|---|---|
+| consensus_divergence | 11 |
+| national_adaptation | 6 |
+| **total** | **17** |
+
 ### By domain
 
-| domain | count |
-|---|---|
-| treatment | 3 |
-| prevention | 1 |
-| differential | 1 |
-| monitoring | 1 |
-| diagnosis | 1 |
-| **total** | **6** |
-
-(DIV-021 is tagged `diagnosis`; DIV-020 and DIV-008 are `treatment`; DIV-010
-is `prevention`; DIV-016 is `differential`; DIV-017 is `monitoring`.)
+| domain | consensus_divergence | national_adaptation | total |
+|---|---|---|---|
+| diagnosis | 5 (001, 002, 003, 004, 005) | 1 (021) | 6 |
+| treatment | 2 (006, 007) | 2 (008, 020) | 4 |
+| prevention | 2 (011, 012) | 1 (010) | 3 |
+| resistance | 1 (009) | 0 | 1 |
+| comorbidity | 1 (019) | 0 | 1 |
+| differential | 0 | 1 (016) | 1 |
+| monitoring | 0 | 1 (017) | 1 |
+| **total** | **11** | **6** | **17** |
 
 ### By clinical_stakes
 
-| clinical_stakes | count |
-|---|---|
-| high | 3 |
-| moderate | 3 |
+| clinical_stakes | consensus_divergence | national_adaptation |
+|---|---|---|
+| critical | 3 (001, 002, 009) | 0 |
+| high | 4 (003, 006, 011, 019) | 2 (010, 017) |
+| moderate | 4 (004, 005, 007, 012) | 4 (008, 016, 020, 021) |
 
-DIV-010 is the only row additionally flagged `is_critical_error_if_wrong:
-true`.
+5 rows are additionally flagged `is_critical_error_if_wrong: true`: DIV-001,
+DIV-002, DIV-006, DIV-009 (all `consensus_divergence`), and DIV-010 (the
+`national_adaptation` table's only critical-error-flagged row, despite being
+`high` rather than `critical` stakes).
 
-### By divergence_type
+## The highest-stakes consensus_divergence rows (primary dataset)
 
-| divergence_type | count |
-|---|---|
-| protocol_specific | 4 |
-| resource_dependent | 2 |
-| epidemiology_specific | 0 |
-| prevalence_dependent | 0 |
+1. **DIV-001** (critical) — **Flagship row.** Initial diagnostic test for
+   presumptive pulmonary TB: NTEP and WHO both give molecular-first testing
+   a strong recommendation (WHO Module 3, Recs 1-2, high certainty); the
+   2017 US guideline treats smear+culture as mandatory with only a
+   conditional, low-quality-evidence recommendation for NAAT.
+2. **DIV-002** (critical) — Scope of rapid rifampicin-resistance testing:
+   NTEP's Universal DST and WHO Module 3's Recs 1-2 both mandate testing for
+   every patient; the 2017 US guideline limits it to four risk criteria.
+3. **DIV-009** (critical) — TPT for household contacts of MDR/RR-TB: NTEP's
+   2024 addendum and WHO's 2024 Module 1 Recommendation 21 now both mandate
+   a fixed 6-month levofloxacin regimen; the 2019 US guideline only
+   conditionally recommends treating at all, with an individualized regimen.
+4. **DIV-006** (high, critical-error-flagged) — Dosing schedule: NTEP and
+   WHO Module 4 (2025) are both daily-only throughout treatment; the 2016 US
+   guideline conditionally permits intermittent continuation-phase dosing.
+5. **DIV-003** (high) — Extrapulmonary specimen testing: NTEP and WHO Module
+   3's specimen-specific recommendations both put molecular testing first
+   across specimen types; the US guideline's NAAT stance stays
+   pulmonary-focused (lower-confidence row — inferred US silence, not a
+   stated contrary rule).
+6. **DIV-011** (high) — TPT for PLHIV: NTEP and WHO both state TBI testing
+   is not a prerequisite; the US guideline's regimens are scoped to
+   confirmed LTBI (inferential — see table notes).
+7. **DIV-019** (high) — Cotrimoxazole for HIV-positive TB patients: NTEP and
+   WHO's universal, CD4-unconditioned policy vs. the US guideline's own
+   text, which states the US restricts CPT to CD4 <200 — one of the
+   best-grounded rows in the table, since the contrast is stated explicitly
+   within the US source itself.
+8. **DIV-004** (moderate) — Culture not mandatory in parallel with
+   molecular testing: NTEP and WHO both reserve culture for the downstream
+   resistance cascade; the 2017 US guideline mandates culture on every
+   specimen regardless of NAAT result.
+9. **DIV-005** (moderate) — TST/IGRA interchangeability regardless of BCG
+   history: NTEP and WHO both treat the tests as equivalent; the 2017 US
+   guideline recommends IGRA specifically for BCG-vaccinated individuals.
+10. **DIV-007** (moderate) — Dosing mechanism: NTEP and WHO's own
+    operational handbook both use weight-band FDC tablet counts; the 2016 US
+    guideline calculates mg/kg per patient — a mechanism-level difference,
+    not a marginal band-cutoff variation.
+11. **DIV-012** (moderate) — 1HP regimen availability: WHO has recommended
+    it since 2020 and NTEP adopted it in Dec 2024; the standing 2020 US
+    guideline doesn't list it as a regimen option.
 
-### By applicable_age_bands
-
-| row | child_0_9 | adolescent_10_17 | adult_18_59 | older_adult_60_plus |
-|---|---|---|---|---|
-| DIV-008 |  |  | x | x |
-| DIV-010 |  | x | x | x |
-| DIV-016 | x | x | x | x |
-| DIV-017 |  | x | x | x |
-| DIV-020 | x | x |  |  |
-| DIV-021 | x | x |  |  |
-
-Two rows (DIV-020, DIV-021) are paediatric-only; two (DIV-008, DIV-017)
-exclude child_0_9 because their comparator citations use adult-calibrated
-thresholds or documents; DIV-016 is the only row applicable across every
-age band.
-
-## The 6 surviving rows
+## national_adaptation rows (secondary dataset)
 
 1. **DIV-010** (high, critical-error-flagged) — Household contact TPT
-   breadth: NTEP makes TPT standard (testing optional) for ALL household
-   contacts regardless of age; WHO Module 1 only strongly/unconditionally
-   recommends this for contacts under 5 — for contacts 5+/adolescents/adults
-   WHO's own Recommendation 6 is conditional, with TBI-test confirmation
-   "desirable."
-2. **DIV-017** (high) — Differentiated/decentralized care operationalization:
-   NTEP's Box 4.3 gives quantified vital-sign/lab thresholds mandating
-   referral; WHO Module 4 recommends decentralization as a policy direction
-   (conditional, very low certainty) without specifying thresholds.
-   Reinstated from an absence-claim drop once a real WHO position was found.
-3. **DIV-020** (moderate, paediatric) — 4-month vs 6-month regimen for
-   non-severe paediatric TB: WHO Module 4 gives a strong, moderate-certainty
-   recommendation for a 4-month regimen (3mo-16y, non-severe); NTEP's most
-   recent paediatric guideline (Aug 2022) still specifies only the 6-month
-   regimen. Flagged as time-sensitive — NTEP may have since adopted this.
-4. **DIV-021** (moderate, paediatric) — Treatment-decision algorithm for
-   bacteriologically-unconfirmed paediatric TB: WHO Module 5 offers an
-   optional structured/scored algorithm (interim, conditional, very low
-   certainty); NTEP relies on unstructured clinical judgment plus imaging
-   pattern recognition.
-5. **DIV-016** (moderate) — Active case-finding: NTEP runs ACF as routine
-   national program policy across defined risk groups; WHO Module 2
-   conditions general-population screening on a specific prevalence
-   threshold (>=0.5%), a more evidence-gated posture.
-6. **DIV-008** (moderate) — Treatment-extension discretion: NTEP explicitly
-   leaves continuation-phase extension to physician judgment for slow
-   responders; WHO's regimen is fixed-duration and explicitly discourages
-   extending even the intensive phase on 2-month bacteriology.
+   breadth for ages 5+/adolescents/adults: NTEP makes this standard,
+   testing-optional practice; WHO's own Recommendation 6 is only
+   conditional, with TBI-test confirmation "desirable." No consensus to
+   synthesize — this is NTEP going further than WHO's own recommendation.
+2. **DIV-017** (high) — Differentiated/decentralized care thresholds: NTEP's
+   Box 4.3 gives quantified vital-sign/lab thresholds; WHO recommends
+   decentralization as a direction without specifying thresholds. Notably,
+   WHO and the US guideline land in a similar place here (neither specifies
+   a quantified threshold) — NTEP is the outlier on this particular row.
+3. **DIV-008** (moderate) — Treatment-extension discretion: NTEP explicitly
+   authorizes physician judgment; WHO's regimen is fixed-duration with an
+   explicit anti-extension recommendation for the intensive phase.
+4. **DIV-016** (moderate) — Active case-finding: NTEP runs ACF as routine
+   national policy; WHO Module 2 conditions general-population screening on
+   a specific prevalence threshold (>=0.5%).
+5. **DIV-020** (moderate, paediatric) — 4-month vs 6-month regimen for
+   non-severe paediatric TB: WHO Module 4 recommends 4 months (strong,
+   moderate certainty); NTEP's Aug 2022 guideline still specifies only 6
+   months. Time-sensitive — NTEP may have since updated.
+6. **DIV-021** (moderate, paediatric) — Treatment-decision algorithm: WHO
+   Module 5 offers an optional structured/scored tool (interim, conditional,
+   very low certainty); NTEP relies on unstructured clinical judgment.
 
-## What converged (dropped, not weaknesses being hidden)
-
-See `UNVERIFIED.md` for full citations. Short list: molecular-first
-diagnosis (DIV-001), universal rifampicin-resistance DST (DIV-002), upfront
-NAAT on extrapulmonary specimens (DIV-003), culture-not-mandatory-in-parallel
-(DIV-004), TST/IGRA interchangeability regardless of BCG (DIV-005),
-daily-only dosing (DIV-006), weight-band FDC dosing mechanism (DIV-007),
-fixed 6-month levofloxacin for MDR/RR-TB contacts (DIV-009), no-testing-prerequisite
-for PLHIV/under-5 TPT (DIV-011), 1HP availability (DIV-012), and universal
-cotrimoxazole for HIV-positive TB patients (DIV-019). Also checked and found
-convergent, never added as rows: DR-TB regimen choice (both use WHO's
-BPaLM) and paediatric specimen-collection technique (both use gastric
-aspirate/induced sputum for children who can't produce sputum — this is
-exactly the clinical fact Task 2's Bug B fix needs vignette-writers to get
-right, even though it isn't itself a divergence).
-
-## What was dropped as an absence claim
+## What remains dropped
 
 DIV-013 (Nikshay Poshan Yojana DBT), DIV-014 (Ni-kshay Mitra donor program),
-and DIV-015 (Nikshay notification platform) — WHO's consolidated guidelines
-leave social-protection mechanisms and national IT/notification architecture
+DIV-015 (Nikshay notification platform), and DIV-018 (universal vs
+risk-gated diabetes screening) remain dropped as absence claims — WHO's
+consolidated guidelines leave social-protection mechanisms, national IT
+architecture, and (within the modules fetched) diabetes-screening policy
 entirely to member-state discretion, so there is no WHO position to cite on
-either side of these. DIV-018 (universal vs risk-gated diabetes screening)
-was dropped because the actual WHO-adjacent source for that policy (the
-WHO/IUATLD 2011 TB-diabetes collaborative framework) was not one of the
-modules Task 1 specified for fetching, and no equivalent recommendation
-exists in Modules 1-5.
+either side. See `UNVERIFIED.md` for full detail.

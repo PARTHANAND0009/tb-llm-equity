@@ -60,3 +60,36 @@ def test_rejects_unknown_field():
     data["unexpected_field"] = "nope"
     with pytest.raises(ValidationError):
         Vignette.model_validate(data)
+
+
+def test_rejects_consensus_correct_actions_if_present_in_input():
+    """consensus_correct_actions is derived, never authored -- supplying it
+    in the input JSON must be rejected the same as any other unknown field,
+    so nobody can silently override the computed intersection."""
+    data = _load_fixture("VIG-901.json")
+    data["consensus_correct_actions"] = ["whatever"]
+    with pytest.raises(ValidationError):
+        Vignette.model_validate(data)
+
+
+def test_consensus_correct_actions_is_the_verbatim_intersection():
+    data = _load_fixture("VIG-901.json")
+    vignette = Vignette.model_validate(data)
+    expected = [a for a in vignette.ntep_correct_actions if a in set(vignette.who_correct_actions)]
+    assert vignette.consensus_correct_actions == expected
+    assert vignette.consensus_correct_actions  # VIG-901 is grounded in consensus_divergence rows
+
+
+def test_consensus_correct_actions_can_be_empty_for_national_adaptation_grounding():
+    data = _load_fixture("VIG-901.json")
+    data["ntep_correct_actions"] = ["NTEP-only action, no WHO overlap"]
+    data["who_correct_actions"] = ["WHO-only action, no NTEP overlap"]
+    vignette = Vignette.model_validate(data)
+    assert vignette.consensus_correct_actions == []
+
+
+def test_consensus_correct_actions_appears_in_serialized_output():
+    data = _load_fixture("VIG-901.json")
+    vignette = Vignette.model_validate(data)
+    dumped = json.loads(vignette.model_dump_json())
+    assert dumped["consensus_correct_actions"] == vignette.consensus_correct_actions

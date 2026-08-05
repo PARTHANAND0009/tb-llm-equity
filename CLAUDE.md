@@ -5,16 +5,21 @@ suggestions — follow them in all future work here, without being re-asked.
 
 ## Project
 
-An equity audit of LLM diagnostic reasoning on TB cases, comparing model
-behavior against NTEP (India's National TB Elimination Programme) protocols
-versus the WHO consolidated guidelines on tuberculosis (the "comparator"),
-via paired vignettes.
+An equity audit of LLM diagnostic reasoning on TB cases. As of the
+2026-08-06 reframe, the core question is not "does NTEP differ from WHO" but
+**does a model follow NTEP-WHO international consensus, or does it default
+to US national practice even where WHO and India's national TB programme
+(NTEP) agree against it?** Every divergence-table row carries three
+positions (NTEP / WHO / US); `divergence_class` marks whether a row tests
+that primary hypothesis (`consensus_divergence`: NTEP and WHO agree, US
+differs) or the secondary one (`national_adaptation`: NTEP differs from
+WHO). See `data/divergence/SUMMARY.md` for why.
 
 ## Repo layout
 
 ```
-data/protocols/     raw NTEP + WHO + CDC source docs
-data/divergence/    structured NTEP-vs-WHO divergence table
+data/protocols/     raw NTEP + WHO + US (ATS/CDC/IDSA) source docs
+data/divergence/    structured NTEP/WHO/US three-way divergence table
 data/vignettes/     vignette JSON files, versioned
 data/vignettes/prompts/  per-cell generation prompts (--mode=claude-code only)
 data/responses/     cached raw model responses (--mode=api only)
@@ -117,6 +122,40 @@ either way, and must not overlap `evaluation.models`.
 
 `scripts/critique_vignettes.py` currently only supports the API path.
 
+## Phase 3: arm expansion
+
+`scripts/expand_arms.py` turns each generated vignette into four
+evaluation-arm prompts (baseline / location / epidemiological framing /
+protocol retrieval — see `results/PREREGISTRATION.md` "Design"). It is pure
+deterministic templating: no model call, no generator, RULE 5 does not
+apply. It **cannot be run until vignettes exist** —
+`data/vignettes/<version>/` must contain at least one `VIG-*.json` file, or
+it fails loudly with a message saying generation must run first, rather
+than silently doing nothing. As of this commit `data/vignettes/v1/` is
+empty, so this has only been exercised against
+`tests/fixtures/example_vignettes/`, not real data.
+
+Every arm is built by strict append-only concatenation on top of Arm 1's
+fixed instruction block + stem, which is what makes the instruction block
+byte-identical across all four arms and Arm 2/3/4 each contain their parent
+arm's text verbatim (Arm 3 and Arm 4 both branch off Arm 2, not off each
+other — see the module docstring). For `consensus_control` vignettes, Arm 2
+locates the case at a US teaching hospital (not India) and Arm 4 retrieves
+ATS/CDC/IDSA text (not NTEP) — the symmetric mirror needed to test whether
+a model's US-practice answer changes once it's told it's actually in a US
+setting. Protocol retrieval (Arm 4) matches each grounding row's citation
+`doc` string to a locally fetched file in `data/protocols/` via a keyword
+table, extracts a bounded excerpt, and falls back to the divergence table's
+own `ntep_position`/`who_position`/`us_position` prose when no local file
+matches (e.g. DIV-001's NTEP citation is a web page that was never
+archived) — every fallback is logged, never silent. Injected protocol text
+is capped at `MAX_PROTOCOL_TOKENS` (2000, ~4 chars/token estimate) per
+vignette, and `data/prompts/manifest.json` records exactly which protocol
+chunks (or fallback) were injected into each vignette's Arm 4, alongside a
+sha256 hash per prompt file. A separate RULE 1 experiment manifest is
+written to `results/manifests/<run_id>.json` (`model_identifiers: []`,
+since no model is involved).
+
 ## Tooling
 
 - `make setup` — `uv sync --all-extras` + install pre-commit hooks
@@ -133,6 +172,8 @@ either way, and must not overlap `evaluation.models`.
   generated vignette set
 - `make review-packet` — render `data/vignettes/REVIEW_PACKET.md`
 - `make clinician-review` — render `data/vignettes/CLINICIAN_REVIEW.md`
+- `make expand-arms` — Phase 3 arm expansion (see above). Fails loudly if
+  `data/vignettes/<version>/` is empty — generate vignettes first.
 - `make run-arms` — run evaluation arms (not yet implemented)
 - `make score` — deterministic + LLM-judge scoring (not yet implemented)
 - `make analyze` — statistical analysis (not yet implemented)
@@ -149,33 +190,44 @@ generation, adversarial critique, review-packet rendering) is implemented in
 (`GenerationNotConfiguredError`) until a generator model/family is set —
 this applies to `generate_vignettes.py` regardless of `--mode`.
 
-`data/divergence/divergence_table.json` was rebuilt (2026-08-06) against the
-WHO consolidated guidelines on tuberculosis as the comparator, replacing an
-earlier version that used ATS/CDC/IDSA ("Western") guidance — WHO and NTEP
-turned out to already agree on the highest-stakes original row, which meant
-that table was really testing "2017 US guidance vs 2025 Indian guidance,"
-not a health-equity question. It has 6 rows (`comparator_position`/
-`comparator_citation`/`comparator_source` fields, not `western_*`), each
-cited on both sides against a primary source actually fetched into
-`data/protocols/` — short of the 10-16 rows anticipated because most of the
-original 19 rows converged with WHO once re-sourced and rows without a real
-citation on both sides were dropped rather than shipped weak (see
-`data/divergence/UNVERIFIED.md` for what converged/was cut and why,
-`data/divergence/SUMMARY.md` for composition stats). Still needs clinician
-sign-off before being treated as ground truth — see
-`data/divergence/README.md`.
+`data/divergence/divergence_table.json` was rebuilt twice on 2026-08-06.
+First against the WHO consolidated guidelines on tuberculosis as a
+two-way comparator (replacing an earlier version that used ATS/CDC/IDSA
+"Western" guidance) — which found NTEP converges with WHO on 11 of the
+original 19 rows, an unanticipated empirical result. Rather than drop those
+11 rows as dead ends, the table was restructured a second time, same day,
+into a **three-way** table: every row now carries `ntep_position`,
+`who_position`, and `us_position` simultaneously, tagged `divergence_class`
+(`consensus_divergence`: NTEP and WHO agree, US differs -- the 11
+reinstated rows, and the primary dataset; `national_adaptation`: NTEP
+differs from WHO -- 6 rows, secondary). It has 17 rows total, each cited on
+the NTEP and WHO sides against a primary source actually fetched into
+`data/protocols/`, with `us_position` cited wherever a real US document
+addresses the point (`null`, not inferred, for the 2 rows where none was
+fetched). See `data/divergence/UNVERIFIED.md` for the full disposition
+history and `data/divergence/SUMMARY.md` for composition stats and the
+reframed research question. Still needs clinician sign-off before being
+treated as ground truth -- see `data/divergence/README.md`.
 
 The stratification plan (`scripts/build_stratification_plan.py`) covers 100
-vignette slots across five `presentation_type` values — the original
+vignette slots across five `presentation_type` values -- the original
 pulmonary/extrapulmonary/comorbid/drug_resistant plus `contact_management`
 (added to ground TPT/LTBI-focused divergence rows that don't fit an
-active-disease presentation) — each split across `burden_class`
-india_high/`comparator_control`, with every one of the 6 divergence rows
-grounding at least one vignette (`tests/test_divergence_coverage.py`), each
-capped at `MAX_DIVERGENCE_IDS_PER_VIGNETTE` (3) rows per vignette and
-age-band-filtered so a row never grounds a vignette outside its
-`applicable_age_bands`. Each `comparator_control` cell carries a
-`matched_pair_id` linking it to one `india_high` cell matched on
-presentation complexity, age band, and distractor count.
+active-disease presentation) -- each split across `burden_class`
+india_high/`consensus_control` (renamed from `comparator_control`: the
+control arm now represents the NTEP-WHO consensus position, not a
+"Western"/comparator position), weighted so roughly 75% of cells ground
+primarily in `consensus_divergence` rows and 25% in `national_adaptation`
+rows. Every one of the 17 divergence rows grounds at least one vignette
+(`tests/test_divergence_coverage.py`), each vignette capped at
+`MAX_DIVERGENCE_IDS_PER_VIGNETTE` (3) rows and age-band-filtered so a row
+never grounds a vignette outside its `applicable_age_bands`. Each
+`consensus_control` cell carries a `matched_pair_id` linking it to one
+`india_high` cell matched on presentation complexity, age band, and
+distractor count.
 
-No evaluation-arm/scoring code has been written yet.
+The Phase 3 arm-expansion pipeline (`scripts/expand_arms.py`, see "Phase 3:
+arm expansion" above) is implemented and unit-tested against
+`tests/fixtures/example_vignettes/`, but has not been run against real
+vignettes -- `data/vignettes/v1/` is still empty. No scoring/analysis code
+(`make score`, `make analyze`, `make figures`) has been written yet.

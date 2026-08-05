@@ -57,8 +57,16 @@ def render(version: str) -> str:
             for a in v.ntep_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
-            lines.append("**Comparator (WHO)-correct actions:**")
-            for a in v.comparator_correct_actions:
+            lines.append("**WHO-correct actions:**")
+            for a in v.who_correct_actions:
+                lines.append(f"- {a}")
+            lines.append("")
+            lines.append("**US (ATS/CDC/IDSA)-correct actions:**")
+            for a in v.us_correct_actions:
+                lines.append(f"- {a}")
+            lines.append("")
+            lines.append("**Consensus-correct actions (NTEP ∩ WHO, derived):**")
+            for a in v.consensus_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
             lines.append("**Distractors seeded:**")

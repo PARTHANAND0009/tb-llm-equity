@@ -55,21 +55,21 @@ def _cell(**overrides):
     return base
 
 
-def test_india_high_and_comparator_control_prompts_differ_for_same_presentation_type():
+def test_india_high_and_consensus_control_prompts_differ_for_same_presentation_type():
     india_cell = _cell(burden_class="india_high")
-    comparator_cell = _cell(burden_class="comparator_control", matched_pair_id="STRAT-001")
+    comparator_cell = _cell(burden_class="consensus_control", matched_pair_id="STRAT-001")
 
     india_prompt = build_user_prompt(india_cell, divergence_rows=[])
     comparator_prompt = build_user_prompt(comparator_cell, divergence_rows=[])
 
     assert india_prompt != comparator_prompt
     assert "india_high" in india_prompt
-    assert "comparator_control" in comparator_prompt
+    assert "consensus_control" in comparator_prompt
     assert "not the same case relabeled" in comparator_prompt.lower()
 
 
-def test_comparator_control_prompt_references_matched_pair():
-    comparator_cell = _cell(burden_class="comparator_control", matched_pair_id="STRAT-042")
+def test_consensus_control_prompt_references_matched_pair():
+    comparator_cell = _cell(burden_class="consensus_control", matched_pair_id="STRAT-042")
     prompt = build_user_prompt(comparator_cell, divergence_rows=[])
     assert "STRAT-042" in prompt
 
@@ -78,16 +78,18 @@ _SAMPLE_ROW = {
     "id": "DIV-001",
     "decision_point": "test decision point",
     "domain": "diagnosis",
+    "divergence_class": "consensus_divergence",
+    "applicable_age_bands": ["adult_18_59", "older_adult_60_plus"],
     "ntep_position": "ntep test position",
     "ntep_citation": {"doc": "doc", "section": "sec", "url": "https://example.com/ntep"},
-    "comparator_position": "comparator test position",
-    "comparator_citation": {"doc": "doc", "section": "sec", "url": "https://example.com/who"},
-    "comparator_source": "WHO",
-    "divergence_type": "protocol_specific",
+    "who_position": "who test position",
+    "who_citation": {"doc": "doc", "section": "sec", "url": "https://example.com/who"},
+    "us_position": "us test position",
+    "us_citation": {"doc": "doc", "section": "sec", "url": "https://example.com/us"},
+    "consensus_position": "consensus test position",
     "clinical_stakes": "high",
     "is_critical_error_if_wrong": False,
     "still_diverges_as_of": "2026-08",
-    "applicable_age_bands": ["adult_18_59", "older_adult_60_plus"],
 }
 
 
@@ -104,7 +106,7 @@ def test_render_prompt_file_contains_key_fields():
 
 
 def test_render_prompt_file_embeds_matched_pair_id_translated_to_vig_id():
-    cell = _cell(burden_class="comparator_control", matched_pair_id="STRAT-099")
+    cell = _cell(burden_class="consensus_control", matched_pair_id="STRAT-099")
     text = _render_prompt_file(
         cell=cell,
         vig_id="VIG-002",
@@ -179,7 +181,8 @@ def test_claude_code_mode_validates_a_hand_written_vignette(tmp_path, monkeypatc
         },
         "distractors": ["distractor one", "distractor two"],
         "ntep_correct_actions": ["action one"],
-        "comparator_correct_actions": ["action one"],
+        "who_correct_actions": ["action one"],
+        "us_correct_actions": ["a different action"],
         "critical_error_conditions": ["error one"],
         "expected_divergence_points": ["point one"],
         "holdout": False,

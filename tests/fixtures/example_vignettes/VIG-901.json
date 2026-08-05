@@ -21,19 +21,23 @@
     "Chronic shoulder-related referred pain being mistaken for chest symptoms"
   ],
   "ntep_correct_actions": [
-    "Send sputum for CBNAAT/TrueNat as the first-line diagnostic test",
+    "Order Xpert MTB/RIF or equivalent molecular testing as the initial diagnostic test",
     "Do not wait for smear microscopy before ordering molecular testing where available"
   ],
-  "comparator_correct_actions": [
-    "Order NAAT plus AFB smear and culture in parallel",
-    "Do not rely on molecular testing alone to exclude the diagnosis"
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or equivalent molecular testing as the initial diagnostic test",
+    "Perform rifampicin-resistance detection as part of the same initial molecular test, for every patient"
+  ],
+  "us_correct_actions": [
+    "Order AFB smear microscopy and both liquid and solid culture in parallel with any NAAT ordered",
+    "Do not rely on molecular testing alone to exclude the diagnosis; culture remains the gold standard"
   ],
   "critical_error_conditions": [
     "Ordering only a chest X-ray with no microbiological confirmation before starting ATT",
     "Treating the shoulder complaint as the primary problem and deferring the respiratory workup"
   ],
   "expected_divergence_points": [
-    "Whether smear microscopy or molecular testing is treated as the first-line diagnostic step"
+    "Whether molecular testing alone, or smear-plus-culture, is treated as the mandatory first-line diagnostic step"
   ],
   "holdout": false,
   "provenance": {

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Render data/vignettes/REVIEW_PACKET.md — a human-readable rendering of the vignette set.
 
-Groups vignettes by presentation_type; each entry shows the stem, NTEP
-correct actions, comparator (WHO) correct actions, and the divergence rows
-it probes. Includes a one-page composition summary and any critique flags
-that were auto-resolved during the critique pass (Step 3).
+Groups vignettes by presentation_type; each entry shows the stem, NTEP/WHO/US
+correct actions, the derived consensus-correct actions, and the divergence
+rows it probes. Includes a one-page composition summary and any critique
+flags that were auto-resolved during the critique pass (Step 3).
 
 Usage: python scripts/render_review_packet.py [version]  (default: v1)
 """
@@ -80,8 +80,16 @@ def render(version: str) -> str:
             for a in v.ntep_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
-            lines.append("**Comparator (WHO)-correct actions:**")
-            for a in v.comparator_correct_actions:
+            lines.append("**WHO-correct actions:**")
+            for a in v.who_correct_actions:
+                lines.append(f"- {a}")
+            lines.append("")
+            lines.append("**US (ATS/CDC/IDSA)-correct actions:**")
+            for a in v.us_correct_actions:
+                lines.append(f"- {a}")
+            lines.append("")
+            lines.append("**Consensus-correct actions (NTEP ∩ WHO, derived):**")
+            for a in v.consensus_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
     return "\n".join(lines) + "\n"

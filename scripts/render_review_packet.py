@@ -2,8 +2,8 @@
 """Render data/vignettes/REVIEW_PACKET.md — a human-readable rendering of the vignette set.
 
 Groups vignettes by presentation_type; each entry shows the stem, NTEP
-correct actions, Western correct actions, and the divergence rows it
-probes. Includes a one-page composition summary and any critique flags
+correct actions, comparator (WHO) correct actions, and the divergence rows
+it probes. Includes a one-page composition summary and any critique flags
 that were auto-resolved during the critique pass (Step 3).
 
 Usage: python scripts/render_review_packet.py [version]  (default: v1)
@@ -80,8 +80,8 @@ def render(version: str) -> str:
             for a in v.ntep_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
-            lines.append("**Western-correct actions:**")
-            for a in v.western_correct_actions:
+            lines.append("**Comparator (WHO)-correct actions:**")
+            for a in v.comparator_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
     return "\n".join(lines) + "\n"

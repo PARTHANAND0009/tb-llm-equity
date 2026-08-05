@@ -15,7 +15,7 @@ from typing import Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
-BurdenClass = Literal["india_high", "western_control"]
+BurdenClass = Literal["india_high", "comparator_control"]
 PresentationType = Literal[
     "pulmonary", "extrapulmonary", "comorbid", "drug_resistant", "contact_management"
 ]
@@ -60,16 +60,23 @@ class Vignette(BaseModel):
     matched_pair_id: str | None = Field(
         default=None,
         description=(
-            "For a western_control vignette, the id of the india_high vignette it is "
+            "For a comparator_control vignette, the id of the india_high vignette it is "
             "matched to on presentation complexity, age band, and distractor count."
         ),
     )
-    divergence_ids: list[str] = Field(..., min_length=1)
+    divergence_ids: list[str] = Field(
+        ...,
+        min_length=1,
+        max_length=3,
+        description=(
+            "Capped at 3: one clinical case cannot meaningfully probe more decision points."
+        ),
+    )
     stem: str
     patient: Patient
     distractors: list[str] = Field(..., min_length=2)
     ntep_correct_actions: list[str] = Field(..., min_length=1)
-    western_correct_actions: list[str] = Field(..., min_length=1)
+    comparator_correct_actions: list[str] = Field(..., min_length=1)
     critical_error_conditions: list[str] = Field(..., min_length=1)
     expected_divergence_points: list[str] = Field(..., min_length=1)
     holdout: bool

@@ -24,7 +24,7 @@
     "Perform confirmatory blood glucose testing as part of the mandated bidirectional TB-diabetes screen",
     "Notify the case via the national notification system regardless of care setting"
   ],
-  "western_correct_actions": [
+  "comparator_correct_actions": [
     "Order glucose testing based on clinical judgment given the incidental abnormal result, not as a mandated protocol step",
     "Report the case to the local/state health department as a notifiable condition"
   ],

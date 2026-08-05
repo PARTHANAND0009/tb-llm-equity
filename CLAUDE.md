@@ -7,13 +7,14 @@ suggestions — follow them in all future work here, without being re-asked.
 
 An equity audit of LLM diagnostic reasoning on TB cases, comparing model
 behavior against NTEP (India's National TB Elimination Programme) protocols
-versus WHO/CDC ("Western") protocols, via paired vignettes.
+versus the WHO consolidated guidelines on tuberculosis (the "comparator"),
+via paired vignettes.
 
 ## Repo layout
 
 ```
 data/protocols/     raw NTEP + WHO + CDC source docs
-data/divergence/    structured NTEP-vs-Western divergence table
+data/divergence/    structured NTEP-vs-WHO divergence table
 data/vignettes/     vignette JSON files, versioned
 data/vignettes/prompts/  per-cell generation prompts (--mode=claude-code only)
 data/responses/     cached raw model responses (--mode=api only)
@@ -87,8 +88,8 @@ never be merged into the headline number.
 Vignettes are held out at generation time, tagged `holdout=true`, and
 excluded from all analysis until a final confirmation run. The holdout count
 is proportional to the vignette set size (`TOTAL_HOLDOUT` /
-`TOTAL_VIGNETTES` in `scripts/build_stratification_plan.py`) — currently 23
-of 170.
+`TOTAL_VIGNETTES` in `scripts/build_stratification_plan.py`) — currently 15
+of 100.
 
 ## Generation modes
 
@@ -148,25 +149,33 @@ generation, adversarial critique, review-packet rendering) is implemented in
 (`GenerationNotConfiguredError`) until a generator model/family is set —
 this applies to `generate_vignettes.py` regardless of `--mode`.
 
-`data/divergence/divergence_table.json` was rebuilt (2026-08-05) from
-primary sources actually fetched into `data/protocols/` (13 PDFs + several
-HTML pages — see `data/protocols/FETCH_LOG.md`), replacing an earlier
-training-knowledge draft. It has 19 rows, each cited on both sides — short of
-the 40-60 target because rows without a real citation on both sides were
-dropped rather than shipped weak (see `data/divergence/UNVERIFIED.md` for
-what was cut and why, `data/divergence/SUMMARY.md` for composition stats).
-Still needs clinician sign-off before being treated as ground truth — see
+`data/divergence/divergence_table.json` was rebuilt (2026-08-06) against the
+WHO consolidated guidelines on tuberculosis as the comparator, replacing an
+earlier version that used ATS/CDC/IDSA ("Western") guidance — WHO and NTEP
+turned out to already agree on the highest-stakes original row, which meant
+that table was really testing "2017 US guidance vs 2025 Indian guidance,"
+not a health-equity question. It has 6 rows (`comparator_position`/
+`comparator_citation`/`comparator_source` fields, not `western_*`), each
+cited on both sides against a primary source actually fetched into
+`data/protocols/` — short of the 10-16 rows anticipated because most of the
+original 19 rows converged with WHO once re-sourced and rows without a real
+citation on both sides were dropped rather than shipped weak (see
+`data/divergence/UNVERIFIED.md` for what converged/was cut and why,
+`data/divergence/SUMMARY.md` for composition stats). Still needs clinician
+sign-off before being treated as ground truth — see
 `data/divergence/README.md`.
 
-The stratification plan (`scripts/build_stratification_plan.py`) covers 170
+The stratification plan (`scripts/build_stratification_plan.py`) covers 100
 vignette slots across five `presentation_type` values — the original
 pulmonary/extrapulmonary/comorbid/drug_resistant plus `contact_management`
 (added to ground TPT/LTBI-focused divergence rows that don't fit an
 active-disease presentation) — each split across `burden_class`
-india_high/western_control, with every one of the 19 divergence rows
-grounding at least one vignette (`tests/test_divergence_coverage.py`). Each
-`western_control` cell carries a `matched_pair_id` linking it to one
-`india_high` cell matched on presentation complexity, age band, and
-distractor count.
+india_high/`comparator_control`, with every one of the 6 divergence rows
+grounding at least one vignette (`tests/test_divergence_coverage.py`), each
+capped at `MAX_DIVERGENCE_IDS_PER_VIGNETTE` (3) rows per vignette and
+age-band-filtered so a row never grounds a vignette outside its
+`applicable_age_bands`. Each `comparator_control` cell carries a
+`matched_pair_id` linking it to one `india_high` cell matched on
+presentation complexity, age band, and distractor count.
 
 No evaluation-arm/scoring code has been written yet.

@@ -8,8 +8,8 @@ For each vignette, runs a critique prompt (same generator family, a
 different system prompt) that looks for:
   - clinically implausible combinations of findings
   - internal inconsistency between the stem and the stated correct actions
-  - cases where NTEP and Western guidance would actually agree (useless
-    as a discriminator)
+  - cases where NTEP and WHO (comparator) guidance would actually agree
+    (useless as a discriminator)
   - accidental location leakage
   - cases so easy every model would get them right (no discriminative power)
 
@@ -46,10 +46,10 @@ specifically for:
 1. Clinically implausible combinations of findings (a presentation that
    would not actually co-occur).
 2. Internal inconsistency between the stem and the stated
-   ntep_correct_actions / western_correct_actions / critical_error_conditions.
-3. Cases where NTEP and Western guidance would actually agree on the
-   correct action — making this case useless as a discriminator between the
-   two protocol arms.
+   ntep_correct_actions / comparator_correct_actions / critical_error_conditions.
+3. Cases where NTEP and WHO (comparator) guidance would actually agree on
+   the correct action — making this case useless as a discriminator between
+   the two protocol arms.
 4. Accidental leakage of a country, city, state, or named health-system
    identifier (NTEP, CDC, WHO, India, US, etc.) in the stem.
 5. Cases so textbook-easy that every competent model would get them right
@@ -69,7 +69,7 @@ preserving its grounding in the same divergence-table rows and the same
 case parameters (presentation_type, subtype, demographics). Respond with a
 single JSON object in exactly the same shape as the original generation
 schema: {"stem": str, "patient": {...}, "distractors": [...],
-"ntep_correct_actions": [...], "western_correct_actions": [...],
+"ntep_correct_actions": [...], "comparator_correct_actions": [...],
 "critical_error_conditions": [...], "expected_divergence_points": [...]}
 No prose outside the JSON.
 """
@@ -171,7 +171,7 @@ def main(version: str) -> int:
                 "patient",
                 "distractors",
                 "ntep_correct_actions",
-                "western_correct_actions",
+                "comparator_correct_actions",
                 "critical_error_conditions",
                 "expected_divergence_points",
             ):

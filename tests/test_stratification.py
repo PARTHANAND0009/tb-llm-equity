@@ -1,8 +1,8 @@
 from build_stratification_plan import (
+    COMPARATOR_CONTROL_COUNT,
     GROUPS,
     TOTAL_HOLDOUT,
     TOTAL_VIGNETTES,
-    WESTERN_CONTROL_COUNT,
     allocate,
     build_cells,
 )
@@ -27,17 +27,17 @@ def test_build_cells_total_and_holdout_counts():
 def test_build_cells_matches_target_composition():
     cells = build_cells()
     india_high_counts = {}
-    western_counts = 0
+    comparator_counts = 0
     for c in cells:
         if c["burden_class"] == "india_high":
             pt = c["presentation_type"]
             india_high_counts[pt] = india_high_counts.get(pt, 0) + 1
         else:
-            western_counts += 1
+            comparator_counts += 1
 
     expected = {g["presentation_type"]: g["count"] for g in GROUPS}
     assert india_high_counts == expected
-    assert western_counts == WESTERN_CONTROL_COUNT
+    assert comparator_counts == COMPARATOR_CONTROL_COUNT
 
 
 def test_comorbid_cells_get_a_subtype_and_significant_burden():
@@ -69,7 +69,7 @@ def test_contact_management_cells_exist_for_both_burden_classes():
     contact_mgmt = [c for c in cells if c["presentation_type"] == "contact_management"]
     assert contact_mgmt
     assert any(c["burden_class"] == "india_high" for c in contact_mgmt)
-    assert any(c["burden_class"] == "western_control" for c in contact_mgmt)
+    assert any(c["burden_class"] == "comparator_control" for c in contact_mgmt)
 
 
 def test_cell_ids_are_unique():
@@ -78,20 +78,20 @@ def test_cell_ids_are_unique():
     assert len(ids) == len(set(ids))
 
 
-def test_every_western_control_cell_is_matched():
+def test_every_comparator_control_cell_is_matched():
     cells = build_cells()
-    western = [c for c in cells if c["burden_class"] == "western_control"]
-    assert western
-    assert all(c["matched_pair_id"] for c in western)
+    comparator = [c for c in cells if c["burden_class"] == "comparator_control"]
+    assert comparator
+    assert all(c["matched_pair_id"] for c in comparator)
 
 
 def test_matched_pairs_are_unique_and_same_presentation_type():
     cells = build_cells()
     by_id = {c["cell_id"]: c for c in cells}
-    western = [c for c in cells if c["burden_class"] == "western_control"]
-    targets = [c["matched_pair_id"] for c in western]
+    comparator = [c for c in cells if c["burden_class"] == "comparator_control"]
+    targets = [c["matched_pair_id"] for c in comparator]
     assert len(targets) == len(set(targets))  # no india_high cell matched twice
-    for c in western:
+    for c in comparator:
         partner = by_id[c["matched_pair_id"]]
         assert partner["burden_class"] == "india_high"
         assert partner["presentation_type"] == c["presentation_type"]
@@ -100,17 +100,17 @@ def test_matched_pairs_are_unique_and_same_presentation_type():
 def test_matched_pairs_align_on_age_band_and_num_distractors():
     cells = build_cells()
     by_id = {c["cell_id"]: c for c in cells}
-    western = [c for c in cells if c["burden_class"] == "western_control"]
-    for c in western:
+    comparator = [c for c in cells if c["burden_class"] == "comparator_control"]
+    for c in comparator:
         partner = by_id[c["matched_pair_id"]]
         assert partner["age_band"] == c["age_band"]
         assert partner["num_distractors"] == c["num_distractors"]
 
 
-def test_matched_india_high_cell_links_back_to_western_control_cell():
+def test_matched_india_high_cell_links_back_to_comparator_control_cell():
     cells = build_cells()
     by_id = {c["cell_id"]: c for c in cells}
-    western = [c for c in cells if c["burden_class"] == "western_control"]
-    for c in western:
+    comparator = [c for c in cells if c["burden_class"] == "comparator_control"]
+    for c in comparator:
         partner = by_id[c["matched_pair_id"]]
         assert partner["matched_pair_id"] == c["cell_id"]

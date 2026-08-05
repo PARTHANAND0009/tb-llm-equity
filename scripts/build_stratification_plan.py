@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the systematic (non-random) stratification plan for the 150-vignette set.
+"""Build the systematic (non-random) stratification plan for the ~100-vignette set.
 
 Deterministically assigns every vignette slot to a combination of strata by
 round-robin cycling through fixed value lists — never `random.choice`, so the
@@ -8,8 +8,9 @@ plan is reproducible and auditable. Writes:
   data/vignettes/stratification_plan.json  (machine-readable, one row per cell)
   data/vignettes/stratification_plan.md    (human-readable design doc)
 
-This only plans *which combinations of strata* each of the 150 vignette slots
-should cover. It does not call any model and does not write vignette content.
+This only plans *which combinations of strata* each of the ~100 vignette
+slots should cover. It does not call any model and does not write vignette
+content.
 """
 
 from __future__ import annotations
@@ -22,26 +23,42 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 OUT_JSON = REPO_ROOT / "data" / "vignettes" / "stratification_plan.json"
 OUT_MD = REPO_ROOT / "data" / "vignettes" / "stratification_plan.md"
 
-TOTAL_VIGNETTES = 170
-TOTAL_HOLDOUT = 23
+TOTAL_VIGNETTES = 100
+TOTAL_HOLDOUT = 15
 
-# Presentation-type groups, per the target composition. western_control's own
-# presentation_type split is computed below, proportional to the india_high spread.
+# Presentation-type groups, per the target composition. comparator_control's
+# own presentation_type split is computed below, proportional to the
+# india_high spread.
 #
-# `contact_management` (added for Task 3, 2026-08) covers vignettes about a
+# Trimmed from 170 to 100 cells (Task 3, 2026-08-06) and re-weighted toward
+# the 6-row WHO-comparator divergence table (data/divergence/SUMMARY.md),
+# which is much smaller than the 19-row table this plan was originally built
+# against -- statistical power comes from the arm contrast, not vignette
+# count, and hand-writing 170 vignettes in claude-code mode risked quality
+# drift. `pulmonary` gets the largest share because it grounds the widest
+# spread of surviving rows, including the two paediatric-only rows
+# (DIV-020, DIV-021) that Task 2 specifically needs age-appropriate coverage
+# for. `comorbid` and `drug_resistant` shrink relative to the old plan: their
+# old dedicated grounding rows (DIV-013/014/018/019 and DIV-002/007
+# respectively) all converged with WHO and were dropped, so both groups now
+# ground only in DIV-017's triage thresholds (glycemic/CD4/BMI for comorbid;
+# the same triage protocol applied to any TB patient for drug_resistant) plus
+# the DIV-016 universal fallback -- still real grounding, just less
+# distinctive than before, so they carry a smaller share of the set.
+#
+# `contact_management` (added in the prior session) covers vignettes about a
 # person being evaluated for TB *preventive* treatment (household contact,
-# PLHIV, contact of a drug-resistant index case) rather than active disease —
-# it grounds divergence rows DIV-005/009/010/011/012, none of which fit
-# pulmonary/extrapulmonary/comorbid/drug_resistant. Extending the plan with a
-# new presentation_type rather than dropping those rows, per the task.
+# PLHIV) rather than active disease -- it is now the home of DIV-010
+# (household contact TPT breadth), the table's only remaining
+# critical-error-flagged row.
 GROUPS = [
-    {"presentation_type": "pulmonary", "burden_class": "india_high", "count": 40},
-    {"presentation_type": "extrapulmonary", "burden_class": "india_high", "count": 35},
-    {"presentation_type": "comorbid", "burden_class": "india_high", "count": 25},
-    {"presentation_type": "drug_resistant", "burden_class": "india_high", "count": 20},
-    {"presentation_type": "contact_management", "burden_class": "india_high", "count": 15},
+    {"presentation_type": "pulmonary", "burden_class": "india_high", "count": 28},
+    {"presentation_type": "extrapulmonary", "burden_class": "india_high", "count": 16},
+    {"presentation_type": "comorbid", "burden_class": "india_high", "count": 10},
+    {"presentation_type": "drug_resistant", "burden_class": "india_high", "count": 8},
+    {"presentation_type": "contact_management", "burden_class": "india_high", "count": 8},
 ]
-WESTERN_CONTROL_COUNT = 35
+COMPARATOR_CONTROL_COUNT = 30
 
 COMORBID_SUBTYPES = ["tb_diabetes", "tb_hiv", "undernutrition"]
 DR_TB_SUBTYPES = ["rifampicin_mono_resistant", "mdr_tb", "pre_xdr_tb"]
@@ -87,14 +104,18 @@ def allocate(total: int, weights: list[float]) -> list[int]:
 def build_cells() -> list[dict]:
     cells: list[dict] = []
 
-    # western_control's presentation_type split, proportional to the india_high groups.
-    wc_split = allocate(WESTERN_CONTROL_COUNT, [g["count"] for g in GROUPS])
-    western_groups = [
-        {"presentation_type": g["presentation_type"], "burden_class": "western_control", "count": n}
-        for g, n in zip(GROUPS, wc_split, strict=False)
+    # comparator_control's presentation_type split, proportional to the india_high groups.
+    cc_split = allocate(COMPARATOR_CONTROL_COUNT, [g["count"] for g in GROUPS])
+    comparator_groups = [
+        {
+            "presentation_type": g["presentation_type"],
+            "burden_class": "comparator_control",
+            "count": n,
+        }
+        for g, n in zip(GROUPS, cc_split, strict=False)
     ]
 
-    all_groups = GROUPS + western_groups
+    all_groups = GROUPS + comparator_groups
 
     # Per-group holdout counts, proportional to group size, summing to TOTAL_HOLDOUT.
     holdout_counts = allocate(TOTAL_HOLDOUT, [g["count"] for g in all_groups])
@@ -155,36 +176,38 @@ def build_cells() -> list[dict]:
 
 
 def assign_matched_pairs(cells: list[dict]) -> None:
-    """Pair each western_control cell to one india_high cell of the same
+    """Pair each comparator_control cell to one india_high cell of the same
     presentation_type, matched on age_band and num_distractors where possible.
 
     Sets matched_pair_id on both sides (india_high side stays None if it was
-    never chosen as a match — western_control counts are smaller than
+    never chosen as a match — comparator_control counts are smaller than
     india_high counts per group, so most india_high cells are unmatched).
     """
     by_type: dict[str, dict[str, list[dict]]] = {}
     for c in cells:
-        slot = by_type.setdefault(c["presentation_type"], {"india_high": [], "western_control": []})
+        slot = by_type.setdefault(
+            c["presentation_type"], {"india_high": [], "comparator_control": []}
+        )
         slot[c["burden_class"]].append(c)
 
     for groups in by_type.values():
         india_cells = groups["india_high"]
         used_ids: set[str] = set()
-        for wc in groups["western_control"]:
+        for cc in groups["comparator_control"]:
             candidates = [c for c in india_cells if c["cell_id"] not in used_ids]
             if not candidates:
                 continue
 
-            def match_score(c: dict, wc: dict = wc) -> tuple[bool, bool]:
+            def match_score(c: dict, cc: dict = cc) -> tuple[bool, bool]:
                 return (
-                    c["age_band"] != wc["age_band"],
-                    c["num_distractors"] != wc["num_distractors"],
+                    c["age_band"] != cc["age_band"],
+                    c["num_distractors"] != cc["num_distractors"],
                 )
 
             best = min(candidates, key=match_score)
             used_ids.add(best["cell_id"])
-            wc["matched_pair_id"] = best["cell_id"]
-            best["matched_pair_id"] = wc["cell_id"]
+            cc["matched_pair_id"] = best["cell_id"]
+            best["matched_pair_id"] = cc["cell_id"]
 
 
 def render_markdown(cells: list[dict]) -> str:
@@ -217,17 +240,17 @@ def render_markdown(cells: list[dict]) -> str:
     lines.append(f"| **total** |  | **{len(cells)}** |")
 
     matched = sum(
-        1 for c in cells if c["burden_class"] == "western_control" and c["matched_pair_id"]
+        1 for c in cells if c["burden_class"] == "comparator_control" and c["matched_pair_id"]
     )
-    western_total = sum(1 for c in cells if c["burden_class"] == "western_control")
+    comparator_total = sum(1 for c in cells if c["burden_class"] == "comparator_control")
     lines += [
         "",
         f"Holdout: {sum(1 for c in cells if c['holdout'])} of {len(cells)}, "
         "stratified proportionally across the groups above (largest-remainder allocation).",
         "",
-        f"Matched pairs: {matched} of {western_total} western_control cells are paired to an "
-        "india_high cell (`matched_pair_id`) of the same presentation_type, matched on age_band "
-        "and num_distractors where possible — see "
+        f"Matched pairs: {matched} of {comparator_total} comparator_control cells are paired to "
+        "an india_high cell (`matched_pair_id`) of the same presentation_type, matched on "
+        "age_band and num_distractors where possible — see "
         "`scripts/build_stratification_plan.py::assign_matched_pairs`.",
         "",
         "## Systematic variation axes",

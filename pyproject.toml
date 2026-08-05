@@ -1,7 +1,7 @@
 [project]
 name = "tb-llm-equity"
 version = "0.1.0"
-description = "Equity audit of LLM diagnostic reasoning on NTEP-vs-Western TB protocol divergence"
+description = "Equity audit of LLM diagnostic reasoning on NTEP-vs-WHO TB protocol divergence"
 readme = "README.md"
 requires-python = ">=3.11,<3.12"
 dependencies = [

@@ -24,7 +24,7 @@
     "Send sputum for CBNAAT/TrueNat as the first-line diagnostic test",
     "Do not wait for smear microscopy before ordering molecular testing where available"
   ],
-  "western_correct_actions": [
+  "comparator_correct_actions": [
     "Order NAAT plus AFB smear and culture in parallel",
     "Do not rely on molecular testing alone to exclude the diagnosis"
   ],

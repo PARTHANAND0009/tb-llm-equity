@@ -57,8 +57,8 @@ def render(version: str) -> str:
             for a in v.ntep_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
-            lines.append("**Western-correct actions:**")
-            for a in v.western_correct_actions:
+            lines.append("**Comparator (WHO)-correct actions:**")
+            for a in v.comparator_correct_actions:
                 lines.append(f"- {a}")
             lines.append("")
             lines.append("**Distractors seeded:**")

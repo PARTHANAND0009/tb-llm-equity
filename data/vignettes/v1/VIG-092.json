@@ -1,0 +1,63 @@
+{
+  "id": "VIG-092",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-052",
+  "divergence_ids": ["DIV-002", "DIV-007"],
+  "stem": "A 67-year-old retired factory worker with longstanding, poorly controlled diabetes presents after more than three months of cough, which she attributed to years of exposure to workplace fumes before retirement. Her diabetes has been managed inconsistently. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Random blood glucose today: 245 mg/dl, with polyuria and increased thirst she attributes to the weather. Exam: thin, mild crackles bilaterally, no edema.",
+  "patient": {
+    "age": "67 years",
+    "sex": "female",
+    "occupation": "retired factory/manufacturing worker",
+    "social_history": "Longstanding history of workplace fume exposure before retirement; diabetes managed inconsistently",
+    "presenting_complaint": "Chronic cough attributed to occupational exposure, new hyperglycemic symptoms",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Thin, mild bilateral crackles, no edema, random blood glucose 245 mg/dl with polyuria, bilateral cavitary disease on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["type 2 diabetes, poorly controlled"]
+  },
+  "distractors": [
+    "Years of workplace fume exposure proposed as sufficient explanation for the cough",
+    "Elevated blood glucose attributed entirely to inconsistent diabetes management, without connecting it to the current illness",
+    "Increased thirst and polyuria attributed to weather rather than a glycemic abnormality"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption this patient's presentation is inherently low-risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T21:05:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

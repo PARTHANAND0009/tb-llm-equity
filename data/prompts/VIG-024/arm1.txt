@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 69-year-old man who travels seasonally for construction labor was identified with a chronic cough during a mobile outreach clinic that periodically visits labor camps and informal settlements to screen high-risk, marginalized populations for TB, part of a standing national program activity. He has advanced COPD, previously diagnosed, and uses a bronchodilator inhaler that he often cannot afford to refill. He had been coughing for well over three months, attributing it entirely to his COPD. He was diagnosed with drug-sensitive pulmonary TB six weeks ago and started on treatment, directly observed at the camp's health post. Sputum smear remains positive at today's 2-month assessment, and he reports feeling more breathless than his usual COPD baseline. Vitals: oxygen saturation 90% on room air (his documented COPD baseline is 95%), respiratory rate 27/min. Initial chest imaging showed extensive bilateral cavitary disease.

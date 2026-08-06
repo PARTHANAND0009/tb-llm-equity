@@ -1,0 +1,58 @@
+{
+  "id": "VIG-039",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-087",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 43-year-old man, medically retired after a workplace injury left him with a permanent hip impairment from years ago, presents with about eleven weeks of worsening pain and swelling in the same hip, which he and his family initially attributed to his old injury flaring up. He has stage 3 chronic kidney disease managed at a local clinic. He has had intermittent low-grade fevers he hadn't mentioned. No prior TB treatment, no known TB contact, no known drug-resistant contact. Imaging shows joint space narrowing with periarticular bone destruction concerning for septic or tuberculous arthritis. Joint aspiration was performed; synovial fluid was sent for molecular testing, which was positive for M. tuberculosis. Exam: warm, swollen hip with reduced range of motion, no overlying skin changes, mild peripheral edema consistent with his known kidney disease.",
+  "patient": {
+    "age": "43 years",
+    "sex": "male",
+    "occupation": "medically retired (former manual laborer, old workplace hip injury)",
+    "social_history": "Lives independently; stage 3 chronic kidney disease followed at a local clinic",
+    "presenting_complaint": "Worsening hip pain and swelling, initially attributed to an old injury flaring up",
+    "duration": "11 weeks",
+    "exam_findings": "Warm, swollen hip with reduced range of motion, no overlying skin changes, mild peripheral edema consistent with known CKD, joint space narrowing with periarticular bone destruction on imaging",
+    "prior_treatment": "None specific for this episode; no prior TB treatment ever",
+    "comorbidities": ["chronic kidney disease, stage 3"]
+  },
+  "distractors": [
+    "A flare of his old workplace hip injury proposed as sufficient explanation for the pain and swelling without further workup",
+    "Chronic kidney disease-related joint changes proposed as an alternative explanation for the swelling"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the synovial fluid) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the synovial fluid) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary (including synovial fluid) specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the joint destruction entirely to his old injury and deferring molecular testing on the synovial fluid already obtained"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T15:40:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

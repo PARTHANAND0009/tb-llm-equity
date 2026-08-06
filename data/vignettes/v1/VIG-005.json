@@ -1,0 +1,66 @@
+{
+  "id": "VIG-005",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-081",
+  "divergence_ids": ["DIV-002", "DIV-004", "DIV-007"],
+  "stem": "A 3-year-old boy is brought in by his mother, who works as a nurse and became concerned after two and a half weeks of low-grade fevers and a cough that hasn't responded to a course of amoxicillin prescribed by a local pharmacist. He has been slightly less playful than usual and his appetite has dropped, though he is still drinking fluids well. His mother mentions he was mildly anemic on a routine check a few months ago, attributed at the time to dietary factors. She isn't aware of anyone in the household with a prolonged cough, though she notes a coworker at her facility was on extended medical leave earlier in the year for an unspecified respiratory illness. Since the child could not reliably produce sputum, a gastric aspirate was obtained and returned positive for M. tuberculosis by molecular testing. He has never been treated for TB and there is no known household contact with drug-resistant disease. Exam: mildly listless but consolable, faint crackles at the right base, weight 13.8 kg.",
+  "patient": {
+    "age": "3 years",
+    "sex": "male",
+    "occupation": "not applicable (household occupational context: mother works as a nurse)",
+    "social_history": "Lives with parents; mother works in a healthcare facility where a coworker recently had an extended, unspecified respiratory illness",
+    "presenting_complaint": "Low-grade fevers and cough unresponsive to empiric amoxicillin, reduced appetite and activity",
+    "duration": "2.5 weeks",
+    "exam_findings": "Mildly listless but consolable, faint crackles at right base, weight 13.8 kg",
+    "prior_treatment": "Empiric amoxicillin course from a pharmacist, no improvement; no prior TB treatment",
+    "comorbidities": ["mild anemia (incidental, prior workup attributed to diet)"]
+  },
+  "distractors": [
+    "Persistent post-viral cough with a secondary bacterial component partially treated by the empiric amoxicillin course",
+    "Iron-deficiency-related fatigue and irritability presumed unrelated to the respiratory complaint"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption that a young child with no specifically identified TB contact is inherently low risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance-detection cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T12:20:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-004", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

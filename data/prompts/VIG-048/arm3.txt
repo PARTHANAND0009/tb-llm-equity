@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 68-year-old woman who travels seasonally for farm work was identified for TB symptom screening during a mobile outreach clinic that periodically screens seasonal workers with known diabetes, part of a standing program activity. She has had more than three months of cough, which she attributed to years of exposure to field dust. Her diabetes has been poorly controlled, and she admits she often runs out of her medication while traveling. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Random blood glucose today: 260 mg/dl, with polyuria and increased thirst she attributes to the heat. Exam: thin, mild crackles bilaterally, no edema.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

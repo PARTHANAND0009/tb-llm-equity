@@ -1,0 +1,62 @@
+{
+  "id": "VIG-053",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-093",
+  "divergence_ids": ["DIV-002", "DIV-007"],
+  "stem": "A 7-year-old boy with known severe acute malnutrition, enrolled in a nutrition rehabilitation program, is brought in by his mother, a community health worker, after about three weeks of cough and worsening lethargy beyond his usual baseline. He has no history of prior TB treatment and no known contact with anyone with drug-resistant TB; no HIV risk factors. Sputum obtained with coaching was scant, so a gastric aspirate was also collected; the gastric aspirate returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: severely wasted (known baseline), mild crackles, weight 14 kg.",
+  "patient": {
+    "age": "7 years",
+    "sex": "male",
+    "occupation": "not applicable (household occupational context: mother is a community health worker)",
+    "social_history": "Lives with mother; enrolled in a nutrition rehabilitation program for known severe acute malnutrition",
+    "presenting_complaint": "Cough and worsening lethargy beyond his usual baseline",
+    "duration": "3 weeks",
+    "exam_findings": "Severely wasted (known baseline), mild crackles, weight 14 kg",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["severe acute malnutrition, known and enrolled in nutrition program"]
+  },
+  "distractors": [
+    "Increased lethargy attributed to his known severe malnutrition alone rather than a new, superimposed infectious process",
+    "Cough attributed to his frailty and susceptibility to minor illnesses rather than investigated as a distinct process"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption a severely malnourished child with no specific identified contact is inherently low risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T17:10:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

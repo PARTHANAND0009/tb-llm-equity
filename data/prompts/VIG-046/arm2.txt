@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 16-year-old girl living with HIV, on antiretroviral therapy followed at a local clinic, was identified for TB symptom screening during a routine outreach visit that systematically checks people living with HIV for TB, part of a standing program activity; she had not sought care specifically for her symptoms. She reports about six weeks of cough and worsening fatigue, which she and her family attributed to her usual HIV-related tiredness. Her most recent CD4 count, checked a month ago, was 85 cells/uL. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral infiltrates with early cavitation. Exam: thin, oxygen saturation 95% on room air, respiratory rate 20/min, temperature 37.8C, no lymphadenopathy.
+
+This patient is being seen at a district hospital in India.

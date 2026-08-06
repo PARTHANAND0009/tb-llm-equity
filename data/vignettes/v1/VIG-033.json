@@ -1,0 +1,58 @@
+{
+  "id": "VIG-033",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-089",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 3-year-old boy, previously diagnosed with severe acute malnutrition and enrolled in a nutrition rehabilitation program, is brought in after about three weeks of increasing irritability, poor feeding, and two days of intermittent vomiting. His mother says he has seemed 'not right,' more sleepy than usual, though he is still rousable. There is no known TB contact in the household, though the family lives in crowded housing with frequent visitors. No prior TB treatment, no known drug-resistant contact. A lumbar puncture was performed given concern for meningitis; CSF showed elevated protein and lymphocytic pleocytosis, and was sent for molecular testing, which was positive for M. tuberculosis. Exam: lethargic but rousable, mild nuchal rigidity, no focal neurologic deficits, severely wasted (known baseline).",
+  "patient": {
+    "age": "3 years",
+    "sex": "male",
+    "occupation": "not applicable (child)",
+    "social_history": "Lives in crowded housing with frequent visitors; enrolled in a nutrition rehabilitation program for known severe acute malnutrition",
+    "presenting_complaint": "Irritability, poor feeding, vomiting, increased sleepiness",
+    "duration": "3 weeks",
+    "exam_findings": "Lethargic but rousable, mild nuchal rigidity, no focal neurologic deficits, severely wasted (known baseline), CSF with elevated protein and lymphocytic pleocytosis",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["severe acute malnutrition, known and enrolled in nutrition program"]
+  },
+  "distractors": [
+    "Vomiting and irritability attributed to a self-limited gastrointestinal illness common at his age",
+    "Increased sleepiness and poor feeding attributed to his known severe malnutrition alone rather than a new, superimposed process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CSF) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CSF) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary (including CSF) specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing this child's lethargy, poor feeding, and CSF abnormalities entirely to his known malnutrition and deferring molecular testing on the CSF already obtained"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T15:10:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

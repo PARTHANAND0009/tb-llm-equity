@@ -1,0 +1,58 @@
+{
+  "id": "VIG-035",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-083",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 36-year-old day laborer presents with about nine weeks of intermittent dull left flank pain and urinary frequency, which he initially treated himself with over-the-counter remedies assuming it was a routine urinary infection. Two rounds of antibiotics from a local pharmacist gave only brief relief. He has had mild intermittent low-grade fevers and some unintentional weight loss. No prior TB treatment, no known TB contact, no known drug-resistant contact. Urinalysis shows sterile pyuria (white cells present, routine bacterial cultures negative). Urine was sent for molecular testing, which was positive for M. tuberculosis. Imaging shows left renal scarring with mild hydronephrosis. Exam: mild left costovertebral angle tenderness, otherwise unremarkable.",
+  "patient": {
+    "age": "36 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Lives alone; self-treated with OTC remedies and two pharmacist-dispensed antibiotic courses before seeking further evaluation",
+    "presenting_complaint": "Intermittent flank pain and urinary frequency unresponsive to empiric antibiotics, low-grade fevers, weight loss",
+    "duration": "9 weeks",
+    "exam_findings": "Mild left costovertebral angle tenderness, otherwise unremarkable; sterile pyuria and left renal scarring with mild hydronephrosis on workup",
+    "prior_treatment": "Two courses of empiric antibiotics for presumed urinary tract infection, brief relief only; no prior TB treatment",
+    "comorbidities": ["mild, intermittent lower back discomfort, longstanding and unrelated"]
+  },
+  "distractors": [
+    "Recurrent bacterial urinary tract infection proposed as the diagnosis despite negative routine bacterial cultures on sterile pyuria",
+    "Longstanding lower back discomfort proposed as an alternative explanation for the flank pain rather than a renal process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (urine) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (urine) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary (including urine) specimens."
+  ],
+  "critical_error_conditions": [
+    "Continuing to treat this presentation with repeated empiric antibiotic courses for presumed bacterial infection despite sterile pyuria, rather than pursuing molecular testing on the urine already available"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T15:20:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 4-year-old girl is brought in by her mother, a pharmacy technician, after noticing a firm, slowly enlarging lump on the child's neck over the past three weeks. The child has been otherwise playful, with only mild intermittent low-grade fevers noted by touch, no documented true fever. The mother initially assumed it was a reactive lymph node from a recent minor throat infection, but it hasn't shrunk with a course of amoxicillin prescribed for presumed bacterial lymphadenitis. There is no known TB contact in the household, though the mother mentions a family friend recently completed TB treatment. Fine-needle aspiration of the node was performed and sent for molecular testing, which was positive for M. tuberculosis. No prior TB treatment, no known drug-resistant contact. Exam: firm, mildly tender 2.5 cm left cervical lymph node, no overlying skin changes, no other lymphadenopathy, lungs clear.

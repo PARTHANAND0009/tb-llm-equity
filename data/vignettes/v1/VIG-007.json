@@ -1,0 +1,66 @@
+{
+  "id": "VIG-007",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-004", "DIV-006", "DIV-007"],
+  "stem": "A 55-year-old man, retired several years ago after a back injury ended his work as a mechanic, presents with roughly nine weeks of cough productive of white sputum and unintentional weight loss of about 4 kg. He initially thought it was a lingering cold. He lives alone and cooks for himself, and admits his diet has been 'whatever's easiest' since his wife passed away last year. No fevers that he's noticed, though he says he doesn't check his temperature. No prior TB treatment, no known contact with drug-resistant TB. Sputum smear is negative, Xpert MTB/RIF positive, rifampicin not detected. Chest imaging shows a non-cavitary left lower lobe infiltrate. Exam: mildly underweight, scattered crackles, no other findings.",
+  "patient": {
+    "age": "55 years",
+    "sex": "male",
+    "occupation": "retired (former mechanic, medically retired after a back injury)",
+    "social_history": "Lives alone; widowed within the past year; irregular self-prepared meals",
+    "presenting_complaint": "Productive cough and unintentional weight loss",
+    "duration": "9 weeks",
+    "exam_findings": "Mildly underweight, scattered crackles, non-cavitary left lower lobe infiltrate on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Grief-related appetite loss and self-neglect since his wife's death proposed as the primary driver of the weight loss",
+    "Chronic bronchitis from a remote smoking history (quit 10 years ago) proposed as the explanation for the cough"
+  ],
+  "ntep_correct_actions": [
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Continuation-phase dosing may be switched to thrice-weekly (or twice-weekly if directly observed therapy is difficult), since this patient is HIV-negative and at low relapse risk (non-cavitary, smear-negative disease).",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Initiating an intermittent (thrice- or twice-weekly) dosing schedule for this patient from the outset of treatment, which is not an appropriate starting regimen regardless of relapse risk"
+  ],
+  "expected_divergence_points": [
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance cascade",
+    "Whether daily dosing is used throughout treatment or intermittent dosing is offered for a low-relapse-risk patient",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T12:30:00+00:00",
+    "source_divergence_ids": ["DIV-004", "DIV-006", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

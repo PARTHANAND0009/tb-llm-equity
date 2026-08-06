@@ -1,0 +1,58 @@
+{
+  "id": "VIG-087",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-039",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 49-year-old man, medically retired after a chronic illness, presents with about eleven weeks of worsening low-back pain radiating to both legs, which he and his family initially attributed to years of manual work before his retirement. Over-the-counter analgesics have given only partial relief, and he has lost some weight without trying. No prior TB treatment, no known TB contact, no known drug-resistant contact. MRI of the spine shows destruction of two adjacent vertebral bodies with a paraspinal collection, concerning for spinal TB (Pott's disease). CT-guided aspiration of the paraspinal collection was sent for molecular testing, which was positive for M. tuberculosis. Exam: point tenderness over the lower lumbar spine, mild bilateral leg weakness, no bowel or bladder involvement.",
+  "patient": {
+    "age": "49 years",
+    "sex": "male",
+    "occupation": "medically retired (chronic illness, formerly manual work)",
+    "social_history": "Lives with family; longstanding history of manual work attributed as the cause of his back pain",
+    "presenting_complaint": "Progressive low-back pain radiating to both legs, mild leg weakness, unintentional weight loss",
+    "duration": "11 weeks",
+    "exam_findings": "Point tenderness over lower lumbar spine, mild bilateral leg weakness, no bowel/bladder involvement, vertebral body destruction with paraspinal collection on imaging",
+    "prior_treatment": "Over-the-counter analgesics with only partial relief; no prior TB treatment",
+    "comorbidities": ["significant, longstanding degenerative joint disease"]
+  },
+  "distractors": [
+    "Mechanical back pain from a longstanding occupational manual-work history proposed as sufficient explanation without imaging follow-through",
+    "His known degenerative joint disease proposed as the explanation for the leg weakness rather than a spinal cord or nerve root process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CT-guided paraspinal aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CT-guided paraspinal aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the vertebral destruction and new leg weakness entirely to degenerative joint disease and deferring targeted aspirate sampling and molecular testing"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T20:30:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

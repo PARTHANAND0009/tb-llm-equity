@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 3-year-old boy is brought in by his mother, who works as a nurse and became concerned after two and a half weeks of low-grade fevers and a cough that hasn't responded to a course of amoxicillin prescribed by a local pharmacist. He has been slightly less playful than usual and his appetite has dropped, though he is still drinking fluids well. His mother mentions he was mildly anemic on a routine check a few months ago, attributed at the time to dietary factors. She isn't aware of anyone in the household with a prolonged cough, though she notes a coworker at her facility was on extended medical leave earlier in the year for an unspecified respiratory illness. Since the child could not reliably produce sputum, a gastric aspirate was obtained and returned positive for M. tuberculosis by molecular testing. He has never been treated for TB and there is no known household contact with drug-resistant disease. Exam: mildly listless but consolable, faint crackles at the right base, weight 13.8 kg.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

@@ -11,8 +11,8 @@
 # tb_equity.config.require_generation_model().
 
 generation:
-  model: null # e.g. "gpt-4.1" -- must be set before running generate_vignettes.py / critique_vignettes.py
-  family: null # e.g. "openai" -- provider/lineage identifier, must be set alongside `model`
+  model: claude-code-agent
+  family: anthropic
   temperature: 0.9
   top_p: 1.0
   max_tokens: 1600

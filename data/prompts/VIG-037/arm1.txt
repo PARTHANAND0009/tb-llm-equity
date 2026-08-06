@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 5-year-old boy is brought in by his father, who works as a hospital orderly, after about three weeks of intermittent abdominal pain, low-grade fevers, and reduced appetite. His mother initially thought it was a recurring stomach bug going around the neighborhood. He has become noticeably less active. No known TB contact in the household, though the family lives in a densely populated building. No prior TB treatment, no known drug-resistant contact. Abdominal ultrasound shows mesenteric lymphadenopathy with a small amount of free fluid. Ultrasound-guided fine-needle aspiration of a mesenteric node was performed and sent for molecular testing, which was positive for M. tuberculosis. Exam: mild diffuse abdominal tenderness, no guarding, no palpable mass, no peripheral lymphadenopathy.

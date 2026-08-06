@@ -1,0 +1,63 @@
+{
+  "id": "VIG-048",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-096",
+  "divergence_ids": ["DIV-017", "DIV-016"],
+  "stem": "A 68-year-old woman who travels seasonally for farm work was identified for TB symptom screening during a mobile outreach clinic that periodically screens seasonal workers with known diabetes, part of a standing program activity. She has had more than three months of cough, which she attributed to years of exposure to field dust. Her diabetes has been poorly controlled, and she admits she often runs out of her medication while traveling. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Random blood glucose today: 260 mg/dl, with polyuria and increased thirst she attributes to the heat. Exam: thin, mild crackles bilaterally, no edema.",
+  "patient": {
+    "age": "68 years",
+    "sex": "female",
+    "occupation": "seasonal migrant agricultural worker",
+    "social_history": "Travels seasonally for farm work; inconsistent access to diabetes medication while traveling",
+    "presenting_complaint": "Chronic cough attributed to occupational dust exposure, new hyperglycemic symptoms",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Thin, mild bilateral crackles, no edema, random blood glucose 260 mg/dl with polyuria, bilateral cavitary disease on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["type 2 diabetes, poorly controlled"]
+  },
+  "distractors": [
+    "Chronic dust exposure from years of fieldwork proposed as sufficient explanation for the cough",
+    "Elevated blood glucose attributed entirely to inconsistent medication access while traveling, without connecting it to the current illness",
+    "Increased thirst and polyuria attributed to hot weather and fluid intake rather than a glycemic abnormality"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that this patient's case was appropriately identified through routine active case-finding targeted at seasonal workers with known diabetes, consistent with standing national program policy rather than a threshold-gated activity.",
+    "Escalate or refer this patient to a higher-tier facility now, since her random blood glucose (260 mg/dl) with symptoms independently meets the quantified red-flag threshold that mandates referral."
+  ],
+  "who_correct_actions": [
+    "Treat this kind of diabetes-linked active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Base the decision to refer or escalate her care on individualized clinical judgment of her hyperglycemia and overall status; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Attribute her case identification to contact investigation following a known index case rather than population-level active case-finding targeted at a risk group; this framework's primary case-finding model is passive, contact-investigation-driven.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding her hyperglycemia, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Failing to act on the markedly elevated, symptomatic blood glucose (260 mg/dl) in the context of active cavitary TB, leaving her on routine outpatient management without escalation or referral consideration"
+  ],
+  "expected_divergence_points": [
+    "Whether this patient's diabetes-linked active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether her symptomatic hyperglycemia triggers a mandatory, quantified escalation/referral or is left to individualized clinical judgment"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:35:00+00:00",
+    "source_divergence_ids": ["DIV-017", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

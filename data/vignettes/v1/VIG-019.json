@@ -1,0 +1,67 @@
+{
+  "id": "VIG-019",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-007", "DIV-001", "DIV-002"],
+  "stem": "A 29-year-old day laborer presents with about eleven weeks of cough and progressive weight loss, having avoided seeking care because he was between jobs for part of that time and worried about the cost. He denies significant past medical history. He reports drenching night sweats over the last two weeks. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors, no travel outside the region. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, right upper zone crackles, weight 58 kg.",
+  "patient": {
+    "age": "29 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Single, lives with roommates; recent stretch of irregular employment delayed him seeking care over cost concerns",
+    "presenting_complaint": "Cough, progressive weight loss, drenching night sweats",
+    "duration": "11 weeks",
+    "exam_findings": "Thin, right upper zone crackles, weight 58 kg",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Financial stress and irregular employment proposed as the explanation for his generalized malaise, delaying recognition of a physical illness",
+    "Drenching night sweats attributed to poor sleeping conditions rather than a systemic infectious process"
+  ],
+  "ntep_correct_actions": [
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care.",
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status."
+  ],
+  "who_correct_actions": [
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care.",
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status."
+  ],
+  "us_correct_actions": [
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band.",
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors."
+  ],
+  "critical_error_conditions": [
+    "Delaying molecular testing due to the patient's cost concerns rather than pursuing an accessible confirmatory test",
+    "Omitting rifampicin-resistance testing on the assumption this patient's presentation is inherently low-risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg",
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T13:40:00+00:00",
+    "source_divergence_ids": ["DIV-007", "DIV-001", "DIV-002"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

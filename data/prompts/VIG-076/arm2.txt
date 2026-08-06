@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 64-year-old woman who lives alone in a remote rural area, with her nearest family member living several hours away, presents after more than three months of cough that she describes as 'a cold that never really left.' She rarely visits any clinic and has no established pattern of routine care. She denies major weight loss but admits to some loss of appetite. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray shows a non-cavitary infiltrate. Exam: mild crackles, otherwise unremarkable.
+
+This patient is being seen at a teaching hospital in the United States.

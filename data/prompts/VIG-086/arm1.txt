@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 14-year-old girl presents with about five weeks of headache and low-grade fevers, initially treated at home with over-the-counter pain relievers. Over the past week her mother has noticed she seems more withdrawn and occasionally confused about the day, which the family first attributed to poor sleep from exam preparation at school. No prior TB treatment, no known TB contact, no known drug-resistant contact. A lumbar puncture was performed given concern for meningitis; CSF showed elevated protein, low glucose, and lymphocytic pleocytosis, and was sent for molecular testing, which was positive for M. tuberculosis. Exam: mildly drowsy but oriented when roused, mild nuchal rigidity, no focal neurologic deficits.

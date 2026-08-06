@@ -1,0 +1,59 @@
+{
+  "id": "VIG-034",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 15-year-old girl who works with her family in the fields presents with about six weeks of a painless, gradually enlarging swelling in her left armpit, which she initially hid from her parents out of embarrassment. She has had mild intermittent low-grade fevers she assumed were part of the same seasonal illness going around. No prior TB treatment, no known TB contact, no known drug-resistant contact. Fine-needle aspiration of the axillary node was performed and sent for molecular testing, which was positive for M. tuberculosis. Exam: firm, non-tender 3 cm left axillary lymph node with early matting, no overlying skin breakdown, no other lymphadenopathy, lungs clear.",
+  "patient": {
+    "age": "15 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; delayed reporting the swelling due to embarrassment",
+    "presenting_complaint": "Painless, gradually enlarging axillary swelling with mild intermittent low-grade fevers",
+    "duration": "6 weeks",
+    "exam_findings": "Firm, non-tender 3 cm left axillary lymph node with early matting, no overlying skin breakdown, no other lymphadenopathy, lungs clear",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "The swelling attributed to a minor, unnoticed local skin infection or insect bite in the axilla",
+    "Low-grade fevers attributed to a seasonal viral illness circulating locally rather than a distinct process",
+    "Embarrassment-driven delay in reporting interpreted as a sign the swelling is minor rather than clinically significant"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the axillary lymph node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the axillary lymph node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the enlarging lymph node entirely to a minor local skin process without pursuing aspirate sampling and molecular testing"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T15:15:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

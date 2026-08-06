@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 38-year-old man, medically retired after an old workplace injury, presents with about ten weeks of cough and weight loss. He has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis; rifampicin resistance was detected on the same test, and follow-up testing confirmed isoniazid susceptibility (rifampicin mono-resistant TB), with no additional risk factors for resistance identified beyond the test result itself -- no HIV, no prior treatment, no known contact with a currently active drug-resistant case. Separately, his teenage daughter, who lives with him, was never evaluated for preventive therapy two years ago when her uncle, who stayed with the family for several months at that time, was treated for fluoroquinolone-susceptible MDR-TB; her uncle has since completed treatment and is no longer infectious. Exam (patient): thin, right-sided crackles, no lymphadenopathy.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

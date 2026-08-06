@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 6-year-old boy living with perinatally acquired HIV, on antiretroviral therapy followed at a pediatric clinic, was identified for TB symptom screening during a routine outreach visit that systematically checks children living with HIV for TB, part of a standing program activity. His grandmother, his primary caregiver, reports about three weeks of intermittent cough and reduced playfulness, which she had not thought serious enough to bring him in for on her own. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows a left hilar lymphadenopathy pattern. Exam: well-appearing, mild left-sided crackles, no respiratory distress, weight tracking at his usual percentile.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

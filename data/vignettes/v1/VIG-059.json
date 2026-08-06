@@ -1,0 +1,63 @@
+{
+  "id": "VIG-059",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-002", "DIV-009"],
+  "stem": "A 31-year-old day laborer presents with about ten weeks of cough and weight loss. He has mild seasonal allergies managed with occasional antihistamines. He has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed additional isoniazid resistance (MDR-TB) with preserved fluoroquinolone susceptibility. No HIV risk factors, no known contact with any other drug-resistant TB case. He lives with his wife, who is asymptomatic on screening. Exam: thin, bilateral crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "31 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Lives with his wife",
+    "presenting_complaint": "Cough and weight loss, confirmed fluoroquinolone-susceptible MDR-TB",
+    "duration": "10 weeks",
+    "exam_findings": "Thin, bilateral crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild seasonal allergies"]
+  },
+  "distractors": [
+    "His presentation assumed low-risk for resistant TB given the absence of prior treatment, arguing against confirmatory resistance testing",
+    "His wife's lack of current symptoms taken as sufficient reassurance without considering preventive treatment"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer his wife, a household contact of his fluoroquinolone-susceptible MDR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in her."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer his wife, a household contact of his fluoroquinolone-susceptible MDR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in her."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Treat offering preventive treatment to his wife as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to his (the source case's) susceptibility pattern rather than using a fixed levofloxacin regimen."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance/confirmatory testing on the assumption this patient's presentation is inherently low-risk for resistant disease",
+    "Concluding that no preventive action is warranted for his wife because she is currently asymptomatic"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is performed universally or only for patients meeting specific US risk criteria",
+    "Whether household contacts of fluoroquinolone-susceptible MDR/RR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T17:40:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-009"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

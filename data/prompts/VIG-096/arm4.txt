@@ -1,0 +1,48 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 66-year-old woman who travels seasonally for farm work presented on her own three months ago with cough and weight loss and was diagnosed with MDR-TB after testing; she was started on an appropriate second-line regimen. She was not identified through any organized screening or contact-tracing program. She has significant, longstanding heart failure. At today's follow-up, she reports increasing breathlessness, and vitals show oxygen saturation 90% on room air, respiratory rate 27/min. Exam: thin, bilateral crackles, mild peripheral edema consistent with known heart failure.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant protocol excerpts:
+[DIV-017 -- Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195 -- Recommended baseline and follow-up evaluations discussion (p. 7)]
+Clinical Infectious Diseases                                                                                                                                                                               Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+
+   IDSA GUIDELINE
+
+Official American Thoracic Society/Centers for Disease
+Control and Prevention/Infectious Diseases Society of
+America Clinical Practice Guidelines: Treatment of
+Drug-Susceptible Tuberculosis
+
+Payam Nahid,1 Susan E. Dorman,2 Narges Alipanah,1 Pennan M. Barry,3 Jan L. Brozek,4 Adithya Cattamanchi,1 Lelia H. Chaisson,1 Richard E. Chaisson,2
+Charles L. Daley,5 Malgosia Grzemska,6 Julie M. Higashi,7 Christine S. Ho,8 Philip C. Hopewell,1 Salmaan A. Keshavjee,9 Christian Lienhardt,6
+Richard Menzies,10 Cynthia Merrifield,1 Masahiro Narita,12 Rick O'Brien,13 Charles A. Peloquin,14 Ann Raftery,1 Jussi Saukkonen,15 H. Simon Schaaf,16
+Giovanni Sotgiu,17 Jeffrey R. Starke,18 Giovanni Battista Migliori,11 and Andrew Vernon8
+
+1University of California, San Francisco; 2Johns Hopkins University, Baltimore, Maryland; 3California Department of Public Health, Richmond; 4McMaster University, Hamilton, Ontario, Canada;
+5National Jewish Health, Denver, Colorado; 6World Health Organization, Geneva, Switzerland; 7Tuberculosis Control Section, San Francisco Department of Public Health, California; 8Division of
+Tuberculosis Elimination, National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, C
+
+[DIV-016 -- Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Discussion of contact investigation as the identification pathway (p. e19 area)]
+Clinical Infectious Diseases
+ IDSA GUIDELINE
+
+Official American Thoracic Society/Infectious Diseases                                                                                                                                              Downloaded from http://cid.oxfordjournals.org/ by guest on January 10, 2017
+Society of America/Centers for Disease Control and
+Prevention Clinical Practice Guidelines: Diagnosis of
+Tuberculosis in Adults and Children
+
+David M. Lewinsohn,1,a Michael K. Leonard,2,a Philip A. LoBue,3,a David L. Cohn,4 Charles L. Daley,5 Ed Desmond,6 Joseph Keane,7
+Deborah A. Lewinsohn,1 Ann M. Loeffler,8 Gerald H. Mazurek,3 Richard J. O'Brien,9 Madhukar Pai,10 Luca Richeldi,11 Max Salfinger,12 Thomas M. Shinnick,3
+Timothy R. Sterling,13 David M. Warshauer,14 and Gail L. Woods15
+
+1Oregon Health & Science University, Portland, Oregon, 2Emory University School of Medicine and 3Centers for Disease Control and Prevention, Atlanta, Georgia, 4Denver Public Health Department,
+Denver, Colorado, 5National Jewish Health and the University of Colorado Denver, and 6California Department of Public Health, Richmond; 7St James's Hospital, Dublin, Ireland; 8Francis J. Curry
+International TB Center, San Francisco, California; 9Foundation for Innovative New Diagnostics, Geneva, Switzerland; 10McGill University and McGill International TB Centre, Montreal, Canada;
+11University of Southampton, United Kingdom; 12National Jewish Health, Denver, Colorado, 13Vanderbilt University Sc

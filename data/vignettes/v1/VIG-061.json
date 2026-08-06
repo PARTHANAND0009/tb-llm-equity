@@ -1,0 +1,63 @@
+{
+  "id": "VIG-061",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-002", "DIV-009"],
+  "stem": "A 4-year-old girl is brought in by her father, who works as a hospital orderly, after about three weeks of cough and reduced energy. She has never been treated for TB before. A gastric aspirate was sent for molecular testing and was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed isoniazid and fluoroquinolone susceptibility (rifampicin mono-resistant TB), with no other risk factors for resistance beyond this result -- no HIV, no prior treatment. She lives with her 10-year-old brother, who is asymptomatic on screening. Exam (patient): mild wasting, right-sided crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "4 years",
+    "sex": "female",
+    "occupation": "not applicable (household occupational context: father works as a hospital orderly)",
+    "social_history": "Lives with parents and her 10-year-old brother",
+    "presenting_complaint": "Cough and reduced energy, confirmed rifampicin mono-resistant TB",
+    "duration": "3 weeks",
+    "exam_findings": "Mild wasting, right-sided crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "The patient's presentation assumed low-risk for resistant TB given her young age and absence of prior treatment, arguing against confirmatory resistance testing",
+    "Her brother's lack of current symptoms taken as sufficient reassurance without considering preventive treatment"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her brother, a household contact of her fluoroquinolone-susceptible MDR/RR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in him."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her brother, a household contact of her fluoroquinolone-susceptible MDR/RR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in him."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Treat offering preventive treatment to her brother as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to her (the source case's) susceptibility pattern rather than using a fixed levofloxacin regimen."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance/confirmatory testing given this child's TB diagnosis",
+    "Concluding that no preventive action is warranted for her brother because he is currently asymptomatic"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is performed universally or only for patients meeting specific US risk criteria",
+    "Whether household contacts of fluoroquinolone-susceptible MDR/RR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:00:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-009"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

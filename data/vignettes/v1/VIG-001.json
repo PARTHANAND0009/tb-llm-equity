@@ -1,0 +1,66 @@
+{
+  "id": "VIG-001",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-077",
+  "divergence_ids": ["DIV-002", "DIV-004", "DIV-007"],
+  "stem": "A 4-year-old is brought in by a grandparent after roughly three weeks of intermittent cough and reduced appetite, first noticed after the child seemed unusually tired following a bout of what the family called 'a cold.' Growth records show the child has dropped from the 40th to the 25th weight-for-age percentile over the past two months. The grandparent, the primary caregiver, isn't certain whether anyone in the household has had a chronic cough, since an aunt who sometimes stays over has been unwell but 'just has allergies.' No fever has been documented at home, though the child felt warm to touch on two occasions per the caregiver's report. Because the child could not produce sputum on request, a gastric aspirate was obtained under fasting conditions and returned positive for M. tuberculosis on molecular testing. The child has never received treatment for TB, has no known HIV exposure, and there is no known contact with anyone previously treated for drug-resistant TB. Exam shows a thin child, mild bilateral crackles, no lymphadenopathy, weight 15.2 kg.",
+  "patient": {
+    "age": "4 years",
+    "sex": "male",
+    "occupation": "student (preschool)",
+    "social_history": "Lives with grandparent (primary caregiver) in a multigenerational household; an aunt with a chronic but unevaluated cough sometimes stays over",
+    "presenting_complaint": "Intermittent cough and reduced appetite, with faltering growth over the preceding two months",
+    "duration": "3 weeks",
+    "exam_findings": "Thin child, mild bilateral crackles, no lymphadenopathy, weight 15.2 kg",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Allergic/atopic cough, reinforced by the aunt's cough being dismissed as 'just allergies' rather than raising suspicion for a household exposure",
+    "Failure to thrive from an isolated nutritional cause, competing with an infectious explanation for the growth faltering"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption that a young child with no specifically identified TB contact is inherently low risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance-detection cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T12:00:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-004", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

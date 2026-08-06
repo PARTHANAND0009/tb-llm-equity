@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 29-year-old day laborer presents with about eleven weeks of cough and progressive weight loss, having avoided seeking care because he was between jobs for part of that time and worried about the cost. He denies significant past medical history. He reports drenching night sweats over the last two weeks. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors, no travel outside the region. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, right upper zone crackles, weight 58 kg.

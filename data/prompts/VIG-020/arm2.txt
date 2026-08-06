@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 64-year-old woman who has worked for many years in a small rural manufacturing unit was identified with a persistent cough during a community outreach drive that visits workplaces to offer glucose and TB symptom screening to workers with known or suspected diabetes; she had been told a few months earlier at a village health camp that her sugars were borderline but had not followed up. She had been coughing for well over three months before this screening, which she had dismissed as a smoker's cough (she has smoked heavily for over 30 years). She was diagnosed with drug-sensitive pulmonary TB and started on standard first-line treatment ten weeks ago. At today's follow-up visit, her sputum smear remains positive despite two months of directly observed therapy, and she reports ongoing though milder cough. Vitals today: oxygen saturation 93% on room air, respiratory rate 26/min, random blood glucose 210 mg/dl with mild polyuria she attributes to the heat. Chest X-ray at diagnosis showed a cavitary right upper lobe lesion.
+
+This patient is being seen at a district hospital in India.

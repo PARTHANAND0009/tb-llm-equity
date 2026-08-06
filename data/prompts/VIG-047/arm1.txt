@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 40-year-old man, medically retired after a chronic illness left him with reduced mobility, was identified for TB symptom screening during a routine outreach visit that systematically checks residents of a shelter for severely undernourished individuals, part of a standing program activity. He reports about ten weeks of cough and progressive weight loss, which staff at the shelter had also noticed. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Weight 34 kg, height 162 cm (BMI 13.0). Exam: severely wasted, temporal wasting, mild bilateral crackles, no edema.

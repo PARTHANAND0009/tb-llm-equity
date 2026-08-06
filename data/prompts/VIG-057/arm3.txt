@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+An 8-year-old boy with known severe acute malnutrition presents with about three weeks of cough and worsening lethargy. He has never been treated for TB before. Sputum obtained with coaching, supplemented by a gastric aspirate, was positive for M. tuberculosis; testing confirmed resistance to rifampicin, isoniazid, and fluoroquinolones (pre-XDR-TB), with no other risk factors for resistance beyond this result -- no HIV, no prior treatment. Separately, his older sister was never evaluated for preventive therapy two years ago when an aunt who lived with the family for several months at that time was treated for fluoroquinolone-susceptible MDR-TB; the aunt has since completed treatment and is no longer infectious. Exam (patient): severely wasted (known baseline), mild crackles, no lymphadenopathy.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

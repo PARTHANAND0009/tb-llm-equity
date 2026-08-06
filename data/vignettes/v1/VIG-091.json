@@ -1,0 +1,62 @@
+{
+  "id": "VIG-091",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-051",
+  "divergence_ids": ["DIV-002", "DIV-007"],
+  "stem": "A 39-year-old day laborer, previously diagnosed with severe undernutrition and enrolled in a supplemental feeding program, presents with about ten weeks of cough and worsening weakness. Program staff had also noticed his cough. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Weight 36 kg, height 165 cm (BMI 13.2). Exam: severely wasted, temporal wasting, mild bilateral crackles, no edema.",
+  "patient": {
+    "age": "39 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Enrolled in a supplemental feeding program for known severe undernutrition",
+    "presenting_complaint": "Cough and worsening weakness, noticed by feeding-program staff",
+    "duration": "10 weeks",
+    "exam_findings": "Severely wasted, temporal wasting, mild bilateral crackles, no edema, weight 36 kg, height 165 cm (BMI 13.2), bilateral cavitary disease on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["severe undernutrition"]
+  },
+  "distractors": [
+    "Worsening weakness attributed entirely to his known chronic undernutrition rather than a new infectious process",
+    "Cough noticed by feeding-program staff treated as a routine, low-priority finding rather than prompting urgent evaluation given his overall frailty"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption this patient's presentation is inherently low-risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T21:00:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

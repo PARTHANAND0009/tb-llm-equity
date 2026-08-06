@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 6-year-old boy is brought in for a persistent sore on the side of his neck that has not healed over about three weeks, despite his mother cleaning it daily and applying an antiseptic ointment. It started as a small lump that later broke down into a shallow ulcer with intermittent thin discharge. He has a history of mild eczema, and his mother initially thought this was simply another eczema flare in an unusual location. He has had occasional low-grade fevers. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. A swab and biopsy of the sinus tract were obtained; tissue was sent for molecular testing, which was positive for M. tuberculosis. Exam: a 1.5 cm shallow ulcer with undermined edges over the left neck, connecting to a firm underlying lymph node, mild surrounding eczema elsewhere on his arms.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

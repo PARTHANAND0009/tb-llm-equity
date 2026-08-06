@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 7-year-old boy with known severe acute malnutrition, enrolled in a nutrition rehabilitation program, is brought in by his mother, a community health worker, after about three weeks of cough and worsening lethargy beyond his usual baseline. He has no history of prior TB treatment and no known contact with anyone with drug-resistant TB; no HIV risk factors. Sputum obtained with coaching was scant, so a gastric aspirate was also collected; the gastric aspirate returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: severely wasted (known baseline), mild crackles, weight 14 kg.
+
+This patient is being seen at a district hospital in India.

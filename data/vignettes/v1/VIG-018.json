@@ -1,0 +1,67 @@
+{
+  "id": "VIG-018",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+  "stem": "A 14-year-old girl who works long hours alongside her family during the current growing season presents with about six weeks of cough and worsening fatigue severe enough that she has started falling behind during fieldwork, which is unusual for her. A blood test obtained for the fatigue showed a hemoglobin of 7.8 g/dL, prompting further workup. She reports some night sweats she attributed to the summer heat. No prior TB treatment, no known drug-resistant contact. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: pale conjunctivae, thin, bilateral lower-zone crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "14 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; works long hours in the fields during the growing season",
+    "presenting_complaint": "Cough, severe fatigue, night sweats, found to have severe anemia on workup",
+    "duration": "6 weeks",
+    "exam_findings": "Pale conjunctivae, thin, bilateral lower-zone crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["severe anemia (Hb 7.8 g/dL)"]
+  },
+  "distractors": [
+    "Severe anemia treated as a standalone diagnosis with iron supplementation, without pursuing an underlying infectious trigger",
+    "Fatigue and reduced fieldwork stamina attributed to hard physical labor during the growing season",
+    "Night sweats attributed to summer heat rather than a systemic infectious process"
+  ],
+  "ntep_correct_actions": [
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care.",
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step."
+  ],
+  "who_correct_actions": [
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care.",
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step."
+  ],
+  "us_correct_actions": [
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band.",
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step."
+  ],
+  "critical_error_conditions": [
+    "Deferring molecular testing pending correction of the anemia alone, without pursuing the underlying infectious cause"
+  ],
+  "expected_divergence_points": [
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg",
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T13:35:00+00:00",
+    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

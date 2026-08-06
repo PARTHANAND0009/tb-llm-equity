@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 2-year-old girl is brought in by her father, a paramedic, after about three weeks of cough and low-grade fevers. She has a history of mild, recurrent ear infections, most recently resolved a month ago. She has not been eating as well as usual. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. A gastric aspirate, obtained after she could not produce sputum, was positive for M. tuberculosis on molecular testing. Exam: mildly irritable but consolable, faint left-sided crackles, weight 11.5 kg.
+
+This patient is being seen at a teaching hospital in the United States.

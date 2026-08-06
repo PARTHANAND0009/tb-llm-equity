@@ -1,0 +1,68 @@
+{
+  "id": "VIG-002",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-078",
+  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+  "stem": "A 15-year-old girl who helps with fieldwork most mornings before school presents with roughly six weeks of cough, initially dry then productive of small amounts of blood-streaked sputum over the last several days. She reports feeling unusually tired during the harvest season, which she and her mother initially attributed to the physical workload. Appetite has been reduced and she has missed her last two menstrual periods, which she attributes to stress from schoolwork. Routine blood work last month, obtained for unrelated fatigue, showed a hemoglobin of 10.1 g/dL. She has no history of prior TB treatment and no known household contact with drug-resistant TB. Sputum sent for molecular testing was positive for M. tuberculosis, rifampicin not detected. Exam: thin adolescent, mild right-sided crackles, no palpable lymphadenopathy, BMI 17.1.",
+  "patient": {
+    "age": "15 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; works fields most mornings before school during harvest season",
+    "presenting_complaint": "Cough progressing to blood-streaked sputum, fatigue, reduced appetite, missed menses",
+    "duration": "6 weeks",
+    "exam_findings": "Thin adolescent, mild right-sided crackles, no lymphadenopathy, BMI 17.1",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild anemia (Hb 10.1 g/dL, incidental)"]
+  },
+  "distractors": [
+    "Amenorrhea attributed to stress and overexertion rather than a systemic illness",
+    "Iron-deficiency anemia from menstrual blood loss proposed as the sole explanation for the fatigue",
+    "Hemoptysis attributed to vigorous coughing or minor airway trauma rather than active cavitary or endobronchial disease"
+  ],
+  "ntep_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Deferring molecular testing and initiating treatment based on chest imaging alone without any microbiological confirmation attempt",
+    "Withholding treatment initiation pending a culture result when a positive molecular test has already confirmed the diagnosis"
+  ],
+  "expected_divergence_points": [
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T12:05:00+00:00",
+    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "VIG-058",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": "VIG-094",
+  "divergence_ids": ["DIV-002", "DIV-009"],
+  "stem": "A 17-year-old girl who helps with fieldwork presents with about seven weeks of cough and night sweats. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed isoniazid susceptibility (rifampicin mono-resistant TB), with fluoroquinolone susceptibility also confirmed. No HIV risk factors, no known contact with any other drug-resistant TB case. She lives with her 9-year-old brother, who is asymptomatic on screening. Exam: thin, right-sided crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "17 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents and her 9-year-old brother in a rural household",
+    "presenting_complaint": "Cough and night sweats, confirmed rifampicin mono-resistant TB",
+    "duration": "7 weeks",
+    "exam_findings": "Thin, right-sided crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Night sweats attributed to seasonal heat and heavy fieldwork rather than a systemic infectious process",
+    "Her presentation assumed low-risk for resistant TB given the absence of prior treatment, arguing against confirmatory resistance testing",
+    "Her younger brother's lack of current symptoms taken as sufficient reassurance without considering preventive treatment"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her younger brother, a household contact of her fluoroquinolone-susceptible MDR/RR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in him."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her younger brother, a household contact of her fluoroquinolone-susceptible MDR/RR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in him."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Treat offering preventive treatment to her younger brother as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to her (the source case's) susceptibility pattern rather than using a fixed levofloxacin regimen."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance/confirmatory testing on the assumption this patient's presentation is inherently low-risk for resistant disease",
+    "Concluding that no preventive action is warranted for her brother because he is currently asymptomatic"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is performed universally or only for patients meeting specific US risk criteria",
+    "Whether household contacts of fluoroquinolone-susceptible MDR/RR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T17:35:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-009"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

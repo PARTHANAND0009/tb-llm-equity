@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 66-year-old woman who spent decades working in a small textile facility presents after more than three months of cough and weight loss, delayed in part because her family assumed her fatigue was from her longstanding, poorly controlled diabetes. Her blood glucose logs show frequent readings above 250 mg/dL despite oral medication. She reports night sweats she initially blamed on her diabetes. No prior TB treatment, no known drug-resistant contact. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray: non-cavitary bilateral infiltrates. Exam: thin despite diabetes, scattered crackles, weight 48 kg.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

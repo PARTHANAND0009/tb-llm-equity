@@ -1,0 +1,63 @@
+{
+  "id": "VIG-090",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-054",
+  "divergence_ids": ["DIV-019", "DIV-002"],
+  "stem": "A 15-year-old girl living with HIV, on antiretroviral therapy for several years, presents with about seven weeks of cough and worsening fatigue, which she and her family attributed to a demanding harvest season. Her most recent CD4 count, checked two months ago, was 310 cells/uL. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, mild bilateral crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "15 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; living with HIV, on ART, followed at a local clinic",
+    "presenting_complaint": "Cough and worsening fatigue, attributed initially to harvest workload",
+    "duration": "7 weeks",
+    "exam_findings": "Thin, mild bilateral crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; on established antiretroviral therapy; no prior TB treatment",
+    "comorbidities": ["HIV, on ART, CD4 310 cells/uL"]
+  },
+  "distractors": [
+    "Fatigue attributed to the demands of harvest season rather than a new, superimposed infectious process",
+    "Her relatively preserved CD4 count (310 cells/uL) taken as reassuring against opportunistic infection risk",
+    "Cough attributed to dust exposure during fieldwork rather than investigated as a distinct process"
+  ],
+  "ntep_correct_actions": [
+    "Give cotrimoxazole preventive therapy to this patient regardless of her CD4 count, since she is HIV-positive with active TB.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status."
+  ],
+  "who_correct_actions": [
+    "Give cotrimoxazole preventive therapy to this patient regardless of her CD4 count, since she is HIV-positive with active TB.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status."
+  ],
+  "us_correct_actions": [
+    "Reserve cotrimoxazole preventive therapy primarily for HIV-infected TB patients with a CD4 count below 200 cells/uL; at her CD4 of 310 cells/uL, this framework would not routinely use it.",
+    "Order rapid rifampicin-resistance testing for this patient because her HIV-positive status independently meets one of the specific risk criteria this framework uses to decide who receives testing -- not because testing is a universal policy."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing for this patient despite her established TB diagnosis"
+  ],
+  "expected_divergence_points": [
+    "Whether cotrimoxazole preventive therapy is given to all HIV-positive TB patients regardless of CD4 count or reserved for those with CD4 below 200 cells/uL",
+    "Whether rifampicin-resistance testing is performed as a matter of universal policy or because specific risk criteria (in this case, her HIV status) are met"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T20:45:00+00:00",
+    "source_divergence_ids": ["DIV-019", "DIV-002"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

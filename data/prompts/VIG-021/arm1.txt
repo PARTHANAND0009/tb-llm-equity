@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 4-year-old boy was identified during a preschool-linked community health screening drive that systematically checks children in the area for TB symptoms and growth faltering, part of an ongoing local outreach program; the family had not sought care on their own. His father, who works as a hospital orderly, mentions the boy has had a mild but persistent cough for about three weeks and has fallen off his growth curve over the past two months, though the family attributed this to a recent bout of diarrhea. He has no history of prior TB treatment and no confirmed household contact, though a distant relative was treated for TB some years ago. Chest X-ray shows a hilar lymph node pattern highly suggestive of primary TB, without cavitation or miliary spread. Repeated attempts at gastric aspirate and induced sputum were both negative on molecular testing and smear. He has no HIV risk factors and no suspicion of drug-resistant TB. Exam: significant wasting (weight-for-age well below expected), no respiratory distress, no lymphadenopathy outside the chest findings.

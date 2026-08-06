@@ -1,0 +1,29 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 7-year-old boy was brought in by his mother on her own initiative after she noticed his persistent cough; he was subsequently diagnosed with pre-XDR-TB and started on an appropriate regimen two months ago. He was not identified through any organized screening program. He has no significant past medical history. At today's follow-up, he is doing reasonably well overall. Exam: stable, mild residual crackles, growing appropriately.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant protocol excerpts:
+[DIV-016 -- Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Discussion of contact investigation as the identification pathway (p. e19 area)]
+Clinical Infectious Diseases
+ IDSA GUIDELINE
+
+Official American Thoracic Society/Infectious Diseases                                                                                                                                              Downloaded from http://cid.oxfordjournals.org/ by guest on January 10, 2017
+Society of America/Centers for Disease Control and
+Prevention Clinical Practice Guidelines: Diagnosis of
+Tuberculosis in Adults and Children
+
+David M. Lewinsohn,1,a Michael K. Leonard,2,a Philip A. LoBue,3,a David L. Cohn,4 Charles L. Daley,5 Ed Desmond,6 Joseph Keane,7
+Deborah A. Lewinsohn,1 Ann M. Loeffler,8 Gerald H. Mazurek,3 Richard J. O'Brien,9 Madhukar Pai,10 Luca Richeldi,11 Max Salfinger,12 Thomas M. Shinnick,3
+Timothy R. Sterling,13 David M. Warshauer,14 and Gail L. Woods15
+
+1Oregon Health & Science University, Portland, Oregon, 2Emory University School of Medicine and 3Centers for Disease Control and Prevention, Atlanta, Georgia, 4Denver Public Health Department,
+Denver, Colorado, 5National Jewish Health and the University of Colorado Denver, and 6California Department of Public Health, Richmond; 7St James's Hospital, Dublin, Ireland; 8Francis J. Curry
+International TB Center, San Francisco, California; 9Foundation for Innovative New Diagnostics, Geneva, Switzerland; 10McGill University and McGill International TB Centre, Montreal, Canada;
+11University of Southampton, United Kingdom; 12National Jewish Health, Denver, Colorado, 13Vanderbilt University Sc

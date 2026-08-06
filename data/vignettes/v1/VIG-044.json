@@ -1,0 +1,59 @@
+{
+  "id": "VIG-044",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 74-year-old woman, long retired from factory work, presents after more than three months of intermittent painless blood in her urine, which she and her family assumed was related to her age or 'just something that happens.' She has mild osteoarthritis managed with occasional analgesics. She has had vague lower abdominal discomfort and some unintentional weight loss. No prior TB treatment, no known TB contact, no known drug-resistant contact. Urinalysis confirms microscopic and intermittent gross hematuria with sterile pyuria; routine bacterial cultures are negative. Imaging shows irregularity and scarring of the right renal collecting system. Urine was sent for molecular testing, which was positive for M. tuberculosis. Exam: mild right flank fullness, no costovertebral angle tenderness, otherwise unremarkable.",
+  "patient": {
+    "age": "74 years",
+    "sex": "female",
+    "occupation": "retired factory/manufacturing worker",
+    "social_history": "Lives with family; mild osteoarthritis managed with occasional analgesics",
+    "presenting_complaint": "Intermittent painless hematuria, vague lower abdominal discomfort, unintentional weight loss",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Mild right flank fullness, no costovertebral angle tenderness, sterile pyuria and renal collecting system scarring on workup",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild osteoarthritis"]
+  },
+  "distractors": [
+    "Painless hematuria attributed to age-related causes without further urologic workup",
+    "A urologic malignancy considered as the primary concern given her age and hematuria, without pursuing infectious causes in parallel",
+    "Osteoarthritis-related analgesic use proposed as a cause of the hematuria rather than a distinct renal process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (urine) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (urine) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary (including urine) specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the hematuria entirely to age or osteoarthritis-related analgesic use and deferring molecular testing on the urine already obtained"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:15:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

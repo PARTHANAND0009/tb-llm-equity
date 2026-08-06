@@ -1,0 +1,64 @@
+{
+  "id": "VIG-056",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-002", "DIV-009"],
+  "stem": "A 65-year-old woman who travels seasonally for farm work presents after more than three months of cough and weight loss, which she attributed to the physical demands of travel. She has mild, longstanding hypertension managed with medication. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed additional isoniazid resistance (MDR-TB) with preserved fluoroquinolone susceptibility. She lives with her 14-year-old grandson, who has no symptoms of active TB on screening. No HIV risk factors, no known contact with any other drug-resistant TB case. Exam: thin, bilateral crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "65 years",
+    "sex": "female",
+    "occupation": "seasonal migrant agricultural worker",
+    "social_history": "Travels seasonally for farm work; lives with her 14-year-old grandson",
+    "presenting_complaint": "Cough and weight loss, confirmed fluoroquinolone-susceptible MDR-TB",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Thin, bilateral crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild, longstanding hypertension"]
+  },
+  "distractors": [
+    "Weight loss and fatigue attributed to the physical demands of seasonal travel rather than an underlying illness",
+    "Her longstanding hypertension proposed as a competing explanation for nonspecific symptoms",
+    "The grandson's lack of current symptoms taken as sufficient reassurance without considering preventive treatment"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her grandson, a household contact of her fluoroquinolone-susceptible MDR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in him."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her grandson, a household contact of her fluoroquinolone-susceptible MDR-TB, a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment, once active TB disease is excluded in him."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Treat offering preventive treatment to her grandson as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to her (the source case's) susceptibility pattern rather than using a fixed levofloxacin regimen."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance/confirmatory testing on the assumption this patient's presentation is inherently low-risk for resistant disease",
+    "Concluding that no preventive action is warranted for the grandson because he is currently asymptomatic"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is performed universally or only for patients meeting specific US risk criteria",
+    "Whether household contacts of fluoroquinolone-susceptible MDR/RR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T17:25:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-009"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

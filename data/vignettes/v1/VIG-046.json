@@ -1,0 +1,63 @@
+{
+  "id": "VIG-046",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-017", "DIV-016"],
+  "stem": "A 16-year-old girl living with HIV, on antiretroviral therapy followed at a local clinic, was identified for TB symptom screening during a routine outreach visit that systematically checks people living with HIV for TB, part of a standing program activity; she had not sought care specifically for her symptoms. She reports about six weeks of cough and worsening fatigue, which she and her family attributed to her usual HIV-related tiredness. Her most recent CD4 count, checked a month ago, was 85 cells/uL. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral infiltrates with early cavitation. Exam: thin, oxygen saturation 95% on room air, respiratory rate 20/min, temperature 37.8C, no lymphadenopathy.",
+  "patient": {
+    "age": "16 years",
+    "sex": "female",
+    "occupation": "homemaker; student",
+    "social_history": "Lives with family in a rural household; living with HIV, on ART, followed at a local clinic",
+    "presenting_complaint": "Cough and worsening fatigue, attributed initially to usual HIV-related tiredness",
+    "duration": "6 weeks",
+    "exam_findings": "Thin, SpO2 95% room air, respiratory rate 20/min, temperature 37.8C, no lymphadenopathy, bilateral infiltrates with early cavitation on imaging",
+    "prior_treatment": "None for this episode; on established antiretroviral therapy; no prior TB treatment",
+    "comorbidities": ["HIV, on ART, CD4 85 cells/uL"]
+  },
+  "distractors": [
+    "Fatigue attributed to her usual HIV-related tiredness rather than a new, superimposed infectious process",
+    "Low CD4 count treated as a chronic baseline finding rather than prompting focused TB screening given her known risk",
+    "Mild fever attributed to a minor, self-limited viral illness rather than investigated further"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that this patient's case was appropriately identified through routine active case-finding targeted at people living with HIV, consistent with standing national program policy rather than a threshold-gated activity.",
+    "Escalate or refer this patient to a higher-tier facility now, since her CD4 count (85 cells/uL) independently meets the quantified red-flag threshold that mandates referral."
+  ],
+  "who_correct_actions": [
+    "Treat this kind of HIV-linked active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Base the decision to refer or escalate her care on individualized clinical judgment of her CD4 count and overall status; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Attribute her case identification to contact investigation following a known index case rather than population-level active case-finding targeted at a risk group; this framework's primary case-finding model is passive, contact-investigation-driven.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding her CD4 count and clinical status, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Failing to act on the severely low CD4 count (85 cells/uL) in the context of active TB, leaving the patient on routine outpatient management without any escalation or referral consideration"
+  ],
+  "expected_divergence_points": [
+    "Whether this patient's HIV-linked active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether her severely low CD4 count triggers a mandatory, quantified escalation/referral or is left to individualized clinical judgment"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:25:00+00:00",
+    "source_divergence_ids": ["DIV-017", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

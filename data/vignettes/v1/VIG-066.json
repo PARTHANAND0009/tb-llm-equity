@@ -1,0 +1,63 @@
+{
+  "id": "VIG-066",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-005", "DIV-012"],
+  "stem": "A 15-year-old girl who helps with fieldwork is being evaluated for TB preventive treatment after her father was recently diagnosed with drug-sensitive pulmonary TB. She has significant, longstanding asthma requiring daily controller medication. She was vaccinated with BCG as an infant. Active TB disease has been ruled out in her through symptom screening and chest imaging. No HIV risk factors. Exam: well-appearing, mild expiratory wheeze consistent with known asthma, no acute distress.",
+  "patient": {
+    "age": "15 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; father recently diagnosed with drug-sensitive pulmonary TB",
+    "presenting_complaint": "Household contact evaluation for TB preventive treatment; active TB already ruled out",
+    "duration": "4-8 weeks since father's diagnosis",
+    "exam_findings": "Well-appearing, mild expiratory wheeze consistent with known asthma, no acute distress",
+    "prior_treatment": "Daily asthma controller medication; no prior TB treatment",
+    "comorbidities": ["significant, longstanding asthma"]
+  },
+  "distractors": [
+    "Her known asthma and daily controller medication proposed as a reason to avoid starting any additional preventive medication",
+    "Her BCG vaccination history proposed as a reason to avoid tuberculin skin testing altogether",
+    "Her active participation in fieldwork used to argue she is otherwise healthy and therefore lower priority for preventive treatment"
+  ],
+  "ntep_correct_actions": [
+    "Treat TST and IGRA as interchangeable options for testing this contact for TB infection; her history of BCG vaccination should not be a determining factor in which test is chosen.",
+    "Offer this contact 1HP (1 month of daily rifapentine plus isoniazid) as an available TB preventive treatment option, since she is over 13 years of age."
+  ],
+  "who_correct_actions": [
+    "Treat TST and IGRA as interchangeable options for testing this contact for TB infection; her history of BCG vaccination should not be a determining factor in which test is chosen.",
+    "Offer this contact 1HP (1 month of daily rifapentine plus isoniazid) as an available TB preventive treatment option, since she is over 13 years of age."
+  ],
+  "us_correct_actions": [
+    "Recommend IGRA specifically rather than TST for this contact, given her history of BCG vaccination, since BCG vaccination is understood to confound TST interpretation in this framework.",
+    "Do not include 1HP among the recommended, preferred, or alternative TB preventive treatment regimens offered to this contact in this framework."
+  ],
+  "critical_error_conditions": [
+    "Deferring any TB preventive treatment decision for this contact because of her asthma, without considering whether a preventive regimen could be safely offered alongside her existing therapy"
+  ],
+  "expected_divergence_points": [
+    "Whether TST and IGRA are treated as interchangeable regardless of BCG vaccination history or IGRA is specifically preferred for BCG-vaccinated individuals",
+    "Whether 1HP is an available TB preventive treatment option or is not offered as a regimen in this framework"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:25:00+00:00",
+    "source_divergence_ids": ["DIV-005", "DIV-012"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

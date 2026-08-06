@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 16-year-old girl with known rheumatic heart disease, followed intermittently at a local clinic, presents with about six weeks of right-sided chest pain and progressive breathlessness, initially attributed by her family to her heart condition acting up. She has had low-grade fevers she hadn't mentioned because she assumed they were part of her usual health issues. No prior TB treatment, no known TB contact, no known drug-resistant contact. Chest exam and imaging reveal a moderate right-sided pleural effusion. Thoracentesis was performed; pleural fluid was sent for molecular testing (in addition to biochemical and ADA testing), which returned positive for M. tuberculosis. Exam: decreased breath sounds and dullness to percussion at the right base, a known systolic murmur consistent with her rheumatic heart disease, no lower extremity edema.
+
+This patient is being seen at a district hospital in India.

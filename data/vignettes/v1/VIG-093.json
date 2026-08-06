@@ -1,0 +1,62 @@
+{
+  "id": "VIG-093",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-053",
+  "divergence_ids": ["DIV-019", "DIV-002"],
+  "stem": "A 5-year-old boy living with HIV, on antiretroviral therapy, is brought in by his mother, a healthcare aide, after about three weeks of cough and reduced energy. His most recent CD4 count was within a range typically not requiring additional prophylaxis by some standards, but he has not previously received cotrimoxazole. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows a right hilar lymph node pattern suggestive of primary TB. Exam: well-appearing overall, mild right-sided crackles, no respiratory distress.",
+  "patient": {
+    "age": "5 years",
+    "sex": "male",
+    "occupation": "not applicable (household occupational context: mother works as a healthcare aide)",
+    "social_history": "Lives with mother; living with HIV, on ART, followed at a pediatric clinic",
+    "presenting_complaint": "Cough and reduced energy",
+    "duration": "3 weeks",
+    "exam_findings": "Well-appearing overall, mild right-sided crackles, no respiratory distress, right hilar lymphadenopathy on imaging",
+    "prior_treatment": "On established antiretroviral therapy; no prior TB treatment; not previously on cotrimoxazole",
+    "comorbidities": ["HIV, on ART"]
+  },
+  "distractors": [
+    "His CD4 count treated as a reason cotrimoxazole is unnecessary, without considering that his active TB diagnosis itself changes the recommendation",
+    "Intermittent cough attributed to a string of ordinary childhood illnesses rather than a persistent process warranting focused evaluation"
+  ],
+  "ntep_correct_actions": [
+    "Give cotrimoxazole preventive therapy to this patient regardless of his CD4 count, since he is HIV-positive with active TB.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status."
+  ],
+  "who_correct_actions": [
+    "Give cotrimoxazole preventive therapy to this patient regardless of his CD4 count, since he is HIV-positive with active TB.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status."
+  ],
+  "us_correct_actions": [
+    "Base the decision to start cotrimoxazole primarily on whether this patient's CD4 count is below 200 cells/uL, since this framework reserves cotrimoxazole mainly for that group rather than using it universally.",
+    "Order rapid rifampicin-resistance testing for this patient because his HIV-positive status independently meets one of the specific risk criteria this framework uses to decide who receives testing -- not because testing is a universal policy."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing for this patient despite his established TB diagnosis"
+  ],
+  "expected_divergence_points": [
+    "Whether cotrimoxazole preventive therapy is given to all HIV-positive TB patients regardless of CD4 count or reserved for those with CD4 below 200 cells/uL",
+    "Whether rifampicin-resistance testing is performed as a matter of universal policy or because specific risk criteria (in this case, his HIV status) are met"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T21:10:00+00:00",
+    "source_divergence_ids": ["DIV-019", "DIV-002"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

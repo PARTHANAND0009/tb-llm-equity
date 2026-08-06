@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 67-year-old retired factory worker with longstanding, poorly controlled diabetes presents after more than three months of cough, which she attributed to years of exposure to workplace fumes before retirement. Her diabetes has been managed inconsistently. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Random blood glucose today: 245 mg/dl, with polyuria and increased thirst she attributes to the weather. Exam: thin, mild crackles bilaterally, no edema.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant background rates: the United States recorded a TB incidence rate of 3.1 cases per 100,000 population (10,388 cases) in 2024, one of the lowest incidence rates of any country (CDC, "TB in the US, 2024").

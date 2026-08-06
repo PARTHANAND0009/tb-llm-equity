@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 41-year-old day laborer presented on his own two months ago with cough and weight loss and was diagnosed with drug-sensitive pulmonary TB; he was not identified through any screening program. He has significant, poorly controlled alcohol use. At today's 2-month follow-up, his sputum smear remains positive and he reports only slight improvement. Vitals today: oxygen saturation 92% on room air, respiratory rate 25/min. Initial chest imaging showed a cavitary right upper lobe lesion.

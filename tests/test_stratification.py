@@ -85,7 +85,7 @@ def test_every_consensus_control_cell_is_matched():
     assert all(c["matched_pair_id"] for c in consensus)
 
 
-def test_matched_pairs_are_unique_and_same_presentation_type():
+def test_matched_pairs_are_unique_and_valid():
     cells = build_cells()
     by_id = {c["cell_id"]: c for c in cells}
     consensus = [c for c in cells if c["burden_class"] == "consensus_control"]
@@ -94,17 +94,54 @@ def test_matched_pairs_are_unique_and_same_presentation_type():
     for c in consensus:
         partner = by_id[c["matched_pair_id"]]
         assert partner["burden_class"] == "india_high"
-        assert partner["presentation_type"] == c["presentation_type"]
 
 
-def test_matched_pairs_align_on_age_band_and_num_distractors():
+def test_matched_pairs_never_span_divergence_class():
+    """Hard constraint (added 2026-08-06 after a post-generation audit found
+
+    15 of 30 pairs spanning divergence_class — see results/PREREGISTRATION.md
+    Amendments): the primary consensus-deviation outcome is only scored on
+    consensus_divergence-grounded vignettes, and matched_pair_id is preserved
+    as a covariate in that analysis rather than collapsed, so a pair spanning
+    classes has one member silently excluded, breaking the paired contrast.
+    """
     cells = build_cells()
     by_id = {c["cell_id"]: c for c in cells}
     consensus = [c for c in cells if c["burden_class"] == "consensus_control"]
     for c in consensus:
         partner = by_id[c["matched_pair_id"]]
-        assert partner["age_band"] == c["age_band"]
-        assert partner["num_distractors"] == c["num_distractors"]
+        assert partner["primary_divergence_class"] == c["primary_divergence_class"]
+
+
+def test_matched_pairs_prefer_age_band_num_distractors_and_presentation_type():
+    """presentation_type, age_band, and num_distractors are soft preferences
+
+    (in that priority order, below the hard divergence_class constraint) —
+    the india_high national_adaptation pool is small and unevenly spread
+    across presentation_type, so hard-partitioning on type as well as class
+    would leave some consensus_control cells unmatched. These are regression
+    thresholds on the current deterministic plan, not guarantees: a future
+    change to group sizes could legitimately shift the counts.
+    """
+    cells = build_cells()
+    by_id = {c["cell_id"]: c for c in cells}
+    consensus = [c for c in cells if c["burden_class"] == "consensus_control"]
+    age_match = sum(
+        1 for c in consensus if by_id[c["matched_pair_id"]]["age_band"] == c["age_band"]
+    )
+    dist_match = sum(
+        1
+        for c in consensus
+        if by_id[c["matched_pair_id"]]["num_distractors"] == c["num_distractors"]
+    )
+    type_match = sum(
+        1
+        for c in consensus
+        if by_id[c["matched_pair_id"]]["presentation_type"] == c["presentation_type"]
+    )
+    assert age_match >= 25
+    assert dist_match >= 25
+    assert type_match >= 20
 
 
 def test_matched_india_high_cell_links_back_to_consensus_control_cell():

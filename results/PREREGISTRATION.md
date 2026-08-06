@@ -274,3 +274,60 @@ rows, the original NTEP-vs-WHO framing still applies as-is). Multiple
 comparisons (Benjamini-Hochberg on secondary outcomes) and the holdout
 policy (RULE 7, unchanged proportion, now 15 of 100 per Task 3's rebuild)
 are also unchanged.
+
+### 2026-08-06 (same day, later still): matched-pair re-pairing on divergence_class
+
+Caught before any data existed or any inference ran: the 100 vignettes in
+`data/vignettes/v1/` had been hand-authored and `scripts/expand_arms.py`
+had already been run to produce the 400 arm prompts, but no model had been
+called and no scoring had happened. This amendment records a metadata-only
+correction made at that point — no vignette stem, action list, or prompt
+text was regenerated or edited.
+
+**What happened.** `matched_pair_id` (`scripts/build_stratification_plan.py
+::assign_matched_pairs`) matched each consensus_control vignette to an
+india_high vignette on `age_band` and `num_distractors` within the same
+`presentation_type`, with no constraint on `divergence_class`. An audit of
+all 30 matched pairs against the amendment above's `divergence_class`
+stratification found 15 of 30 pairs spanning classes — one member grounded
+in `consensus_divergence` rows, the other in `national_adaptation` rows.
+Per the amendment above, `consensus_correct_actions` (and therefore the
+primary consensus-deviation outcome) is only meaningfully defined on
+`consensus_divergence`-grounded vignettes; `national_adaptation`-grounded
+vignettes have it empty by construction. Because `matched_pair_id` is
+preserved as a covariate in analysis rather than collapsed (see "Design"
+above), every cross-class pair had exactly one member eligible for the
+primary-outcome dataset and one silently excluded — breaking the paired
+india_high-vs-consensus_control contrast on the primary outcome for half
+the set.
+
+**Re-pairing rule applied.** Each vignette's `divergence_class` is taken as
+the majority class among its `divergence_ids` (ties, which did not occur in
+practice, resolve to `consensus_divergence`, the primary-outcome class).
+`assign_matched_pairs` now treats this as a **hard constraint**: a
+consensus_control vignette may only be matched to an india_high vignette of
+the same `divergence_class`. Within that constraint, candidates are ranked
+by `age_band` match, then `num_distractors` match, then `presentation_type`
+match (soft preferences, in that priority order — `presentation_type` was
+demoted from a hard partition because the india_high `national_adaptation`
+pool, 13 vignettes, is small and unevenly spread across presentation types,
+and hard-partitioning on both class and type would have left several
+consensus_control cells unmatched even though a same-class partner of a
+different type was available). Where no unused same-class india_high
+vignette exists, `matched_pair_id` is set to `null` rather than forcing a
+mismatched pair — this did not occur in practice: all 30 consensus_control
+vignettes found a same-class partner (19 `consensus_divergence` pairs, 11
+`national_adaptation` pairs).
+
+**Result.** 30 of 30 matched pairs are now intact (same `divergence_class`
+on both sides): 19 usable for the primary consensus-deviation contrast,
+11 usable for the secondary `national_adaptation` (NTEP-vs-WHO) contrast.
+Zero pairs span classes. 61 of 100 vignettes' `matched_pair_id` field
+changed; no other field in any vignette file was touched.
+`tests/test_stratification.py::test_matched_pairs_never_span_divergence_class`
+now guards this at plan time.
+
+**Not touched.** `data/prompts/` and its manifest do not reference
+`matched_pair_id` anywhere — confirmed by grep — so no re-run of
+`scripts/expand_arms.py` was needed and the 400 existing prompt files and
+`data/prompts/manifest.json` are unchanged by this amendment.

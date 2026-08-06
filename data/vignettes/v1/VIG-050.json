@@ -1,0 +1,63 @@
+{
+  "id": "VIG-050",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-017", "DIV-016"],
+  "stem": "A 16-year-old girl who works long hours in the fields was identified for TB symptom screening during a mobile outreach visit that periodically screens severely undernourished adolescents in the area, part of a standing program activity linked to a local nutrition surveillance effort. She has had about six weeks of cough and progressive weakness, which her family attributed to the demands of harvest season combined with her already thin build. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral infiltrates with early cavitation. Weight 32 kg, height 155 cm (BMI 13.3). Exam: severely wasted, temporal wasting, bilateral crackles, no edema.",
+  "patient": {
+    "age": "16 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; identified via a nutrition-linked TB screening outreach",
+    "presenting_complaint": "Cough and progressive weakness, attributed to harvest workload and her already thin build",
+    "duration": "6 weeks",
+    "exam_findings": "Severely wasted, temporal wasting, bilateral crackles, no edema, weight 32 kg, height 155 cm (BMI 13.3), bilateral infiltrates with early cavitation on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["severe undernutrition"]
+  },
+  "distractors": [
+    "Progressive weakness attributed to the demands of harvest season combined with her already thin build, rather than a new infectious process",
+    "Her longstanding thin build treated as a chronic baseline state rather than prompting evaluation for acute worsening",
+    "Cough attributed to dust exposure during fieldwork rather than investigated as a distinct process"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that this patient's case was appropriately identified through routine active case-finding targeted at severely undernourished adolescents, consistent with standing national program policy rather than a threshold-gated activity.",
+    "Escalate or refer this patient to a higher-tier facility now, since her BMI (13.3 kg/m2) independently meets the quantified red-flag threshold that mandates referral."
+  ],
+  "who_correct_actions": [
+    "Treat this kind of nutrition-linked active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Base the decision to refer or escalate her care on individualized clinical judgment of her severe wasting and overall status; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Attribute her case identification to contact investigation following a known index case rather than population-level active case-finding targeted at a risk group; this framework's primary case-finding model is passive, contact-investigation-driven.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding her severe wasting, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Failing to act on this patient's severe wasting (BMI 13.3) in the context of active cavitary TB, leaving her on routine outpatient management without escalation or referral consideration"
+  ],
+  "expected_divergence_points": [
+    "Whether this patient's nutrition-linked active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether her severe wasting (BMI below the quantified threshold) triggers a mandatory escalation/referral or is left to individualized clinical judgment"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:45:00+00:00",
+    "source_divergence_ids": ["DIV-017", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

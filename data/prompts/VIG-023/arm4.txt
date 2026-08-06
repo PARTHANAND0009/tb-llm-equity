@@ -1,0 +1,96 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 45-year-old man, medically retired after a chronic back condition, was identified for TB screening during a routine outreach visit to a residential facility for people with disabilities where he currently lives; this is part of a standing program that screens residents of such congregate settings. He was diagnosed with drug-sensitive pulmonary TB two months ago and has been on standard first-line treatment since, directly observed by facility staff. He has mild, well-controlled hypothyroidism. At today's 2-month follow-up, his sputum smear remains positive and he reports persistent, though somewhat improved, cough. Vitals today: oxygen saturation 91% on room air, respiratory rate 25/min, blood pressure 108/68 (he mentions occasional lightheadedness, which he attributes to his thyroid condition). Initial chest imaging showed a cavitary left upper lobe lesion.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-008 -- ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022) -- Continuation phase notes: 'In disseminated TB or slow response treating physician may extend on case to case basis']
+March/ 2022
+
+                                                    Department of Health Research
+                                  Ministry of Health and Family Welfare, Government of India
+
+                    Standard Treatment Workflow (STW) Guidelines for
+
+            DRUG SENSITIVE-TB TREATMENT AS PER NTEP
+
+For all TB patients whether being treated in public or private sector, clinicians should follow Standards for TB care in India guidelines
+In NTEP, the principle of TB treatment (except confirmed DR-TB) is to administer daily FDC of 1st line ATT in appropriate weight bands,
+under direct observation
+For patients being treated in private sector, FDCs may be provided by NTEP whenever requested
+
+                                Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE
+
+             This regimen is for H & R sensitive TB cases and cases where the sensitivity pattern can not be established
+
+Treatment is given in two phases:
+1. Intensive phase consists of 8 weeks (56 doses) of isoniazid (H), rifampicin (R), pyrazinamide (Z) and ethambutol (E) given under
+
+   direct observation in daily dosages as per weight band categories
+2. Continuation phase consists of 16 weeks (112 doses) of isoniazid, rifampicin and ethambutol in daily dosages. Only pyrazinamide
+
+   will be stopped in the continuation phase. The CP needs to be extended upto 24 weeks in certain forms of TB like CNS TB,
+   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case b
+
+[DIV-016 -- Ministry of Health & Family Welfare, "Initiatives & Achievements-2024" (PIB) -- Item 6, Active Case Finding (p. 8)]
+          Ministry of Health & Family Welfare
+
+                      Initiatives & Achievements-2024
+
+1. Ayushman Bharat:
+
+Ayushman Bharat comprises of four components:
+
+    a. Ayushman Arogya Mandir
+
+   The first component pertains to creation of 1,50,000 Health and Wellness Centres (AB-HWCs),
+   now renamed as Ayushman Arogya Mandir, by upgrading the Sub Health Centres (SHCs) and
+   rural and urban Primary Health Centres (PHCs), in both urban and rural areas, to bring health
+   care closer to the community. These centres aim to provide Comprehensive Primary Health
+   Care (CPHC), by expanding and strengthening the existing Reproductive & Child Health
+   (RCH) and Communicable Diseases services and by including services related to Non-
+   Communicable Diseases (common NCDs such as, Hypertension, Diabetes and three common
+   cancers of Oral, Breast and Cervix) and incrementally adding primary healthcare services for
+   mental health, ENT, Ophthalmology, Oral health, Geriatric and Palliative care and Trauma care
+   as well as health promotion and wellness activities like yoga.
+
+   Comprehensive Primary Health Care (CPHC) through Ayushman Arogya Mandir � Ayushman
+   Bharat aims to holistically address health (covering preventive, promotive, curative,
+   rehabilitative and palliative care), at primary, secondary and tertiary level by adopting a
+   continuum of care approach. In the lifetime of an individual, the primary healthcare services
+   cater to 80- 90% of the healthcare n
+
+[DIV-017 -- Central TB Division, National Guidance on Differentiated TB Care (March 2025) -- Box 4.3, Differentiated TB Care Evaluation, Triaging & Management (p. 19)]
+    National Guidance
+on Differentiated TB Care
+
+                           March 2025
+
+       National TB Elimination Programme
+
+       Central TB Division Ministry of Health & Family Welfare
+                            Government of India
+   National Guidance
+on DifferentiatedTB Care
+
+           Central TB Division
+  Ministry of Health & Family Welfare
+
+           Government of India
+Table of Contents
+
+Executive Summary ........................................................................................................................ xi
+1. Introduction ............................................................................................................................. 01
+
+     � Background .......................................................................................................................... 01
+     � Rationale of Differentiated TB Care....................................................................................... 03
+     � Goals and Objectives .............................................................................................................. 07
+     � Scope........................................................................................................................................... 07
+     � Guiding Principles: Core values of the care model............................................................. 08
+     � Process of the development of the document......................................................

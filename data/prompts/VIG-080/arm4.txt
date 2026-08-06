@@ -1,0 +1,62 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 68-year-old woman who travels between seasonal work sites presents after more than three months of cough and weight loss, delayed by her travel schedule and difficulty accessing consistent care while moving between locations. She has mild, longstanding vision impairment managed with glasses. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, bilateral crackles.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant protocol excerpts:
+[DIV-001 -- Lewinsohn DM et al., Official ATS/IDSA/CDC Clinical Practice Guidelines: Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Recommendations 5, 6, 7 (p. e16)]
+Clinical Infectious Diseases
+ IDSA GUIDELINE
+
+Official American Thoracic Society/Infectious Diseases                                                                                                                                              Downloaded from http://cid.oxfordjournals.org/ by guest on January 10, 2017
+Society of America/Centers for Disease Control and
+Prevention Clinical Practice Guidelines: Diagnosis of
+Tuberculosis in Adults and Children
+
+David M. Lewinsohn,1,a Michael K. Leonard,2,a Philip A. LoBue,3,a David L. Cohn,4 Charles L. Daley,5 Ed Desmond,6 Joseph Keane,7
+Deborah A. Lewinsohn,1 Ann M. Loeffler,8 Gerald H. Mazurek,3 Richard J. O'Brien,9 Madhukar Pai,10 Luca Richeldi,11 Max Salfinger,12 Thomas M. Shinnick,3
+Timothy R. Sterling,13 David M. Warshauer,14 and Gail L. Woods15
+
+1Oregon Health & Science University, Portland, Oregon, 2Emory University School of Medicine and 3Centers for Disease Control and Prevention, Atlanta, Georgia, 4Denver Public Health Department,
+Denver, Colorado, 5National Jewish Health and the University of Colorado Denver, and 6California Department of Public Health, Richmond; 7St James's Hospital, Dublin, Ireland; 8Francis J. Curry
+International TB Center, San Francisco, California; 9Foundation for Innovative New Diagnostics, Geneva, Switzerland; 10McGill University and McGill International TB Centre, Montreal, Canada;
+11University of Southampton, United Kingdom; 12National Jewish Health, Denver, Colorado, 13Vanderbilt University Sc
+
+[DIV-002 -- Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Rapid molecular drug-susceptibility testing recommendation (p. e3)]
+Clinical Infectious Diseases
+ IDSA GUIDELINE
+
+Official American Thoracic Society/Infectious Diseases                                                                                                                                              Downloaded from http://cid.oxfordjournals.org/ by guest on January 10, 2017
+Society of America/Centers for Disease Control and
+Prevention Clinical Practice Guidelines: Diagnosis of
+Tuberculosis in Adults and Children
+
+David M. Lewinsohn,1,a Michael K. Leonard,2,a Philip A. LoBue,3,a David L. Cohn,4 Charles L. Daley,5 Ed Desmond,6 Joseph Keane,7
+Deborah A. Lewinsohn,1 Ann M. Loeffler,8 Gerald H. Mazurek,3 Richard J. O'Brien,9 Madhukar Pai,10 Luca Richeldi,11 Max Salfinger,12 Thomas M. Shinnick,3
+Timothy R. Sterling,13 David M. Warshauer,14 and Gail L. Woods15
+
+1Oregon Health & Science University, Portland, Oregon, 2Emory University School of Medicine and 3Centers for Disease Control and Prevention, Atlanta, Georgia, 4Denver Public Health Department,
+Denver, Colorado, 5National Jewish Health and the University of Colorado Denver, and 6California Department of Public Health, Richmond; 7St James's Hospital, Dublin, Ireland; 8Francis J. Curry
+International TB Center, San Francisco, California; 9Foundation for Innovative New Diagnostics, Geneva, Switzerland; 10McGill University and McGill International TB Centre, Montreal, Canada;
+11University of Southampton, United Kingdom; 12National Jewish Health, Denver, Colorado, 13Vanderbilt University Sc
+
+[DIV-004 -- Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Recommendation 6 (p. e16)]
+     suspects according to clinical suspicion of tuberculosis [137].
+                                                                    It found that in AFB smear microscopy�negative individuals,
+   Recommendation 6: We suggest that both liquid and solid          a positive NAAT result is beneficial when the clinical suspicion
+mycobacterial cultures be performed, rather than either cul-        of tuberculosis was intermediate or high (>30%) and a negative
+ture method alone, for every specimen obtained from an              NAAT result is of little use in excluding the presence of Mtb.
+individual with suspected TB disease (conditional recommen-         This evidence provides low confidence in the estimated test
+dation, low-quality evidence). Remarks: The conditional qual-       characteristics because there may be selection bias since many
+ifier applies to performance of both liquid and solid culture       of the studies did not state whether they enrolled consecutive
+methods on all specimens. At least liquid culture should be         patients with legitimate diagnostic uncertainty and there was
+done on all specimens as culture is the gold standard micro-        significant inconsistency in the meta-analyses.
+biologic test for the diagnosis of TB disease. The isolate
+recovered should be identified according to the Clinical and           Recommendation 7: We suggest performing a diagnostic
+Laboratory Standards Institute guidelines and the American          NAAT, rather than not

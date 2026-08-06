@@ -1,0 +1,38 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 52-year-old man, retired after a long career as a warehouse supervisor, presents with about ten weeks of progressive mid-back pain that he initially attributed to years of heavy lifting on the job. Over-the-counter analgesics have given only partial relief, and over the past two weeks he has noticed mild difficulty with balance that his family has also remarked on. He denies fevers he's noticed but admits he hasn't checked his temperature and has lost some weight without trying. No prior TB treatment, no known TB contact, no known drug-resistant contact. MRI of the spine shows destruction of two adjacent vertebral bodies with a paraspinal collection, concerning for spinal TB (Pott's disease). CT-guided aspiration of the paraspinal collection was sent for molecular testing, which was positive for M. tuberculosis. Exam: point tenderness over the mid-thoracic spine, mild gait unsteadiness, no focal motor deficits, no fever.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-003 -- Central TB Division, Training Module on Extrapulmonary TB (24-03-2023) -- Diagnosis of EPTB / Tools for Microbiological Confirmation of EPTB (p. 26)]
+  
+
+               Training Module On
+
+            Extrapulmonary
+            Tuberculosis
+            2023
+Dr. Naveet Wig                     Department of Medicine
+Professor & Head  All India Institute of Medical Sciences
+
+                                          New Delhi - 110029
+                                      naveetwig@gmail.com
+                                  Office. No.011-2659-3303
+
+                            Tuberculosis (TB) has been a worldwide health problem since time immemorial
+                            and continues to be among the top ten causes of mortality, particularly in India
+                            which houses the world's highest TB burden. Efforts to curb the scourge of TB have
+                            been colossal under the strong leadership of our honorable Prime Minister who
+                            recently raised a clarion call to eliminate TB by 2025, five years ahead of the
+                            corresponding sustainable development goal. The National TB Elimination
+                            Programme (earlier known as the Revised National TB Control Programme) has
+                            been strengthened, The National Strategic Plan for Tuberculosis Elimination 2017-
+                            2025 is in effect and additional support is being provided to patients under the
+                            Pradhan Mantri TB Mukt Bharat Abhiyaan.
+As opposed to pulmonary TB where effective strategies for diag

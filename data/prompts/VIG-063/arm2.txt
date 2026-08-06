@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 48-year-old man, medically retired after a chronic illness, is being evaluated for TB preventive treatment after his wife was recently diagnosed with drug-sensitive pulmonary TB. He has significant, longstanding heart failure managed with multiple medications. He was vaccinated with BCG as an infant, per old records. Active TB disease has been ruled out in him through symptom screening and a normal chest X-ray. He has no HIV risk factors. Exam: stable, no acute findings, no cough, no fever.
+
+This patient is being seen at a district hospital in India.

@@ -1,0 +1,62 @@
+{
+  "id": "VIG-063",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-005", "DIV-012"],
+  "stem": "A 48-year-old man, medically retired after a chronic illness, is being evaluated for TB preventive treatment after his wife was recently diagnosed with drug-sensitive pulmonary TB. He has significant, longstanding heart failure managed with multiple medications. He was vaccinated with BCG as an infant, per old records. Active TB disease has been ruled out in him through symptom screening and a normal chest X-ray. He has no HIV risk factors. Exam: stable, no acute findings, no cough, no fever.",
+  "patient": {
+    "age": "48 years",
+    "sex": "male",
+    "occupation": "medically retired (chronic illness)",
+    "social_history": "Lives with his wife, recently diagnosed with drug-sensitive pulmonary TB",
+    "presenting_complaint": "Household contact evaluation for TB preventive treatment; active TB already ruled out",
+    "duration": "8-12 weeks since his wife's diagnosis",
+    "exam_findings": "Stable, no acute findings, no cough, no fever",
+    "prior_treatment": "None; no prior TB treatment ever",
+    "comorbidities": ["significant, longstanding heart failure"]
+  },
+  "distractors": [
+    "His BCG vaccination history proposed as a reason to avoid tuberculin skin testing altogether, rather than simply informing which test to interpret with caution",
+    "His significant heart failure and multiple medications treated as a reason to defer any TB preventive treatment decision indefinitely"
+  ],
+  "ntep_correct_actions": [
+    "Treat TST and IGRA as interchangeable options for testing this contact for TB infection; his history of BCG vaccination should not be a determining factor in which test is chosen.",
+    "Offer this contact 1HP (1 month of daily rifapentine plus isoniazid) as an available TB preventive treatment option, since he is over 13 years of age."
+  ],
+  "who_correct_actions": [
+    "Treat TST and IGRA as interchangeable options for testing this contact for TB infection; his history of BCG vaccination should not be a determining factor in which test is chosen.",
+    "Offer this contact 1HP (1 month of daily rifapentine plus isoniazid) as an available TB preventive treatment option, since he is over 13 years of age."
+  ],
+  "us_correct_actions": [
+    "Recommend IGRA specifically rather than TST for this contact, given his history of BCG vaccination, since BCG vaccination is understood to confound TST interpretation in this framework.",
+    "Do not include 1HP among the recommended, preferred, or alternative TB preventive treatment regimens offered to this contact in this framework."
+  ],
+  "critical_error_conditions": [
+    "Deferring any TB preventive treatment decision for this contact indefinitely because of his heart failure and medication burden, without considering whether a preventive regimen could be safely offered"
+  ],
+  "expected_divergence_points": [
+    "Whether TST and IGRA are treated as interchangeable regardless of BCG vaccination history or IGRA is specifically preferred for BCG-vaccinated individuals",
+    "Whether 1HP is an available TB preventive treatment option or is not offered as a regimen in this framework"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:10:00+00:00",
+    "source_divergence_ids": ["DIV-005", "DIV-012"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

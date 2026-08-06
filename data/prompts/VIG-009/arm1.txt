@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 7-year-old boy is brought in by his father after about three weeks of cough and reduced energy, noticed shortly after starting the new school term. His growth chart shows he has been below the 5th percentile for weight-for-age for the past year, previously attributed to being a 'picky eater.' He has occasional low-grade fevers per his father's report, though these haven't been formally measured. His father isn't aware of any household member with a chronic cough, though the boy recently started spending more time at a cousin's house after school. Sputum obtained with coaching was scant, so a gastric aspirate was also collected; the gastric aspirate returned positive for M. tuberculosis on molecular testing. No prior TB treatment, no known drug-resistant contact. Exam: visibly wasted, BMI-for-age well below expected, mild crackles at the left base, no edema.

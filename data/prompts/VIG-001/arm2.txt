@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 4-year-old is brought in by a grandparent after roughly three weeks of intermittent cough and reduced appetite, first noticed after the child seemed unusually tired following a bout of what the family called 'a cold.' Growth records show the child has dropped from the 40th to the 25th weight-for-age percentile over the past two months. The grandparent, the primary caregiver, isn't certain whether anyone in the household has had a chronic cough, since an aunt who sometimes stays over has been unwell but 'just has allergies.' No fever has been documented at home, though the child felt warm to touch on two occasions per the caregiver's report. Because the child could not produce sputum on request, a gastric aspirate was obtained under fasting conditions and returned positive for M. tuberculosis on molecular testing. The child has never received treatment for TB, has no known HIV exposure, and there is no known contact with anyone previously treated for drug-resistant TB. Exam shows a thin child, mild bilateral crackles, no lymphadenopathy, weight 15.2 kg.
+
+This patient is being seen at a district hospital in India.

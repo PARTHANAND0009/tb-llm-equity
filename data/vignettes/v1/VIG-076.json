@@ -1,0 +1,68 @@
+{
+  "id": "VIG-076",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-004",
+  "divergence_ids": ["DIV-002", "DIV-004", "DIV-006"],
+  "stem": "A 64-year-old woman who lives alone in a remote rural area, with her nearest family member living several hours away, presents after more than three months of cough that she describes as 'a cold that never really left.' She rarely visits any clinic and has no established pattern of routine care. She denies major weight loss but admits to some loss of appetite. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray shows a non-cavitary infiltrate. Exam: mild crackles, otherwise unremarkable.",
+  "patient": {
+    "age": "64 years",
+    "sex": "female",
+    "occupation": "retired factory/manufacturing worker",
+    "social_history": "Lives alone in a remote area; nearest family member lives several hours away; infrequent healthcare contact",
+    "presenting_complaint": "Prolonged cough described as an unresolved cold, reduced appetite",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Mild crackles, otherwise unremarkable, non-cavitary infiltrate on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "A prolonged, unresolved common cold treated as the working explanation given her own description, delaying further workup",
+    "Her limited healthcare-seeking pattern interpreted as a sign her symptoms are not severe enough to warrant urgent evaluation",
+    "Reduced appetite attributed to living alone and preparing meals for herself rather than a systemic illness"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Continuation-phase dosing may be switched to thrice-weekly (or twice-weekly if directly observed therapy is difficult), since this patient is HIV-negative and at low relapse risk (non-cavitary, smear-negative disease)."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption this patient's presentation is inherently low-risk for resistant disease",
+    "Initiating an intermittent dosing schedule at treatment start rather than daily dosing throughout"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance-detection cascade",
+    "Whether daily dosing is used throughout treatment or intermittent dosing is offered for a low-relapse-risk patient"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T19:25:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-004", "DIV-006"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

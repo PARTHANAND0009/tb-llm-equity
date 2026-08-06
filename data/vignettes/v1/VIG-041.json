@@ -1,0 +1,58 @@
+{
+  "id": "VIG-041",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 6-year-old boy is brought in for a persistent sore on the side of his neck that has not healed over about three weeks, despite his mother cleaning it daily and applying an antiseptic ointment. It started as a small lump that later broke down into a shallow ulcer with intermittent thin discharge. He has a history of mild eczema, and his mother initially thought this was simply another eczema flare in an unusual location. He has had occasional low-grade fevers. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. A swab and biopsy of the sinus tract were obtained; tissue was sent for molecular testing, which was positive for M. tuberculosis. Exam: a 1.5 cm shallow ulcer with undermined edges over the left neck, connecting to a firm underlying lymph node, mild surrounding eczema elsewhere on his arms.",
+  "patient": {
+    "age": "6 years",
+    "sex": "male",
+    "occupation": "student",
+    "social_history": "Lives with parents; mother initially self-managed the neck lesion as an eczema flare",
+    "presenting_complaint": "Non-healing neck ulcer with intermittent discharge, occasional low-grade fevers",
+    "duration": "3 weeks",
+    "exam_findings": "1.5 cm shallow ulcer with undermined edges over left neck connecting to a firm lymph node, mild eczema elsewhere",
+    "prior_treatment": "Daily wound cleaning and antiseptic ointment at home; no prior TB treatment",
+    "comorbidities": ["mild eczema"]
+  },
+  "distractors": [
+    "The sinus and ulcer treated as an atypical eczema flare given his known history, delaying recognition of a distinct process",
+    "A superficial bacterial skin infection proposed as the cause of the discharge, prompting a course of topical antibiotics rather than tissue sampling"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the sinus tract tissue/aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the sinus tract tissue/aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the non-healing ulcer entirely to his known eczema and deferring tissue sampling and molecular testing"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:00:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "VIG-075",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-047",
+  "divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+  "stem": "A 41-year-old day laborer presented on his own two months ago with cough and weight loss and was diagnosed with drug-sensitive pulmonary TB; he was not identified through any screening program. He has significant, poorly controlled alcohol use. At today's 2-month follow-up, his sputum smear remains positive and he reports only slight improvement. Vitals today: oxygen saturation 92% on room air, respiratory rate 25/min. Initial chest imaging showed a cavitary right upper lobe lesion.",
+  "patient": {
+    "age": "41 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Lives alone; significant, poorly controlled alcohol use; presented for care on his own",
+    "presenting_complaint": "Follow-up at 2 months of TB treatment: persistent positive sputum smear, new hypoxia and tachypnea today",
+    "duration": "8-12 weeks prior to diagnosis; now 2 months into treatment",
+    "exam_findings": "SpO2 92% room air, respiratory rate 25/min; cavitary right upper lobe lesion on chest X-ray at diagnosis",
+    "prior_treatment": "2 months of standard first-line anti-TB therapy to date; no prior TB treatment before this episode",
+    "comorbidities": ["significant, poorly controlled alcohol use"]
+  },
+  "distractors": [
+    "His alcohol use proposed as sufficient explanation for his slow recovery and vital-sign changes rather than a marker requiring reassessment",
+    "The persistent positive smear at 2 months attributed to poor adherence assumed from his alcohol use, rather than prompting a vitals-based reassessment"
+  ],
+  "ntep_correct_actions": [
+    "Leave the decision to extend the continuation phase for this slow bacteriological responder to the treating physician's case-by-case clinical judgment, rather than applying a fixed extension rule.",
+    "Recognize that even though this patient presented on his own rather than through an active case-finding drive, NTEP's policy is to run active case-finding as standing, unconditional program activity across defined risk groups -- his case simply happened to be identified through passive presentation instead.",
+    "Escalate or refer this patient to a higher-tier facility now, since his oxygen saturation (92%) and respiratory rate (25/min) each independently meet the quantified red-flag criteria that mandate referral."
+  ],
+  "who_correct_actions": [
+    "Do not extend the regimen based on this patient's positive 2-month smear alone; the standard regimen is fixed-duration, and extension in response to bacteriological non-conversion is not recommended.",
+    "Recognize that this patient's passive, self-initiated presentation -- rather than identification through an active screening program -- is consistent with WHO's own conditional approach: general-population active case-finding is only recommended where local TB prevalence has been shown to meet a specific threshold (approximately 0.5% or higher), not as an unconditional activity.",
+    "Base the decision to refer or escalate his care on individualized clinical judgment of his hypoxia and tachypnea; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Extend the continuation phase by an additional 3 months (9 months total) given the cavitary lesion on his initial chest radiograph combined with the positive smear/culture at completion of 2 months of therapy.",
+    "Attribute his case identification to his own symptomatic presentation, consistent with this framework's passive, contact-investigation-driven case-finding model rather than population-level active case-finding.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding his hypoxia and tachypnea, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Failing to act in any way on the low oxygen saturation and elevated respiratory rate documented at today's visit, leaving the patient on the unchanged outpatient regimen without escalation, referral, or acknowledgment"
+  ],
+  "expected_divergence_points": [
+    "Whether continuation-phase extension for slow bacteriological response is a matter of physician discretion, discouraged under a fixed-duration regimen, or governed by a specific cavitation-plus-culture-based expert rule",
+    "Whether active case-finding is standing, unconditional national program policy or conditional on a demonstrated local prevalence threshold",
+    "Whether his current vital-sign abnormalities trigger a mandatory, quantified escalation/referral or are left to individualized clinical judgment"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T19:20:00+00:00",
+    "source_divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

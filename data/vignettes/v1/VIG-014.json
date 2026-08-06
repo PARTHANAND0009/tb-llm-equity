@@ -1,0 +1,67 @@
+{
+  "id": "VIG-014",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+  "stem": "A 17-year-old woman, recently married and now managing her own household, presents with about seven weeks of cough and progressive tiredness that she initially kept to herself, not wanting to seem unable to keep up with her new domestic responsibilities. Her mother-in-law noticed she has been eating less at meals and brought her in. She reports mild nausea some mornings, which the family wondered might indicate early pregnancy, though a urine pregnancy test was negative. No prior TB treatment, no known drug-resistant contact. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: mildly underweight, left-sided crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "17 years",
+    "sex": "female",
+    "occupation": "homemaker",
+    "social_history": "Recently married; now managing her own household with a mother-in-law nearby",
+    "presenting_complaint": "Cough, fatigue, reduced appetite, intermittent morning nausea",
+    "duration": "7 weeks",
+    "exam_findings": "Mildly underweight, left-sided crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild undernutrition"]
+  },
+  "distractors": [
+    "Early pregnancy proposed as the explanation for the nausea and fatigue, despite a negative pregnancy test",
+    "Reduced appetite and fatigue attributed to the stress of adjusting to a new household role",
+    "Morning nausea attributed to a mild, self-limited gastrointestinal illness unrelated to the respiratory complaint"
+  ],
+  "ntep_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Deferring molecular testing pending resolution of the presumed gastrointestinal or pregnancy-related explanation for her symptoms"
+  ],
+  "expected_divergence_points": [
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T13:15:00+00:00",
+    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

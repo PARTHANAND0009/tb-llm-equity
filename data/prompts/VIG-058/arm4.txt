@@ -1,0 +1,78 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 17-year-old girl who helps with fieldwork presents with about seven weeks of cough and night sweats. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed isoniazid susceptibility (rifampicin mono-resistant TB), with fluoroquinolone susceptibility also confirmed. No HIV risk factors, no known contact with any other drug-resistant TB case. She lives with her 9-year-old brother, who is asymptomatic on screening. Exam: thin, right-sided crackles, no lymphadenopathy.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-002 -- Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025) -- Definitions -- 'Universal DST' (p. 19)]
+       NATIONAL GUIDELINES FOR
+MANAGEMENT OF DRUG RESISTANT TB
+
+                     NATIONAL TB ELIMINATION
+                              PROGRAMME
+
+                        CENTRAL TB DIVISION
+
+                        MINISTRY OF HEALTH AND FAMILY WELFARE
+                                     GOVERNMENT OF INDIA
+NOVEMBER 2024  1
+2  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  3
+4  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  5
+6  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  7
+8  National Guidelines for Management of Drug Resistant TB
+                                Content
+
+MESSAGES                                                                                3-7
+
+ACKNOWLEDGEMENT                                                                            13
+
+LIST OF ABBREVIATIONS                                                                      15
+
+DEFINITIONS                                                                                17
+
+1. INTRODUCTION                                                                            19
+
+1.1. Global and national recommendations on newer shorter oral regimens                    19
+
+ 1.1.1 WHO recommendations on new, shorter, oral regimens                                  20
+
+ 1.1.2 Recommendations of the national technical expert group under NTEP                   20
+
+2. CASE FINDING AND DIAGNOSIS OF DRUG-SUSCEPTIBLE AND DRUG-RESISTANT TB  
+
+[DIV-009 -- Central TB Division, Guidance document on 1HP TPT regimen (addendum to the 2021 PMTPT guidelines, Dec 2024) -- TPT target group, strategy, and treatment options table (p. 1-2)]
+                                                                    Guidance document of implementation of 1HP TPT regimen �
+                                        Guidelines for programmatic management of TB preventive treatment in India 2021
+
+           NATIONAL TUBERCULOSIS ELIMINATION PROGRAMME
+Guidance document on shorter one-month daily isoniazid and rifapentine
+
+              (1HP) regimen option for TB Preventive Treatment
+
+Forward:
+
+This is a technical and operational guidance document on shorter one month daily isoniazid and
+rifapentine (1HP) TPT regimen option for implementation in age group 13 years. The guidance
+is presented as an addendum to and should be referred in context of the Guidelines for
+Programmatic Management of TB Preventive Treatment in India 2021.
+
+Evidence for 1HP:
+
+� A large randomized, open label trial1 compared the efficacy and safety of the shorter 1HP
+    regimen and reported that 1HP regimen is noninferior to 9 month daily isoniazid regimen
+    (9H) in PLHIV from high TB prevalence area or had evidence of TB infection.
+         o 3,000 patients were followed for a median of 3.3 years.
+         o Treatment completion was significantly higher in 1HP compared to 9H (97% versus
+             90%, p<0.001).
+         o Serious adverse event occurred 6% and 7% in the group given 1HP and 9H
+             respectively. Although lower in 1HP, the difference was not significant (p = 0.07).
+         o TB incidence was reported to be 0.65 and 0.67 per 100

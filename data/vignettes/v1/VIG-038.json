@@ -1,0 +1,59 @@
+{
+  "id": "VIG-038",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 16-year-old girl, recently married and managing her own household, presents with about five weeks of headache and low-grade fevers, initially treated at home with over-the-counter pain relievers. Over the past week her mother-in-law has noticed she seems more withdrawn and occasionally confused about the day, which the family first attributed to stress from her new responsibilities. No prior TB treatment, no known TB contact, no known drug-resistant contact. A lumbar puncture was performed given concern for meningitis; CSF showed elevated protein, low glucose, and lymphocytic pleocytosis, and was sent for molecular testing, which was positive for M. tuberculosis. Exam: mildly drowsy but oriented when roused, mild nuchal rigidity, no focal neurologic deficits.",
+  "patient": {
+    "age": "16 years",
+    "sex": "female",
+    "occupation": "homemaker",
+    "social_history": "Recently married, managing her own household; symptoms initially attributed to stress from her new role",
+    "presenting_complaint": "Headache, low-grade fevers, subacute behavioral change and drowsiness",
+    "duration": "5 weeks",
+    "exam_findings": "Mildly drowsy but oriented when roused, mild nuchal rigidity, no focal neurologic deficits, CSF with elevated protein, low glucose, and lymphocytic pleocytosis",
+    "prior_treatment": "Over-the-counter pain relievers for headache; no prior TB treatment",
+    "comorbidities": ["mild anemia (incidental)"]
+  },
+  "distractors": [
+    "Behavioral withdrawal and apparent confusion attributed to psychosocial stress from her new marriage and household responsibilities",
+    "Headache treated as a tension-type headache responsive to over-the-counter analgesics, delaying recognition of a more serious process",
+    "Drowsiness attributed to poor sleep from her new domestic workload rather than a neurologic process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CSF) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CSF) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary (including CSF) specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing this patient's headache, drowsiness, and behavioral change entirely to psychosocial stress and deferring molecular testing on the CSF already obtained"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T15:35:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

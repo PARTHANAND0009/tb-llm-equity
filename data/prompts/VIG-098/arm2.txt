@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 16-year-old girl living with HIV, on antiretroviral therapy, presented on her own for a TB symptom check after noticing her own persistent cough; she was not identified through any organized screening program. Her most recent CD4 count was 90 cells/uL. Active TB disease has been confirmed and treatment started. At today's visit, oxygen saturation is 93% and respiratory rate is 25/min. Exam: thin, mild crackles.
+
+This patient is being seen at a teaching hospital in the United States.

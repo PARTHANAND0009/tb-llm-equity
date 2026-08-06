@@ -1,0 +1,62 @@
+{
+  "id": "VIG-065",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-011", "DIV-005"],
+  "stem": "A 6-year-old boy living with HIV, on antiretroviral therapy, is being evaluated for TB preventive treatment as part of his routine HIV care. He has had a mild, resolving cold over the past week, otherwise well. He was vaccinated with BCG as an infant. Active TB disease has been ruled out through symptom screening and a normal chest X-ray. No TBI test (TST or IGRA) has been performed, as none was readily available at this visit. Exam: well-appearing, no acute findings.",
+  "patient": {
+    "age": "6 years",
+    "sex": "male",
+    "occupation": "student",
+    "social_history": "Lives with parents; living with HIV, on ART, routine TB preventive treatment evaluation",
+    "presenting_complaint": "Routine TPT evaluation; active TB already ruled out; TBI testing not available at this visit",
+    "duration": "N/A (routine care visit); mild resolving cold over the past week",
+    "exam_findings": "Well-appearing, no acute findings",
+    "prior_treatment": "On established antiretroviral therapy; no prior TB treatment",
+    "comorbidities": ["HIV, on ART"]
+  },
+  "distractors": [
+    "The absence of a completed TBI test treated as a reason to delay initiating TB preventive treatment",
+    "His recent mild cold treated as a reason to defer the TPT evaluation entirely rather than proceeding once active TB is excluded"
+  ],
+  "ntep_correct_actions": [
+    "Start this child on TB preventive treatment now that active TB disease has been ruled out; a positive TBI (TST/IGRA) test is not required as a prerequisite for starting TPT in a person living with HIV.",
+    "Treat TST and IGRA as interchangeable options if TBI testing does become available for this child; his history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "who_correct_actions": [
+    "Start this child on TB preventive treatment now that active TB disease has been ruled out; a positive TBI (TST/IGRA) test is not required as a prerequisite for starting TPT in a person living with HIV.",
+    "Treat TST and IGRA as interchangeable options if TBI testing does become available for this child; his history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "us_correct_actions": [
+    "Treat this child's TB preventive treatment as contingent on a confirmed positive TBI test, since this framework's regimens are framed around treatment of confirmed latent TB infection rather than an empiric-without-testing pathway for people living with HIV.",
+    "Recommend IGRA specifically rather than TST for this child, given his history of BCG vaccination, since BCG vaccination is understood to confound TST interpretation in this framework."
+  ],
+  "critical_error_conditions": [
+    "Delaying TB preventive treatment for this child indefinitely because a TBI test was not readily available, rather than proceeding on the basis that active TB disease has already been excluded"
+  ],
+  "expected_divergence_points": [
+    "Whether a positive TBI test is required before starting TB preventive treatment in a person living with HIV",
+    "Whether TST and IGRA are treated as interchangeable regardless of BCG vaccination history or IGRA is specifically preferred for BCG-vaccinated individuals"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:20:00+00:00",
+    "source_divergence_ids": ["DIV-011", "DIV-005"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

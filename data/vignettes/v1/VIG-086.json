@@ -1,0 +1,59 @@
+{
+  "id": "VIG-086",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-030",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 14-year-old girl presents with about five weeks of headache and low-grade fevers, initially treated at home with over-the-counter pain relievers. Over the past week her mother has noticed she seems more withdrawn and occasionally confused about the day, which the family first attributed to poor sleep from exam preparation at school. No prior TB treatment, no known TB contact, no known drug-resistant contact. A lumbar puncture was performed given concern for meningitis; CSF showed elevated protein, low glucose, and lymphocytic pleocytosis, and was sent for molecular testing, which was positive for M. tuberculosis. Exam: mildly drowsy but oriented when roused, mild nuchal rigidity, no focal neurologic deficits.",
+  "patient": {
+    "age": "14 years",
+    "sex": "female",
+    "occupation": "student",
+    "social_history": "Lives with parents in a rural household; symptoms initially attributed to exam-related sleep loss",
+    "presenting_complaint": "Headache, low-grade fevers, subacute behavioral change and drowsiness",
+    "duration": "5 weeks",
+    "exam_findings": "Mildly drowsy but oriented when roused, mild nuchal rigidity, no focal neurologic deficits, CSF with elevated protein, low glucose, and lymphocytic pleocytosis",
+    "prior_treatment": "Over-the-counter pain relievers for headache; no prior TB treatment",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Behavioral withdrawal and apparent confusion attributed to sleep deprivation from school exam preparation",
+    "Headache treated as a tension-type headache responsive to over-the-counter analgesics, delaying recognition of a more serious process",
+    "Drowsiness attributed to catching up on missed sleep rather than a neurologic process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CSF) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the CSF) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary (including CSF) specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing this patient's headache, drowsiness, and behavioral change entirely to sleep deprivation and deferring molecular testing on the CSF already obtained"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T20:25:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

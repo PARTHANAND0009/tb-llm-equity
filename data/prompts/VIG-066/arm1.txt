@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 15-year-old girl who helps with fieldwork is being evaluated for TB preventive treatment after her father was recently diagnosed with drug-sensitive pulmonary TB. She has significant, longstanding asthma requiring daily controller medication. She was vaccinated with BCG as an infant. Active TB disease has been ruled out in her through symptom screening and chest imaging. No HIV risk factors. Exam: well-appearing, mild expiratory wheeze consistent with known asthma, no acute distress.

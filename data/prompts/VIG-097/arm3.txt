@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 7-year-old boy was brought in by his mother on her own initiative after she noticed his persistent cough; he was subsequently diagnosed with pre-XDR-TB and started on an appropriate regimen two months ago. He was not identified through any organized screening program. He has no significant past medical history. At today's follow-up, he is doing reasonably well overall. Exam: stable, mild residual crackles, growing appropriately.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant background rates: the United States recorded a TB incidence rate of 3.1 cases per 100,000 population (10,388 cases) in 2024, one of the lowest incidence rates of any country (CDC, "TB in the US, 2024").

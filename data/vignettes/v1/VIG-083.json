@@ -1,0 +1,58 @@
+{
+  "id": "VIG-083",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-035",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 37-year-old day laborer presents with about nine weeks of progressive abdominal swelling and mild diffuse discomfort, which he attributed to weight gain from a recent change in diet. He has had intermittent low-grade fevers and reduced appetite. No prior TB treatment, no known TB contact, no known drug-resistant contact. Abdominal exam and imaging reveal moderate ascites with peritoneal thickening. Diagnostic paracentesis was performed; ascitic fluid was sent for molecular testing (along with biochemical and ADA testing), which returned positive for M. tuberculosis. Exam: distended, mildly tender abdomen with shifting dullness, no peripheral edema, no jaundice.",
+  "patient": {
+    "age": "37 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Lives with roommates; recent change in diet noted",
+    "presenting_complaint": "Progressive abdominal swelling, low-grade fevers, reduced appetite, initially attributed to weight gain",
+    "duration": "9 weeks",
+    "exam_findings": "Distended, mildly tender abdomen with shifting dullness, no peripheral edema, no jaundice, moderate ascites with peritoneal thickening on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild, intermittent lower back discomfort, longstanding and unrelated"]
+  },
+  "distractors": [
+    "A recent change in diet proposed as sufficient explanation for the perceived weight/abdominal changes",
+    "A primary liver process proposed as the cause of the ascites, without pursuing diagnostic paracentesis first"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the ascitic fluid), alongside biochemical/ADA testing, as a first-line microbiological tool rather than anchoring the workup around culture and histology alone."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the ascitic fluid), alongside biochemical/ADA testing, as a first-line microbiological tool rather than anchoring the workup around culture and histology alone."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the ascites entirely to dietary changes and deferring diagnostic paracentesis and molecular testing"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T20:10:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

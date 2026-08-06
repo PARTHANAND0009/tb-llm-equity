@@ -1,0 +1,58 @@
+{
+  "id": "VIG-045",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-097",
+  "divergence_ids": ["DIV-016"],
+  "stem": "A 5-year-old girl with known type 1 diabetes, followed regularly at a pediatric endocrinology clinic, was screened for TB symptoms during a routine outreach visit that systematically checks children with diabetes for TB as part of a standing local program; her family had not brought her in specifically for the cough. Her father, who works as a hospital orderly, reports she has had about three weeks of intermittent cough and has needed slightly higher insulin doses than her usual regimen to keep her blood sugars controlled. She has had occasional low-grade fevers. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows a right hilar lymph node pattern suggestive of primary TB. Exam: well-appearing overall, mild right-sided crackles, no respiratory distress, blood glucose well-controlled on current regimen.",
+  "patient": {
+    "age": "5 years",
+    "sex": "female",
+    "occupation": "not applicable (household occupational context: father works as a hospital orderly)",
+    "social_history": "Lives with parents; identified via a diabetes-linked TB screening outreach rather than by the family seeking care for the cough",
+    "presenting_complaint": "Intermittent cough, slightly higher insulin requirements than usual, occasional low-grade fevers",
+    "duration": "3 weeks",
+    "exam_findings": "Well-appearing overall, mild right-sided crackles, no respiratory distress, right hilar lymphadenopathy on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["type 1 diabetes, currently well-controlled"]
+  },
+  "distractors": [
+    "Higher insulin requirements attributed to normal variability in a young child's diabetes management rather than a superimposed infectious process",
+    "Intermittent cough attributed to a string of ordinary childhood illnesses rather than a persistent process warranting focused evaluation"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that this child's case was appropriately identified through routine active case-finding targeted at a high-risk group (children with diabetes), consistent with standing national program policy rather than a threshold-gated activity."
+  ],
+  "who_correct_actions": [
+    "Treat this kind of diabetes-linked active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence."
+  ],
+  "us_correct_actions": [
+    "Attribute this child's case identification to contact investigation following a known TB contact rather than population-level active case-finding targeted at a risk group; this framework's primary case-finding model is passive, contact-investigation-driven."
+  ],
+  "critical_error_conditions": [
+    "Delaying any TB workup because the cough was identified through a screening program rather than the family's own presenting concern, treating program-detected symptoms as lower priority than self-reported ones"
+  ],
+  "expected_divergence_points": [
+    "Whether this child's diabetes-linked active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:20:00+00:00",
+    "source_divergence_ids": ["DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

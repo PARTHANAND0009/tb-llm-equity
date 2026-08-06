@@ -1,0 +1,58 @@
+{
+  "id": "VIG-085",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-029",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 5-year-old boy is brought in by his mother after she noticed a firm, gradually enlarging lump in his armpit over about three weeks. It has not been painful. She initially assumed it was related to a vaccination given some time ago. He has had occasional low-grade fevers. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Fine-needle aspiration of the axillary node was performed and sent for molecular testing, which was positive for M. tuberculosis. Exam: firm, non-tender 2 cm left axillary lymph node, no overlying skin changes, no other lymphadenopathy, lungs clear.",
+  "patient": {
+    "age": "5 years",
+    "sex": "male",
+    "occupation": "not applicable (household occupational context: mother works as a healthcare aide)",
+    "social_history": "Lives with parents; swelling initially attributed to a past vaccination",
+    "presenting_complaint": "Painless, gradually enlarging axillary swelling with occasional low-grade fevers",
+    "duration": "3 weeks",
+    "exam_findings": "Firm, non-tender 2 cm left axillary lymph node, no overlying skin changes, no other lymphadenopathy, lungs clear",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "The swelling attributed to a reaction from a past vaccination given in the same arm, without further workup",
+    "Low-grade fevers attributed to a routine childhood illness rather than a distinct process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the axillary lymph node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the axillary lymph node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the enlarging lymph node entirely to a past vaccination reaction without pursuing aspirate sampling and molecular testing"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T20:20:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

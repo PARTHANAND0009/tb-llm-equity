@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 65-year-old woman with longstanding, poorly controlled diabetes presents after more than three months of progressive breathlessness and vague chest discomfort, which she and her family attributed to her heart 'acting up given her sugar problems.' She has had low-grade fevers she hadn't mentioned. No prior TB treatment, no known TB contact, no known drug-resistant contact. Echocardiogram reveals a moderate pericardial effusion without tamponade physiology at this time. Pericardiocentesis was performed; pericardial fluid was sent for molecular testing (along with biochemical and ADA testing), which returned positive for M. tuberculosis. Exam: muffled heart sounds, mild jugular venous distension, no peripheral edema, blood glucose today 240 mg/dl.

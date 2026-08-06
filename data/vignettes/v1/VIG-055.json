@@ -1,0 +1,63 @@
+{
+  "id": "VIG-055",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-002", "DIV-009"],
+  "stem": "A 38-year-old man, medically retired after an old workplace injury, presents with about ten weeks of cough and weight loss. He has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis; rifampicin resistance was detected on the same test, and follow-up testing confirmed isoniazid susceptibility (rifampicin mono-resistant TB), with no additional risk factors for resistance identified beyond the test result itself -- no HIV, no prior treatment, no known contact with a currently active drug-resistant case. Separately, his teenage daughter, who lives with him, was never evaluated for preventive therapy two years ago when her uncle, who stayed with the family for several months at that time, was treated for fluoroquinolone-susceptible MDR-TB; her uncle has since completed treatment and is no longer infectious. Exam (patient): thin, right-sided crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "38 years",
+    "sex": "male",
+    "occupation": "medically retired (old workplace injury)",
+    "social_history": "Lives with his teenage daughter; her uncle (patient's brother-in-law) stayed with the family and was treated for MDR-TB two years ago",
+    "presenting_complaint": "Cough and weight loss, confirmed rifampicin mono-resistant TB",
+    "duration": "10 weeks",
+    "exam_findings": "Thin, right-sided crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "The patient's own presentation assumed low-risk for resistant TB given the absence of prior treatment or a currently active known contact, arguing against confirmatory resistance testing",
+    "The daughter's exposure treated as moot because her uncle has already completed treatment and is cured, rather than considering that preventive therapy was never offered during the actual exposure window"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer the daughter a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment for a household contact of fluoroquinolone-susceptible MDR/RR-TB, once active TB disease is excluded in her, regardless of how long ago the exposure occurred."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer the daughter a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment for a household contact of fluoroquinolone-susceptible MDR/RR-TB, once active TB disease is excluded in her, regardless of how long ago the exposure occurred."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Treat offering preventive treatment to the daughter as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to the source case's susceptibility pattern rather than using a fixed levofloxacin regimen."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance/confirmatory testing on the assumption this patient's presentation is inherently low-risk for resistant disease",
+    "Concluding that no preventive action is warranted for the daughter because her uncle has already completed treatment and is cured"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is performed universally or only for patients meeting specific US risk criteria",
+    "Whether household contacts of fluoroquinolone-susceptible MDR/RR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T17:20:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-009"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

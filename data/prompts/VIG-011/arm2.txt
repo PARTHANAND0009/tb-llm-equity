@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 41-year-old day laborer presents with about ten weeks of cough and intermittent low-grade fevers, which he attributed to seasonal changes and kept working through because he is paid by the day. He has hypertension that he manages with medication obtained sporadically from a local pharmacy, and admits he often skips doses when money is tight. He denies significant weight loss but his wife says his appetite has clearly dropped. He has never been treated for TB and has no known contact with anyone with drug-resistant TB; he has not traveled outside the area and has no known HIV risk factors. Sputum smear is negative, Xpert MTB/RIF positive, rifampicin not detected. Chest imaging shows a non-cavitary right infiltrate. Exam: BP 148/92, mildly overweight, scattered crackles.
+
+This patient is being seen at a district hospital in India.

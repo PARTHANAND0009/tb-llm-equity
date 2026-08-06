@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 69-year-old woman, long retired from factory work, presents after more than three months of cough and progressive breathlessness beyond her known severe COPD baseline, which she and her family initially attributed entirely to her lung disease. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis; testing confirmed resistance to rifampicin, isoniazid, and fluoroquinolones (pre-XDR-TB), with no other risk factors for resistance beyond this result -- no HIV, no prior treatment. Separately, her grandson, who lives with her, was never evaluated for preventive therapy two years ago when a cousin who stayed with the family for several months at that time was treated for fluoroquinolone-susceptible MDR-TB; the cousin has since completed treatment and is no longer infectious. Exam (patient): severe COPD baseline, worsening bilateral crackles, thin.

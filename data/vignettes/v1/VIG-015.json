@@ -1,0 +1,67 @@
+{
+  "id": "VIG-015",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-001", "DIV-002", "DIV-004"],
+  "stem": "A 38-year-old man, medically retired after a workplace accident left him with a permanent leg injury, presents with about nine weeks of cough and unintentional weight loss. He has stage 3 chronic kidney disease followed by a local clinic, managed with dietary restriction and medication. He initially attributed his fatigue to his kidney condition and didn't mention the cough at his last routine visit. He denies prior TB treatment and has no known contact with anyone with drug-resistant TB; he has not traveled outside the area and has no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, mild bibasilar crackles, mild peripheral edema consistent with his known kidney disease.",
+  "patient": {
+    "age": "38 years",
+    "sex": "male",
+    "occupation": "medically retired (former manual laborer, workplace injury)",
+    "social_history": "Lives independently; managed chronic kidney disease through a local clinic with dietary restriction and medication",
+    "presenting_complaint": "Cough and unintentional weight loss, initially attributed to known kidney disease",
+    "duration": "9 weeks",
+    "exam_findings": "Thin, mild bibasilar crackles, mild peripheral edema consistent with known CKD",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["chronic kidney disease, stage 3"]
+  },
+  "distractors": [
+    "Progressive chronic kidney disease proposed as sufficient explanation for the fatigue and weight change",
+    "Fluid-restriction-related dietary changes proposed as an alternative explanation for the weight loss rather than an infectious cause"
+  ],
+  "ntep_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result."
+  ],
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result."
+  ],
+  "us_correct_actions": [
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test."
+  ],
+  "critical_error_conditions": [
+    "Deferring molecular testing because the initial sputum sample was of poor quality, rather than proceeding with the test on the specimen obtained or promptly recollecting one",
+    "Omitting rifampicin-resistance testing because this patient's presentation seems low-risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance-detection cascade"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T13:20:00+00:00",
+    "source_divergence_ids": ["DIV-001", "DIV-002", "DIV-004"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

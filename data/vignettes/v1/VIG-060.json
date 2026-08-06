@@ -1,0 +1,64 @@
+{
+  "id": "VIG-060",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-002", "DIV-009"],
+  "stem": "A 69-year-old woman, long retired from factory work, presents after more than three months of cough and progressive breathlessness beyond her known severe COPD baseline, which she and her family initially attributed entirely to her lung disease. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis; testing confirmed resistance to rifampicin, isoniazid, and fluoroquinolones (pre-XDR-TB), with no other risk factors for resistance beyond this result -- no HIV, no prior treatment. Separately, her grandson, who lives with her, was never evaluated for preventive therapy two years ago when a cousin who stayed with the family for several months at that time was treated for fluoroquinolone-susceptible MDR-TB; the cousin has since completed treatment and is no longer infectious. Exam (patient): severe COPD baseline, worsening bilateral crackles, thin.",
+  "patient": {
+    "age": "69 years",
+    "sex": "female",
+    "occupation": "retired factory/manufacturing worker",
+    "social_history": "Lives with her grandson; a cousin who previously stayed with the family was treated for MDR-TB two years ago",
+    "presenting_complaint": "Worsening cough and breathlessness beyond her known COPD baseline, confirmed pre-XDR-TB",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Severe COPD baseline, worsening bilateral crackles, thin",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["severe COPD"]
+  },
+  "distractors": [
+    "Worsening breathlessness attributed entirely to her known severe COPD without considering a superimposed new infectious process",
+    "Her presentation assumed low-risk for resistant TB given the absence of prior treatment, arguing against confirmatory resistance testing",
+    "The grandson's exposure treated as moot because the cousin has already completed treatment and is cured, rather than considering that preventive therapy was never offered during the actual exposure window"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her grandson a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment for a household contact of fluoroquinolone-susceptible MDR/RR-TB, once active TB disease is excluded in him, regardless of how long ago the exposure occurred."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Offer her grandson a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment for a household contact of fluoroquinolone-susceptible MDR/RR-TB, once active TB disease is excluded in him, regardless of how long ago the exposure occurred."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Treat offering preventive treatment to her grandson as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to the source case's (the cousin's) susceptibility pattern rather than using a fixed levofloxacin regimen."
+  ],
+  "critical_error_conditions": [
+    "Attributing the worsening symptoms entirely to known COPD and deferring rifampicin-resistance/confirmatory testing",
+    "Concluding that no preventive action is warranted for the grandson because the cousin has already completed treatment and is cured"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is performed universally or only for patients meeting specific US risk criteria",
+    "Whether household contacts of fluoroquinolone-susceptible MDR/RR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T17:45:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-009"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

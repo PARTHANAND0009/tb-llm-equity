@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 38-year-old man, medically retired after a workplace accident left him with a permanent leg injury, presents with about nine weeks of cough and unintentional weight loss. He has stage 3 chronic kidney disease followed by a local clinic, managed with dietary restriction and medication. He initially attributed his fatigue to his kidney condition and didn't mention the cough at his last routine visit. He denies prior TB treatment and has no known contact with anyone with drug-resistant TB; he has not traveled outside the area and has no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, mild bibasilar crackles, mild peripheral edema consistent with his known kidney disease.
+
+This patient is being seen at a district hospital in India.
+
+Relevant background rates: India recorded an estimated TB incidence of approximately 195 cases per 100,000 population in 2024 and accounted for roughly 25% of the world's incident TB cases that year (WHO Global Tuberculosis Report 2025).

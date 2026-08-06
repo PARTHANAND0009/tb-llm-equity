@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 63-year-old woman who travels between seasonal work sites with a small group of extended family presents after more than three months of cough, which the group initially thought was 'just the road dust' from constant travel. She only agreed to be seen when a family member insisted after noticing she was falling behind during work. She denies major weight loss but admits her clothes fit more loosely than before. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors, and she has not traveled outside the region. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest imaging shows a non-cavitary infiltrate. Exam: mild crackles, otherwise unremarkable, no peripheral findings.
+
+This patient is being seen at a district hospital in India.

@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 43-year-old man, medically retired after a workplace injury left him with a permanent hip impairment from years ago, presents with about eleven weeks of worsening pain and swelling in the same hip, which he and his family initially attributed to his old injury flaring up. He has stage 3 chronic kidney disease managed at a local clinic. He has had intermittent low-grade fevers he hadn't mentioned. No prior TB treatment, no known TB contact, no known drug-resistant contact. Imaging shows joint space narrowing with periarticular bone destruction concerning for septic or tuberculous arthritis. Joint aspiration was performed; synovial fluid was sent for molecular testing, which was positive for M. tuberculosis. Exam: warm, swollen hip with reduced range of motion, no overlying skin changes, mild peripheral edema consistent with his known kidney disease.
+
+This patient is being seen at a district hospital in India.

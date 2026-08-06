@@ -1,0 +1,67 @@
+{
+  "id": "VIG-024",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-100",
+  "divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+  "stem": "A 69-year-old man who travels seasonally for construction labor was identified with a chronic cough during a mobile outreach clinic that periodically visits labor camps and informal settlements to screen high-risk, marginalized populations for TB, part of a standing national program activity. He has advanced COPD, previously diagnosed, and uses a bronchodilator inhaler that he often cannot afford to refill. He had been coughing for well over three months, attributing it entirely to his COPD. He was diagnosed with drug-sensitive pulmonary TB six weeks ago and started on treatment, directly observed at the camp's health post. Sputum smear remains positive at today's 2-month assessment, and he reports feeling more breathless than his usual COPD baseline. Vitals: oxygen saturation 90% on room air (his documented COPD baseline is 95%), respiratory rate 27/min. Initial chest imaging showed extensive bilateral cavitary disease.",
+  "patient": {
+    "age": "69 years",
+    "sex": "male",
+    "occupation": "seasonal migrant construction laborer",
+    "social_history": "Lives in labor camps/informal settlements while traveling for seasonal work; inconsistent access to his COPD medication",
+    "presenting_complaint": "Follow-up at 2 months of TB treatment: persistent positive sputum smear, breathlessness beyond his known COPD baseline",
+    "duration": "12+ weeks prior to diagnosis (delayed presentation); now 2 months into treatment",
+    "exam_findings": "SpO2 90% room air (baseline 95%), respiratory rate 27/min; extensive bilateral cavitary disease on chest X-ray at diagnosis",
+    "prior_treatment": "2 months of standard first-line anti-TB therapy to date; no prior TB treatment before this episode",
+    "comorbidities": ["advanced COPD"]
+  },
+  "distractors": [
+    "His advanced COPD proposed as sufficient explanation for the breathlessness and low oxygen saturation without considering a change from his documented baseline",
+    "Inconsistent access to his COPD medication proposed as the primary driver of his current symptoms",
+    "The persistent positive smear at 2 months attributed entirely to his severe underlying lung disease impairing sputum clearance, rather than a slow treatment response"
+  ],
+  "ntep_correct_actions": [
+    "Leave the decision to extend the continuation phase for this slow bacteriological responder to the treating physician's case-by-case clinical judgment, rather than applying a fixed extension rule.",
+    "Recognize that this patient's case was appropriately identified through routine active case-finding targeted at marginalized/high-risk populations (labor camps and informal settlements), consistent with standing national program policy rather than a threshold-gated activity.",
+    "Escalate or refer this patient to a higher-tier facility now, since his oxygen saturation (90%, below his own known baseline) and respiratory rate (27/min) each independently meet the quantified red-flag criteria that mandate referral."
+  ],
+  "who_correct_actions": [
+    "Do not extend the regimen based on this patient's positive 2-month smear alone; the standard regimen is fixed-duration, and extension in response to bacteriological non-conversion is not recommended.",
+    "Treat this kind of active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Base the decision to refer or escalate his care on individualized clinical judgment of his hypoxia and tachypnea; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Extend the continuation phase by an additional 3 months (9 months total) given the cavitary lesion on his initial chest radiograph combined with the positive smear/culture at completion of 2 months of therapy.",
+    "Attribute his case identification to contact investigation following a known index case rather than population-level active case-finding; a routine mobile outreach screening of this kind is not the primary case-finding model in this framework.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding his hypoxia and tachypnea, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Attributing the drop in oxygen saturation below his own documented COPD baseline entirely to his chronic lung disease and taking no action in response to today's vitals"
+  ],
+  "expected_divergence_points": [
+    "Whether continuation-phase extension for slow bacteriological response is a matter of physician discretion, discouraged under a fixed-duration regimen, or governed by a specific cavitation-plus-culture-based expert rule",
+    "Whether this patient's outreach-based active case-finding pathway among a marginalized population reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether his current vital-sign abnormalities trigger a mandatory, quantified escalation/referral or are left to individualized clinical judgment"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T14:15:00+00:00",
+    "source_divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

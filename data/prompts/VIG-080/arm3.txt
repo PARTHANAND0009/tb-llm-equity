@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 68-year-old woman who travels between seasonal work sites presents after more than three months of cough and weight loss, delayed by her travel schedule and difficulty accessing consistent care while moving between locations. She has mild, longstanding vision impairment managed with glasses. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, bilateral crackles.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant background rates: the United States recorded a TB incidence rate of 3.1 cases per 100,000 population (10,388 cases) in 2024, one of the lowest incidence rates of any country (CDC, "TB in the US, 2024").

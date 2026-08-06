@@ -1,0 +1,79 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 62-year-old retired factory worker, living with HIV and on antiretroviral therapy for several years, presents after more than three months of cough and weight loss, which she attributed to her HIV itself rather than a new problem. Her most recent CD4 count was 340 cells/uL, checked six months ago. She has never been treated for TB and has no known contact with anyone with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, scattered crackles, no oral thrush, no lymphadenopathy.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-019 -- Central TB Division, National Guidance on Differentiated TB Care (March 2025); 1HP TPT addendum (Dec 2024) -- Differentiated Care intake form, comorbidity/HIV section (p. 86); 1HP addendum dosage footnote (p. 2)]
+    National Guidance
+on Differentiated TB Care
+
+                           March 2025
+
+       National TB Elimination Programme
+
+       Central TB Division Ministry of Health & Family Welfare
+                            Government of India
+   National Guidance
+on DifferentiatedTB Care
+
+           Central TB Division
+  Ministry of Health & Family Welfare
+
+           Government of India
+Table of Contents
+
+Executive Summary ........................................................................................................................ xi
+1. Introduction ............................................................................................................................. 01
+
+     � Background .......................................................................................................................... 01
+     � Rationale of Differentiated TB Care....................................................................................... 03
+     � Goals and Objectives .............................................................................................................. 07
+     � Scope........................................................................................................................................... 07
+     � Guiding Principles: Core values of the care model............................................................. 08
+     � Process of the development of the document......................................................
+
+[DIV-002 -- Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025) -- Definitions -- 'Universal DST' (p. 19)]
+       NATIONAL GUIDELINES FOR
+MANAGEMENT OF DRUG RESISTANT TB
+
+                     NATIONAL TB ELIMINATION
+                              PROGRAMME
+
+                        CENTRAL TB DIVISION
+
+                        MINISTRY OF HEALTH AND FAMILY WELFARE
+                                     GOVERNMENT OF INDIA
+NOVEMBER 2024  1
+2  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  3
+4  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  5
+6  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  7
+8  National Guidelines for Management of Drug Resistant TB
+                                Content
+
+MESSAGES                                                                                3-7
+
+ACKNOWLEDGEMENT                                                                            13
+
+LIST OF ABBREVIATIONS                                                                      15
+
+DEFINITIONS                                                                                17
+
+1. INTRODUCTION                                                                            19
+
+1.1. Global and national recommendations on newer shorter oral regimens                    19
+
+ 1.1.1 WHO recommendations on new, shorter, oral regimens                                  20
+
+ 1.1.2 Recommendations of the national technical expert group under NTEP                   20
+
+2. CASE FINDING AND DIAGNOSIS OF DRUG-SUSCEPTIBLE AND DRUG-RESISTANT TB  

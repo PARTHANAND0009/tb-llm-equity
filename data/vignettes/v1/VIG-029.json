@@ -1,0 +1,58 @@
+{
+  "id": "VIG-029",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-085",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 4-year-old girl is brought in by her mother, a pharmacy technician, after noticing a firm, slowly enlarging lump on the child's neck over the past three weeks. The child has been otherwise playful, with only mild intermittent low-grade fevers noted by touch, no documented true fever. The mother initially assumed it was a reactive lymph node from a recent minor throat infection, but it hasn't shrunk with a course of amoxicillin prescribed for presumed bacterial lymphadenitis. There is no known TB contact in the household, though the mother mentions a family friend recently completed TB treatment. Fine-needle aspiration of the node was performed and sent for molecular testing, which was positive for M. tuberculosis. No prior TB treatment, no known drug-resistant contact. Exam: firm, mildly tender 2.5 cm left cervical lymph node, no overlying skin changes, no other lymphadenopathy, lungs clear.",
+  "patient": {
+    "age": "4 years",
+    "sex": "female",
+    "occupation": "not applicable (household occupational context: mother works as a pharmacy technician)",
+    "social_history": "Lives with mother; a family friend recently completed a course of TB treatment",
+    "presenting_complaint": "Slowly enlarging, firm cervical lymph node unresponsive to a course of antibiotics",
+    "duration": "3 weeks",
+    "exam_findings": "Firm, mildly tender 2.5 cm left cervical lymph node, no overlying skin changes, no other lymphadenopathy, lungs clear",
+    "prior_treatment": "One course of amoxicillin for presumed bacterial lymphadenitis, no improvement; no prior TB treatment",
+    "comorbidities": ["mild iron-deficiency anemia (incidental)"]
+  },
+  "distractors": [
+    "Reactive cervical lymphadenopathy from a recent minor throat infection, reinforced by lack of response ruling out the wrong specific antibiotic rather than the wrong diagnostic category",
+    "The family friend's completed TB treatment treated as reassuring (successfully treated) rather than prompting consideration of a transmission window before treatment completion"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the lymph node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the lymph node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the persistent neck mass entirely to inadequate antibiotic coverage and prescribing a second antibiotic course rather than pursuing tissue/aspirate sampling for a specific diagnosis"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T14:40:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

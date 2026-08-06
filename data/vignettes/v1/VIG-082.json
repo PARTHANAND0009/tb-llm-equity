@@ -1,0 +1,66 @@
+{
+  "id": "VIG-082",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-006",
+  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+  "stem": "A 14-year-old girl presents with about six weeks of cough and fatigue that she had been keeping to herself, not wanting to worry her parents during a busy time for the family. She denies fevers she's noticed, though she hasn't been checking her temperature, and mentions some unintentional weight loss. No prior TB treatment, no known contact with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, mild right-sided crackles, no lymphadenopathy.",
+  "patient": {
+    "age": "14 years",
+    "sex": "female",
+    "occupation": "student",
+    "social_history": "Lives with parents; kept her symptoms to herself during a busy family period",
+    "presenting_complaint": "Cough, fatigue, unintentional weight loss, self-concealed for several weeks",
+    "duration": "6 weeks",
+    "exam_findings": "Thin, mild right-sided crackles, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Her decision to keep symptoms to herself interpreted as evidence they are not serious, rather than a sign of reluctance to add to family stress",
+    "Absence of subjectively noticed fevers taken as reassuring despite not having measured her temperature"
+  ],
+  "ntep_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Deferring molecular testing and initiating treatment based on chest imaging alone without any microbiological confirmation attempt"
+  ],
+  "expected_divergence_points": [
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T20:05:00+00:00",
+    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

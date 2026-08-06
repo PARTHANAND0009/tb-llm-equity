@@ -39,6 +39,27 @@ class Patient(BaseModel):
     comorbidities: list[str] = Field(default_factory=list)
 
 
+class ClinicianReview(BaseModel):
+    """Populated only from a real reviewer's own account of a real review --
+    never inferred, defaulted, or filled with placeholder text. This is
+    provenance that may be cited in a submission and in judge questioning;
+    see CLAUDE.md on why fabricating it would be a serious integrity
+    failure."""
+
+    model_config = ConfigDict(extra="forbid")
+
+    reviewer_name: str
+    reviewer_credentials: str
+    reviewer_institution: str
+    review_date: str
+    verdict: str
+    edits_requested: int = Field(..., ge=0)
+    review_scope: str = Field(
+        ..., description="Exactly what was reviewed, stated at the scope that actually occurred."
+    )
+    notes: str
+
+
 class Provenance(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -48,6 +69,10 @@ class Provenance(BaseModel):
     critique_passes: int = Field(..., ge=0, le=2)
     human_reviewed: bool
     clinician_reviewed: bool
+    clinician_review: ClinicianReview | None = Field(
+        default=None,
+        description="Set once a real clinician has actually reviewed this vignette.",
+    )
 
 
 class Vignette(BaseModel):

@@ -20,7 +20,7 @@ Systematic (deterministic round-robin), not random, assignment of strata to each
 
 Holdout: 15 of 100, stratified proportionally across the groups above (largest-remainder allocation).
 
-Matched pairs: 30 of 30 consensus_control cells are paired to an india_high cell (`matched_pair_id`) of the same presentation_type, matched on age_band and num_distractors where possible — see `scripts/build_stratification_plan.py::assign_matched_pairs`.
+Matched pairs: 30 of 30 consensus_control cells are paired to an india_high cell (`matched_pair_id`) of the same `primary_divergence_class` (hard constraint — see `scripts/build_stratification_plan.py::assign_matched_pairs`), preferring a match on age_band, then num_distractors, then presentation_type where possible.
 
 primary_divergence_class target split: 76 consensus_divergence / 24 national_adaptation (76% / 24%, target 75%/25%). This is a per-cell *request* honored by `scripts/generate_vignettes.py::divergence_rows_for` -- see `tests/test_divergence_coverage.py` for the check that grounding actually delivered on it.
 

@@ -199,31 +199,53 @@ def build_cells() -> list[dict]:
 
 def assign_matched_pairs(cells: list[dict]) -> None:
     """Pair each consensus_control cell to one india_high cell of the same
-    presentation_type, matched on age_band and num_distractors where possible.
+    `primary_divergence_class` — a HARD constraint, because the primary
+    consensus-deviation outcome (PREREGISTRATION.md) is only scored on
+    `consensus_divergence`-grounded vignettes and `matched_pair_id` is
+    preserved as a covariate in that analysis, not collapsed: a pair whose
+    two members ground in different classes has one member silently
+    excluded from the primary-outcome dataset, breaking the paired
+    contrast. (Caught post-generation on 2026-08-06 — see
+    `results/PREREGISTRATION.md` Amendments — and fixed here so it can't
+    recur.)
+
+    Within that constraint, candidates are ranked by (in priority order)
+    age_band match, num_distractors match, presentation_type match — the
+    best-scoring unused india_high cell is chosen. presentation_type is
+    deliberately a soft preference, not a second hard partition: the india_high
+    national_adaptation pool is small and unevenly spread across
+    presentation_type (e.g. no drug_resistant india_high cell targets
+    national_adaptation at all), so hard-partitioning on both class and type
+    would leave consensus_control cells unmatched even though a same-class
+    partner of a different type is available.
 
     Sets matched_pair_id on both sides (india_high side stays None if it was
     never chosen as a match — consensus_control counts are smaller than
     india_high counts per group, so most india_high cells are unmatched).
+    Sets matched_pair_id: None (not a forced mismatch) if no unused
+    same-class india_high cell exists at all.
     """
-    by_type: dict[str, dict[str, list[dict]]] = {}
+    by_class: dict[str, dict[str, list[dict]]] = {}
     for c in cells:
-        slot = by_type.setdefault(
-            c["presentation_type"], {"india_high": [], "consensus_control": []}
+        slot = by_class.setdefault(
+            c["primary_divergence_class"], {"india_high": [], "consensus_control": []}
         )
         slot[c["burden_class"]].append(c)
 
-    for groups in by_type.values():
+    for groups in by_class.values():
         india_cells = groups["india_high"]
         used_ids: set[str] = set()
-        for cc in groups["consensus_control"]:
+        for cc in sorted(groups["consensus_control"], key=lambda c: c["cell_id"]):
             candidates = [c for c in india_cells if c["cell_id"] not in used_ids]
             if not candidates:
                 continue
 
-            def match_score(c: dict, cc: dict = cc) -> tuple[bool, bool]:
+            def match_score(c: dict, cc: dict = cc) -> tuple[bool, bool, bool, str]:
                 return (
                     c["age_band"] != cc["age_band"],
                     c["num_distractors"] != cc["num_distractors"],
+                    c["presentation_type"] != cc["presentation_type"],
+                    c["cell_id"],  # deterministic tiebreak
                 )
 
             best = min(candidates, key=match_score)
@@ -272,9 +294,10 @@ def render_markdown(cells: list[dict]) -> str:
         "stratified proportionally across the groups above (largest-remainder allocation).",
         "",
         f"Matched pairs: {matched} of {consensus_total} consensus_control cells are paired to "
-        "an india_high cell (`matched_pair_id`) of the same presentation_type, matched on "
-        "age_band and num_distractors where possible — see "
-        "`scripts/build_stratification_plan.py::assign_matched_pairs`.",
+        "an india_high cell (`matched_pair_id`) of the same `primary_divergence_class` "
+        "(hard constraint — see `scripts/build_stratification_plan.py::assign_matched_pairs`), "
+        "preferring a match on age_band, then num_distractors, then presentation_type where "
+        "possible.",
         "",
         f"primary_divergence_class target split: "
         f"{primary_class_counts.get('consensus_divergence', 0)} consensus_divergence / "

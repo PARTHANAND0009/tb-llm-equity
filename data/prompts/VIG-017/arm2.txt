@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 5-year-old boy with a known history of mild, intermittent asthma (previously well-controlled with an as-needed inhaler) presents with about three weeks of cough that his parents initially treated as an asthma flare, increasing his inhaler use without improvement. He has had occasional low-grade fevers and has been less active at daycare per his teacher's report. No known TB contact in the household, though his parents mention a distant relative visited briefly a few months ago and 'seemed to cough a lot.' A gastric aspirate, obtained after he could not produce sputum, was positive for M. tuberculosis on molecular testing. No prior TB treatment, no known drug-resistant contact. Exam: mild wheeze plus new crackles at the left base, weight 17.1 kg.
+
+This patient is being seen at a district hospital in India.

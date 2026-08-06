@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 3-year-old boy, previously diagnosed with severe acute malnutrition and enrolled in a nutrition rehabilitation program, is brought in after about three weeks of increasing irritability, poor feeding, and two days of intermittent vomiting. His mother says he has seemed 'not right,' more sleepy than usual, though he is still rousable. There is no known TB contact in the household, though the family lives in crowded housing with frequent visitors. No prior TB treatment, no known drug-resistant contact. A lumbar puncture was performed given concern for meningitis; CSF showed elevated protein and lymphocytic pleocytosis, and was sent for molecular testing, which was positive for M. tuberculosis. Exam: lethargic but rousable, mild nuchal rigidity, no focal neurologic deficits, severely wasted (known baseline).

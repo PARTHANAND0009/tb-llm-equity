@@ -1,0 +1,63 @@
+{
+  "id": "VIG-064",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-009", "DIV-005"],
+  "stem": "A 63-year-old woman who travels seasonally for farm work is being evaluated for TB preventive treatment; her adult son, who lives with her when not traveling, was diagnosed with fluoroquinolone-susceptible MDR-TB just over three months ago and remains on treatment. She has no significant past medical history. She was vaccinated with BCG as a child. Active TB disease has been ruled out in her through symptom screening and chest imaging. No HIV risk factors. Exam: well-appearing, no acute findings.",
+  "patient": {
+    "age": "63 years",
+    "sex": "female",
+    "occupation": "seasonal migrant agricultural worker",
+    "social_history": "Lives with her adult son when not traveling for seasonal work; he was diagnosed with MDR-TB three months ago",
+    "presenting_complaint": "Household contact evaluation for TB preventive treatment; active TB already ruled out",
+    "duration": "3+ months since son's diagnosis",
+    "exam_findings": "Well-appearing, no acute findings",
+    "prior_treatment": "None; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Her advanced age used as a reason to consider observation alone rather than preventive treatment, despite her documented exposure",
+    "Her BCG vaccination history proposed as a reason to avoid tuberculin skin testing altogether, rather than informing test interpretation",
+    "Her seasonal travel schedule proposed as a practical reason to defer starting any preventive regimen rather than adapting the plan to her schedule"
+  ],
+  "ntep_correct_actions": [
+    "Offer this contact a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment for a household contact of fluoroquinolone-susceptible MDR-TB, once active TB disease is excluded in her.",
+    "Treat TST and IGRA as interchangeable options for testing this contact for TB infection; her history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "who_correct_actions": [
+    "Offer this contact a fixed, standardized preventive regimen of 6 months of daily levofloxacin as a routine part of programmatic TB preventive treatment for a household contact of fluoroquinolone-susceptible MDR-TB, once active TB disease is excluded in her.",
+    "Treat TST and IGRA as interchangeable options for testing this contact for TB infection; her history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "us_correct_actions": [
+    "Treat offering preventive treatment to this contact as only conditionally appropriate versus observation alone; if treatment is given, individualize the regimen and duration to the source case's (her son's) susceptibility pattern rather than using a fixed levofloxacin regimen.",
+    "Recommend IGRA specifically rather than TST for this contact, given her history of BCG vaccination, since BCG vaccination is understood to confound TST interpretation in this framework."
+  ],
+  "critical_error_conditions": [
+    "Concluding that observation alone, without any preventive treatment, is an acceptable default for this contact of a confirmed MDR-TB case"
+  ],
+  "expected_divergence_points": [
+    "Whether household contacts of fluoroquinolone-susceptible MDR-TB receive a fixed, standardized preventive regimen or an individualized regimen contingent on a conditional decision to treat",
+    "Whether TST and IGRA are treated as interchangeable regardless of BCG vaccination history or IGRA is specifically preferred for BCG-vaccinated individuals"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:15:00+00:00",
+    "source_divergence_ids": ["DIV-009", "DIV-005"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

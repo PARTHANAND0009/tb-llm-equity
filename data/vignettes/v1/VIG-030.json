@@ -1,0 +1,59 @@
+{
+  "id": "VIG-030",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": "VIG-086",
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 16-year-old girl with known rheumatic heart disease, followed intermittently at a local clinic, presents with about six weeks of right-sided chest pain and progressive breathlessness, initially attributed by her family to her heart condition acting up. She has had low-grade fevers she hadn't mentioned because she assumed they were part of her usual health issues. No prior TB treatment, no known TB contact, no known drug-resistant contact. Chest exam and imaging reveal a moderate right-sided pleural effusion. Thoracentesis was performed; pleural fluid was sent for molecular testing (in addition to biochemical and ADA testing), which returned positive for M. tuberculosis. Exam: decreased breath sounds and dullness to percussion at the right base, a known systolic murmur consistent with her rheumatic heart disease, no lower extremity edema.",
+  "patient": {
+    "age": "16 years",
+    "sex": "female",
+    "occupation": "homemaker; student",
+    "social_history": "Lives with family in a rural household; known rheumatic heart disease followed intermittently",
+    "presenting_complaint": "Right-sided chest pain and progressive breathlessness, initially attributed to known heart disease",
+    "duration": "6 weeks",
+    "exam_findings": "Decreased breath sounds and dullness to percussion at right base, known systolic murmur, no lower extremity edema, moderate right pleural effusion on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["rheumatic heart disease (established, significant)"]
+  },
+  "distractors": [
+    "Worsening rheumatic heart disease proposed as sufficient explanation for the breathlessness and chest pain without considering a new, separate process",
+    "Low-grade fevers dismissed as an ordinary feature of her chronic condition rather than investigated as a new finding",
+    "A parapneumonic effusion from an unrecognized bacterial pneumonia proposed as an alternative cause of the pleural fluid"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the pleural fluid), alongside biochemical/ADA testing, as a first-line microbiological tool rather than anchoring the workup around culture and histology alone."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the pleural fluid), alongside biochemical/ADA testing, as a first-line microbiological tool rather than anchoring the workup around culture and histology alone."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the pleural effusion entirely to her known rheumatic heart disease and deferring pleural fluid sampling and molecular testing"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T14:45:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

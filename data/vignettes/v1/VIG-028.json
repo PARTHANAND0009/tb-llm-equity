@@ -1,0 +1,68 @@
+{
+  "id": "VIG-028",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
+  "stem": "A 70-year-old woman, long retired from a small manufacturing job but still active in her community, presents after more than three months of cough that she attributed to 'just getting older.' Her daughter insisted on a visit after noticing she seemed increasingly breathless during their weekly walks together, an activity she has done for years without difficulty. She denies major weight loss but her appetite has been reduced. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray shows a non-cavitary right infiltrate. Exam: mild crackles, otherwise unremarkable.",
+  "patient": {
+    "age": "70 years",
+    "sex": "female",
+    "occupation": "retired factory/manufacturing worker",
+    "social_history": "Lives independently, active in her community; longstanding weekly walking routine with her daughter",
+    "presenting_complaint": "Chronic cough attributed to age, new breathlessness during a longstanding routine activity",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Mild crackles, otherwise unremarkable, non-cavitary right infiltrate on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Breathlessness during a longstanding walking routine attributed to normal age-related decline rather than a new illness",
+    "Reduced appetite attributed to general aging rather than a systemic infectious cause",
+    "Chronic cough dismissed by the patient herself as an unremarkable part of getting older"
+  ],
+  "ntep_correct_actions": [
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care.",
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step."
+  ],
+  "who_correct_actions": [
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care.",
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step."
+  ],
+  "us_correct_actions": [
+    "Continuation-phase dosing may be switched to thrice-weekly (or twice-weekly if directly observed therapy is difficult), since this patient is HIV-negative and at low relapse risk (non-cavitary, smear-negative disease).",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band.",
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step."
+  ],
+  "critical_error_conditions": [
+    "Starting this patient on intermittent dosing from treatment initiation rather than daily dosing throughout",
+    "Deferring molecular testing due to the negative smear result and relying on clinical impression alone"
+  ],
+  "expected_divergence_points": [
+    "Whether daily dosing is used throughout treatment or intermittent dosing is offered for a low-relapse-risk patient",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg",
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T14:35:00+00:00",
+    "source_divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

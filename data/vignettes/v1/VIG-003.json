@@ -1,0 +1,67 @@
+{
+  "id": "VIG-003",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-079",
+  "divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
+  "stem": "A 34-year-old day laborer presents after nearly ten weeks of productive cough and night sweats, having initially tried to work through the symptoms because missing a day's work means no pay. He reports drinking heavily most evenings, an increase since a family loss several months ago, and eats irregularly depending on what work is available that day. He mentions occasional low-grade fevers but hasn't tracked his temperature. No prior TB treatment, no known contact with drug-resistant TB. Sputum smear is negative but Xpert MTB/RIF is positive, rifampicin not detected. Chest X-ray shows a right upper lobe infiltrate without cavitation. Weight 52 kg, BMI 16.8, exam notable for temporal wasting and mild hepatomegaly.",
+  "patient": {
+    "age": "34 years",
+    "sex": "male",
+    "occupation": "informal daily wage laborer",
+    "social_history": "Lives alone; heavy daily alcohol use, increased since a recent family bereavement; irregular meals tied to daily work availability",
+    "presenting_complaint": "Productive cough, night sweats, unintentional weight loss",
+    "duration": "10 weeks",
+    "exam_findings": "Temporal wasting, mild hepatomegaly, weight 52 kg, BMI 16.8, right upper zone crackles",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["heavy alcohol use", "malnutrition"]
+  },
+  "distractors": [
+    "Alcohol-related hepatomegaly and general malaise mistaken for a primary hepatic process rather than a systemic infectious cause",
+    "Chronic bronchitis from a heavy smoking history (~15 cigarettes/day) proposed as the explanation for the productive cough"
+  ],
+  "ntep_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Administer first-line anti-TB therapy on a daily dosing schedule throughout both the intensive and continuation phases; do not offer an intermittent (thrice- or twice-weekly) dosing option.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Continuation-phase dosing may be switched to thrice-weekly (or twice-weekly if directly observed therapy is difficult), since this patient is HIV-negative and at low relapse risk (non-cavitary, smear-negative disease).",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Ruling out TB based on the negative smear alone without acting on the positive molecular result",
+    "Placing this patient on an intermittent dosing schedule from the start of the intensive phase, which is never appropriate regardless of relapse risk"
+  ],
+  "expected_divergence_points": [
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether daily dosing is used throughout treatment or intermittent dosing is offered for a low-relapse-risk patient",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T12:10:00+00:00",
+    "source_divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "VIG-068",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-011", "DIV-005"],
+  "stem": "A 66-year-old retired factory worker living with HIV, on antiretroviral therapy for many years, is being evaluated for TB preventive treatment as part of her routine HIV care. She has mild, well-controlled hypertension. She was vaccinated with BCG many decades ago, per old records. Active TB disease has been ruled out through symptom screening and chest imaging. No TBI test has been performed, as testing capacity at her clinic has been limited recently. Exam: well-appearing, no acute findings.",
+  "patient": {
+    "age": "66 years",
+    "sex": "female",
+    "occupation": "retired factory/manufacturing worker",
+    "social_history": "Living with HIV, on ART for many years, routine TB preventive treatment evaluation",
+    "presenting_complaint": "Routine TPT evaluation; active TB already ruled out; TBI testing not available due to clinic capacity limits",
+    "duration": "12+ weeks (recent limited testing capacity at her clinic)",
+    "exam_findings": "Well-appearing, no acute findings",
+    "prior_treatment": "On established antiretroviral therapy; no prior TB treatment",
+    "comorbidities": ["HIV, on ART", "mild, well-controlled hypertension"]
+  },
+  "distractors": [
+    "The absence of a completed TBI test treated as a reason to delay initiating TB preventive treatment",
+    "Her advanced age used as a reason to consider TB preventive treatment lower priority",
+    "Her longstanding, well-controlled hypertension proposed as a reason to defer starting any additional preventive medication"
+  ],
+  "ntep_correct_actions": [
+    "Start this patient on TB preventive treatment now that active TB disease has been ruled out; a positive TBI (TST/IGRA) test is not required as a prerequisite for starting TPT in a person living with HIV.",
+    "Treat TST and IGRA as interchangeable options if TBI testing does become available for this patient; her history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "who_correct_actions": [
+    "Start this patient on TB preventive treatment now that active TB disease has been ruled out; a positive TBI (TST/IGRA) test is not required as a prerequisite for starting TPT in a person living with HIV.",
+    "Treat TST and IGRA as interchangeable options if TBI testing does become available for this patient; her history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "us_correct_actions": [
+    "Treat this patient's TB preventive treatment as contingent on a confirmed positive TBI test, since this framework's regimens are framed around treatment of confirmed latent TB infection rather than an empiric-without-testing pathway for people living with HIV.",
+    "Recommend IGRA specifically rather than TST for this patient, given her history of BCG vaccination, since BCG vaccination is understood to confound TST interpretation in this framework."
+  ],
+  "critical_error_conditions": [
+    "Delaying TB preventive treatment for this patient indefinitely because a TBI test was not available, rather than proceeding on the basis that active TB disease has already been excluded"
+  ],
+  "expected_divergence_points": [
+    "Whether a positive TBI test is required before starting TB preventive treatment in a person living with HIV",
+    "Whether TST and IGRA are treated as interchangeable regardless of BCG vaccination history or IGRA is specifically preferred for BCG-vaccinated individuals"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:35:00+00:00",
+    "source_divergence_ids": ["DIV-011", "DIV-005"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 47-year-old day laborer with several years of stone-cutting and construction work presents with about ten weeks of cough and progressive breathlessness, previously diagnosed with silicosis two years ago after a workplace health screening. He assumed his current symptoms were simply his silicosis worsening, as it often does gradually. He has lost some weight recently, which his family attributes to reduced appetite from his breathing difficulty. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest imaging shows nodular silicotic changes bilaterally without a discrete new cavity. Exam: reduced breath sounds bilaterally, scattered crackles, mild digital clubbing.

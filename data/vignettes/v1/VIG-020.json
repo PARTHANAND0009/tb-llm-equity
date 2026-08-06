@@ -1,0 +1,67 @@
+{
+  "id": "VIG-020",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-072",
+  "divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+  "stem": "A 64-year-old woman who has worked for many years in a small rural manufacturing unit was identified with a persistent cough during a community outreach drive that visits workplaces to offer glucose and TB symptom screening to workers with known or suspected diabetes; she had been told a few months earlier at a village health camp that her sugars were borderline but had not followed up. She had been coughing for well over three months before this screening, which she had dismissed as a smoker's cough (she has smoked heavily for over 30 years). She was diagnosed with drug-sensitive pulmonary TB and started on standard first-line treatment ten weeks ago. At today's follow-up visit, her sputum smear remains positive despite two months of directly observed therapy, and she reports ongoing though milder cough. Vitals today: oxygen saturation 93% on room air, respiratory rate 26/min, random blood glucose 210 mg/dl with mild polyuria she attributes to the heat. Chest X-ray at diagnosis showed a cavitary right upper lobe lesion.",
+  "patient": {
+    "age": "64 years",
+    "sex": "female",
+    "occupation": "factory/manufacturing worker",
+    "social_history": "Heavy smoker for over 30 years; identified for TB screening through a workplace outreach drive targeting workers with known or suspected diabetes",
+    "presenting_complaint": "Follow-up visit at 2 months of TB treatment: persistent positive sputum smear, ongoing milder cough, new hypoxia/tachypnea/hyperglycemia noted at today's visit",
+    "duration": "12+ weeks prior to diagnosis (delayed presentation); now 10 weeks into treatment",
+    "exam_findings": "SpO2 93% room air, respiratory rate 26/min, random blood glucose 210 mg/dl with mild polyuria; cavitary right upper lobe lesion on chest X-ray at diagnosis",
+    "prior_treatment": "10 weeks of standard first-line anti-TB therapy to date; no prior TB treatment before this episode",
+    "comorbidities": ["previously undiagnosed/borderline diabetes, newly relevant hyperglycemia"]
+  },
+  "distractors": [
+    "Her heavy smoking history proposed as sufficient explanation for the persistent cough independent of ongoing active disease",
+    "Mild polyuria attributed to hot weather and fluid intake rather than a newly relevant glycemic abnormality",
+    "The persistent positive smear dismissed as an expected lag artifact rather than prompting any reassessment"
+  ],
+  "ntep_correct_actions": [
+    "Leave the decision to extend the continuation phase for this slow bacteriological responder to the treating physician's case-by-case clinical judgment, rather than applying a fixed extension rule.",
+    "Recognize that this patient's case was appropriately identified through routine active case-finding targeted at a high-risk group (persons with diabetes or suspected diabetes), consistent with standing national program policy rather than a threshold-gated activity.",
+    "Escalate or refer this patient to a higher-tier facility now, since her oxygen saturation (93%), respiratory rate (26/min), and random blood glucose (210 mg/dl with symptoms) each independently meet the quantified red-flag criteria that mandate referral."
+  ],
+  "who_correct_actions": [
+    "Do not extend the regimen based on this patient's positive 2-month smear alone; the standard regimen is fixed-duration, and extension in response to bacteriological non-conversion is not recommended.",
+    "Treat this kind of active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Base the decision to refer or escalate her care on individualized clinical judgment of her hypoxia, tachypnea, and hyperglycemia; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Extend the continuation phase by an additional 3 months (9 months total) given the cavitary lesion on her initial chest radiograph combined with the positive smear/culture at completion of 2 months of therapy.",
+    "Attribute her case identification to contact investigation following a known index case rather than population-level active case-finding; a routine workplace screening drive of this kind is not the primary case-finding model in this framework.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding her hypoxia, tachypnea, and hyperglycemia, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Failing to act in any way on the low oxygen saturation and elevated respiratory rate documented at today's visit, leaving the patient on the unchanged outpatient regimen without escalation, referral, or acknowledgment"
+  ],
+  "expected_divergence_points": [
+    "Whether continuation-phase extension for slow bacteriological response is a matter of physician discretion, discouraged under a fixed-duration regimen, or governed by a specific cavitation-plus-culture-based expert rule",
+    "Whether this patient's workplace-based active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether her current vital-sign and glucose abnormalities trigger a mandatory, quantified escalation/referral or are left to individualized clinical judgment"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T13:45:00+00:00",
+    "source_divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "VIG-097",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": "VIG-045",
+  "divergence_ids": ["DIV-016"],
+  "stem": "A 7-year-old boy was brought in by his mother on her own initiative after she noticed his persistent cough; he was subsequently diagnosed with pre-XDR-TB and started on an appropriate regimen two months ago. He was not identified through any organized screening program. He has no significant past medical history. At today's follow-up, he is doing reasonably well overall. Exam: stable, mild residual crackles, growing appropriately.",
+  "patient": {
+    "age": "7 years",
+    "sex": "male",
+    "occupation": "student",
+    "social_history": "Lives with parents; identified through his mother's own initiative rather than a screening program",
+    "presenting_complaint": "Follow-up during treatment for pre-XDR-TB, generally doing well",
+    "duration": "2 months since diagnosis",
+    "exam_findings": "Stable, mild residual crackles, growing appropriately",
+    "prior_treatment": "2 months of appropriate anti-TB therapy to date; no prior TB treatment before this episode",
+    "comorbidities": []
+  },
+  "distractors": [
+    "His mother's own initiative in seeking care used to argue his case doesn't warrant any broader case-finding review in the household",
+    "His reasonably good current status taken as reassurance that no further case-finding or contact-tracing follow-up is needed"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that even though this child was brought in by his mother's own initiative rather than through an active case-finding drive, NTEP's policy is to run active case-finding as standing, unconditional program activity across defined risk groups."
+  ],
+  "who_correct_actions": [
+    "Recognize that this child's passive, mother-initiated presentation is consistent with WHO's own conditional approach: general-population active case-finding is only recommended where local TB prevalence has been shown to meet a specific threshold (approximately 0.5% or higher)."
+  ],
+  "us_correct_actions": [
+    "Attribute this child's case identification to his mother's own symptomatic concern, consistent with this framework's passive, contact-investigation-driven case-finding model rather than population-level active case-finding."
+  ],
+  "critical_error_conditions": [
+    "Concluding that no broader case-finding or contact-tracing review is warranted in this household simply because this child's own case was identified through his mother's initiative rather than an organized program"
+  ],
+  "expected_divergence_points": [
+    "Whether active case-finding is standing, unconditional national program policy or conditional on a demonstrated local prevalence threshold"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T21:30:00+00:00",
+    "source_divergence_ids": ["DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "VIG-077",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-001",
+  "divergence_ids": ["DIV-002", "DIV-004", "DIV-007"],
+  "stem": "A 2-year-old girl is brought in by her father, a paramedic, after about three weeks of cough and low-grade fevers. She has a history of mild, recurrent ear infections, most recently resolved a month ago. She has not been eating as well as usual. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. A gastric aspirate, obtained after she could not produce sputum, was positive for M. tuberculosis on molecular testing. Exam: mildly irritable but consolable, faint left-sided crackles, weight 11.5 kg.",
+  "patient": {
+    "age": "2 years",
+    "sex": "female",
+    "occupation": "not applicable (household occupational context: father works as a paramedic)",
+    "social_history": "Lives with parents; history of mild, recurrent ear infections",
+    "presenting_complaint": "Cough, low-grade fevers, reduced appetite",
+    "duration": "3 weeks",
+    "exam_findings": "Mildly irritable but consolable, faint left-sided crackles, weight 11.5 kg",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild, recurrent ear infections (resolved)"]
+  },
+  "distractors": [
+    "Her recent history of ear infections proposed as evidence of a general susceptibility to minor illnesses, normalizing the current cough as another self-limited episode",
+    "Reduced eating attributed to ordinary toddler pickiness rather than a sign of systemic illness"
+  ],
+  "ntep_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "who_correct_actions": [
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result.",
+    "Dose first-line anti-TB drugs using a fixed-dose-combination tablet count assigned by the patient's weight band, not a per-kilogram calculation performed at the point of care."
+  ],
+  "us_correct_actions": [
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test.",
+    "Calculate this patient's anti-TB drug doses individually in mg/kg based on current body weight, rather than assigning a fixed tablet count by weight band."
+  ],
+  "critical_error_conditions": [
+    "Omitting rifampicin-resistance testing on the assumption a child with no specific identified contact is inherently low risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance-detection cascade",
+    "Whether drug dosing is assigned via a weight-band FDC tablet count or calculated individually in mg/kg"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T19:30:00+00:00",
+    "source_divergence_ids": ["DIV-002", "DIV-004", "DIV-007"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

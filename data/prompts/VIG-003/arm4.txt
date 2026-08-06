@@ -1,0 +1,70 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 34-year-old day laborer presents after nearly ten weeks of productive cough and night sweats, having initially tried to work through the symptoms because missing a day's work means no pay. He reports drinking heavily most evenings, an increase since a family loss several months ago, and eats irregularly depending on what work is available that day. He mentions occasional low-grade fevers but hasn't tracked his temperature. No prior TB treatment, no known contact with drug-resistant TB. Sputum smear is negative but Xpert MTB/RIF is positive, rifampicin not detected. Chest X-ray shows a right upper lobe infiltrate without cavitation. Weight 52 kg, BMI 16.8, exam notable for temporal wasting and mild hepatomegaly.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-006 -- ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022) -- Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE]
+March/ 2022
+
+                                                    Department of Health Research
+                                  Ministry of Health and Family Welfare, Government of India
+
+                    Standard Treatment Workflow (STW) Guidelines for
+
+            DRUG SENSITIVE-TB TREATMENT AS PER NTEP
+
+For all TB patients whether being treated in public or private sector, clinicians should follow Standards for TB care in India guidelines
+In NTEP, the principle of TB treatment (except confirmed DR-TB) is to administer daily FDC of 1st line ATT in appropriate weight bands,
+under direct observation
+For patients being treated in private sector, FDCs may be provided by NTEP whenever requested
+
+                                Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE
+
+             This regimen is for H & R sensitive TB cases and cases where the sensitivity pattern can not be established
+
+Treatment is given in two phases:
+1. Intensive phase consists of 8 weeks (56 doses) of isoniazid (H), rifampicin (R), pyrazinamide (Z) and ethambutol (E) given under
+
+   direct observation in daily dosages as per weight band categories
+2. Continuation phase consists of 16 weeks (112 doses) of isoniazid, rifampicin and ethambutol in daily dosages. Only pyrazinamide
+
+   will be stopped in the continuation phase. The CP needs to be extended upto 24 weeks in certain forms of TB like CNS TB,
+   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case b
+
+[DIV-007 -- ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022) -- Number of tablets (FDCs) by weight category, adult and paediatric tables]
+March/ 2022
+
+                                                    Department of Health Research
+                                  Ministry of Health and Family Welfare, Government of India
+
+                    Standard Treatment Workflow (STW) Guidelines for
+
+            DRUG SENSITIVE-TB TREATMENT AS PER NTEP
+
+For all TB patients whether being treated in public or private sector, clinicians should follow Standards for TB care in India guidelines
+In NTEP, the principle of TB treatment (except confirmed DR-TB) is to administer daily FDC of 1st line ATT in appropriate weight bands,
+under direct observation
+For patients being treated in private sector, FDCs may be provided by NTEP whenever requested
+
+                                Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE
+
+             This regimen is for H & R sensitive TB cases and cases where the sensitivity pattern can not be established
+
+Treatment is given in two phases:
+1. Intensive phase consists of 8 weeks (56 doses) of isoniazid (H), rifampicin (R), pyrazinamide (Z) and ethambutol (E) given under
+
+   direct observation in daily dosages as per weight band categories
+2. Continuation phase consists of 16 weeks (112 doses) of isoniazid, rifampicin and ethambutol in daily dosages. Only pyrazinamide
+
+   will be stopped in the continuation phase. The CP needs to be extended upto 24 weeks in certain forms of TB like CNS TB,
+   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case b
+
+[DIV-001 -- NTEP Knowledge Base, "Principles of TB Diagnosis under NTEP", Central TB Division -- Diagnostic algorithm for presumptive pulmonary TB]
+NTEP directs providers to use rapid molecular diagnostics (CBNAAT/TrueNat) upfront wherever possible as the initial test for presumptive pulmonary TB. In the standard workflow, one specimen is tested by NAAT and, only if TB is detected, a second specimen proceeds to LPA/liquid culture for the resistance-detection cascade -- culture is not a routine parallel requirement for treatment initiation.

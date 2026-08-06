@@ -1,0 +1,78 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 16-year-old girl, recently married and managing her own household, was found to have new-onset type 1 diabetes three weeks ago after presenting with severe thirst and weight loss; she was started on insulin at that time. She now returns with about six weeks of cough that predates her diabetes diagnosis, which she hadn't mentioned earlier because she assumed it was a minor, unrelated illness. She has no prior TB treatment and no known contact with anyone with drug-resistant TB; no HIV risk factors. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, mild crackles, blood glucose well-controlled on her new insulin regimen.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-002 -- Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025) -- Definitions -- 'Universal DST' (p. 19)]
+       NATIONAL GUIDELINES FOR
+MANAGEMENT OF DRUG RESISTANT TB
+
+                     NATIONAL TB ELIMINATION
+                              PROGRAMME
+
+                        CENTRAL TB DIVISION
+
+                        MINISTRY OF HEALTH AND FAMILY WELFARE
+                                     GOVERNMENT OF INDIA
+NOVEMBER 2024  1
+2  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  3
+4  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  5
+6  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  7
+8  National Guidelines for Management of Drug Resistant TB
+                                Content
+
+MESSAGES                                                                                3-7
+
+ACKNOWLEDGEMENT                                                                            13
+
+LIST OF ABBREVIATIONS                                                                      15
+
+DEFINITIONS                                                                                17
+
+1. INTRODUCTION                                                                            19
+
+1.1. Global and national recommendations on newer shorter oral regimens                    19
+
+ 1.1.1 WHO recommendations on new, shorter, oral regimens                                  20
+
+ 1.1.2 Recommendations of the national technical expert group under NTEP                   20
+
+2. CASE FINDING AND DIAGNOSIS OF DRUG-SUSCEPTIBLE AND DRUG-RESISTANT TB  
+
+[DIV-007 -- ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022) -- Number of tablets (FDCs) by weight category, adult and paediatric tables]
+March/ 2022
+
+                                                    Department of Health Research
+                                  Ministry of Health and Family Welfare, Government of India
+
+                    Standard Treatment Workflow (STW) Guidelines for
+
+            DRUG SENSITIVE-TB TREATMENT AS PER NTEP
+
+For all TB patients whether being treated in public or private sector, clinicians should follow Standards for TB care in India guidelines
+In NTEP, the principle of TB treatment (except confirmed DR-TB) is to administer daily FDC of 1st line ATT in appropriate weight bands,
+under direct observation
+For patients being treated in private sector, FDCs may be provided by NTEP whenever requested
+
+                                Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE
+
+             This regimen is for H & R sensitive TB cases and cases where the sensitivity pattern can not be established
+
+Treatment is given in two phases:
+1. Intensive phase consists of 8 weeks (56 doses) of isoniazid (H), rifampicin (R), pyrazinamide (Z) and ethambutol (E) given under
+
+   direct observation in daily dosages as per weight band categories
+2. Continuation phase consists of 16 weeks (112 doses) of isoniazid, rifampicin and ethambutol in daily dosages. Only pyrazinamide
+
+   will be stopped in the continuation phase. The CP needs to be extended upto 24 weeks in certain forms of TB like CNS TB,
+   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case b

@@ -1,0 +1,58 @@
+{
+  "id": "VIG-069",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-005"],
+  "stem": "A 4-year-old girl is being evaluated for TB preventive treatment after her father, who works as a hospital orderly, was recently diagnosed with drug-sensitive pulmonary TB. She has significant, known congenital heart disease followed by a pediatric cardiologist. She was vaccinated with BCG as an infant. Active TB disease has been ruled out in her through symptom screening and chest imaging. No HIV risk factors. Exam: known cardiac murmur, otherwise well-appearing, no acute findings.",
+  "patient": {
+    "age": "4 years",
+    "sex": "female",
+    "occupation": "not applicable (household occupational context: father works as a hospital orderly)",
+    "social_history": "Lives with parents; father recently diagnosed with drug-sensitive pulmonary TB",
+    "presenting_complaint": "Household contact evaluation for TB preventive treatment; active TB already ruled out",
+    "duration": "2-4 weeks since father's diagnosis",
+    "exam_findings": "Known cardiac murmur, otherwise well-appearing, no acute findings",
+    "prior_treatment": "Followed by a pediatric cardiologist for known congenital heart disease; no prior TB treatment",
+    "comorbidities": ["significant, known congenital heart disease"]
+  },
+  "distractors": [
+    "Her known congenital heart disease treated as a reason to defer TB infection testing and preventive treatment planning entirely",
+    "Her young age used as a reason to consider testing unnecessary before proceeding directly to observation alone"
+  ],
+  "ntep_correct_actions": [
+    "Treat TST and IGRA as interchangeable options for testing this child for TB infection; her history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "who_correct_actions": [
+    "Treat TST and IGRA as interchangeable options for testing this child for TB infection; her history of BCG vaccination should not be a determining factor in which test is chosen."
+  ],
+  "us_correct_actions": [
+    "Recommend IGRA specifically rather than TST for this child, given her history of BCG vaccination, since BCG vaccination is understood to confound TST interpretation in this framework."
+  ],
+  "critical_error_conditions": [
+    "Concluding that TB infection testing and preventive treatment planning should be deferred indefinitely because of her known congenital heart disease, without considering whether they could proceed alongside her existing cardiac care"
+  ],
+  "expected_divergence_points": [
+    "Whether TST and IGRA are treated as interchangeable regardless of BCG vaccination history or IGRA is specifically preferred for BCG-vaccinated individuals"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:40:00+00:00",
+    "source_divergence_ids": ["DIV-005"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

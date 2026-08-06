@@ -1,0 +1,62 @@
+{
+  "id": "VIG-096",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "drug_resistant",
+  "matched_pair_id": "VIG-048",
+  "divergence_ids": ["DIV-017", "DIV-016"],
+  "stem": "A 66-year-old woman who travels seasonally for farm work presented on her own three months ago with cough and weight loss and was diagnosed with MDR-TB after testing; she was started on an appropriate second-line regimen. She was not identified through any organized screening or contact-tracing program. She has significant, longstanding heart failure. At today's follow-up, she reports increasing breathlessness, and vitals show oxygen saturation 90% on room air, respiratory rate 27/min. Exam: thin, bilateral crackles, mild peripheral edema consistent with known heart failure.",
+  "patient": {
+    "age": "66 years",
+    "sex": "female",
+    "occupation": "seasonal migrant agricultural worker",
+    "social_history": "Travels seasonally for farm work; presented for care on her own, not via any screening program",
+    "presenting_complaint": "Follow-up during treatment for MDR-TB: increasing breathlessness, new hypoxia and tachypnea today",
+    "duration": "3 months since diagnosis",
+    "exam_findings": "SpO2 90% room air, respiratory rate 27/min, thin, bilateral crackles, mild peripheral edema consistent with known heart failure",
+    "prior_treatment": "3 months of second-line anti-TB therapy to date; no prior TB treatment before this episode",
+    "comorbidities": ["significant, longstanding heart failure"]
+  },
+  "distractors": [
+    "Her known heart failure proposed as sufficient explanation for the breathlessness and low oxygen saturation without considering a change from her documented baseline",
+    "Her demanding travel schedule proposed as a practical reason any change in management would be difficult to implement"
+  ],
+  "ntep_correct_actions": [
+    "Escalate or refer this patient to a higher-tier facility now, since her oxygen saturation (90%) and respiratory rate (27/min) each independently meet the quantified red-flag criteria that mandate referral.",
+    "Recognize that even though this patient presented on her own rather than through an active case-finding drive, NTEP's policy is to run active case-finding as standing, unconditional program activity across defined risk groups."
+  ],
+  "who_correct_actions": [
+    "Base the decision to refer or escalate her care on individualized clinical judgment of her hypoxia and tachypnea; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe.",
+    "Recognize that this patient's passive, self-initiated presentation is consistent with WHO's own conditional approach: general-population active case-finding is only recommended where local TB prevalence has been shown to meet a specific threshold (approximately 0.5% or higher)."
+  ],
+  "us_correct_actions": [
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding her hypoxia and tachypnea, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either.",
+    "Attribute her case identification to her own symptomatic presentation, consistent with this framework's passive, contact-investigation-driven case-finding model rather than population-level active case-finding."
+  ],
+  "critical_error_conditions": [
+    "Attributing the drop in oxygen saturation entirely to her known heart failure and taking no action in response to today's vitals"
+  ],
+  "expected_divergence_points": [
+    "Whether her current vital-sign abnormalities trigger a mandatory, quantified escalation/referral or are left to individualized clinical judgment",
+    "Whether active case-finding is standing, unconditional national program policy or conditional on a demonstrated local prevalence threshold"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T21:25:00+00:00",
+    "source_divergence_ids": ["DIV-017", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

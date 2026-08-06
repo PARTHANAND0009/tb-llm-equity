@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 34-year-old day laborer presents after nearly ten weeks of productive cough and night sweats, having initially tried to work through the symptoms because missing a day's work means no pay. He reports drinking heavily most evenings, an increase since a family loss several months ago, and eats irregularly depending on what work is available that day. He mentions occasional low-grade fevers but hasn't tracked his temperature. No prior TB treatment, no known contact with drug-resistant TB. Sputum smear is negative but Xpert MTB/RIF is positive, rifampicin not detected. Chest X-ray shows a right upper lobe infiltrate without cavitation. Weight 52 kg, BMI 16.8, exam notable for temporal wasting and mild hepatomegaly.
+
+This patient is being seen at a district hospital in India.

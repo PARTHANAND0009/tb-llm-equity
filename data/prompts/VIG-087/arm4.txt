@@ -1,0 +1,26 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 49-year-old man, medically retired after a chronic illness, presents with about eleven weeks of worsening low-back pain radiating to both legs, which he and his family initially attributed to years of manual work before his retirement. Over-the-counter analgesics have given only partial relief, and he has lost some weight without trying. No prior TB treatment, no known TB contact, no known drug-resistant contact. MRI of the spine shows destruction of two adjacent vertebral bodies with a paraspinal collection, concerning for spinal TB (Pott's disease). CT-guided aspiration of the paraspinal collection was sent for molecular testing, which was positive for M. tuberculosis. Exam: point tenderness over the lower lumbar spine, mild bilateral leg weakness, no bowel or bladder involvement.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant protocol excerpts:
+[DIV-003 -- Lewinsohn DM et al., Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Recommendation 7 (p. e16)]
+tandard micro-        significant inconsistency in the meta-analyses.
+biologic test for the diagnosis of TB disease. The isolate
+recovered should be identified according to the Clinical and           Recommendation 7: We suggest performing a diagnostic
+Laboratory Standards Institute guidelines and the American          NAAT, rather than not performing a NAAT, on the initial res-
+Society for Microbiology Manual of Clinical Microbiology            piratory specimen from patients suspected of having pulmo-
+[133, 134].                                                         nary TB (conditional recommendation, low-quality evidence).
+                                                                    Remarks: In AFB smear�positive patients, a negative NAAT
+Rationale                                                           makes TB disease unlikely. In AFB smear�negative patients
+Mycobacterial culture is the laboratory gold standard for tuber-    with an intermediate to high level of suspicion for disease,
+culosis diagnosis, but the preferred type of cultures is uncer-     a positive NAAT can be used as presumptive evidence of TB
+tain. Liquid cultures alone are reasonably sensitive and highly     disease, but a negative NAAT cannot be used to exclude pul-
+specific, but limited by contamination. Solid cultures alone        monary TB. Appropriate NAATs include the Hologic Amplified
+are not sufficiently sensitive to reliably diagnose TB and gen-     Mycobacteria Tuberculosis Direct (

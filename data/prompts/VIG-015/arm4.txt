@@ -1,0 +1,56 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 38-year-old man, medically retired after a workplace accident left him with a permanent leg injury, presents with about nine weeks of cough and unintentional weight loss. He has stage 3 chronic kidney disease followed by a local clinic, managed with dietary restriction and medication. He initially attributed his fatigue to his kidney condition and didn't mention the cough at his last routine visit. He denies prior TB treatment and has no known contact with anyone with drug-resistant TB; he has not traveled outside the area and has no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, mild bibasilar crackles, mild peripheral edema consistent with his known kidney disease.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-001 -- NTEP Knowledge Base, "Principles of TB Diagnosis under NTEP", Central TB Division -- Diagnostic algorithm for presumptive pulmonary TB]
+NTEP directs providers to use rapid molecular diagnostics (CBNAAT/TrueNat) upfront wherever possible as the initial test for presumptive pulmonary TB. In the standard workflow, one specimen is tested by NAAT and, only if TB is detected, a second specimen proceeds to LPA/liquid culture for the resistance-detection cascade -- culture is not a routine parallel requirement for treatment initiation.
+
+[DIV-002 -- Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025) -- Definitions -- 'Universal DST' (p. 19)]
+       NATIONAL GUIDELINES FOR
+MANAGEMENT OF DRUG RESISTANT TB
+
+                     NATIONAL TB ELIMINATION
+                              PROGRAMME
+
+                        CENTRAL TB DIVISION
+
+                        MINISTRY OF HEALTH AND FAMILY WELFARE
+                                     GOVERNMENT OF INDIA
+NOVEMBER 2024  1
+2  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  3
+4  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  5
+6  National Guidelines for Management of Drug Resistant TB
+NOVEMBER 2024  7
+8  National Guidelines for Management of Drug Resistant TB
+                                Content
+
+MESSAGES                                                                                3-7
+
+ACKNOWLEDGEMENT                                                                            13
+
+LIST OF ABBREVIATIONS                                                                      15
+
+DEFINITIONS                                                                                17
+
+1. INTRODUCTION                                                                            19
+
+1.1. Global and national recommendations on newer shorter oral regimens                    19
+
+ 1.1.1 WHO recommendations on new, shorter, oral regimens                                  20
+
+ 1.1.2 Recommendations of the national technical expert group under NTEP                   20
+
+2. CASE FINDING AND DIAGNOSIS OF DRUG-SUSCEPTIBLE AND DRUG-RESISTANT TB  
+
+[DIV-004 -- NTEP Knowledge Base, "Principles of TB Diagnosis under NTEP", Central TB Division -- Upfront NAAT cascade description]
+In NTEP's standard workflow, culture is reached only as the second step of a cascade after an initial NAAT-positive result (for LPA/liquid culture resistance testing) -- it is not a universally mandated parallel test performed on every presumptive-TB patient regardless of the NAAT result.

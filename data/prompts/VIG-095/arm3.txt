@@ -1,0 +1,12 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 44-year-old man, medically retired, presented on his own four months ago with cough and was diagnosed with rifampicin mono-resistant TB after testing; he was started on an appropriate resistance-adjusted regimen. He was not identified through any organized screening or contact-tracing program -- he sought care himself. He has mild, well-controlled hypertension. At today's follow-up, he reports feeling generally unwell, and vitals show oxygen saturation 91% on room air, respiratory rate 26/min. Exam: thin, bilateral crackles.
+
+This patient is being seen at a teaching hospital in the United States.
+
+Relevant background rates: the United States recorded a TB incidence rate of 3.1 cases per 100,000 population (10,388 cases) in 2024, one of the lowest incidence rates of any country (CDC, "TB in the US, 2024").

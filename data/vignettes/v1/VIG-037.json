@@ -1,0 +1,58 @@
+{
+  "id": "VIG-037",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "extrapulmonary",
+  "matched_pair_id": null,
+  "divergence_ids": ["DIV-003"],
+  "stem": "A 5-year-old boy is brought in by his father, who works as a hospital orderly, after about three weeks of intermittent abdominal pain, low-grade fevers, and reduced appetite. His mother initially thought it was a recurring stomach bug going around the neighborhood. He has become noticeably less active. No known TB contact in the household, though the family lives in a densely populated building. No prior TB treatment, no known drug-resistant contact. Abdominal ultrasound shows mesenteric lymphadenopathy with a small amount of free fluid. Ultrasound-guided fine-needle aspiration of a mesenteric node was performed and sent for molecular testing, which was positive for M. tuberculosis. Exam: mild diffuse abdominal tenderness, no guarding, no palpable mass, no peripheral lymphadenopathy.",
+  "patient": {
+    "age": "5 years",
+    "sex": "male",
+    "occupation": "not applicable (household occupational context: father works as a hospital orderly)",
+    "social_history": "Lives with parents in a densely populated residential building",
+    "presenting_complaint": "Intermittent abdominal pain, low-grade fevers, reduced appetite, reduced activity",
+    "duration": "3 weeks",
+    "exam_findings": "Mild diffuse abdominal tenderness, no guarding, no palpable mass, mesenteric lymphadenopathy with free fluid on imaging",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "A recurring viral gastrointestinal illness circulating in the neighborhood proposed as the explanation for the abdominal pain",
+    "Reduced activity and appetite attributed to ordinary childhood fussiness rather than a persistent process"
+  ],
+  "ntep_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the mesenteric node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "who_correct_actions": [
+    "Perform upfront molecular testing (NAAT) directly on the accessible extrapulmonary specimen (the mesenteric node aspirate) as the first-line microbiological tool, rather than anchoring the workup around culture and histology as the primary reference standard."
+  ],
+  "us_correct_actions": [
+    "Anchor the diagnostic workup for this extrapulmonary presentation around culture and histology as the reference standard, treating molecular testing as a general, conditional adjunct rather than the upfront first-line tool for extrapulmonary specimens."
+  ],
+  "critical_error_conditions": [
+    "Attributing the abdominal findings entirely to a self-limited viral illness and deferring molecular testing on the aspirate already obtained"
+  ],
+  "expected_divergence_points": [
+    "Whether upfront molecular testing on the accessible extrapulmonary specimen is the first-line diagnostic tool or culture/histology remains the anchoring reference standard"
+  ],
+  "holdout": true,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T15:30:00+00:00",
+    "source_divergence_ids": ["DIV-003"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

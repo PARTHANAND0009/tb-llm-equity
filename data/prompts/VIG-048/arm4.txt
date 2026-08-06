@@ -1,0 +1,68 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 68-year-old woman who travels seasonally for farm work was identified for TB symptom screening during a mobile outreach clinic that periodically screens seasonal workers with known diabetes, part of a standing program activity. She has had more than three months of cough, which she attributed to years of exposure to field dust. Her diabetes has been poorly controlled, and she admits she often runs out of her medication while traveling. No known TB contact. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows bilateral cavitary disease. Random blood glucose today: 260 mg/dl, with polyuria and increased thirst she attributes to the heat. Exam: thin, mild crackles bilaterally, no edema.
+
+This patient is being seen at a district hospital in India.
+
+Relevant protocol excerpts:
+[DIV-017 -- Central TB Division, National Guidance on Differentiated TB Care (March 2025) -- Box 4.3, Differentiated TB Care Evaluation, Triaging & Management (p. 19)]
+    National Guidance
+on Differentiated TB Care
+
+                           March 2025
+
+       National TB Elimination Programme
+
+       Central TB Division Ministry of Health & Family Welfare
+                            Government of India
+   National Guidance
+on DifferentiatedTB Care
+
+           Central TB Division
+  Ministry of Health & Family Welfare
+
+           Government of India
+Table of Contents
+
+Executive Summary ........................................................................................................................ xi
+1. Introduction ............................................................................................................................. 01
+
+     � Background .......................................................................................................................... 01
+     � Rationale of Differentiated TB Care....................................................................................... 03
+     � Goals and Objectives .............................................................................................................. 07
+     � Scope........................................................................................................................................... 07
+     � Guiding Principles: Core values of the care model............................................................. 08
+     � Process of the development of the document......................................................
+
+[DIV-016 -- Ministry of Health & Family Welfare, "Initiatives & Achievements-2024" (PIB) -- Item 6, Active Case Finding (p. 8)]
+          Ministry of Health & Family Welfare
+
+                      Initiatives & Achievements-2024
+
+1. Ayushman Bharat:
+
+Ayushman Bharat comprises of four components:
+
+    a. Ayushman Arogya Mandir
+
+   The first component pertains to creation of 1,50,000 Health and Wellness Centres (AB-HWCs),
+   now renamed as Ayushman Arogya Mandir, by upgrading the Sub Health Centres (SHCs) and
+   rural and urban Primary Health Centres (PHCs), in both urban and rural areas, to bring health
+   care closer to the community. These centres aim to provide Comprehensive Primary Health
+   Care (CPHC), by expanding and strengthening the existing Reproductive & Child Health
+   (RCH) and Communicable Diseases services and by including services related to Non-
+   Communicable Diseases (common NCDs such as, Hypertension, Diabetes and three common
+   cancers of Oral, Breast and Cervix) and incrementally adding primary healthcare services for
+   mental health, ENT, Ophthalmology, Oral health, Geriatric and Palliative care and Trauma care
+   as well as health promotion and wellness activities like yoga.
+
+   Comprehensive Primary Health Care (CPHC) through Ayushman Arogya Mandir � Ayushman
+   Bharat aims to holistically address health (covering preventive, promotive, curative,
+   rehabilitative and palliative care), at primary, secondary and tertiary level by adopting a
+   continuum of care approach. In the lifetime of an individual, the primary healthcare services
+   cater to 80- 90% of the healthcare n

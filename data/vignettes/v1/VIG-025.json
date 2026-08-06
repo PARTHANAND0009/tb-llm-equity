@@ -1,0 +1,64 @@
+{
+  "id": "VIG-025",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-095",
+  "divergence_ids": ["DIV-016", "DIV-020", "DIV-021"],
+  "stem": "An 8-year-old boy was identified during a school-based TB screening program that periodically checks students in the area for symptoms, part of a standing outreach activity; his teacher had noted he seemed unusually tired in recent weeks but hadn't flagged a specific complaint. On questioning, his mother reports about three weeks of intermittent low-grade fever and a mild cough she hadn't thought worth a clinic visit. He has no significant past medical history and his growth has been age-appropriate. No known TB contact in the household. Chest X-ray shows right paratracheal lymphadenopathy without cavitation or miliary pattern. Sputum could not be produced despite coaching, and a gastric aspirate was negative on smear and molecular testing. No HIV risk factors, no suspicion of drug resistance. Exam: well-appearing, no respiratory distress, no palpable lymphadenopathy outside the chest findings on imaging.",
+  "patient": {
+    "age": "8 years",
+    "sex": "male",
+    "occupation": "student",
+    "social_history": "Lives with parents; identified via a school-based screening program rather than by the family seeking care",
+    "presenting_complaint": "Intermittent low-grade fever and mild cough, noted as unusual tiredness by his teacher",
+    "duration": "3 weeks",
+    "exam_findings": "Well-appearing, no respiratory distress, right paratracheal lymphadenopathy on imaging, no palpable lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "Generalized tiredness noted only by his teacher, without a specific parental complaint, treated as insufficient grounds for further evaluation",
+    "Mild, intermittent low-grade fever attributed to a string of ordinary childhood viral illnesses rather than a persistent process"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that this child's case was appropriately identified through routine, systematic school-based active case-finding, consistent with standing national program policy rather than a threshold-gated activity.",
+    "Start this child, who has non-severe disease without evidence of drug resistance, on the standard 6-month regimen (2HRZE/4HRE); no shorter regimen is offered regardless of severity.",
+    "Diagnose this child using clinical judgment: the suggestive imaging pattern together with the negative bacteriological results and supportive clues is sufficient to diagnose clinically-diagnosed TB, without a defined, weighted scoring tool."
+  ],
+  "who_correct_actions": [
+    "Treat this kind of school-based screening as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Start this child on a 4-month regimen (2HRZ(E)/2HR) rather than the standard 6-month regimen, since he is between 3 months and 16 years of age with non-severe TB and no suspicion or evidence of MDR/RR-TB.",
+    "Consider using a structured integrated treatment-decision algorithm, which allocates evidence-based scores to microbiological, clinical, and radiological findings, as an option for diagnosing this child's presumptive pulmonary TB rather than relying solely on unstructured clinical judgment."
+  ],
+  "us_correct_actions": [
+    "Attribute this child's case identification to contact investigation following a known TB contact rather than population-level active case-finding; a routine school-based screening program of this kind is not the primary case-finding model in this framework."
+  ],
+  "critical_error_conditions": [
+    "Withholding any TB treatment from this child on the grounds that bacteriological confirmation was not obtained, despite suggestive imaging and an appropriate clinical diagnostic pathway."
+  ],
+  "expected_divergence_points": [
+    "Whether this child's school-based case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether a 4-month or 6-month regimen is used for non-severe paediatric TB",
+    "Whether an unstructured clinical-judgment approach or a structured, scored treatment-decision algorithm is used to diagnose bacteriologically-unconfirmed paediatric TB"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T14:20:00+00:00",
+    "source_divergence_ids": ["DIV-016", "DIV-020", "DIV-021"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

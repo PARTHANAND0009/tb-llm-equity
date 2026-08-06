@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 45-year-old man, medically retired after a chronic back condition, was identified for TB screening during a routine outreach visit to a residential facility for people with disabilities where he currently lives; this is part of a standing program that screens residents of such congregate settings. He was diagnosed with drug-sensitive pulmonary TB two months ago and has been on standard first-line treatment since, directly observed by facility staff. He has mild, well-controlled hypothyroidism. At today's 2-month follow-up, his sputum smear remains positive and he reports persistent, though somewhat improved, cough. Vitals today: oxygen saturation 91% on room air, respiratory rate 25/min, blood pressure 108/68 (he mentions occasional lightheadedness, which he attributes to his thyroid condition). Initial chest imaging showed a cavitary left upper lobe lesion.

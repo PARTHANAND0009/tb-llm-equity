@@ -1,0 +1,68 @@
+{
+  "id": "VIG-080",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-008",
+  "divergence_ids": ["DIV-001", "DIV-002", "DIV-004"],
+  "stem": "A 68-year-old woman who travels between seasonal work sites presents after more than three months of cough and weight loss, delayed by her travel schedule and difficulty accessing consistent care while moving between locations. She has mild, longstanding vision impairment managed with glasses. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, bilateral crackles.",
+  "patient": {
+    "age": "68 years",
+    "sex": "female",
+    "occupation": "seasonal migrant worker",
+    "social_history": "Travels between seasonal work sites; irregular access to consistent healthcare while traveling",
+    "presenting_complaint": "Cough and weight loss, care delayed by travel schedule",
+    "duration": "12+ weeks (delayed presentation)",
+    "exam_findings": "Thin, bilateral crackles",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": ["mild, longstanding vision impairment"]
+  },
+  "distractors": [
+    "Her irregular access to care while traveling proposed as a barrier that makes any specific diagnostic pathway impractical to pursue consistently",
+    "Her mild vision impairment proposed as an unrelated chronic issue that distracts from the respiratory complaint",
+    "The poor-quality initial sputum sample treated as a reason to abandon molecular testing rather than recollect or proceed with the specimen obtained"
+  ],
+  "ntep_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result."
+  ],
+  "who_correct_actions": [
+    "Order Xpert MTB/RIF or an equivalent WHO-recommended rapid molecular test as the initial diagnostic test for this presumptive TB case, rather than defaulting to smear microscopy and culture as the first step.",
+    "Perform rifampicin-resistance testing on this patient's initial diagnostic specimen regardless of prior treatment history, birth/residence history, contact history, or HIV status.",
+    "Do not order mycobacterial culture as a routine parallel test alongside the initial molecular test; reserve culture for the downstream resistance-testing cascade after a positive molecular result."
+  ],
+  "us_correct_actions": [
+    "Send AFB smear microscopy as the initial test for every patient with presumptive pulmonary TB, and treat a diagnostic molecular test as an optional conditional adjunct rather than the mandatory first step.",
+    "Reserve rapid rifampicin-resistance testing for patients who meet at least one specific risk criterion (prior TB treatment, birth in or residence in a higher-TB-incidence country, contact with a known MDR-TB case, or HIV infection); do not order it routinely for a patient with none of these risk factors.",
+    "Send both liquid and solid mycobacterial culture on the initial specimen regardless of the molecular test result, since culture is considered the gold-standard microbiologic test."
+  ],
+  "critical_error_conditions": [
+    "Deferring molecular testing because the initial sputum sample was of poor quality, rather than proceeding with the test on the specimen obtained or promptly recollecting one",
+    "Omitting rifampicin-resistance testing because this patient's presentation seems low-risk for resistant disease"
+  ],
+  "expected_divergence_points": [
+    "Whether molecular testing or smear microscopy is treated as the mandatory first-line diagnostic test",
+    "Whether rifampicin-resistance testing is ordered universally or only for patients meeting specific US risk criteria",
+    "Whether mycobacterial culture is ordered as a mandatory parallel test or reserved for the resistance-detection cascade"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T19:45:00+00:00",
+    "source_divergence_ids": ["DIV-001", "DIV-002", "DIV-004"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

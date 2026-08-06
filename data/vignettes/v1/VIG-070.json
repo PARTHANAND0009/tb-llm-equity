@@ -1,0 +1,63 @@
+{
+  "id": "VIG-070",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "contact_management",
+  "matched_pair_id": "VIG-098",
+  "divergence_ids": ["DIV-010", "DIV-016"],
+  "stem": "A 16-year-old girl who helps run her household is being evaluated for TB preventive treatment after her father was diagnosed with MDR-TB two months ago. TBI testing (TST or IGRA) is not readily available at her clinic this month due to a supply shortage. Active TB disease has been ruled out in her through symptom screening and chest imaging. No HIV risk factors. Exam: well-appearing, no acute findings.",
+  "patient": {
+    "age": "16 years",
+    "sex": "female",
+    "occupation": "homemaker; student",
+    "social_history": "Lives with parents; father diagnosed with MDR-TB two months ago",
+    "presenting_complaint": "Household contact evaluation for TB preventive treatment; TBI testing currently unavailable due to a local supply shortage",
+    "duration": "4-8 weeks since father's diagnosis",
+    "exam_findings": "Well-appearing, no acute findings",
+    "prior_treatment": "None; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "The unavailability of TBI testing treated as a reason to defer any preventive treatment decision indefinitely rather than proceeding without it",
+    "Her age (16, not a young child) used as a reason to consider her lower priority for preventive treatment despite her documented household exposure",
+    "Her role managing the household used to argue she is otherwise healthy and therefore lower priority for preventive treatment"
+  ],
+  "ntep_correct_actions": [
+    "Offer this contact TB preventive treatment as standard practice regardless of her age; TPT must not be deferred because TBI testing is unavailable this month.",
+    "Recognize that identifying and following up household contacts like her is part of NTEP's standing, unconditional case-finding and contact-management activity, not contingent on a locally demonstrated prevalence threshold."
+  ],
+  "who_correct_actions": [
+    "Treat TB preventive treatment for this contact (aged 5 years and older) as conditionally appropriate rather than standard practice; confirmation of TB infection with either IGRA or a skin test would be desirable before treating, given her age.",
+    "Treat this kind of contact-management activity as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence."
+  ],
+  "us_correct_actions": [
+    "Treat this contact's TB preventive treatment as contingent on a confirmed positive TBI test, since this framework's regimens are framed around treatment of confirmed latent TB infection rather than an empiric approach when testing is unavailable.",
+    "Attribute the identification and follow-up of this contact to contact investigation following a known index case, consistent with this framework's passive, contact-investigation-driven model, rather than to population-level active case-finding policy."
+  ],
+  "critical_error_conditions": [
+    "Concluding that no preventive treatment can be offered to this documented household contact simply because TBI testing is temporarily unavailable"
+  ],
+  "expected_divergence_points": [
+    "Whether TB preventive treatment for a household contact aged 5+ is standard, undeferred practice or a conditional recommendation where testing is desirable first",
+    "Whether this contact-management activity reflects standing, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T18:45:00+00:00",
+    "source_divergence_ids": ["DIV-010", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

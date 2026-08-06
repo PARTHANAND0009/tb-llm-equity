@@ -1,0 +1,25 @@
+{
+  "run_id": "generate-vignettes-claude-code-20260805T200615Z",
+  "model_identifiers": [
+    {
+      "family": "anthropic",
+      "name": "claude-code-agent",
+      "version": "claude-code-agent"
+    }
+  ],
+  "temperature": 0.9,
+  "top_p": 1.0,
+  "max_tokens": 1600,
+  "seed": 42,
+  "prompt_template_hash": "c4a8f13d35f7611e8de6526ef13e78aee417b35ed44c0e662409fba706e00720",
+  "vignette_set_version": "v1",
+  "git_commit_sha": "78a95894c6bf6cc76b1d9559deca353b6f9714ea",
+  "utc_timestamp": "2026-08-05T20:06:15.605986+00:00",
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "accepted": 90,
+  "rejected": 0,
+  "mode": "claude-code",
+  "prompts_written_this_run": 10,
+  "pending": 10
+}

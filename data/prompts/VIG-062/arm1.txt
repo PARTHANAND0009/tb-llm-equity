@@ -1,0 +1,8 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 13-year-old girl who helps her mother manage the household presents with about six weeks of cough and fatigue. She has mild, well-controlled seasonal allergies. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed additional isoniazid resistance (MDR-TB) with preserved fluoroquinolone susceptibility. No HIV risk factors, no known contact with any other drug-resistant TB case. She lives with her 6-year-old brother, who is asymptomatic on screening. Exam: thin, mild bilateral crackles, no lymphadenopathy.

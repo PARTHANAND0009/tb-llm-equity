@@ -1,0 +1,63 @@
+{
+  "id": "VIG-098",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "contact_management",
+  "matched_pair_id": "VIG-070",
+  "divergence_ids": ["DIV-017", "DIV-016"],
+  "stem": "A 16-year-old girl living with HIV, on antiretroviral therapy, presented on her own for a TB symptom check after noticing her own persistent cough; she was not identified through any organized screening program. Her most recent CD4 count was 90 cells/uL. Active TB disease has been confirmed and treatment started. At today's visit, oxygen saturation is 93% and respiratory rate is 25/min. Exam: thin, mild crackles.",
+  "patient": {
+    "age": "16 years",
+    "sex": "female",
+    "occupation": "agricultural worker (family smallholding) and student",
+    "social_history": "Lives with parents in a rural household; living with HIV, on ART; presented for care on her own",
+    "presenting_complaint": "Follow-up during active TB treatment: CD4 90 cells/uL, new mild hypoxia and tachypnea today",
+    "duration": "4-8 weeks since diagnosis",
+    "exam_findings": "SpO2 93%, respiratory rate 25/min, thin, mild crackles",
+    "prior_treatment": "On established antiretroviral therapy and current anti-TB therapy; no prior TB treatment before this episode",
+    "comorbidities": ["HIV, on ART, CD4 90 cells/uL"]
+  },
+  "distractors": [
+    "Her self-initiated presentation used to argue that routine HIV-linked TB screening is unnecessary for her going forward",
+    "Her CD4 count treated as a chronic baseline finding rather than prompting reassessment given today's vitals",
+    "Her mild crackles and stable-appearing exam taken as reassuring despite the vital-sign findings"
+  ],
+  "ntep_correct_actions": [
+    "Escalate or refer this patient to a higher-tier facility now, since her CD4 count (90 cells/uL) and oxygen saturation (93%) each independently meet the quantified red-flag criteria that mandate referral.",
+    "Recognize that even though this patient presented on her own rather than through an active case-finding drive, NTEP's policy is to run active case-finding as standing, unconditional program activity targeted at people living with HIV."
+  ],
+  "who_correct_actions": [
+    "Base the decision to refer or escalate her care on individualized clinical judgment of her CD4 count and oxygen saturation; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe.",
+    "Recognize that this patient's passive, self-initiated presentation is consistent with WHO's own conditional approach: HIV-linked active case-finding is only recommended where local TB prevalence has been shown to meet a specific threshold."
+  ],
+  "us_correct_actions": [
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding her CD4 count and oxygen saturation, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either.",
+    "Attribute her case identification to her own symptomatic presentation, consistent with this framework's passive, contact-investigation-driven case-finding model rather than population-level active case-finding."
+  ],
+  "critical_error_conditions": [
+    "Failing to act on her severely low CD4 count and reduced oxygen saturation at today's visit, leaving her on routine outpatient management without escalation"
+  ],
+  "expected_divergence_points": [
+    "Whether her current CD4 count and vital-sign abnormalities trigger a mandatory, quantified escalation/referral or are left to individualized clinical judgment",
+    "Whether active case-finding among people living with HIV is standing, unconditional national program policy or conditional on a demonstrated local prevalence threshold"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T21:35:00+00:00",
+    "source_divergence_ids": ["DIV-017", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

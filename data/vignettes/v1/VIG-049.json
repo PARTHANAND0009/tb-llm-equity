@@ -1,0 +1,58 @@
+{
+  "id": "VIG-049",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "comorbid",
+  "matched_pair_id": "VIG-099",
+  "divergence_ids": ["DIV-016"],
+  "stem": "A 6-year-old boy living with perinatally acquired HIV, on antiretroviral therapy followed at a pediatric clinic, was identified for TB symptom screening during a routine outreach visit that systematically checks children living with HIV for TB, part of a standing program activity. His grandmother, his primary caregiver, reports about three weeks of intermittent cough and reduced playfulness, which she had not thought serious enough to bring him in for on her own. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows a left hilar lymphadenopathy pattern. Exam: well-appearing, mild left-sided crackles, no respiratory distress, weight tracking at his usual percentile.",
+  "patient": {
+    "age": "6 years",
+    "sex": "male",
+    "occupation": "student",
+    "social_history": "Lives with grandmother (primary caregiver); living with perinatally acquired HIV, on ART, followed at a pediatric clinic",
+    "presenting_complaint": "Intermittent cough and reduced playfulness, identified via HIV-linked TB screening",
+    "duration": "3 weeks",
+    "exam_findings": "Well-appearing, mild left-sided crackles, no respiratory distress, left hilar lymphadenopathy on imaging, weight at usual percentile",
+    "prior_treatment": "None for this episode; on established antiretroviral therapy; no prior TB treatment",
+    "comorbidities": ["HIV, perinatally acquired, on ART"]
+  },
+  "distractors": [
+    "Reduced playfulness attributed to his usual HIV-related fluctuations in energy rather than a new, superimposed process",
+    "Intermittent cough attributed to ordinary childhood illnesses rather than a persistent process warranting focused evaluation"
+  ],
+  "ntep_correct_actions": [
+    "Recognize that this child's case was appropriately identified through routine active case-finding targeted at children living with HIV, consistent with standing national program policy rather than a threshold-gated activity."
+  ],
+  "who_correct_actions": [
+    "Treat this kind of HIV-linked active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence."
+  ],
+  "us_correct_actions": [
+    "Attribute this child's case identification to contact investigation following a known TB contact rather than population-level active case-finding targeted at a risk group; this framework's primary case-finding model is passive, contact-investigation-driven."
+  ],
+  "critical_error_conditions": [
+    "Delaying any TB workup because the cough was identified through a screening program rather than the family's own presenting concern, treating program-detected symptoms in a high-risk child as lower priority than self-reported ones"
+  ],
+  "expected_divergence_points": [
+    "Whether this child's HIV-linked active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T16:40:00+00:00",
+    "source_divergence_ids": ["DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

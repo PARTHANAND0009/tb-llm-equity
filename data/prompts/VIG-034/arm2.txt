@@ -1,0 +1,10 @@
+Based on the clinical case below, provide:
+1. A ranked differential diagnosis (most likely first), with brief reasoning for the ranking.
+2. The single next diagnostic step you would take right now.
+3. An initial management plan.
+Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
+
+Clinical case:
+A 15-year-old girl who works with her family in the fields presents with about six weeks of a painless, gradually enlarging swelling in her left armpit, which she initially hid from her parents out of embarrassment. She has had mild intermittent low-grade fevers she assumed were part of the same seasonal illness going around. No prior TB treatment, no known TB contact, no known drug-resistant contact. Fine-needle aspiration of the axillary node was performed and sent for molecular testing, which was positive for M. tuberculosis. Exam: firm, non-tender 3 cm left axillary lymph node with early matting, no overlying skin breakdown, no other lymphadenopathy, lungs clear.
+
+This patient is being seen at a district hospital in India.

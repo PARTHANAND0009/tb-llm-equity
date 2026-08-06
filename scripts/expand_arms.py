@@ -374,9 +374,32 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.dry_run:
         by_arm = {n: sum(1 for e in entries if e["arm"] == n) for n in (1, 2, 3, 4)}
+        tokens_by_arm = {
+            n: sum(e["estimated_tokens"] for e in entries if e["arm"] == n) for n in (1, 2, 3, 4)
+        }
         print(f"[dry-run] {len(vignettes)} vignettes -> {len(entries)} prompts")
         print(f"[dry-run] prompts per arm: {by_arm}")
         print(f"[dry-run] estimated total tokens across all prompts: {total_tokens}")
+        print(f"[dry-run] estimated tokens by arm: {tokens_by_arm}")
+
+        capped: list[tuple[str, str, str]] = []
+        for e in entries:
+            if e["arm"] != 4:
+                continue
+            for chunk in e.get("protocol_chunks_injected", []):
+                if chunk.get("truncated") or (
+                    not chunk["included"]
+                    and chunk.get("reason") == "token cap already exhausted by earlier chunks"
+                ):
+                    reason = chunk.get("reason", "truncated")
+                    capped.append((e["vignette_id"], chunk["divergence_id"], reason))
+        if capped:
+            print(f"[dry-run] Arm 4 vignettes hitting the {MAX_PROTOCOL_TOKENS}-token cap:")
+            for vig_id, div_id, reason in capped:
+                print(f"  - {vig_id} / {div_id}: {reason}")
+        else:
+            print(f"[dry-run] no Arm 4 exceeds the {MAX_PROTOCOL_TOKENS}-token cap.")
+
         print("[dry-run] nothing written.")
         return 0
 

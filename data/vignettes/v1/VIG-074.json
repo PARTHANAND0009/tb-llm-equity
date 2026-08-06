@@ -1,0 +1,65 @@
+{
+  "id": "VIG-074",
+  "version": "v1",
+  "burden_class": "consensus_control",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-022",
+  "divergence_ids": ["DIV-020", "DIV-021", "DIV-016"],
+  "stem": "A 13-year-old girl presents after her aunt, with whom she is staying temporarily, became concerned about six weeks of low-grade fever and cough; she was not identified through any screening program. She denies major weight loss and her growth has otherwise tracked normally. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows a right-sided pleural-based opacity with hilar prominence, no cavitation. Two attempts at sputum induction were unsuccessful due to poor cooperation, and a subsequent gastric aspirate was negative on both smear and molecular testing. No HIV risk factors, no suspicion of drug resistance. Exam: mild tachypnea, dullness to percussion at the right base, no peripheral lymphadenopathy.",
+  "patient": {
+    "age": "13 years",
+    "sex": "female",
+    "occupation": "student",
+    "social_history": "Temporarily staying with an aunt; brought in on the aunt's own initiative, not through a screening program",
+    "presenting_complaint": "Low-grade fever and cough, noticed by her aunt",
+    "duration": "6 weeks",
+    "exam_findings": "Mild tachypnea, dullness to percussion at right base, right-sided pleural-based opacity with hilar prominence on imaging, no lymphadenopathy",
+    "prior_treatment": "None for this episode; no prior TB treatment ever",
+    "comorbidities": []
+  },
+  "distractors": [
+    "A recent, unrelated viral respiratory illness proposed as the cause of the pleural-based opacity",
+    "Her aunt's concern treated as an overreaction from someone unfamiliar with the child's usual baseline, delaying focused evaluation",
+    "Her normal growth trajectory used to argue against a significant underlying illness"
+  ],
+  "ntep_correct_actions": [
+    "Start this adolescent, who has non-severe disease without evidence of drug resistance, on the standard 6-month regimen (2HRZE/4HRE); no shorter regimen is offered regardless of severity.",
+    "Diagnose this adolescent using clinical judgment: the suggestive imaging findings together with the negative bacteriological results and supportive clues are sufficient to diagnose clinically-diagnosed TB, without a defined, weighted scoring tool.",
+    "Recognize that even though this adolescent was brought in by her aunt's own initiative rather than through an active case-finding drive, NTEP's policy is to run active case-finding as standing, unconditional program activity across defined risk groups."
+  ],
+  "who_correct_actions": [
+    "Start this adolescent on a 4-month regimen (2HRZ(E)/2HR) rather than the standard 6-month regimen, since she is within the 3-months-to-16-years age range for non-severe TB with no suspicion or evidence of MDR/RR-TB.",
+    "Consider using a structured integrated treatment-decision algorithm, which allocates evidence-based scores to microbiological, clinical, and radiological findings, as an option for diagnosing this adolescent's presumptive pulmonary TB rather than relying solely on unstructured clinical judgment.",
+    "Recognize that this adolescent's passive, aunt-initiated presentation -- rather than identification through an active screening program -- is consistent with WHO's own conditional approach to general-population active case-finding, which is only recommended where local TB prevalence has been shown to meet a specific threshold."
+  ],
+  "us_correct_actions": [
+    "Attribute this adolescent's case identification to her aunt's own symptomatic concern, consistent with this framework's passive, contact-investigation-driven case-finding model rather than population-level active case-finding."
+  ],
+  "critical_error_conditions": [
+    "Withholding treatment from this adolescent on the grounds that bacteriological confirmation was not obtained, despite a clinically suggestive presentation and an appropriate diagnostic pathway for confirming TB without microbiological proof"
+  ],
+  "expected_divergence_points": [
+    "Whether a 4-month or 6-month regimen is used for non-severe paediatric TB",
+    "Whether an unstructured clinical-judgment approach or a structured, scored treatment-decision algorithm is used to diagnose bacteriologically-unconfirmed paediatric TB",
+    "Whether active case-finding is standing, unconditional national program policy or conditional on a demonstrated local prevalence threshold"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T19:15:00+00:00",
+    "source_divergence_ids": ["DIV-020", "DIV-021", "DIV-016"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

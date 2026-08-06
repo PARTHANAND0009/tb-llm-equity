@@ -1,0 +1,66 @@
+{
+  "id": "VIG-023",
+  "version": "v1",
+  "burden_class": "india_high",
+  "presentation_type": "pulmonary",
+  "matched_pair_id": "VIG-071",
+  "divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+  "stem": "A 45-year-old man, medically retired after a chronic back condition, was identified for TB screening during a routine outreach visit to a residential facility for people with disabilities where he currently lives; this is part of a standing program that screens residents of such congregate settings. He was diagnosed with drug-sensitive pulmonary TB two months ago and has been on standard first-line treatment since, directly observed by facility staff. He has mild, well-controlled hypothyroidism. At today's 2-month follow-up, his sputum smear remains positive and he reports persistent, though somewhat improved, cough. Vitals today: oxygen saturation 91% on room air, respiratory rate 25/min, blood pressure 108/68 (he mentions occasional lightheadedness, which he attributes to his thyroid condition). Initial chest imaging showed a cavitary left upper lobe lesion.",
+  "patient": {
+    "age": "45 years",
+    "sex": "male",
+    "occupation": "retired (medically retired, chronic back condition)",
+    "social_history": "Resident of a congregate care facility for people with disabilities; identified via a routine facility-based screening outreach",
+    "presenting_complaint": "Follow-up visit at 2 months of TB treatment: persistent positive sputum smear, new hypoxia and tachypnea noted today",
+    "duration": "8-12 weeks prior to diagnosis; now 2 months into treatment",
+    "exam_findings": "SpO2 91% room air, respiratory rate 25/min, BP 108/68; cavitary left upper lobe lesion on chest X-ray at diagnosis",
+    "prior_treatment": "2 months of standard first-line anti-TB therapy to date; no prior TB treatment before this episode",
+    "comorbidities": ["mild, well-controlled hypothyroidism"]
+  },
+  "distractors": [
+    "His baseline hypothyroidism proposed as the explanation for the lightheadedness rather than an acute change related to his TB",
+    "The persistent cough at 2 months dismissed as an expected residual symptom not warranting reassessment of his vitals"
+  ],
+  "ntep_correct_actions": [
+    "Leave the decision to extend the continuation phase for this slow bacteriological responder to the treating physician's case-by-case clinical judgment, rather than applying a fixed extension rule.",
+    "Recognize that this patient's case was appropriately identified through routine active case-finding targeted at residents of a congregate/institutional setting, consistent with standing national program policy rather than a threshold-gated activity.",
+    "Escalate or refer this patient to a higher-tier facility now, since his oxygen saturation (91%) and respiratory rate (25/min) each independently meet the quantified red-flag criteria that mandate referral."
+  ],
+  "who_correct_actions": [
+    "Do not extend the regimen based on this patient's positive 2-month smear alone; the standard regimen is fixed-duration, and extension in response to bacteriological non-conversion is not recommended.",
+    "Treat this kind of active case-finding as conditionally appropriate only where the local TB prevalence has been shown to meet the recommended threshold (approximately 0.5% or higher), rather than as a routine activity applied irrespective of a demonstrated local prevalence.",
+    "Base the decision to refer or escalate his care on individualized clinical judgment of his hypoxia and tachypnea; there is no WHO-specified quantified threshold mandating escalation, only a general direction toward decentralized care where it is safe."
+  ],
+  "us_correct_actions": [
+    "Extend the continuation phase by an additional 3 months (9 months total) given the cavitary lesion on his initial chest radiograph combined with the positive smear/culture at completion of 2 months of therapy.",
+    "Attribute his case identification to contact investigation following a known index case rather than population-level active case-finding; a routine facility-based screening outreach of this kind is not the primary case-finding model in this framework.",
+    "Base the decision to hospitalize or refer this patient on individualized clinical judgment regarding his hypoxia and tachypnea, since there is no codified, quantified, nationally standardized threshold-based triage protocol in this framework either."
+  ],
+  "critical_error_conditions": [
+    "Failing to act in any way on the low oxygen saturation and elevated respiratory rate documented at today's visit, leaving the patient on the unchanged outpatient regimen without escalation, referral, or acknowledgment"
+  ],
+  "expected_divergence_points": [
+    "Whether continuation-phase extension for slow bacteriological response is a matter of physician discretion, discouraged under a fixed-duration regimen, or governed by a specific cavitation-plus-culture-based expert rule",
+    "Whether this patient's facility-based active case-finding pathway reflects standard, unconditional national program policy or is only appropriate where a threshold local prevalence is demonstrated",
+    "Whether his current vital-sign abnormalities trigger a mandatory, quantified escalation/referral or are left to individualized clinical judgment"
+  ],
+  "holdout": false,
+  "provenance": {
+    "generator_model": "claude-code-agent",
+    "generated_at": "2026-08-06T14:10:00+00:00",
+    "source_divergence_ids": ["DIV-008", "DIV-016", "DIV-017"],
+    "critique_passes": 0,
+    "human_reviewed": true,
+    "clinician_reviewed": true,
+    "clinician_review": {
+      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_credentials": "MBBS",
+      "reviewer_institution": "SSR Medical College",
+      "review_date": "2026-08-06",
+      "verdict": "approved",
+      "edits_requested": 0,
+      "review_scope": "All 100 vignettes in data/vignettes/v1/ (v1 set)",
+      "notes": "None"
+    }
+  }
+}

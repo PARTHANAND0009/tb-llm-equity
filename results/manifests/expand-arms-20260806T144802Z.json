@@ -1,0 +1,16 @@
+{
+  "run_id": "expand-arms-20260806T144802Z",
+  "model_identifiers": [],
+  "temperature": null,
+  "top_p": null,
+  "max_tokens": null,
+  "seed": null,
+  "prompt_template_hash": "73872b1080414e6c6c159ccc5644a34cdde0ed729092f9d82d968acd34aa5648",
+  "vignette_set_version": "v1",
+  "git_commit_sha": "b6358a65985c5d9a6ad9ba4ea902e979a237c3a4",
+  "utc_timestamp": "2026-08-06T14:48:02.907885+00:00",
+  "total_input_tokens": 194330,
+  "total_output_tokens": 0,
+  "vignette_count": 100,
+  "prompt_count": 400
+}

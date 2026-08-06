@@ -44,13 +44,23 @@ class ClinicianReview(BaseModel):
     never inferred, defaulted, or filled with placeholder text. This is
     provenance that may be cited in a submission and in judge questioning;
     see CLAUDE.md on why fabricating it would be a serious integrity
-    failure."""
+    failure.
+
+    reviewer_name/reviewer_institution are intentionally Optional and left
+    null here (RULE 3 -- ANONYMITY): a vignette file lives under data/,
+    where IRIS evaluates anonymously, so the reviewer's identifying name and
+    institution are recorded exactly once, centrally, in
+    submission/METHODS_TRANSPARENCY.md (which is exempt from RULE 3) rather
+    than repeated into every one of the 100 vignette files. reviewer_credentials
+    (a generic degree/qualification, not a name or institution) is not
+    identifying on its own and stays required.
+    """
 
     model_config = ConfigDict(extra="forbid")
 
-    reviewer_name: str
+    reviewer_name: str | None = None
     reviewer_credentials: str
-    reviewer_institution: str
+    reviewer_institution: str | None = None
     review_date: str
     verdict: str
     edits_requested: int = Field(..., ge=0)

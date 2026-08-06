@@ -14,43 +14,29 @@ Relevant protocol excerpts:
 NTEP directs providers to use rapid molecular diagnostics (CBNAAT/TrueNat) upfront wherever possible as the initial test for presumptive pulmonary TB. In the standard workflow, one specimen is tested by NAAT and, only if TB is detected, a second specimen proceeds to LPA/liquid culture for the resistance-detection cascade -- culture is not a routine parallel requirement for treatment initiation.
 
 [DIV-002 -- Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025) -- Definitions -- 'Universal DST' (p. 19)]
-       NATIONAL GUIDELINES FOR
-MANAGEMENT OF DRUG RESISTANT TB
+talization; to persistent
+      or significant disability; or to a congenital anomaly. The management of SAEs may require the
+      termination of the drug suspected of having caused the event.
+      Universal DST: Refers to universal access to rapid DRT for at least rifampicin and further
+      DST/DRT for at least fluoroquinolones among all TB patients with rifampicin resistance
+      (preferably before initiation of treatment to a maximum within 15 days of diagnosis).
 
-                     NATIONAL TB ELIMINATION
-                              PROGRAMME
+18 National Guidelines for Management of Drug Resistant TB
+1 INTRODUCTION
 
-                        CENTRAL TB DIVISION
+1.1. Global and national recommendations on newer shorter oral
+regimens
 
-                        MINISTRY OF HEALTH AND FAMILY WELFARE
-                                     GOVERNMENT OF INDIA
-NOVEMBER 2024  1
-2  National Guidelines for Management of Drug Resistant TB
-NOVEMBER 2024  3
-4  National Guidelines for Management of Drug Resistant TB
-NOVEMBER 2024  5
-6  National Guidelines for Management of Drug Resistant TB
-NOVEMBER 2024  7
-8  National Guidelines for Management of Drug Resistant TB
-                                Content
-
-MESSAGES                                                                                3-7
-
-ACKNOWLEDGEMENT                                                                            13
-
-LIST OF ABBREVIATIONS                                                                      15
-
-DEFINITIONS                                                                                17
-
-1. INTRODUCTION                                                                            19
-
-1.1. Global and national recommendations on newer shorter oral regimens                    19
-
- 1.1.1 WHO recommendations on new, shorter, oral regimens                                  20
-
- 1.1.2 Recommendations of the national technical expert group under NTEP                   20
-
-2. CASE FINDING AND DIAGNOSIS OF DRUG-SUSCEPTIBLE AND DRUG-RESISTANT TB  
+In recent years, India has made far-reaching progress in the management of TB. For example, an injection-
+free fully oral treatment regimen for drug-resistant TB (DR-TB) has been implemented across the country.
+In 2023, among 25.52 lakh TB patients diagnosed, 24.38 lakh (95.5%) patients were put on treatment (4).
+The disaggregated treatment success rate of patients notified from the public and private sectors, with the
+current standard of care for drug susceptible TB i.e. 6-month regimen (two months initiation phase consists
+of isoniazid [H], rifampicin [R], pyrazinamide [Z], ethambutol [E] followed by four months HRE), are 85% and
+87%, respectively (5).
+The National TB Elimination Programme (NTEP) succeeded in retaining its focus on the goal of ending TB
+amidst the pandemic. The programme effectively utilized every opportunity of the integrated health system
+ap
 
 [DIV-004 -- NTEP Knowledge Base, "Principles of TB Diagnosis under NTEP", Central TB Division -- Upfront NAAT cascade description]
 In NTEP's standard workflow, culture is reached only as the second step of a cascade after an initial NAAT-positive result (for LPA/liquid culture resistance testing) -- it is not a universally mandated parallel test performed on every presumptive-TB patient regardless of the NAAT result.

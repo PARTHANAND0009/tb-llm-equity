@@ -11,86 +11,68 @@ This patient is being seen at a district hospital in India.
 
 Relevant protocol excerpts:
 [DIV-008 -- ICMR/Dept. of Health Research (MoHFW), Standard Treatment Workflow: Drug Sensitive-TB Treatment as per NTEP (March 2022) -- Continuation phase notes: 'In disseminated TB or slow response treating physician may extend on case to case basis']
-March/ 2022
-
-                                                    Department of Health Research
-                                  Ministry of Health and Family Welfare, Government of India
-
-                    Standard Treatment Workflow (STW) Guidelines for
-
-            DRUG SENSITIVE-TB TREATMENT AS PER NTEP
-
-For all TB patients whether being treated in public or private sector, clinicians should follow Standards for TB care in India guidelines
-In NTEP, the principle of TB treatment (except confirmed DR-TB) is to administer daily FDC of 1st line ATT in appropriate weight bands,
-under direct observation
-For patients being treated in private sector, FDCs may be provided by NTEP whenever requested
-
-                                Regimen for Drug-Sensitive TB cases: 2HRZE/4HRE
-
-             This regimen is for H & R sensitive TB cases and cases where the sensitivity pattern can not be established
-
-Treatment is given in two phases:
-1. Intensive phase consists of 8 weeks (56 doses) of isoniazid (H), rifampicin (R), pyrazinamide (Z) and ethambutol (E) given under
-
-   direct observation in daily dosages as per weight band categories
-2. Continuation phase consists of 16 weeks (112 doses) of isoniazid, rifampicin and ethambutol in daily dosages. Only pyrazinamide
+ampicin and ethambutol in daily dosages. Only pyrazinamide
 
    will be stopped in the continuation phase. The CP needs to be extended upto 24 weeks in certain forms of TB like CNS TB,
-   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case b
+   Skeletal TB. In disseminated TB or slow response treating physician may extend on case to case basis.
+
+             Regimen for DS-TB                                           IP                                                 CP
+
+                         Drugs                                         2 HRZE                                             4 HRE
+
+                Doses                                                  56                                                 112
+
+                                                                       ADULT TB TREATMENT
+
+             Drug dosages for first-line anti- TB drugs     Special considerations for Adult TB                    Special considerations for Adult
+                                                                                Meningitis                                       abdominal TB
+Drugs           Doses
+                                                           Intensive Phase: 2 months of RHZE or                  Extend duration of treatment in
+Isoniazid (H)   5 mg/kg daily (4 to 6 mg/kg)               RHZS                                                  cases of inadequate response
+                                                           Continuation phase: 3 drugs-RHE for at                Refer for surgical mana
 
 [DIV-016 -- Ministry of Health & Family Welfare, "Initiatives & Achievements-2024" (PIB) -- Item 6, Active Case Finding (p. 8)]
-          Ministry of Health & Family Welfare
-
-                      Initiatives & Achievements-2024
-
-1. Ayushman Bharat:
-
-Ayushman Bharat comprises of four components:
-
-    a. Ayushman Arogya Mandir
-
-   The first component pertains to creation of 1,50,000 Health and Wellness Centres (AB-HWCs),
-   now renamed as Ayushman Arogya Mandir, by upgrading the Sub Health Centres (SHCs) and
-   rural and urban Primary Health Centres (PHCs), in both urban and rural areas, to bring health
-   care closer to the community. These centres aim to provide Comprehensive Primary Health
-   Care (CPHC), by expanding and strengthening the existing Reproductive & Child Health
-   (RCH) and Communicable Diseases services and by including services related to Non-
-   Communicable Diseases (common NCDs such as, Hypertension, Diabetes and three common
-   cancers of Oral, Breast and Cervix) and incrementally adding primary healthcare services for
-   mental health, ENT, Ophthalmology, Oral health, Geriatric and Palliative care and Trauma care
-   as well as health promotion and wellness activities like yoga.
-
-   Comprehensive Primary Health Care (CPHC) through Ayushman Arogya Mandir � Ayushman
-   Bharat aims to holistically address health (covering preventive, promotive, curative,
-   rehabilitative and palliative care), at primary, secondary and tertiary level by adopting a
-   continuum of care approach. In the lifetime of an individual, the primary healthcare services
-   cater to 80- 90% of the healthcare n
+o Rs 1000 per month per patient, through DBT for the entire duration of treatment. Since April
+     2018 till Oct 2024, Rs 3286.40 Cr have been provided to over 1.16 Cr beneficiaries cumulatively.
+6. Active Case Finding: For reaching out to missing TB patients, the Government has begun
+     systematic active TB case finding in high-risk groups. The programme has proactively conducted
+     house-to-house searches of TB cases among these vulnerable populations. This includes people
+     living with HIV, diabetics, undernourished, residential institutes like prisons, asylums, old age
+     homes, orphanages, tribal areas, and marginalized populations. This activity has resulted in the
+     diagnosis of an additional 3 lakh TB cases over past 6 years.
+7. Infrastructure Scale-Up: There has been a huge infrastructure scale-up of TB laboratory services.
+     Designated Microscopy Centers (DMCs) have increased by 80% (13583 in 2014 to 25530 in 2024)
+     over the past 10 years and 8293 new molecular diagnostic laboratories have been established till
+     now. The number of drug-resistant TB treatment centers has increased from 127 in 2014 to 826 in
+     2024.
+8. Sub National disease-free certification: To monitor the trends of the TB Epidemic at the
+     State/UTs/District level, the ministry has introduced a novel initiative of estimating disease burden
+     through a methodology of community-level survey (Inverse sampling methodology) and tracking
+     drug sales data in the private
 
 [DIV-017 -- Central TB Division, National Guidance on Differentiated TB Care (March 2025) -- Box 4.3, Differentiated TB Care Evaluation, Triaging & Management (p. 19)]
-    National Guidance
-on Differentiated TB Care
+l facilities
+       once stabilized.
 
-                           March 2025
+                                                              NATIONAL GUIDANCE ON DIFFERENTIATED TB CARE 27
+Figure 4.1 Differentiated TB Care (DTC) Evaluation, Triaging & Management
+at PHC/CHC/SDH/DH/tertiary care HF / Medical College level
 
-       National TB Elimination Programme
+                          Mandatory Activities
+                          Suggestive Activities
+                          Discretionary Activities
 
-       Central TB Division Ministry of Health & Family Welfare
-                            Government of India
-   National Guidance
-on DifferentiatedTB Care
+Box 4.3 Differentiated TB Care (DTC) Evaluation, Triaging &                                     Mandatory
+Management at PHC/CHC/SDH/DH/ tertiary care HF / Medical                                        Activities
+College level
 
-           Central TB Division
-  Ministry of Health & Family Welfare
+ASSESS RED FLAG SYMPTOMS                   ASSESS FOR SIGNS & INVESTIGATIONS
+OF SEVERE TB DISEASE
+                                           Impaired mobility: patient unable to      Chest x-ray with extensive disease
+Patient confined to bed                    stand without support during examination  (bilateral/ cavitation/>2 Zones/miliary TB)
 
-           Government of India
-Table of Contents
-
-Executive Summary ........................................................................................................................ xi
-1. Introduction ............................................................................................................................. 01
-
-     � Background .......................................................................................................................... 01
-     � Rationale of Differentiated TB Care....................................................................................... 03
-     � Goals and Objectives .............................................................................................................. 07
-     � Scope........................................................................................................................................... 07
-     � Guiding Principles: Core values of the care model............................................................. 08
-     � Process of the development of the document......................................................
+Breathlessness at rest or on walking       SpO2 < 94% or                             Assess Hb
+10-15 feet: speaks with difficulty-unable
+to complete a sentence without a pause,    Respiratory rate > 24 breaths/ min or     Blood glucose (BG): Random BG  200
+on attending natures call, unable to take                                            mg/dl with diabetes symptoms or FBG 
+feed                                       Systolic BP < 90 mm Hg or 140 mm Hg;      126 mg/dl or PPBS  200 mg/dl or

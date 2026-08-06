@@ -11,23 +11,21 @@ This patient is being seen at a teaching hospital in the United States.
 
 Relevant protocol excerpts:
 [DIV-007 -- Nahid P et al., Treatment of Drug-Susceptible Tuberculosis, Clin Infect Dis 2016;63(7):e147-e195 -- Drug dosing table, first-line drugs (p. 5)]
-Clinical Infectious Diseases                                                                                                                                                                               Downloaded from http://cid.oxfordjournals.org/ by guest on December 12, 2016
+of Antituberculosis Drugs for Adults and Childrenb
 
-   IDSA GUIDELINE
+Drug                         Preparation                             Population  Daily                  Once-Weekly Twice-Weekly     Thrice-Weekly
 
-Official American Thoracic Society/Centers for Disease
-Control and Prevention/Infectious Diseases Society of
-America Clinical Practice Guidelines: Treatment of
-Drug-Susceptible Tuberculosis
-
-Payam Nahid,1 Susan E. Dorman,2 Narges Alipanah,1 Pennan M. Barry,3 Jan L. Brozek,4 Adithya Cattamanchi,1 Lelia H. Chaisson,1 Richard E. Chaisson,2
-Charles L. Daley,5 Malgosia Grzemska,6 Julie M. Higashi,7 Christine S. Ho,8 Philip C. Hopewell,1 Salmaan A. Keshavjee,9 Christian Lienhardt,6
-Richard Menzies,10 Cynthia Merrifield,1 Masahiro Narita,12 Rick O'Brien,13 Charles A. Peloquin,14 Ann Raftery,1 Jussi Saukkonen,15 H. Simon Schaaf,16
-Giovanni Sotgiu,17 Jeffrey R. Starke,18 Giovanni Battista Migliori,11 and Andrew Vernon8
-
-1University of California, San Francisco; 2Johns Hopkins University, Baltimore, Maryland; 3California Department of Public Health, Richmond; 4McMaster University, Hamilton, Ontario, Canada;
-5National Jewish Health, Denver, Colorado; 6World Health Organization, Geneva, Switzerland; 7Tuberculosis Control Section, San Francisco Department of Public Health, California; 8Division of
-Tuberculosis Elimination, National Center for HIV/AIDS, Viral Hepatitis, STD, and TB Prevention, C
+First-line drugs   Tablets (50 mg, 100 mg, 300 mg); elixir (50       Adults      5 mg/kg (typically     15 mg/kg       15 mg/kg (typically 15 mg/kg (typically
+   Isoniazid          mg/5 mL); aqueous solution (100 mg/mL)         Children       300 mg)                (typically
+                      for intravenous or intramuscular injection.                                          900 mg)     900 mg)       900 mg)
+   Rifampin           Note: Pyridoxine (vitamin B6), 25�50 mg/       Adultsc     10�15 mg/kg
+   Rifabutin          day, is given with INH to all persons at risk  Children                                  ...     20�30 mg/kg                  . . .b
+                      of neuropathy (eg, pregnant women;             Adultsd
+                      breastfeeding infants; persons with HIV;       Children    10 mg/kg (typically    ...            10 mg/kg (typically 10 mg/kg (typically
+                      patients with diabetes, alcoholism,            Adults         600 mg)
+                      malnutrition, or chronic renal failure; or     Children                                          600 mg)       600 mg)
+                      patients with advanced age). For patients                  10�20 mg/kg
+                      with peripheral neuropathy, experts            Adu
 
 [DIV-001 -- Lewinsohn DM et al., Official ATS/IDSA/CDC Clinical Practice Guidelines: Diagnosis of Tuberculosis in Adults and Children, Clin Infect Dis 2017;64(2):e1-e33 -- Recommendations 5, 6, 7 (p. e16)]
 Clinical Infectious Diseases

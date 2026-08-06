@@ -170,18 +170,107 @@ def _match_protocol_file(doc: str) -> str | None:
     return None
 
 
+_PII_LINE_RE = re.compile(
+    r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"  # email
+    r"|(?:office|mobile|cell|tel|phone)?\.?\s*(?:no\.?)?\s*[:.]?\s*"
+    r"0?\d{2,4}[-\s]\d{3,4}[-\s]\d{3,4}",  # office/phone-style number groups
+    re.IGNORECASE,
+)
+
+
+def _strip_pii_lines(text: str) -> str:
+    """Defense-in-depth, independent of config/blocklist.txt: an extracted
+
+    excerpt should never carry a named individual's personal email or phone
+    number, regardless of which anchor strategy below produced it -- source
+    documents sometimes have a foreword/letterhead with exactly this (see
+    results/PREREGISTRATION.md Amendments, 2026-08-06, DIV-003/NTEP_
+    Extrapulmonary_TB_Training_Module.txt). Whole lines are dropped, not
+    just the matched substring, since the surrounding text (name, title) is
+    typically on the same line and just as unnecessary to inject.
+    """
+    kept = [line for line in text.split("\n") if not _PII_LINE_RE.search(line)]
+    return "\n".join(kept)
+
+
+def _anchor_candidates(section_hint: str) -> list[str]:
+    """Candidate literal strings to search for in the source document,
+
+    derived from a citation's (usually paraphrased-with-quotes-and-page-
+    numbers) `section` hint, longest/most-specific first. NTEP citations
+    almost never use the "Recommendation N" phrasing _extract_excerpt's
+    first anchor tier looks for -- they cite page numbers and section
+    names instead -- so this is the tier that actually fires for most NTEP
+    citations.
+    """
+    hint = re.sub(r"\(p\.\s*[\d\-–,\s]+\)\s*$", "", section_hint or "").strip().rstrip(";").strip()
+    if not hint:
+        return []
+    candidates: list[str] = []
+    candidates.extend(re.findall(r"'([^']{4,})'", hint))  # quoted phrases
+    candidates.extend(part.strip() for part in re.split(r"[;/,]", hint) if len(part.strip()) >= 6)
+    candidates.extend(re.findall(r"\b(?:Box|Item|Table)\s+[\dA-Za-z.]+\b", hint))
+    candidates.extend(
+        re.findall(r"(?:[A-Z][a-zA-Z]*(?:\s+(?:of|the|and|in|for|to)?\s*[A-Z][a-zA-Z]*)+)", hint)
+    )
+    if len(hint) >= 6:
+        candidates.append(hint)
+
+    seen: set[str] = set()
+    ordered: list[str] = []
+    for c in sorted(set(candidates), key=len, reverse=True):
+        if c not in seen and len(c) >= 6:
+            seen.add(c)
+            ordered.append(c)
+    return ordered
+
+
+def _find_anchor(text: str, anchor: str) -> int:
+    idx = text.find(anchor)
+    if idx == -1:
+        idx = text.lower().find(anchor.lower())
+    return idx
+
+
 def _extract_excerpt(path: Path, section_hint: str) -> str:
+    """Three anchor tiers, tried in order, before falling back to the start
+
+    of the file (which is a cover/title page for these documents, not
+    clinical content -- see _strip_pii_lines' docstring for why that
+    fallback burned us once already):
+
+    1. "Recommendation N" -- the phrasing WHO/US citations use.
+    2. A distinctive phrase pulled from the section hint itself (quoted
+       text, "Box N"/"Item N", capitalized multi-word runs, or the whole
+       hint) -- what most NTEP citations need, since they cite section
+       names, not numbered recommendations.
+    3. "Page N of" -- these NTEP documents paginate with a literal
+       "Page N of M" marker; parsed from a "(p. N)" suffix in the hint,
+       this catches citations whose hint is paraphrased rather than
+       verbatim (so tier 2 finds nothing) but still gives a page number.
+    """
     text = path.read_text(encoding="utf-8", errors="replace")
-    anchor_match = re.search(r"[Rr]ecommendation[s]?\s+[\d.]+[a-zA-Z]?", section_hint or "")
-    if anchor_match:
-        anchor = anchor_match.group(0)
-        idx = text.find(anchor)
-        if idx == -1:
-            idx = text.lower().find(anchor.lower())
+
+    rec_match = re.search(r"[Rr]ecommendation[s]?\s+[\d.]+[a-zA-Z]?", section_hint or "")
+    if rec_match:
+        idx = _find_anchor(text, rec_match.group(0))
         if idx != -1:
             start = max(0, idx - 200)
-            return text[start : start + EXCERPT_CHARS]
-    return text[:EXCERPT_CHARS]
+            return _strip_pii_lines(text[start : start + EXCERPT_CHARS])
+
+    for candidate in _anchor_candidates(section_hint):
+        idx = _find_anchor(text, candidate)
+        if idx != -1:
+            start = max(0, idx - 200)
+            return _strip_pii_lines(text[start : start + EXCERPT_CHARS])
+
+    page_match = re.search(r"\(p\.\s*(\d+)", section_hint or "")
+    if page_match:
+        idx = text.find(f"Page {page_match.group(1)} of")
+        if idx != -1:
+            return _strip_pii_lines(text[idx : idx + EXCERPT_CHARS])
+
+    return _strip_pii_lines(text[:EXCERPT_CHARS])
 
 
 def gather_protocol_chunks(
@@ -407,7 +496,11 @@ def main(argv: list[str] | None = None) -> int:
     for rel_path, text in texts.items():
         out_path = PROMPTS_DIR / rel_path
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(text, encoding="utf-8")
+        # newline="" -- write \n literally, no platform newline translation.
+        # sha256_hex(text) hashes text.encode("utf-8") verbatim; on Windows,
+        # write_text's default newline translation (\n -> \r\n) would make
+        # the recorded sha256 never match the file actually on disk.
+        out_path.write_text(text, encoding="utf-8", newline="")
 
     run_id = f"expand-arms-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}"
 

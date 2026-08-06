@@ -11,28 +11,24 @@ This patient is being seen at a district hospital in India.
 
 Relevant protocol excerpts:
 [DIV-003 -- Central TB Division, Training Module on Extrapulmonary TB (24-03-2023) -- Diagnosis of EPTB / Tools for Microbiological Confirmation of EPTB (p. 26)]
-  
+l suspicion and the presence of supportive laboratory tests, the
+expertise of clinicians can be used to diagnose EPTB.
 
-               Training Module On
+                                                                             4
+Tools for Microbiological Confirmation of EPTB:
+1. Molecular (Genotypic) Testing: Nucleic acid amplification tests (NAATs) assays rely on the
+amplification of a targeted genetic region of the Mycobacterium tuberculosis (M. tb) complex, typically
+by Polymerase Chain Reaction (PCR). Molecular tests can detect TB and resistance to key anti-TB
+drugs, such as rifampicin (R) and isoniazid (H), fluoroquinolones (FQ) and second-line injectable drugs
+(SLID) more quickly than Culture and Drug Susceptibility Tests (C&DST).
 
-            Extrapulmonary
-            Tuberculosis
-            2023
-Dr. Naveet Wig                     Department of Medicine
-Professor & Head  All India Institute of Medical Sciences
+Upfront NAAT are offered to all presumptive EPTB patients as per the NTEP programmatic guidelines.
+The following are the NTEP-approved NAAT tests:
+a) GeneXpert MTB/RIF is a cartridge-based Nucleic Acid Amplification Test (CBNAAT) for the
 
-                                          New Delhi - 110029
-                                      naveetwig@gmail.com
-                                  Office. No.011-2659-3303
-
-                            Tuberculosis (TB) has been a worldwide health problem since time immemorial
-                            and continues to be among the top ten causes of mortality, particularly in India
-                            which houses the world's highest TB burden. Efforts to curb the scourge of TB have
-                            been colossal under the strong leadership of our honorable Prime Minister who
-                            recently raised a clarion call to eliminate TB by 2025, five years ahead of the
-                            corresponding sustainable development goal. The National TB Elimination
-                            Programme (earlier known as the Revised National TB Control Programme) has
-                            been strengthened, The National Strategic Plan for Tuberculosis Elimination 2017-
-                            2025 is in effect and additional support is being provided to patients under the
-                            Pradhan Mantri TB Mukt Bharat Abhiyaan.
-As opposed to pulmonary TB where effective strategies for diag
+       simultaneous detection of TB and Rifampicin Resistance (RRTB). It detects DNA sequences
+       specific for the M. tb complex and mutations in the RNA polymerase related to drug resistant TB.
+       Results are obtained from unprocessed sputum samples in 90 minutes, with minimal biohazard
+       and minimal technical training required to operate.
+b) TrueNat (Chip-based). TrueNat MTB and TrueNat MTB-Rif Dx are chip-based, micro real-time
+       Polymerase Chain Reaction-based (PCR) NAAT for TB and rifampicin resistance detection,

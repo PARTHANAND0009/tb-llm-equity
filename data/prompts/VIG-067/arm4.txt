@@ -11,57 +11,72 @@ This patient is being seen at a district hospital in India.
 
 Relevant protocol excerpts:
 [DIV-009 -- Central TB Division, Guidance document on 1HP TPT regimen (addendum to the 2021 PMTPT guidelines, Dec 2024) -- TPT target group, strategy, and treatment options table (p. 1-2)]
-                                                                    Guidance document of implementation of 1HP TPT regimen �
-                                        Guidelines for programmatic management of TB preventive treatment in India 2021
+of 95% confidence interval was 0.30).
 
-           NATIONAL TUBERCULOSIS ELIMINATION PROGRAMME
-Guidance document on shorter one-month daily isoniazid and rifapentine
+� WHO's guidelines on TPT also recommends 1HP as alternative option for the use across all
+    disease burden settings and target populations including PLHIV.2
 
-              (1HP) regimen option for TB Preventive Treatment
+TPT target group, strategy, and treatment options:
 
-Forward:
+Target population                               Strategy                Treatment option
 
-This is a technical and operational guidance document on shorter one month daily isoniazid and
-rifapentine (1HP) TPT regimen option for implementation in age group 13 years. The guidance
-is presented as an addendum to and should be referred in context of the Guidelines for
-Programmatic Management of TB Preventive Treatment in India 2021.
+� People living with HIV                        TPT to all after ruling � 1HP (1 month of
 
-Evidence for 1HP:
+o PLHIV adults and children >12 months out active TB disease daily isoniazid and
 
-� A large randomized, open label trial1 compared the efficacy and safety of the shorter 1HP
-    regimen and reported that 1HP regimen is noninferior to 9 month daily isoniazid regimen
-    (9H) in PLHIV from high TB prevalence area or had evidence of TB infection.
-         o 3,000 patients were followed for a median of 3.3 years.
-         o Treatment completion was significantly higher in 1HP compared to 9H (97% versus
-             90%, p<0.001).
-         o Serious adverse event occurred 6% and 7% in the group given 1HP and 9H
-             respectively. Although lower in 1HP, the difference was not significant (p = 0.07).
-         o TB incidence was reported to be 0.65 and 0.67 per 100
+         irrespective of ART initiation status  TPT among TBI               rifapentine � 28
+    o Child living with HIV age <12 months      positive# after ruling      doses) in person 
+                                                out TB disease              13 years
+         in contact with active TB                                      Or
+� Household contact below 5 years of                                    � 3HP (3 months of
+pulmonary* TB patients                                                      weekly isoniazid
+� Household contacts 5 years and above of                                   and rifapentine �
+                                                                            12 doses) in person
+    pulmonary* TB patients (testing would be
+    offered whenever available)
+
+1 Swindells S, Ramchandani R, Gupta A et. al. BRIEF TB/A5279 Study Team. One Month of Rifapentine plus Isoniazid
+to Prevent HIV-Related Tuberculosis. N Engl J Med. 2019 Mar 14;380(11):10
 
 [DIV-005 -- Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India (2021) -- 3.3.1 Tuberculin Skin Test / 3.3.2 Interferon-Gamma Release Assay (p. 10)]
-Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 i
-� Ministry of Health and Family Welfare
-Message
+                                           9
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 v
-vi Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+3.3 Implementation considerations for testing services for TB infection  10
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 vii
-viii Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+3.3.1 Tuberculin Skin Test (TST)                                         10
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 ix
-x Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+3.3.2 Interferon-Gamma Release Assay (IGRA)                              10
 
-                                                                  Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 xi
-xii Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+CHAPTER 4: ENUMERATING TARGET POPULATION, RULING OUT ACTIVE
 
-                               WHO Representative to India
+TB DISEASE & INITIATING TB PREVENTIVE TREATMENT                          13
 
-                                     Tuberculosis (TB) Preventive Treatment (TPT) is one of the key
-                                     interventions recommended by World Health Organization
-                                     (WHO) to achieve the #EndTB Strategy goals, as upheld by the
-                                     U
+4.1 Enumerating target population and contact tracing                    13
+
+4.2 Algorithm for TB screening and providing TPT in India                14
+
+4.3 Assessing eligibility and providing TPT                              14
+
+4.3.1 People Living with HIV (Adults, Adolescents and Children)          14
+
+4.3.2 All household contacts of pulmonary TB patients                    16
+
+4.3.3 Expansion to other risk groups                                     16
+
+4.4 Contraindications for TPT                                            16
+
+4.5 Counseling of TPT eligible persons and their family                  17
+
+4.6 Pre-treatment assessment and TPT initiation                          19
+
+CHAPTER 5: TB PREVENTIVE TREATMENT                                       21
+
+5.1 Evidence on TPT regimen                                              21
+
+5.1.1 Evidences for 3HP                                                  21
+
+5.1.2 Evidences for 6H                                                   22
+
+5.2 TB Preventive Treatment                                              22
+
+5.2.1 P

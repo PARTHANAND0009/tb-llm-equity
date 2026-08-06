@@ -66,6 +66,13 @@ class CachingLLMClient:
     family: str
     model: str
     cache_dir: Path = field(default_factory=lambda: DEFAULT_CACHE_DIR)
+    # Only used by families routed through _call_openai_compatible (mistral,
+    # deepseek, llama) -- a third-party or provider-native endpoint that
+    # speaks the OpenAI chat-completions wire format. api_key_env names the
+    # environment variable to read the key from; the openai SDK is reused
+    # as a thin HTTP client, not because the family is actually OpenAI.
+    base_url: str | None = None
+    api_key_env: str | None = None
 
     def _cache_path(self, key: str) -> Path:
         return self.cache_dir / f"{key}.json"
@@ -129,6 +136,10 @@ class CachingLLMClient:
             return self._call_openai(system_prompt=system_prompt, messages=messages, params=params)
         if self.family == "google":
             return self._call_google(system_prompt=system_prompt, messages=messages, params=params)
+        if self.family in ("mistral", "deepseek", "llama"):
+            return self._call_openai_compatible(
+                system_prompt=system_prompt, messages=messages, params=params
+            )
         raise ValueError(
             f"Unknown model family {self.family!r}. Add a _call_<family> method to "
             "CachingLLMClient before configuring it as generation.family."
@@ -193,4 +204,45 @@ class CachingLLMClient:
             response.to_json_dict(),
             usage.prompt_token_count,
             usage.candidates_token_count,
+        )
+
+    def _call_openai_compatible(
+        self, *, system_prompt: str, messages: list[dict], params: GenerationParams
+    ) -> tuple[str, dict[str, Any], int, int]:
+        """Mistral, DeepSeek, and (via OpenRouter) Llama all expose an
+
+        OpenAI-compatible chat-completions endpoint, so a single generic
+        implementation covers all three -- only base_url and the API key
+        differ. self.base_url/self.api_key_env must be set (see
+        config/models.yaml evaluation.models[].base_url/api_key_env).
+        """
+        import os
+
+        import openai
+
+        if not self.base_url or not self.api_key_env:
+            raise ValueError(
+                f"family {self.family!r} requires base_url and api_key_env to be set on "
+                "CachingLLMClient (see config/models.yaml evaluation.models entry)."
+            )
+        api_key = os.environ.get(self.api_key_env)
+        if not api_key:
+            raise RuntimeError(
+                f"Environment variable {self.api_key_env} is not set -- required to call "
+                f"family={self.family!r} model={self.model!r}."
+            )
+        client = openai.OpenAI(base_url=self.base_url, api_key=api_key)
+        response = client.chat.completions.create(
+            model=self.model,
+            temperature=params.temperature,
+            top_p=params.top_p,
+            max_tokens=params.max_tokens,
+            messages=[{"role": "system", "content": system_prompt}, *messages],
+        )
+        text = response.choices[0].message.content or ""
+        return (
+            text,
+            response.model_dump(),
+            response.usage.prompt_tokens,
+            response.usage.completion_tokens,
         )

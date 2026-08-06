@@ -11,69 +11,66 @@ This patient is being seen at a district hospital in India.
 
 Relevant protocol excerpts:
 [DIV-019 -- Central TB Division, National Guidance on Differentiated TB Care (March 2025); 1HP TPT addendum (Dec 2024) -- Differentiated Care intake form, comorbidity/HIV section (p. 86); 1HP addendum dosage footnote (p. 2)]
-    National Guidance
-on Differentiated TB Care
+school-based education programs to normalize TB
+        and reduce stigma.
 
-                           March 2025
+    � Peer Support Groups: Create child-friendly support networks for children and families affected by
+        TB.
 
-       National TB Elimination Programme
+   9.4 Differentiated Care Framework for PediatricTB
+   9.4.1 Risk Stratification
 
-       Central TB Division Ministry of Health & Family Welfare
-                            Government of India
-   National Guidance
-on DifferentiatedTB Care
+    � Stratify children based on clinical severity and social vulnerabilities.
+    � High-Risk Cases: Children with severe malnutrition, comorbidities, or TB-HIV coinfection should
 
-           Central TB Division
-  Ministry of Health & Family Welfare
+        be referred to specialized care centers equipped with hospitalization and advanced diagnostic
+        facilities.
 
-           Government of India
-Table of Contents
+   9.4.2 Integration of Nutritional and Psychosocial Support
 
-Executive Summary ........................................................................................................................ xi
-1. Introduction ............................................................................................................................. 01
+    � Nutritional Programs: Include therapeutic nutrition as part of standard TB care.
+    � Psychosocial Counseling: Provide mental health and emotional support during all phases of care.
 
-     � Background .......................................................................................................................... 01
-     � Rationale of Differentiated TB Care....................................................................................... 03
-     � Goals and Objectives .............................................................................................................. 07
-     � Scope........................................................................................................................................... 07
-     � Guiding Principles: Core values of the care model............................................................. 08
-     � Process of the development of the document......................................................
+54 NATIONAL GUIDANCE ON DIFFERENTIATED TB CARE
+9.4.3 Follow-Up andTreatment Adherence
+
+� Establish a robust follow-up mechanism to track treatment progress, nutritional recovery, and
+   medication adherence.
+
+� Use digital tools like Ni-kshay to monitor adherence, send reminders to caregivers, and record
+   follow-up visits.
+
+9.5 Holistic PaediatricTB Care Approach
+
+A comprehensive approach integrates clinical care, social interventions, and caregiver engagement to
+address the unique needs of pediatric TB patients.
+
+9.5.1 Multi-Disciplinary Collaboration
+
+� Facilitate collaboration among pediatricians, nutritionists, counselors, and social workers for
+   pat
 
 [DIV-002 -- Central TB Division, National Guidelines for Management of Drug Resistant TB (27-3-2025) -- Definitions -- 'Universal DST' (p. 19)]
-       NATIONAL GUIDELINES FOR
-MANAGEMENT OF DRUG RESISTANT TB
+talization; to persistent
+      or significant disability; or to a congenital anomaly. The management of SAEs may require the
+      termination of the drug suspected of having caused the event.
+      Universal DST: Refers to universal access to rapid DRT for at least rifampicin and further
+      DST/DRT for at least fluoroquinolones among all TB patients with rifampicin resistance
+      (preferably before initiation of treatment to a maximum within 15 days of diagnosis).
 
-                     NATIONAL TB ELIMINATION
-                              PROGRAMME
+18 National Guidelines for Management of Drug Resistant TB
+1 INTRODUCTION
 
-                        CENTRAL TB DIVISION
+1.1. Global and national recommendations on newer shorter oral
+regimens
 
-                        MINISTRY OF HEALTH AND FAMILY WELFARE
-                                     GOVERNMENT OF INDIA
-NOVEMBER 2024  1
-2  National Guidelines for Management of Drug Resistant TB
-NOVEMBER 2024  3
-4  National Guidelines for Management of Drug Resistant TB
-NOVEMBER 2024  5
-6  National Guidelines for Management of Drug Resistant TB
-NOVEMBER 2024  7
-8  National Guidelines for Management of Drug Resistant TB
-                                Content
-
-MESSAGES                                                                                3-7
-
-ACKNOWLEDGEMENT                                                                            13
-
-LIST OF ABBREVIATIONS                                                                      15
-
-DEFINITIONS                                                                                17
-
-1. INTRODUCTION                                                                            19
-
-1.1. Global and national recommendations on newer shorter oral regimens                    19
-
- 1.1.1 WHO recommendations on new, shorter, oral regimens                                  20
-
- 1.1.2 Recommendations of the national technical expert group under NTEP                   20
-
-2. CASE FINDING AND DIAGNOSIS OF DRUG-SUSCEPTIBLE AND DRUG-RESISTANT TB  
+In recent years, India has made far-reaching progress in the management of TB. For example, an injection-
+free fully oral treatment regimen for drug-resistant TB (DR-TB) has been implemented across the country.
+In 2023, among 25.52 lakh TB patients diagnosed, 24.38 lakh (95.5%) patients were put on treatment (4).
+The disaggregated treatment success rate of patients notified from the public and private sectors, with the
+current standard of care for drug susceptible TB i.e. 6-month regimen (two months initiation phase consists
+of isoniazid [H], rifampicin [R], pyrazinamide [Z], ethambutol [E] followed by four months HRE), are 85% and
+87%, respectively (5).
+The National TB Elimination Programme (NTEP) succeeded in retaining its focus on the goal of ending TB
+amidst the pandemic. The programme effectively utilized every opportunity of the integrated health system
+ap

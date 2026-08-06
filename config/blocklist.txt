@@ -5,4 +5,15 @@
 # Lines starting with # are comments and blank lines are ignored.
 # Matching is case-insensitive substring matching.
 #
-# Populate before adding any real protocol/vignette data.
+# This targets identifying strings about the AUTHOR, not the research
+# subject. Do NOT add "India" or "Indian" — Arm 2 prompts intentionally
+# state the patient is seen at a district hospital in India, and NTEP
+# content is the substance of the study. Blocklisting the research
+# subject's own country would break the experimental design.
+# See tests/test_blocklist.py::test_blocklist_does_not_contain_india.
+
+St. Francis De Sales School
+St Francis De Sales
+New Delhi
+Delhi
+Parth

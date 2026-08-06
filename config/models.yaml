@@ -19,8 +19,64 @@ generation:
   seed: 42
 
 evaluation:
-  models: []
-  # - family: anthropic
-  #   model: claude-opus-5
-  # - family: google
-  #   model: gemini-2.5-pro
+  # Superseded 2026-08-06: pivoted to a fully open-weight, zero-compute-
+  # budget roster (see results/PREREGISTRATION.md Amendments). The prior
+  # 5-model paid roster (gpt-5.5, gemini-3.1-pro-preview,
+  # meta-llama/llama-4-maverick, mistral-large-2512, deepseek-v4-pro) is
+  # kept only in git history, not here -- it was never actually run
+  # (Phase 4 got only as far as a dry-run cost estimate before the pivot).
+  #
+  # runtime: colab_vllm means this model is NOT called by
+  # scripts/run_arms.py (the API harness) -- it's run by
+  # notebooks/open_weight_inference.ipynb via local vLLM inference on a
+  # Colab T4, with no API key and no per-token cost. run_arms.py refuses
+  # to run against a colab_vllm entry rather than silently doing nothing.
+  #
+  # revision is the exact HuggingFace commit sha as of 2026-08-06 (verified
+  # via the HF Hub API, not guessed) -- pinned so the RULE 1 manifest can
+  # record precisely which weights were used. quantized_model/
+  # quantized_revision point at a pre-quantized community checkpoint where
+  # one exists, so the notebook downloads 4-bit weights directly instead of
+  # quantizing on the fly; base_model/revision are the canonical HF repo
+  # this model derives from, used for citation and for gated-access
+  # bookkeeping (meta-llama/Llama-3.1-8B-Instruct is manually gated;
+  # EPFLiGHT/Meditron3-8B is auto-gated -- both need an HF token that has
+  # accepted the license, even though the pre-quantized Llama repo below is
+  # itself ungated).
+  models:
+    - family: meta
+      model: hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4
+      revision: db1f81ad4b8c7e39777509fac66c652eb0a52f91
+      base_model: meta-llama/Llama-3.1-8B-Instruct
+      base_model_revision: 0e9e39f249a16976918f6564b8830bc894c89659
+      base_model_gated: manual
+      quantization: awq-int4
+      params_b: 8
+      runtime: colab_vllm
+    - family: qwen
+      model: Orion-zhen/Qwen3-8B-AWQ
+      revision: afb67fde7957c0e416d98b86df596016d94ea882
+      base_model: Qwen/Qwen3-8B
+      base_model_revision: b968826d9c46dd6066d109eabc6255188de91218
+      base_model_gated: false
+      quantization: awq-int4
+      params_b: 8
+      runtime: colab_vllm
+    - family: mistral
+      model: solidrust/Mistral-7B-Instruct-v0.3-AWQ
+      revision: 95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7
+      base_model: mistralai/Mistral-7B-Instruct-v0.3
+      base_model_revision: c170c708c41dac9275d15a8fff4eca08d52bab71
+      base_model_gated: false
+      quantization: awq-int4
+      params_b: 7
+      runtime: colab_vllm
+    - family: epfl
+      model: EPFLiGHT/Meditron3-8B
+      revision: 783c241b18b84692689e0336170b345e5732e48e
+      base_model: EPFLiGHT/Meditron3-8B  # no pre-quantized community checkpoint found
+      base_model_revision: 783c241b18b84692689e0336170b345e5732e48e
+      base_model_gated: auto
+      quantization: bitsandbytes-nf4  # quantized on the fly, no AWQ checkpoint exists
+      params_b: 8
+      runtime: colab_vllm

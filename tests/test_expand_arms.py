@@ -1,3 +1,4 @@
+import hashlib
 import json
 from pathlib import Path
 
@@ -168,6 +169,40 @@ def test_gather_protocol_chunks_handles_rows_with_no_us_position():
     assert combined == ""
 
 
+def test_ntep_excerpts_never_leak_a_reviewer_email_or_phone_number():
+    """Regression test for a real bug (2026-08-06, see
+
+    results/PREREGISTRATION.md Amendments): _extract_excerpt's only anchor
+    was "Recommendation N", a phrasing NTEP citations essentially never
+    use, so every NTEP-side excerpt silently fell back to the first 1500
+    characters of the source file -- the cover/foreword page, not the cited
+    section. NTEP_Extrapulmonary_TB_Training_Module.txt's foreword happens
+    to contain a named clinician's personal email and office phone number,
+    which ended up injected into 14 vignettes' Arm 4 prompts before this
+    was caught. This test runs the real extraction against every NTEP
+    citation in the real divergence table and every real file in
+    data/protocols/, asserting none of them ever contains an email address
+    or an office/phone-number pattern -- independent of which specific
+    person or document triggers it.
+    """
+    table = _table()
+    for row in table.values():
+        citation = row.get("ntep_citation")
+        if not citation:
+            continue
+        filename = expand_arms._match_protocol_file(citation["doc"])
+        if not filename:
+            continue
+        path = expand_arms.PROTOCOLS_DIR / filename
+        if not path.exists():
+            continue
+        excerpt = expand_arms._extract_excerpt(path, citation.get("section", ""))
+        assert not expand_arms._PII_LINE_RE.search(excerpt), (
+            f"{row['id']}: extracted excerpt from {filename} contains an email or "
+            "phone-number pattern"
+        )
+
+
 def test_estimate_tokens_is_a_positive_rough_proxy():
     assert estimate_tokens("a" * 400) == 100
     assert estimate_tokens("") == 1  # never zero -- avoids div-by-zero-style surprises downstream
@@ -301,3 +336,16 @@ def test_real_run_writes_prompts_and_both_manifests(tmp_path, monkeypatch):
     ):
         assert field in run_manifest
     assert run_manifest["model_identifiers"] == []  # no model in the loop
+
+    # Regression test for a real bug: write_text's default platform newline
+    # translation (\n -> \r\n on Windows) made the manifest's sha256 --
+    # computed on the in-memory string, \n only -- never match the actual
+    # bytes on disk. test_manifest_entry_sha256_matches_written_text (above)
+    # didn't catch this because it hashes the in-memory string on both
+    # sides, never touching the filesystem. This one reads the real bytes
+    # main() wrote.
+    for entry in prompts_manifest["prompts"]:
+        on_disk = (prompts_dir / entry["path"].removeprefix("data/prompts/")).read_bytes()
+        assert hashlib.sha256(on_disk).hexdigest() == entry["sha256"], (
+            f"{entry['path']}: manifest sha256 does not match the file's actual on-disk bytes"
+        )

@@ -11,57 +11,63 @@ This patient is being seen at a district hospital in India.
 
 Relevant protocol excerpts:
 [DIV-010 -- Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India (2021) -- 2.1.2 All household contacts of pulmonary TB patients (p. 5)]
-Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 i
-� Ministry of Health and Family Welfare
-Message
+ FOR TB PREVENTIVE TREATMENT                 5
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 v
-vi Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+2.1 Identifying at risk population                                       5
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 vii
-viii Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+2.1.1 People Living with HIV (Adults, Adolescents and Children)          6
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 ix
-x Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+2.1.2 All household contacts of pulmonary TB patients                    6
 
-                                                                  Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 xi
-xii Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+2.1.3 Expansion to other risk groups                                     6
 
-                               WHO Representative to India
+CHAPTER 3: DIAGNOSIS OF TB INFECTION                                     9
 
-                                     Tuberculosis (TB) Preventive Treatment (TPT) is one of the key
-                                     interventions recommended by World Health Organization
-                                     (WHO) to achieve the #EndTB Strategy goals, as upheld by the
-                                     U
+3.1 Introduction to lab diagnostics for TB infection                     9
+
+3.2 Tests for TB infection                                               9
+
+3.3 Implementation considerations for testing services for TB infection  10
+
+3.3.1 Tuberculin Skin Test (TST)                                         10
+
+3.3.2 Interferon-Gamma Release Assay (IGRA)                              10
+
+CHAPTER 4: ENUMERATING TARGET POPULATION, RULING OUT ACTIVE
+
+TB DISEASE & INITIATING TB PREVENTIVE TREATMENT                          13
+
+4.1 Enumerating target population and contact tracing                    13
+
+4.2 Algorithm for TB screening and providing TPT in India                14
+
+4.3 Assessing eligibility and providing TPT                              14
+
+4.3.1 People Living with HIV (Adults, Adolescents and Children)          14
+
+4.3.2 All household contacts of pulmonary TB patients                    16
+
+4.3.3 Expansion to other risk groups                                     16
+
+4.4 Contraindications for TPT                                            16
+
+4.5 Counseli
 
 [DIV-016 -- Ministry of Health & Family Welfare, "Initiatives & Achievements-2024" (PIB) -- Item 6, Active Case Finding (p. 8)]
-          Ministry of Health & Family Welfare
-
-                      Initiatives & Achievements-2024
-
-1. Ayushman Bharat:
-
-Ayushman Bharat comprises of four components:
-
-    a. Ayushman Arogya Mandir
-
-   The first component pertains to creation of 1,50,000 Health and Wellness Centres (AB-HWCs),
-   now renamed as Ayushman Arogya Mandir, by upgrading the Sub Health Centres (SHCs) and
-   rural and urban Primary Health Centres (PHCs), in both urban and rural areas, to bring health
-   care closer to the community. These centres aim to provide Comprehensive Primary Health
-   Care (CPHC), by expanding and strengthening the existing Reproductive & Child Health
-   (RCH) and Communicable Diseases services and by including services related to Non-
-   Communicable Diseases (common NCDs such as, Hypertension, Diabetes and three common
-   cancers of Oral, Breast and Cervix) and incrementally adding primary healthcare services for
-   mental health, ENT, Ophthalmology, Oral health, Geriatric and Palliative care and Trauma care
-   as well as health promotion and wellness activities like yoga.
-
-   Comprehensive Primary Health Care (CPHC) through Ayushman Arogya Mandir � Ayushman
-   Bharat aims to holistically address health (covering preventive, promotive, curative,
-   rehabilitative and palliative care), at primary, secondary and tertiary level by adopting a
-   continuum of care approach. In the lifetime of an individual, the primary healthcare services
-   cater to 80- 90% of the healthcare n
+o Rs 1000 per month per patient, through DBT for the entire duration of treatment. Since April
+     2018 till Oct 2024, Rs 3286.40 Cr have been provided to over 1.16 Cr beneficiaries cumulatively.
+6. Active Case Finding: For reaching out to missing TB patients, the Government has begun
+     systematic active TB case finding in high-risk groups. The programme has proactively conducted
+     house-to-house searches of TB cases among these vulnerable populations. This includes people
+     living with HIV, diabetics, undernourished, residential institutes like prisons, asylums, old age
+     homes, orphanages, tribal areas, and marginalized populations. This activity has resulted in the
+     diagnosis of an additional 3 lakh TB cases over past 6 years.
+7. Infrastructure Scale-Up: There has been a huge infrastructure scale-up of TB laboratory services.
+     Designated Microscopy Centers (DMCs) have increased by 80% (13583 in 2014 to 25530 in 2024)
+     over the past 10 years and 8293 new molecular diagnostic laboratories have been established till
+     now. The number of drug-resistant TB treatment centers has increased from 127 in 2014 to 826 in
+     2024.
+8. Sub National disease-free certification: To monitor the trends of the TB Epidemic at the
+     State/UTs/District level, the ministry has introduced a novel initiative of estimating disease burden
+     through a methodology of community-level survey (Inverse sampling methodology) and tracking
+     drug sales data in the private

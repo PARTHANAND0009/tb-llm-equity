@@ -39,29 +39,44 @@ Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 
                                      U
 
 [DIV-005 -- Central TB Division, Guidelines for Programmatic Management of Tuberculosis Preventive Treatment in India (2021) -- 3.3.1 Tuberculin Skin Test / 3.3.2 Interferon-Gamma Release Assay (p. 10)]
-Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 i
-� Ministry of Health and Family Welfare
-Message
+                                           9
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 v
-vi Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+3.3 Implementation considerations for testing services for TB infection  10
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 vii
-viii Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+3.3.1 Tuberculin Skin Test (TST)                                         10
 
-                                                                   Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 ix
-x Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+3.3.2 Interferon-Gamma Release Assay (IGRA)                              10
 
-                                                                  Guidelines for Programmatic Management of TB Preventive Treatment in India 2021 xi
-xii Guidelines for Programmatic Management of TB Preventive Treatment in India 2021
-Message
+CHAPTER 4: ENUMERATING TARGET POPULATION, RULING OUT ACTIVE
 
-                               WHO Representative to India
+TB DISEASE & INITIATING TB PREVENTIVE TREATMENT                          13
 
-                                     Tuberculosis (TB) Preventive Treatment (TPT) is one of the key
-                                     interventions recommended by World Health Organization
-                                     (WHO) to achieve the #EndTB Strategy goals, as upheld by the
-                                     U
+4.1 Enumerating target population and contact tracing                    13
+
+4.2 Algorithm for TB screening and providing TPT in India                14
+
+4.3 Assessing eligibility and providing TPT                              14
+
+4.3.1 People Living with HIV (Adults, Adolescents and Children)          14
+
+4.3.2 All household contacts of pulmonary TB patients                    16
+
+4.3.3 Expansion to other risk groups                                     16
+
+4.4 Contraindications for TPT                                            16
+
+4.5 Counseling of TPT eligible persons and their family                  17
+
+4.6 Pre-treatment assessment and TPT initiation                          19
+
+CHAPTER 5: TB PREVENTIVE TREATMENT                                       21
+
+5.1 Evidence on TPT regimen                                              21
+
+5.1.1 Evidences for 3HP                                                  21
+
+5.1.2 Evidences for 6H                                                   22
+
+5.2 TB Preventive Treatment                                              22
+
+5.2.1 P

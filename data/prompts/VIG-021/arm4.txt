@@ -11,93 +11,79 @@ This patient is being seen at a district hospital in India.
 
 Relevant protocol excerpts:
 [DIV-016 -- Ministry of Health & Family Welfare, "Initiatives & Achievements-2024" (PIB) -- Item 6, Active Case Finding (p. 8)]
-          Ministry of Health & Family Welfare
-
-                      Initiatives & Achievements-2024
-
-1. Ayushman Bharat:
-
-Ayushman Bharat comprises of four components:
-
-    a. Ayushman Arogya Mandir
-
-   The first component pertains to creation of 1,50,000 Health and Wellness Centres (AB-HWCs),
-   now renamed as Ayushman Arogya Mandir, by upgrading the Sub Health Centres (SHCs) and
-   rural and urban Primary Health Centres (PHCs), in both urban and rural areas, to bring health
-   care closer to the community. These centres aim to provide Comprehensive Primary Health
-   Care (CPHC), by expanding and strengthening the existing Reproductive & Child Health
-   (RCH) and Communicable Diseases services and by including services related to Non-
-   Communicable Diseases (common NCDs such as, Hypertension, Diabetes and three common
-   cancers of Oral, Breast and Cervix) and incrementally adding primary healthcare services for
-   mental health, ENT, Ophthalmology, Oral health, Geriatric and Palliative care and Trauma care
-   as well as health promotion and wellness activities like yoga.
-
-   Comprehensive Primary Health Care (CPHC) through Ayushman Arogya Mandir � Ayushman
-   Bharat aims to holistically address health (covering preventive, promotive, curative,
-   rehabilitative and palliative care), at primary, secondary and tertiary level by adopting a
-   continuum of care approach. In the lifetime of an individual, the primary healthcare services
-   cater to 80- 90% of the healthcare n
+o Rs 1000 per month per patient, through DBT for the entire duration of treatment. Since April
+     2018 till Oct 2024, Rs 3286.40 Cr have been provided to over 1.16 Cr beneficiaries cumulatively.
+6. Active Case Finding: For reaching out to missing TB patients, the Government has begun
+     systematic active TB case finding in high-risk groups. The programme has proactively conducted
+     house-to-house searches of TB cases among these vulnerable populations. This includes people
+     living with HIV, diabetics, undernourished, residential institutes like prisons, asylums, old age
+     homes, orphanages, tribal areas, and marginalized populations. This activity has resulted in the
+     diagnosis of an additional 3 lakh TB cases over past 6 years.
+7. Infrastructure Scale-Up: There has been a huge infrastructure scale-up of TB laboratory services.
+     Designated Microscopy Centers (DMCs) have increased by 80% (13583 in 2014 to 25530 in 2024)
+     over the past 10 years and 8293 new molecular diagnostic laboratories have been established till
+     now. The number of drug-resistant TB treatment centers has increased from 127 in 2014 to 826 in
+     2024.
+8. Sub National disease-free certification: To monitor the trends of the TB Epidemic at the
+     State/UTs/District level, the ministry has introduced a novel initiative of estimating disease burden
+     through a methodology of community-level survey (Inverse sampling methodology) and tracking
+     drug sales data in the private
 
 [DIV-020 -- Central TB Division, National Guideline on Paediatric Tuberculosis Management (22 Aug 2022) -- Box 2, Type of Patient / Regimens table (p. 38)]
- Paediatric TB Management
 
-              Guideline 2022
+         outcome after their most recent course of treatment is unknown or undocumented.
 
-DEVELOPED BY THE NATIONAL TUBERCULOSIS ELIMINATION
-                            PROGRAMME
+Box 2. Case Definitions
 
-CENTRAL TB DIVISION, MINISTRY OF HEALTH AND
-            FAMILY WELFARE, NEW DELHI
+                                                                    Page 38 of 132
+Type of Patienta                                                            Regimens
 
-                                             Draft
+New microbiologically confirmed RS Pulmonary TB                             2HRZE+ 4HREb
 
-Page 1 of 132
-               National Tuberculosis Elimination Programme
-Central TB Division, Ministry of Health and Family Welfare, New Delhi
+New Clinically diagnosed Pulmonary TB (Probable RS-TB)
 
-                                                              Page 2 of 132
-Acknowledgement
+New microbiologically confirmed RS extra-pulmonary TB
 
-The Paediatric TB Management Guidelines, 2022, under the stewardship of the Central TB Division (CTD), has been a
-culmination of a host of conferring and consultations with national experts from the Government of India (GoI), the
-Indian Academy of Paediatrics (IAP), the World Health Organization (WHO) Country Office for India, key technical and
-development partners.
+New Clinically Diagnosed extra-pulmonary TB (Probable RS-TB)
 
-         These deliberations were organised by the Central TB Division (CTD), Ministry of Health and Family Welfare
-(MoHFW), and the GoI with technical support from the IAP, and encompassed consultations with several stakeholders,
-an extensive review of the literature and existing national and international recommendations. A compendium of the
-clinical updates, diagnostic tools, programmatic management, and care for children with TB, The Guidelines for
-Management of Paediatric TB, 2022 are aligned with other NTEP guidelines such as Programmatic Management of
-Drug Resistant TB 2021, Programmatic Managem
+Drug sensitive Previously Treated TBc (Recurrent, Treatment after loss to
+follow up, Treatment after Failure)
+
+4A. 2. Treatment Regimen
+
+Table 3. Treatment Regimen for Rifampicin-Sensitive TB
+
+a. Molecular testing shall be done in all new cases in children with suspected TB at diagnosis and RSTB (Rifampicin resistance not
+detected) cases included in this regimen.
+b. In the case of Neuro and spinal TB, the continuation phase is extended to 10 months.
+c. All these categories of children shall be evaluated as DR-TB suspects and assessed as per the DR-TB Algorithm. DST based
+treatment shall be followed. If they are found to be Rifampin (and INH) sensitive, they shall be re-started on the regimen as for a
+new case. This group was earlier treated with CAT II regimen, which is now withdrawn from NTEP.
+
+The drug dosages have been rationalised based on recent data on pharmacokinetics of ATT drugs and are as
+
+shown in the table below (Table 4):
+
+ 
 
 [DIV-021 -- Central TB Division, National Guideline on Paediatric Tuberculosis Management (22 Aug 2022) -- Chest imaging and clinical-diagnosis discussion (p. 22-24)]
- Paediatric TB Management
+Page 22 of 132
+The x-ray shows a lymph node shadow in the aorto-  Pulmonary Primary Complex with the compression of
+pulmonary window with an accompanying area of      lower third of trachea (arrow) and right airway
+consolidation
 
-              Guideline 2022
+Miliary shadows in both lung fields are highly     Extensive disease with multiple areas of breakdown,
+suggestive of TB in our s.et up                    more on the left side (Fibro-cavitary pneumonia)
 
-DEVELOPED BY THE NATIONAL TUBERCULOSIS ELIMINATION
-                            PROGRAMME
-
-CENTRAL TB DIVISION, MINISTRY OF HEALTH AND
-            FAMILY WELFARE, NEW DELHI
-
-                                             Draft
-
-Page 1 of 132
-               National Tuberculosis Elimination Programme
-Central TB Division, Ministry of Health and Family Welfare, New Delhi
-
-                                                              Page 2 of 132
-Acknowledgement
-
-The Paediatric TB Management Guidelines, 2022, under the stewardship of the Central TB Division (CTD), has been a
-culmination of a host of conferring and consultations with national experts from the Government of India (GoI), the
-Indian Academy of Paediatrics (IAP), the World Health Organization (WHO) Country Office for India, key technical and
-development partners.
-
-         These deliberations were organised by the Central TB Division (CTD), Ministry of Health and Family Welfare
-(MoHFW), and the GoI with technical support from the IAP, and encompassed consultations with several stakeholders,
-an extensive review of the literature and existing national and international recommendations. A compendium of the
-clinical updates, diagnostic tools, programmatic management, and care for children with TB, The Guidelines for
-Management of Paediatric TB, 2022 are aligned with other NTEP guidelines such as Programmatic Management of
-Drug Resistant TB 2021, Programmatic Managem
+         Cavitary Pneumonia                 Cavitary Pneumonia
+                                Page 23 of 132
+Figure 2b. Chest Imaging in TB
+Chest radiography is also an important tool to support the diagnosis of pulmonary TB in children. In the
+relevant clinical setting, a diagnosis of TB may need to be made on a clinical basis based on highly suggestive
+imaging findings of tuberculosis (miliary pattern, hilar or paratracheal lymphadenopathy with or without
+parenchymal involvement and fibro-cavitary lesions). It is worth remembering that all these imaging patterns
+also have other differential diagnoses. All presumptive TB cases with these radiological patterns are
+considered to be probable cases and should be subjected to microbiology to confirm the diagnosis. If
+microbiological investigations are negative, these children can be deemed to be cases of clinically diagnosed
+tuberculosis (TB), provided alternative causes are ruled out. Specificity of diagnosis in such situations
+increases in the presence of pointers like positive TST or history of con

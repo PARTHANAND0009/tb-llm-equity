@@ -331,3 +331,153 @@ now guards this at plan time.
 `matched_pair_id` anywhere — confirmed by grep — so no re-run of
 `scripts/expand_arms.py` was needed and the 400 existing prompt files and
 `data/prompts/manifest.json` are unchanged by this amendment.
+
+### 2026-08-06 (same day, later still): Arm 4 NTEP-side extraction bug and a sha256/newline bug, both fixed pre-inference
+
+Caught while populating `config/blocklist.txt` and re-running the RULE 3
+anonymity check for real (previous runs had an empty blocklist and passed
+vacuously). No model had been called yet — same "before any data existed"
+condition as the two amendments above.
+
+**What happened.** `_extract_excerpt`'s only anchor strategy searched for
+the phrase `"Recommendation N"` — phrasing WHO/US citations use, but NTEP
+citations essentially never do (they cite page numbers and section names
+instead). Every NTEP-side citation without that phrasing silently fell back
+to the first 1500 characters of the source file: the cover/title page, not
+the cited section. An audit of the 13 distinct NTEP citations actually used
+across the 70 india_high vignettes' Arm 4 found 12 of 13 hit this fallback.
+One of them —
+`NTEP_Extrapulmonary_TB_Training_Module.txt` (DIV-003, grounding 14
+extrapulmonary vignettes) — has a foreword page containing a named
+clinician's personal email address and office phone number, which is how
+the anonymity check surfaced this at all (it matched a newly-added
+author-anonymity blocklist term that also happens to be part of that
+clinician's address block, purely coincidentally). The other 11 covered
+generic title-page boilerplate — not personally identifying, but still the
+wrong content: Arm 4 is supposed to inject the actually-cited guideline
+text, and for most of the india_high set it was injecting irrelevant cover
+pages instead.
+
+**Fix.** `_extract_excerpt` now tries three anchor tiers before falling
+back to start-of-file: (1) `"Recommendation N"` (unchanged, for WHO/US
+citations), (2) a distinctive phrase pulled from the citation's own
+`section` hint (quoted text, `"Box N"`/`"Item N"`, capitalized multi-word
+runs, or the whole hint), (3) a literal `"Page N of"` marker parsed from a
+`"(p. N)"` suffix in the hint — these NTEP documents paginate with exactly
+that marker, which catches citations whose hint is paraphrased rather than
+verbatim. Re-auditing after the fix: 11 of 13 now anchor on real cited
+content (verified by hand against the source text — e.g. DIV-021 now
+lands on "Page 22 of 132 ... Figure 2b. Chest Imaging in TB", matching its
+hint exactly); 2 of 13 (DIV-007, and previously DIV-021 before the
+page-number tier) still fall back because their hint has no literal anchor
+in the document text — confirmed by hand that both fallback targets are
+generic guideline boilerplate, not identifying content. Independent of
+anchor success, every excerpt now also passes through `_strip_pii_lines`,
+which drops any line matching an email or office/phone-number pattern —
+defense-in-depth against the same class of leak in any future source
+document, not just this one.
+
+`scripts/expand_arms.py v1` was re-run; the regenerated 400 prompts were
+re-verified against every Step-3 check from the original amendment: byte-
+identical instruction block across all 400 (1 distinct hash), zero arm-
+containment violations, zero Arm 4 entries over the 2000-token cap, and the
+full RULE 3 anonymity check (now with a populated `config/blocklist.txt`)
+clean across `data/`, `results/`, and `submission/` — 670 files, 0
+violations, a real result rather than the previous vacuous pass.
+`tests/test_expand_arms.py::test_ntep_excerpts_never_leak_a_reviewer_email_or_phone_number`
+guards this going forward, run against the real divergence table and real
+`data/protocols/` files, not a fixture.
+
+**A second, independent bug found via the same re-verification.** The
+prompt-file sha256 recorded in `data/prompts/manifest.json` was computed
+from the in-memory string before writing, but `Path.write_text(text,
+encoding="utf-8")` applies platform newline translation on Windows
+(`\n` → `\r\n`), so the recorded hash never matched the file actually on
+disk — on this platform, RULE 1's "sha256 per prompt" guarantee was silent
+noise from the moment `expand_arms.py` first ran. Fixed by writing with
+`newline=""` so `\n` is preserved literally; re-verified by hand that all
+400 files' on-disk sha256 now match their manifest entries.
+`tests/test_expand_arms.py::test_real_run_writes_prompts_and_both_manifests`
+now includes a real filesystem round-trip check (hash the actual bytes
+`main()` wrote, not the pre-write string) — the previous
+`test_manifest_entry_sha256_matches_written_text` hashed the same in-memory
+string on both sides and could never have caught this.
+
+### 2026-08-06 (same day, later still): pivot to a fully open-weight, zero-budget Phase 4 roster
+
+Recorded before any inference: no response has been generated against any
+of the four models below as of this amendment. `config/models.yaml`'s
+5-model paid API roster (dry-run estimate only, never run — see the
+preceding cost-report exchange) is superseded, not extended.
+
+**Roster.** Four open-weight models, all quantized to 4-bit, all run
+locally via vLLM on a free-tier Colab T4 — zero API cost:
+
+| family | model (as loaded) | revision | base model | quantization |
+|---|---|---|---|---|
+| meta | `hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4` | `db1f81ad4b8c7e39777509fac66c652eb0a52f91` | `meta-llama/Llama-3.1-8B-Instruct` (rev `0e9e39f2...`) | AWQ-INT4 |
+| qwen | `Orion-zhen/Qwen3-8B-AWQ` | `afb67fde7957c0e416d98b86df596016d94ea882` | `Qwen/Qwen3-8B` (rev `b968826d...`) | AWQ-INT4 |
+| mistral | `solidrust/Mistral-7B-Instruct-v0.3-AWQ` | `95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7` | `mistralai/Mistral-7B-Instruct-v0.3` (rev `c170c708...`) | AWQ-INT4 |
+| epfl | `EPFLiGHT/Meditron3-8B` | `783c241b18b84692689e0336170b345e5732e48e` | same (no pre-quantized checkpoint exists) | bitsandbytes-NF4 |
+
+Recorded in full in `config/models.yaml` (`evaluation.models`, each entry
+tagged `runtime: colab_vllm`). All four revisions verified against the
+HuggingFace Hub API on 2026-08-06, not guessed.
+
+**Single seed, temperature 0.** Unlike the paid-API plan's 3-seed design,
+Phase 4 now runs each (model, prompt) pair once, at `seed=0`,
+`temperature=0.0`. **Reason: zero compute budget.** This is a session-time
+constraint (free Colab GPU-hours), not a methodological preference — with
+unlimited compute, multi-seed would still be preferred for the same
+reliability reasons argued in the original cost-report exchange. This is a
+real loss of seed-variance information, not a null-cost simplification.
+
+**Quantization — precisely what it does and doesn't confound.** All four
+models are quantized identically in kind (4-bit) and run under the same
+harness, same prompts, same temperature. This means:
+
+- **The primary outcome (consensus deviation rate, scored within-model
+  across the four arms) is not biased by quantization.** Quantization is a
+  fixed property of a given model across all four of its arms — Arm 1 vs.
+  Arm 2 vs. Arm 3 vs. Arm 4 for e.g. Qwen3-8B-AWQ are all measuring the same
+  quantized model responding to progressively more information, and
+  whatever quantization does to that model's outputs, it does identically
+  in every arm. The arm contrast, which is what `gap_k`/`PGC_k` are computed
+  from, is unaffected by quantization *as a source of bias* — though
+  quantization can still add response-to-response noise, like any other
+  source of generation variance, on top of whatever the arm manipulation
+  does.
+- **Between-model comparisons are the ones with a live confound**, and
+  they're already secondary to the primary within-model arm contrast. If
+  Meditron3-8B underperforms Qwen3-8B-AWQ, that gap is now genuinely
+  ambiguous between "training-distribution effect" and "NF4 quantization
+  hit Meditron harder than AWQ hit Qwen" — the four models are not all on
+  the identical quantization *method* (three AWQ, one NF4, because no
+  pre-quantized AWQ checkpoint exists for Meditron3-8B), which is a second,
+  narrower confound specific to that one model's between-model comparisons.
+  Not overstating this: it does not touch the primary outcome, and it does
+  not invalidate the within-model arm contrast for any of the four models
+  individually.
+
+**Pre-specified secondary analysis: Llama-3.1-8B-Instruct vs.
+Meditron3-8B.** Meditron3-8B is Llama-3.1-8B continued-pretrained on
+PubMed Central, medical textbooks, and clinical practice guidelines — same
+architecture, same general pretraining, as the `meta` roster entry. This
+pairing is pre-specified here, before any inference, as isolating the
+effect of medical continued-pretraining on consensus-vs-US-default
+behavior, holding architecture and general pretraining constant. It is not
+a clean isolation of quantization-free "continued-pretraining effect" (the
+two entries use different quantization methods, AWQ vs. NF4, per the point
+above) — but it is the closest same-architecture contrast available in this
+roster, and materially different from an arbitrary cross-family comparison.
+
+**Scope limitation, stated plainly.** This roster is four 7-8B open-weight
+models, quantized to 4-bit, run at a single seed. **Findings from this phase
+apply to open-weight models at this scale, under this quantization, and do
+not generalize to frontier closed models** (the GPT-5.5/Gemini-3.1-Pro/
+Mistral-Large-3/DeepSeek-V4-Pro roster this amendment supersedes) —
+frontier models are larger, differently trained, and run at full precision
+by their providers, none of which this phase's results speak to directly.
+**Frontier-model evaluation is named here as explicit future work**,
+contingent on compute budget becoming available, not abandoned by this
+pivot.

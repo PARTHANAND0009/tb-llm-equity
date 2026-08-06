@@ -43,3 +43,9 @@ src = ["src", "tests", "scripts"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# One-off notebook-builder: long lines are notebook-cell source text (Python
+# string literals), not real code-complexity -- wrapping them would just
+# make the generated notebook's own lines awkwardly split.
+"scripts/_build_notebook.py" = ["E501"]

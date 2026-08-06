@@ -52,9 +52,9 @@
     "human_reviewed": true,
     "clinician_reviewed": true,
     "clinician_review": {
-      "reviewer_name": "Dr. Ojasvi Anand",
+      "reviewer_name": null,
       "reviewer_credentials": "MBBS",
-      "reviewer_institution": "SSR Medical College",
+      "reviewer_institution": null,
       "review_date": "2026-08-06",
       "verdict": "approved",
       "edits_requested": 0,

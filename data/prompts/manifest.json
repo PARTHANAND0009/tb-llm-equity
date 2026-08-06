@@ -1,6 +1,6 @@
 {
-  "run_id": "expand-arms-20260805T201559Z",
-  "generated_at": "2026-08-05T20:15:59.736330+00:00",
+  "run_id": "expand-arms-20260806T144802Z",
+  "generated_at": "2026-08-06T14:48:02.872906+00:00",
   "vignette_set_version": "v1",
   "vignette_count": 100,
   "prompt_count": 400,
@@ -36,7 +36,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-001/arm4.txt",
-      "sha256": "b3b6ee44b68f536d8615649f0a3b9cfc04ad67b3ef72c076c5010bd40564417c",
+      "sha256": "11fc412c14bb937daf43615b245e9683396897314a50ed20a1f95a0a6a18f557",
       "estimated_tokens": 1322,
       "protocol_chunks_injected": [
         {
@@ -160,7 +160,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-003/arm4.txt",
-      "sha256": "f1ee8f419852a8e698c58080b065691e0ce75ed632ca063478366372b6e56271",
+      "sha256": "a918190429be559a40624498be8edca7cbd9e2ab8dedb499f24e9fe725ace6e2",
       "estimated_tokens": 1277,
       "protocol_chunks_injected": [
         {
@@ -222,7 +222,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-004/arm4.txt",
-      "sha256": "ee2b7a4102589d3651488017787ea8c9d000baed05bad0fd9b3e167806f92d52",
+      "sha256": "a0aa5065ae3db8a01873a5311046258ea17e0486eed68dd1771233f80ab44cc8",
       "estimated_tokens": 1258,
       "protocol_chunks_injected": [
         {
@@ -284,7 +284,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-005/arm4.txt",
-      "sha256": "d944931a02d837bc122cdcf1608010eef31689c6641c99caae07dccc10ba5e7c",
+      "sha256": "b71e776c548a477788f3174aadd3e8156b365f801ea0a7b10e01251e2d3f2a18",
       "estimated_tokens": 1306,
       "protocol_chunks_injected": [
         {
@@ -408,7 +408,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-007/arm4.txt",
-      "sha256": "c25a67aab0b44dfec44f1aafc61d49f1725e258cda38eb43611d03e979d5790a",
+      "sha256": "17ad492101d4fc05bc2c3767bb5737b4d3c4ab62baf0e0222b37740e346c9a85",
       "estimated_tokens": 1246,
       "protocol_chunks_injected": [
         {
@@ -470,7 +470,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-008/arm4.txt",
-      "sha256": "640bf208a0bde55bf0b8fb3c9ea895df8418baec944fe64e4eacaf2d13b37cd5",
+      "sha256": "36a7707ea2fda4318cf5afb48ab56c52c77d5f67edfc10f691f3af692f0437f2",
       "estimated_tokens": 1280,
       "protocol_chunks_injected": [
         {
@@ -532,7 +532,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-009/arm4.txt",
-      "sha256": "62f43ab5fd5c56f18d79a709a9633d4384540bd8652862fb6419a1b945c4bae7",
+      "sha256": "2b4ced72a7cdb19ccc3041e7e8fb65ccdfc6d364f6e7cfaae8f56e023ac5f72e",
       "estimated_tokens": 1273,
       "protocol_chunks_injected": [
         {
@@ -656,7 +656,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-011/arm4.txt",
-      "sha256": "dabfb9de8d2c7a9afe589f801ad4a004979b8b7501f375f064d26d9608a0b78b",
+      "sha256": "b893b2fc8a0b1fafb0cc693323b252a71fecaf24ee891a8eea6e3b118093d643",
       "estimated_tokens": 1244,
       "protocol_chunks_injected": [
         {
@@ -718,7 +718,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-012/arm4.txt",
-      "sha256": "1d787127d29d3356a34b59b839bcfe343ba87ff272a46bba25da7c753972a9ab",
+      "sha256": "1b802343023b597462083e4d75e7acc5bbfed72680b2683e329f4c79b44a4904",
       "estimated_tokens": 1224,
       "protocol_chunks_injected": [
         {
@@ -780,7 +780,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-013/arm4.txt",
-      "sha256": "90fb5bb64568bb3092439b97c207ac1efded94ef3df342d0501386a103b3ef6c",
+      "sha256": "398b9c82d0f662217231d9f9ea656bc6115d2be3088780358db7b2981cc51a3f",
       "estimated_tokens": 1257,
       "protocol_chunks_injected": [
         {
@@ -904,7 +904,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-015/arm4.txt",
-      "sha256": "67997aacd0e5a67fc29bfa21cafd576d4e885bc2e9e5feb840f51c0c5447bfbd",
+      "sha256": "6602aded4dde9927dce9dbc1904693d589aa2f2cc7fdf390a1e99adb901671b1",
       "estimated_tokens": 963,
       "protocol_chunks_injected": [
         {
@@ -966,7 +966,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-016/arm4.txt",
-      "sha256": "61cc65252401528fdb4d906e0e302c3b795655110cc8e8d5c7960ee2ef970351",
+      "sha256": "4c6431b7da53270f72681d881e8d4aef0c70744408b64000812ea90f1010cff1",
       "estimated_tokens": 1232,
       "protocol_chunks_injected": [
         {
@@ -1028,7 +1028,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-017/arm4.txt",
-      "sha256": "013238a8a86781238411df286a8362928b0958795789a732256ff825b2df39dd",
+      "sha256": "e6f791d3e38ddc83d692fea81cfc1663ccdca5a80cdb781d5b3ad3bae0c3f794",
       "estimated_tokens": 1244,
       "protocol_chunks_injected": [
         {
@@ -1152,7 +1152,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-019/arm4.txt",
-      "sha256": "c5da4644e3710529f3df7e12cd5a79ebb160683738188676802b5c8381a878c8",
+      "sha256": "949f2ffe4332998d002104571c46819ba198af3479a378357645aaa6a152e4df",
       "estimated_tokens": 1218,
       "protocol_chunks_injected": [
         {
@@ -1214,7 +1214,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-020/arm4.txt",
-      "sha256": "d87dafbed46a3ce088470d35217dc27ee0f3282e3d68802ae95b3176d6706ddd",
+      "sha256": "279b30cc592fcea585e9161f4c1ea14a44d38aa2c1791003aecf6205a0d8e742",
       "estimated_tokens": 1633,
       "protocol_chunks_injected": [
         {
@@ -1276,7 +1276,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-021/arm4.txt",
-      "sha256": "7a617d5d622cd0edf009c3caaa5bd6cb5922fff03a0dbe4e6a260eb38f74153e",
+      "sha256": "bafdecacc1dfb67ac3769c84bd9f1a56253016fb8291939d5c9d667e7e6632f2",
       "estimated_tokens": 1617,
       "protocol_chunks_injected": [
         {
@@ -1338,7 +1338,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-022/arm4.txt",
-      "sha256": "822518ceee58e36c2e1c07715fa0ea77a28a934be05b573e6e1a9f60b6ea604d",
+      "sha256": "aada086b9990f652e6e78c0d7e063b006080ae30e552052fdf7b78374ca73eca",
       "estimated_tokens": 1566,
       "protocol_chunks_injected": [
         {
@@ -1400,7 +1400,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-023/arm4.txt",
-      "sha256": "936771420d4ec04acf3d56250180f681786c355510369f204d9bd086f0a0bdc7",
+      "sha256": "c2f852aa667c569759ec88b30270ed602d0042294917ddf131db42c73a074cec",
       "estimated_tokens": 1592,
       "protocol_chunks_injected": [
         {
@@ -1462,7 +1462,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-024/arm4.txt",
-      "sha256": "54ab7b67db88d108c2ac5a98f0b0a2dcbd6e324c5cb2a2f744b90393c0eeb638",
+      "sha256": "2796821ec3a4cff668af125a452276cc21b87c57a90f37d61382ba56a1b856b6",
       "estimated_tokens": 1607,
       "protocol_chunks_injected": [
         {
@@ -1524,7 +1524,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-025/arm4.txt",
-      "sha256": "09df816160a5214b974269c345ad14e30ca8e5297be1e840c69e02a44160cb15",
+      "sha256": "76af255fdbf07cd01207270885476b1002619fb86981257110612ac49b9688a0",
       "estimated_tokens": 1579,
       "protocol_chunks_injected": [
         {
@@ -1648,7 +1648,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-027/arm4.txt",
-      "sha256": "9cfd89872f04bdadefbfea11c3b19e9f62a799cdc37ce70ad0350497d6597dd7",
+      "sha256": "d61435f3fb6f14bda161eab239016a0e99680ea4d5b04c949b863fbf9bf274ee",
       "estimated_tokens": 1260,
       "protocol_chunks_injected": [
         {
@@ -1710,7 +1710,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-028/arm4.txt",
-      "sha256": "10da022903dc4a84c0f7a15d87b40a113382ea2d31185590bd794ad941c41c2b",
+      "sha256": "fb88e03abc955d160a1b7a5005d7bdb99a69e13f65e9e254e3cf0b600921bd2d",
       "estimated_tokens": 1267,
       "protocol_chunks_injected": [
         {
@@ -1772,7 +1772,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-029/arm4.txt",
-      "sha256": "1079c78a3c3e7589a09601a0c984b6080745000873f2b373ab093de45fa595cc",
+      "sha256": "3a0376f9d15c5aeb8e2c7a9be8c32bb445da84b7f9c8a55a079b4ceafcc8d597",
       "estimated_tokens": 752,
       "protocol_chunks_injected": [
         {
@@ -1816,7 +1816,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-030/arm4.txt",
-      "sha256": "2a9d42a9fc4844b38abd1935e3b47814d01d4c40df93592d02e3d4168b3d0fff",
+      "sha256": "2dd72f9651564e57e11ee84c99bf250f6a80f8d7e547a6eea274971c970155f2",
       "estimated_tokens": 739,
       "protocol_chunks_injected": [
         {
@@ -1860,7 +1860,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-031/arm4.txt",
-      "sha256": "0ed7c61feb67331186fb5e953763b96c413b996091ffa298e39dbdd9fc798064",
+      "sha256": "2efedae203f6b87008fce899060ecde44ea8689a09481563b9d7b85872f48f12",
       "estimated_tokens": 760,
       "protocol_chunks_injected": [
         {
@@ -1904,7 +1904,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-032/arm4.txt",
-      "sha256": "87eca2845b638c45968d611cf305581e165bb0937c4ac270d91a838708d4e8b7",
+      "sha256": "efcad12037b2c8f50a1ddc97e06c0d1e62dfa9925c39ffc709619bf6ed729c80",
       "estimated_tokens": 714,
       "protocol_chunks_injected": [
         {
@@ -1948,7 +1948,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-033/arm4.txt",
-      "sha256": "e197475774896766f025a2349fbd5b066090f950912c3859eaa525156f2699ab",
+      "sha256": "7dff2a38db21a3e6430072e2f925b00c0fbd463ac4e9dac40b1b12512c8e5662",
       "estimated_tokens": 730,
       "protocol_chunks_injected": [
         {
@@ -1992,7 +1992,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-034/arm4.txt",
-      "sha256": "626a99d927a3651c30f65713da36966ab922ba15838444519e0afe4307ab23c4",
+      "sha256": "9073f51b5d85804c86511ccbbe63f684b524b9e4e6f6e6dccce0e4ed5ea81006",
       "estimated_tokens": 695,
       "protocol_chunks_injected": [
         {
@@ -2036,7 +2036,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-035/arm4.txt",
-      "sha256": "ef04a483b799520569aa2c2b684bde03832d8bdd171f58745037854194d49dfd",
+      "sha256": "27753b2657c638f5bccf7507cc5a1e137ced8cc1fba3e124e535b1241c8454be",
       "estimated_tokens": 717,
       "protocol_chunks_injected": [
         {
@@ -2080,7 +2080,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-036/arm4.txt",
-      "sha256": "c5ca854229022657f93de160c4bc592a6f508ad49ab8f1a6e9851320af495e63",
+      "sha256": "bad80f38c1156008c93c85d7d5435dcdf8d511d2062645de0cf403e35f6b063f",
       "estimated_tokens": 715,
       "protocol_chunks_injected": [
         {
@@ -2124,7 +2124,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-037/arm4.txt",
-      "sha256": "9d9514de85c89dfbfb2eddf3aeccf6e1b4456eddfc4339ae04d57aa73c992120",
+      "sha256": "d63e56b13734c400b6083a83d9eb22b9b3cd897494aeb6ea47c204c0628fd1b9",
       "estimated_tokens": 724,
       "protocol_chunks_injected": [
         {
@@ -2168,7 +2168,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-038/arm4.txt",
-      "sha256": "b1c91be418e3ee0f80f442eea7352c65c0fe8ee74ae2fe02463658a3be31d558",
+      "sha256": "392d96dd4666446eb4f42f03c88e849c2c5b4f6afb0c270b17fc12ae28d2c5d3",
       "estimated_tokens": 719,
       "protocol_chunks_injected": [
         {
@@ -2212,7 +2212,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-039/arm4.txt",
-      "sha256": "d231b5c8b445d14b67bc7112ebd2f66956c787bf22b6546f3054f66b1a3268c4",
+      "sha256": "9ba774518c986db7032811f0148d5b477c5ad5dbc81a716fb9c732fdeb43b14e",
       "estimated_tokens": 741,
       "protocol_chunks_injected": [
         {
@@ -2256,7 +2256,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-040/arm4.txt",
-      "sha256": "235e8325807244926d8dbe83dcaaf9ac6271a1a6a12cf844b214d3f53efb7f3f",
+      "sha256": "1af3742eb5aefb658cd568c04126e2a32e5321be06bd93cb7405ed6daed00b5e",
       "estimated_tokens": 729,
       "protocol_chunks_injected": [
         {
@@ -2300,7 +2300,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-041/arm4.txt",
-      "sha256": "73678453bb568b68aa0496fc1e1813381b5d8d6a9ade08e446c279a04417e241",
+      "sha256": "b509bbe635e110e338f03b64d6528430ff808c0d1dbf5e3e0c6a43fbbfb2cb9b",
       "estimated_tokens": 739,
       "protocol_chunks_injected": [
         {
@@ -2344,7 +2344,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-042/arm4.txt",
-      "sha256": "e6eb778e71ef3fc7a79c533228d772ba26b94220b233a951c6ad3d98541c4b8c",
+      "sha256": "cce7b1400a16d8157e115cf5b061d006b4768e892c7e1c9e71dd90e218715b93",
       "estimated_tokens": 759,
       "protocol_chunks_injected": [
         {
@@ -2388,7 +2388,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-043/arm4.txt",
-      "sha256": "1721ddb37b6583f86c150c5c56b4830c021228dff017b943aca4f2b937eedb1b",
+      "sha256": "838e2c9520fb4a7bbb70a1330f1ddcb82840610bfa12e10d0db7b4153f8af51b",
       "estimated_tokens": 697,
       "protocol_chunks_injected": [
         {
@@ -2432,7 +2432,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-044/arm4.txt",
-      "sha256": "43ff14af28bc6926480d63a75029c4968cba4bf19df39666735f6dd7144313cd",
+      "sha256": "59a888922847b5edb34cf1c707b78f9cf6d0df7b50bedc0842c1437293b22051",
       "estimated_tokens": 732,
       "protocol_chunks_injected": [
         {
@@ -2476,7 +2476,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-045/arm4.txt",
-      "sha256": "6e0f6d17d353a23d0f4727a946cf64ecfc1ff3a41169898157aaa29b725fab51",
+      "sha256": "923d283aa9cc6f1d5bdfb6eded0e948755d2593306045236e8b3cba2bca16fcc",
       "estimated_tokens": 735,
       "protocol_chunks_injected": [
         {
@@ -2520,7 +2520,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-046/arm4.txt",
-      "sha256": "908c5b1e22e212ac3f67164b37e2a08149481e69142fb6f48e62b22e719597fb",
+      "sha256": "c1e56f2d4f40c6c1dd0e61f1c4960b5ca48327536fff2bc3c4d7a9d28701b3b3",
       "estimated_tokens": 1129,
       "protocol_chunks_injected": [
         {
@@ -2573,7 +2573,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-047/arm4.txt",
-      "sha256": "6ee26db8407c749e4600c8696e1658579eb1fb0695743ed92c4e2f735f2a5069",
+      "sha256": "d82e909751712d03083af1bab5eb02eadc963a87edad7de19bdfe434da25c0a2",
       "estimated_tokens": 1095,
       "protocol_chunks_injected": [
         {
@@ -2626,7 +2626,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-048/arm4.txt",
-      "sha256": "5fe8c3194774e2c320faeb6151ccb12da521b7df904b0217ad35535bde930d30",
+      "sha256": "47c94063255b327c01bb3f7695dfc506437cec56c856bf2376eb60ca1fcf5e88",
       "estimated_tokens": 1114,
       "protocol_chunks_injected": [
         {
@@ -2679,7 +2679,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-049/arm4.txt",
-      "sha256": "22d84046ea79e7ef33d31dc8e0ecd304f7b0853a2e3622015166b15531db5d88",
+      "sha256": "5ae87e37336f287304b66200bbc451e8826b7eff804fadca2c1cbcc8477a07a3",
       "estimated_tokens": 700,
       "protocol_chunks_injected": [
         {
@@ -2723,7 +2723,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-050/arm4.txt",
-      "sha256": "3c9306b037da039e079b78974a2b05fd1401f0c12c735a3f071ddbca6a2dd574",
+      "sha256": "f51e48d652c9aa35b68c00aa70516c3bc4b616bb6927dffdb79bc27cd2d53ddd",
       "estimated_tokens": 1109,
       "protocol_chunks_injected": [
         {
@@ -2776,7 +2776,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-051/arm4.txt",
-      "sha256": "8016a4e41cbf6bb6bd5974f35650ef744ec94ac9cd6c70ed768a0832c8747727",
+      "sha256": "fe7f7944dbed05988c4c4bf4fb77743c4095a176fa3d54c1521d6e348c72655c",
       "estimated_tokens": 1077,
       "protocol_chunks_injected": [
         {
@@ -2829,7 +2829,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-052/arm4.txt",
-      "sha256": "225a80c22a1640491d212ccc8169786bae8b459c580fa03467dfbed24593be7d",
+      "sha256": "9e8e8d16014859e832de1cda8cfc4c1c44e0e608a12548ba9251455db1634067",
       "estimated_tokens": 1083,
       "protocol_chunks_injected": [
         {
@@ -2882,7 +2882,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-053/arm4.txt",
-      "sha256": "47195299eb383ad0e1a4f177ad876fd9bb649ce1a8bdb62649da81f7a2c08f54",
+      "sha256": "0ce91cb93ee2dec6cd99e6760ebed985e91e88eec6cfc32c57a647965b9757b8",
       "estimated_tokens": 1104,
       "protocol_chunks_injected": [
         {
@@ -2935,7 +2935,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-054/arm4.txt",
-      "sha256": "55ea86a96664a492e7a22b00cfa422a83f30389b1b171d087d2203a77fa79f1e",
+      "sha256": "b49d1ae6e5c32baca3c59a487d4a27e0aac6d7b03e2df2d7186ba2ba44c495f7",
       "estimated_tokens": 1111,
       "protocol_chunks_injected": [
         {
@@ -2988,7 +2988,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-055/arm4.txt",
-      "sha256": "cbe1514e1c974905dc5f5a230214479bdf80fd8aa8f5f8a01695c4da72fe6f8d",
+      "sha256": "67547d9975a4e16e0418ccd0e0406df5959854b765aa276d4370915adb93ed6d",
       "estimated_tokens": 1176,
       "protocol_chunks_injected": [
         {
@@ -3041,7 +3041,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-056/arm4.txt",
-      "sha256": "e742dbe9f35d16f7a621b8879d6da4206a3fb9bdef25e884aa29fb088ab5235e",
+      "sha256": "186ea9231e3bdec80d9440162ef7f72a6b581980e0f5cb309ecbb0e711451217",
       "estimated_tokens": 1124,
       "protocol_chunks_injected": [
         {
@@ -3094,7 +3094,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-057/arm4.txt",
-      "sha256": "98ff18a677651e06b94e75667e6b7241d00b7d9ba675255acf6bf45936fd2fd3",
+      "sha256": "6237604621a449ccd8702b7edce2729f9ab2a231490a52d8010f0c194fa871c1",
       "estimated_tokens": 1145,
       "protocol_chunks_injected": [
         {
@@ -3147,7 +3147,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-058/arm4.txt",
-      "sha256": "45d2e0c3003ee822082bf362e448ca5872688c80f6b34309bde86686a7532483",
+      "sha256": "735d18dbd909394f3a43f0d2b4f5039b98d12e9521dc3f6228a581727efd77f5",
       "estimated_tokens": 1091,
       "protocol_chunks_injected": [
         {
@@ -3200,7 +3200,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-059/arm4.txt",
-      "sha256": "728decb0287ba18f0d2ac6b53a1507b506bb767201bfcb81835a2c940aeec1a3",
+      "sha256": "3282750dd8b80b1426cc660154248b48f4ddffd2a0b81d89e70d43cbfdca0232",
       "estimated_tokens": 1094,
       "protocol_chunks_injected": [
         {
@@ -3253,7 +3253,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-060/arm4.txt",
-      "sha256": "6b836948021b97386c54f4a77f4f8db99a64c5e7008692b574afad506877eed9",
+      "sha256": "91825f8d4b30fa4492183ac396b6803149ec53797e3e34590344beaf2718bc88",
       "estimated_tokens": 1171,
       "protocol_chunks_injected": [
         {
@@ -3306,7 +3306,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-061/arm4.txt",
-      "sha256": "0771c8cfa1b7b4a7721a35c300dd1b7b40fe3e843f2ad5b675607bde39096a8d",
+      "sha256": "ef421fda3cb877c7d73028bed9dafe18701b4ec94a458c72ab72af87e9ba85d0",
       "estimated_tokens": 1104,
       "protocol_chunks_injected": [
         {
@@ -3359,7 +3359,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-062/arm4.txt",
-      "sha256": "7376c9020314deab688605550b44a45e9c0efb6a7be6572deceb048e19d8a45b",
+      "sha256": "a0cbaeef5808a1c52dc7990494b7572512631e9f89ef9263826434a91c5ead2c",
       "estimated_tokens": 1102,
       "protocol_chunks_injected": [
         {
@@ -3412,7 +3412,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-063/arm4.txt",
-      "sha256": "5d717297be2203efd8db9a45197b18980144d12d81b293226307a7817995d9da",
+      "sha256": "afa9cc4fd5ab87ed37e843dad002a562c887cb088ae4e517f9a92de3cefe8896",
       "estimated_tokens": 1076,
       "protocol_chunks_injected": [
         {
@@ -3465,7 +3465,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-064/arm4.txt",
-      "sha256": "9325db0d0ab7f74d9001146beab329c604ffa4ec7cc96e46c7733a2f14e1cf07",
+      "sha256": "66e6d849ff60cd926051351bb12699efc911a45a26a972b88b06f654d56d00ed",
       "estimated_tokens": 1084,
       "protocol_chunks_injected": [
         {
@@ -3518,7 +3518,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-065/arm4.txt",
-      "sha256": "1b0b88c398943a5cf722e6808d5467006c0732542f406c580537d27320faedf5",
+      "sha256": "916a210b339a506f43742fae4ea29f97ec79e4561ea567c5be4136750e2ebefe",
       "estimated_tokens": 1073,
       "protocol_chunks_injected": [
         {
@@ -3571,7 +3571,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-066/arm4.txt",
-      "sha256": "fcf6d163be7cab5204513c19f2229fbd75cd7ce950a0b0cbdd1428def9dc5a44",
+      "sha256": "ab1419b7736bdc858b99c70a008f055ddc3ac5e1d9774e9e308c841e775926bd",
       "estimated_tokens": 1074,
       "protocol_chunks_injected": [
         {
@@ -3624,7 +3624,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-067/arm4.txt",
-      "sha256": "5d62791eda6418cdf75f5f6c2a8a946ba96d71ec5013d8771a06380ebc08c5d2",
+      "sha256": "784db5cef4d7417cc73901161dc3f7170c35ca4491ec43d9e600340113ac81cb",
       "estimated_tokens": 1072,
       "protocol_chunks_injected": [
         {
@@ -3677,7 +3677,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-068/arm4.txt",
-      "sha256": "d4350d554a65dee055cbfe2e731f65f199a3f6332cfeb60fbc446da14b6fa94e",
+      "sha256": "9381333d94bdc60ebbca53bdfd6bb593a9612de4401e87474bb4f51d230ffaa3",
       "estimated_tokens": 1080,
       "protocol_chunks_injected": [
         {
@@ -3730,7 +3730,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-069/arm4.txt",
-      "sha256": "69d05873581b92367bd0d1d0f7e7bb3a1e2065303598c45bc970a190e1bc5bf8",
+      "sha256": "53c68357511c8e302051beb50d4f81adc5cf619d66b4bd59e3fe007700289f37",
       "estimated_tokens": 658,
       "protocol_chunks_injected": [
         {
@@ -3774,7 +3774,7 @@
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-070/arm4.txt",
-      "sha256": "376a3ffaa37255c275721f163ae485c83ec076d3a35ed4ebba24c2cb56614b68",
+      "sha256": "2127afeebccb950f7d99917c282418d08d282ff6a1b03a40826d1a1c71425d97",
       "estimated_tokens": 1042,
       "protocol_chunks_injected": [
         {
@@ -4183,7 +4183,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-077/arm4.txt",
-      "sha256": "3485628dd83055b5b1afda5c68cc182813976d106a53f35d993ceb95388ad812",
+      "sha256": "c852684c5615145e05fb2d3982c556692d928912b30a073463a801f19229522b",
       "estimated_tokens": 1497,
       "protocol_chunks_injected": [
         {
@@ -4245,7 +4245,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-078/arm4.txt",
-      "sha256": "fd10c474e5c222f6f2a87d5bfbf0e7254c6f7496787d7ec40328d8800c962e7f",
+      "sha256": "a16119201144db11c9b82e9ad739e2b5bd94185a62a97a6b7cb9cb603ae40336",
       "estimated_tokens": 1502,
       "protocol_chunks_injected": [
         {
@@ -4307,7 +4307,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-079/arm4.txt",
-      "sha256": "cbf47c1ae533a3565997b9593959ac5aa78e989f4ae6beaf616628ccc89fbffa",
+      "sha256": "13c7d3c60780920e91b8046abaeaa043d937875cddbb11bdc6df6eae7da8d478",
       "estimated_tokens": 1497,
       "protocol_chunks_injected": [
         {
@@ -4431,7 +4431,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-081/arm4.txt",
-      "sha256": "74d3b002068e36db354ceb6c730efecbc0a83d142441dea41f59f6b06a0acec7",
+      "sha256": "f8ba264e1a132cacd291367f6eb870c560527014247c2e6728a792fee8ff55a7",
       "estimated_tokens": 1502,
       "protocol_chunks_injected": [
         {
@@ -4493,7 +4493,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-082/arm4.txt",
-      "sha256": "e5c137f0421783b8ae31cdd7fbf0dc23f2fbc0e480edf2fa1486c93644607877",
+      "sha256": "4f17123db3b286c414122586bafc02452e7e70bb1da35dcd409dce4111f90ec2",
       "estimated_tokens": 1487,
       "protocol_chunks_injected": [
         {
@@ -4916,7 +4916,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-091/arm4.txt",
-      "sha256": "f159e3127f4781ea0d86467288c3c6ba1bda684be74ab758958e684b94249175",
+      "sha256": "16d3cace9dd3854a3025cef91ba37515f28ca0116df9a23a9dc268ea75d6e449",
       "estimated_tokens": 1066,
       "protocol_chunks_injected": [
         {
@@ -4969,7 +4969,7 @@
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-092/arm4.txt",
-      "sha256": "28a751752add5f65639084a956533ccab19bc671cd3805a88c3f842ea1d0feb4",
+      "sha256": "34c763d713c2142030b3c02dd9f1ea5270066f8eaf658912b33cfebc01cb2dda",
       "estimated_tokens": 1083,
       "protocol_chunks_injected": [
         {

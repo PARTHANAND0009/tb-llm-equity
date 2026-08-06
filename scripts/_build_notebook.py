@@ -66,15 +66,31 @@ CELLS.append(md(
     " in `tests/test_checkpoint.py` / `tests/test_response_format.py` -- including a"
     " simulated mid-write kill. **The vLLM/model-loading cells below have not been"
     " run against a real GPU** -- this environment had no GPU or Colab execution"
-    " channel available when this notebook was built. Standard, stable vLLM APIs"
-    " are used throughout, but treat the first full run of each cell as the actual"
-    " first test of it.",
+    " channel available when this notebook was built. A static review (read, not"
+    " run) caught and fixed several T4-specific issues before this version: an"
+    " unpinned vLLM version, `bfloat16` vs. `float16` (T4/Turing lacks bf16 tensor"
+    " cores), `tokenizer_revision` not pinned alongside `revision`, and -- the"
+    " biggest one -- the full run originally called `LLM.generate()` once per"
+    " prompt in a loop to get per-response checkpointing, which would have silently"
+    " forfeited continuous batching entirely and made the pilot's throughput"
+    " measurement not comparable to the full run's actual speed; it now uses"
+    " `LLMEngine.add_request()`/`.step()` to get both. None of this substitutes for"
+    " an actual run -- treat the first full run of each cell as the real first test"
+    " of it.",
 ))
 
 # ---------------------------------------------------------------------------
-CELLS.append(md("## 1. Install dependencies"))
+CELLS.append(md(
+    "## 1. Install dependencies",
+    "",
+    "`vllm` is version-pinned (0.26.0, the latest PyPI release as of 2026-08-06,"
+    " verified by web search when this notebook was built) rather than left"
+    " floating -- an unpinned `pip install vllm` picks up whatever is newest at"
+    " *run* time, which is a real way for a notebook that worked when written to"
+    " break when actually run.",
+))
 CELLS.append(code(
-    "!pip install -q vllm transformers accelerate bitsandbytes huggingface_hub pyyaml",
+    "!pip install -q vllm==0.26.0 transformers accelerate bitsandbytes huggingface_hub pyyaml",
 ))
 
 # ---------------------------------------------------------------------------
@@ -117,11 +133,15 @@ CELLS.append(code(
     "VIGNETTES_DIR = REPO_DIR / 'data' / 'vignettes' / 'v1'",
     "assert PROMPTS_DIR.exists(), f'{PROMPTS_DIR} not found -- run scripts/expand_arms.py in the main repo first.'",
     "",
-    "# Checkpoints and final responses ALWAYS go to Drive directly, independent of REPO_SOURCE.",
+    "# Checkpoints, final responses, and pilot results ALWAYS go to Drive directly,",
+    "# independent of REPO_SOURCE -- created now, before any generation happens below,",
+    "# so the first checkpoint/pilot-result write always lands on durable storage.",
     "RESPONSES_DIR = DRIVE_ROOT / 'data' / 'responses'",
     "MANIFEST_DIR = DRIVE_ROOT / 'results' / 'manifests'",
+    "PILOT_RESULTS_DIR = DRIVE_ROOT / 'results' / 'pilot'",
     "RESPONSES_DIR.mkdir(parents=True, exist_ok=True)",
     "MANIFEST_DIR.mkdir(parents=True, exist_ok=True)",
+    "PILOT_RESULTS_DIR.mkdir(parents=True, exist_ok=True)",
 ))
 
 # ---------------------------------------------------------------------------
@@ -228,34 +248,71 @@ CELLS.append(md(
     " 2026-08-06 -- searched, none found), so it loads via on-the-fly bitsandbytes"
     " NF4 quantization instead of a pre-quantized AWQ repo; the other three load"
     " pre-quantized AWQ checkpoints directly.",
+    "",
+    "**T4-specific settings, verified by web search when this notebook was built (not"
+    " guessed):**",
+    "",
+    "- `dtype='float16'`, not `bfloat16`, for every model including the bitsandbytes"
+    " path. T4 is Turing (compute capability 7.5) and lacks native bf16 tensor-core"
+    " support -- several bitsandbytes/vLLM usage examples online default to"
+    " `bfloat16` because they're written against Ampere+ GPUs; using that default"
+    " here would silently run at a fraction of the expected speed, or fail outright,"
+    " not obviously error with a clear message pointing at the cause.",
+    "- `quantization='awq'`, deliberately not letting vLLM auto-select an AWQ+Marlin"
+    " kernel path -- Marlin is tuned for/requires Ampere (SM80) or newer, and there"
+    " are open vLLM GitHub issues (#3392, #6985) about AWQ+Marlin conflicts. Plain"
+    " AWQ (no Marlin) is the broadly-compatible path on Turing.",
+    "- `gpu_memory_utilization=0.85` -- within the community-reported safe range for"
+    " an 8B AWQ/NF4 model on a 16GB T4 (reports cite up to 0.92-0.95 working"
+    " reliably); kept at the more conservative end of that range for this notebook's"
+    " *first* real run specifically, since actual utilization has been reported to"
+    " overshoot the requested value on Colab T4s in practice. Raise it after you've"
+    " confirmed a full run completes without OOM, if you want more KV-cache headroom.",
+    "- `max_model_len=4096` covers the longest real Arm 4 prompt (~2500 tok, see"
+    " `data/prompts/manifest.json`'s `estimated_tokens`) plus `GENERATION_MAX_TOKENS`"
+    " output, with margin.",
+    "- `tokenizer_revision` is pinned to the same commit as `revision` explicitly --"
+    " vLLM treats them as independent parameters, so leaving `tokenizer_revision`"
+    " unset would default to `main` even with the model weights pinned, which is"
+    " exactly the silent-mid-run-change risk pinning `revision` was meant to close.",
 ))
 CELLS.append(code(
     "import gc",
     "import time",
     "",
     "import torch",
-    "from vllm import LLM, SamplingParams",
+    "from vllm import LLM, EngineArgs, LLMEngine, SamplingParams",
     "",
     "GENERATION_MAX_TOKENS = 1600  # matches config/models.yaml generation.max_tokens",
     "",
     "",
-    "def load_vllm_model(model_cfg: dict) -> LLM:",
+    "def _common_kwargs(model_cfg: dict) -> dict:",
     "    kwargs = dict(",
     "        model=model_cfg['model'],",
     "        revision=model_cfg['revision'],",
-    "        dtype='float16',",
+    "        tokenizer_revision=model_cfg['revision'],  # see note above -- not implied by `revision`",
+    "        dtype='float16',  # NOT bfloat16 -- T4/Turing lacks native bf16 tensor-core support",
     "        gpu_memory_utilization=0.85,",
-    "        max_model_len=4096,  # comfortably covers the longest Arm 4 prompt (~2500 tok) + output",
+    "        max_model_len=4096,",
     "    )",
     "    if model_cfg['quantization'] == 'bitsandbytes-nf4':",
     "        kwargs['quantization'] = 'bitsandbytes'",
     "        kwargs['load_format'] = 'bitsandbytes'",
     "    else:",
-    "        kwargs['quantization'] = 'awq'",
-    "    return LLM(**kwargs)",
+    "        kwargs['quantization'] = 'awq'  # not 'awq_marlin' -- see T4/Marlin note above",
+    "    return kwargs",
     "",
     "",
-    "def unload_vllm_model(llm: LLM) -> None:",
+    "def load_vllm_model(model_cfg: dict) -> LLM:",
+    "    \"\"\"Pilot-only: the simple synchronous LLM() wrapper. Fine for the pilot,",
+    "    which just needs a single batched call and doesn't need per-response",
+    "    granularity -- the full run below uses the lower-level LLMEngine instead,",
+    "    for reasons explained in Section 10.",
+    "    \"\"\"",
+    "    return LLM(**_common_kwargs(model_cfg))",
+    "",
+    "",
+    "def unload_vllm_model(llm) -> None:",
     "    del llm",
     "    gc.collect()",
     "    torch.cuda.empty_cache()",
@@ -275,6 +332,33 @@ CELLS.append(code(
     "    outputs = llm.generate(prompts, sampling_params)",
     "    elapsed = time.time() - start",
     "    return outputs, elapsed",
+    "",
+    "",
+    "def save_pilot_results(family: str, entries: list[dict], texts: list[str],",
+    "                        output_token_counts: list[int], parse_results, elapsed: float) -> Path:",
+    "    \"\"\"Written to Drive immediately after each pilot run -- a disconnect right",
+    "    after the pilot finishes (before you've read the printed report) must not",
+    "    force re-running 20 GPU generations just to see the numbers again.",
+    "    \"\"\"",
+    "    payload = {",
+    "        'family': family,",
+    "        'elapsed_seconds': elapsed,",
+    "        'responses': [",
+    "            {",
+    "                'vignette_id': e['vignette_id'],",
+    "                'arm': e['arm'],",
+    "                'output_tokens': out_tok,",
+    "                'parseable': r.parseable,",
+    "                'parseable_reason': r.reason,",
+    "                'text': text,",
+    "            }",
+    "            for e, text, out_tok, r in zip(entries, texts, output_token_counts, parse_results)",
+    "        ],",
+    "    }",
+    "    out_path = PILOT_RESULTS_DIR / f'{family}.json'",
+    "    out_path.write_text(json.dumps(payload, indent=2), encoding='utf-8')",
+    "    print(f'Pilot results saved to {out_path}')",
+    "    return out_path",
 ))
 
 # ---------------------------------------------------------------------------
@@ -314,6 +398,7 @@ CELLS.append(code(
     "print(f\"(Planning-time estimate assumed 700 tok/response at ~43 tok/s single-stream = ~2.0h unbatched; \"",
     "      f\"compare against the measured number above, not the planning assumption.)\")",
     "",
+    "save_pilot_results('meta', PILOT_ENTRIES, texts, output_token_counts, parse_results, elapsed)",
     "unload_vllm_model(llm)",
 ))
 
@@ -361,6 +446,8 @@ CELLS.append(code(
     "meditron_full_run_eta_min = (400 * meditron_mean_out / meditron_throughput) / 60",
     "print(f'Corrected full-run ETA for this model: {meditron_full_run_eta_min:.1f} min')",
     "",
+    "save_pilot_results('epfl', PILOT_ENTRIES, meditron_texts, meditron_output_token_counts,",
+    "                    meditron_parse_results, elapsed)",
     "unload_vllm_model(llm)",
 ))
 
@@ -393,6 +480,20 @@ CELLS.append(md(
     " open-weight pivot -- zero compute budget is the reason, not a methodological"
     " preference). Checkpoints after every response; resumable; identical JSON"
     " shape to the API-path cache; one RULE 1 manifest per model.",
+    "",
+    "**Why `LLMEngine` here and not the simpler `LLM.generate()` the pilot used:**"
+    " `LLM.generate(prompts, ...)` is synchronous -- it blocks until *every* prompt"
+    " in the call is done and returns them all at once. Calling it once per prompt"
+    " in a loop (the obvious way to get per-response checkpointing) would process"
+    " prompts one at a time and forfeit vLLM's whole continuous-batching throughput"
+    " advantage -- the pilot's measured throughput, which came from a single batched"
+    " call, would then systematically overstate the full run's actual speed."
+    " `LLMEngine.add_request()` + `.step()` is vLLM's lower-level streaming API:"
+    " every pending prompt is added up front, the engine batches and decodes them"
+    " together exactly as `LLM.generate()` does internally, and each response"
+    " becomes available -- and gets checkpointed -- the moment *that* request"
+    " finishes, independent of the others still running. This gets genuine"
+    " continuous batching and true per-response checkpointing at the same time.",
 ))
 CELLS.append(code(
     "assert PILOT_APPROVED, 'Set PILOT_APPROVED = True in the cell above after reading the pilot report.'",
@@ -400,6 +501,17 @@ CELLS.append(code(
     "SEED = 0",
     "TEMPERATURE = 0.0",
     "PROGRESS_EVERY = 25  # 400 prompts/model -- more frequent than the API harness's 500, since a model-local run is much shorter",
+))
+CELLS.append(code(
+    "def load_vllm_engine(model_cfg: dict) -> LLMEngine:",
+    "    engine_args = EngineArgs(**_common_kwargs(model_cfg))",
+    "    return LLMEngine.from_engine_args(engine_args)",
+    "",
+    "",
+    "def unload_vllm_engine(engine: LLMEngine) -> None:",
+    "    del engine",
+    "    gc.collect()",
+    "    torch.cuda.empty_cache()",
 ))
 CELLS.append(code(
     "import hashlib",
@@ -446,7 +558,7 @@ CELLS.append(code(
     "        print('Nothing to do for this model.')",
     "        return",
     "",
-    "    llm = load_vllm_model(model_cfg)",
+    "    engine = load_vllm_engine(model_cfg)",
     "    total_input_tokens = 0",
     "    total_output_tokens = 0",
     "    start = time.time()",
@@ -455,42 +567,56 @@ CELLS.append(code(
     "        temperature=TEMPERATURE, top_p=1.0, max_tokens=GENERATION_MAX_TOKENS,",
     "    )",
     "",
-    "    for i, key in enumerate(todo, start=1):",
+    "    # Add every pending prompt up front -- vLLM's own scheduler (bounded by",
+    "    # gpu_memory_utilization's KV-cache budget) decides how many actually run",
+    "    # concurrently; requests that don't fit yet simply wait, no manual",
+    "    # windowing needed here.",
+    "    in_flight: dict[str, dict] = {}",
+    "    for key in todo:",
     "        entry = key_to_entry[key]",
-    "        prompt_text = read_prompt_text(entry)",
-    "        [output] = llm.generate([prompt_text], sampling_params, use_tqdm=False)",
+    "        engine.add_request(key, read_prompt_text(entry), sampling_params)",
+    "        in_flight[key] = entry",
     "",
-    "        response_text = output.outputs[0].text",
-    "        in_tok = len(output.prompt_token_ids)",
-    "        out_tok = len(output.outputs[0].token_ids)",
-    "        total_input_tokens += in_tok",
-    "        total_output_tokens += out_tok",
+    "    n_done = 0",
+    "    while in_flight:",
+    "        for output in engine.step():",
+    "            if not output.finished:",
+    "                continue",
+    "            key = output.request_id",
+    "            entry = in_flight.pop(key)",
     "",
-    "        write_response_atomic(",
-    "            RESPONSES_DIR,",
-    "            key,",
-    "            text=response_text,",
-    "            raw={",
-    "                'vignette_id': entry['vignette_id'],",
-    "                'arm': entry['arm'],",
-    "                'model': model_cfg['model'],",
-    "                'model_revision': model_cfg['revision'],",
-    "                'quantization': model_cfg['quantization'],",
-    "                'seed': SEED,",
-    "                'finish_reason': output.outputs[0].finish_reason,",
-    "            },",
-    "            input_tokens=in_tok,",
-    "            output_tokens=out_tok,",
-    "        )",
+    "            response_text = output.outputs[0].text",
+    "            in_tok = len(output.prompt_token_ids)",
+    "            out_tok = len(output.outputs[0].token_ids)",
+    "            total_input_tokens += in_tok",
+    "            total_output_tokens += out_tok",
     "",
-    "        if i % PROGRESS_EVERY == 0 or i == len(todo):",
-    "            elapsed = time.time() - start",
-    "            rate = i / elapsed if elapsed > 0 else 0",
-    "            remaining = (len(todo) - i) / rate if rate > 0 else float('inf')",
-    "            print(f'  {i}/{len(todo)} done, {elapsed/60:.1f}min elapsed, '",
-    "                  f'ETA {remaining/60:.1f}min remaining')",
+    "            write_response_atomic(",
+    "                RESPONSES_DIR,",
+    "                key,",
+    "                text=response_text,",
+    "                raw={",
+    "                    'vignette_id': entry['vignette_id'],",
+    "                    'arm': entry['arm'],",
+    "                    'model': model_cfg['model'],",
+    "                    'model_revision': model_cfg['revision'],",
+    "                    'quantization': model_cfg['quantization'],",
+    "                    'seed': SEED,",
+    "                    'finish_reason': output.outputs[0].finish_reason,",
+    "                },",
+    "                input_tokens=in_tok,",
+    "                output_tokens=out_tok,",
+    "            )",
     "",
-    "    unload_vllm_model(llm)",
+    "            n_done += 1",
+    "            if n_done % PROGRESS_EVERY == 0 or n_done == len(todo):",
+    "                elapsed = time.time() - start",
+    "                rate = n_done / elapsed if elapsed > 0 else 0",
+    "                remaining = (len(todo) - n_done) / rate if rate > 0 else float('inf')",
+    "                print(f'  {n_done}/{len(todo)} done, {elapsed/60:.1f}min elapsed, '",
+    "                      f'ETA {remaining/60:.1f}min remaining, {len(in_flight)} still in flight')",
+    "",
+    "    unload_vllm_engine(engine)",
     "",
     "    # RULE 1 manifest -- one per model, since a Colab run is naturally sequential",
     "    # per model (VRAM constraints preclude loading more than one 8B model at once).",

@@ -95,9 +95,27 @@ CELLS.append(md(
     " requires gptqmodel` with only `autoawq` installed), not just `autoawq` alone as"
     " older docs describe. `bitsandbytes` is for Meditron3-8B's on-the-fly NF4"
     " quantization. No vLLM.",
+    "",
+    "**The second `pip install` line below force-reinstalls `numpy` alone, after"
+    " everything else.** Confirmed live: installing `gptqmodel` pulled in a `numpy`"
+    " version that left the environment with a broken numpy (`ImportError: cannot"
+    " import name '_center' from 'numpy._core.umath'` on the next `import"
+    " transformers`) -- a binary mismatch between numpy's Python and compiled-C"
+    " layers, a known class of issue when a Colab session's pre-existing numpy gets"
+    " partially upgraded by a later pip install. Reinstalling it cleanly, once, as"
+    " the last step resolves the inconsistency.",
+    "",
+    "**You must restart the runtime (`Runtime` -> `Restart session`, keep the T4"
+    " GPU setting) after running this cell, every time this cell's package list"
+    " changes** -- pip installing or reinstalling packages does not take effect in"
+    " an already-running Python process; the `gptqmodel` and numpy issues above were"
+    " both real dependency problems (not restart issues on their own), but a stale,"
+    " already-imported version of a package can mask whether a fix actually landed."
+    " Restart, then re-run every cell from the top.",
 ))
 CELLS.append(code(
     "!pip install -q transformers accelerate bitsandbytes autoawq gptqmodel huggingface_hub pyyaml",
+    "!pip install -q --force-reinstall --no-deps numpy",
 ))
 
 # ---------------------------------------------------------------------------

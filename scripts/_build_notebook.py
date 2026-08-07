@@ -42,9 +42,21 @@ CELLS.append(md(
     "# Open-weight Phase 4 inference (tb-llm-equity)",
     "",
     "Runs the 400 Phase-3 arm prompts through four open-weight models, fully local"
-    " (vLLM on a Colab T4), zero API cost. See `results/PREREGISTRATION.md`"
-    " Amendments (2026-08-06, open-weight pivot) for why: zero compute budget"
-    " authorized, single seed at temperature 0, 4-bit quantization throughout.",
+    " (Colab T4), zero API cost. See `results/PREREGISTRATION.md` Amendments"
+    " (2026-08-06, open-weight pivot) for why: zero compute budget authorized,"
+    " single seed at temperature 0, 4-bit quantization throughout.",
+    "",
+    "**Inference backend: `transformers`, not vLLM.** The original version of this"
+    " notebook used vLLM for continuous-batching throughput. vLLM's CUDA-library"
+    " resolution failed twice live in Colab (`libcudart.so.13: cannot open shared"
+    " object file`) across two different install strategies -- a known, documented"
+    " class of vLLM/Colab packaging issue, not something specific to this notebook's"
+    " code. `transformers` uses whatever torch/CUDA Colab already ships with"
+    " working, so it sidesteps that whole failure mode. The cost: no continuous"
+    " batching, so checkpointing is per-*batch* (`BATCH_SIZE`, default 4) rather"
+    " than strictly per-response -- a crash mid-batch loses at most `BATCH_SIZE - 1`"
+    " responses, not the whole run. Set `BATCH_SIZE = 1` if you want the original"
+    " per-response guarantee back, at a real throughput cost.",
     "",
     "**Two phases, in order -- do not skip the gate between them:**",
     "",
@@ -55,42 +67,33 @@ CELLS.append(md(
     " was never validated against a real completion, and this is where that"
     " happens, before you commit hours to the full run.",
     "2. **Full run** (Task B): all 4 models x 400 prompts x 1 seed. Checkpoints to"
-    " Drive after **every single response**, not per-batch -- free Colab"
-    " disconnects without warning, and a lost session should cost you minutes of"
-    " re-warmup, not hours of regenerated work. Resumable: re-running this"
-    " notebook after a disconnect skips every response already checkpointed.",
+    " Drive after every batch -- free Colab disconnects without warning, and a"
+    " lost session should cost you minutes of re-warmup, not hours of regenerated"
+    " work. Resumable: re-running this notebook after a disconnect skips every"
+    " response already checkpointed.",
     "",
     "**What was and wasn't tested before you run this.** The checkpoint/resume"
     " logic (`src/tb_equity/checkpoint.py`) and the response-parseability heuristic"
     " (`src/tb_equity/response_format.py`) are unit-tested against a stub generator"
     " in `tests/test_checkpoint.py` / `tests/test_response_format.py` -- including a"
-    " simulated mid-write kill. **The vLLM/model-loading cells below have not been"
-    " run against a real GPU** -- this environment had no GPU or Colab execution"
-    " channel available when this notebook was built. A static review (read, not"
-    " run) caught and fixed several T4-specific issues before this version: an"
-    " unpinned vLLM version, `bfloat16` vs. `float16` (T4/Turing lacks bf16 tensor"
-    " cores), `tokenizer_revision` not pinned alongside `revision`, and -- the"
-    " biggest one -- the full run originally called `LLM.generate()` once per"
-    " prompt in a loop to get per-response checkpointing, which would have silently"
-    " forfeited continuous batching entirely and made the pilot's throughput"
-    " measurement not comparable to the full run's actual speed; it now uses"
-    " `LLMEngine.add_request()`/`.step()` to get both. None of this substitutes for"
-    " an actual run -- treat the first full run of each cell as the real first test"
-    " of it.",
+    " simulated mid-write kill. **The model-loading/generation cells below have not"
+    " been run end-to-end against a real GPU by me** -- the vLLM version was"
+    " statically reviewed and then failed for real when you ran it; this"
+    " `transformers` version fixes that specific failure but has not itself been"
+    " confirmed working end-to-end. Treat the pilot as the actual first test of it,"
+    " which is exactly what the pilot/gate structure is for.",
 ))
 
 # ---------------------------------------------------------------------------
 CELLS.append(md(
     "## 1. Install dependencies",
     "",
-    "`vllm` is version-pinned (0.26.0, the latest PyPI release as of 2026-08-06,"
-    " verified by web search when this notebook was built) rather than left"
-    " floating -- an unpinned `pip install vllm` picks up whatever is newest at"
-    " *run* time, which is a real way for a notebook that worked when written to"
-    " break when actually run.",
+    "`autoawq` is required for `transformers` to load the three AWQ-quantized"
+    " checkpoints; `bitsandbytes` for Meditron3-8B's on-the-fly NF4 quantization."
+    " No vLLM.",
 ))
 CELLS.append(code(
-    "!pip install -q vllm==0.26.0 transformers accelerate bitsandbytes huggingface_hub pyyaml",
+    "!pip install -q transformers accelerate bitsandbytes autoawq huggingface_hub pyyaml",
 ))
 
 # ---------------------------------------------------------------------------
@@ -174,15 +177,14 @@ CELLS.append(code(
 CELLS.append(md(
     "## 4. HuggingFace login",
     "",
-    "Two of the four models need a token that has **accepted the model's license**"
-    " on huggingface.co before download will work:",
-    "",
-    "- `meta-llama/Llama-3.1-8B-Instruct` -- manually gated (visit the model page,"
-    " request access, wait for approval). The AWQ checkpoint we actually load"
-    " (`hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4`) is itself ungated, but"
-    " vLLM still needs the base tokenizer/config which may reference the gated repo.",
-    "- `EPFLiGHT/Meditron3-8B` -- auto-gated (accept terms on the model page, access"
-    " is granted immediately).",
+    "Only **one** of the four models actually needs this: `EPFLiGHT/Meditron3-8B`"
+    " is auto-gated (accept terms on its model page, access is granted instantly,"
+    " but a token is required to download it). Verified directly against the HF"
+    " Hub API when this notebook was built: the other three --"
+    " `hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4`, `Orion-zhen/Qwen3-8B-AWQ`,"
+    " `solidrust/Mistral-7B-Instruct-v0.3-AWQ` -- are all ungated, and the Llama AWQ"
+    " repo bundles its own tokenizer files, so it never touches the gated base"
+    " `meta-llama/Llama-3.1-8B-Instruct` repo.",
     "",
     "Store your token as a Colab secret named `HF_TOKEN` (key icon in the left"
     " sidebar), not hardcoded here.",
@@ -202,7 +204,7 @@ CELLS.append(code(
     "with open(MODELS_CONFIG_PATH, encoding='utf-8') as f:",
     "    models_cfg = yaml.safe_load(f)",
     "",
-    "MODEL_REGISTRY = [m for m in models_cfg['evaluation']['models'] if m.get('runtime') == 'colab_vllm']",
+    "MODEL_REGISTRY = [m for m in models_cfg['evaluation']['models'] if m.get('runtime') == 'colab_hf']",
     "assert len(MODEL_REGISTRY) == 4, f'expected 4 open-weight models, found {len(MODEL_REGISTRY)}'",
     "",
     "for m in MODEL_REGISTRY:",
@@ -242,78 +244,73 @@ CELLS.append(code(
 
 # ---------------------------------------------------------------------------
 CELLS.append(md(
-    "## 7. vLLM helpers",
+    "## 7. Model loading + generation helpers (transformers)",
     "",
     "`EPFLiGHT/Meditron3-8B` has no pre-quantized AWQ checkpoint on the Hub (checked"
     " 2026-08-06 -- searched, none found), so it loads via on-the-fly bitsandbytes"
-    " NF4 quantization instead of a pre-quantized AWQ repo; the other three load"
-    " pre-quantized AWQ checkpoints directly.",
+    " NF4 quantization; the other three load pre-quantized AWQ checkpoints directly"
+    " (`transformers` reads the quantization config from the repo automatically, via"
+    " `autoawq`).",
     "",
-    "**T4-specific settings, verified by web search when this notebook was built (not"
-    " guessed):**",
+    "**T4-specific settings, verified when this notebook was built (not guessed):**",
     "",
-    "- `dtype='float16'`, not `bfloat16`, for every model including the bitsandbytes"
-    " path. T4 is Turing (compute capability 7.5) and lacks native bf16 tensor-core"
-    " support -- several bitsandbytes/vLLM usage examples online default to"
-    " `bfloat16` because they're written against Ampere+ GPUs; using that default"
-    " here would silently run at a fraction of the expected speed, or fail outright,"
-    " not obviously error with a clear message pointing at the cause.",
-    "- `quantization='awq'`, deliberately not letting vLLM auto-select an AWQ+Marlin"
-    " kernel path -- Marlin is tuned for/requires Ampere (SM80) or newer, and there"
-    " are open vLLM GitHub issues (#3392, #6985) about AWQ+Marlin conflicts. Plain"
-    " AWQ (no Marlin) is the broadly-compatible path on Turing.",
-    "- `gpu_memory_utilization=0.85` -- within the community-reported safe range for"
-    " an 8B AWQ/NF4 model on a 16GB T4 (reports cite up to 0.92-0.95 working"
-    " reliably); kept at the more conservative end of that range for this notebook's"
-    " *first* real run specifically, since actual utilization has been reported to"
-    " overshoot the requested value on Colab T4s in practice. Raise it after you've"
-    " confirmed a full run completes without OOM, if you want more KV-cache headroom.",
-    "- `max_model_len=4096` covers the longest real Arm 4 prompt (~2500 tok, see"
-    " `data/prompts/manifest.json`'s `estimated_tokens`) plus `GENERATION_MAX_TOKENS`"
-    " output, with margin.",
-    "- `tokenizer_revision` is pinned to the same commit as `revision` explicitly --"
-    " vLLM treats them as independent parameters, so leaving `tokenizer_revision`"
-    " unset would default to `main` even with the model weights pinned, which is"
-    " exactly the silent-mid-run-change risk pinning `revision` was meant to close.",
+    "- `torch.float16` everywhere, including `bnb_4bit_compute_dtype` for the"
+    " bitsandbytes path -- T4 is Turing (compute capability 7.5) and lacks native"
+    " bf16 tensor-core support. Several bitsandbytes usage examples online default"
+    " to `bfloat16` because they're written against Ampere+ GPUs; using that here"
+    " would silently run at a fraction of the expected speed, or fail outright.",
+    "- `BATCH_SIZE = 4` -- deliberately conservative. `transformers`' `.generate()`"
+    " does not have vLLM's paged-attention admission control, so an oversized batch"
+    " OOMs hard rather than gracefully queuing; padding every sequence in a batch to"
+    " the longest one in that batch means memory scales with batch size x longest"
+    " prompt, not the average. Lower it if you still OOM; raise it once a run"
+    " completes cleanly and you want more throughput.",
+    "- Prompts are truncated to 3000 input tokens (`truncation=True, max_length=3000`)"
+    " as a hard safety cap -- the longest real Arm 4 prompt is ~2500 tokens (see"
+    " `data/prompts/manifest.json`'s `estimated_tokens`), so this should never"
+    " actually trigger against real data; it exists to fail safe rather than OOM if"
+    " it ever does.",
 ))
 CELLS.append(code(
     "import gc",
     "import time",
     "",
     "import torch",
-    "from vllm import LLM, EngineArgs, LLMEngine, SamplingParams",
+    "from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig",
     "",
     "GENERATION_MAX_TOKENS = 1600  # matches config/models.yaml generation.max_tokens",
+    "BATCH_SIZE = 4  # tunable -- see note above",
     "",
     "",
-    "def _common_kwargs(model_cfg: dict) -> dict:",
-    "    kwargs = dict(",
-    "        model=model_cfg['model'],",
-    "        revision=model_cfg['revision'],",
-    "        tokenizer_revision=model_cfg['revision'],  # see note above -- not implied by `revision`",
-    "        dtype='float16',  # NOT bfloat16 -- T4/Turing lacks native bf16 tensor-core support",
-    "        gpu_memory_utilization=0.85,",
-    "        max_model_len=4096,",
-    "    )",
+    "def load_hf_model(model_cfg: dict):",
+    "    tokenizer = AutoTokenizer.from_pretrained(model_cfg['model'], revision=model_cfg['revision'])",
+    "    if tokenizer.pad_token is None:",
+    "        tokenizer.pad_token = tokenizer.eos_token",
+    "    tokenizer.padding_side = 'left'  # required for correct batched causal-LM generation",
+    "",
     "    if model_cfg['quantization'] == 'bitsandbytes-nf4':",
-    "        kwargs['quantization'] = 'bitsandbytes'",
-    "        kwargs['load_format'] = 'bitsandbytes'",
+    "        bnb_config = BitsAndBytesConfig(",
+    "            load_in_4bit=True,",
+    "            bnb_4bit_quant_type='nf4',",
+    "            bnb_4bit_compute_dtype=torch.float16,  # NOT bfloat16 -- see T4/Turing note above",
+    "        )",
+    "        model = AutoModelForCausalLM.from_pretrained(",
+    "            model_cfg['model'], revision=model_cfg['revision'],",
+    "            quantization_config=bnb_config, device_map='cuda:0',",
+    "        )",
     "    else:",
-    "        kwargs['quantization'] = 'awq'  # not 'awq_marlin' -- see T4/Marlin note above",
-    "    return kwargs",
+    "        # AWQ pre-quantized checkpoints -- quantization config read from the repo's",
+    "        # own config.json; requires autoawq (installed in Section 1).",
+    "        model = AutoModelForCausalLM.from_pretrained(",
+    "            model_cfg['model'], revision=model_cfg['revision'],",
+    "            torch_dtype=torch.float16, device_map='cuda:0',",
+    "        )",
+    "    model.eval()",
+    "    return model, tokenizer",
     "",
     "",
-    "def load_vllm_model(model_cfg: dict) -> LLM:",
-    "    \"\"\"Pilot-only: the simple synchronous LLM() wrapper. Fine for the pilot,",
-    "    which just needs a single batched call and doesn't need per-response",
-    "    granularity -- the full run below uses the lower-level LLMEngine instead,",
-    "    for reasons explained in Section 10.",
-    "    \"\"\"",
-    "    return LLM(**_common_kwargs(model_cfg))",
-    "",
-    "",
-    "def unload_vllm_model(llm) -> None:",
-    "    del llm",
+    "def unload_hf_model(model) -> None:",
+    "    del model",
     "    gc.collect()",
     "    torch.cuda.empty_cache()",
     "",
@@ -323,15 +320,33 @@ CELLS.append(code(
     "    return (PROMPTS_DIR / rel).read_text(encoding='utf-8')",
     "",
     "",
-    "def generate_batch(llm: LLM, entries: list[dict], temperature: float = 0.0):",
-    "    sampling_params = SamplingParams(",
-    "        temperature=temperature, top_p=1.0, max_tokens=GENERATION_MAX_TOKENS,",
-    "    )",
-    "    prompts = [read_prompt_text(e) for e in entries]",
+    "def generate_batch(model, tokenizer, prompts: list[str]):",
+    "    \"\"\"One model.generate() call across `prompts` (padded to the longest",
+    "    one in the batch) -- batched, but NOT vLLM-style continuous batching.",
+    "    do_sample=False is greedy decoding, the transformers equivalent of",
+    "    temperature=0. Returns (texts, output_token_counts, input_token_counts, elapsed).",
+    "    \"\"\"",
+    "    inputs = tokenizer(",
+    "        prompts, return_tensors='pt', padding=True, truncation=True, max_length=3000,",
+    "    ).to(model.device)",
+    "    prompt_len = inputs['input_ids'].shape[1]",
+    "    input_token_counts = inputs['attention_mask'].sum(dim=1).tolist()",
+    "",
     "    start = time.time()",
-    "    outputs = llm.generate(prompts, sampling_params)",
+    "    with torch.no_grad():",
+    "        output_ids = model.generate(",
+    "            **inputs, max_new_tokens=GENERATION_MAX_TOKENS, do_sample=False,",
+    "            pad_token_id=tokenizer.pad_token_id,",
+    "        )",
     "    elapsed = time.time() - start",
-    "    return outputs, elapsed",
+    "",
+    "    texts = []",
+    "    output_token_counts = []",
+    "    for i in range(len(prompts)):",
+    "        gen_ids = output_ids[i][prompt_len:]",
+    "        texts.append(tokenizer.decode(gen_ids, skip_special_tokens=True))",
+    "        output_token_counts.append(int((gen_ids != tokenizer.pad_token_id).sum()))",
+    "    return texts, output_token_counts, input_token_counts, elapsed",
     "",
     "",
     "def save_pilot_results(family: str, entries: list[dict], texts: list[str],",
@@ -359,6 +374,47 @@ CELLS.append(code(
     "    out_path.write_text(json.dumps(payload, indent=2), encoding='utf-8')",
     "    print(f'Pilot results saved to {out_path}')",
     "    return out_path",
+    "",
+    "",
+    "def run_pilot(model_cfg: dict, family: str):",
+    "    print(f\"=== PILOT: {model_cfg['model']} ===\")",
+    "    model, tokenizer = load_hf_model(model_cfg)",
+    "",
+    "    texts, output_token_counts, elapsed = [], [], 0.0",
+    "    for start_idx in range(0, len(PILOT_ENTRIES), BATCH_SIZE):",
+    "        chunk = PILOT_ENTRIES[start_idx:start_idx + BATCH_SIZE]",
+    "        chunk_prompts = [read_prompt_text(e) for e in chunk]",
+    "        chunk_texts, chunk_out_tok, _in_tok, chunk_elapsed = generate_batch(",
+    "            model, tokenizer, chunk_prompts",
+    "        )",
+    "        texts.extend(chunk_texts)",
+    "        output_token_counts.extend(chunk_out_tok)",
+    "        elapsed += chunk_elapsed",
+    "",
+    "    mean_out = sum(output_token_counts) / len(output_token_counts)",
+    "    max_out = max(output_token_counts)",
+    "    throughput = sum(output_token_counts) / elapsed",
+    "",
+    "    print(f'Mean output tokens/response: {mean_out:.1f}')",
+    "    print(f'Max output tokens/response: {max_out}')",
+    "    print(f'Wall time for {len(PILOT_ENTRIES)} prompts: {elapsed:.1f}s')",
+    "    print(f'Aggregate throughput: {throughput:.1f} tok/s (batch_size={BATCH_SIZE}, T4)')",
+    "",
+    "    parse_results = [check_parseable(t) for t in texts]",
+    "    n_parseable = sum(r.parseable for r in parse_results)",
+    "    print(f'Parseable: {n_parseable}/{len(texts)}')",
+    "    for e, r in zip(PILOT_ENTRIES, parse_results):",
+    "        if not r.parseable:",
+    "            print(f\"  NOT PARSEABLE: {e['vignette_id']} arm{e['arm']}: {r.reason}\")",
+    "",
+    "    full_run_eta_min = (400 * mean_out / throughput) / 60",
+    "    print(f'Corrected full-run (400 prompts) ETA for this model, using MEASURED '",
+    "          f'throughput: {full_run_eta_min:.1f} min')",
+    "",
+    "    save_pilot_results(family, PILOT_ENTRIES, texts, output_token_counts, parse_results, elapsed)",
+    "    unload_hf_model(model)",
+    "    del tokenizer",
+    "    return texts, output_token_counts, parse_results, n_parseable",
 ))
 
 # ---------------------------------------------------------------------------
@@ -369,37 +425,9 @@ CELLS.append(md(
 ))
 CELLS.append(code(
     "llama_cfg = next(m for m in MODEL_REGISTRY if m['family'] == 'meta')",
-    "print(f\"=== PILOT: {llama_cfg['model']} ===\")",
-    "",
-    "llm = load_vllm_model(llama_cfg)",
-    "outputs, elapsed = generate_batch(llm, PILOT_ENTRIES)",
-    "",
-    "output_token_counts = [len(o.outputs[0].token_ids) for o in outputs]",
-    "texts = [o.outputs[0].text for o in outputs]",
-    "",
-    "mean_out = sum(output_token_counts) / len(output_token_counts)",
-    "max_out = max(output_token_counts)",
-    "throughput = sum(output_token_counts) / elapsed",
-    "",
-    "print(f'Mean output tokens/response: {mean_out:.1f}')",
-    "print(f'Max output tokens/response: {max_out}')",
-    "print(f'Wall time for 20 prompts: {elapsed:.1f}s')",
-    "print(f'Aggregate throughput: {throughput:.1f} tok/s (batched, T4)')",
-    "",
-    "parse_results = [check_parseable(t) for t in texts]",
-    "n_parseable = sum(r.parseable for r in parse_results)",
-    "print(f'Parseable: {n_parseable}/{len(texts)}')",
-    "for e, r in zip(PILOT_ENTRIES, parse_results):",
-    "    if not r.parseable:",
-    "        print(f\"  NOT PARSEABLE: {e['vignette_id']} arm{e['arm']}: {r.reason}\")",
-    "",
-    "llama_full_run_eta_min = (400 * mean_out / throughput) / 60",
-    "print(f'Corrected full-run (400 prompts) ETA for this model, using MEASURED throughput: {llama_full_run_eta_min:.1f} min')",
-    "print(f\"(Planning-time estimate assumed 700 tok/response at ~43 tok/s single-stream = ~2.0h unbatched; \"",
-    "      f\"compare against the measured number above, not the planning assumption.)\")",
-    "",
-    "save_pilot_results('meta', PILOT_ENTRIES, texts, output_token_counts, parse_results, elapsed)",
-    "unload_vllm_model(llm)",
+    "llama_texts, llama_output_token_counts, llama_parse_results, llama_n_parseable = (",
+    "    run_pilot(llama_cfg, 'meta')",
+    ")",
 ))
 
 # ---------------------------------------------------------------------------
@@ -413,42 +441,16 @@ CELLS.append(md(
 ))
 CELLS.append(code(
     "meditron_cfg = next(m for m in MODEL_REGISTRY if m['family'] == 'epfl')",
-    "print(f\"=== PILOT: {meditron_cfg['model']} ===\")",
+    "meditron_texts, meditron_output_token_counts, meditron_parse_results, meditron_n_parseable = (",
+    "    run_pilot(meditron_cfg, 'epfl')",
+    ")",
     "",
-    "llm = load_vllm_model(meditron_cfg)",
-    "outputs, elapsed = generate_batch(llm, PILOT_ENTRIES)",
-    "",
-    "meditron_output_token_counts = [len(o.outputs[0].token_ids) for o in outputs]",
-    "meditron_texts = [o.outputs[0].text for o in outputs]",
-    "",
-    "meditron_mean_out = sum(meditron_output_token_counts) / len(meditron_output_token_counts)",
-    "meditron_throughput = sum(meditron_output_token_counts) / elapsed",
-    "",
-    "print(f'Mean output tokens/response: {meditron_mean_out:.1f}')",
-    "print(f'Max output tokens/response: {max(meditron_output_token_counts)}')",
-    "print(f'Wall time for 20 prompts: {elapsed:.1f}s')",
-    "print(f'Aggregate throughput: {meditron_throughput:.1f} tok/s (batched, T4)')",
-    "",
-    "meditron_parse_results = [check_parseable(t) for t in meditron_texts]",
-    "meditron_n_parseable = sum(r.parseable for r in meditron_parse_results)",
-    "print(f'Parseable: {meditron_n_parseable}/{len(meditron_texts)}')",
-    "for e, r in zip(PILOT_ENTRIES, meditron_parse_results):",
-    "    if not r.parseable:",
-    "        print(f\"  NOT PARSEABLE: {e['vignette_id']} arm{e['arm']}: {r.reason}\")",
-    "",
-    "if meditron_n_parseable < n_parseable:",
+    "if meditron_n_parseable < llama_n_parseable:",
     "    print()",
     "    print(f'*** WARNING: Meditron3-8B parseable rate ({meditron_n_parseable}/20) is LOWER than '",
-    "          f'Llama-3.1-8B-Instruct ({n_parseable}/20). This is the exact instruction-following '",
+    "          f'Llama-3.1-8B-Instruct ({llama_n_parseable}/20). This is the exact instruction-following '",
     "          f'degradation risk flagged before running -- inspect meditron_texts by hand before '",
     "          f'committing to the full run for this model. ***')",
-    "",
-    "meditron_full_run_eta_min = (400 * meditron_mean_out / meditron_throughput) / 60",
-    "print(f'Corrected full-run ETA for this model: {meditron_full_run_eta_min:.1f} min')",
-    "",
-    "save_pilot_results('epfl', PILOT_ENTRIES, meditron_texts, meditron_output_token_counts,",
-    "                    meditron_parse_results, elapsed)",
-    "unload_vllm_model(llm)",
 ))
 
 # ---------------------------------------------------------------------------
@@ -478,40 +480,17 @@ CELLS.append(md(
     "",
     "Single seed at temperature 0 (see `results/PREREGISTRATION.md` Amendments,"
     " open-weight pivot -- zero compute budget is the reason, not a methodological"
-    " preference). Checkpoints after every response; resumable; identical JSON"
-    " shape to the API-path cache; one RULE 1 manifest per model.",
-    "",
-    "**Why `LLMEngine` here and not the simpler `LLM.generate()` the pilot used:**"
-    " `LLM.generate(prompts, ...)` is synchronous -- it blocks until *every* prompt"
-    " in the call is done and returns them all at once. Calling it once per prompt"
-    " in a loop (the obvious way to get per-response checkpointing) would process"
-    " prompts one at a time and forfeit vLLM's whole continuous-batching throughput"
-    " advantage -- the pilot's measured throughput, which came from a single batched"
-    " call, would then systematically overstate the full run's actual speed."
-    " `LLMEngine.add_request()` + `.step()` is vLLM's lower-level streaming API:"
-    " every pending prompt is added up front, the engine batches and decodes them"
-    " together exactly as `LLM.generate()` does internally, and each response"
-    " becomes available -- and gets checkpointed -- the moment *that* request"
-    " finishes, independent of the others still running. This gets genuine"
-    " continuous batching and true per-response checkpointing at the same time.",
+    " preference). Checkpoints after every *batch* (`BATCH_SIZE`, default 4 -- see"
+    " Section 7's note on why this isn't strictly per-response with `transformers`);"
+    " resumable; identical JSON shape to the API-path cache; one RULE 1 manifest per"
+    " model.",
 ))
 CELLS.append(code(
     "assert PILOT_APPROVED, 'Set PILOT_APPROVED = True in the cell above after reading the pilot report.'",
     "",
     "SEED = 0",
     "TEMPERATURE = 0.0",
-    "PROGRESS_EVERY = 25  # 400 prompts/model -- more frequent than the API harness's 500, since a model-local run is much shorter",
-))
-CELLS.append(code(
-    "def load_vllm_engine(model_cfg: dict) -> LLMEngine:",
-    "    engine_args = EngineArgs(**_common_kwargs(model_cfg))",
-    "    return LLMEngine.from_engine_args(engine_args)",
-    "",
-    "",
-    "def unload_vllm_engine(engine: LLMEngine) -> None:",
-    "    del engine",
-    "    gc.collect()",
-    "    torch.cuda.empty_cache()",
+    "PROGRESS_EVERY = 25  # print a progress line at least this often",
 ))
 CELLS.append(code(
     "import hashlib",
@@ -558,43 +537,30 @@ CELLS.append(code(
     "        print('Nothing to do for this model.')",
     "        return",
     "",
-    "    engine = load_vllm_engine(model_cfg)",
+    "    model, tokenizer = load_hf_model(model_cfg)",
     "    total_input_tokens = 0",
     "    total_output_tokens = 0",
+    "    n_done = 0",
     "    start = time.time()",
     "",
-    "    sampling_params = SamplingParams(",
-    "        temperature=TEMPERATURE, top_p=1.0, max_tokens=GENERATION_MAX_TOKENS,",
-    "    )",
+    "    for batch_start in range(0, len(todo), BATCH_SIZE):",
+    "        chunk_keys = todo[batch_start:batch_start + BATCH_SIZE]",
+    "        chunk_entries = [key_to_entry[k] for k in chunk_keys]",
+    "        chunk_prompts = [read_prompt_text(e) for e in chunk_entries]",
     "",
-    "    # Add every pending prompt up front -- vLLM's own scheduler (bounded by",
-    "    # gpu_memory_utilization's KV-cache budget) decides how many actually run",
-    "    # concurrently; requests that don't fit yet simply wait, no manual",
-    "    # windowing needed here.",
-    "    in_flight: dict[str, dict] = {}",
-    "    for key in todo:",
-    "        entry = key_to_entry[key]",
-    "        engine.add_request(key, read_prompt_text(entry), sampling_params)",
-    "        in_flight[key] = entry",
+    "        chunk_texts, chunk_out_tok, chunk_in_tok, _elapsed = generate_batch(",
+    "            model, tokenizer, chunk_prompts",
+    "        )",
     "",
-    "    n_done = 0",
-    "    while in_flight:",
-    "        for output in engine.step():",
-    "            if not output.finished:",
-    "                continue",
-    "            key = output.request_id",
-    "            entry = in_flight.pop(key)",
-    "",
-    "            response_text = output.outputs[0].text",
-    "            in_tok = len(output.prompt_token_ids)",
-    "            out_tok = len(output.outputs[0].token_ids)",
+    "        for key, entry, text, out_tok, in_tok in zip(",
+    "            chunk_keys, chunk_entries, chunk_texts, chunk_out_tok, chunk_in_tok",
+    "        ):",
     "            total_input_tokens += in_tok",
     "            total_output_tokens += out_tok",
-    "",
     "            write_response_atomic(",
     "                RESPONSES_DIR,",
     "                key,",
-    "                text=response_text,",
+    "                text=text,",
     "                raw={",
     "                    'vignette_id': entry['vignette_id'],",
     "                    'arm': entry['arm'],",
@@ -602,21 +568,22 @@ CELLS.append(code(
     "                    'model_revision': model_cfg['revision'],",
     "                    'quantization': model_cfg['quantization'],",
     "                    'seed': SEED,",
-    "                    'finish_reason': output.outputs[0].finish_reason,",
+    "                    'truncated': out_tok >= GENERATION_MAX_TOKENS,",
     "                },",
     "                input_tokens=in_tok,",
     "                output_tokens=out_tok,",
     "            )",
-    "",
     "            n_done += 1",
-    "            if n_done % PROGRESS_EVERY == 0 or n_done == len(todo):",
-    "                elapsed = time.time() - start",
-    "                rate = n_done / elapsed if elapsed > 0 else 0",
-    "                remaining = (len(todo) - n_done) / rate if rate > 0 else float('inf')",
-    "                print(f'  {n_done}/{len(todo)} done, {elapsed/60:.1f}min elapsed, '",
-    "                      f'ETA {remaining/60:.1f}min remaining, {len(in_flight)} still in flight')",
     "",
-    "    unload_vllm_engine(engine)",
+    "        if n_done % PROGRESS_EVERY < BATCH_SIZE or n_done == len(todo):",
+    "            elapsed = time.time() - start",
+    "            rate = n_done / elapsed if elapsed > 0 else 0",
+    "            remaining = (len(todo) - n_done) / rate if rate > 0 else float('inf')",
+    "            print(f'  {n_done}/{len(todo)} done, {elapsed/60:.1f}min elapsed, '",
+    "                  f'ETA {remaining/60:.1f}min remaining')",
+    "",
+    "    unload_hf_model(model)",
+    "    del tokenizer",
     "",
     "    # RULE 1 manifest -- one per model, since a Colab run is naturally sequential",
     "    # per model (VRAM constraints preclude loading more than one 8B model at once).",
@@ -672,7 +639,7 @@ CELLS.append(code(
     "    data = json.loads(checkpoint_path(RESPONSES_DIR, key).read_text(encoding='utf-8'))",
     "    if not data['text'].strip():",
     "        empty_or_truncated.append((key, 'empty'))",
-    "    elif data['raw'].get('finish_reason') == 'length':",
+    "    elif data['raw'].get('truncated'):",
     "        empty_or_truncated.append((key, 'truncated (hit max_tokens)'))",
     "",
     "print(f'Empty or truncated responses: {len(empty_or_truncated)}')",

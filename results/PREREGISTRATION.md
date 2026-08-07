@@ -411,7 +411,8 @@ of the four models below as of this amendment. `config/models.yaml`'s
 preceding cost-report exchange) is superseded, not extended.
 
 **Roster.** Four open-weight models, all quantized to 4-bit, all run
-locally via vLLM on a free-tier Colab T4 — zero API cost:
+locally on a free-tier Colab T4 — zero API cost (inference backend:
+`transformers`, not vLLM — see the 2026-08-07 amendment below for why):
 
 | family | model (as loaded) | revision | base model | quantization |
 |---|---|---|---|---|
@@ -481,3 +482,55 @@ by their providers, none of which this phase's results speak to directly.
 **Frontier-model evaluation is named here as explicit future work**,
 contingent on compute budget becoming available, not abandoned by this
 pivot.
+
+### 2026-08-07: inference backend switched from vLLM to transformers, live, after two real Colab failures
+
+Not a design change to what's being measured (roster, quantization, seed
+count, and the primary/secondary outcome definitions above are all
+unchanged) — a backend swap, made necessary by vLLM failing to run at all
+on the actual Colab T4 this notebook targets, recorded here because it
+changes the notebook's checkpointing granularity, which is a real property
+of the run.
+
+**What happened.** `notebooks/open_weight_inference.ipynb` was originally
+built on vLLM (`LLM`/`LLMEngine`, continuous batching). A static review
+(read, not run — see `scripts/_build_notebook.py`'s history) caught and
+fixed several T4-specific issues before it was first actually run: an
+unpinned vLLM version, `bfloat16` vs. `float16` (T4/Turing lacks bf16
+tensor cores), `tokenizer_revision` not pinned alongside `revision`, and a
+batching/checkpointing conflict (calling `LLM.generate()` once per prompt
+would have forfeited continuous batching entirely). None of that caught the
+failure that actually occurred: `import vllm` itself failed with
+`ImportError: libcudart.so.13: cannot open shared object file` — a known,
+documented class of vLLM/CUDA-library-version mismatch in Colab
+environments (matches vllm-project/vllm#43435), not something introspection
+of this notebook's own code could have caught, since it's about what pip
+resolves against Colab's specific base image at install time. Pinning the
+vLLM version (the fix for the *first* T4 issue caught in static review) is
+plausibly what exposed this — an unpinned install might have resolved a
+build pip's resolver judged compatible with Colab's existing CUDA runtime.
+Forcing the CUDA 12.9-linked build via `--extra-index-url` was tried next
+and also failed with the identical error — in hindsight, that flag controls
+where pip finds `torch`, not vLLM's own CUDA-variant selection
+(`VLLM_PRECOMPILED_WHEEL_VARIANT`), so it likely never addressed the actual
+mechanism.
+
+**Fix.** Replaced the inference layer with `transformers`
+(`AutoModelForCausalLM` + `autoawq` for the three AWQ checkpoints,
+`BitsAndBytesConfig` NF4 for Meditron3-8B) rather than continue
+trial-and-error against vLLM's packaging. `transformers` uses whatever
+torch/CUDA Colab's own image already ships with working, so it does not
+pull in a separate compiled CUDA-specific wheel the way vLLM's native
+extension does — this sidesteps the failure's root cause rather than
+patching around it.
+
+**What this costs.** `transformers`' `.generate()` has no continuous-batching
+admission control the way vLLM's scheduler does — generation is batched
+(`BATCH_SIZE`, default 4, padded to the longest prompt in each batch) rather
+than per-request-streamed. Checkpointing is therefore per-*batch*, not
+per-response: a crash mid-batch can lose up to `BATCH_SIZE - 1` responses,
+not exactly one as originally specified. `BATCH_SIZE = 1` recovers the
+original per-response guarantee at a real throughput cost, and remains the
+user's call at run time. This does not touch the primary or secondary
+outcome definitions, the roster, or the quantization scoping above — it is
+a property of how the run is executed, not of what is being measured.

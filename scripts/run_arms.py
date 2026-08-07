@@ -99,8 +99,8 @@ def dry_run(*, models: list[dict], seeds: list[int], assumed_output_tokens: int)
     grand_total = 0.0
     per_model_totals: dict[str, float] = {}
     for model_cfg in models:
-        if model_cfg.get("runtime") == "colab_vllm":
-            print(f"[dry-run] {model_cfg['family']}/{model_cfg['model']}: runtime=colab_vllm "
+        if model_cfg.get("runtime") == "colab_hf":
+            print(f"[dry-run] {model_cfg['family']}/{model_cfg['model']}: runtime=colab_hf "
                   "-- run via notebooks/open_weight_inference.ipynb, not this script. "
                   "$0 (no API cost).")
             continue
@@ -135,12 +135,12 @@ def real_run(
 ) -> None:
     assert_generator_evaluator_disjoint()
 
-    colab_models = [m for m in models if m.get("runtime") == "colab_vllm"]
+    colab_models = [m for m in models if m.get("runtime") == "colab_hf"]
     if colab_models:
         names = ", ".join(f"{m['family']}/{m['model']}" for m in colab_models)
         raise SystemExit(
             f"config/models.yaml lists {len(colab_models)} model(s) with "
-            f"runtime=colab_vllm ({names}) -- this script calls provider APIs and has no "
+            f"runtime=colab_hf ({names}) -- this script calls provider APIs and has no "
             "GPU, so it cannot run them. Run notebooks/open_weight_inference.ipynb instead."
         )
 

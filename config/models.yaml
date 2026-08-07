@@ -26,11 +26,14 @@ evaluation:
   # kept only in git history, not here -- it was never actually run
   # (Phase 4 got only as far as a dry-run cost estimate before the pivot).
   #
-  # runtime: colab_vllm means this model is NOT called by
-  # scripts/run_arms.py (the API harness) -- it's run by
-  # notebooks/open_weight_inference.ipynb via local vLLM inference on a
-  # Colab T4, with no API key and no per-token cost. run_arms.py refuses
-  # to run against a colab_vllm entry rather than silently doing nothing.
+  # runtime: colab_hf means this model is NOT called by scripts/run_arms.py
+  # (the API harness) -- it's run by notebooks/open_weight_inference.ipynb
+  # via local transformers (AutoModelForCausalLM + AWQ/bitsandbytes) inference
+  # on a Colab T4, with no API key and no per-token cost. run_arms.py refuses
+  # to run against a colab_hf entry rather than silently doing nothing.
+  # (Originally vLLM -- switched 2026-08-07 after vLLM's CUDA-library
+  # resolution failed twice live in this Colab image; see
+  # results/PREREGISTRATION.md Amendments.)
   #
   # revision is the exact HuggingFace commit sha as of 2026-08-06 (verified
   # via the HF Hub API, not guessed) -- pinned so the RULE 1 manifest can
@@ -52,7 +55,7 @@ evaluation:
       base_model_gated: manual
       quantization: awq-int4
       params_b: 8
-      runtime: colab_vllm
+      runtime: colab_hf
     - family: qwen
       model: Orion-zhen/Qwen3-8B-AWQ
       revision: afb67fde7957c0e416d98b86df596016d94ea882
@@ -61,7 +64,7 @@ evaluation:
       base_model_gated: false
       quantization: awq-int4
       params_b: 8
-      runtime: colab_vllm
+      runtime: colab_hf
     - family: mistral
       model: solidrust/Mistral-7B-Instruct-v0.3-AWQ
       revision: 95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7
@@ -70,7 +73,7 @@ evaluation:
       base_model_gated: false
       quantization: awq-int4
       params_b: 7
-      runtime: colab_vllm
+      runtime: colab_hf
     - family: epfl
       model: EPFLiGHT/Meditron3-8B
       revision: 783c241b18b84692689e0336170b345e5732e48e
@@ -79,4 +82,4 @@ evaluation:
       base_model_gated: auto
       quantization: bitsandbytes-nf4  # quantized on the fly, no AWQ checkpoint exists
       params_b: 8
-      runtime: colab_vllm
+      runtime: colab_hf

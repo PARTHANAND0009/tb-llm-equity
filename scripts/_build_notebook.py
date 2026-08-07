@@ -88,12 +88,16 @@ CELLS.append(md(
 CELLS.append(md(
     "## 1. Install dependencies",
     "",
-    "`autoawq` is required for `transformers` to load the three AWQ-quantized"
-    " checkpoints; `bitsandbytes` for Meditron3-8B's on-the-fly NF4 quantization."
-    " No vLLM.",
+    "`autoawq` and `gptqmodel` are both required for `transformers` to load the"
+    " three AWQ-quantized checkpoints -- the installed `transformers` version's AWQ"
+    " quantizer validates against `gptqmodel`'s availability specifically (confirmed"
+    " live: `transformers` raised `ImportError: Loading an AWQ quantized model"
+    " requires gptqmodel` with only `autoawq` installed), not just `autoawq` alone as"
+    " older docs describe. `bitsandbytes` is for Meditron3-8B's on-the-fly NF4"
+    " quantization. No vLLM.",
 ))
 CELLS.append(code(
-    "!pip install -q transformers accelerate bitsandbytes autoawq huggingface_hub pyyaml",
+    "!pip install -q transformers accelerate bitsandbytes autoawq gptqmodel huggingface_hub pyyaml",
 ))
 
 # ---------------------------------------------------------------------------
@@ -250,7 +254,8 @@ CELLS.append(md(
     " 2026-08-06 -- searched, none found), so it loads via on-the-fly bitsandbytes"
     " NF4 quantization; the other three load pre-quantized AWQ checkpoints directly"
     " (`transformers` reads the quantization config from the repo automatically, via"
-    " `autoawq`).",
+    " `autoawq` + `gptqmodel` -- confirmed live that this `transformers` version's AWQ"
+    " quantizer needs both, not `autoawq` alone).",
     "",
     "**T4-specific settings, verified when this notebook was built (not guessed):**",
     "",
@@ -300,10 +305,10 @@ CELLS.append(code(
     "        )",
     "    else:",
     "        # AWQ pre-quantized checkpoints -- quantization config read from the repo's",
-    "        # own config.json; requires autoawq (installed in Section 1).",
+    "        # own config.json; requires autoawq + gptqmodel (installed in Section 1).",
     "        model = AutoModelForCausalLM.from_pretrained(",
     "            model_cfg['model'], revision=model_cfg['revision'],",
-    "            torch_dtype=torch.float16, device_map='cuda:0',",
+    "            dtype=torch.float16, device_map='cuda:0',  # dtype, not torch_dtype (deprecated)",
     "        )",
     "    model.eval()",
     "    return model, tokenizer",

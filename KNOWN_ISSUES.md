@@ -5,11 +5,17 @@ aren't lost. Each entry says why it matters and what fixing it would touch.
 
 ## 1. MODEL_REGISTRY mixes quantization methods across the roster
 
-`config/models.yaml`'s `evaluation.models` (the four `colab_hf` open-weight
-models) uses AWQ 4-bit for three models (Llama-3.1-8B, Qwen3-8B,
-Mistral-7B-v0.3) and bitsandbytes NF4 for the fourth (Meditron3-8B), because
-no pre-quantized AWQ checkpoint of Meditron3-8B exists on the Hub (checked
-2026-08-06 -- searched, none found).
+`config/models.yaml`'s `evaluation.models` (the five `colab_hf` open-weight
+models, as of the 2026-09-10 Granite-4.2-8B addition) uses AWQ 4-bit for
+three models (Llama-3.1-8B, Qwen3-8B, Mistral-7B-v0.3) and bitsandbytes NF4
+for the other two (Meditron3-8B, Granite-4.2-8B), because no pre-quantized
+AWQ checkpoint of either exists on the Hub for the pinned revision (checked
+2026-08-06 for Meditron3-8B, 2026-09-10 for Granite-4.2-8B -- searched,
+none found either time; a community `compressed-tensors`-format AWQ-labeled
+repo exists for a different current-generation candidate,
+`mistralai/Ministral-3-8B-Instruct-2512`, but that model was rejected for
+the panel on separate architectural grounds -- see `config/models.yaml`'s
+comment on the `ibm` entry).
 
 **Why it matters.** `results/PREREGISTRATION.md` frames the Llama-3.1-8B vs.
 Meditron3-8B pair as a pre-specified secondary analysis isolating the effect
@@ -19,17 +25,23 @@ pair: AWQ and bitsandbytes NF4 are different quantization algorithms with
 different error characteristics, so any difference observed between Llama
 and Meditron is now confounded by quantization method as well as by
 continued-pretraining. This weakens (does not necessarily invalidate, but
-does weaken) the secondary analysis's core claim.
+does weaken) the secondary analysis's core claim. Granite-4.2-8B is not part
+of that pre-specified pair (it's the Step 3 current-generation addition, not
+a clinical-tuning contrast), so its NF4 quantization doesn't extend this
+confound to a new preregistered comparison -- but it does mean 2 of 5 panel
+models are now on NF4 rather than 1 of 4, which matters for any *exploratory*
+cross-model comparison someone is tempted to draw beyond the preregistered
+pairs.
 
 **Not fixed now because:** there is no free/zero-cost way to get an AWQ
-checkpoint of Meditron3-8B without quantizing it ourselves (compute cost,
-and a self-quantized checkpoint would introduce its own uncertainty). Options
-worth evaluating before the full run: (a) quantize Meditron3-8B to AWQ
-ourselves and validate it doesn't degrade quality noticeably vs. NF4, (b) run
-both Llama and Meditron in NF4 instead of AWQ for symmetry (costs the AWQ
-speed advantage on the other three-model comparisons, but only Llama needs a
-second run), or (c) accept the confound and state it explicitly as a
-limitation when reporting the secondary analysis. No decision made yet.
+checkpoint of Meditron3-8B or Granite-4.2-8B without quantizing them
+ourselves (compute cost, and a self-quantized checkpoint would introduce its
+own uncertainty). Options worth evaluating before the full run: (a) quantize
+Meditron3-8B to AWQ ourselves and validate it doesn't degrade quality
+noticeably vs. NF4, (b) run both Llama and Meditron in NF4 instead of AWQ for
+symmetry (costs the AWQ speed advantage on the other comparisons, but only
+Llama needs a second run), or (c) accept the confound and state it explicitly
+as a limitation when reporting the secondary analysis. No decision made yet.
 
 ## 2. Corrupted two-column PDF extraction; DIV-016 over-represented in Arm 4
 

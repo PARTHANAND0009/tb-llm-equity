@@ -45,21 +45,18 @@ clinician-review:
 expand-arms:
 	uv run python scripts/expand_arms.py
 
-# The following four targets are placeholders: no evaluation-arm/scoring
-# code has been written yet. They will call into src/tb_equity once that
-# code exists.
-
 run-arms:
 	@echo "run-arms: not implemented yet — no experiment code has been written."
 	@exit 1
 
-score:
-	@echo "score: not implemented yet — no experiment code has been written."
-	@exit 1
-
-analyze:
-	@echo "analyze: not implemented yet — no experiment code has been written."
-	@exit 1
+# Deterministic RUBRIC_VERSION scoring (src/tb_equity/rubric.py) plus the
+# Stage 2 primary analysis (src/tb_equity/analysis.py), combined into one
+# script since scoring every response IS the input to every reported
+# breakdown here. Requires real responses under data/responses/ (copied back
+# from a Colab run of notebooks/open_weight_inference.ipynb) — fails loudly
+# against zero data rather than writing an empty report.
+score analyze:
+	uv run python scripts/analyze_results.py
 
 figures:
 	@echo "figures: not implemented yet — no experiment code has been written."

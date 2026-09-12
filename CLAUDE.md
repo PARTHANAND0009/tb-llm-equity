@@ -229,5 +229,16 @@ distractor count.
 The Phase 3 arm-expansion pipeline (`scripts/expand_arms.py`, see "Phase 3:
 arm expansion" above) is implemented and unit-tested against
 `tests/fixtures/example_vignettes/`, but has not been run against real
-vignettes -- `data/vignettes/v1/` is still empty. No scoring/analysis code
-(`make score`, `make analyze`, `make figures`) has been written yet.
+vignettes -- `data/vignettes/v1/` is still empty. `make analyze` and
+`make figures` have not been written yet.
+
+The deterministic scoring rubric (`RUBRIC_VERSION = "v1"`) is implemented in
+`src/tb_equity/clauses.py` (per-clause NTEP/WHO/US/consensus pattern
+registry for all 17 non-dropped divergence rows) and `src/tb_equity/rubric.py`
+(negation-aware classification, refusal/format-drift detection, the
+preregistered consensus-deviation and US-alignment outcomes). See
+`RUBRIC_SPEC.md` for the full spec, validation results (48 hand-labelled
+unit tests, 100% ground-truth self-consistency across the real 100-vignette
+set), and known limitations. Not yet wired into `make score`, which still
+scores nothing end-to-end -- that requires real arm responses, which do not
+exist yet (Stage 2, gated behind `PILOT_APPROVED`).

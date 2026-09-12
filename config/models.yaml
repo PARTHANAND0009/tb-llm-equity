@@ -94,6 +94,22 @@ evaluation:
     # the rest of this roster's loader expects. Granite-4.2-8B has neither
     # problem (architectures: ["GraniteForCausalLM"], no vision_config, plain
     # bf16 checkpoint) and slots into the existing loader/notebook unchanged.
+    #
+    # EXCLUDED 2026-09-13 (IRIS TMED: full run instruction) -- record kept for
+    # provenance, not deleted. See results/LIMITATIONS.md for the full
+    # writeup. Reason: OOM'd during model *loading itself* (before any
+    # generation) in the Checkpoint 2b-v Step E re-pilot, on the same T4 that
+    # had already loaded and unloaded three other 8B models earlier that
+    # session -- a real, reproduced-once GPU memory failure, not a transient
+    # blip. The batch_size=4 restoration question this entry's comment was
+    # written to eventually answer is therefore unanswered and, per explicit
+    # instruction, will stay unanswered: no recovery attempt, given the
+    # 7-day-to-freeze timeline and two-day throughput this model was already
+    # tracking toward. `excluded: true` below removes it from
+    # MODEL_REGISTRY/model-panel selection in both the notebook and any
+    # analysis script that filters on this flag -- do not just delete this
+    # entry, and do not silently re-add ibm to a panel-building filter
+    # without also removing `excluded: true` here first.
     - family: ibm
       model: ibm-granite/granite-4.2-8b
       revision: f8de16cdcdbc6c779ca517604e050d82cc119e44
@@ -103,6 +119,13 @@ evaluation:
       quantization: bitsandbytes-nf4  # quantized on the fly, same pattern as epfl/Meditron3-8B
       params_b: 8
       runtime: colab_hf
+      excluded: true
+      excluded_date: "2026-09-13"
+      excluded_reason: >-
+        OOM during model loading (before any generation) in the Checkpoint
+        2b-v Step E re-pilot; batch_size=4 restoration question left
+        unanswered by explicit instruction; dropped from the panel rather
+        than retried, given the 7-day-to-freeze timeline.
       # batch_size is an infrastructure/throughput knob, not a sampling parameter --
       # it has no effect on any individual sequence's generated content (padding +
       # attention masking generate each sequence independently), so overriding it
@@ -114,4 +137,6 @@ evaluation:
       # ~4x the KV-cache memory of one, on the same T4 that already OOM'd twice
       # during pilot model *loading* alone (see KNOWN_ISSUES.md-adjacent notebook
       # history). Not worth risking an OOM partway through the full run over.
+      # Left here for the historical record even though the model is now
+      # excluded -- it explains why batch_size=1 was ever tried at all.
       batch_size: 1

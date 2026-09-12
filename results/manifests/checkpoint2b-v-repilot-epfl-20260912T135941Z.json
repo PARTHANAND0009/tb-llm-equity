@@ -1,0 +1,31 @@
+{
+  "run_id": "checkpoint2b-v-repilot-epfl-20260912T135941Z",
+  "model_identifiers": [
+    {
+      "family": "epfl",
+      "name": "EPFLiGHT/Meditron3-8B",
+      "version": "783c241b18b84692689e0336170b345e5732e48e"
+    }
+  ],
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": 1600,
+  "seed": null,
+  "prompt_template_hash": "1ef3fec7b72c953ff7b379159b459408a97927acb20d8ae0dc5e019b7e786a09",
+  "vignette_set_version": "v1",
+  "rubric_version": "v1",
+  "git_commit_sha": "6cca0515d6c809fc893939a7d756dcdc8a2542d9",
+  "utc_timestamp": "2026-09-12T13:59:41.792870+00:00",
+  "total_input_tokens": 5708,
+  "total_output_tokens": 6140,
+  "quantization": "bitsandbytes-nf4",
+  "base_model": "EPFLiGHT/Meditron3-8B",
+  "base_model_revision": "783c241b18b84692689e0336170b345e5732e48e",
+  "n_responses_this_run": 24,
+  "elicitations": [
+    "structured",
+    "freeform"
+  ],
+  "n_vignettes": 12,
+  "notes": "Checkpoint 2b-v Step E re-pilot: structured-vs-freeform elicitation, greedy decoding, single generation per (vignette, elicitation) -- distinct from the Task B full run (5 models x 400 prompts x N_SAMPLES) and from Task A's throughput-only pilot above."
+}

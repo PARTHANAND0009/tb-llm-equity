@@ -252,21 +252,30 @@ def render_report(
 
     ibm_stats = gen_stats.get("ibm", {}).get("by_elicitation", {})
     ibm_structured_bs = ibm_stats.get("structured", {}).get("batch_size_used")
+    lines += ["", "## Granite batch-size question", ""]
+    if "ibm" not in gen_stats:
+        lines.append(
+            "**No `ibm` data in this run** -- Granite's cell did not complete (e.g. OOM'd "
+            "during model loading itself, before any generation), so there is nothing to "
+            "report here yet. This is a missing observation, not a restoration failure --"
+            " don't conflate the two."
+        )
+    else:
+        lines += [
+            f"Model revision pinned: `{gen_stats['ibm']['model_revision']}`.",
+            (
+                f"Structured-arm batch_size_used = {ibm_structured_bs} -- "
+                + (
+                    "**restoration ACHIEVED**: the constrained format's shorter output let "
+                    "batch_size=4 run without OOM."
+                    if ibm_structured_bs == 4
+                    else "**restoration NOT achieved**: fell back to batch_size=1 on a real "
+                    "CUDA OOM even with the constrained format."
+                )
+            ),
+        ]
+
     lines += [
-        "",
-        "## Granite batch-size question",
-        "",
-        f"Model revision pinned: `{gen_stats.get('ibm', {}).get('model_revision', 'n/a')}`.",
-        (
-            f"Structured-arm batch_size_used = {ibm_structured_bs} -- "
-            + (
-                "**restoration ACHIEVED**: the constrained format's shorter output let "
-                "batch_size=4 run without OOM."
-                if ibm_structured_bs == 4
-                else "**restoration NOT achieved**: fell back to batch_size=1 on a real "
-                "CUDA OOM even with the constrained format."
-            )
-        ),
         "",
         "## What surprised us / contradicts the pre-specified rule",
         "",

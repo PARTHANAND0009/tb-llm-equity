@@ -115,6 +115,23 @@ def test_main_writes_a_report_against_real_v1_vignette(tmp_path):
     assert "meta" in content
 
 
+def test_main_reports_missing_ibm_data_distinctly_from_oom_fallback(tmp_path):
+    """A model whose cell never completed (e.g. OOM'd during loading, before
+    any generation) must be reported as missing, not misread as 'ran and
+    fell back to batch_size=1 on OOM' -- those are different findings."""
+    step_e_dir = tmp_path / "step_e"
+    _write_family_payload(
+        step_e_dir, "meta",
+        responses=[_resp("VIG-002", "structured", "Send Xpert MTB/RIF as the initial test.")],
+    )
+    out_path = tmp_path / "out.md"
+    step_e.main(step_e_dir=step_e_dir, out_path=out_path)
+
+    content = out_path.read_text(encoding="utf-8")
+    assert "No `ibm` data in this run" in content
+    assert "restoration NOT achieved" not in content
+
+
 def test_load_step_e_responses_tags_elicitation_correctly(tmp_path):
     step_e_dir = tmp_path / "step_e"
     _write_family_payload(

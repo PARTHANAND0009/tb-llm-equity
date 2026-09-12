@@ -1,0 +1,6 @@
+A 7-year-old boy with known severe acute malnutrition, enrolled in a nutrition rehabilitation program, is brought in by his mother, a community health worker, after about three weeks of cough and worsening lethargy beyond his usual baseline. He has no history of prior TB treatment and no known contact with anyone with drug-resistant TB; no HIV risk factors. Sputum obtained with coaching was scant, so a gastric aspirate was also collected; the gastric aspirate returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: severely wasted (known baseline), mild crackles, weight 14 kg.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+2. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

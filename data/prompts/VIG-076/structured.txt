@@ -1,0 +1,7 @@
+A 64-year-old woman who lives alone in a remote rural area, with her nearest family member living several hours away, presents after more than three months of cough that she describes as 'a cold that never really left.' She rarely visits any clinic and has no established pattern of routine care. She denies major weight loss but admits to some loss of appetite. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray shows a non-cavitary infiltrate. Exam: mild crackles, otherwise unremarkable.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+2. At what point, if any, would you send a mycobacterial culture on this patient? Explain your reasoning.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe the treatment regimen you would start, including (a) how many phases it has and the duration of each, and (b) how often within each phase the patient takes the medication.

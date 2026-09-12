@@ -1,0 +1,5 @@
+A 4-year-old girl is brought in by her father, who works as a hospital orderly, after about three weeks of cough and reduced energy. She has never been treated for TB before. A gastric aspirate was sent for molecular testing and was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed isoniazid and fluoroquinolone susceptibility (rifampicin mono-resistant TB), with no other risk factors for resistance beyond this result -- no HIV, no prior treatment. She lives with her 10-year-old brother, who is asymptomatic on screening. Exam (patient): mild wasting, right-sided crackles, no lymphadenopathy.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.

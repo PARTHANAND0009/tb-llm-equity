@@ -1,0 +1,5 @@
+A 65-year-old woman who travels seasonally for farm work presents after more than three months of cough and weight loss, which she attributed to the physical demands of travel. She has mild, longstanding hypertension managed with medication. She has never been treated for TB before. Sputum sent for molecular testing was positive for M. tuberculosis with rifampicin resistance detected; follow-up testing confirmed additional isoniazid resistance (MDR-TB) with preserved fluoroquinolone susceptibility. She lives with her 14-year-old grandson, who has no symptoms of active TB on screening. No HIV risk factors, no known contact with any other drug-resistant TB case. Exam: thin, bilateral crackles, no lymphadenopathy.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.

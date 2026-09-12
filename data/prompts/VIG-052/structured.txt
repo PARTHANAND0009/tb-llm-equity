@@ -1,0 +1,5 @@
+A 62-year-old retired factory worker, living with HIV and on antiretroviral therapy for several years, presents after more than three months of cough and weight loss, which she attributed to her HIV itself rather than a new problem. Her most recent CD4 count was 340 cells/uL, checked six months ago. She has never been treated for TB and has no known contact with anyone with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, scattered crackles, no oral thrush, no lymphadenopathy.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.

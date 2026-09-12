@@ -1,0 +1,7 @@
+A 5-year-old boy with a known history of mild, intermittent asthma (previously well-controlled with an as-needed inhaler) presents with about three weeks of cough that his parents initially treated as an asthma flare, increasing his inhaler use without improvement. He has had occasional low-grade fevers and has been less active at daycare per his teacher's report. No known TB contact in the household, though his parents mention a distant relative visited briefly a few months ago and 'seemed to cough a lot.' A gastric aspirate, obtained after he could not produce sputum, was positive for M. tuberculosis on molecular testing. No prior TB treatment, no known drug-resistant contact. Exam: mild wheeze plus new crackles at the left base, weight 17.1 kg.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+2. At what point, if any, would you send a mycobacterial culture on this patient? Explain your reasoning.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

@@ -1,0 +1,7 @@
+A 6-year-old boy is brought in by his father, a laboratory technician, after about three weeks of cough and low energy that started during his school's rainy-season break. He has otherwise been developmentally on track and has no known chronic illnesses. His father says the cough was initially dismissed as 'just the weather' since several classmates had similar coughs that resolved on their own. This one hasn't resolved, and the boy has started refusing his usual afternoon snack. Sputum was attempted but the child could not produce an adequate sample, so a gastric aspirate was collected instead and returned positive for M. tuberculosis on molecular testing. No prior TB treatment, no known drug-resistant contact. Exam: alert but quiet, mild right-sided crackles, weight 19.5 kg, no lymphadenopathy.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+2. At what point, if any, would you send a mycobacterial culture on this patient? Explain your reasoning.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

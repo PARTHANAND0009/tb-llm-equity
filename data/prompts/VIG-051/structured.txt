@@ -1,0 +1,6 @@
+A 44-year-old day laborer with type 2 diabetes, diagnosed two years ago and managed inconsistently due to cost, presents with about nine weeks of cough and unintentional weight loss. He attributed his fatigue to poor glucose control. He has never been treated for TB and has no known contact with anyone with drug-resistant TB; no HIV risk factors, no travel outside the region. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, scattered crackles, random blood glucose 230 mg/dl, weight 61 kg.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+2. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

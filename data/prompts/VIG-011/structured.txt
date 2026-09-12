@@ -1,0 +1,7 @@
+A 41-year-old day laborer presents with about ten weeks of cough and intermittent low-grade fevers, which he attributed to seasonal changes and kept working through because he is paid by the day. He has hypertension that he manages with medication obtained sporadically from a local pharmacy, and admits he often skips doses when money is tight. He denies significant weight loss but his wife says his appetite has clearly dropped. He has never been treated for TB and has no known contact with anyone with drug-resistant TB; he has not traveled outside the area and has no known HIV risk factors. Sputum smear is negative, Xpert MTB/RIF positive, rifampicin not detected. Chest imaging shows a non-cavitary right infiltrate. Exam: BP 148/92, mildly overweight, scattered crackles.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+2. At what point, if any, would you send a mycobacterial culture on this patient? Explain your reasoning.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe the treatment regimen you would start, including (a) how many phases it has and the duration of each, and (b) how often within each phase the patient takes the medication.

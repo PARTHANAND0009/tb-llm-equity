@@ -1,0 +1,5 @@
+An 8-year-old boy with known severe acute malnutrition presents with about three weeks of cough and worsening lethargy. He has never been treated for TB before. Sputum obtained with coaching, supplemented by a gastric aspirate, was positive for M. tuberculosis; testing confirmed resistance to rifampicin, isoniazid, and fluoroquinolones (pre-XDR-TB), with no other risk factors for resistance beyond this result -- no HIV, no prior treatment. Separately, his older sister was never evaluated for preventive therapy two years ago when an aunt who lived with the family for several months at that time was treated for fluoroquinolone-susceptible MDR-TB; the aunt has since completed treatment and is no longer infectious. Exam (patient): severely wasted (known baseline), mild crackles, no lymphadenopathy.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.

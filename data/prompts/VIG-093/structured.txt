@@ -1,0 +1,5 @@
+A 5-year-old boy living with HIV, on antiretroviral therapy, is brought in by his mother, a healthcare aide, after about three weeks of cough and reduced energy. His most recent CD4 count was within a range typically not requiring additional prophylaxis by some standards, but he has not previously received cotrimoxazole. No known TB contact in the household. No prior TB treatment, no known drug-resistant contact. Chest X-ray shows a right hilar lymph node pattern suggestive of primary TB. Exam: well-appearing overall, mild right-sided crackles, no respiratory distress.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.

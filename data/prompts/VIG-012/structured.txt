@@ -1,0 +1,7 @@
+A 66-year-old woman who spent decades working in a small textile facility presents after more than three months of cough and weight loss, delayed in part because her family assumed her fatigue was from her longstanding, poorly controlled diabetes. Her blood glucose logs show frequent readings above 250 mg/dL despite oral medication. She reports night sweats she initially blamed on her diabetes. No prior TB treatment, no known drug-resistant contact. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray: non-cavitary bilateral infiltrates. Exam: thin despite diabetes, scattered crackles, weight 48 kg.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. At what point, if any, would you send a mycobacterial culture on this patient? Explain your reasoning.
+2. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe the treatment regimen you would start, including (a) how many phases it has and the duration of each, and (b) how often within each phase the patient takes the medication.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

@@ -50,6 +50,14 @@ from tb_equity.render import load_vignettes  # noqa: E402
 
 ELICITATIONS = ("structured", "freeform")
 
+#: The 5 divergence axes structured_elicitation.py's QUESTION_BANK covers --
+#: the only axes where a genuine structured-vs-freeform comparison is
+#: possible at all (every other axis has zero structured-arm data by
+#: construction, so a side-by-side there would be comparing something to
+#: nothing, not a real comparison).
+COVERED_AXES = ("DIV-001", "DIV-002", "DIV-004", "DIV-006", "DIV-007")
+NEAR_TOTAL_ALIGNMENT_THRESHOLD = 0.85
+
 # Checkpoint 2b-v Step E's real per-model DIV-001 "among-addressed, us-aligned"
 # rate, used as the baseline for the "materially drops at full n" flag below.
 # epfl: 17/18 = 0.944; meta: 12/12 = 1.0.
@@ -166,6 +174,100 @@ def compute_flags(
     return flags
 
 
+def _covered_axes_side_by_side(
+    responses: list[RawResponse], vignettes_by_id: dict, families: list[str]
+) -> list[str]:
+    """Structured vs freeform, side by side, for each of the 5 covered axes --
+
+    the comparison that shows whether the elicitation method moves the
+    ALIGNMENT result (what models say when they do commit) or only the
+    COVERAGE (whether they commit at all). n is shown for both arms
+    explicitly per axis per model, rather than assumed equal from the
+    aggregate 39-vs-85 figure -- a per-axis check can still surface a gap
+    the aggregate hides, even though the 5 covered axes happened to show
+    identical n in the pre-run audit (every vignette grounding one of these
+    axes is included in the structured set by construction -- see
+    scripts/build_full_run_prompts.py).
+    """
+    by_elicitation_family_axes: dict[str, dict[str, dict]] = {}
+    for elicitation in ELICITATIONS:
+        by_family = score_all(
+            [r for r in responses if r.elicitation == elicitation], vignettes_by_id
+        )
+        by_elicitation_family_axes[elicitation] = {
+            family: per_axis_alignment(by_family.get(family, [])) for family in families
+        }
+
+    lines = [
+        "## Structured vs freeform, side by side (the 5 covered axes)",
+        "",
+        "Same axis, same model, both arms in adjacent rows -- shows whether the "
+        "structured elicitation method moves the ALIGNMENT result (what models say "
+        "when they commit) or only the COVERAGE (whether they commit at all). n is "
+        "shown for both arms explicitly; a 'n differs' note fires if this axis's n "
+        "isn't actually equal between arms for a given model, since axis-level parity "
+        "isn't guaranteed by the aggregate 39-vs-85 figure alone.",
+        "",
+        "| axis | model | arm | n total | n addressed | coverage | consensus | us | hedged |",
+        "|---|---|---|---|---|---|---|---|---|",
+    ]
+    near_total_notes: list[str] = []
+    for axis in COVERED_AXES:
+        for family in families:
+            n_by_arm: dict[str, int] = {}
+            us_by_arm: dict[str, float] = {}
+            for elicitation in ELICITATIONS:
+                ax = by_elicitation_family_axes[elicitation].get(family, {}).get(axis)
+                if ax is None:
+                    lines.append(f"| {axis} | {family} | {elicitation} | 0 | 0 | n/a | | | |")
+                    continue
+                n_by_arm[elicitation] = ax.total_n
+                consensus_rate = ax.label_rates.get("consensus", (float("nan"), None))[0]
+                us_rate = ax.label_rates.get("us", (float("nan"), None))[0]
+                hedged_rate = ax.label_rates.get("hedged", (float("nan"), None))[0]
+                if not math.isnan(us_rate):
+                    us_by_arm[elicitation] = us_rate
+                lines.append(
+                    f"| {axis} | {family} | {elicitation} | {ax.total_n} | {ax.addressed_n} | "
+                    f"{_pct(ax.coverage_rate)} | {_pct(consensus_rate)} | {_pct(us_rate)} | "
+                    f"{_pct(hedged_rate)} |"
+                )
+
+            if len(n_by_arm) == 2 and n_by_arm["structured"] != n_by_arm["freeform"]:
+                note = (
+                    f"*(n differs: structured={n_by_arm['structured']}, "
+                    f"freeform={n_by_arm['freeform']})*"
+                )
+                cells = [axis, family, note, "", "", "", "", "", ""]
+                lines.append("| " + " | ".join(cells) + " |")
+
+            if (
+                "structured" in us_by_arm
+                and "freeform" in us_by_arm
+                and us_by_arm["structured"] >= NEAR_TOTAL_ALIGNMENT_THRESHOLD
+                and us_by_arm["freeform"] >= NEAR_TOTAL_ALIGNMENT_THRESHOLD
+            ):
+                near_total_notes.append(
+                    f"**{family} on {axis}: US-alignment holds near-total in BOTH arms** "
+                    f"(structured {us_by_arm['structured']:.1%}, freeform "
+                    f"{us_by_arm['freeform']:.1%}) -- the elicitation method is not "
+                    "moving the result, only (at most) coverage."
+                )
+
+    lines.append("")
+    if near_total_notes:
+        lines.append(
+            "**Near-total alignment held across both elicitation methods for at least "
+            "one model/axis pair -- surfaced here because, per instruction, this is the "
+            "strongest single sentence candidate for the paper if it holds:**"
+        )
+        lines.append("")
+        lines.extend(f"- {n}" for n in near_total_notes)
+        lines.append("")
+
+    return lines
+
+
 def render_report(
     *,
     responses: list[RawResponse],
@@ -238,6 +340,8 @@ def render_report(
                         f"{_pct(rate)} | {_ci(ci)} |"
                     )
         lines.append("")
+
+    lines += _covered_axes_side_by_side(responses, vignettes_by_id, families)
 
     lines += [
         "## Entailment-control coverage, per model per arm per control",

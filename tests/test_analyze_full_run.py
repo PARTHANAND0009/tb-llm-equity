@@ -147,3 +147,49 @@ def test_compute_flags_detects_freeze_deadline_overrun():
     manifests = {"meta": {"utc_timestamp": "2026-09-25T00:00:00+00:00"}}
     flags = full_run.compute_flags([], {}, manifests)
     assert any("freeze deadline" in f for f in flags)
+
+
+def test_covered_axes_side_by_side_detects_near_total_alignment_in_both_arms():
+    from tb_equity.analysis import RawResponse
+    from test_rubric import make_vignette
+
+    v = make_vignette(["DIV-001"], id="VIG-123")
+    vignettes = {"VIG-123": v}
+    # Both arms: consistently us-aligned -> near-total in both, should be surfaced.
+    responses = [
+        RawResponse(
+            vignette_id="VIG-123", arm=0, family="meta", model="m", model_revision="r",
+            seed=0, text="Send AFB smear microscopy as the initial test.", elicitation=elic,
+        )
+        for elic in ("structured", "freeform")
+        for _ in range(5)
+    ]
+    lines = full_run._covered_axes_side_by_side(responses, vignettes, ["meta"])
+    content = "\n".join(lines)
+    assert "US-alignment holds near-total in BOTH arms" in content
+    assert "meta on DIV-001" in content
+
+
+def test_covered_axes_side_by_side_flags_n_mismatch():
+    from tb_equity.analysis import RawResponse
+    from test_rubric import make_vignette
+
+    v = make_vignette(["DIV-001"], id="VIG-124")
+    vignettes = {"VIG-124": v}
+    responses = [
+        RawResponse(
+            vignette_id="VIG-124", arm=0, family="meta", model="m", model_revision="r",
+            seed=0, text="Send AFB smear microscopy as the initial test.", elicitation="structured",
+        ),
+        RawResponse(
+            vignette_id="VIG-124", arm=0, family="meta", model="m", model_revision="r",
+            seed=1, text="Send AFB smear microscopy as the initial test.", elicitation="freeform",
+        ),
+        RawResponse(
+            vignette_id="VIG-124", arm=0, family="meta", model="m", model_revision="r",
+            seed=2, text="Send AFB smear microscopy as the initial test.", elicitation="freeform",
+        ),
+    ]
+    lines = full_run._covered_axes_side_by_side(responses, vignettes, ["meta"])
+    content = "\n".join(lines)
+    assert "n differs: structured=1, freeform=2" in content

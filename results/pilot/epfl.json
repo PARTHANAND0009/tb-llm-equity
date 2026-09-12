@@ -1,0 +1,126 @@
+{
+  "family": "epfl",
+  "elapsed_seconds": 198.02555775642395,
+  "responses": [
+    {
+      "vignette_id": "VIG-002",
+      "arm": 1,
+      "input_tokens": 258,
+      "output_tokens": 175,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. Pulmonary tuberculosis (most likely first): The patient's symptoms of cough, fatigue, and hemoptysis, along with the positive sputum molecular testing for M. tuberculosis, strongly suggest pulmonary tuberculosis. The patient's reduced appetite and missed menstrual periods also suggest a systemic illness. The patient's BMI of 17.1 suggests malnutrition, which is a known risk factor for TB.\n\n2. The next diagnostic step would be to obtain a chest X-ray to evaluate for pulmonary TB.\n\n3. Initial management plan: The patient should be started on isoniazid, rifampicin, pyrazinamide, and ethambutol for the first two months of treatment, followed by isoniazid and rifampicin for the remaining four months. The patient should also be evaluated for malnutrition and provided with nutritional support as needed."
+    },
+    {
+      "vignette_id": "VIG-002",
+      "arm": 2,
+      "input_tokens": 270,
+      "output_tokens": 175,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. Pulmonary tuberculosis (most likely first): The patient's symptoms of cough, fatigue, and hemoptysis, along with the positive sputum molecular testing for M. tuberculosis, strongly suggest pulmonary tuberculosis. The patient's reduced appetite and missed menstrual periods also suggest a systemic illness. The patient's BMI of 17.1 suggests malnutrition, which is common in India and can contribute to the development of tuberculosis.\n\n2. The next diagnostic step would be to obtain a chest X-ray to confirm the presence of pulmonary tuberculosis and to assess the extent of the disease.\n\n3. Initial management plan: The patient should be started on a standard four-drug regimen for tuberculosis, including isoniazid, rifampicin, pyrazinamide, and ethambutol. She should also be referred to a tuberculosis clinic for further management and follow-up."
+    },
+    {
+      "vignette_id": "VIG-002",
+      "arm": 3,
+      "input_tokens": 322,
+      "output_tokens": 253,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. The most likely diagnosis is pulmonary tuberculosis (TB) with hemoptysis, given the patient's symptoms, positive sputum molecular testing, and hemoglobin level. The patient's cough, fatigue, and reduced appetite are consistent with TB, and the hemoptysis is a common symptom of pulmonary TB. The patient's BMI is also low, which is consistent with malnutrition, which is a risk factor for TB. The patient's history of missing menstrual periods is concerning for anemia, which is a common complication of TB.\n\n2. The next diagnostic step would be to obtain a chest X-ray to evaluate for pulmonary TB. The X-ray can help identify the presence and extent of lung involvement, which can guide further management.\n\n3. Initial management would include starting the patient on anti-TB treatment, which typically consists of a combination of four drugs (isoniazid, rifampicin, pyrazinamide, and ethambutol) for two months, followed by isoniazid and rifampicin for four months. The patient should also be evaluated for anemia and malnutrition, and appropriate treatment should be initiated. The patient should be monitored for response to treatment, including clinical improvement and resolution of hemoptysis."
+    },
+    {
+      "vignette_id": "VIG-003",
+      "arm": 1,
+      "input_tokens": 238,
+      "output_tokens": 221,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. The most likely diagnosis is pulmonary tuberculosis (TB) with drug resistance, given the positive Xpert MTB/RIF result and the negative sputum smear. The patient's history of heavy alcohol use and irregular eating habits may have contributed to his weight loss and hepatomegaly. The infiltrate on chest X-ray is consistent with TB. The patient's history of missing work due to illness may have contributed to his financial difficulties.\n\n2. The next diagnostic step would be to obtain a sputum culture to confirm the diagnosis of TB and to determine the drug susceptibility pattern. This will help guide the choice of treatment regimen.\n\n3. Initial management would include starting treatment with a combination of first-line anti-TB drugs, including isoniazid, rifampicin, pyrazinamide, and ethambutol. The patient should also be counseled on the importance of adherence to treatment and the need to avoid alcohol and other substances that may interfere with treatment. The patient should be monitored for signs of drug toxicity, such as liver function tests and renal function tests."
+    },
+    {
+      "vignette_id": "VIG-003",
+      "arm": 2,
+      "input_tokens": 250,
+      "output_tokens": 160,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. Drug-resistant TB (most likely first): The patient has a positive Xpert MTB/RIF test with no detected rifampicin, indicating drug-resistant TB. The patient's history of irregular eating and drinking heavily also suggests malnutrition and potential alcohol use disorder, which are risk factors for drug-resistant TB.\n\n2. Next diagnostic step: The patient should undergo further testing to determine the specific drug resistance pattern. This can be done through culture-based drug susceptibility testing or through molecular testing such as line probe assays.\n\n3. Initial management plan: The patient should be started on a second-line anti-TB regimen that is appropriate for the suspected drug resistance pattern. The patient should also be evaluated for malnutrition and alcohol use disorder, and provided with nutritional support and counseling for alcohol use disorder."
+    },
+    {
+      "vignette_id": "VIG-003",
+      "arm": 3,
+      "input_tokens": 302,
+      "output_tokens": 244,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "all three section labels present, in order",
+      "text": "1. The differential diagnosis for this patient includes pulmonary tuberculosis (most likely), other causes of productive cough (e.g., bronchitis, pneumonia), and other causes of night sweats (e.g., malignancy, endocarditis). The patient's weight loss and hepatomegaly suggest a chronic process, and the history of heavy alcohol use raises the possibility of alcohol-related liver disease. However, the positive Xpert MTB/RIF result and the chest X-ray findings strongly suggest TB.\n\n2. The next diagnostic step would be to perform a sputum culture to confirm the diagnosis of TB and to determine drug susceptibility. This is important because the patient's Xpert MTB/RIF result indicates rifampicin resistance, but the culture will provide more information about the extent of resistance and guide treatment decisions.\n\n3. Initial management would include starting treatment for TB with a regimen that includes at least four drugs to which the isolate is susceptible. The patient should also be counseled about the importance of adherence to treatment and the need to avoid alcohol while on treatment. Given the patient's weight loss and hepatomegaly, a liver function test should be performed to assess for alcohol-related liver disease."
+    },
+    {
+      "vignette_id": "VIG-020",
+      "arm": 4,
+      "input_tokens": 1328,
+      "output_tokens": 183,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "all three section labels present, in order",
+      "text": "1. Ranked differential diagnosis:\n- Drug-resistant TB (most likely): The patient has been on treatment for over two months and still has a positive sputum smear, indicating a possible drug-resistant strain.\n- MDR-TB (likely): The patient's symptoms and treatment history suggest a possible MDR-TB infection.\n- Other causes of persistent cough (possible): The patient's symptoms could be due to other causes such as chronic bronchitis, asthma, or lung cancer.\n\n2. Next diagnostic step:\n- Perform a GeneXpert MTB/RIF test to confirm the presence of M. tuberculosis and assess for drug resistance.\n\n3. Initial management plan:\n- Continue standard first-line treatment for TB.\n- Consider extending the continuation phase of treatment to 24 weeks, as per the protocol.\n- Refer the patient to a tertiary care hospital for further evaluation and management of possible MDR-TB."
+    },
+    {
+      "vignette_id": "VIG-021",
+      "arm": 4,
+      "input_tokens": 1419,
+      "output_tokens": 318,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "all three section labels present, in order",
+      "text": "1. Differential diagnosis:\n- Primary TB: The most likely diagnosis given the clinical presentation and chest X-ray findings. The boy has a persistent cough and has fallen off his growth curve, which are both common symptoms of TB. The chest X-ray shows a hilar lymph node pattern, which is highly suggestive of primary TB. The negative gastric aspirate and induced sputum results do not rule out TB, as these tests may not always be positive in children.\n- Other respiratory infections: The boy's symptoms could also be due to other respiratory infections such as pneumonia or bronchiolitis. However, these diagnoses are less likely given the chest X-ray findings and the negative gastric aspirate and induced sputum results.\n- Other causes of growth faltering: The boy's growth faltering could also be due to other causes such as malnutrition or an underlying medical condition. However, these diagnoses are less likely given the clinical presentation and chest X-ray findings.\n\n2. Next diagnostic step:\n- Repeat gastric aspirate and induced sputum: The negative results of the initial tests do not rule out TB, and repeating the tests may increase the chances of obtaining a positive result. This is especially important given the clinical presentation and chest X-ray findings.\n\n3. Initial management plan:\n- Start empirical TB treatment: Given the clinical presentation and chest X-ray findings, it is reasonable to start empirical TB treatment while awaiting the results of the repeat gastric aspirate and induced sputum tests. The treatment regimen should be based on the patient's age and weight, as per the national guidelines."
+    },
+    {
+      "vignette_id": "VIG-072",
+      "arm": 1,
+      "input_tokens": 198,
+      "output_tokens": 137,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. Drug-resistant pulmonary TB (most likely first): The patient's sputum smear remains positive despite two months of treatment, suggesting that the TB may be resistant to the first-line drugs. Additionally, the patient's malnutrition and weight loss may be contributing to her slow response to treatment.\n\n2. Drug susceptibility testing: This test will determine which drugs the TB is resistant to, allowing for targeted treatment.\n\n3. Initial management plan: Continue first-line treatment and monitor for signs of drug resistance. Consider adding a second-line drug if the patient's sputum smear remains positive after two months of treatment. Also, address the patient's malnutrition with nutritional support and counseling."
+    },
+    {
+      "vignette_id": "VIG-072",
+      "arm": 2,
+      "input_tokens": 212,
+      "output_tokens": 139,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. Drug-resistant pulmonary TB (most likely first): The patient's sputum smear remains positive despite two months of treatment, suggesting that the TB may be resistant to the first-line drugs. Additionally, the patient's malnutrition and weight loss may be contributing to the slow response to treatment.\n\n2. Drug susceptibility testing: The next diagnostic step would be to perform drug susceptibility testing to determine which drugs the TB is resistant to. This will guide the choice of second-line drugs for treatment.\n\n3. Initial management plan: Continue first-line treatment for TB, but also start second-line treatment based on the results of drug susceptibility testing. Consider nutritional support and weight gain counseling to address malnutrition."
+    },
+    {
+      "vignette_id": "VIG-072",
+      "arm": 3,
+      "input_tokens": 270,
+      "output_tokens": 205,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "3 numbered/Step-N section markers present",
+      "text": "1. Drug-resistant pulmonary TB (most likely first): The patient's sputum smear remains positive after two months of treatment, which suggests that the TB is not responding to the initial treatment regimen. Additionally, the patient's significant malnutrition and longstanding history of TB suggest that she may have a more complex and resistant form of TB. The patient's travel history for farm work also raises the possibility of exposure to drug-resistant strains of TB.\n\n2. Drug susceptibility testing: The next diagnostic step would be to perform drug susceptibility testing to determine the specific drug-resistant strains of TB that the patient is infected with. This will help guide the treatment regimen and ensure that the patient receives the most effective treatment.\n\n3. Initial management plan: The patient should continue on the initial treatment regimen, but with the addition of second-line drugs that are effective against the identified drug-resistant strains. The patient's malnutrition should be addressed through nutritional counseling and supplementation. The patient should also be monitored closely for any signs of treatment failure or adverse effects."
+    },
+    {
+      "vignette_id": "VIG-076",
+      "arm": 4,
+      "input_tokens": 1405,
+      "output_tokens": 204,
+      "stop_reason": "eos",
+      "parseable": true,
+      "parseable_reason": "all three section labels present, in order",
+      "text": "1. The differential diagnosis for this patient includes drug-resistant TB, other causes of chronic cough (e.g. chronic bronchitis, asthma, lung cancer), and other causes of weight loss (e.g. malignancy, chronic disease). The ranking is based on the patient's age, chronic cough, weight loss, and the positive Xpert MTB/RIF result. Drug-resistant TB is the most likely diagnosis given the positive Xpert MTB/RIF result and the negative sputum smear.\n\n2. The next diagnostic step would be to perform a second sputum smear and culture, as well as a second Xpert MTB/RIF test. This is to confirm the diagnosis of TB and to rule out drug-resistant TB.\n\n3. Initial management would include initiation of empiric anti-TB therapy, including isoniazid, rifampin, pyrazinamide, and ethambutol. The patient should also be started on a macrolide antibiotic for community-acquired pneumonia."
+    }
+  ]
+}

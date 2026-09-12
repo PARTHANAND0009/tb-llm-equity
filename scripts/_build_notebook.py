@@ -61,16 +61,18 @@ CELLS.append(md(
     "**Two phases, in order -- do not skip the gate between them:**",
     "",
     "1. **Pilot** (Task A): 20 stratified prompts (5 vignettes x 4 arms) through"
-    " Llama-3.1-8B-Instruct, then the same 20 through Meditron3-8B. Reports real"
-    " measured output-token stats, throughput, response parseability, and a"
-    " corrected full-run ETA -- the planning-time 700-tokens/response assumption"
-    " was never validated against a real completion, and this is where that"
-    " happens, before you commit hours to the full run.",
-    "2. **Full run** (Task B): all 4 models x 400 prompts x 1 seed. Checkpoints to"
-    " Drive after every batch -- free Colab disconnects without warning, and a"
-    " lost session should cost you minutes of re-warmup, not hours of regenerated"
-    " work. Resumable: re-running this notebook after a disconnect skips every"
-    " response already checkpointed.",
+    " Llama-3.1-8B-Instruct, then the same 20 through Meditron3-8B, then Granite-4.2-8B"
+    " (added 2026-09-10, Stage 2 Step 3 -- see Section 9b). Reports real measured"
+    " output-token stats, throughput, response parseability, and a corrected"
+    " full-run ETA -- the planning-time 700-tokens/response assumption was never"
+    " validated against a real completion, and this is where that happens, before"
+    " you commit hours to the full run.",
+    "2. **Full run** (Task B): all 5 models x 400 prompts x `N_SAMPLES` (3 by"
+    " default -- see Section 10) sampled completions. Checkpoints to Drive after"
+    " every batch -- free Colab disconnects without warning, and a lost session"
+    " should cost you minutes of re-warmup, not hours of regenerated work."
+    " Resumable: re-running this notebook after a disconnect skips every response"
+    " already checkpointed.",
     "",
     "**What was and wasn't tested before you run this.** The checkpoint/resume"
     " logic (`src/tb_equity/checkpoint.py`) and the response-parseability heuristic"
@@ -96,26 +98,55 @@ CELLS.append(md(
     " older docs describe. `bitsandbytes` is for Meditron3-8B's on-the-fly NF4"
     " quantization. No vLLM.",
     "",
-    "**The second `pip install` line below force-reinstalls `numpy` alone, after"
-    " everything else.** Confirmed live: installing `gptqmodel` pulled in a `numpy`"
-    " version that left the environment with a broken numpy (`ImportError: cannot"
-    " import name '_center' from 'numpy._core.umath'` on the next `import"
-    " transformers`) -- a binary mismatch between numpy's Python and compiled-C"
-    " layers, a known class of issue when a Colab session's pre-existing numpy gets"
-    " partially upgraded by a later pip install. Reinstalling it cleanly, once, as"
-    " the last step resolves the inconsistency.",
+    "**The cell below captures Colab's own preinstalled `numpy` version FIRST, then"
+    " restores exactly that version after everything else installs.** Confirmed live"
+    " (2026-08-08): installing `gptqmodel` pulled in a different `numpy` version that"
+    " left the environment broken (`ImportError: cannot import name '_center' from"
+    " 'numpy._core.umath'` on the next `import transformers`) -- a binary mismatch"
+    " between numpy's Python and compiled-C layers, from Colab's pre-existing numpy"
+    " (already matched to Colab's preinstalled torch build) getting disturbed by a"
+    " later pip install's own dependency resolution.",
     "",
-    "**You must restart the runtime (`Runtime` -> `Restart session`, keep the T4"
-    " GPU setting) after running this cell, every time this cell's package list"
-    " changes** -- pip installing or reinstalling packages does not take effect in"
-    " an already-running Python process; the `gptqmodel` and numpy issues above were"
-    " both real dependency problems (not restart issues on their own), but a stale,"
-    " already-imported version of a package can mask whether a fix actually landed."
-    " Restart, then re-run every cell from the top.",
+    "Two earlier revisions of this fix force-reinstalled numpy to a hardcoded pin"
+    " instead (unpinned 'whatever is newest', then `<2.4`, then `<2`) and each one"
+    " eventually broke again as PyPI's numpy releases moved past whatever line was"
+    " guessed -- confirmed live 2026-09-10, `<2.4` still hit `AttributeError: module"
+    " 'numpy._core._multiarray_umath' has no attribute '_blas_supports_fpe'` (numpy"
+    " 2.4.4 dropped that symbol; Colab's preinstalled torch/transformers build still"
+    " calls it), and numpy 1.x-vs-2.x is a large enough ABI break on its own that"
+    " even `<2` isn't guaranteed safe against every possible Colab torch build."
+    " Guessing a version ceiling is the wrong shape of fix for a number that keeps"
+    " moving -- capturing and restoring Colab's own already-correct version sidesteps"
+    " the guessing entirely, whichever numpy generation Colab currently ships.",
+    "",
+    "**If you already ran an earlier version of this cell in this session:"
+    " re-running this cell alone will NOT fix a broken numpy that's already loaded.**"
+    " `Runtime -> Restart session` (keep the T4 GPU setting) is required after this"
+    " cell runs, every time, before re-running anything below it -- `pip install`"
+    " only changes files on disk, never the already-imported modules sitting in the"
+    " current Python process's memory. An identical error after editing this cell"
+    " almost always means the restart step was skipped, not that the fix is wrong.",
+))
+CELLS.append(code(
+    "import numpy",
+    "_colab_numpy_version = numpy.__version__  # captured BEFORE anything below can disturb it",
+    "print(f'Colab preinstalled numpy: {_colab_numpy_version} (will be restored after installs below)')",
+    "",
+    "# Must be set before the first `import torch` anywhere in this notebook's process --",
+    "# PyTorch reads this once, at CUDA-allocator init, not per-call. Confirmed live",
+    "# (2026-09-10): loading a 3rd 8B model in the same T4 session (Granite-4.2-8B, after",
+    "# Llama then Meditron) hit 'CUDA out of memory, tried to allocate 3.27 GiB ... 3.21",
+    "# GiB free' -- a fragmentation failure (the T4 has 14.56 GiB total; the model itself",
+    "# fits comfortably), not an actual out-of-capacity failure. expandable_segments lets",
+    "# PyTorch grow one contiguous memory segment instead of many separately-cached",
+    "# fixed-size blocks, which is the standard fix for exactly this OOM-despite-free-",
+    "# memory pattern across sequential model loads in one process.",
+    "import os",
+    "os.environ.setdefault('PYTORCH_CUDA_ALLOC_CONF', 'expandable_segments:True')",
 ))
 CELLS.append(code(
     "!pip install -q transformers accelerate bitsandbytes autoawq gptqmodel huggingface_hub pyyaml",
-    "!pip install -q --force-reinstall --no-deps numpy",
+    "!pip install -q --force-reinstall --no-deps \"numpy=={_colab_numpy_version}\"",
 ))
 
 # ---------------------------------------------------------------------------
@@ -199,14 +230,14 @@ CELLS.append(code(
 CELLS.append(md(
     "## 4. HuggingFace login",
     "",
-    "Only **one** of the four models actually needs this: `EPFLiGHT/Meditron3-8B`"
+    "Only **one** of the five models actually needs this: `EPFLiGHT/Meditron3-8B`"
     " is auto-gated (accept terms on its model page, access is granted instantly,"
     " but a token is required to download it). Verified directly against the HF"
-    " Hub API when this notebook was built: the other three --"
+    " Hub API when this notebook was built: the other four --"
     " `hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4`, `Orion-zhen/Qwen3-8B-AWQ`,"
-    " `solidrust/Mistral-7B-Instruct-v0.3-AWQ` -- are all ungated, and the Llama AWQ"
-    " repo bundles its own tokenizer files, so it never touches the gated base"
-    " `meta-llama/Llama-3.1-8B-Instruct` repo.",
+    " `solidrust/Mistral-7B-Instruct-v0.3-AWQ`, `ibm-granite/granite-4.2-8b` -- are"
+    " all ungated, and the Llama AWQ repo bundles its own tokenizer files, so it"
+    " never touches the gated base `meta-llama/Llama-3.1-8B-Instruct` repo.",
     "",
     "Store your token as a Colab secret named `HF_TOKEN` (key icon in the left"
     " sidebar), not hardcoded here.",
@@ -227,7 +258,7 @@ CELLS.append(code(
     "    models_cfg = yaml.safe_load(f)",
     "",
     "MODEL_REGISTRY = [m for m in models_cfg['evaluation']['models'] if m.get('runtime') == 'colab_hf']",
-    "assert len(MODEL_REGISTRY) == 4, f'expected 4 open-weight models, found {len(MODEL_REGISTRY)}'",
+    "assert len(MODEL_REGISTRY) == 5, f'expected 5 open-weight models, found {len(MODEL_REGISTRY)}'",
     "",
     "for m in MODEL_REGISTRY:",
     "    print(f\"{m['family']:8s} {m['model']:55s} rev={m['revision'][:12]} quant={m['quantization']}\")",
@@ -351,7 +382,19 @@ CELLS.append(code(
     "",
     "",
     "def unload_hf_model(model) -> None:",
+    "    \"\"\"A single del+collect+empty_cache pass can leave CUDA memory fragmented",
+    "    rather than actually freed -- confirmed live (2026-09-10): loading a 3rd model",
+    "    in the same T4 session (Granite-4.2-8B, after Llama then Meditron) hit",
+    "    'CUDA out of memory. Tried to allocate 3.27 GiB ... of which 3.21 GiB is free'",
+    "    despite the model itself being well under the T4's 14.56 GiB. Running gc twice",
+    "    (a reference cycle can survive one pass) and synchronizing before",
+    "    empty_cache() gives PyTorch's allocator a real chance to coalesce free blocks",
+    "    instead of leaving them fragmented across many small unreleased chunks.",
+    "    \"\"\"",
     "    del model",
+    "    gc.collect()",
+    "    torch.cuda.synchronize()",
+    "    torch.cuda.empty_cache()",
     "    gc.collect()",
     "    torch.cuda.empty_cache()",
     "",
@@ -366,17 +409,32 @@ CELLS.append(code(
     "    data/prompts/*.txt itself is never modified, only wrapped here. Without this,",
     "    an instruction-tuned model receives raw text with no turn boundary and tends to",
     "    keep writing the case narrative instead of answering it.",
+    "",
+    "    `enable_thinking=False` -- added 2026-09-10 for Granite-4.2-8B, which defaults to",
+    "    verbose chain-of-thought reasoning that would otherwise eat into GENERATION_MAX_TOKENS",
+    "    before ever producing the ranked-DDx/next-step/management-plan answer this study scores.",
+    "    Verified safe to pass unconditionally: Llama-3.1/Mistral's chat templates don't",
+    "    reference this variable and silently ignore it (checked live against all three",
+    "    ungated tokenizers), Qwen3 and Granite both honor it (empty <think></think>",
+    "    output, confirmed live). Meditron3-8B is untested (gated, no HF_TOKEN available",
+    "    when this was checked) -- if it errors on this kwarg, that itself is useful",
+    "    information about its template and should be reported, not silently caught.",
     "    \"\"\"",
     "    return tokenizer.apply_chat_template(",
     "        [{'role': 'user', 'content': prompt_text}], tokenize=False, add_generation_prompt=True,",
+    "        enable_thinking=False,",
     "    )",
     "",
     "",
-    "def generate_batch(model, tokenizer, entries: list[dict]):",
+    "def generate_batch(model, tokenizer, entries: list[dict], *, seed: int | None = None,",
+    "                    temperature: float = 0.0, top_p: float = 1.0):",
     "    \"\"\"One model.generate() call across `entries` (each chat-templated via",
     "    render_chat_prompt, then padded to the longest one in the batch) -- batched,",
-    "    but NOT vLLM-style continuous batching. do_sample=False is greedy decoding,",
-    "    the transformers equivalent of temperature=0. Returns (texts,",
+    "    but NOT vLLM-style continuous batching. `temperature=0.0` (the default) means",
+    "    greedy decoding (`do_sample=False`) -- deterministic, `seed` has no effect.",
+    "    `temperature > 0.0` means true sampling (`do_sample=True`) with `torch.manual_seed(seed)`",
+    "    set immediately before `model.generate()` so a given seed is independently",
+    "    reproducible (see Section 10's note on why Task B uses this path). Returns (texts,",
     "    output_token_counts, input_token_counts, stop_reasons, elapsed); each",
     "    stop_reasons[i] is 'eos' if that sequence emitted one of",
     "    model.generation_config.eos_token_id, else 'max_tokens'.",
@@ -400,10 +458,15 @@ CELLS.append(code(
     "    prompt_len = inputs['input_ids'].shape[1]",
     "    input_token_counts = inputs['attention_mask'].sum(dim=1).tolist()",
     "",
+    "    do_sample = temperature > 0.0",
+    "    if do_sample and seed is not None:",
+    "        torch.manual_seed(seed)",
+    "",
     "    start = time.time()",
     "    with torch.no_grad():",
     "        output_ids = model.generate(",
-    "            **inputs, max_new_tokens=GENERATION_MAX_TOKENS, do_sample=False,",
+    "            **inputs, max_new_tokens=GENERATION_MAX_TOKENS, do_sample=do_sample,",
+    "            **({'temperature': temperature, 'top_p': top_p} if do_sample else {}),",
     "            pad_token_id=tokenizer.pad_token_id,",
     "        )",
     "    elapsed = time.time() - start",
@@ -462,9 +525,37 @@ CELLS.append(code(
     "",
     "",
     "def run_pilot(model_cfg: dict, family: str):",
+    "    \"\"\"model/tokenizer load and cleanup live in a try/finally -- added",
+    "    2026-09-10 after a live OOM during load_hf_model() left a partially-",
+    "    materialized model pinned in GPU memory for the rest of the session.",
+    "    Root cause: unload_hf_model() previously only ran after a FULLY",
+    "    successful load+generate, so a load-time exception skipped it entirely",
+    "    -- and Jupyter/Colab's own exception history keeps every frame in the",
+    "    traceback alive (including transformers' internal frames holding the",
+    "    partially-loaded tensors), so the failed attempt's GPU memory stayed",
+    "    reserved even though the cell 'failed'. finally guarantees cleanup",
+    "    runs whether or not loading/generation succeeded.",
+    "    \"\"\"",
     "    print(f\"=== PILOT: {model_cfg['model']} ===\")",
-    "    model, tokenizer = load_hf_model(model_cfg)",
+    "    print(f'GPU memory before load: {torch.cuda.memory_allocated() / 1e9:.2f} GB allocated, '",
+    "          f'{torch.cuda.memory_reserved() / 1e9:.2f} GB reserved')",
+    "    model = None",
+    "    tokenizer = None",
+    "    try:",
+    "        model, tokenizer = load_hf_model(model_cfg)",
+    "        return _run_pilot_body(model, tokenizer, model_cfg, family)",
+    "    finally:",
+    "        if model is not None:",
+    "            unload_hf_model(model)",
+    "        if tokenizer is not None:",
+    "            del tokenizer",
+    "        gc.collect()",
+    "        torch.cuda.empty_cache()",
+    "        print(f'GPU memory after cleanup: {torch.cuda.memory_allocated() / 1e9:.2f} GB allocated, '",
+    "              f'{torch.cuda.memory_reserved() / 1e9:.2f} GB reserved')",
     "",
+    "",
+    "def _run_pilot_body(model, tokenizer, model_cfg: dict, family: str):",
     "    sample_entry = PILOT_ENTRIES[0]",
     "    sample_rendered = render_chat_prompt(tokenizer, read_prompt_text(sample_entry))",
     "    print(f\"Render check ({sample_entry['vignette_id']} arm{sample_entry['arm']}, last 120 \"",
@@ -512,8 +603,6 @@ CELLS.append(code(
     "        family, PILOT_ENTRIES, texts, output_token_counts, input_token_counts,",
     "        stop_reasons, parse_results, elapsed,",
     "    )",
-    "    unload_hf_model(model)",
-    "    del tokenizer",
     "    return texts, output_token_counts, input_token_counts, stop_reasons, parse_results, n_parseable",
 ))
 
@@ -669,6 +758,64 @@ CELLS.append(code(
 ))
 
 # ---------------------------------------------------------------------------
+CELLS.append(md(
+    "## GPU memory recovery (run only if a pilot cell above OOM'd)",
+    "",
+    "Skip this cell if everything above ran cleanly. If a pilot cell failed with"
+    " `CUDA out of memory`, `run_pilot`'s `finally` block already unloaded that"
+    " model's weights -- but Jupyter/Colab separately keeps the failed cell's"
+    " exception and traceback alive for inspection (`%tb`, `Explain error`, etc.),"
+    " and that traceback holds references to every frame between here and where"
+    " the error was actually raised -- including `transformers`-internal frames"
+    " holding the partially-loaded tensors that caused the OOM in the first"
+    " place. Clearing that history here reclaims that memory without a full"
+    " `Runtime -> Restart session` (which would also discard every pilot that"
+    " already succeeded, forcing them to be re-run from scratch).",
+))
+CELLS.append(code(
+    "import sys",
+    "",
+    "sys.last_traceback = None",
+    "for _attr in ('last_value', 'last_type'):",
+    "    if hasattr(sys, _attr):",
+    "        delattr(sys, _attr)",
+    "gc.collect()",
+    "torch.cuda.empty_cache()",
+    "print(f'GPU memory now: {torch.cuda.memory_allocated() / 1e9:.2f} GB allocated, '",
+    "      f'{torch.cuda.memory_reserved() / 1e9:.2f} GB reserved (of ~14.6 GB on a T4)')",
+    "print('If allocated is still several GB with nothing currently loading, the pinned '",
+    "      'memory is likely in a frame this cell cannot reach -- a full runtime restart '",
+    "      'is the remaining option.')",
+))
+
+# ---------------------------------------------------------------------------
+CELLS.append(md(
+    "## 9b. TASK A -- Pilot: Granite-4.2-8B",
+    "",
+    "Added 2026-09-10 (Stage 2, Step 3). This is the first time this specific"
+    " loader path has been exercised against `ibm-granite/granite-4.2-8b` --"
+    " unlike Llama/Qwen/Mistral (proven AWQ checkpoints already used in this"
+    " notebook) it has never been run through `load_hf_model`/`generate_batch`"
+    " before, so it gets a pilot the same way Meditron3-8B did, comparing its"
+    " parseable rate against Llama's baseline.",
+))
+CELLS.append(code(
+    "granite_cfg = next(m for m in MODEL_REGISTRY if m['family'] == 'ibm')",
+    "(",
+    "    granite_texts, granite_output_token_counts, granite_input_token_counts,",
+    "    granite_stop_reasons, granite_parse_results, granite_n_parseable,",
+    ") = run_pilot(granite_cfg, 'ibm')",
+    "",
+    "if granite_n_parseable < llama_n_parseable:",
+    "    print()",
+    "    print(f'*** WARNING: Granite-4.2-8B parseable rate ({granite_n_parseable}/{len(PILOT_ENTRIES)}) is '",
+    "          f'LOWER than Llama-3.1-8B-Instruct ({llama_n_parseable}/{len(PILOT_ENTRIES)}). Granite 4.2 has '",
+    "          f'a native reasoning/thinking mode -- if responses look truncated mid-reasoning rather than '",
+    "          f'unparseable in content, that may mean the model needs its thinking mode disabled via its '",
+    "          f'chat template rather than a higher GENERATION_MAX_TOKENS. Inspect granite_texts by hand. ***')",
+))
+
+# ---------------------------------------------------------------------------
 CELLS.append(code(
     "# --- Full per-prompt pilot report: input/output token counts, stop reason, full",
     "# raw output, and (Arm 4 only) the full retrieved protocol context block that was",
@@ -701,21 +848,272 @@ CELLS.append(code(
     "    'epfl', meditron_cfg, meditron_texts, meditron_output_token_counts,",
     "    meditron_input_token_counts, meditron_stop_reasons,",
     ")",
+    "print_pilot_report(",
+    "    'ibm', granite_cfg, granite_texts, granite_output_token_counts,",
+    "    granite_input_token_counts, granite_stop_reasons,",
+    ")",
+))
+
+# ---------------------------------------------------------------------------
+CELLS.append(md(
+    "## 9c. Checkpoint 2b-v Step E: structured vs free-form re-pilot",
+    "",
+    "12 DIV-001-repaired, non-holdout vignettes x 3 models (meta/epfl/ibm -- deliberately"
+    " not all 5; this is a small targeted diagnostic pilot, not a Task-B-scale run) x 2"
+    " elicitation conditions (structured, `data/prompts/<vignette_id>/structured.txt`;"
+    " free-form, the same vignette's `arm1.txt`, unchanged) = 72 generations. Answers the"
+    " Checkpoint 2b-v CRITICAL ANALYSIS CHANGE's pre-specified H1/H2 question: does control"
+    " coverage approach ceiling in the structured arm while divergence-axis coverage stays"
+    " low (H1, divergence-specific avoidance), or do both rise together (H2, a general"
+    " granularity effect)? That verdict, plus per-control coverage, conditional alignment,"
+    " and the REACHABLE/UNREACHED/AMBIGUOUS distribution, is computed locally afterward by"
+    " `scripts/analyze_step_e_repilot.py` against the JSON this section writes -- **this"
+    " section itself only captures what requires the GPU**: raw text, token counts, stop"
+    " reasons, wall-clock, and which batch size actually ran.",
+    "",
+    "**Single greedy-decoded generation per (vignette, elicitation, model)** -- this pilot"
+    " measures whether an axis gets addressed at all, not response-to-response variance,"
+    " so it doesn't need Task B's multi-seed sampling. Reuses `load_hf_model`/"
+    " `generate_batch`/`unload_hf_model` from Section 7 unchanged -- no new model-loading"
+    " path to trust.",
+    "",
+    "**The Granite batch-size question.** `config/models.yaml`'s `ibm` entry overrides"
+    " `batch_size` to 1 for the full 400-prompt arms, which are long. The structured arm's"
+    " prompts are much shorter (a fixed 1-3-sentence-per-question format instead of an"
+    " open management plan), so the *structured* condition specifically retries at"
+    " `batch_size=4` first and falls back to 1 only on a real CUDA OOM -- the free-form"
+    " condition keeps the existing override throughout, since the restoration claim is"
+    " about the constrained format's length, not about Granite in general. Whichever batch"
+    " size actually ran is recorded per elicitation, alongside the exact pinned"
+    " `model_cfg['revision']`, regardless of outcome.",
+))
+CELLS.append(code(
+    "STEP_E_PROMPTS_MANIFEST = json.loads(",
+    "    (PROMPTS_DIR / 'structured_pilot_manifest.json').read_text(encoding='utf-8')",
+    ")",
+    "STEP_E_VIGNETTES = STEP_E_PROMPTS_MANIFEST['vignettes']",
+    "assert len(STEP_E_VIGNETTES) == 12, f'expected 12 Step E vignettes, got {len(STEP_E_VIGNETTES)}'",
+    "",
+    "STEP_E_FAMILIES = ('meta', 'epfl', 'ibm')",
+    "STEP_E_MODEL_CFGS = {f: next(m for m in MODEL_REGISTRY if m['family'] == f) for f in STEP_E_FAMILIES}",
+    "",
+    "STEP_E_RESULTS_DIR = DRIVE_ROOT / 'results' / 'pilot' / 'step_e_repilot'",
+    "STEP_E_RESULTS_DIR.mkdir(parents=True, exist_ok=True)",
+    "",
+    "print(f'Step E re-pilot: {len(STEP_E_VIGNETTES)} vignettes x {len(STEP_E_FAMILIES)} models x 2 arms '",
+    "      f'= {len(STEP_E_VIGNETTES) * len(STEP_E_FAMILIES) * 2} generations')",
+))
+CELLS.append(code(
+    "def _entries_for_elicitation(elicitation: str) -> list[dict]:",
+    "    key = 'structured_path' if elicitation == 'structured' else 'freeform_path'",
+    "    return [{'vignette_id': v['vignette_id'], 'path': v[key]} for v in STEP_E_VIGNETTES]",
+    "",
+    "",
+    "def generate_with_batch_fallback(model, tokenizer, entries, *, attempt_batch_size):",
+    "    \"\"\"Try attempt_batch_size; on a real CUDA OOM, clear the cache and restart the",
+    "    WHOLE elicitation at batch_size=1 rather than resuming mid-way -- an OOM partway",
+    "    through a batched run can leave the allocator fragmented, so a clean restart at a",
+    "    smaller batch size is safer than trying to salvage the failed batch. Returns",
+    "    (texts, output_token_counts, input_token_counts, stop_reasons, elapsed,",
+    "    batch_size_used).",
+    "    \"\"\"",
+    "    for batch_size in sorted({attempt_batch_size, 1}, reverse=True):",
+    "        try:",
+    "            texts, out_tok, in_tok, stop_reasons, elapsed = [], [], [], [], 0.0",
+    "            for start in range(0, len(entries), batch_size):",
+    "                chunk = entries[start:start + batch_size]",
+    "                c_texts, c_out, c_in, c_stop, c_elapsed = generate_batch(model, tokenizer, chunk)",
+    "                texts.extend(c_texts)",
+    "                out_tok.extend(c_out)",
+    "                in_tok.extend(c_in)",
+    "                stop_reasons.extend(c_stop)",
+    "                elapsed += c_elapsed",
+    "            return texts, out_tok, in_tok, stop_reasons, elapsed, batch_size",
+    "        except RuntimeError as e:",
+    "            if 'out of memory' not in str(e).lower() or batch_size == 1:",
+    "                raise",
+    "            print(f'  batch_size={batch_size} OOM\\'d; clearing cache and retrying at batch_size=1')",
+    "            gc.collect()",
+    "            torch.cuda.empty_cache()",
+    "    raise AssertionError('unreachable -- batch_size=1 always either succeeds or re-raises above')",
+))
+CELLS.append(code(
+    "import hashlib",
+    "import subprocess",
+    "from datetime import UTC, datetime",
+    "",
+    "",
+    "def _repo_git_commit_sha() -> str:",
+    "    try:",
+    "        return subprocess.check_output(",
+    "            ['git', 'rev-parse', 'HEAD'], cwd=REPO_DIR, text=True",
+    "        ).strip()",
+    "    except Exception:",
+    "        return 'unknown'",
+    "",
+    "",
+    "def _structured_pilot_manifest_hash() -> str:",
+    "    return hashlib.sha256(",
+    "        (PROMPTS_DIR / 'structured_pilot_manifest.json').read_bytes()",
+    "    ).hexdigest()",
+    "",
+    "",
+    "def run_step_e_repilot(family: str) -> dict:",
+    "    \"\"\"model/tokenizer load and cleanup live in a try/finally, same reasoning as",
+    "    run_pilot above: a load-time or mid-run failure must not leave GPU memory pinned",
+    "    for the rest of the session.",
+    "    \"\"\"",
+    "    model_cfg = STEP_E_MODEL_CFGS[family]",
+    "    print(f\"\\n=== STEP E RE-PILOT: {family} ({model_cfg['model']}, \"",
+    "          f\"revision={model_cfg['revision']}) ===\")",
+    "    model = None",
+    "    tokenizer = None",
+    "    per_elicitation = {}",
+    "    try:",
+    "        model, tokenizer = load_hf_model(model_cfg)",
+    "        for elicitation in ('structured', 'freeform'):",
+    "            entries = _entries_for_elicitation(elicitation)",
+    "            # Only the structured arm tests batch_size=4 restoration for Granite -- the",
+    "            # freeform arm keeps the config's existing override throughout (see markdown",
+    "            # above for why this split, not a blanket attempt, is the correct test).",
+    "            if family == 'ibm' and elicitation == 'structured':",
+    "                attempt_batch_size = 4",
+    "            else:",
+    "                attempt_batch_size = model_cfg.get('batch_size', BATCH_SIZE)",
+    "",
+    "            texts, out_tok, in_tok, stop_reasons, elapsed, batch_size_used = (",
+    "                generate_with_batch_fallback(",
+    "                    model, tokenizer, entries, attempt_batch_size=attempt_batch_size,",
+    "                )",
+    "            )",
+    "            per_elicitation[elicitation] = {",
+    "                'texts': texts, 'output_tokens': out_tok, 'input_tokens': in_tok,",
+    "                'stop_reasons': stop_reasons, 'elapsed': elapsed, 'batch_size_used': batch_size_used,",
+    "            }",
+    "",
+    "            mean_out = sum(out_tok) / len(out_tok)",
+    "            n_truncated = sum(1 for s in stop_reasons if s == 'max_tokens')",
+    "            throughput = sum(out_tok) / elapsed if elapsed > 0 else float('nan')",
+    "            restoration_note = ''",
+    "            if family == 'ibm' and elicitation == 'structured':",
+    "                restoration_note = (",
+    "                    ' (batch_size=4 RESTORED)' if batch_size_used == 4",
+    "                    else ' (fell back to 1 -- restoration NOT achieved)'",
+    "                )",
+    "            print(f'  {elicitation}: mean_output_tokens={mean_out:.1f}, '",
+    "                  f'truncated={n_truncated}/{len(texts)}, wall_clock={elapsed:.1f}s, '",
+    "                  f'throughput={throughput:.1f} tok/s, batch_size_used={batch_size_used}'",
+    "                  + restoration_note)",
+    "    finally:",
+    "        if model is not None:",
+    "            unload_hf_model(model)",
+    "        if tokenizer is not None:",
+    "            del tokenizer",
+    "        gc.collect()",
+    "        torch.cuda.empty_cache()",
+    "",
+    "    responses = []",
+    "    for elicitation, data in per_elicitation.items():",
+    "        for v, text, out_tok_i, in_tok_i, stop_reason in zip(",
+    "            STEP_E_VIGNETTES, data['texts'], data['output_tokens'], data['input_tokens'],",
+    "            data['stop_reasons'],",
+    "        ):",
+    "            responses.append({",
+    "                'vignette_id': v['vignette_id'],",
+    "                'family': family,",
+    "                'model': model_cfg['model'],",
+    "                'model_revision': model_cfg['revision'],",
+    "                'elicitation': elicitation,",
+    "                'text': text,",
+    "                'input_tokens': in_tok_i,",
+    "                'output_tokens': out_tok_i,",
+    "                'stop_reason': stop_reason,",
+    "                'truncated': stop_reason == 'max_tokens',",
+    "                'batch_size_used': data['batch_size_used'],",
+    "            })",
+    "",
+    "    payload = {",
+    "        'family': family,",
+    "        'model': model_cfg['model'],",
+    "        'model_revision': model_cfg['revision'],",
+    "        'responses': responses,",
+    "        'elicitation_summary': {",
+    "            elicitation: {",
+    "                'elapsed_seconds': data['elapsed'],",
+    "                'batch_size_used': data['batch_size_used'],",
+    "            }",
+    "            for elicitation, data in per_elicitation.items()",
+    "        },",
+    "    }",
+    "    out_path = STEP_E_RESULTS_DIR / f'{family}.json'",
+    "    out_path.write_text(json.dumps(payload, indent=2), encoding='utf-8')",
+    "    print(f'Saved: {out_path}')",
+    "",
+    "    # RULE 1 manifest -- this feeds the actual Checkpoint 2b-v H1/H2 report, unlike",
+    "    # Task A's throughput-only pilot above, so it gets one despite being a pilot.",
+    "    run_id = f\"checkpoint2b-v-repilot-{family}-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}\"",
+    "    manifest = {",
+    "        'run_id': run_id,",
+    "        'model_identifiers': [{",
+    "            'family': family, 'name': model_cfg['model'], 'version': model_cfg['revision'],",
+    "        }],",
+    "        'temperature': 0.0,",
+    "        'top_p': 1.0,",
+    "        'max_tokens': GENERATION_MAX_TOKENS,",
+    "        'seed': None,",
+    "        'prompt_template_hash': _structured_pilot_manifest_hash(),",
+    "        'vignette_set_version': 'v1',",
+    "        'rubric_version': 'v1',",
+    "        'git_commit_sha': _repo_git_commit_sha(),",
+    "        'utc_timestamp': datetime.now(UTC).isoformat(),",
+    "        'total_input_tokens': sum(r['input_tokens'] for r in responses),",
+    "        'total_output_tokens': sum(r['output_tokens'] for r in responses),",
+    "        'quantization': model_cfg['quantization'],",
+    "        'base_model': model_cfg['base_model'],",
+    "        'base_model_revision': model_cfg['base_model_revision'],",
+    "        'n_responses_this_run': len(responses),",
+    "        'elicitations': ['structured', 'freeform'],",
+    "        'n_vignettes': len(STEP_E_VIGNETTES),",
+    "        'notes': (",
+    "            'Checkpoint 2b-v Step E re-pilot: structured-vs-freeform elicitation, greedy '",
+    "            'decoding, single generation per (vignette, elicitation) -- distinct from the '",
+    "            'Task B full run (5 models x 400 prompts x N_SAMPLES) and from Task A\\'s '",
+    "            'throughput-only pilot above.'",
+    "        ),",
+    "    }",
+    "    (MANIFEST_DIR / f'{run_id}.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')",
+    "    print(f'Manifest written: {run_id}.json')",
+    "    return payload",
+))
+CELLS.append(code(
+    "step_e_results = {family: run_step_e_repilot(family) for family in STEP_E_FAMILIES}",
+    "",
+    "print('\\nStep E re-pilot generation complete. Copy this back into the main repo before analysis:')",
+    "print(f'  {STEP_E_RESULTS_DIR} -> results/pilot/step_e_repilot/ (meta.json, epfl.json, ibm.json)')",
+    "print(f'  {MANIFEST_DIR} -> results/manifests/ (3 new checkpoint2b-v-repilot-*.json manifests)')",
+    "print('Then, locally, no GPU needed: python scripts/analyze_step_e_repilot.py')",
 ))
 
 # ---------------------------------------------------------------------------
 CELLS.append(md(
     "## STOP -- read the pilot report above before continuing",
     "",
+    "This gate is about Task B (the 5-model x 400-prompt x N_SAMPLES full run) only."
+    " Section 9c's Step E re-pilot above is independent of `PILOT_APPROVED` -- it neither"
+    " reads nor sets it, and can be run (or re-run) on its own regardless of whether Task B"
+    " is ever approved.",
+    "",
     "Confirm before proceeding to the full run (Task B):",
     "",
     "- Mean/max output tokens are in a sane range (not near `GENERATION_MAX_TOKENS`,"
     " which would mean responses are being truncated).",
-    "- Parseable rate is high (ideally 20/20) for both models. If Meditron's is"
-    " meaningfully lower, read `meditron_texts` by hand -- it may need a different"
-    " parsing strategy downstream, not a rerun.",
+    "- Parseable rate is high (ideally 20/20) for all three piloted models. If"
+    " Meditron's or Granite's is meaningfully lower, read the texts by hand -- it"
+    " may need a different parsing strategy downstream (or, for Granite, a"
+    " thinking-mode toggle -- see the warning above), not a rerun.",
     "- The corrected ETA (measured throughput, not the planning-time 700-token"
-    " guess) times 4 models fits your session-time budget.",
+    " guess) times 5 models times `N_SAMPLES` (Section 10 below) fits your"
+    " session-time budget.",
     "",
     "Once satisfied, set `PILOT_APPROVED = True` in the next cell to unlock the full"
     " run -- this is a deliberate gate, not a formality.",
@@ -726,20 +1124,48 @@ CELLS.append(code(
 
 # ---------------------------------------------------------------------------
 CELLS.append(md(
-    "## 10. TASK B -- Full run: all 4 models x 400 prompts x 1 seed",
+    "## 10. TASK B -- Full run: all 5 models x 400 prompts x N_SAMPLES",
     "",
-    "Single seed at temperature 0 (see `results/PREREGISTRATION.md` Amendments,"
-    " open-weight pivot -- zero compute budget is the reason, not a methodological"
-    " preference). Checkpoints after every *batch* (`BATCH_SIZE`, default 4 -- see"
-    " Section 7's note on why this isn't strictly per-response with `transformers`);"
-    " resumable; identical JSON shape to the API-path cache; one RULE 1 manifest per"
-    " model.",
+    "Updated 2026-09-10 (Stage 2, Step 4): `results/PREREGISTRATION.md`'s"
+    " open-weight-pivot amendment fixed single-seed, temperature-0 (greedy)"
+    " decoding, for a stated, explicit reason -- zero compute budget, not a"
+    " methodological preference, and it says multi-seed 'would still be"
+    " preferred for the same reliability reasons' with more budget. That"
+    " reasoning still holds, but greedy decoding (`do_sample=False`) is"
+    " *deterministic*: running it N times with different `seed` values under"
+    " the old design produces byte-identical output every time, since `seed`"
+    " never reaches an actual random draw. Measuring within-vignette response"
+    " variance -- this stage's explicit ask -- is structurally impossible under"
+    " greedy decoding. This run therefore switches to true sampling"
+    " (`do_sample=True`) for Task B specifically, restoring the property the"
+    " original pivot amendment said was preferable, now that Colab GPU-hours"
+    " (not per-token API cost) are the only budget constraint.",
+    "",
+    "**N_SAMPLES = 3, SAMPLE_TEMPERATURE = 0.7, top_p = 1.0.** 3 samples is the"
+    " smallest N that can distinguish a stable answer (3/3 agree) from a"
+    " genuinely split one (2/1) while keeping the cost multiplier low -- this"
+    " triples Task B's generation cost (in wall-clock GPU-time; still $0, this"
+    " remains the free-tier T4 path) across 5 models instead of 4, so it is a"
+    " real increase, not a free upgrade. 0.7 is a conventional moderate"
+    " sampling temperature: high enough to surface genuine decision-flips,"
+    " low enough that responses should stay coherent rather than degenerate."
+    " Each of the 3 samples uses a distinct, logged seed (`torch.manual_seed`)"
+    " so any individual sample is independently reproducible. Adjust"
+    " `N_SAMPLES`/`SAMPLE_TEMPERATURE` below before running if you want a"
+    " different tradeoff -- this is a proposal, not a hard requirement.",
+    "",
+    "Checkpoints after every *batch* (`BATCH_SIZE`, default 4 -- see Section 7's"
+    " note on why this isn't strictly per-response with `transformers`);"
+    " resumable; identical JSON shape to the API-path cache (each sample's seed"
+    " is part of the cache key, so re-running never collides across samples);"
+    " one RULE 1 manifest per (model, seed).",
 ))
 CELLS.append(code(
     "assert PILOT_APPROVED, 'Set PILOT_APPROVED = True in the cell above after reading the pilot report.'",
     "",
-    "SEED = 0",
-    "TEMPERATURE = 0.0",
+    "N_SAMPLES = 3  # see markdown above -- adjust before running if you want a different n",
+    "SAMPLE_TEMPERATURE = 0.7",
+    "TOP_P = 1.0",
     "PROGRESS_EVERY = 25  # print a progress line at least this often",
 ))
 CELLS.append(code(
@@ -761,9 +1187,9 @@ CELLS.append(code(
     "    return hashlib.sha256((PROMPTS_DIR / 'manifest.json').read_bytes()).hexdigest()",
     "",
     "",
-    "def run_model_full(model_cfg: dict) -> None:",
+    "def run_model_full(model_cfg: dict, seed: int) -> None:",
     "    family = model_cfg['family']",
-    "    print(f\"\\n=== FULL RUN: {family}/{model_cfg['model']} ===\")",
+    "    print(f\"\\n=== FULL RUN: {family}/{model_cfg['model']} (seed={seed}) ===\")",
     "",
     "    all_keys = [",
     "        cache_key_for(",
@@ -772,7 +1198,8 @@ CELLS.append(code(
     "            system_prompt='',",
     "            messages=[{'role': 'user', 'content': read_prompt_text(e)}],",
     "            params=GenerationParams(",
-    "                temperature=TEMPERATURE, top_p=1.0, max_tokens=GENERATION_MAX_TOKENS, seed=SEED",
+    "                temperature=SAMPLE_TEMPERATURE, top_p=TOP_P,",
+    "                max_tokens=GENERATION_MAX_TOKENS, seed=seed,",
     "            ),",
     "        )",
     "        for e in all_entries",
@@ -787,57 +1214,76 @@ CELLS.append(code(
     "        print('Nothing to do for this model.')",
     "        return",
     "",
-    "    model, tokenizer = load_hf_model(model_cfg)",
+    "    # model/tokenizer load + generation wrapped in try/finally so a load-time or",
+    "    # mid-run OOM still triggers cleanup (see run_pilot's docstring for why this",
+    "    # matters -- the same failure mode applies here).",
     "    total_input_tokens = 0",
     "    total_output_tokens = 0",
     "    n_done = 0",
-    "    start = time.time()",
+    "    model = None",
+    "    tokenizer = None",
+    "    # Per-model override, not a global -- see config/models.yaml's comment on the",
+    "    # ibm/Granite entry. batch_size is an infrastructure knob (no effect on any",
+    "    # individual sequence's generated content), unlike temperature/top_p/max_tokens,",
+    "    # so varying it per model doesn't compromise cross-model comparability.",
+    "    batch_size = model_cfg.get('batch_size', BATCH_SIZE)",
+    "    print(f'Using batch_size={batch_size} for {family}'",
+    "          + (' (per-model override)' if 'batch_size' in model_cfg else ' (Section 7 default)'))",
+    "    try:",
+    "        model, tokenizer = load_hf_model(model_cfg)",
+    "        start = time.time()",
     "",
-    "    for batch_start in range(0, len(todo), BATCH_SIZE):",
-    "        chunk_keys = todo[batch_start:batch_start + BATCH_SIZE]",
-    "        chunk_entries = [key_to_entry[k] for k in chunk_keys]",
+    "        for batch_start in range(0, len(todo), batch_size):",
+    "            chunk_keys = todo[batch_start:batch_start + batch_size]",
+    "            chunk_entries = [key_to_entry[k] for k in chunk_keys]",
     "",
-    "        chunk_texts, chunk_out_tok, chunk_in_tok, chunk_stop, _elapsed = generate_batch(",
-    "            model, tokenizer, chunk_entries",
-    "        )",
-    "",
-    "        for key, entry, text, out_tok, in_tok, stop_reason in zip(",
-    "            chunk_keys, chunk_entries, chunk_texts, chunk_out_tok, chunk_in_tok, chunk_stop",
-    "        ):",
-    "            total_input_tokens += in_tok",
-    "            total_output_tokens += out_tok",
-    "            write_response_atomic(",
-    "                RESPONSES_DIR,",
-    "                key,",
-    "                text=text,",
-    "                raw={",
-    "                    'vignette_id': entry['vignette_id'],",
-    "                    'arm': entry['arm'],",
-    "                    'model': model_cfg['model'],",
-    "                    'model_revision': model_cfg['revision'],",
-    "                    'quantization': model_cfg['quantization'],",
-    "                    'seed': SEED,",
-    "                    'stop_reason': stop_reason,",
-    "                    'truncated': stop_reason == 'max_tokens',",
-    "                },",
-    "                input_tokens=in_tok,",
-    "                output_tokens=out_tok,",
+    "            chunk_texts, chunk_out_tok, chunk_in_tok, chunk_stop, _elapsed = generate_batch(",
+    "                model, tokenizer, chunk_entries,",
+    "                seed=seed, temperature=SAMPLE_TEMPERATURE, top_p=TOP_P,",
     "            )",
-    "            n_done += 1",
     "",
-    "        if n_done % PROGRESS_EVERY < BATCH_SIZE or n_done == len(todo):",
-    "            elapsed = time.time() - start",
-    "            rate = n_done / elapsed if elapsed > 0 else 0",
-    "            remaining = (len(todo) - n_done) / rate if rate > 0 else float('inf')",
-    "            print(f'  {n_done}/{len(todo)} done, {elapsed/60:.1f}min elapsed, '",
-    "                  f'ETA {remaining/60:.1f}min remaining')",
+    "            for key, entry, text, out_tok, in_tok, stop_reason in zip(",
+    "                chunk_keys, chunk_entries, chunk_texts, chunk_out_tok, chunk_in_tok, chunk_stop",
+    "            ):",
+    "                total_input_tokens += in_tok",
+    "                total_output_tokens += out_tok",
+    "                write_response_atomic(",
+    "                    RESPONSES_DIR,",
+    "                    key,",
+    "                    text=text,",
+    "                    raw={",
+    "                        'vignette_id': entry['vignette_id'],",
+    "                        'arm': entry['arm'],",
+    "                        'model': model_cfg['model'],",
+    "                        'model_revision': model_cfg['revision'],",
+    "                        'quantization': model_cfg['quantization'],",
+    "                        'seed': seed,",
+    "                        'stop_reason': stop_reason,",
+    "                        'truncated': stop_reason == 'max_tokens',",
+    "                    },",
+    "                    input_tokens=in_tok,",
+    "                    output_tokens=out_tok,",
+    "                )",
+    "                n_done += 1",
     "",
-    "    unload_hf_model(model)",
-    "    del tokenizer",
+    "            if n_done % PROGRESS_EVERY < batch_size or n_done == len(todo):",
+    "                elapsed = time.time() - start",
+    "                rate = n_done / elapsed if elapsed > 0 else 0",
+    "                remaining = (len(todo) - n_done) / rate if rate > 0 else float('inf')",
+    "                print(f'  {n_done}/{len(todo)} done, {elapsed/60:.1f}min elapsed, '",
+    "                      f'ETA {remaining/60:.1f}min remaining')",
+    "    finally:",
+    "        if model is not None:",
+    "            unload_hf_model(model)",
+    "        if tokenizer is not None:",
+    "            del tokenizer",
+    "        gc.collect()",
+    "        torch.cuda.empty_cache()",
     "",
-    "    # RULE 1 manifest -- one per model, since a Colab run is naturally sequential",
-    "    # per model (VRAM constraints preclude loading more than one 8B model at once).",
-    "    run_id = f\"open-weight-{family}-seed{SEED}-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}\"",
+    "    # RULE 1 manifest -- one per (model, seed): tb_equity.manifest's flat schema",
+    "    # can't represent more than one temperature/seed value, and a Colab run is",
+    "    # naturally sequential per model anyway (VRAM precludes loading >1 8B model).",
+    "    run_id = f\"open-weight-{family}-seed{seed}-{datetime.now(UTC).strftime('%Y%m%dT%H%M%SZ')}\"",
     "    manifest = {",
     "        'run_id': run_id,",
     "        'model_identifiers': [{",
@@ -845,12 +1291,13 @@ CELLS.append(code(
     "            'name': model_cfg['model'],",
     "            'version': model_cfg['revision'],",
     "        }],",
-    "        'temperature': TEMPERATURE,",
-    "        'top_p': 1.0,",
+    "        'temperature': SAMPLE_TEMPERATURE,",
+    "        'top_p': TOP_P,",
     "        'max_tokens': GENERATION_MAX_TOKENS,",
-    "        'seed': SEED,",
+    "        'seed': seed,",
     "        'prompt_template_hash': prompts_manifest_hash(),",
     "        'vignette_set_version': 'v1',",
+    "        'rubric_version': 'v1',  # frozen for this run -- see RUBRIC_SPEC.md / Stage 2 instructions",
     "        'git_commit_sha': repo_git_commit_sha(),",
     "        'utc_timestamp': datetime.now(UTC).isoformat(),",
     "        'total_input_tokens': total_input_tokens,",
@@ -866,7 +1313,8 @@ CELLS.append(code(
 ))
 CELLS.append(code(
     "for model_cfg in MODEL_REGISTRY:",
-    "    run_model_full(model_cfg)",
+    "    for seed in range(N_SAMPLES):",
+    "        run_model_full(model_cfg, seed=seed)",
     "",
     "print('\\nAll models done (or resumed to completion).')",
 ))
@@ -880,9 +1328,10 @@ CELLS.append(md(
     " into the main repo.",
 ))
 CELLS.append(code(
-    "expected = len(MODEL_REGISTRY) * len(all_entries)  # models x 400, single seed",
+    "expected = len(MODEL_REGISTRY) * len(all_entries) * N_SAMPLES  # models x 400 x N_SAMPLES",
     "actual = len(load_completed_keys(RESPONSES_DIR))",
-    "print(f'Expected {expected} responses (4 models x 400 prompts x 1 seed), found {actual} checkpointed.')",
+    "print(f'Expected {expected} responses ({len(MODEL_REGISTRY)} models x 400 prompts x '",
+    "      f'{N_SAMPLES} samples), found {actual} checkpointed.')",
     "",
     "empty_or_truncated = []",
     "for key in load_completed_keys(RESPONSES_DIR):",

@@ -83,3 +83,35 @@ evaluation:
       quantization: bitsandbytes-nf4  # quantized on the fly, no AWQ checkpoint exists
       params_b: 8
       runtime: colab_hf
+    # Added 2026-09-10 (Stage 2, Step 3): current-generation addition to the panel.
+    # Verified via the HF Hub API on 2026-09-10, not guessed. Considered
+    # mistralai/Ministral-3-8B-Instruct-2512 first (Apache 2.0, AWQ-quantized
+    # community checkpoint exists) but rejected it: its config.json shows
+    # architectures: ["Mistral3ForConditionalGeneration"] with a populated
+    # vision_config -- it is a multimodal model requiring a different model
+    # class than AutoModelForCausalLM, and its AWQ repo's quant_method is
+    # "compressed-tensors" (llm-compressor/vLLM format), not the autoawq format
+    # the rest of this roster's loader expects. Granite-4.2-8B has neither
+    # problem (architectures: ["GraniteForCausalLM"], no vision_config, plain
+    # bf16 checkpoint) and slots into the existing loader/notebook unchanged.
+    - family: ibm
+      model: ibm-granite/granite-4.2-8b
+      revision: f8de16cdcdbc6c779ca517604e050d82cc119e44
+      base_model: ibm-granite/granite-4.2-8b  # no pre-quantized checkpoint verified for this revision
+      base_model_revision: f8de16cdcdbc6c779ca517604e050d82cc119e44
+      base_model_gated: false
+      quantization: bitsandbytes-nf4  # quantized on the fly, same pattern as epfl/Meditron3-8B
+      params_b: 8
+      runtime: colab_hf
+      # batch_size is an infrastructure/throughput knob, not a sampling parameter --
+      # it has no effect on any individual sequence's generated content (padding +
+      # attention masking generate each sequence independently), so overriding it
+      # per model does not compromise cross-model comparability the way varying
+      # temperature/top_p/max_tokens would. Set to 1 here (Section 7's notebook
+      # default is 4) based on real 2026-09-10 pilot evidence: Granite-4.2-8B
+      # averaged 1562/1600 output tokens per response (vs. 434 for Llama, 201 for
+      # Meditron) -- a batch of 4 simultaneous near-max-length generations needs
+      # ~4x the KV-cache memory of one, on the same T4 that already OOM'd twice
+      # during pilot model *loading* alone (see KNOWN_ISSUES.md-adjacent notebook
+      # history). Not worth risking an OOM partway through the full run over.
+      batch_size: 1

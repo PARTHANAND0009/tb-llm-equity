@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": null,
-  "divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
-  "stem": "A 70-year-old woman, long retired from a small manufacturing job but still active in her community, presents after more than three months of cough that she attributed to 'just getting older.' Her daughter insisted on a visit after noticing she seemed increasingly breathless during their weekly walks together, an activity she has done for years without difficulty. She denies major weight loss but her appetite has been reduced. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray shows a non-cavitary right infiltrate. Exam: mild crackles, otherwise unremarkable.",
+  "divergence_ids": [
+    "DIV-006",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 70-year-old woman, long retired from a small manufacturing job but still active in her community, presents after more than three months of cough that she attributed to 'just getting older.' Her daughter insisted on a visit after noticing she seemed increasingly breathless during their weekly walks together, an activity she has done for years without difficulty. She denies major weight loss but her appetite has been reduced. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Chest X-ray shows a non-cavitary right infiltrate. Exam: mild crackles, otherwise unremarkable.",
   "patient": {
     "age": "70 years",
     "sex": "female",
@@ -50,7 +54,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T14:35:00+00:00",
-    "source_divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-006",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

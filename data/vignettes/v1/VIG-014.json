@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": null,
-  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
-  "stem": "A 17-year-old woman, recently married and now managing her own household, presents with about seven weeks of cough and progressive tiredness that she initially kept to herself, not wanting to seem unable to keep up with her new domestic responsibilities. Her mother-in-law noticed she has been eating less at meals and brought her in. She reports mild nausea some mornings, which the family wondered might indicate early pregnancy, though a urine pregnancy test was negative. No prior TB treatment, no known drug-resistant contact. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: mildly underweight, left-sided crackles, no lymphadenopathy.",
+  "divergence_ids": [
+    "DIV-004",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 17-year-old woman, recently married and now managing her own household, presents with about seven weeks of cough and progressive tiredness that she initially kept to herself, not wanting to seem unable to keep up with her new domestic responsibilities. Her mother-in-law noticed she has been eating less at meals and brought her in. She reports mild nausea some mornings, which the family wondered might indicate early pregnancy, though a urine pregnancy test was negative. No prior TB treatment, no known drug-resistant contact. Exam: mildly underweight, left-sided crackles, no lymphadenopathy.",
   "patient": {
     "age": "17 years",
     "sex": "female",
@@ -15,7 +19,9 @@
     "duration": "7 weeks",
     "exam_findings": "Mildly underweight, left-sided crackles, no lymphadenopathy",
     "prior_treatment": "None for this episode; no prior TB treatment ever",
-    "comorbidities": ["mild undernutrition"]
+    "comorbidities": [
+      "mild undernutrition"
+    ]
   },
   "distractors": [
     "Early pregnancy proposed as the explanation for the nausea and fatigue, despite a negative pregnancy test",
@@ -49,7 +55,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T13:15:00+00:00",
-    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-004",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

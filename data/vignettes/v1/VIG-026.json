@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": null,
-  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
-  "stem": "A 16-year-old girl who helps with harvest work presents with about seven weeks of cough and fatigue that she and her family initially attributed to a flare of her seasonal allergies, which she has had for years and manages with over-the-counter antihistamines during harvest season. This year the cough hasn't improved despite her usual regimen. She denies fevers she's noticed, though she hasn't been checking her temperature, and mentions some unintentional weight loss she attributes to being 'too busy to eat properly' during the harvest. No prior TB treatment, no known contact with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: mild pallor, left mid-zone crackles, no lymphadenopathy.",
+  "divergence_ids": [
+    "DIV-004",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 16-year-old girl who helps with harvest work presents with about seven weeks of cough and fatigue that she and her family initially attributed to a flare of her seasonal allergies, which she has had for years and manages with over-the-counter antihistamines during harvest season. This year the cough hasn't improved despite her usual regimen. She denies fevers she's noticed, though she hasn't been checking her temperature, and mentions some unintentional weight loss she attributes to being 'too busy to eat properly' during the harvest. No prior TB treatment, no known contact with drug-resistant TB. Exam: mild pallor, left mid-zone crackles, no lymphadenopathy.",
   "patient": {
     "age": "16 years",
     "sex": "female",
@@ -15,7 +19,9 @@
     "duration": "7 weeks",
     "exam_findings": "Mild pallor, left mid-zone crackles, no lymphadenopathy",
     "prior_treatment": "None for this episode beyond her usual OTC antihistamines; no prior TB treatment ever",
-    "comorbidities": ["mild seasonal allergic rhinitis, well-controlled at baseline"]
+    "comorbidities": [
+      "mild seasonal allergic rhinitis, well-controlled at baseline"
+    ]
   },
   "distractors": [
     "A seasonal allergy flare treated as sufficient explanation for the cough given her known history, delaying recognition of a distinct process",
@@ -49,7 +55,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T14:25:00+00:00",
-    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-004",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

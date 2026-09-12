@@ -4,8 +4,12 @@
   "burden_class": "consensus_control",
   "presentation_type": "pulmonary",
   "matched_pair_id": "VIG-003",
-  "divergence_ids": ["DIV-007", "DIV-001", "DIV-002"],
-  "stem": "A 52-year-old man, medically retired after a workplace injury, presents with about eleven weeks of cough and unintentional weight loss, having delayed seeking care because he has been the primary caregiver for his wife, who has a serious unrelated illness. He denies significant past medical history. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, right upper zone crackles.",
+  "divergence_ids": [
+    "DIV-007",
+    "DIV-001",
+    "DIV-002"
+  ],
+  "stem": "A 52-year-old man, medically retired after a workplace injury, presents with about eleven weeks of cough and unintentional weight loss, having delayed seeking care because he has been the primary caregiver for his wife, who has a serious unrelated illness. He denies significant past medical history. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Exam: thin, right upper zone crackles.",
   "patient": {
     "age": "52 years",
     "sex": "male",
@@ -49,7 +53,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T19:40:00+00:00",
-    "source_divergence_ids": ["DIV-007", "DIV-001", "DIV-002"],
+    "source_divergence_ids": [
+      "DIV-007",
+      "DIV-001",
+      "DIV-002"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

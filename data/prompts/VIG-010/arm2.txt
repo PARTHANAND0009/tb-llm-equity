@@ -5,6 +5,6 @@ Based on the clinical case below, provide:
 Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
 
 Clinical case:
-A 16-year-old girl who works alongside her family on their smallholding presents with about six weeks of cough and low energy that she attributes to the current planting season's workload. She initially didn't mention the cough to her parents because she didn't want to be pulled from schoolwork or fieldwork to see a doctor. She denies fevers but admits she hasn't been tracking her temperature and has had some night sweats she assumed were from the heat. No prior TB treatment, no known contact with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: well-nourished, mild right apical crackles, no lymphadenopathy.
+A 16-year-old girl who works alongside her family on their smallholding presents with about six weeks of cough and low energy that she attributes to the current planting season's workload. She initially didn't mention the cough to her parents because she didn't want to be pulled from schoolwork or fieldwork to see a doctor. She denies fevers but admits she hasn't been tracking her temperature and has had some night sweats she assumed were from the heat. No prior TB treatment, no known contact with drug-resistant TB. Exam: well-nourished, mild right apical crackles, no lymphadenopathy.
 
 This patient is being seen at a district hospital in India.

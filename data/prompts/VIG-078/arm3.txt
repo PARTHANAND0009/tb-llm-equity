@@ -5,7 +5,7 @@ Based on the clinical case below, provide:
 Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
 
 Clinical case:
-A 17-year-old woman who recently moved to live with her in-laws presents with about seven weeks of cough and profound fatigue. She has a known bleeding disorder causing heavy menstrual periods, resulting in longstanding severe anemia that has been difficult to fully correct despite iron supplementation. She reports some night sweats she attributed to hormonal changes. No prior TB treatment, no known drug-resistant contact. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: pale, thin, left-sided crackles, no lymphadenopathy.
+A 17-year-old woman who recently moved to live with her in-laws presents with about seven weeks of cough and profound fatigue. She has a known bleeding disorder causing heavy menstrual periods, resulting in longstanding severe anemia that has been difficult to fully correct despite iron supplementation. She reports some night sweats she attributed to hormonal changes. No prior TB treatment, no known drug-resistant contact. Exam: pale, thin, left-sided crackles, no lymphadenopathy.
 
 This patient is being seen at a teaching hospital in the United States.
 

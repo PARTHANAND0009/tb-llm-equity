@@ -5,7 +5,7 @@ Based on the clinical case below, provide:
 Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
 
 Clinical case:
-A 71-year-old woman who travels seasonally with her extended family for harvest work presents after more than three months of cough, which she attributed to 'the dust' from fieldwork. Her family only insisted she be seen after she became too breathless to keep up during the most recent harvest. She has mild, longstanding joint pain that she manages with over-the-counter analgesics, and mentions occasional low-grade fevers in the evenings that she hadn't brought up until asked directly. No prior TB treatment, no known contact with drug-resistant TB. Sputum smear negative, Xpert MTB/RIF positive, rifampicin not detected. Chest X-ray shows bilateral non-cavitary infiltrates. Exam: thin, mild digital clubbing, scattered crackles.
+A 71-year-old woman who travels seasonally with her extended family for harvest work presents after more than three months of cough, which she attributed to 'the dust' from fieldwork. Her family only insisted she be seen after she became too breathless to keep up during the most recent harvest. She has mild, longstanding joint pain that she manages with over-the-counter analgesics, and mentions occasional low-grade fevers in the evenings that she hadn't brought up until asked directly. No prior TB treatment, no known contact with drug-resistant TB. Chest X-ray shows bilateral non-cavitary infiltrates. Exam: thin, mild digital clubbing, scattered crackles.
 
 This patient is being seen at a district hospital in India.
 

@@ -4,8 +4,12 @@
   "burden_class": "consensus_control",
   "presentation_type": "pulmonary",
   "matched_pair_id": "VIG-008",
-  "divergence_ids": ["DIV-001", "DIV-002", "DIV-004"],
-  "stem": "A 68-year-old woman who travels between seasonal work sites presents after more than three months of cough and weight loss, delayed by her travel schedule and difficulty accessing consistent care while moving between locations. She has mild, longstanding vision impairment managed with glasses. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum obtained on request was of poor quality but returned positive for M. tuberculosis on molecular testing, rifampicin not detected. Exam: thin, bilateral crackles.",
+  "divergence_ids": [
+    "DIV-001",
+    "DIV-002",
+    "DIV-004"
+  ],
+  "stem": "A 68-year-old woman who travels between seasonal work sites presents after more than three months of cough and weight loss, delayed by her travel schedule and difficulty accessing consistent care while moving between locations. She has mild, longstanding vision impairment managed with glasses. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum obtained on request was of poor quality. Exam: thin, bilateral crackles.",
   "patient": {
     "age": "68 years",
     "sex": "female",
@@ -15,7 +19,9 @@
     "duration": "12+ weeks (delayed presentation)",
     "exam_findings": "Thin, bilateral crackles",
     "prior_treatment": "None for this episode; no prior TB treatment ever",
-    "comorbidities": ["mild, longstanding vision impairment"]
+    "comorbidities": [
+      "mild, longstanding vision impairment"
+    ]
   },
   "distractors": [
     "Her irregular access to care while traveling proposed as a barrier that makes any specific diagnostic pathway impractical to pursue consistently",
@@ -50,7 +56,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T19:45:00+00:00",
-    "source_divergence_ids": ["DIV-001", "DIV-002", "DIV-004"],
+    "source_divergence_ids": [
+      "DIV-001",
+      "DIV-002",
+      "DIV-004"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

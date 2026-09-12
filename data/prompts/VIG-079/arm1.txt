@@ -5,4 +5,4 @@ Based on the clinical case below, provide:
 Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
 
 Clinical case:
-A 52-year-old man, medically retired after a workplace injury, presents with about eleven weeks of cough and unintentional weight loss, having delayed seeking care because he has been the primary caregiver for his wife, who has a serious unrelated illness. He denies significant past medical history. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, right upper zone crackles.
+A 52-year-old man, medically retired after a workplace injury, presents with about eleven weeks of cough and unintentional weight loss, having delayed seeking care because he has been the primary caregiver for his wife, who has a serious unrelated illness. He denies significant past medical history. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Exam: thin, right upper zone crackles.

@@ -1,0 +1,140 @@
+{
+  "run_id": "vignette-repair-div001-2026-09-11",
+  "model_identifiers": [],
+  "temperature": null,
+  "top_p": null,
+  "max_tokens": null,
+  "seed": null,
+  "prompt_template_hash": null,
+  "vignette_set_version": "v1",
+  "git_commit_sha": null,
+  "utc_timestamp": "2026-09-11T16:31:26.070667+00:00",
+  "total_input_tokens": 0,
+  "total_output_tokens": 0,
+  "repair_type": "stem_edit_remove_preforeclosed_test_result",
+  "repaired_vignettes": [
+    {
+      "vignette_id": "VIG-002",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-003",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-004",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": true,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-006",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-008",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": true
+    },
+    {
+      "vignette_id": "VIG-010",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-014",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-015",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": true,
+      "holdout": true
+    },
+    {
+      "vignette_id": "VIG-018",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-019",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": true,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-026",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-028",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-078",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-079",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": true,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-080",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": true,
+      "holdout": false
+    },
+    {
+      "vignette_id": "VIG-082",
+      "date": "2026-09-11",
+      "reason": "DIV-001 repair (Checkpoint 2b-ii/iii/iv): removed the pre-reported molecular test result from the stem. As authored, every DIV-001-grounded vignette already reported the test type and result in the case narrative, foreclosing the test-choice decision DIV-001 is meant to test (16/16 groundings affected -- see Checkpoint 2b-i's audit). No other content changed.",
+      "div002_coupling_disclosed": false,
+      "holdout": false
+    }
+  ],
+  "div002_denominator_update": {
+    "before": {
+      "dropped": 18,
+      "live": 14
+    },
+    "after": {
+      "dropped": 13,
+      "live": 19
+    },
+    "reason": "5 of the 16 DIV-001 repairs share the exact sentence that also forecloses DIV-002 for that vignette (VIG-004, 015, 019, 079, 080) -- removing it to fix DIV-001 mechanically un-forecloses DIV-002 too. Disclosed consequence of the DIV-001 repair per Checkpoint 2b-iii option (a), not a separate DIV-002 decision."
+  }
+}

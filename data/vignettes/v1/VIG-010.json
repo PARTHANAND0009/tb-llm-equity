@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": null,
-  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
-  "stem": "A 16-year-old girl who works alongside her family on their smallholding presents with about six weeks of cough and low energy that she attributes to the current planting season's workload. She initially didn't mention the cough to her parents because she didn't want to be pulled from schoolwork or fieldwork to see a doctor. She denies fevers but admits she hasn't been tracking her temperature and has had some night sweats she assumed were from the heat. No prior TB treatment, no known contact with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: well-nourished, mild right apical crackles, no lymphadenopathy.",
+  "divergence_ids": [
+    "DIV-004",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 16-year-old girl who works alongside her family on their smallholding presents with about six weeks of cough and low energy that she attributes to the current planting season's workload. She initially didn't mention the cough to her parents because she didn't want to be pulled from schoolwork or fieldwork to see a doctor. She denies fevers but admits she hasn't been tracking her temperature and has had some night sweats she assumed were from the heat. No prior TB treatment, no known contact with drug-resistant TB. Exam: well-nourished, mild right apical crackles, no lymphadenopathy.",
   "patient": {
     "age": "16 years",
     "sex": "female",
@@ -49,7 +53,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T12:45:00+00:00",
-    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-004",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

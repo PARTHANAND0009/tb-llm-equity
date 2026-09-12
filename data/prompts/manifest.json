@@ -1,6 +1,6 @@
 {
-  "run_id": "expand-arms-20260806T144802Z",
-  "generated_at": "2026-08-06T14:48:02.872906+00:00",
+  "run_id": "expand-arms-20260911T165732Z",
+  "generated_at": "2026-09-11T16:57:32.877384+00:00",
   "vignette_set_version": "v1",
   "vignette_count": 100,
   "prompt_count": 400,
@@ -73,16 +73,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-002/arm1.txt",
-      "sha256": "f3c6350bd133a32965a89ee524fe978c79f045749f65860bc6149d5c0a51b978",
-      "estimated_tokens": 300
+      "sha256": "b8b21801cbf06db2585eb22ffb5c19b442f46931d3b18f238a3e00987a11a0fc",
+      "estimated_tokens": 276
     },
     {
       "vignette_id": "VIG-002",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-002/arm2.txt",
-      "sha256": "b83f1477d4cdbec988588badbc53b8a2cc6e7c31d72b8923489b39a7c28b0758",
-      "estimated_tokens": 315,
+      "sha256": "fc67f8fc26b7a3c03b16a95c4bc411653e8225e5a555fcfb148e356d014dd447",
+      "estimated_tokens": 292,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -90,16 +90,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-002/arm3.txt",
-      "sha256": "2767aef95846d68623f98fc96c687130ffd2a98315b9838c9a6c5df15c93f3fa",
-      "estimated_tokens": 375
+      "sha256": "818f7634b5e1e319d0276f0dc812c179f03f3d7588b19ab3a0495c0742178916",
+      "estimated_tokens": 351
     },
     {
       "vignette_id": "VIG-002",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-002/arm4.txt",
-      "sha256": "d615a2e69c7672bbd1a3bcb39fcf082c55f5c4d9e18e9c756ce330c3eb2ff479",
-      "estimated_tokens": 992,
+      "sha256": "ec4fe5fe8ea07f8af76fabaf1735c7972b44f7c6ccde5cbf29ac5e62018943e2",
+      "estimated_tokens": 969,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -135,16 +135,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-003/arm1.txt",
-      "sha256": "6410aa2ca69eabd94dc9fb458188165c21fd807d8ad59f2db022884226b5fc3a",
-      "estimated_tokens": 268
+      "sha256": "06e29fe6ae92af5220c41fe718e70198cf8bb515d23844acf960c4aa34ab6605",
+      "estimated_tokens": 248
     },
     {
       "vignette_id": "VIG-003",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-003/arm2.txt",
-      "sha256": "4ab7e567be664bd8e0f0926f2c60bf212908aa2051c4cd76d580ba34e4cebfc2",
-      "estimated_tokens": 283,
+      "sha256": "15ed77a14bb05104db163fcb9b3a3b0fb5c64ff6e5ef1ca681b92ae18c6e83a3",
+      "estimated_tokens": 263,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -152,16 +152,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-003/arm3.txt",
-      "sha256": "8a63001c4d36eae1fabf338f68a05bec91fcbe52824eac4665007cab49562c95",
-      "estimated_tokens": 343
+      "sha256": "66e48facfb074e06351b2ee40814074db2fd1fda2015f680370af9cb58493c02",
+      "estimated_tokens": 323
     },
     {
       "vignette_id": "VIG-003",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-003/arm4.txt",
-      "sha256": "a918190429be559a40624498be8edca7cbd9e2ab8dedb499f24e9fe725ace6e2",
-      "estimated_tokens": 1277,
+      "sha256": "75fe16fbd3f5aae4a18fb6833c1792f2048d122565874443f107f2fdc36b636e",
+      "estimated_tokens": 1257,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-006",
@@ -197,16 +197,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-004/arm1.txt",
-      "sha256": "d6523ce313be64fb86b3b485e5e6fd70f2398d9e6968c29b072bc68dd52fa64a",
-      "estimated_tokens": 260
+      "sha256": "9fd397627491d128188ec035832a65170a133fd5ff1b79380c214465d727bf32",
+      "estimated_tokens": 241
     },
     {
       "vignette_id": "VIG-004",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-004/arm2.txt",
-      "sha256": "9c395ebcc56f5f247eeeb91209100aec46348a7f28ec71708bdfeef69c226a99",
-      "estimated_tokens": 275,
+      "sha256": "0db9144c2bc8071989d7883e7794a7bfbc0802a445f3263b5bf7b54842bcae86",
+      "estimated_tokens": 257,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -214,16 +214,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-004/arm3.txt",
-      "sha256": "027f71fc184dab9aed6df7e0bfa890eceb9f4065c04f2adba9b2ccae4e2e4cc1",
-      "estimated_tokens": 335
+      "sha256": "4e17da3b2ba682f36680d369cfdae3db6ba2dc853e9ce9950c13601d0c2da648",
+      "estimated_tokens": 316
     },
     {
       "vignette_id": "VIG-004",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-004/arm4.txt",
-      "sha256": "a0aa5065ae3db8a01873a5311046258ea17e0486eed68dd1771233f80ab44cc8",
-      "estimated_tokens": 1258,
+      "sha256": "f8ee3f1ee707f47ab1f004623b76765de6bad78f09cdcd3524cdac05e0be3646",
+      "estimated_tokens": 1240,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-007",
@@ -321,16 +321,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-006/arm1.txt",
-      "sha256": "0e67e89cad26e0fea0a3e3058b3ac79a59daaf2b767856021bfaf61de28c15c5",
-      "estimated_tokens": 266
+      "sha256": "fae6125d08f646dddb96ccb9d204be603507f866cf4143e35eb2357c9208a59d",
+      "estimated_tokens": 251
     },
     {
       "vignette_id": "VIG-006",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-006/arm2.txt",
-      "sha256": "3fb1a262f2c6d3e31feb06e1d0f25e968a9b7b262a3ef78aa1a35acf9966a942",
-      "estimated_tokens": 281,
+      "sha256": "59bdb22e89b81628799b2a8a0bc1a990b83970b280cfa5e1b44dafddd112eb53",
+      "estimated_tokens": 266,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -338,16 +338,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-006/arm3.txt",
-      "sha256": "741baebc3f9aa1ccea28345e94a1d39688a525e6f57f50e647faef542c0daf35",
-      "estimated_tokens": 341
+      "sha256": "5d3c7b3a732fd491ecab3d13c2ce01627eed808bb360cbdb8ed056a92d51bdf0",
+      "estimated_tokens": 326
     },
     {
       "vignette_id": "VIG-006",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-006/arm4.txt",
-      "sha256": "b31e7dfaf2b00dfc60aefdd1a0663dbfb7a737c8835a87d35cdc01969f937aa6",
-      "estimated_tokens": 958,
+      "sha256": "91e67931908ef55666c6f12f9e75f8597a5a8f13eadf098d5960dd1639908f03",
+      "estimated_tokens": 943,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -445,16 +445,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-008/arm1.txt",
-      "sha256": "d652152886af61dd612a6537f9f9568305c6b144fdda07e4345f5d9f1e7ed585",
-      "estimated_tokens": 271
+      "sha256": "24641dee2f2d8cdbc41d30c51b0fd90d6f7a4e12b705feb0025c01f8cc463688",
+      "estimated_tokens": 253
     },
     {
       "vignette_id": "VIG-008",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-008/arm2.txt",
-      "sha256": "7aaa3682815f984e22d71e3525c7f18158dba96c5e11f2e971c1c643ac7ec98b",
-      "estimated_tokens": 287,
+      "sha256": "f15db496e610cd24f7ce6efdf68eee7c2de441aa8a9f9c342cbd88c685efda94",
+      "estimated_tokens": 269,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -462,16 +462,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-008/arm3.txt",
-      "sha256": "9dbfce5be7e807ff06c5020a38a29c6c9b337107cd8d279d49381ad00dac1467",
-      "estimated_tokens": 346
+      "sha256": "480d48a13d834552a9c7760c4c622222b06e24887315d2af9308233fefac2143",
+      "estimated_tokens": 328
     },
     {
       "vignette_id": "VIG-008",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-008/arm4.txt",
-      "sha256": "36a7707ea2fda4318cf5afb48ab56c52c77d5f67edfc10f691f3af692f0437f2",
-      "estimated_tokens": 1280,
+      "sha256": "32ca1dde5baf5c3f9548ae31a49eb34bf0c2aa563dc36a5d7ae2582a9d9bea49",
+      "estimated_tokens": 1262,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-006",
@@ -569,16 +569,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-010/arm1.txt",
-      "sha256": "40448354898dce1903688df4325fb485f9ab97b8928d4163e194705c88ac610f",
-      "estimated_tokens": 249
+      "sha256": "7c9b690065defe11d5d7c7420b382100907c78465b7e1af19658f8da3e19a3ff",
+      "estimated_tokens": 235
     },
     {
       "vignette_id": "VIG-010",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-010/arm2.txt",
-      "sha256": "89b2be1a68568c218a4ea5d86c38f4ffdec84d47c3ba99b1cdcf105baf583e0b",
-      "estimated_tokens": 265,
+      "sha256": "f6067d9350b79783712e54f1ad04b434347b9edb046c04b7ad9d66455eba0bfe",
+      "estimated_tokens": 251,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -586,16 +586,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-010/arm3.txt",
-      "sha256": "57204282dc44e7ef3f632a2ad0649f354a14b2d4ef6587ce4cb2d2b223435873",
-      "estimated_tokens": 324
+      "sha256": "8cdfb5fd7e8cea581d82757ac508a12d3fca8dfdb461ceecd57b5d6debc86b18",
+      "estimated_tokens": 310
     },
     {
       "vignette_id": "VIG-010",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-010/arm4.txt",
-      "sha256": "68a1e15fe1c5587b1266c21eba230266d0dfac015175e7911db5c867e0e8cf8c",
-      "estimated_tokens": 942,
+      "sha256": "73edf0b1b12b7055e610caa29dc8beecef7d32469ff8c2dd47d7043b14bc7606",
+      "estimated_tokens": 928,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -817,16 +817,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-014/arm1.txt",
-      "sha256": "48d3ec3ad42b9539e054aae1ea900a7cee8372732c2c1c34236ba3c4a153a41c",
-      "estimated_tokens": 251
+      "sha256": "d554708ebb8b29db21faba8b7f13cc2f1ddd470dffb121deb88efda9d67f68c7",
+      "estimated_tokens": 237
     },
     {
       "vignette_id": "VIG-014",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-014/arm2.txt",
-      "sha256": "e36b18e1e6bdb581e8dc433d58e24d43bedb7375496937b638432c91c574cd93",
-      "estimated_tokens": 266,
+      "sha256": "5b0ead1bb3a0231d6bdfd3314ce504ff408d1669082241de3f5a7179cb62c141",
+      "estimated_tokens": 252,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -834,16 +834,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-014/arm3.txt",
-      "sha256": "7d6ceef5d4e73067e8aa14947cb9dc825d474e0dd51d83c482e5e3c702e260e2",
-      "estimated_tokens": 326
+      "sha256": "ac94b11a1b1125d80567116405391fb1433c63a99ab71a85fe325bf21ff56cf1",
+      "estimated_tokens": 312
     },
     {
       "vignette_id": "VIG-014",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-014/arm4.txt",
-      "sha256": "543edf75233bb48e52e0cdaca3d7e9b280ac5b77b13d1d2d25d70171fa294bd9",
-      "estimated_tokens": 944,
+      "sha256": "a52ec09633fc21c12aaf9f6cfe9fe8564a10cc71f657b3c534809f1ba2823e50",
+      "estimated_tokens": 930,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -879,16 +879,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-015/arm1.txt",
-      "sha256": "eb70d17e0a267a7f10db82409ca5abcaa1f0eabd60c26ba0e59e1db2d96b0c97",
-      "estimated_tokens": 287
+      "sha256": "23430cd2c5c5e7a95b40fd5d86f2bb84a5294be3174cd366923cd384aecb68c0",
+      "estimated_tokens": 265
     },
     {
       "vignette_id": "VIG-015",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-015/arm2.txt",
-      "sha256": "6763dddb15cf358659577dedc6ffc0e9d7fa13fc992d747d861464817b791631",
-      "estimated_tokens": 302,
+      "sha256": "209965fa6a0db5eec4781a3362a945cb8f2bfce999c640838d3c5e5d687deaf2",
+      "estimated_tokens": 280,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -896,16 +896,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-015/arm3.txt",
-      "sha256": "b19d4d07f78ce69bd91c1bb75b95fc2beaf80e73af3fcf7dcd3ef68b5dc0c4b0",
-      "estimated_tokens": 362
+      "sha256": "8b1b06e8c86e62d5bab2a7b142ce04ddd14176f5ce5c6c68c0edd59f3362574b",
+      "estimated_tokens": 340
     },
     {
       "vignette_id": "VIG-015",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-015/arm4.txt",
-      "sha256": "6602aded4dde9927dce9dbc1904693d589aa2f2cc7fdf390a1e99adb901671b1",
-      "estimated_tokens": 963,
+      "sha256": "5d947b35bc95a73cc565e30a5261d072a4a862bcb59dcdf762d250b30367fd0f",
+      "estimated_tokens": 941,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-001",
@@ -1065,16 +1065,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-018/arm1.txt",
-      "sha256": "1d7e9ab6af206f5faf7b243536c7773d5468c19a0aec5818dfb58a1d51bbdd4e",
-      "estimated_tokens": 239
+      "sha256": "6dc7eb079682b36330b862e48b19c1bbb6c3904624317d0bbaa25d2d2e330044",
+      "estimated_tokens": 225
     },
     {
       "vignette_id": "VIG-018",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-018/arm2.txt",
-      "sha256": "91350ac7fdccf7092b9a79bc7da38125016693de63b5c6f53f624a1b4f473ecf",
-      "estimated_tokens": 254,
+      "sha256": "0db5908f7a57df55ec26b8c01fced2af223fd82cee7a8314322fb58784aeae25",
+      "estimated_tokens": 240,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -1082,16 +1082,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-018/arm3.txt",
-      "sha256": "9e9701a76ee607a40d594ba66e7c7f74c6054dc2bb2df97787308b3a9ed85bb2",
-      "estimated_tokens": 314
+      "sha256": "9aa9a0cdcd7b1f0c21779f76c932d2ce193b8d6732fa96186ac3677b4309c7bf",
+      "estimated_tokens": 300
     },
     {
       "vignette_id": "VIG-018",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-018/arm4.txt",
-      "sha256": "f8380cd49e141b4a87bf1caf634726cbdd26a8c233bf31709b2cecf53a831f6c",
-      "estimated_tokens": 931,
+      "sha256": "80b1ff28364f5ba2a1c931918e1fe30098950d8d29961e3dc0522f93b60d3473",
+      "estimated_tokens": 917,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -1127,16 +1127,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-019/arm1.txt",
-      "sha256": "b568a98e1723f6cb52ac241afcb6b16965d13c49c67513b4977b6e1079db4a56",
-      "estimated_tokens": 220
+      "sha256": "5a673a9e9dc69e79127265a8859d6f8d30561e8d49d826b66ad0b1c161b9ef2a",
+      "estimated_tokens": 206
     },
     {
       "vignette_id": "VIG-019",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-019/arm2.txt",
-      "sha256": "4e80f123a684cbde46cf62fabc7ecbbe29e3de71d9e6c5bf74a7f5fded732205",
-      "estimated_tokens": 235,
+      "sha256": "e7f769afeefdb50e54ecc99830024224180327a9806f453c2eed9a6a87a6c614",
+      "estimated_tokens": 221,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -1144,16 +1144,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-019/arm3.txt",
-      "sha256": "c26803e0b9b96e59fec0f86879607309ddfcc2d0027a69bf63a271e71181ec94",
-      "estimated_tokens": 295
+      "sha256": "1589ba81bfccb8de6a822363e179f21ce01a18bbbfd5eb1c97573e7bc0dc9395",
+      "estimated_tokens": 281
     },
     {
       "vignette_id": "VIG-019",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-019/arm4.txt",
-      "sha256": "949f2ffe4332998d002104571c46819ba198af3479a378357645aaa6a152e4df",
-      "estimated_tokens": 1218,
+      "sha256": "9b511378cb9a6b4bd1ad189f1a0e6ff1ef9fa27be2924d30a76f7cc080ce9e12",
+      "estimated_tokens": 1204,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-007",
@@ -1561,16 +1561,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-026/arm1.txt",
-      "sha256": "752bec0d9e4411136e24320484103eb9a0fb9a757caa6c66937fcbc474b6a692",
-      "estimated_tokens": 269
+      "sha256": "c9258b0aa47315881edfaeeb14b63cf9ff38f024f8b746a97813fe80e52f061d",
+      "estimated_tokens": 255
     },
     {
       "vignette_id": "VIG-026",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-026/arm2.txt",
-      "sha256": "97e4e09b8c874c5871ec9af8d24d68a5ac9a29fc6981ee2e870699159c469a7d",
-      "estimated_tokens": 284,
+      "sha256": "436381063dc8f148b18c40bcc65257a365e625c9293d7119158fe3005936e347",
+      "estimated_tokens": 270,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -1578,16 +1578,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-026/arm3.txt",
-      "sha256": "c13cc1378aa49d556c38b430723b3385b03a16cd40d96c0425348958ccea768b",
-      "estimated_tokens": 344
+      "sha256": "995995c2963ddf5a0f237e4152647d20c625296bb8937dfe3d76b967dd54b72a",
+      "estimated_tokens": 330
     },
     {
       "vignette_id": "VIG-026",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-026/arm4.txt",
-      "sha256": "479252a109735d68cbb2daa6f8e811d77aa87109ecaacde2f4b159445ca6a432",
-      "estimated_tokens": 961,
+      "sha256": "aec8d439bb1ede8bcc65478b7b5722427e968badf6ba8102395119cd8299a866",
+      "estimated_tokens": 947,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -1685,16 +1685,16 @@
       "burden_class": "india_high",
       "arm": 1,
       "path": "data/prompts/VIG-028/arm1.txt",
-      "sha256": "4b0c0d049de9c6c2224acc3df497687f53033eab7e24e93de9b4438ff09cacaf",
-      "estimated_tokens": 258
+      "sha256": "558f5a294016a76dd7f7815cea2f5c3ca5c132e6aa3aa3dc9a52b29efd6ec88e",
+      "estimated_tokens": 240
     },
     {
       "vignette_id": "VIG-028",
       "burden_class": "india_high",
       "arm": 2,
       "path": "data/prompts/VIG-028/arm2.txt",
-      "sha256": "2afef2d001699b10f3084cd4bf1a70b760fe7b2f394da8720059254f6aafebd0",
-      "estimated_tokens": 273,
+      "sha256": "ccd0de6983fba8b5d01e74fd241d1b6bac074612188d543b9317a02261fdb439",
+      "estimated_tokens": 255,
       "location_sentence": "This patient is being seen at a district hospital in India."
     },
     {
@@ -1702,16 +1702,16 @@
       "burden_class": "india_high",
       "arm": 3,
       "path": "data/prompts/VIG-028/arm3.txt",
-      "sha256": "1ca0d977b47b0962851c69c683df891d73987311d52ee9fd0f57ace6caf33e27",
-      "estimated_tokens": 333
+      "sha256": "54123955595b44777c8d609e513784df2ac8fc09565b10366c2319629655d149",
+      "estimated_tokens": 315
     },
     {
       "vignette_id": "VIG-028",
       "burden_class": "india_high",
       "arm": 4,
       "path": "data/prompts/VIG-028/arm4.txt",
-      "sha256": "fb88e03abc955d160a1b7a5005d7bdb99a69e13f65e9e254e3cf0b600921bd2d",
-      "estimated_tokens": 1267,
+      "sha256": "76782dcd2e1ad12622924b82ba0fa2094ec8ee679096719ca196c3803ccad4a6",
+      "estimated_tokens": 1249,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-006",
@@ -4220,16 +4220,16 @@
       "burden_class": "consensus_control",
       "arm": 1,
       "path": "data/prompts/VIG-078/arm1.txt",
-      "sha256": "85483b9d047b5b1b2eb1286e4104ded07f5c2e98a76887cb549c6f0eb45083c8",
-      "estimated_tokens": 223
+      "sha256": "bb2df58c46cf9f3273b5743375b478be4cea60810c7097df1d624ffb1fe3ad96",
+      "estimated_tokens": 209
     },
     {
       "vignette_id": "VIG-078",
       "burden_class": "consensus_control",
       "arm": 2,
       "path": "data/prompts/VIG-078/arm2.txt",
-      "sha256": "d199285be099b7c7a7e29b5aa5541579423730bfbafa9988a3cd5a72efa4031e",
-      "estimated_tokens": 241,
+      "sha256": "c58a087f9cfbd8a7a3fb1800ce482db18817f699fe6a970351716877a648984d",
+      "estimated_tokens": 227,
       "location_sentence": "This patient is being seen at a teaching hospital in the United States."
     },
     {
@@ -4237,16 +4237,16 @@
       "burden_class": "consensus_control",
       "arm": 3,
       "path": "data/prompts/VIG-078/arm3.txt",
-      "sha256": "d2f86de1a8d0ec3150ede679f3a1791e7afc392153139a6e0540ab1bf365abcd",
-      "estimated_tokens": 294
+      "sha256": "30369f8b5e5154a8c4b4d197bad042e7a9cf943b50ee9b685c8cbc7a5e6f980a",
+      "estimated_tokens": 280
     },
     {
       "vignette_id": "VIG-078",
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-078/arm4.txt",
-      "sha256": "a16119201144db11c9b82e9ad739e2b5bd94185a62a97a6b7cb9cb603ae40336",
-      "estimated_tokens": 1502,
+      "sha256": "05a244332f51d50e3dabb67018a17d3b88cd7c2163eaf2ce0ea4586316f6cb77",
+      "estimated_tokens": 1488,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",
@@ -4282,16 +4282,16 @@
       "burden_class": "consensus_control",
       "arm": 1,
       "path": "data/prompts/VIG-079/arm1.txt",
-      "sha256": "485c8b9a16c044c8ac1123e1a457dab7a357cd2d9eaa15e9f5abce4f6219fd5c",
-      "estimated_tokens": 208
+      "sha256": "030f691ab5b620d36ddd5987d6aa185073c671093bc2340c45afc201eb4e24ec",
+      "estimated_tokens": 194
     },
     {
       "vignette_id": "VIG-079",
       "burden_class": "consensus_control",
       "arm": 2,
       "path": "data/prompts/VIG-079/arm2.txt",
-      "sha256": "640f6edb95702344115764bf25eeb6c62648d61dd55b62183cf6f22eaccc33a2",
-      "estimated_tokens": 226,
+      "sha256": "e90af4b5236c3a5c02911af28778fd443006fef8b5996b58f746ae1338d69b80",
+      "estimated_tokens": 212,
       "location_sentence": "This patient is being seen at a teaching hospital in the United States."
     },
     {
@@ -4299,16 +4299,16 @@
       "burden_class": "consensus_control",
       "arm": 3,
       "path": "data/prompts/VIG-079/arm3.txt",
-      "sha256": "346526b33a98224eb6b2372ad7109b936976fddab48aee5f7a07caccd06e9023",
-      "estimated_tokens": 279
+      "sha256": "1ece2c5470cb5696f21f25a4ba2193744be8b361258a4f36dc5190e80eccf6e3",
+      "estimated_tokens": 265
     },
     {
       "vignette_id": "VIG-079",
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-079/arm4.txt",
-      "sha256": "13c7d3c60780920e91b8046abaeaa043d937875cddbb11bdc6df6eae7da8d478",
-      "estimated_tokens": 1497,
+      "sha256": "b30aeee39b121c2aacc22e84a7a78173d12e6e341fb07338d56611a5396a7e69",
+      "estimated_tokens": 1483,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-007",
@@ -4344,16 +4344,16 @@
       "burden_class": "consensus_control",
       "arm": 1,
       "path": "data/prompts/VIG-080/arm1.txt",
-      "sha256": "a78ee3a5830827dad95a5c16d072558e9c3226967a2282a04f3ee38dc09bbbad",
-      "estimated_tokens": 224
+      "sha256": "452e93d9bff1564727ef240892ff999b143ab5595709307a5afa9e0c7c47afad",
+      "estimated_tokens": 202
     },
     {
       "vignette_id": "VIG-080",
       "burden_class": "consensus_control",
       "arm": 2,
       "path": "data/prompts/VIG-080/arm2.txt",
-      "sha256": "038d1e0405d6e5a856fb8cee01c2a875f1684ced28b4ffcd4e859aeca7259e7e",
-      "estimated_tokens": 243,
+      "sha256": "14cc043e3ed9a1693489e0f0747b1088d789c336df6cc731316d530ae8db480a",
+      "estimated_tokens": 221,
       "location_sentence": "This patient is being seen at a teaching hospital in the United States."
     },
     {
@@ -4361,16 +4361,16 @@
       "burden_class": "consensus_control",
       "arm": 3,
       "path": "data/prompts/VIG-080/arm3.txt",
-      "sha256": "184a584f5af4c8156887df9554e3700e782c359087a6b323abd55c84eb8b323c",
-      "estimated_tokens": 296
+      "sha256": "21a4776197896af6dc505f6292698c2cc0130751aa20ca21e4c694d8572f750c",
+      "estimated_tokens": 274
     },
     {
       "vignette_id": "VIG-080",
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-080/arm4.txt",
-      "sha256": "ebc248e49781d061ccfdd384fd07170e517fc99866698573c36155d5f1725ba0",
-      "estimated_tokens": 1511,
+      "sha256": "6e0d139c2ffa553aba0bf2ca34ad5ef2217d93e5620b255de24839b29fbc40fa",
+      "estimated_tokens": 1489,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-001",
@@ -4468,16 +4468,16 @@
       "burden_class": "consensus_control",
       "arm": 1,
       "path": "data/prompts/VIG-082/arm1.txt",
-      "sha256": "c364f5b9cdc2fab7c3eb933a8335bdc9670b9872e66bc9f549a91b10c1eeef55",
-      "estimated_tokens": 208
+      "sha256": "04dfaf1251765ab92769cfea52e211d9ca67735cc302669907c4902d40387bd2",
+      "estimated_tokens": 194
     },
     {
       "vignette_id": "VIG-082",
       "burden_class": "consensus_control",
       "arm": 2,
       "path": "data/prompts/VIG-082/arm2.txt",
-      "sha256": "bee533fd5a2513c9adf2281a7bd8439c98d0a258fa7c8f0dd1077664c6e8d5d6",
-      "estimated_tokens": 226,
+      "sha256": "f21969529faee57e8e2884eed5c2d8c4de3c73c367c669d8427b45acb0565d34",
+      "estimated_tokens": 212,
       "location_sentence": "This patient is being seen at a teaching hospital in the United States."
     },
     {
@@ -4485,16 +4485,16 @@
       "burden_class": "consensus_control",
       "arm": 3,
       "path": "data/prompts/VIG-082/arm3.txt",
-      "sha256": "a5e002b1f34f15f602177b3cb9e8c777abcc058b92b0382f00b5241b2867212c",
-      "estimated_tokens": 279
+      "sha256": "9a13596bc16dba5a2e8b6c074563c69a3f9a11d77ad154f8dbe9ce9525b26771",
+      "estimated_tokens": 265
     },
     {
       "vignette_id": "VIG-082",
       "burden_class": "consensus_control",
       "arm": 4,
       "path": "data/prompts/VIG-082/arm4.txt",
-      "sha256": "4f17123db3b286c414122586bafc02452e7e70bb1da35dcd409dce4111f90ec2",
-      "estimated_tokens": 1487,
+      "sha256": "9ec027820a7a5ade6a2a7e08e2bf5a8ef2e382c667c645e1d4b91ef21b831812",
+      "estimated_tokens": 1473,
       "protocol_chunks_injected": [
         {
           "divergence_id": "DIV-004",

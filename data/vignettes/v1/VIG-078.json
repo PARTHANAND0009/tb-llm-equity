@@ -4,8 +4,12 @@
   "burden_class": "consensus_control",
   "presentation_type": "pulmonary",
   "matched_pair_id": "VIG-002",
-  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
-  "stem": "A 17-year-old woman who recently moved to live with her in-laws presents with about seven weeks of cough and profound fatigue. She has a known bleeding disorder causing heavy menstrual periods, resulting in longstanding severe anemia that has been difficult to fully correct despite iron supplementation. She reports some night sweats she attributed to hormonal changes. No prior TB treatment, no known drug-resistant contact. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: pale, thin, left-sided crackles, no lymphadenopathy.",
+  "divergence_ids": [
+    "DIV-004",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 17-year-old woman who recently moved to live with her in-laws presents with about seven weeks of cough and profound fatigue. She has a known bleeding disorder causing heavy menstrual periods, resulting in longstanding severe anemia that has been difficult to fully correct despite iron supplementation. She reports some night sweats she attributed to hormonal changes. No prior TB treatment, no known drug-resistant contact. Exam: pale, thin, left-sided crackles, no lymphadenopathy.",
   "patient": {
     "age": "17 years",
     "sex": "female",
@@ -15,7 +19,9 @@
     "duration": "7 weeks",
     "exam_findings": "Pale, thin, left-sided crackles, no lymphadenopathy",
     "prior_treatment": "Ongoing iron supplementation for chronic anemia; no prior TB treatment",
-    "comorbidities": ["known bleeding disorder with chronic severe anemia"]
+    "comorbidities": [
+      "known bleeding disorder with chronic severe anemia"
+    ]
   },
   "distractors": [
     "Her known bleeding disorder and chronic anemia treated as sufficient explanation for the fatigue without considering a co-occurring infectious process",
@@ -49,7 +55,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T19:35:00+00:00",
-    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-004",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

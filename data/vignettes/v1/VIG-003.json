@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": "VIG-079",
-  "divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
-  "stem": "A 34-year-old day laborer presents after nearly ten weeks of productive cough and night sweats, having initially tried to work through the symptoms because missing a day's work means no pay. He reports drinking heavily most evenings, an increase since a family loss several months ago, and eats irregularly depending on what work is available that day. He mentions occasional low-grade fevers but hasn't tracked his temperature. No prior TB treatment, no known contact with drug-resistant TB. Sputum smear is negative but Xpert MTB/RIF is positive, rifampicin not detected. Chest X-ray shows a right upper lobe infiltrate without cavitation. Weight 52 kg, BMI 16.8, exam notable for temporal wasting and mild hepatomegaly.",
+  "divergence_ids": [
+    "DIV-006",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 34-year-old day laborer presents after nearly ten weeks of productive cough and night sweats, having initially tried to work through the symptoms because missing a day's work means no pay. He reports drinking heavily most evenings, an increase since a family loss several months ago, and eats irregularly depending on what work is available that day. He mentions occasional low-grade fevers but hasn't tracked his temperature. No prior TB treatment, no known contact with drug-resistant TB. Chest X-ray shows a right upper lobe infiltrate without cavitation. Weight 52 kg, BMI 16.8, exam notable for temporal wasting and mild hepatomegaly.",
   "patient": {
     "age": "34 years",
     "sex": "male",
@@ -15,7 +19,10 @@
     "duration": "10 weeks",
     "exam_findings": "Temporal wasting, mild hepatomegaly, weight 52 kg, BMI 16.8, right upper zone crackles",
     "prior_treatment": "None for this episode; no prior TB treatment ever",
-    "comorbidities": ["heavy alcohol use", "malnutrition"]
+    "comorbidities": [
+      "heavy alcohol use",
+      "malnutrition"
+    ]
   },
   "distractors": [
     "Alcohol-related hepatomegaly and general malaise mistaken for a primary hepatic process rather than a systemic infectious cause",
@@ -49,7 +56,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T12:10:00+00:00",
-    "source_divergence_ids": ["DIV-006", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-006",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

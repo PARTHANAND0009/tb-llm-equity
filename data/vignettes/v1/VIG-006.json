@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": "VIG-082",
-  "divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
-  "stem": "A 13-year-old girl who has taken on most of the cooking and childcare for her younger siblings since her mother's recent illness presents with about five weeks of cough and increasing fatigue that she initially attributed to the extra workload at home. Her aunt, who brought her in, is worried because she has become noticeably thinner and often skips meals to make sure her siblings eat first. She reports occasional night sweats but no one has been tracking her temperature. No history of prior TB treatment, no known contact with drug-resistant TB. Sputum Xpert MTB/RIF was positive, rifampicin not detected. Exam: BMI 14.9 (significantly underweight for age), bilateral mid-zone crackles, no lymphadenopathy.",
+  "divergence_ids": [
+    "DIV-004",
+    "DIV-007",
+    "DIV-001"
+  ],
+  "stem": "A 13-year-old girl who has taken on most of the cooking and childcare for her younger siblings since her mother's recent illness presents with about five weeks of cough and increasing fatigue that she initially attributed to the extra workload at home. Her aunt, who brought her in, is worried because she has become noticeably thinner and often skips meals to make sure her siblings eat first. She reports occasional night sweats but no one has been tracking her temperature. No history of prior TB treatment, no known contact with drug-resistant TB. Exam: BMI 14.9 (significantly underweight for age), bilateral mid-zone crackles, no lymphadenopathy.",
   "patient": {
     "age": "13 years",
     "sex": "female",
@@ -15,7 +19,9 @@
     "duration": "5 weeks",
     "exam_findings": "BMI 14.9, bilateral mid-zone crackles, no lymphadenopathy",
     "prior_treatment": "None for this episode; no prior TB treatment ever",
-    "comorbidities": ["significant undernutrition"]
+    "comorbidities": [
+      "significant undernutrition"
+    ]
   },
   "distractors": [
     "Weight loss and fatigue attributed entirely to caregiving burden and self-imposed food restriction rather than an underlying illness",
@@ -49,7 +55,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T12:25:00+00:00",
-    "source_divergence_ids": ["DIV-004", "DIV-007", "DIV-001"],
+    "source_divergence_ids": [
+      "DIV-004",
+      "DIV-007",
+      "DIV-001"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

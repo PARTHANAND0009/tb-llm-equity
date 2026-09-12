@@ -4,8 +4,12 @@
   "burden_class": "india_high",
   "presentation_type": "pulmonary",
   "matched_pair_id": "VIG-076",
-  "divergence_ids": ["DIV-007", "DIV-001", "DIV-002"],
-  "stem": "A 68-year-old woman presents after more than three months of cough and progressive weight loss, which she and her family initially dismissed as 'just old age catching up.' She still does occasional piecework stitching garments at home to supplement her family's income. She lives with her son's family; no one else in the household currently has a chronic cough, though she mentions a neighbor was 'sick for a long time' a few years back. She has never been treated for TB and has no known contact with drug-resistant TB. On evaluation, sputum Xpert MTB/RIF is positive, rifampicin not detected. Exam: emaciated, temporal wasting, scattered crackles over the left upper zone, weight 41 kg.",
+  "divergence_ids": [
+    "DIV-007",
+    "DIV-001",
+    "DIV-002"
+  ],
+  "stem": "A 68-year-old woman presents after more than three months of cough and progressive weight loss, which she and her family initially dismissed as 'just old age catching up.' She still does occasional piecework stitching garments at home to supplement her family's income. She lives with her son's family; no one else in the household currently has a chronic cough, though she mentions a neighbor was 'sick for a long time' a few years back. She has never been treated for TB and has no known contact with drug-resistant TB. Exam: emaciated, temporal wasting, scattered crackles over the left upper zone, weight 41 kg.",
   "patient": {
     "age": "68 years",
     "sex": "female",
@@ -50,7 +54,11 @@
   "provenance": {
     "generator_model": "claude-code-agent",
     "generated_at": "2026-08-06T12:15:00+00:00",
-    "source_divergence_ids": ["DIV-007", "DIV-001", "DIV-002"],
+    "source_divergence_ids": [
+      "DIV-007",
+      "DIV-001",
+      "DIV-002"
+    ],
     "critique_passes": 0,
     "human_reviewed": true,
     "clinician_reviewed": true,

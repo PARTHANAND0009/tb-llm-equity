@@ -5,4 +5,4 @@ Based on the clinical case below, provide:
 Answer in that order, clearly labeled. Do not ask clarifying questions -- work with the information given.
 
 Clinical case:
-A 14-year-old girl presents with about six weeks of cough and fatigue that she had been keeping to herself, not wanting to worry her parents during a busy time for the family. She denies fevers she's noticed, though she hasn't been checking her temperature, and mentions some unintentional weight loss. No prior TB treatment, no known contact with drug-resistant TB. Sputum Xpert MTB/RIF positive, rifampicin not detected. Exam: thin, mild right-sided crackles, no lymphadenopathy.
+A 14-year-old girl presents with about six weeks of cough and fatigue that she had been keeping to herself, not wanting to worry her parents during a busy time for the family. She denies fevers she's noticed, though she hasn't been checking her temperature, and mentions some unintentional weight loss. No prior TB treatment, no known contact with drug-resistant TB. Exam: thin, mild right-sided crackles, no lymphadenopathy.

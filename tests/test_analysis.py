@@ -10,6 +10,8 @@ from __future__ import annotations
 
 import math
 
+import pytest
+
 from tb_equity.analysis import (
     RawResponse,
     breakdown_by_category,
@@ -20,6 +22,7 @@ from tb_equity.analysis import (
     divergence_addressed_by_family,
     divergence_addressed_rate,
     headline_structured_vs_control,
+    per_axis_alignment,
     reachability_adjusted_silence,
     score_all,
     summarize_model,
@@ -347,3 +350,64 @@ def test_conditional_alignment_among_addressed_excludes_not_addressed():
     by_family = score_all(responses, vignettes)
     result = conditional_alignment_among_addressed(by_family["meta"])
     assert result == {"consensus": 1, "us": 1}  # not_addressed excluded entirely
+
+
+def test_per_axis_alignment_reports_per_axis_n_and_coverage():
+    v1 = make_vignette(["DIV-001"], id="VIG-118")
+    vignettes = {"VIG-118": v1}
+    responses = [
+        _resp("VIG-118", 1, "meta", "Send Xpert MTB/RIF as the initial test."),  # consensus
+        _resp("VIG-118", 1, "meta", "Send AFB smear microscopy as the initial test."),  # us
+        _resp("VIG-118", 1, "meta", "The patient likely has pneumonia."),  # not_addressed
+    ]
+    by_family = score_all(responses, vignettes)
+    result = per_axis_alignment(by_family["meta"])
+
+    axis = result["DIV-001"]
+    assert axis.divergence_class == "consensus_divergence"
+    assert axis.total_n == 3
+    assert axis.addressed_n == 2
+    assert axis.coverage_rate == pytest.approx(2 / 3)
+    assert axis.label_counts == {"consensus": 1, "us": 1}
+    # rates are computed against addressed_n (2), not total_n (3)
+    assert axis.label_rates["consensus"][0] == 0.5
+    assert axis.label_rates["us"][0] == 0.5
+
+
+def test_per_axis_alignment_includes_national_adaptation_rows():
+    # DIV-008 is national_adaptation (ntep vs who vs us, no shared "consensus" side)
+    v = make_vignette(["DIV-008"], id="VIG-119")
+    vignettes = {"VIG-119": v}
+    responses = [
+        _resp(
+            "VIG-119", 1, "meta",
+            "Extend the regimen based on the treating physician's case-by-case "
+            "clinical judgment.",
+        ),
+        _resp(
+            "VIG-119", 1, "meta",
+            "We recommend against extending beyond the fixed 6-month regimen.",
+        ),
+    ]
+    by_family = score_all(responses, vignettes)
+    result = per_axis_alignment(by_family["meta"])
+
+    axis = result["DIV-008"]
+    assert axis.divergence_class == "national_adaptation"
+    assert axis.total_n == 2
+    assert axis.addressed_n == 2
+    assert axis.label_counts == {"ntep": 1, "who": 1}
+
+
+def test_per_axis_alignment_zero_addressed_gives_empty_rates_not_a_crash():
+    v = make_vignette(["DIV-001"], id="VIG-120")
+    vignettes = {"VIG-120": v}
+    responses = [_resp("VIG-120", 1, "meta", "The patient likely has pneumonia.")]
+    by_family = score_all(responses, vignettes)
+    result = per_axis_alignment(by_family["meta"])
+
+    axis = result["DIV-001"]
+    assert axis.addressed_n == 0
+    assert axis.coverage_rate == 0.0
+    assert axis.label_counts == {}
+    assert axis.label_rates == {}

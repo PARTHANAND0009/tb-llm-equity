@@ -475,3 +475,67 @@ def conditional_alignment_among_addressed(scores: list[VignetteScore]) -> dict[s
                 continue
             counts[ax.label] = counts.get(ax.label, 0) + 1
     return counts
+
+
+@dataclass
+class AxisAlignment:
+    """The IRIS TMED full-run PRIMARY outcome (per the 'full run' headline
+    restructure): per divergence_id, coverage (how many instances were
+    addressed at all) and, among ONLY the addressed instances, the
+    ntep/who/us/consensus/hedged label split. Both rates carry a Wilson
+    score interval (see wilson_interval's docstring for why Wilson over
+    Wald: stable near 0%/100%, which per-axis label rates on a modest n
+    frequently are)."""
+
+    divergence_id: str
+    divergence_class: str
+    total_n: int
+    addressed_n: int
+    coverage_rate: float
+    coverage_ci: tuple[float, float]
+    label_counts: dict[str, int]
+    label_rates: dict[str, tuple[float, tuple[float, float]]]
+
+
+def per_axis_alignment(scores: list[VignetteScore]) -> dict[str, AxisAlignment]:
+    """Per divergence_id seen across `scores` -- NOT filtered to
+    consensus_divergence, unlike conditional_alignment_among_addressed:
+    the full run reports both divergence classes, each tagged with its own
+    divergence_class, since national_adaptation rows (NTEP-vs-WHO) are a
+    real secondary finding in their own right, not noise to exclude.
+    """
+    totals: dict[str, int] = defaultdict(int)
+    addressed: dict[str, int] = defaultdict(int)
+    classes: dict[str, str] = {}
+    label_counts: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+
+    for score in scores:
+        for ax in score.axis_results:
+            did = ax.divergence_id
+            totals[did] += 1
+            classes[did] = ax.divergence_class
+            if ax.label != "not_addressed":
+                addressed[did] += 1
+                label_counts[did][ax.label] += 1
+
+    result: dict[str, AxisAlignment] = {}
+    for did, total in totals.items():
+        n_addr = addressed[did]
+        coverage_rate = n_addr / total if total else float("nan")
+        coverage_ci = wilson_interval(n_addr, total) if total else (float("nan"), float("nan"))
+        rates: dict[str, tuple[float, tuple[float, float]]] = {}
+        for label, count in label_counts[did].items():
+            rate = count / n_addr if n_addr else float("nan")
+            ci = wilson_interval(count, n_addr) if n_addr else (float("nan"), float("nan"))
+            rates[label] = (rate, ci)
+        result[did] = AxisAlignment(
+            divergence_id=did,
+            divergence_class=classes[did],
+            total_n=total,
+            addressed_n=n_addr,
+            coverage_rate=coverage_rate,
+            coverage_ci=coverage_ci,
+            label_counts=dict(label_counts[did]),
+            label_rates=rates,
+        )
+    return result

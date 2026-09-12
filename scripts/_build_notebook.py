@@ -1401,6 +1401,9 @@ CELLS.append(md(
 ))
 CELLS.append(code(
     "STRUCTURED_MAX_TOKENS = 800  # see markdown above -- grounded in Step E's real observed max (482)",
+    "PROGRESS_EVERY = 25  # print a progress line at least this often -- self-contained here",
+    "                     # (not read from Section 10, which this section's own markdown",
+    "                     # says to skip) rather than assuming a prior cell defined it",
     "",
     "FULL_RUN_MANIFEST = json.loads((PROMPTS_DIR / 'full_run_manifest.json').read_text(encoding='utf-8'))",
     "FULL_RUN_FREEFORM = FULL_RUN_MANIFEST['freeform']      # 85 non-holdout vignettes",

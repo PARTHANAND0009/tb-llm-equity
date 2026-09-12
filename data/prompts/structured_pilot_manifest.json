@@ -1,0 +1,152 @@
+{
+  "run_id": "structured-pilot-prompts-20260911T173948Z",
+  "generated_at": "2026-09-11T17:39:48.221513+00:00",
+  "vignette_set_version": "v1",
+  "vignette_count": 12,
+  "vignettes": [
+    {
+      "vignette_id": "VIG-002",
+      "divergence_ids": [
+        "DIV-004",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-002/structured.txt",
+      "structured_sha256": "5412c19648b41bc8b2b60f217664086c27ed6dcd267edd2e6b7208585ef0e567",
+      "freeform_path": "data/prompts/VIG-002/arm1.txt",
+      "freeform_sha256": "b8b21801cbf06db2585eb22ffb5c19b442f46931d3b18f238a3e00987a11a0fc"
+    },
+    {
+      "vignette_id": "VIG-003",
+      "divergence_ids": [
+        "DIV-006",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-003/structured.txt",
+      "structured_sha256": "ff9926b3d2c67588014bc6a4bb429ecf8356f31a91f171b02ff66022c226989e",
+      "freeform_path": "data/prompts/VIG-003/arm1.txt",
+      "freeform_sha256": "06e29fe6ae92af5220c41fe718e70198cf8bb515d23844acf960c4aa34ab6605"
+    },
+    {
+      "vignette_id": "VIG-004",
+      "divergence_ids": [
+        "DIV-007",
+        "DIV-001",
+        "DIV-002"
+      ],
+      "structured_path": "data/prompts/VIG-004/structured.txt",
+      "structured_sha256": "4f2ff73d865c491c59d9f51d8663e5cede2575a04e11d2459b773122bc3c3a67",
+      "freeform_path": "data/prompts/VIG-004/arm1.txt",
+      "freeform_sha256": "9fd397627491d128188ec035832a65170a133fd5ff1b79380c214465d727bf32"
+    },
+    {
+      "vignette_id": "VIG-006",
+      "divergence_ids": [
+        "DIV-004",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-006/structured.txt",
+      "structured_sha256": "ed19228c52ba6fe5fdd5ad5cd6e8f5dd0ed1bc2a105450c91f8be5732d930846",
+      "freeform_path": "data/prompts/VIG-006/arm1.txt",
+      "freeform_sha256": "fae6125d08f646dddb96ccb9d204be603507f866cf4143e35eb2357c9208a59d"
+    },
+    {
+      "vignette_id": "VIG-010",
+      "divergence_ids": [
+        "DIV-004",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-010/structured.txt",
+      "structured_sha256": "8ce9f0d2179a989ff3eda43abc97c0306c456c32c56fc3d657728c9a128dc031",
+      "freeform_path": "data/prompts/VIG-010/arm1.txt",
+      "freeform_sha256": "7c9b690065defe11d5d7c7420b382100907c78465b7e1af19658f8da3e19a3ff"
+    },
+    {
+      "vignette_id": "VIG-014",
+      "divergence_ids": [
+        "DIV-004",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-014/structured.txt",
+      "structured_sha256": "83249134a03d182547ee5d271175c5a98062b1b5d16e42e50d946d52a22dafed",
+      "freeform_path": "data/prompts/VIG-014/arm1.txt",
+      "freeform_sha256": "d554708ebb8b29db21faba8b7f13cc2f1ddd470dffb121deb88efda9d67f68c7"
+    },
+    {
+      "vignette_id": "VIG-018",
+      "divergence_ids": [
+        "DIV-004",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-018/structured.txt",
+      "structured_sha256": "e86baa7c80a8b5535f2303ada3341091b52e669d8ce63702699e1e1735d6d6f4",
+      "freeform_path": "data/prompts/VIG-018/arm1.txt",
+      "freeform_sha256": "6dc7eb079682b36330b862e48b19c1bbb6c3904624317d0bbaa25d2d2e330044"
+    },
+    {
+      "vignette_id": "VIG-019",
+      "divergence_ids": [
+        "DIV-007",
+        "DIV-001",
+        "DIV-002"
+      ],
+      "structured_path": "data/prompts/VIG-019/structured.txt",
+      "structured_sha256": "952cfd581bf47de5c6b171b52267b052c9b2e02c6fd25a6fb7034cbb863a3421",
+      "freeform_path": "data/prompts/VIG-019/arm1.txt",
+      "freeform_sha256": "5a673a9e9dc69e79127265a8859d6f8d30561e8d49d826b66ad0b1c161b9ef2a"
+    },
+    {
+      "vignette_id": "VIG-026",
+      "divergence_ids": [
+        "DIV-004",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-026/structured.txt",
+      "structured_sha256": "1d5ed9f800e3ef2e0e6d1abe54b317692857311ee85b03bd777126ae4d8c6482",
+      "freeform_path": "data/prompts/VIG-026/arm1.txt",
+      "freeform_sha256": "c9258b0aa47315881edfaeeb14b63cf9ff38f024f8b746a97813fe80e52f061d"
+    },
+    {
+      "vignette_id": "VIG-028",
+      "divergence_ids": [
+        "DIV-006",
+        "DIV-007",
+        "DIV-001"
+      ],
+      "structured_path": "data/prompts/VIG-028/structured.txt",
+      "structured_sha256": "f73b4a08acc21e66806431bcd40a7a366645f0ed267771604558ce52182522ed",
+      "freeform_path": "data/prompts/VIG-028/arm1.txt",
+      "freeform_sha256": "558f5a294016a76dd7f7815cea2f5c3ca5c132e6aa3aa3dc9a52b29efd6ec88e"
+    },
+    {
+      "vignette_id": "VIG-079",
+      "divergence_ids": [
+        "DIV-007",
+        "DIV-001",
+        "DIV-002"
+      ],
+      "structured_path": "data/prompts/VIG-079/structured.txt",
+      "structured_sha256": "0d4d0cd6ed079467d5e87800ea06cf32cfcda87e9fb9e2edb6870140e6d21958",
+      "freeform_path": "data/prompts/VIG-079/arm1.txt",
+      "freeform_sha256": "030f691ab5b620d36ddd5987d6aa185073c671093bc2340c45afc201eb4e24ec"
+    },
+    {
+      "vignette_id": "VIG-080",
+      "divergence_ids": [
+        "DIV-001",
+        "DIV-002",
+        "DIV-004"
+      ],
+      "structured_path": "data/prompts/VIG-080/structured.txt",
+      "structured_sha256": "da9db76eed40d6c7ad0fa9c46f0510fb409e52cde626aa0e1fc757e1b447311c",
+      "freeform_path": "data/prompts/VIG-080/arm1.txt",
+      "freeform_sha256": "452e93d9bff1564727ef240892ff999b143ab5595709307a5afa9e0c7c47afad"
+    }
+  ]
+}

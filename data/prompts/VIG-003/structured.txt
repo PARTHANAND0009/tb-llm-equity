@@ -1,0 +1,7 @@
+A 34-year-old day laborer presents after nearly ten weeks of productive cough and night sweats, having initially tried to work through the symptoms because missing a day's work means no pay. He reports drinking heavily most evenings, an increase since a family loss several months ago, and eats irregularly depending on what work is available that day. He mentions occasional low-grade fevers but hasn't tracked his temperature. No prior TB treatment, no known contact with drug-resistant TB. Chest X-ray shows a right upper lobe infiltrate without cavitation. Weight 52 kg, BMI 16.8, exam notable for temporal wasting and mild hepatomegaly.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Based on this presentation, what is your single most likely diagnosis, and what ONE test would you order right now to evaluate it?
+2. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe the treatment regimen you would start, including (a) how many phases it has and the duration of each, and (b) how often within each phase the patient takes the medication.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

@@ -1,0 +1,7 @@
+A 70-year-old woman, long retired from a small manufacturing job but still active in her community, presents after more than three months of cough that she attributed to 'just getting older.' Her daughter insisted on a visit after noticing she seemed increasingly breathless during their weekly walks together, an activity she has done for years without difficulty. She denies major weight loss but her appetite has been reduced. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors. Chest X-ray shows a non-cavitary right infiltrate. Exam: mild crackles, otherwise unremarkable.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Based on this presentation, what is your single most likely diagnosis, and what ONE test would you order right now to evaluate it?
+2. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe the treatment regimen you would start, including (a) how many phases it has and the duration of each, and (b) how often within each phase the patient takes the medication.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

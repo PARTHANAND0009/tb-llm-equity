@@ -1,0 +1,7 @@
+A 29-year-old day laborer presents with about eleven weeks of cough and progressive weight loss, having avoided seeking care because he was between jobs for part of that time and worried about the cost. He denies significant past medical history. He reports drenching night sweats over the last two weeks. No prior TB treatment, no known contact with drug-resistant TB, no HIV risk factors, no travel outside the region. Exam: thin, right upper zone crackles, weight 58 kg.
+
+Answer the following questions about this case. Answer each in 1-3 sentences, labeled by number, in order. Do not add discussion beyond directly answering the question asked.
+
+1. Based on this presentation, what is your single most likely diagnosis, and what ONE test would you order right now to evaluate it?
+2. Would you perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen? Answer yes or no, and explain your reasoning.
+3. Assuming your chosen initial test confirms drug-susceptible pulmonary tuberculosis: describe exactly how you would determine the dose of each drug for this specific patient -- what patient information would you use, and how would you translate it into an actual dose or tablet count?

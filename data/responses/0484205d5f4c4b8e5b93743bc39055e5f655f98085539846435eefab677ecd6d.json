@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **Tuberculous Peritonitis (most likely)**  \n     *Reasoning:* The patient presents with progressive abdominal swelling, ascites, peritoneal thickening, intermittent low-grade fever, and reduced appetite\u2014classic features of tuberculous peritonitis. The positive molecular test for *M. tuberculosis* in ascitic fluid confirms the diagnosis.  \n   - **Carcinomatous Peritonitis**  \n     *Reasoning:* Ascites and peritoneal thickening can also occur in advanced ovarian, gastric, or colorectal cancer. However, the presence of *M. tuberculosis* in ascitic fluid makes this less likely unless there is a concurrent malignancy.  \n   - **Hepatic Cirrhosis with Ascites**  \n     *Reasoning:* Ascites can occur in cirrhosis, but the presence of fever, peritoneal thickening, and positive TB testing makes this less likely.  \n   - **Pyogenic Peritonitis**  \n     *Reasoning:* Infection with bacteria can cause peritonitis, but the presence of TB in the ascitic fluid and the chronic nature of symptoms point more toward TB.  \n   - **Hemorrhagic Ascites**  \n     *Reasoning:* This is less likely given the absence of hematemesis, melena, or signs of coagulopathy, and the presence of TB in the fluid.\n\n2. **Single Next Diagnostic Step:**  \n   **Perform a complete blood count (CBC), liver function tests (LFTs), and HIV testing.**  \n   *Reasoning:* These tests will help assess the patient\u2019s overall health, liver function, and immune status, which are important in managing TB and ruling out other conditions.\n\n3. **Initial Management Plan:**  \n   - **Start anti-tuberculosis therapy (ATT):** Begin a standard regimen for TB, including isoniazid, rifampin, pyrazinamide, and ethambutol.  \n   - **Monitor for drug toxicity:** Regularly assess for liver enzymes, renal function, and visual changes (due to ethambutol).  \n   - **Manage ascites:** Consider paracentesis for symptom relief if the ascites is causing discomfort.  \n   - **Nutritional support:** Provide dietary counseling and consider nutritional supplements due to reduced appetite.  \n   - **Monitor for complications:** Watch for signs of TB dissemination (e.g., pleural effusion, meningitis) and monitor for treatment response.  \n   - **Avoid immunosuppressants:** Unless contraindicated, avoid medications that may interfere with TB treatment or suppress the immune system.",
+  "raw": {
+    "vignette_id": "VIG-032",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 231,
+  "output_tokens": 554
+}

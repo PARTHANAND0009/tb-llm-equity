@@ -1,0 +1,15 @@
+{
+  "text": "Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient's symptoms of a persistent cough and reduced energy, along with the chest X-ray findings of a right hilar lymph node pattern, suggest a possible case of tuberculosis. Rifampicin resistance testing is crucial to guide appropriate treatment and prevent the spread of drug-resistant TB.",
+  "raw": {
+    "vignette_id": "VIG-093",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 93
+}

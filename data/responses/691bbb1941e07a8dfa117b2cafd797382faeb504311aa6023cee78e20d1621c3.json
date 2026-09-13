@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculous peritonitis**: The patient's symptoms of progressive abdominal swelling, discomfort, low-grade fevers, and reduced appetite, combined with the positive molecular testing for M. tuberculosis in the ascitic fluid, strongly suggest tuberculous peritonitis. The patient's occupation as a seasonal farm worker also increases her risk of exposure to TB.\n2. **Malignancy**: The patient's age and progressive symptoms could also suggest a malignancy, such as ovarian cancer, which can cause ascites and peritoneal thickening.\n3. **Chronic liver disease**: The patient's ascites and peritoneal thickening could also be related to chronic liver disease, such as cirrhosis, which can cause portal hypertension and ascites.\n4. **Other infections**: Other infections, such as bacterial peritonitis or fungal peritonitis, could also be considered, but are less likely given the positive TB testing.\n\n**2. The single next diagnostic step I would take right now:**\n\nPerform a **TB culture of the ascitic fluid** to confirm the diagnosis and to determine if the patient has a drug-resistant strain of TB. This will also provide information on the minimum inhibitory concentration (MIC) of the patient's isolate, which is essential for choosing the appropriate treatment regimen.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a standard 4-drug regimen for TB, which typically includes isoniazid, rifampicin, pyrazinamide, and ethambutol. The patient should also receive pyridoxine (vitamin B6) to prevent isoniazid-induced neuropathy.\n* **Supportive care**: Provide supportive care, including fluid management and nutritional support, to manage the patient's symptoms and prevent complications.\n* **Monitor for TB-related complications**: Monitor the patient for signs of TB-related complications, such as respiratory failure, sepsis, or adrenal insufficiency.\n* **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and adjust the treatment regimen as needed.",
+  "raw": {
+    "vignette_id": "VIG-032",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 254,
+  "output_tokens": 438
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Drug-Induced Lung Injury (DILI)**  \n   - **Reasoning:** The patient has been on anti-tuberculosis therapy for two months, and the presence of **mild residual crackles** could be due to **drug-induced lung injury**, a known side effect of certain anti-TB medications such as **isoniazid**, **rifampicin**, or **ethambutol**. This is a common and important differential in patients on long-term TB treatment.\n\n2. **Progressive Fibro-Scar Tissue (Post-TB Lung Damage)**  \n   - **Reasoning:** The patient has a history of **pre-XDR-TB**, which is a form of drug-resistant TB. Even with appropriate treatment, some degree of **pulmonary fibrosis or scarring** can occur, leading to **residual crackles** on auscultation. This is a possible long-term consequence of TB infection.\n\n3. **Pulmonary Hypertension or Interstitial Lung Disease (ILD)**  \n   - **Reasoning:** While less likely, **pulmonary hypertension** or **ILD** could also present with **crackles** and could be secondary to chronic inflammation or fibrosis. These conditions are less common but should be considered in the differential.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a chest CT scan (CT pulmonary angiogram if pulmonary embolism is suspected) to evaluate for drug-induced lung injury, fibrosis, or other parenchymal lung disease.**\n\n---\n\n3. **Initial Management Plan:**\n\n- **Continue current anti-TB regimen** under close monitoring, as stopping treatment could lead to **treatment failure or drug resistance**.\n- **Monitor for signs of worsening lung injury** (e.g., increased crackles, dyspnea, hypoxia).\n- **Consider a bronchoscopy with bronchoalveolar lavage (BAL)** to evaluate for **drug-induced injury or infection**.\n- **Order serial chest X-rays or CT scans** to monitor for progression of lung changes.\n- **Evaluate for potential drug interactions or hypersensitivity reactions** and consider **alternative anti-TB drugs** if DILI is confirmed.\n- **Provide patient and family education** on the importance of adherence to treatment and monitoring for side effects.",
+  "raw": {
+    "vignette_id": "VIG-097",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 169,
+  "output_tokens": 486
+}

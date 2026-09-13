@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), and the one test I would order right now to evaluate it is a chest X-ray to look for signs of pulmonary TB, such as upper lobe cavitation or fibronodular infiltrates.\n\n2. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient denies significant past medical history, no prior TB treatment, and no known contact with drug-resistant TB, making it unlikely that the patient has drug-resistant TB.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight and body surface area (BSA) to calculate the dose. I would use the patient's weight (52 years old, which is not provided, but assuming 154 lbs or 69.9 kg) and BSA (approximately 1.73 m^2) to calculate the dose of each drug. For example, for isoniazid (INH), the typical dose is 5 mg/kg/day, so the patient's dose would be approximately 369 mg/day. For rifampicin (RMP), the typical dose is 10 mg/kg/day, so the patient's dose would be approximately 738 mg/day. For pyrazinamide (PZA), the typical dose is 15-20 mg/kg/day, so the patient's dose would be approximately 1047-1389 mg/day. For ethambutol (EMB), the typical dose is 15-20 mg/kg/day, so the patient's dose would be approximately 1047-1389 mg/day.",
+  "raw": {
+    "vignette_id": "VIG-079",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 267,
+  "output_tokens": 340
+}

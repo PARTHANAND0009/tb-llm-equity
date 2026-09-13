@@ -1,0 +1,15 @@
+{
+  "text": "Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. The patient's M. tuberculosis strain has been confirmed to be resistant to rifampicin, isoniazid, and fluoroquinolones, which is pre-XDR-TB. However, retesting the initial specimen for rifampicin resistance can help confirm the accuracy of the initial test results and ensure that the resistance pattern is not due to a laboratory error.",
+  "raw": {
+    "vignette_id": "VIG-060",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 292,
+  "output_tokens": 108
+}

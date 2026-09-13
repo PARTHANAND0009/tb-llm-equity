@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculous pleurisy (TB pleuritis) - Given the positive M. tuberculosis results from the pleural fluid, this is the most likely diagnosis. The patient's travel history, age, and symptoms of chest discomfort and progressive breathlessness, along with the physical findings of decreased breath sounds and dullness to percussion at the right base, support this diagnosis.\n\n2. Single next diagnostic step:\n   - Further microbiological testing on the pleural fluid to determine drug susceptibility pattern of the TB strain. This will help guide the choice of antibiotics for treatment.\n\n3. Initial management plan:\n   - Start the patient on a standard first-line TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) while awaiting drug susceptibility test results.\n   - Monitor the patient's respiratory status closely, and provide oxygen therapy if needed.\n   - Refer the patient to a pulmonologist or infectious disease specialist for further management.\n   - Monitor for side effects of TB treatment and manage accordingly.\n   - Ensure the patient is isolated to prevent the spread of TB.\n   - Provide education about TB, its transmission, and the importance of adhering to the treatment regimen.\n   - Consider referring the patient for nutritional support, as TB can cause weight loss and malnutrition.\n   - Arrange for follow-up appointments to monitor the patient's response to treatment and manage any complications.",
+  "raw": {
+    "vignette_id": "VIG-088",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 279,
+  "output_tokens": 355
+}

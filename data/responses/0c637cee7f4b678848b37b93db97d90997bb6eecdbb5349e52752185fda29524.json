@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of chronic cough, night sweats, and fatigue are classic for TB, especially in a high-risk individual (a 14-year-old girl working long hours in a crowded environment). The presence of bilateral lower-zone crackles on exam also supports this diagnosis.\n2. **Anemia**: The patient's low hemoglobin level (7.8 g/dL) is consistent with anemia, which could be contributing to her fatigue. However, anemia alone does not explain the cough and night sweats.\n3. **Pulmonary Tuberculosis with Anemia**: This is a combination of the two top diagnoses, where the patient has TB and anemia.\n4. **Other Pulmonary Infections**: Other pulmonary infections, such as pneumonia or bronchitis, could also cause cough and fatigue, but they are less likely given the chronic nature of the symptoms and the presence of night sweats.\n5. **Other Causes of Fatigue**: Other causes of fatigue, such as anemia of chronic disease, could be contributing to the patient's symptoms, but they do not fully explain the cough and night sweats.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB skin test (Mantoux test)** to assess for latent or active TB infection. This is the most appropriate next step given the patient's symptoms and risk factors.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on isoniazid (INH) and rifampicin (RIF) for TB treatment, pending TB skin test results.\n* **Anemia management**: Address the patient's anemia with iron supplements and consider blood transfusion if the anemia is severe.\n* **Pulmonary function tests (PFTs)**: Consider PFTs to assess lung function and rule out other pulmonary conditions.\n* **TB sputum smear and culture**: Consider obtaining a sputum sample for smear and culture to confirm TB diagnosis.\n* **Monitor for TB treatment side effects**: Monitor the patient for side effects of TB treatment, such as liver enzyme elevations and peripheral neuropathy.",
+  "raw": {
+    "vignette_id": "VIG-018",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 446
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), and the one test I would order right now is a chest X-ray to evaluate for signs of pulmonary TB, such as upper lobe infiltrates or cavitation.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms the presence of pulmonary TB, as the culture is a confirmatory test that can identify the presence of Mycobacterium tuberculosis and its drug susceptibility pattern.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight and the standard dosing guidelines for pediatric TB treatment. For a 14-year-old girl, the typical dosing for isoniazid (INH) would be 10-15 mg/kg/day, and for rifampicin (RIF), it would be 10-20 mg/kg/day. I would calculate the patient's weight in kilograms and multiply it by the dose per kilogram to determine the total daily dose. For example, if the patient weighs 50 kg, the dose of INH would be 500-750 mg/day, and the dose of RIF would be 500-1000 mg/day. I would then convert these doses to the appropriate tablet or capsule size and frequency to ensure the patient takes the correct amount of medication at the right time.",
+  "raw": {
+    "vignette_id": "VIG-082",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 267,
+  "output_tokens": 276
+}

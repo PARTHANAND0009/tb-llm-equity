@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculosis Spinal Infection (Pott's disease) - Given the MRI findings and positive M. tuberculosis test results, this is the most likely diagnosis.\n   - Osteomyelitis - While less likely, osteomyelitis could also cause similar symptoms, but the positive TB test makes this less probable.\n   - Metastatic cancer - Metastatic cancer could potentially cause bone destruction, but the patient's history of no known cancer and the positive TB test make this less likely.\n\n2. Single next diagnostic step:\n   - Given the positive TB test, the next diagnostic step would be to confirm the TB status of the patient. This could be done by performing a Tuberculin Skin Test (TST) or Interferon-gamma release assay (IGRA) to determine if the patient has latent or active TB infection.\n\n3. Initial management plan:\n   - Start the patient on a course of anti-tuberculosis medication (e.g., isoniazid, rifampin, ethambutol, and pyrazinamide) for at least six months.\n   - Monitor the patient's response to treatment, including spinal symptoms, weight gain, and resolution of any gait abnormalities.\n   - Refer the patient to a pulmonologist for further management of the TB infection, including monitoring for drug-resistant strains and ensuring proper adherence to the treatment regimen.\n   - Consult with an orthopedic specialist to manage any spinal instability or deformity that may require surgery.\n   - Monitor the patient for potential complications such as meningitis, spinal cord compression, or paraplegia.\n   - Ensure the patient is isolated to prevent the spread of TB to others.\n   - Provide the patient with information about TB, its transmission, and the importance of adhering to the treatment regimen.\n   - Offer support for any psychological or social issues that may arise as a result of the diagnosis and treatment.",
+  "raw": {
+    "vignette_id": "VIG-031",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 312,
+  "output_tokens": 460
+}

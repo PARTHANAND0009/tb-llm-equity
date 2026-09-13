@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB) - Pulmonary TB**: The child's symptoms of cough, low energy, and refusal of food are consistent with TB, which is supported by the positive gastric aspirate for M. tuberculosis. The presence of mild right-sided crackles on exam also suggests pulmonary involvement.\n2. **Respiratory Syncytial Virus (RSV) Infection**: Although the child's symptoms started during the rainy season, RSV infection is a common cause of respiratory illness in children during this time. However, the persistence of symptoms and the positive TB test make this less likely.\n3. **Pneumonia**: The child's symptoms could also be consistent with pneumonia, but the lack of fever and the positive TB test make this less likely.\n4. **Asthma or Allergic Rhinitis**: The child's mild right-sided crackles could be consistent with asthma or allergic rhinitis, but the persistent cough and low energy are not typical presentations for these conditions.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to confirm the presence and extent of pulmonary TB. This will help to assess the child's lung involvement and guide further management.\n\n**3. Initial Management Plan:**\n\n- **TB Treatment**: Start the child on a standard 4-drug regimen for TB, including isoniazid, rifampicin, pyrazinamide, and ethambutol.\n- **Monitoring**: Monitor the child's vital signs, respiratory status, and weight closely.\n- **Nutritional Support**: Ensure the child is receiving adequate nutrition and hydration to support their recovery.\n- **TB Contact Investigation**: Investigate the child's contacts, including family members and classmates, to identify potential sources of infection and initiate TB testing.\n- **Follow-up**: Schedule follow-up appointments to monitor the child's response to treatment and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-013",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 271,
+  "output_tokens": 390
+}

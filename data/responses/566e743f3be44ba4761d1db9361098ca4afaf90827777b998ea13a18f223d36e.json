@@ -1,0 +1,15 @@
+{
+  "text": "1. No. Rifampicin resistance testing is not typically performed on the initial diagnostic specimen for TB in a patient with a known HIV infection and a positive chest X-ray suggestive of TB, as the likelihood of rifampicin resistance is low in the absence of known drug-resistant contact or prior TB treatment. The priority is to start appropriate TB treatment promptly.",
+  "raw": {
+    "vignette_id": "VIG-093",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 201,
+  "output_tokens": 74
+}

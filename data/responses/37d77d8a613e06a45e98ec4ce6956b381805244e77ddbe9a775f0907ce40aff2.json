@@ -1,0 +1,15 @@
+{
+  "text": "Yes, performing rifampicin drug-resistance testing on the initial diagnostic specimen is appropriate in this case. The patient's M. tuberculosis diagnosis and the detection of rifampicin resistance in the initial test results suggest that further testing to confirm additional drug resistance (in this case, isoniazid resistance) is necessary to guide appropriate treatment.\n\n2. What is the recommended treatment regimen for MDR-TB in a pediatric patient?\n\nThe recommended treatment regimen for MDR-TB in a pediatric patient typically involves a combination of second-line anti-TB drugs, such as bedaquiline, linezolid, clofazimine, and injectable drugs like kanamycin or amikacin. The specific regimen may vary depending on the patient's individual circumstances, drug susceptibility patterns, and local treatment guidelines.\n\n3. What precautions should be taken to prevent the spread of MDR-TB to the 6-year-old brother?\n\nTo prevent the spread of MDR-TB to the 6-year-old brother, it is important to implement airborne isolation precautions for the infected patient, such as using a well-ventilated room with a negative pressure system, wearing appropriate personal protective equipment (PPE), and ensuring that the patient covers their mouth and nose when coughing or sneezing. Additionally, the brother should be evaluated for TB infection and, if necessary, treated with preventive therapy.",
+  "raw": {
+    "vignette_id": "VIG-062",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 240,
+  "output_tokens": 323
+}

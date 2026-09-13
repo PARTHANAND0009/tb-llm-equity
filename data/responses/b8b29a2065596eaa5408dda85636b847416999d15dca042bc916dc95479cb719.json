@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Latent TB Infection (LTBI) - Given the patient's exposure to a person with MDR-TB, her age, and the absence of active TB symptoms or findings, LTBI is the most likely diagnosis.\n   2. Other considerations could be other infectious diseases that can be transmitted within the household, such as influenza, streptococcal pharyngitis, or other respiratory infections, but these are less likely given the absence of symptoms.\n\n2. Single next diagnostic step:\n   Given the TST/IGRA unavailability, the next diagnostic step would be to consider an alternative method for LTBI diagnosis, such as a Quantiferon Gold TB Gold Test (QFT), which is an interferon-gamma release assay (IGRA) that can be used to detect LTBI.\n\n3. Initial management plan:\n   - If the QFT test confirms LTBI, the initial management plan would be to initiate preventive treatment with isoniazid (INH) for 6-9 months, following the guidelines for LTBI treatment in adolescents.\n   - Regular follow-ups should be scheduled to monitor the patient's response to treatment and for potential side effects.\n   - The patient should also be educated about the importance of maintaining a healthy lifestyle, including a balanced diet, regular exercise, and adequate rest, to boost her immune system.\n   - The patient should also be advised to avoid close contact with her father during his TB treatment to minimize the risk of re-exposure.\n   - The patient should be encouraged to return for regular check-ups and testing once TST/IGRA becomes available.",
+  "raw": {
+    "vignette_id": "VIG-070",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 189,
+  "output_tokens": 380
+}

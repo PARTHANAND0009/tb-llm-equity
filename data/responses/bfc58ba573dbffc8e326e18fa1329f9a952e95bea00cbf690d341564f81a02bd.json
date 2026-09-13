@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **1. Latent Tuberculosis Infection (LTBI)**  \n     *Reasoning:* The patient is being evaluated for TB preventive treatment, and active TB has been ruled out. Given her close contact with someone diagnosed with MDR-TB and her own initiative to seek care, LTBI is the most likely diagnosis.  \n   - **2. Non-tuberculous Mycobacterial (NTM) Infection**  \n     *Reasoning:* While less likely, NTM infections can mimic LTBI and may be more common in certain populations, though not strongly indicated here.  \n   - **3. Other Mycobacterial Infections**  \n     *Reasoning:* Less likely, but possible in immunocompromised individuals, though the patient has no HIV risk factors.  \n\n2. **Single Next Diagnostic Step:**  \n   **Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA)**  \n   *Reasoning:* Since TBI testing is unavailable, TST or IGRA are the next best options to determine if the patient has LTBI. IGRA is preferred in settings where BCG vaccination is common, as it is not affected by BCG.  \n\n3. **Initial Management Plan:**  \n   - **Administer TB preventive therapy (e.g., isoniazid, rifampin, or a combination regimen)** based on the results of the TST or IGRA.  \n   - **Monitor for adverse effects** of the preventive therapy, including hepatotoxicity and drug interactions.  \n   - **Schedule follow-up** to ensure adherence to the preventive regimen and to assess for any complications.  \n   - **Educate the patient** on the importance of completing the full course of preventive therapy and the need for regular follow-up.",
+  "raw": {
+    "vignette_id": "VIG-100",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 185,
+  "output_tokens": 381
+}

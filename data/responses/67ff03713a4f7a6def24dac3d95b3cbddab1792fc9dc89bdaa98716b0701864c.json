@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Hypersensitivity Pneumonitis (HP)**: The patient's symptoms of low-grade fever and cough, along with the chest X-ray findings of pleural-based opacity and hilar prominence, are consistent with HP. The lack of cavitation and the absence of significant weight loss or peripheral lymphadenopathy also support this diagnosis.\n2. **Tuberculosis (TB)**: Although TB is a consideration, the lack of a known TB contact, no prior TB treatment, and no suspicion of drug resistance make it less likely. The absence of cavitation on the chest X-ray also makes TB less likely.\n3. **Pulmonary Infection (e.g., Mycoplasma pneumoniae)**: The patient's symptoms could be consistent with a pulmonary infection, but the lack of significant fever and the specific chest X-ray findings make this less likely.\n4. **Other Pulmonary Conditions (e.g., Lymphangitic carcinomatosis, Pulmonary Embolism)**: These conditions are less likely given the patient's age and the specific clinical presentation.\n\n**2. Next Diagnostic Step:**\n\nPerform a **High-Resolution Computed Tomography (HRCT) scan of the chest** to further evaluate the extent and characteristics of the pleural-based opacity. This will help to differentiate between HP and other pulmonary conditions, and provide more detailed information about the lung parenchyma.\n\n**3. Initial Management Plan:**\n\n* **Hospitalize the patient** to monitor her condition and provide supportive care.\n* **Administer oxygen therapy** as needed to maintain adequate oxygen saturation.\n* **Perform a thorough evaluation for potential triggers** of HP, such as exposure to organic dusts or chemicals.\n* **Consider a trial of corticosteroids** to reduce inflammation and improve symptoms, pending the results of the HRCT scan and further diagnostic testing.\n* **Continue to monitor the patient's vital signs and respiratory status**, and consider further diagnostic testing (e.g., bronchoscopy, lung biopsy) if the HRCT scan is inconclusive or if the patient's condition worsens.",
+  "raw": {
+    "vignette_id": "VIG-074",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 260,
+  "output_tokens": 431
+}

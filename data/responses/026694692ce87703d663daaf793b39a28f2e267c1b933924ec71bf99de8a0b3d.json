@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-resistant Tuberculosis (TB)**: The patient's recent diagnosis of TB, positive Sputum Xpert MTB/RIF result, and lack of rifampicin detection in the sputum strongly suggest drug-resistant TB. The patient's recent onset of TB symptoms predating her diabetes diagnosis and the fact that she hadn't mentioned the cough earlier also support this diagnosis.\n2. **New-onset TB**: The patient's symptoms and test results are consistent with TB, but the lack of rifampicin detection in the sputum suggests resistance.\n3. **Other respiratory infections**: Although less likely, other respiratory infections such as pneumonia or bronchitis could be considered, but the positive Sputum Xpert MTB/RIF result makes this less likely.\n4. **Diabetes-related complications**: The patient's recent diabetes diagnosis and well-controlled blood glucose levels make diabetes-related complications less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for pulmonary TB patterns and extent of disease. This will help confirm the diagnosis and guide further management.\n\n**3. Initial Management Plan:**\n\n- **TB treatment**: Start the patient on a four-drug regimen for drug-resistant TB, which typically includes isoniazid, pyrazinamide, ethambutol, and a fluoroquinolone (e.g., moxifloxacin or levofloxacin). \n- **TB monitoring**: Schedule regular follow-up appointments to monitor the patient's response to treatment, including regular sputum smears and cultures, and adjust the treatment regimen as needed.\n- **Diabetes management**: Continue the patient's current insulin regimen and monitor her blood glucose levels closely to ensure they remain well-controlled.\n- **TB and diabetes education**: Educate the patient and her family on the importance of adherence to both TB and diabetes treatment regimens, as well as the need for regular follow-up appointments and medication adherence.",
+  "raw": {
+    "vignette_id": "VIG-054",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 245,
+  "output_tokens": 403
+}

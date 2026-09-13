@@ -1,0 +1,15 @@
+{
+  "text": "Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. The Xpert MTB/RIF test showed that rifampicin was not detected, which suggests drug resistance. Confirming this with further testing is important to guide appropriate TB treatment.",
+  "raw": {
+    "vignette_id": "VIG-052",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 217,
+  "output_tokens": 64
+}

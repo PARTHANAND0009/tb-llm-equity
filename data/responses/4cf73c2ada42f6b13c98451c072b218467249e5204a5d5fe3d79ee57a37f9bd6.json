@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms (cough, weight loss, night sweats), positive Xpert MTB/RIF, and non-cavitary bilateral infiltrates on chest X-ray, TB is the most likely diagnosis. The negative sputum smear and undetected rifampicin could suggest drug-resistant TB, but this requires further testing.\n   2. Diabetes-related complications - While diabetes is a known comorbidity, it is not the primary cause of the symptoms presented, as they are not typically associated with uncontrolled diabetes.\n   3. Other respiratory infections - Other respiratory infections such as bacterial pneumonia or viral bronchitis could potentially cause similar symptoms, but the patient's history of working in a textile facility and the Xpert MTB/RIF results make TB more likely.\n\n2. Single next diagnostic step:\n   Perform a drug-susceptibility test (DST) on the TB isolate to determine the drug resistance pattern. This will help guide the choice of appropriate TB treatment.\n\n3. Initial management plan:\n   - Start the patient on a standard TB treatment regimen for drug-susceptible TB, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, while awaiting the results of the DST.\n   - Monitor the patient's glucose levels closely and adjust her diabetes medication as necessary to better control her blood sugar.\n   - Monitor the patient's weight and nutritional status, and provide appropriate nutritional support as needed.\n   - Monitor the patient for side effects from TB treatment and adjust the regimen as necessary.\n   - Educate the patient and her family about TB, its transmission, and the importance of adherence to the treatment regimen.\n   - Consider referring the patient to a specialist, such as an infectious disease specialist or a pulmonologist, for further management.",
+  "raw": {
+    "vignette_id": "VIG-012",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 461
+}

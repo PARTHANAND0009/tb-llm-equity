@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has severe undernutrition and wasting, which may lead to unreliable sputum smear results, and the initial diagnosis of TB is based on clinical presentation and chest X-ray findings.\n\n2. To determine the dose of each drug for this specific patient, I would use the patient's weight (36 kg) and the standard dosing guidelines for TB treatment. For a patient with a body weight of 36 kg, the recommended doses are: Isoniazid (INH) 5 mg/kg/day, Rifampicin (RIF) 10 mg/kg/day, Pyrazinamide (PZA) 20-25 mg/kg/day, and Ethambutol (EMB) 15-20 mg/kg/day. Based on these calculations, the patient's doses would be: INH 180 mg/day (3 tablets of 60 mg each), RIF 360 mg/day (36 tablets of 10 mg each), PZA 720-900 mg/day (36-45 tablets of 20-25 mg each), and EMB 540-720 mg/day (36-48 tablets of 15-20 mg each).",
+  "raw": {
+    "vignette_id": "VIG-091",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 256,
+  "output_tokens": 262
+}

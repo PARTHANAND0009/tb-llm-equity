@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Multi-drug resistant Tuberculosis (MDR-TB) - Given the positive M. tuberculosis sputum test, the patient's symptoms, and the resistance profile, MDR-TB is the most likely diagnosis.\n\n2. Single next diagnostic step:\n   - Immediate isolation of the patient to prevent further spread of the infection.\n\n3. Initial management plan:\n   - Start the patient on a regimen for the treatment of MDR-TB, following guidelines for pre-XDR-TB. This will likely involve second-line anti-TB drugs, such as bedaquiline, linezolid, and clofazimine, and will require close monitoring for drug interactions, side effects, and treatment response.\n   - Notify local public health authorities to initiate contact tracing, especially for the grandson who lives with the patient. The grandson should be evaluated for latent TB infection and, if infected, treated to prevent progression to active disease.\n   - Coordinate with a TB specialist or infectious disease specialist for ongoing management and monitoring of the patient's condition.\n   - Ensure the patient has access to adequate nutrition, psychological support, and social services to help manage the challenges of MDR-TB treatment.",
+  "raw": {
+    "vignette_id": "VIG-060",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 299,
+  "output_tokens": 291
+}

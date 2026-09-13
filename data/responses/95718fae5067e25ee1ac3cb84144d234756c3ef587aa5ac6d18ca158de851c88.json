@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **TB Meningitis**: The patient's lethargy, worsening condition, and positive M. tuberculosis in the gastric aspirate suggest central nervous system involvement, which is a common complication of TB in children.\n2. **TB Pneumonia**: The patient's cough and mild crackles on exam are consistent with pulmonary TB, which is a common presentation in children.\n3. **TB Osteomyelitis**: Although less likely, TB osteomyelitis cannot be ruled out, especially given the patient's severe wasting, which may indicate underlying bone involvement.\n4. **TB Miliary Disease**: This is less likely given the patient's localized symptoms and the absence of systemic symptoms such as fever or weight loss.\n\n**2. Next Diagnostic Step:**\n\nPerform a lumbar puncture (LP) to collect cerebrospinal fluid (CSF) for analysis, including TB culture, smear, and PCR. This is crucial to diagnose TB meningitis, which is the most likely diagnosis based on the patient's presentation.\n\n**3. Initial Management Plan:**\n\n- **TB Meningitis**: \n  - Administer isoniazid (INH), rifampicin (RIF), pyrazinamide (PZA), and ethambutol (EMB) as first-line treatment for TB meningitis.\n  - Consider adding corticosteroids (e.g., dexamethasone) to reduce inflammation and prevent long-term neurological damage.\n  - Monitor for signs of TB meningitis complications, such as seizures, increased intracranial pressure, or cranial nerve palsies.\n- **TB Pneumonia**:\n  - Continue the patient's current TB treatment regimen (if started) or initiate it if not already done.\n  - Provide supportive care, including hydration, nutrition, and oxygen therapy as needed.\n- **TB Osteomyelitis**:\n  - Continue the patient's current TB treatment regimen (if started) or initiate it if not already done.\n  - Consider imaging studies (e.g., X-rays, CT scans) to evaluate bone involvement.\n- **TB Miliary Disease**:\n  - Continue the patient's current TB treatment regimen (if started) or initiate it if not already done.\n  - Monitor for signs of systemic TB, such as fever, weight loss, or hepatosplenomegaly.",
+  "raw": {
+    "vignette_id": "VIG-053",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 235,
+  "output_tokens": 488
+}

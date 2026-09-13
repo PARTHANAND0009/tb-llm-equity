@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis (TB) infection**: The patient is a high-risk individual (HIV-positive) who has been vaccinated with BCG as an infant, increasing the likelihood of latent TB infection. The patient's recent mild, resolving cold may be a symptom of TB infection, and the lack of TST or IGRA testing does not rule out latent TB infection.\n\n2. **Respiratory Syncytial Virus (RSV) infection**: The patient's mild, resolving cold could be a symptom of RSV infection, which is common in children and can be more severe in immunocompromised individuals.\n\n3. **Common cold**: The patient's symptoms could be a simple common cold, which is unlikely but still a possibility given the mild and resolving nature of the symptoms.\n\n4. **Other opportunistic infections**: Given the patient's HIV status, other opportunistic infections such as Pneumocystis jirovecii pneumonia or cryptococcal infection could be considered, but these are less likely given the patient's well-appearing status and lack of acute findings.\n\n**2. Next Diagnostic Step:**\n\nPerform an IGRA (Interferon-gamma release assay) test to assess for latent TB infection. This is the preferred test for latent TB infection in HIV-positive individuals, as it is more specific than the TST and does not require a booster dose of BCG vaccine.\n\n**3. Initial Management Plan:**\n\n- Continue routine HIV care and antiretroviral therapy.\n- Administer isoniazid (INH) for TB preventive treatment, pending IGRA results, as per World Health Organization (WHO) guidelines for HIV-positive individuals.\n- Monitor the patient's symptoms and vital signs closely for any signs of worsening respiratory illness or other opportunistic infections.\n- Consider RSV testing if the patient's symptoms worsen or if there is a high suspicion of RSV infection.\n- Provide education on TB preventive treatment and the importance of adherence to antiretroviral therapy.",
+  "raw": {
+    "vignette_id": "VIG-065",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 218,
+  "output_tokens": 415
+}

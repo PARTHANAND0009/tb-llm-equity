@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Latent Tuberculosis Infection (LTBI)**  \n   - **Reasoning:** The patient is HIV-positive and on antiretroviral therapy, which places her at increased risk for TB. She is being evaluated for TB preventive treatment, and active TB has been ruled out. Given her HIV status and lack of TBI testing, LTBI is the most likely diagnosis. BCG vaccination in the past does not reliably predict TB status in adults, especially in someone with HIV.\n\n2. **HIV-Related Immune Suppression (e.g., opportunistic infections)**  \n   - **Reasoning:** While active TB has been ruled out, the patient's immune status (due to HIV and long-term ART) could lead to other opportunistic infections. However, this is less likely than LTBI given the context of TB preventive treatment.\n\n3. **Non-TB Mycobacterial Infection**  \n   - **Reasoning:** Non-tuberculous mycobacteria (NTM) can cause infection in immunocompromised individuals, but this is less common than LTBI in someone being evaluated for TB preventive treatment.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA) to assess for TB infection.**  \n- Given the limited availability of TBI testing, IGRA is preferred in HIV-positive individuals due to its higher specificity and less likelihood of false positives from BCG vaccination. IGRA is also more convenient and does not require a return visit for reading.\n\n---\n\n3. **Initial Management Plan:**\n\n- **If IGRA is positive or TST is positive:** Initiate TB preventive therapy (e.g., isoniazid, rifapentine, or rifampin) as per guidelines for HIV-positive individuals. Monitor for hepatotoxicity and ensure adherence.\n- **If IGRA is negative or TST is negative:** Continue routine HIV care and consider repeat testing in 6\u201312 months, especially if there is a high risk of TB exposure.\n- **Monitor for side effects of TB preventive therapy.**\n- **Continue antiretroviral therapy and manage hypertension as per current regimen.**\n- **Educate the patient on TB prevention, adherence to ART, and the importance of follow-up.**",
+  "raw": {
+    "vignette_id": "VIG-068",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 188,
+  "output_tokens": 489
+}

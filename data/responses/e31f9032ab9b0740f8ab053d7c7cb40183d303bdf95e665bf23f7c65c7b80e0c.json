@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Pre-XDR-TB (Multidrug-resistant Tuberculosis with resistance to rifampicin, isoniazid, and fluoroquinolones) - Given the positive M. tuberculosis test results, the patient's symptoms, and the confirmed drug resistance, this is the most likely diagnosis.\n   2. Malnutrition-related complications - The patient's severe acute malnutrition and wasting may contribute to his lethargy and overall health status, but it is not the primary cause of his cough and drug-resistant TB.\n   3. Other infectious diseases - Given the patient's immunocompromised state due to malnutrition and TB, other infectious diseases such as pneumonia, bacterial or viral, should be considered, but they are less likely given the specific TB findings.\n\n2. Single next diagnostic step:\n   Obtain a chest X-ray to assess the extent of lung involvement and rule out any complications such as cavitation or pleural effusion.\n\n3. Initial management plan:\n   - Start the patient on a second-line TB treatment regimen, following the guidelines for the management of pre-XDR-TB. This will likely include drugs such as bedaquiline, linezolid, and clofazimine, but the exact regimen should be determined by a TB specialist or infectious disease specialist.\n   - Address the malnutrition by providing nutritional support and addressing any underlying causes.\n   - Monitor the patient closely for adverse effects from the TB treatment, as second-line drugs can have significant side effects.\n   - Ensure the patient is isolated to prevent further spread of the disease.\n   - Consult with a pediatrician experienced in TB treatment to manage the patient's care.\n   - Consider testing the patient for HIV, as it can increase the risk of drug-resistant TB and may affect the treatment plan.\n   - Notify public health authorities to initiate contact tracing, as the patient has pre-XDR-TB and there may be others at risk.\n   - Monitor the patient's sister for TB infection, as she may be at risk due to her exposure to the aunt with MDR-TB two years ago.",
+  "raw": {
+    "vignette_id": "VIG-057",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 289,
+  "output_tokens": 509
+}

@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB) pleurisy**: The patient's symptoms of progressive breathlessness, right-sided chest pain, and low-grade fevers, combined with the presence of a moderate right-sided pleural effusion and positive pleural fluid M. tuberculosis molecular testing, strongly suggest TB pleurisy.\n2. **Cardiac tamponade**: Although the patient has rheumatic heart disease, the presence of a pleural effusion and TB pleurisy makes cardiac tamponade less likely, but it cannot be ruled out entirely.\n3. **Pulmonary embolism**: The patient's symptoms could be attributed to a pulmonary embolism, but the presence of a pleural effusion and TB pleurisy makes this less likely.\n4. **Pneumonia**: The patient's symptoms could be attributed to pneumonia, but the presence of a pleural effusion and TB pleurisy makes this less likely.\n5. **Rheumatic heart disease exacerbation**: Although the patient has a known history of rheumatic heart disease, the presence of a pleural effusion and TB pleurisy makes this less likely as the primary cause of her symptoms.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest CT scan with contrast to evaluate for any pulmonary or pleural abnormalities, such as lung cavitation or pleural thickening, which can be associated with TB pleurisy.\n\n**3. Initial Management Plan:**\n\n* Start the patient on isoniazid, rifampicin, pyrazinamide, and ethambutol (the standard first-line treatment for TB) and adjust the regimen based on the patient's TB susceptibility testing results.\n* Administer corticosteroids to reduce inflammation and prevent further pleural scarring.\n* Monitor the patient's vital signs, oxygen saturation, and respiratory status closely.\n* Consider thoracentesis to drain the pleural effusion if it is causing significant respiratory distress.\n* Refer the patient to a pulmonologist or infectious disease specialist for further management and guidance.",
+  "raw": {
+    "vignette_id": "VIG-030",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 275,
+  "output_tokens": 422
+}

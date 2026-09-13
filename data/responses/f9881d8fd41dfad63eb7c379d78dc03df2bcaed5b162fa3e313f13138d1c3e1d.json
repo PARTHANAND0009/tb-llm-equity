@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Latent Tuberculosis (LTBI)**\n   - Reasoning: The patient shares a household with someone diagnosed with MDR-TB, increasing his risk of exposure and subsequent infection. The patient has been vaccinated with BCG as a child, which provides some protection against TB, but does not guarantee immunity. The absence of symptoms and normal chest imaging further supports the likelihood of LTBI.\n\n2. **TB disease (TB disease)**\n   - Reasoning: Although active TB disease has been ruled out through symptom screening and chest imaging, it cannot be completely eliminated as a possibility, especially given the patient's exposure to someone with MDR-TB.\n\n3. **Other respiratory infections (e.g., pneumonia, bronchitis)**\n   - Reasoning: Although less likely given the patient's exposure to MDR-TB and the lack of symptoms, other respiratory infections cannot be completely ruled out without further testing.\n\n4. **Other conditions (e.g., lung cancer, sarcoidosis)**\n   - Reasoning: These conditions are less likely given the patient's age and lack of symptoms, but cannot be completely ruled out without further testing.\n\n**2. Next Diagnostic Step:**\nPerform an **Interferon-Gamma Release Assay (IGRA) test** to assess the patient's immune response to TB antigens. This test is more specific than the Mantoux test and can help confirm the presence of LTBI or TB disease.\n\n**3. Initial Management Plan:**\n- **TB Preventive Treatment**: Offer the patient isoniazid (INH) monotherapy for 6-9 months, as per the guidelines for LTBI treatment in individuals exposed to MDR-TB. Monitor the patient for side effects and adjust the treatment plan as needed.\n- **Follow-up**: Schedule a follow-up appointment to review the patient's response to treatment, monitor for any side effects, and assess the need for further testing or treatment adjustments.\n- **TB Disease Screening**: Continue to monitor the patient for signs and symptoms of active TB disease, and consider re-screening if symptoms develop or if the IGRA test result is positive.",
+  "raw": {
+    "vignette_id": "VIG-067",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 207,
+  "output_tokens": 446
+}

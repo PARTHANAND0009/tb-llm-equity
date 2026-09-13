@@ -1,0 +1,15 @@
+{
+  "text": "1. I would send a mycobacterial culture on this patient after the Xpert MTB/RIF test, as it is a rapid and sensitive test for diagnosing TB, but it may not detect all strains of TB. The culture will provide a definitive diagnosis and help identify any potential drug resistance. This is especially important since the Xpert MTB/RIF test was positive but rifampicin was not detected.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, I would start a 6-month treatment regimen with a 2-month intensive phase (phase 1) followed by a 4-month continuation phase (phase 2). \n   (a) Phase 1 would involve taking 2 drugs (isoniazid and rifampicin) daily for 2 months, and phase 2 would involve taking 1 drug (isoniazid) daily for 4 months.\n   (b) The patient would take the medication once daily, with the option to take it with food to improve absorption.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight and body surface area (BSA) to calculate the dose. The patient's weight is 55 kg, and assuming a BSA of approximately 1.5 m^2 (based on a typical adult male), I would use the following calculations:\n   - Isoniazid: 5 mg/kg/day (usual adult dose) = 275 mg/day, which is equivalent to 1 tablet of 300 mg (or 2 tablets of 150 mg) per day.\n   - Rifampicin: 10 mg/kg/day (usual adult dose) = 550 mg/day, which is equivalent to 2 tablets of 300 mg (or 4 tablets of 150 mg) per day.\n   - Pyrazinamide: 15-20 mg/kg/day (usual adult dose) = 825-1100 mg/day, which is equivalent to 2-3 tablets of 400 mg (or 4-6 tablets of 200 mg) per day.\n   - Ethambutol: 15-20 mg/kg/day (usual adult dose) = 825-1100 mg/day, which is equivalent to 2-3 tablets of 400 mg (or 4-6 tablets of 200 mg) per day.\n   - Isoniazid and rifampicin would be taken daily, while pyrazinamide and ethambutol would be taken for the first 2 months (phase 1) and then discontinued.",
+  "raw": {
+    "vignette_id": "VIG-007",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 367,
+  "output_tokens": 532
+}

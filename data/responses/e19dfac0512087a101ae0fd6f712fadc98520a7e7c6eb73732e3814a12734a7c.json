@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-resistant Tuberculosis (TB)**: The patient's Xpert MTB/RIF test is positive, indicating the presence of Mycobacterium tuberculosis. However, the rifampicin resistance suggests that the TB may be resistant to the standard first-line treatment, making it a more complex case.\n2. **Non-tuberculous mycobacterial infection**: The patient's symptoms and Xpert MTB/RIF results could also be indicative of a non-tuberculous mycobacterial infection, which may also be resistant to rifampicin.\n3. **Chronic bronchitis or asthma**: The patient's cough and mild crackles could be indicative of a chronic respiratory condition such as bronchitis or asthma, although the lack of response to treatment and the Xpert MTB/RIF results make this less likely.\n4. **Lung cancer**: The patient's age and non-cavitary infiltrate on the chest X-ray could suggest lung cancer, although this would be less likely given the patient's symptoms and the lack of other risk factors.\n\n**2. Next Diagnostic Step:**\n\nPerform a **Molecular testing for TB drug resistance** (e.g., Xpert MTB/RIF Ultra or GenoType MTBDRplus) to further characterize the TB strain and guide treatment.\n\n**3. Initial Management Plan:**\n\n* **Admit the patient to the hospital** for close monitoring and treatment initiation.\n* **Start empirical TB treatment** with a combination of isoniazid, pyrazinamide, and ethambutol, pending further diagnostic results.\n* **Administer oxygen therapy** to help manage symptoms and prevent hypoxia.\n* **Monitor the patient's vital signs and respiratory status** closely, including oxygen saturation, pulse rate, and respiratory rate.\n* **Consider consulting a pulmonologist or infectious disease specialist** for further guidance on management and treatment.",
+  "raw": {
+    "vignette_id": "VIG-076",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 241,
+  "output_tokens": 395
+}

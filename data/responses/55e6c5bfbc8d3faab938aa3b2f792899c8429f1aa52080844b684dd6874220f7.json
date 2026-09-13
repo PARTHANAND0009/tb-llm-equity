@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB) of the Kidney (Renal TB)**  \n   - **Reasoning:** The patient presents with intermittent painless hematuria, sterile pyuria, and imaging findings of renal scarring and irregularity of the collecting system. Molecular testing confirmed *Mycobacterium tuberculosis*, making this the most likely diagnosis. The absence of bacterial growth on culture is consistent with TB, which is acid-fast and not detected by standard bacterial cultures.\n\n2. **Urological malignancy (e.g., renal cell carcinoma, transitional cell carcinoma)**  \n   - **Reasoning:** Hematuria, flank mass, and weight loss are also seen in urological cancers. However, the presence of pyuria and positive TB testing makes TB more likely than malignancy at this point.\n\n3. **Chronic pyelonephritis**  \n   - **Reasoning:** Chronic infection can lead to scarring and hematuria, but the presence of TB on molecular testing makes this less likely unless TB is a secondary infection.\n\n4. **Glomerulonephritis**  \n   - **Reasoning:** Hematuria and proteinuria are common, but pyuria and imaging findings are less typical. Also, the patient has no history of recent infection or immune disease.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a complete renal and bladder ultrasound (or CT urogram) to assess for renal parenchymal damage, hydronephrosis, or bladder involvement.**  \n- This will help confirm the extent of renal involvement and identify any bladder lesions or stones that may be contributing to hematuria.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Start anti-tuberculosis therapy (ATT):**  \n  - Begin a standard regimen for TB, including isoniazid, rifampin, pyrazinamide, and ethambutol. Monitor for drug toxicity (e.g., optic neuritis with ethambutol, hepatotoxicity with isoniazid).\n  \n- **Monitor renal function and urine output:**  \n  - Regularly check serum creatinine, blood urea nitrogen (BUN), and urine output to assess for renal function and possible obstruction.\n\n- **Perform a voiding cystourethrogram (VCUG) if bladder involvement is suspected:**  \n  - To rule out bladder TB or complications like bladder strictures.\n\n- **Consider referral to a urologist and infectious disease specialist:**  \n  - For further evaluation and management of renal TB, including possible surgical intervention if needed.\n\n- **Monitor for weight loss and other systemic symptoms:**  \n  - TB can present with constitutional symptoms, so ongoing monitoring for fever, night sweats, and fatigue is important.",
+  "raw": {
+    "vignette_id": "VIG-044",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 248,
+  "output_tokens": 571
+}

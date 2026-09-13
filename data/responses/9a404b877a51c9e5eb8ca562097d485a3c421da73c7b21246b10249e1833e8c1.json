@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculous lymphadenitis (TB lymphadenopathy) - Given the positive M. tuberculosis molecular test results from the fine-needle aspiration of the axillary node, this is the most likely diagnosis. The gradual enlargement, lack of pain, and absence of overlying skin changes support this diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray or CT scan of the chest - To assess for active pulmonary TB, which is common in pediatric TB cases. If the chest X-ray is negative, a more detailed evaluation of the lymph nodes (e.g., ultrasound or CT scan) may be necessary to determine the extent of the disease.\n\n3. Initial management plan:\n   - Start empiric anti-tuberculosis therapy (e.g., isoniazid, rifampin, ethambutol, pyrazinamide) - This should be initiated as soon as possible, following local guidelines for pediatric TB treatment.\n   - Monitor for adverse effects of the anti-tuberculosis therapy and for signs of treatment response (e.g., reduction in size of the lymph node, resolution of fever).\n   - Consult a pediatric infectious disease specialist for further management and guidance.\n   - Consider TB prophylaxis for close contacts, if appropriate.\n   - Ensure proper nutrition and follow-up appointments for the patient.\n   - Inform the local health department about the case to prevent further spread of TB.",
+  "raw": {
+    "vignette_id": "VIG-085",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 247,
+  "output_tokens": 359
+}

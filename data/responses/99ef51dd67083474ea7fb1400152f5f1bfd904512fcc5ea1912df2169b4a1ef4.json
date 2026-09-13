@@ -1,0 +1,15 @@
+{
+  "text": "1. No, rifampicin drug-resistance testing on the initial diagnostic specimen is not necessary in this case, as the patient's gastric aspirate has already been tested and found to be resistant to rifampicin. Performing the test on the initial specimen would not provide any new information and would not change the treatment plan. The follow-up testing on the gastric aspirate is sufficient for determining the resistance pattern.",
+  "raw": {
+    "vignette_id": "VIG-061",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 241,
+  "output_tokens": 84
+}

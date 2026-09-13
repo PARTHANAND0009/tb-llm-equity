@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **TB Infection (Latent TB Infection, LTBI)**  \n   - **Reasoning:** The patient is at high risk due to close contact with a person with active TB, and she is being evaluated for TB preventive treatment. She has no signs of active disease, and BCG vaccination does not preclude LTBI. Given the exposure and lack of active disease, LTBI is the most likely diagnosis.\n\n2. **Asthma Exacerbation**  \n   - **Reasoning:** The patient has a known history of asthma with daily controller medication and has mild expiratory wheeze on exam. While not a differential for TB, it is important to consider that asthma could be the underlying issue, especially if there is a recent exacerbation or if the wheeze is more prominent than expected.\n\n3. **Other Mycobacterial Infections (e.g., Nontuberculous Mycobacteria, NTM)**  \n   - **Reasoning:** While less likely, NTM infections can occur in individuals with chronic lung disease, such as asthma, and may present with similar symptoms. However, without specific risk factors or clinical features, this is a lower priority.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA)**  \n- **Reasoning:** Given the patient's exposure to active TB and the need for preventive treatment, a TST or IGRA is the next step to determine if she has latent TB infection. IGRA is preferred in individuals with a history of BCG vaccination, as it is not affected by prior BCG exposure.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Administer TB preventive treatment (e.g., isoniazid, INH) if LTBI is confirmed.**  \n- **Monitor for adverse effects of INH (e.g., hepatotoxicity, peripheral neuropathy).**  \n- **Continue asthma management with current controller medications.**  \n- **Schedule follow-up to assess response to treatment and monitor for side effects.**  \n- **Consider a chest X-ray if there is any concern for active TB or if symptoms worsen.**  \n- **Educate the patient and family on TB prevention and the importance of completing the preventive treatment regimen.**",
+  "raw": {
+    "vignette_id": "VIG-066",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 179,
+  "output_tokens": 487
+}

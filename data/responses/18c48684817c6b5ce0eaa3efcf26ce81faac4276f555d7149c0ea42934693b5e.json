@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the presented symptoms and the chest X-ray findings, the single most likely diagnosis is drug-susceptible pulmonary tuberculosis (TB). To confirm this, a Sputum Acid-Fast Bacilli (AFB) smear and culture would be the initial test ordered.\n\n2. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed:\n   a) The treatment regimen typically consists of two phases:\n      - Intensive phase: 2 months (8 weeks)\n      - Continuation phase: 4 months (16 weeks)\n   b) During the intensive phase, the patient takes medication daily.\n      - Isoniazid (INH), Rifampin (RIF), Ethambutol (EMB), and Pyrazinamide (PZA) are given daily.\n   - During the continuation phase, INH and RIF are given daily, while EMB is given three times a week.\n\n3. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed:\n   The dose of each drug for this specific patient would be determined based on the patient's weight, age, and kidney function.\n   - Isoniazid: The usual adult dose is 300 mg daily, but for a 70-year-old patient, the dose may be adjusted based on kidney function.\n   - Rifampin: The usual adult dose is 600 mg daily, but for a 70-year-old patient, the dose may be adjusted based on liver function.\n   - Ethambutol: The usual adult dose is 15 mg/kg daily, but for a 70-year-old patient, the dose may be adjusted based on kidney function.\n   - Pyrazinamide: The usual adult dose is 15-30 mg/kg daily, but for a 70-year-old patient, the dose may be adjusted based on liver function.",
+  "raw": {
+    "vignette_id": "VIG-028",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 338,
+  "output_tokens": 450
+}

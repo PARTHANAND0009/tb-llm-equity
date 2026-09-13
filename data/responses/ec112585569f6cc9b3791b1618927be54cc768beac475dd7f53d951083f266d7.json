@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Pulmonary TB (PTB) with pre-XDR-TB resistance pattern**: The patient's symptoms of cough and progressive breathlessness, combined with the positive sputum test for M. tuberculosis and the presence of pre-XDR-TB resistance pattern, make this the most likely diagnosis.\n2. **COPD exacerbation**: Although the patient has a known severe COPD baseline, the progressive nature of her symptoms and the positive TB test suggest that her COPD may be exacerbated by an underlying infection.\n3. **Other respiratory infections**: Other respiratory infections, such as pneumonia or bronchitis, could be contributing to the patient's symptoms, but the presence of TB makes this less likely.\n\n**2. Next Diagnostic Step:**\n\nI would order a **chest CT scan** to confirm the presence of pulmonary TB and assess the extent of lung involvement. This will help guide further treatment and management.\n\n**3. Initial Management Plan:**\n\n1. **Isolate the patient**: To prevent transmission of TB to others, the patient should be isolated in a well-ventilated area or a negative pressure room.\n2. **Start empirical treatment**: Begin treatment with a combination of isoniazid, pyrazinamide, and ethambutol, as the patient is resistant to rifampicin and fluoroquinolones.\n3. **Contact tracing**: Identify and evaluate the patient's grandson, who lives with her, for TB infection and consider preventive therapy if necessary.\n4. **Monitor and manage COPD**: Continue to manage the patient's COPD with her usual medications and oxygen therapy as needed.\n5. **Follow-up and monitoring**: Schedule regular follow-up appointments to monitor the patient's response to treatment and adjust the treatment regimen as needed.",
+  "raw": {
+    "vignette_id": "VIG-060",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 300,
+  "output_tokens": 370
+}

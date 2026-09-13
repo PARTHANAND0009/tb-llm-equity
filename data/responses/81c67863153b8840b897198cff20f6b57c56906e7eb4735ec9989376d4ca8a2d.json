@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of cough and profound fatigue, combined with her history of recent travel (moving to live with her in-laws) and the presence of night sweats, are classic for TB. The patient's anemia, which may be exacerbated by her bleeding disorder, could be a result of chronic infection.\n2. **Pulmonary Embolism**: The patient's fatigue and anemia could be related to a pulmonary embolism, especially given her history of bleeding disorder and recent change in environment.\n3. **Pneumonia**: The patient's cough and fatigue could be symptoms of pneumonia, but the presence of night sweats and anemia make TB a more likely diagnosis.\n4. **Anemia-related fatigue**: The patient's anemia could be the primary cause of her fatigue, but the presence of cough and night sweats suggests a more complex underlying issue.\n5. **Other respiratory infections**: Other respiratory infections, such as bronchitis or bronchiolitis, could be considered, but the patient's symptoms and history make TB a more likely diagnosis.\n\n**Next Diagnostic Step:**\n\nI would order a **TB skin test (Mantoux test)** to assess for latent or active TB infection. This is the most direct and non-invasive way to diagnose TB, and it will help determine if the patient has been exposed to TB in the past.\n\n**Initial Management Plan:**\n\n1. **TB skin test (Mantoux test)**: This will help determine if the patient has been exposed to TB in the past.\n2. **Complete Blood Count (CBC)**: To assess the severity of anemia and rule out other causes of fatigue.\n3. **Chest X-ray**: To evaluate the lungs for signs of infection or disease.\n4. **TB culture and sensitivity testing**: If the TB skin test is positive, this will help determine if the patient has active TB and which antibiotics are effective against the strain.\n5. **Iron supplementation**: Continue to manage the patient's anemia with iron supplementation, but monitor closely for signs of worsening anemia or other complications.\n6. **Rest and hydration**: Encourage the patient to rest and stay hydrated to help manage fatigue and anemia.",
+  "raw": {
+    "vignette_id": "VIG-078",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 201,
+  "output_tokens": 463
+}

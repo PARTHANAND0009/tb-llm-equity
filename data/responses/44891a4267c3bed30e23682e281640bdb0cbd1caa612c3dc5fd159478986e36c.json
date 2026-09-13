@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Genitourinary Tuberculosis (TB)**: The patient's symptoms of intermittent painless hematuria, sterile pyuria, and positive molecular testing for M. tuberculosis in the urine strongly suggest genitourinary TB. The patient's age and history of factory work also increase her risk for TB exposure.\n2. **Kidney Stones**: The patient's intermittent gross hematuria and imaging showing irregularity and scarring of the right renal collecting system could be consistent with kidney stones, but the painless nature of the hematuria and the presence of sterile pyuria make this less likely.\n3. **Kidney Cancer**: The patient's age and weight loss could be concerning for kidney cancer, but the presence of hematuria and sterile pyuria are more typical of an infectious process.\n4. **Chronic Pyelonephritis**: The patient's sterile pyuria and imaging findings could be consistent with chronic pyelonephritis, but the lack of fever or other signs of infection makes this less likely.\n\n**2. Next Diagnostic Step:**\nPerform an **intercostal tuberculosis skin test (TST)** to confirm the diagnosis of TB and assess the patient's immune response. This is a crucial step to confirm the diagnosis and rule out other causes of the patient's symptoms.\n\n**3. Initial Management Plan:**\nGiven the diagnosis of genitourinary TB, the initial management plan would be to start the patient on **antitubercular therapy (ATT)**, which typically consists of a combination of isoniazid, rifampicin, pyrazinamide, and ethambutol. The patient should also be referred to a specialist for further evaluation and management of the genitourinary TB, which may involve surgical intervention or other treatments.",
+  "raw": {
+    "vignette_id": "VIG-044",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 271,
+  "output_tokens": 371
+}

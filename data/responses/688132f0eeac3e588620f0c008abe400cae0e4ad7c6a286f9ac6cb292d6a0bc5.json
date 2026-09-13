@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of a persistent cough, progressive tiredness, and left-sided crackles, the single most likely diagnosis for this 17-year-old woman is drug-susceptible pulmonary tuberculosis (TB). To evaluate this, a Sputum Acid-Fast Bacilli (AFB) smear and culture would be the one test ordered right now.\n2. You would send a mycobacterial culture on this patient if the initial AFB smear and culture are positive for TB, or if the patient's condition worsens or fails to improve with appropriate antibiotics. Sending a culture at the initial presentation is not typically done, as it takes several weeks for the culture to grow, and the patient can be started on empiric TB treatment while waiting for culture results.\n3. Assuming the initial test confirms drug-susceptible pulmonary TB, the dose of each drug for this specific patient would be determined based on the patient's weight, age, and any other relevant factors such as renal or hepatic function. For example, the recommended initial dose of isoniazid (INH) for an adult with normal renal function is 300 mg daily, but for a 17-year-old, the dose would be adjusted based on body weight, typically around 10-15 mg/kg/day. The dose of rifampin is usually 600 mg daily for adults, but for a 17-year-old, the dose would be adjusted based on body weight, typically around 10 mg/kg/day. Ethambutol and pyrazinamide doses would also be adjusted based on body weight. The actual dose or tablet count would be calculated based on the patient's weight and the dosage strength of the medication.",
+  "raw": {
+    "vignette_id": "VIG-014",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 303,
+  "output_tokens": 406
+}

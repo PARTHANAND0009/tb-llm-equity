@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-resistant Tuberculosis (TB)**: The patient has a positive Xpert MTB/RIF test, which suggests TB infection. However, the rifampicin resistance pattern (rifampicin not detected) indicates that the TB strain is likely resistant to rifampicin, a first-line TB medication. This makes drug-resistant TB the most likely diagnosis.\n2. **Non-resistant Tuberculosis (TB)**: The patient's symptoms and test results are consistent with TB, but the rifampicin resistance pattern suggests that the TB strain may not be fully resistant to all medications.\n3. **Other respiratory infections**: The patient's symptoms could be caused by other respiratory infections, such as pneumonia or bronchitis, but the presence of a non-cavitary infiltrate on chest imaging and the positive Xpert MTB/RIF test make these less likely.\n4. **Other conditions**: The patient's unintentional weight loss and cough could be caused by other conditions, such as lung cancer or chronic obstructive pulmonary disease (COPD), but these are less likely given the patient's age and symptoms.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB culture and drug susceptibility testing (DST)**: This will help determine the specific TB strain and its antibiotic resistance pattern, which will guide the selection of appropriate treatment.\n\n**3. Initial Management Plan:**\n\n* **TB treatment initiation**: Start the patient on a regimen of isoniazid, pyrazinamide, and ethambutol, pending the results of the TB culture and DST.\n* **Cough management**: Encourage the patient to expectorate sputum and provide a sputum container for collection.\n* **Weight loss management**: Assess the patient's diet and provide guidance on healthy eating habits.\n* **Follow-up**: Schedule a follow-up appointment to review the patient's response to treatment and to discuss the results of the TB culture and DST.",
+  "raw": {
+    "vignette_id": "VIG-007",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 271,
+  "output_tokens": 401
+}

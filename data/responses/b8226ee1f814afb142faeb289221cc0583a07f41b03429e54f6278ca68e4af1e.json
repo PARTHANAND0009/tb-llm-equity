@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The patient's symptoms of cough for over three months, cavitary disease on chest X-ray, and lack of known TB contact or prior TB treatment make TB a high suspicion. The patient's diabetes, which can impair the immune system, also increases the risk of TB.\n2. **Diabetic Ketoacidosis (DKA)**: The patient's high blood glucose (245 mg/dl), polyuria, and increased thirst could be indicative of DKA, a complication of diabetes. However, the presence of cough and cavitary disease on chest X-ray makes DKA less likely as the primary diagnosis.\n3. **Chronic Obstructive Pulmonary Disease (COPD)**: The patient's history of exposure to workplace fumes and symptoms of cough could suggest COPD. However, the presence of cavitary disease on chest X-ray and the patient's age make TB a more likely diagnosis.\n4. **Pneumonia**: The patient's symptoms of cough and mild crackles bilaterally could suggest pneumonia. However, the presence of cavitary disease on chest X-ray and the patient's history make TB a more likely diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB skin test (Mantoux test)** to assess the patient's immune response to TB. This will help confirm or rule out TB as the primary diagnosis.\n\n**3. Initial Management Plan:**\n\n* **Hospitalize the patient** to manage her diabetes and potential TB symptoms.\n* **Administer IV fluids** to manage dehydration and hyperglycemia.\n* **Monitor blood glucose levels** closely and adjust insulin therapy as needed.\n* **Start empirical TB treatment** with isoniazid, rifampicin, pyrazinamide, and ethambutol, pending TB skin test results.\n* **Chest X-ray follow-up** to monitor disease progression and response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-092",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 216,
+  "output_tokens": 404
+}

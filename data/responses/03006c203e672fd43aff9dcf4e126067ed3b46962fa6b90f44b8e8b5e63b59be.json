@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's six-week history of cough, night sweats, and lack of energy are classic symptoms of TB. The patient's occupation and living environment on a smallholding may increase her risk of exposure to TB. The presence of mild right apical crackles on examination is also consistent with TB.\n2. **Chronic Bronchitis**: The patient's cough and low energy could be attributed to chronic bronchitis, especially given her occupation and recent increase in workload. However, the presence of night sweats and the duration of symptoms make TB a more likely diagnosis.\n3. **Asthma or Allergic Rhinitis**: The patient's symptoms could also be attributed to asthma or allergic rhinitis, but the lack of respiratory distress and the presence of night sweats make these diagnoses less likely.\n4. **Chronic Obstructive Pulmonary Disease (COPD)**: COPD is unlikely given the patient's age and lack of smoking history.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess for any abnormalities in the lungs, such as cavitations or fibrosis, which are common in TB. This will help confirm or rule out TB as the primary diagnosis.\n\n**3. Initial Management Plan:**\n\n* **Isolate the patient**: To prevent the spread of TB, the patient should be isolated from family members and others who may be at risk.\n* **TB testing**: Perform a **TB skin test (Mantoux test)** to assess for latent or active TB infection.\n* **Chest X-ray**: As mentioned earlier, to assess for any abnormalities in the lungs.\n* **TB culture and sensitivity testing**: If TB is suspected, collect a sputum sample for culture and sensitivity testing to determine the best treatment regimen.\n* **Referral to a specialist**: Refer the patient to a pulmonologist or infectious disease specialist for further evaluation and management.",
+  "raw": {
+    "vignette_id": "VIG-010",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 231,
+  "output_tokens": 405
+}

@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The patient's symptoms of cough, progressive weight loss, and night sweats are classic for TB, especially given the duration of symptoms. The presence of upper zone crackles on exam also supports this diagnosis.\n2. **Pneumonia**: The patient's symptoms could also be consistent with pneumonia, but the progressive nature of the symptoms and the lack of fever or other acute symptoms make this less likely.\n3. **Lung Cancer**: Although lung cancer is a possibility, it is less likely given the patient's age and the absence of significant past medical history.\n4. **HIV/AIDS**: Although the patient denies HIV risk factors, it is essential to consider this diagnosis given the patient's symptoms and the region's prevalence of HIV.\n5. **Other respiratory infections**: Other respiratory infections, such as chronic bronchitis or bronchiectasis, are less likely given the patient's symptoms and exam findings.\n\n**Next Diagnostic Step:**\n\nI would order a **chest X-ray** to evaluate for signs of TB, such as upper lobe consolidation or cavitation, and to rule out other causes of the patient's symptoms.\n\n**Initial Management Plan:**\n\n1. **TB testing**: I would order a **TB skin test (Mantoux test)** to assess for latent or active TB infection.\n2. **Chest X-ray**: As mentioned earlier, to evaluate for signs of TB and rule out other causes of the patient's symptoms.\n3. **Complete Blood Count (CBC)**: To evaluate for anemia, which is common in TB, and to rule out other causes of anemia.\n4. **TB culture**: If the TB skin test is positive, I would order a TB culture to confirm the diagnosis and to determine the presence of drug-resistant TB.\n5. **Referral to a pulmonologist or infectious disease specialist**: Given the patient's symptoms and the need for further evaluation and management, I would refer the patient to a specialist for further care.",
+  "raw": {
+    "vignette_id": "VIG-019",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 207,
+  "output_tokens": 415
+}

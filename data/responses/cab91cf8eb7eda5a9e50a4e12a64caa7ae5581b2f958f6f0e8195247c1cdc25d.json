@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's persistent cough and fatigue, despite her usual allergy treatment, raises suspicion for TB, especially given her occupation in close proximity to animals and potential exposure to Mycobacterium bovis. The lack of improvement with antihistamines and unintentional weight loss also point towards a more serious underlying condition.\n2. **Chronic Bronchitis**: The patient's history of seasonal allergies and the presence of mid-zone crackles on exam could suggest chronic bronchitis, but the lack of response to antihistamines and the presence of unintentional weight loss make this less likely.\n3. **Asthma**: Asthma could be a consideration, but the lack of response to antihistamines and the presence of unintentional weight loss make this less likely.\n4. **Chronic Obstructive Pulmonary Disease (COPD)**: COPD is unlikely in a 16-year-old patient, especially given her age and lack of smoking history.\n5. **Other respiratory infections**: Other respiratory infections, such as pneumonia or bronchiolitis, are less likely given the duration of symptoms and lack of fever.\n\n**2. Next Diagnostic Step:**\nPerform a **chest X-ray** to evaluate for signs of pulmonary TB, such as upper lobe infiltrates or cavitation. This will help to further support or rule out the diagnosis of TB.\n\n**3. Initial Management Plan:**\nGiven the high suspicion for TB, the initial management plan would be to start the patient on **isoniazid (INH)** and **rifampicin (RIF)**, two first-line antitubercular medications, pending the results of the chest X-ray and further diagnostic testing. The patient should also be counseled on the importance of adherence to the medication regimen and the need for follow-up appointments to monitor her response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-026",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 243,
+  "output_tokens": 393
+}

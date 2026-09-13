@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB) with Rifampicin Mono-Resistance**  \n   - **Reasoning:** The clinical presentation (chronic cough, reduced energy, weight loss) is classic for TB. The molecular test confirmed *M. tuberculosis* with rifampicin resistance, and susceptibility testing showed resistance only to rifampicin. This is a known pattern of rifampicin mono-resistance, which is a form of drug-resistant TB (DR-TB). The patient has no other risk factors for resistance, so this is the most likely diagnosis.\n\n2. **Pulmonary Hypertension or Interstitial Lung Disease**  \n   - **Reasoning:** The presence of right-sided crackles could suggest interstitial lung disease or pulmonary hypertension, though these are less likely in a 4-year-old without other systemic symptoms. However, in the context of TB, these could be secondary findings.\n\n3. **Chronic Bronchitis or Asthma**  \n   - **Reasoning:** While possible, the presence of TB markers (positive molecular test) and the specific resistance pattern make this less likely. Additionally, the patient has no history of asthma or chronic respiratory symptoms prior to the cough.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a chest X-ray (CXR) to assess the extent of pulmonary involvement and confirm the presence of active TB.**  \n- This will help determine the stage of disease, identify any cavities, infiltrates, or other abnormalities, and guide further management.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Start treatment with a regimen that is effective for rifampicin mono-resistant TB.**  \n  - Based on the susceptibility results (isoniazid and fluoroquinolone susceptible), a regimen including **isoniazid, fluoroquinolone (e.g., moxifloxacin), and ethambutol** should be initiated.  \n  - **Avoid rifampicin** due to resistance.  \n  - **Add pyrazinamide** if possible, as it is often used in DR-TB regimens.  \n  - **Monitor for drug toxicity** (e.g., optic neuritis with ethambutol, peripheral neuropathy with isoniazid).\n\n- **Isolate the patient** if there is a risk of transmission, especially to the 10-year-old brother.  \n- **Screen the brother for TB infection** (e.g., TB skin test or interferon-gamma release assay).  \n- **Initiate latent TB infection (LTBI) treatment** for the brother if he is infected.  \n- **Monitor for treatment response** with serial chest X-rays and clinical evaluation.  \n- **Provide nutritional support** due to the patient\u2019s mild wasting.  \n- **Coordinate with a TB specialist** for ongoing management and to ensure adherence to the complex regimen.",
+  "raw": {
+    "vignette_id": "VIG-061",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 600
+}

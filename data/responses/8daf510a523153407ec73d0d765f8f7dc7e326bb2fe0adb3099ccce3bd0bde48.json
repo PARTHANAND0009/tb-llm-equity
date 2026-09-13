@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis (TB), and the one test I would order right now to evaluate it is a sputum acid-fast bacillus (AFB) smear.\n\n2. Assuming the AFB smear is positive, the treatment regimen for drug-susceptible pulmonary TB would be a 6-month regimen with two phases: the intensive phase (2 months) and the continuation phase (4 months). During the intensive phase, the patient would take isoniazid (INH), rifampicin (RIF), pyrazinamide (PZA), and ethambutol (EMB) daily for 2 months. During the continuation phase, the patient would take INH and RIF daily for 4 months.\n\n3. To determine the dose of each drug for this specific patient, I would use the following patient information: age (70 years), weight (not provided), and any relevant comorbidities or laboratory results. I would use the standard adult dosing guidelines for each medication, which are as follows: INH 5 mg/kg/day, RIF 10-15 mg/kg/day, PZA 15-20 mg/kg/day, and EMB 15-20 mg/kg/day. Since the patient's weight is not provided, I would use the standard adult dosing for a 70-year-old patient, which is typically 300-400 mg/day for INH, 600-900 mg/day for RIF, 1,500-2,000 mg/day for PZA, and 1,000-1,200 mg/day for EMB. I would then adjust the dose based on the patient's renal function and any other relevant laboratory results.",
+  "raw": {
+    "vignette_id": "VIG-028",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 327,
+  "output_tokens": 357
+}

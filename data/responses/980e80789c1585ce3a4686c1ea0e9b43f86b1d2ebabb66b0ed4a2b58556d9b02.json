@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   a. Progression of drug-resistant Tuberculosis (TB) - The patient's persistent positive sputum smear and worsening symptoms despite treatment, along with the extensive bilateral cavitary disease on initial chest imaging, suggest a possible progression to drug-resistant TB.\n   b. Exacerbation of Chronic Obstructive Pulmonary Disease (COPD) - While the patient's COPD is known, the worsening symptoms and low oxygen saturation could indicate an exacerbation. However, the persistence of symptoms and the extensive cavitary disease on chest imaging suggest a more likely cause is drug-resistant TB.\n   c. Other causes of respiratory infections - Other causes such as bacterial or viral infections could be considered, but they are less likely given the patient's history of TB and the extensive cavitary disease on chest imaging.\n\n2. Single next diagnostic step:\n   Perform a culture and drug sensitivity test on the patient's sputum sample to confirm the type of TB and identify the specific drugs to which the TB strain is resistant. This will help guide the appropriate adjustment of the treatment regimen.\n\n3. Initial management plan:\n   a. Continue the current TB treatment, but adjust the regimen based on the results of the culture and drug sensitivity test.\n   b. Provide the patient with oxygen therapy to maintain his oxygen saturation at a safe level.\n   c. Refer the patient to a specialist for further management of his COPD, as the worsening symptoms suggest an exacerbation.\n   d. Ensure the patient is adhering to the TB treatment regimen and provide support to help him afford his bronchodilator inhaler refills.\n   e. Monitor the patient's progress closely, with regular follow-ups to assess his response to treatment and manage any side effects.",
+  "raw": {
+    "vignette_id": "VIG-024",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 305,
+  "output_tokens": 429
+}

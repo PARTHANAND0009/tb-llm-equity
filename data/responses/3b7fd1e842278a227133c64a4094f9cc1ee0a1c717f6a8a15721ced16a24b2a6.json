@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of persistent cough, hemoptysis, weight loss, fatigue, and menstrual irregularities, the single most likely diagnosis for this 15-year-old girl is pulmonary tuberculosis (TB). To evaluate this, a Sputum Acid-Fast Bacilli (AFB) smear would be the one test ordered right now.\n\n2. I would send a mycobacterial culture on this patient if the AFB smear is positive or if the patient's condition does not improve with appropriate antibiotics for a reasonable period. Sending a culture is important to confirm the diagnosis, identify drug-resistant strains, and guide treatment.\n\n3. Assuming the initial test confirms drug-susceptible pulmonary TB, the dose of each drug for this specific patient would be determined based on the patient's age, weight, and renal function. For instance, the recommended initial dose of isoniazid (INH) for a 15-year-old girl with a weight of 68 kg (BMI 17.1) would be 300 mg/day, divided into 2 doses of 150 mg each. Rifampin would be 600 mg/day for a single dose. Pyrazinamide would be 15-20 mg/kg/day, which for this patient would be 1080-1400 mg/day, divided into 2-3 doses. Ethambutol would be 15 mg/kg/day, which for this patient would be 255 mg/day. These doses are general guidelines and may need to be adjusted based on the patient's specific condition and response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-002",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 355,
+  "output_tokens": 393
+}

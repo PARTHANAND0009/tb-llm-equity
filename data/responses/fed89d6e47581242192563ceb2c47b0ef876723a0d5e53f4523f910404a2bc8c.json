@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's age, history of travel for farm work, poorly controlled diabetes, and the findings on chest X-ray, TB is the most likely diagnosis. The bilateral cavitary disease on the chest X-ray is a common finding in TB.\n   2. Lung cancer - While less likely, the patient's history of smoking and the presence of cavitary lesions could potentially suggest lung cancer. However, the patient's age, travel history, and lack of known contact with drug-resistant TB make TB more likely.\n   3. Fungal infections (e.g., histoplasmosis, coccidioidomycosis) - These infections could be considered, but they are less common in this patient's demographic and the bilateral cavitary disease on the chest X-ray is not a typical finding.\n   4. Other causes of cavitary lung disease (e.g., sarcoidosis, rheumatoid arthritis, Wegener's granulomatosis) - These conditions are less likely given the patient's history and the presence of diabetes.\n\n2. The single next diagnostic step you would take right now:\n   Given the high suspicion of TB, the next diagnostic step would be to obtain a sputum sample for acid-fast bacilli (AFB) smear and culture. If the AFB smear is positive, this would strongly support a diagnosis of TB.\n\n3. Initial management plan:\n   - Start the patient on a TB regimen appropriate for drug-sensitive TB, such as isoniazid, rifampin, ethambutol, and pyrazinamide.\n   - Monitor the patient closely for side effects and drug interactions, especially with her diabetes medication.\n   - Refer the patient to a healthcare provider for ongoing management of her diabetes, including insulin therapy if necessary.\n   - Monitor the patient's response to treatment, including regular chest X-rays and sputum cultures.\n   - If the patient is HIV positive, consider TB-HIV co-treatment.\n   - Educate the patient on the importance of adherence to TB treatment and the dangers of missing doses, especially in the context of her diabetes.\n   - Consider referring the patient to a social worker or case manager to address any barriers to care, such as transportation or housing.\n   - Inform the local health department of the diagnosis to prevent further transmission.",
+  "raw": {
+    "vignette_id": "VIG-048",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 254,
+  "output_tokens": 561
+}

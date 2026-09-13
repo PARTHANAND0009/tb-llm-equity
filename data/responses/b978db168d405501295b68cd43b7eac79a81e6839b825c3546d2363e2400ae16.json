@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculosis (TB): Given the positive M. tuberculosis result from both the sputum and gastric aspirate, TB is the most likely diagnosis. The symptoms of cough, reduced energy, and mild wasting, along with the faint left-sided crackles on examination, support this diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray: A chest X-ray would help to confirm the diagnosis of TB, identify the location and extent of the lesions, and rule out any complications such as pleural effusion or lung collapse.\n\n3. Initial management plan:\n   - Start TB treatment: The patient should be started on a standard TB treatment regimen, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, under the supervision of a healthcare provider.\n   - Monitor for adverse effects: The patient should be closely monitored for adverse effects of the TB treatment, such as hepatotoxicity, optic neuritis, and peripheral neuropathy.\n   - Nutritional support: Given the patient's mild wasting, nutritional support may be necessary to help him regain his lost weight.\n   - Follow-up: Regular follow-up appointments should be scheduled to monitor the patient's response to treatment and to ensure adherence to the treatment regimen.\n   - Inform school: The school should be informed about the patient's diagnosis and any precautions that need to be taken to prevent the spread of TB.\n   - Consult pediatrician: Given the patient's age, a pediatrician should be consulted to ensure appropriate dosing and monitoring of the TB treatment.\n   - Consult infectious disease specialist: A consultation with an infectious disease specialist may also be beneficial to help manage the patient's TB and ensure the most appropriate treatment plan is being followed.\n   - Rule out HIV: Given the patient's age and the possibility of TB, it would also be important to rule out HIV, as HIV co-infection is common in TB patients.",
+  "raw": {
+    "vignette_id": "VIG-081",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 221,
+  "output_tokens": 482
+}

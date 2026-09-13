@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked Differential Diagnosis:\n   1. Tuberculosis (TB) with drug-resistant strains (MDR-TB) - Given the Xpert MTB/RIF positive result, the patient's symptoms, and the non-cavitary right infiltrate on chest imaging, TB is a strong possibility. The fact that rifampicin was not detected suggests drug-resistant TB, which is more concerning.\n   2. Pneumonia - The cough and fever, along with the chest infiltrate on imaging, suggest a possible bacterial pneumonia. However, the negative sputum smear and the patient's history of irregular medication use for hypertension make TB a more likely diagnosis.\n   3. Other respiratory infections - Other respiratory infections such as viral pneumonia or bronchitis could be considered, but they are less likely given the patient's symptoms and the Xpert MTB/RIF results.\n\n2. Single next diagnostic step:\n   Given the Xpert MTB/RIF results, the next diagnostic step would be to perform a drug susceptibility test (DST) to determine the specific drugs to which the TB strain is resistant. This will help in tailoring the treatment plan.\n\n3. Initial Management Plan:\n   - Start the patient on a regimen of second-line TB drugs based on the results of the DST. This will help to treat the TB and prevent the spread of drug-resistant strains.\n   - Ensure the patient is referred to a TB specialist for proper management and monitoring.\n   - Address the patient's hypertension by ensuring regular access to medication and education on the importance of adherence.\n   - Monitor the patient's response to treatment, including regular follow-ups and monitoring of blood pressure.\n   - If possible, provide psychological support to help the patient cope with the diagnosis and treatment.\n   - Educate the patient and his family about TB transmission and the importance of isolation during treatment.\n   - If the patient's condition worsens or other symptoms develop, further investigations may be necessary.",
+  "raw": {
+    "vignette_id": "VIG-011",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 287,
+  "output_tokens": 477
+}

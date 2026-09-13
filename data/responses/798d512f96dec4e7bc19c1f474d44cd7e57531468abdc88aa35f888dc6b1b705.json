@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's HIV status, age, symptoms, and the chest X-ray findings, TB is the most likely diagnosis. The patient's lack of known TB contact and previous TB treatment does not rule out primary TB, which can occur in the absence of known contact.\n   2. Bacterial pneumonia - While less likely than TB, bacterial pneumonia could also cause the symptoms described. However, the patient's HIV status and the specific chest X-ray findings make TB more likely.\n   3. Viral respiratory infections - These are less likely given the patient's HIV status and the duration of symptoms, but they cannot be ruled out without further testing.\n\n2. Single next diagnostic step:\n   Perform a sputum acid-fast bacilli (AFB) smear and culture to confirm the diagnosis of TB.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen appropriate for a child, such as INH, Rifampicin, Ethambutol, and Pyrazinamide.\n   - Monitor the patient closely for adverse effects of TB treatment and HIV medications.\n   - Consult a pediatric infectious disease specialist for guidance on TB treatment and management of HIV.\n   - Monitor the patient's CD4 count and viral load regularly to assess the response to treatment and adjust HIV therapy as needed.\n   - Ensure the patient is adherent to his antiretroviral therapy.\n   - Consider starting the patient on preventive TB therapy (cotrimoxazole) if not already started, as he is HIV-positive and has a TB diagnosis.\n   - Monitor the patient's respiratory status and provide appropriate supportive care, such as oxygen therapy if needed.\n   - Educate the patient's mother on the importance of adherence to treatment and the signs of treatment failure or adverse effects.\n   - Inform the local public health department of the TB diagnosis to prevent further transmission.",
+  "raw": {
+    "vignette_id": "VIG-093",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 230,
+  "output_tokens": 466
+}

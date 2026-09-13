@@ -1,0 +1,15 @@
+{
+  "text": "Yes, it is appropriate to perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. The patient's M. tuberculosis test result was positive for rifampicin resistance, which indicates that the strain of TB the patient has is resistant to rifampicin. This resistance was confirmed by follow-up testing, so it is important to test the initial specimen to confirm the initial diagnosis and to have a record of the drug-resistant strain.",
+  "raw": {
+    "vignette_id": "VIG-061",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 245,
+  "output_tokens": 105
+}

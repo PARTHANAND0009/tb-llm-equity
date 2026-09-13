@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **Tuberculosis (TB) of the lymph nodes (scrofula)**  \n     *Reasoning:* The patient has a firm, enlarging, minimally tender inguinal lymph node, occasional low-grade fever, and molecular testing of the aspirated node was positive for *Mycobacterium tuberculosis*. These are classic features of TB lymphadenopathy, especially in the absence of known TB exposure or prior treatment.  \n   - **Lymphoma (e.g., Hodgkin or non-Hodgkin lymphoma)**  \n     *Reasoning:* A slowly enlarging, painless lymph node with constitutional symptoms (fever) could also suggest lymphoma. However, the molecular test for TB is positive, which strongly favors TB over lymphoma.  \n   - **Sarcoidosis**  \n     *Reasoning:* Sarcoidosis can present with non-caseating granulomas in lymph nodes and may cause fever and constitutional symptoms. However, it is less likely than TB in this case given the positive TB test.  \n   - **Abscess or infection (e.g., bacterial or fungal)**  \n     *Reasoning:* While possible, the absence of significant pain, skin breakdown, and the positive TB test make this less likely.  \n\n2. **Single Next Diagnostic Step:**  \n   **Perform a chest X-ray to evaluate for pulmonary tuberculosis.**  \n   *Rationale:* TB can be disseminated, and pulmonary involvement is common. A chest X-ray is a low-cost, non-invasive first step to assess for primary or reactivated TB in the lungs, which would support the diagnosis of TB lymphadenopathy.  \n\n3. **Initial Management Plan:**  \n   - **Start anti-tuberculosis therapy (ATT):** Begin a standard regimen for TB, including isoniazid, rifampin, pyrazinamide, and ethambutol, for at least 2 months (initial phase), followed by continuation phase with isoniazid and rifampin for 4 more months, totaling 6 months.  \n   - **Monitor for adverse effects:** Regularly assess for hepatotoxicity (liver enzymes), optic neuritis (ethambutol), and peripheral neuropathy (isoniazid).  \n   - **Follow-up imaging:** Repeat chest X-ray in 2\u20133 months to assess response to treatment.  \n   - **Evaluate for disseminated TB:** Consider additional tests (e.g., acid-fast smear, culture, or PCR of sputum, or biopsy of other lymph nodes if present) if clinical suspicion remains high.  \n   - **Educate the patient:** Inform him about the importance of completing the full course of treatment, the possibility of drug resistance, and the need for follow-up.",
+  "raw": {
+    "vignette_id": "VIG-043",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 236,
+  "output_tokens": 577
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the Xpert MTB/RIF test result shows that rifampicin was not detected, which is an indication of possible drug resistance. Confirming drug resistance is important to guide appropriate TB treatment.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the standard first-line treatment for TB in adults is a 6-month regimen consisting of isoniazid, rifampicin, ethambutol, and pyrazinamide for the initial 2 months, followed by isoniazid and rifampicin for the remaining 4 months.\n\nFor this specific patient, the dose of each drug would be adjusted based on her age, weight, and kidney function. The World Health Organization (WHO) recommends the following doses:\n\n- Isoniazid: 10 mg/kg/day (maximum 300 mg/day)\n- Rifampicin: 10 mg/kg/day (maximum 600 mg/day)\n- Ethambutol: 25 mg/kg/day (maximum 1.5 g/day)\n- Pyrazinamide: 25-30 mg/kg/day (maximum 2 g/day)\n\nThe actual dose or tablet count would be determined by calculating the patient's weight in kilograms and then using the recommended doses to determine the number of tablets needed for each medication per day. For example, if the patient weighs 50 kg, the daily dose of isoniazid would be 500 mg (10 mg/kg x 50 kg). The number of tablets needed would depend on the strength of the tablets available.",
+  "raw": {
+    "vignette_id": "VIG-054",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 301,
+  "output_tokens": 417
+}

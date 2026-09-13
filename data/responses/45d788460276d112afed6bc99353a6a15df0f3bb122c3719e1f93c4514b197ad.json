@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's sputum test results confirm MDR-TB, and the presence of rifampicin and isoniazid resistance, along with preserved fluoroquinolone susceptibility, supports this diagnosis. The patient's symptoms of cough and weight loss, combined with the physical exam findings of bilateral crackles, further support this diagnosis.\n\n2. **Pulmonary Tuberculosis (TB)**: Although the patient's MDR-TB diagnosis is confirmed, it's essential to consider the possibility of pulmonary TB, which can present similarly to MDR-TB.\n\n3. **Chronic Obstructive Pulmonary Disease (COPD)**: The patient's history of cough and weight loss could be attributed to COPD, especially considering her age and physical demands of farm work.\n\n4. **Lung Cancer**: Although less likely, lung cancer could be a consideration, especially given the patient's age and weight loss.\n\n**2. The single next diagnostic step I would take right now:**\n\nPerform a **Chest X-ray** to assess the extent of lung involvement and to rule out other pulmonary abnormalities that could be contributing to the patient's symptoms.\n\n**3. Initial Management Plan:**\n\n- **TB Treatment**: Start the patient on a MDR-TB regimen, which typically includes a combination of medications such as kanamycin, amikacin, and moxifloxacin, along with a second-line isoniazid and rifampicin. The regimen should be tailored to the patient's specific resistance pattern and medical history.\n- **Infection Control**: Implement infection control measures to prevent transmission of MDR-TB to the patient's 14-year-old grandson, including wearing a mask, maintaining good ventilation, and ensuring the patient's isolation.\n- **Monitoring**: Regularly monitor the patient's vital signs, weight, and symptoms, as well as perform sputum tests to assess the effectiveness of the treatment regimen.\n- **Psychological Support**: Provide the patient with psychological support and counseling to help her cope with the diagnosis and treatment of MDR-TB.",
+  "raw": {
+    "vignette_id": "VIG-056",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 256,
+  "output_tokens": 450
+}

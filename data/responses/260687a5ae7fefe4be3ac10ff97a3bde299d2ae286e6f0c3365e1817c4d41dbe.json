@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of chronic cough, productive sputum, and recent weight loss are classic for TB. The patient's hemoglobin level of 10.1 g/dL also suggests anemia, which is common in TB. The patient's exposure to TB through fieldwork and the lack of household contact with drug-resistant TB make this a likely diagnosis.\n2. **Chronic Bronchitis or Asthma**: The patient's cough and mild right-sided crackles could be indicative of chronic bronchitis or asthma, but the presence of blood-streaked sputum and anemia make TB a more likely diagnosis.\n3. **Chronic Infection or Chronic Obstructive Pulmonary Disease (COPD)**: The patient's age and symptoms could also suggest a chronic infection or COPD, but the patient's age and lack of smoking history make this less likely.\n4. **Anemia of Chronic Disease**: The patient's anemia could be a primary diagnosis, but the presence of respiratory symptoms suggests a more complex diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB skin test (Mantoux test)** to assess for latent TB infection. This is the most appropriate next step given the patient's symptoms and risk factors.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: If the TB skin test is positive, initiate TB treatment with isoniazid, rifampicin, pyrazinamide, and ethambutol for a minimum of 6 months.\n* **Anemia management**: Continue to monitor the patient's hemoglobin levels and consider iron supplements if the patient is iron deficient.\n* **Nutritional support**: Encourage the patient to eat a balanced diet and consider nutritional supplements if necessary.\n* **Pulmonary function tests**: Consider performing pulmonary function tests to assess lung function and rule out other respiratory conditions.\n* **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and adjust the treatment plan as necessary.",
+  "raw": {
+    "vignette_id": "VIG-002",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 263,
+  "output_tokens": 421
+}

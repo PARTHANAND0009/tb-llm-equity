@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   a. Reactivation of latent TB (LTBI) - Given the patient's history of BCG vaccination, HIV status, and recent TB exposure, reactivation of LTBI is the most likely diagnosis. The patient's mild, well-controlled hypertension and lack of acute findings on exam further support this diagnosis.\n\n2. Single next diagnostic step:\n   Perform an Interferon-gamma release assay (IGRA) to confirm the diagnosis of LTBI. IGRAs are more specific and sensitive than Tuberculin Skin Test (TST) and are less affected by BCG vaccination.\n\n3. Initial management plan:\n   a. Initiate preventive treatment for LTBI with isoniazid (INH) for 6-9 months, or a rifamycin-based regimen for 3-4 months, as per local guidelines.\n   b. Monitor liver function tests (LFTs) every month during treatment to monitor for hepatotoxicity.\n   c. Monitor the patient's adherence to the treatment regimen and provide counseling on potential drug interactions and side effects.\n   d. Consider referring the patient to a specialist if there are any concerns about the diagnosis or management.\n   e. Continue her antiretroviral therapy and monitor her HIV status regularly.\n   f. Encourage the patient to complete the full course of treatment to reduce the risk of developing active TB disease.",
+  "raw": {
+    "vignette_id": "VIG-068",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 206,
+  "output_tokens": 336
+}

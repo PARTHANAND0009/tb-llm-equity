@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculous pleural effusion**: The patient's symptoms of progressive breathlessness, right-sided chest discomfort, and large pleural effusion, combined with the positive pleural fluid molecular testing for M. tuberculosis, strongly support this diagnosis.\n2. **Malignancy-related pleural effusion**: The patient's age and progressive symptoms could suggest a malignancy, but the lack of systemic symptoms (e.g., weight loss, night sweats) and the specific finding of M. tuberculosis in the pleural fluid make this less likely.\n3. **Parapneumonic effusion**: The patient's symptoms could be attributed to a parapneumonic effusion, but the lack of fever and the specific finding of M. tuberculosis in the pleural fluid make this less likely.\n4. **Chronic pleural effusion of unknown etiology**: This is a broad category of diagnoses that could include conditions such as rheumatoid arthritis or other autoimmune diseases, but the specific finding of M. tuberculosis in the pleural fluid makes this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest CT scan with contrast** to evaluate for any underlying lung parenchymal disease, such as pulmonary tuberculosis, and to assess the extent of the pleural effusion.\n\n**3. Initial Management Plan:**\n\n* **Start antitubercular therapy**: Begin treatment with a standard regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, pending further diagnostic testing and evaluation.\n* **Monitor and manage symptoms**: Continue to monitor the patient's symptoms and manage her breathlessness with oxygen therapy and possibly diuretics, as needed.\n* **Follow-up thoracentesis**: Schedule a follow-up thoracentesis to re-evaluate the pleural fluid and assess the response to treatment.\n* **TB contact investigation**: Investigate the patient's contacts for TB exposure and consider testing them for TB infection.",
+  "raw": {
+    "vignette_id": "VIG-040",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 268,
+  "output_tokens": 406
+}

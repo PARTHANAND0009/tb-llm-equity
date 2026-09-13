@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculous Meningitis (TB Meningitis)**: The patient's symptoms of headache, low-grade fevers, and recent lumbar puncture results (elevated protein, low glucose, and lymphocytic pleocytosis) are consistent with TB Meningitis. The positive molecular testing for M. tuberculosis in the CSF further supports this diagnosis.\n\n2. **Other forms of Meningitis (e.g., viral, bacterial, fungal)**: Although the patient's symptoms could be consistent with other forms of meningitis, the presence of lymphocytic pleocytosis and the specific CSF results make TB Meningitis the more likely diagnosis.\n\n3. **Other neurological conditions (e.g., encephalitis, brain tumor)**: Although the patient's symptoms could be consistent with other neurological conditions, the presence of nuchal rigidity and the CSF results make TB Meningitis the more likely diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess for pulmonary TB, which is a common site of TB infection. This will help determine if the patient has a primary or reactivation TB infection.\n\n**3. Initial Management Plan:**\n\n- **Hospitalize the patient** for close monitoring and treatment.\n- **Start antitubercular therapy** with a combination of isoniazid, rifampicin, pyrazinamide, and ethambutol, pending further diagnostic results.\n- **Monitor for signs of increased intracranial pressure** and adjust treatment as needed.\n- **Consider corticosteroids** to reduce inflammation and prevent further damage to the central nervous system.\n- **Follow-up with regular CSF analysis** to monitor the response to treatment and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-086",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 258,
+  "output_tokens": 378
+}

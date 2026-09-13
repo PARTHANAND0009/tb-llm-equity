@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Genitourinary TB (GUTB)**: The patient's symptoms of intermittent dull flank pain, urinary frequency, and sterile pyuria are consistent with GUTB. The positive molecular test for M. tuberculosis further supports this diagnosis. The renal scarring and hydronephrosis on imaging are also indicative of chronic infection.\n2. **Kidney stone**: The patient's intermittent flank pain could be attributed to a kidney stone, but the presence of sterile pyuria and the positive molecular test for M. tuberculosis make this less likely.\n3. **Chronic pyelonephritis**: The patient's symptoms could also be consistent with chronic pyelonephritis, but the lack of positive bacterial cultures and the presence of M. tuberculosis make this less likely.\n4. **Other genitourinary conditions**: Conditions such as interstitial cystitis or other genitourinary abnormalities could be considered, but they are less likely given the patient's symptoms and test results.\n\n**2. Next Diagnostic Step:**\n\nPerform an **chest X-ray** to assess for pulmonary TB, as the patient has no known TB contact or prior TB treatment. This is a crucial step to determine if the patient has disseminated TB or if the genitourinary TB is a result of reactivation of a latent TB infection.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a standard 6-month regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, with or without streptomycin, based on local resistance patterns.\n* **Urinary tract management**: Continue to monitor the patient's urine output and renal function, and consider further imaging or intervention if there is evidence of worsening renal function or hydronephrosis.\n* **Follow-up**: Schedule regular follow-up appointments to monitor the patient's response to treatment, including regular TB medication adherence and symptom assessment.",
+  "raw": {
+    "vignette_id": "VIG-035",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 256,
+  "output_tokens": 400
+}

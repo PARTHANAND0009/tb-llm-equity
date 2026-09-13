@@ -1,0 +1,15 @@
+{
+  "text": "1. I would send a mycobacterial culture on this patient after the Xpert MTB/RIF test, as it is a rapid and sensitive test for diagnosing TB, but it may not always detect all strains of TB. The culture will provide a definitive diagnosis and help identify any potential drug resistance. This is especially important given the rifampicin resistance detected by the Xpert MTB/RIF test.\n\n2. Assuming the mycobacterial culture confirms drug-susceptible pulmonary tuberculosis, I would start the patient on a 6-month treatment regimen with a 2-month intensive phase (phase 1) followed by a 4-month continuation phase (phase 2). During the intensive phase, the patient would take 4 drugs: isoniazid (H), rifampicin (R), pyrazinamide (Z), and ethambutol (E), taken daily. During the continuation phase, the patient would take H and R daily, and Z and E would be discontinued.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight and any relevant comorbidities or laboratory results. For a typical adult, the recommended doses are: isoniazid 5 mg/kg/day, rifampicin 10 mg/kg/day, pyrazinamide 15-20 mg/kg/day, and ethambutol 15-20 mg/kg/day. For this patient, assuming a weight of 70 kg, the doses would be: isoniazid 350 mg/day, rifampicin 700 mg/day, pyrazinamide 1,050-1,400 mg/day, and ethambutol 1,050-1,400 mg/day.",
+  "raw": {
+    "vignette_id": "VIG-027",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 361,
+  "output_tokens": 358
+}

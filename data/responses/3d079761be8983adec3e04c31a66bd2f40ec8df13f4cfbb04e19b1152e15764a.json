@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the Xpert MTB/RIF test did not detect rifampicin resistance, but the patient's clinical presentation and history suggest possible tuberculosis (TB), and given that she is on antiretroviral therapy and has a low CD4 count, she is at higher risk for TB and may benefit from further testing to guide treatment.",
+  "raw": {
+    "vignette_id": "VIG-052",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 203,
+  "output_tokens": 74
+}

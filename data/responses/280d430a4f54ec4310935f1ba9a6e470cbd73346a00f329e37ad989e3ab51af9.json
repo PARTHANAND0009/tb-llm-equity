@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the Xpert MTB/RIF test has already detected rifampicin resistance, so further testing would be redundant and unnecessary.\n\n2. To determine the dose of each drug for this patient, I would use the patient's weight and the standard dosing guidelines for pulmonary tuberculosis treatment. The typical dosing for a patient with normal renal function and no other significant comorbidities is as follows: Isoniazid (INH) 5 mg/kg/day, Rifampicin (RIF) 10 mg/kg/day, Pyrazinamide (PZA) 20-25 mg/kg/day, and Ethambutol (EMB) 15-20 mg/kg/day. For a 16-year-old patient, the doses would be approximately: INH 300 mg/day, RIF 300 mg/day, PZA 400-500 mg/day, and EMB 300-400 mg/day.",
+  "raw": {
+    "vignette_id": "VIG-054",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 293,
+  "output_tokens": 215
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   a. Latent TB Infection (LTBI) - Given the patient's close contact with a person diagnosed with TB, his lack of symptoms, and the ruling out of active TB disease, LTBI is the most likely diagnosis.\n\n2. Single next diagnostic step:\n   Given the TB skin test (TST) or Interferon-gamma release assay (IGRA) is not available, the next diagnostic step would be to consider an alternative method for LTBI diagnosis, such as a tuberculin purified protein derivative (PPD) blood test, which can be performed using a whole-blood sample.\n\n3. Initial management plan:\n   - Initiate isoniazid preventive therapy (IPT) for 6-12 months, as per the guidelines for LTBI treatment.\n   - Monitor the patient's liver function tests (LFTs) every month during IPT to check for hepatotoxicity.\n   - Educate the patient about the importance of completing the full course of IPT and the signs and symptoms of active TB to watch for.\n   - Once TST or IGRA becomes available, re-evaluate the patient for a definitive LTBI diagnosis.\n   - Encourage the patient to inform his workplace about his TB exposure and the need for TB preventive treatment, if possible, to prevent further potential transmission.",
+  "raw": {
+    "vignette_id": "VIG-099",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 214,
+  "output_tokens": 318
+}

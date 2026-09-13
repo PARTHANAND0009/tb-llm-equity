@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculosis (TB) lymphadenitis**: The patient's symptoms of a painless, gradually enlarging swelling in her left armpit, mild intermittent low-grade fevers, and positive molecular testing for M. tuberculosis from fine-needle aspiration of the axillary node strongly suggest TB lymphadenitis.\n2. **Cat-Scratch Disease (CSD)**: Although less likely, CSD is a consideration given the lymphadenopathy and fever, but it typically presents with a history of a cat scratch or bite and often has a more acute onset.\n3. **Kikuchi Disease**: This is a self-limiting condition that presents with lymphadenopathy, fever, and often a history of recent travel or exposure to an endemic area, but it is less likely given the patient's symptoms and the positive TB test.\n4. **Hodgkin's Lymphoma**: Although lymphadenopathy is a key feature, the patient's age, symptoms, and lack of systemic symptoms make this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for pulmonary TB, as the patient's symptoms could be indicative of primary TB, which often presents with lymphadenopathy and can be asymptomatic in the lungs.\n\n**3. Initial Management Plan:**\n\n- **TB treatment**: Start the patient on a standard 6-month regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, pending further diagnostic confirmation and sensitivity testing.\n- **TB prophylaxis**: Consider starting the patient on isoniazid for 6-12 months as a prophylactic measure, given her exposure to TB in the community.\n- **Follow-up**: Schedule regular follow-up appointments to monitor the patient's response to treatment, assess for any signs of TB disease progression, and adjust the treatment regimen as needed.\n- **Contact tracing**: Identify and screen the patient's family members and coworkers for TB exposure and disease.",
+  "raw": {
+    "vignette_id": "VIG-034",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 250,
+  "output_tokens": 415
+}

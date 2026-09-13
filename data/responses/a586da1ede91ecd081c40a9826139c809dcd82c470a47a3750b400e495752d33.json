@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis Infection (LTBI):** The patient's exposure to his wife with drug-sensitive pulmonary TB, lack of symptoms, and normal chest imaging make LTBI the most likely diagnosis. The fact that he came in on his own initiative for preventive treatment also supports this diagnosis.\n2. **False-Positive TST or IGRA:** Although TST or IGRA testing is not available, the patient's exposure history and lack of symptoms make it less likely that he has active TB disease. However, a false-positive result is possible, especially if he has received a BCG vaccine or has a non-tuberculous mycobacterial infection.\n3. **Other Infections or Conditions:** Although less likely, other infections or conditions such as atypical mycobacterial infections, histoplasmosis, or coccidioidomycosis could be considered, but they are less likely given the patient's exposure history and lack of symptoms.\n\n**Next Diagnostic Step:**\nPerform a chest radiograph (X-ray) to confirm the absence of active TB disease and to rule out other pulmonary conditions that could mimic TB.\n\n**Initial Management Plan:**\nGiven the patient's exposure history and the absence of active TB disease, the initial management plan would be to start isoniazid monotherapy (INH) for LTBI prevention, as per the standard guidelines for LTBI treatment. The patient should be counseled on the importance of adherence to the treatment regimen and potential side effects.",
+  "raw": {
+    "vignette_id": "VIG-099",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 214,
+  "output_tokens": 310
+}

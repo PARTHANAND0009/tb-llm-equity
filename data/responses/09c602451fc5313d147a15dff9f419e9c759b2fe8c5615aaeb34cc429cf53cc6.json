@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has no known TB contact, no prior TB treatment, and no known drug-resistant contact, making it unlikely that the TB is drug-resistant.\n\n2. To determine the dose of each drug for this specific patient, I would use the patient's weight and renal function. I would calculate the dose based on the patient's weight, and adjust it according to her renal function, which can be estimated using the Cockcroft-Gault equation or the Modification of Diet in Renal Disease (MDRD) equation. For example, if the patient weighs 60 kg and has a creatinine clearance of 40 mL/min, I would use the calculated dose and adjust it to 50% of the standard dose to account for her renal impairment.",
+  "raw": {
+    "vignette_id": "VIG-092",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 264,
+  "output_tokens": 175
+}

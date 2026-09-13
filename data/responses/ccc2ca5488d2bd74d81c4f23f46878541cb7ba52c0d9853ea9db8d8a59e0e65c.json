@@ -1,0 +1,15 @@
+{
+  "text": "1. The single most likely diagnosis is pulmonary tuberculosis (TB), likely caused by Mycobacterium tuberculosis. I would order a sputum smear for acid-fast bacilli (AFB) to evaluate for TB, as it is a rapid and non-invasive test that can provide a presumptive diagnosis.\n\n2. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has no known contact with drug-resistant TB, and initial treatment should be started with standard first-line therapy while awaiting culture and drug-susceptibility testing results.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight (41 kg) and the standard dosing guidelines for TB treatment. For a patient with a body weight of 41 kg, the recommended doses for a typical first-line regimen would be: Isoniazid (INH) 100 mg/day, Rifampicin (RIF) 150 mg/day, Pyrazinamide (PZA) 500 mg/day, and Ethambutol (EMB) 750 mg/day.",
+  "raw": {
+    "vignette_id": "VIG-004",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 313,
+  "output_tokens": 235
+}

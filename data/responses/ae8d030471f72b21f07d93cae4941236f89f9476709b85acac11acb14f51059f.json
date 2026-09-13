@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), given the patient's persistent cough, fatigue, and unintentional weight loss despite her usual allergy treatment, combined with the physical exam findings of mild pallor and left mid-zone crackles. I would order a chest X-ray to evaluate for pulmonary TB, as it is a rapid and non-invasive test that can help identify characteristic findings such as upper lobe infiltrates or cavitations.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms the presence of pulmonary TB, as the culture is a definitive diagnostic test that can identify the presence of Mycobacterium tuberculosis. This would be done to confirm the diagnosis and to determine the drug susceptibility pattern of the isolate, which is essential for choosing the appropriate treatment regimen.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight, age, and renal function to calculate the dose. I would use the World Health Organization (WHO) or the Centers for Disease Control and Prevention (CDC) guidelines for the treatment of TB, which provide recommended dosages based on patient weight and renal function. For example, for a 16-year-old patient with normal renal function, the recommended dose of isoniazid (INH) would be 5 mg/kg/day, and the dose of rifampicin (RMP) would be 10 mg/kg/day. I would then calculate the total daily dose and round it to the nearest tablet size to determine the number of tablets the patient needs to take each day.",
+  "raw": {
+    "vignette_id": "VIG-026",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 313,
+  "output_tokens": 322
+}

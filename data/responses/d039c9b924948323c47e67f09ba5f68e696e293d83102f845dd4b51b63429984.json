@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis. The ONE test to order right now is a sputum acid-fast bacilli (AFB) smear and culture, along with nucleic acid amplification test (NAAT) for Mycobacterium tuberculosis.  \n\n2. You would send a mycobacterial culture on this patient after the initial sputum smear and NAAT results are negative, but before starting treatment, to confirm the diagnosis and identify drug susceptibility. This is because culture is more sensitive than smear and NAAT, especially in early stages of disease.  \n\n3. To determine the dose of each drug, you would use the patient's weight, which can be obtained from her medical history or physical exam. For isoniazid, the dose is 10\u201315 mg/kg/day, typically 300 mg once daily. For rifampin, it is 10\u201320 mg/kg/day, usually 600 mg once daily. For pyrazinamide, it is 25\u201330 mg/kg/day, typically 1500\u20132000 mg once daily. For ethambutol, it is 15\u201320 mg/kg/day, usually 1500\u20132000 mg once daily. Doses should be adjusted based on weight and renal function, and the exact number of tablets would depend on the available formulations.",
+  "raw": {
+    "vignette_id": "VIG-026",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 290,
+  "output_tokens": 298
+}

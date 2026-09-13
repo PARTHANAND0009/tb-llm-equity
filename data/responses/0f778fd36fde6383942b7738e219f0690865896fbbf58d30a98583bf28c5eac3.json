@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **Tuberculosis (TB) of the abdomen (Crohn\u2019s-like TB)** \u2013 **Most likely** due to the presence of ileocecal wall thickening, regional lymphadenopathy, positive molecular testing for *M. tuberculosis*, and the patient's undernutrition and history of chronic undernutrition. The clinical presentation closely resembles Crohn\u2019s disease, but the positive TB test confirms TB as the primary diagnosis.  \n   - **Crohn\u2019s disease** \u2013 A differential due to the similar presentation of right lower quadrant pain, mass, and lymphadenopathy. However, the presence of TB on molecular testing makes this less likely unless TB is a rare variant.  \n   - **Appendicitis with abscess formation** \u2013 Less likely due to the absence of peritoneal signs (no rebound or guarding) and the presence of a mass and lymphadenopathy, which are more consistent with chronic inflammation or TB.  \n   - **Malignancy (e.g., lymphoma)** \u2013 Possible, but less likely given the absence of systemic symptoms like weight loss, night sweats, or B symptoms, and the positive TB test.  \n   - **Intestinal parasitic infection** \u2013 Could be considered, but the presence of TB on molecular testing makes this less likely without additional evidence of parasitic disease.\n\n2. **Single Next Diagnostic Step:**  \n   **Perform a complete blood count (CBC), erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), and liver function tests (LFTs)** to assess for systemic inflammation, anemia, and hepatic involvement, which are common in TB. Additionally, **sputum smear and culture for acid-fast bacilli (AFB)** should be obtained to confirm active TB and determine drug susceptibility.\n\n3. **Initial Management Plan:**  \n   - **Start anti-tuberculosis therapy (ATT)** immediately with a standard regimen (e.g., isoniazid, rifampin, pyrazinamide, and ethambutol) based on the positive molecular test for *M. tuberculosis*.  \n   - **Admit the patient for close monitoring** due to her undernutrition, short stature, and the presence of a mass and lymphadenopathy.  \n   - **Provide nutritional support** including oral or enteral nutrition as needed, and consider growth hormone therapy if appropriate.  \n   - **Monitor for treatment side effects** (e.g., hepatotoxicity, optic neuritis) and adjust therapy as necessary.  \n   - **Schedule follow-up imaging (e.g., CT scan or MRI)** to assess response to treatment and monitor for complications.  \n   - **Consider a multidisciplinary approach** involving infectious disease, gastroenterology, and nutrition services to optimize care.",
+  "raw": {
+    "vignette_id": "VIG-042",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 262,
+  "output_tokens": 575
+}

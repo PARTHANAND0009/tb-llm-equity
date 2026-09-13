@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the presented symptoms of a persistent cough, fatigue, and mild pallor, along with the physical examination findings of left mid-zone crackles, the single most likely diagnosis is pulmonary tuberculosis (TB). To evaluate this, a Sputum Acid-Fast Bacilli (AFB) smear or a GeneXpert MTB/RIF test would be the initial test ordered to confirm the diagnosis of TB.\n2. A mycobacterial culture would be sent if the initial test (AFB smear or GeneXpert MTB/RIF) is positive for TB, or if the patient's symptoms persist or worsen despite appropriate treatment. The culture would help determine drug susceptibility patterns, which are crucial for guiding the choice of TB treatment regimen.\n3. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed, the standard first-line treatment for TB in a 16-year-old girl would be a 6-month regimen consisting of isoniazid, rifampin, ethambutol, and pyrazinamide for the initial 2 months, followed by isoniazid and rifampin for the remaining 4 months. The dose for each drug would be determined based on the patient's weight, age, and any other relevant factors such as renal or hepatic function. For example, the recommended initial dose of isoniazid for a 16-year-old girl weighing 50 kg would be 15 mg/kg/day (maximum 300 mg/day), and the recommended dose of rifampin would be 10 mg/kg/day (maximum 600 mg/day). The actual dose or tablet count would be calculated based on the patient's weight and the dosage strength of the available medication.",
+  "raw": {
+    "vignette_id": "VIG-026",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 330,
+  "output_tokens": 413
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Mycobacterial culture should be sent immediately upon diagnosis to confirm the presence of Mycobacterium tuberculosis and to identify any potential drug resistance, even though Xpert MTB/RIF is already positive. Culture can also provide additional information for drug susceptibility testing if needed.\n\n2. (a) The treatment regimen has two phases: an intensive phase (2 months) and a continuation phase (4 months). (b) During the intensive phase, the patient takes medications daily, and during the continuation phase, they take them twice weekly.\n\n3. To determine the dose of each drug, I would use the patient's weight, which can be obtained from a physical exam or medical history. For most drugs, the standard dose is based on body weight, typically 15-20 mg/kg for isoniazid, 10-15 mg/kg for rifampicin, 15-20 mg/kg for pyrazinamide, and 10-15 mg/kg for ethambutol. Based on the patient's weight, I would calculate the exact dose or determine the number of tablets needed per day.",
+  "raw": {
+    "vignette_id": "VIG-027",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 338,
+  "output_tokens": 233
+}

@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The presence of M. tuberculosis in the gastric aspirate, combined with symptoms of cough and reduced energy, makes TB the most likely diagnosis. The recent change in school may have contributed to the development of TB, as it can be a risk factor for TB infection.\n2. **Respiratory Syncytial Virus (RSV) or other viral infections**: The symptoms of cough and reduced energy could be consistent with a viral respiratory infection, but the presence of M. tuberculosis in the gastric aspirate makes this less likely.\n3. **Asthma or other chronic respiratory conditions**: The faint left-sided crackles on exam could be consistent with asthma or other chronic respiratory conditions, but the presence of M. tuberculosis in the gastric aspirate makes this less likely.\n4. **Other opportunistic infections**: Although the patient has no known TB contact or prior TB treatment, the presence of M. tuberculosis in the gastric aspirate suggests that the patient may have been exposed to TB, and other opportunistic infections are less likely.\n\n**Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for pulmonary TB lesions and to confirm the presence of TB. This will help to determine the extent of the disease and guide further management.\n\n**Initial Management Plan:**\n\n1. **TB treatment initiation**: Start the patient on a standard 4-drug regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol.\n2. **Monitor for side effects**: Monitor the patient for side effects of TB medication, such as liver enzyme elevations, and adjust the treatment regimen as needed.\n3. **Nutritional support**: Provide nutritional support to address the patient's mild wasting.\n4. **Follow-up appointments**: Schedule follow-up appointments to monitor the patient's response to treatment and to assess for any changes in symptoms or side effects.\n5. **Contact tracing**: Perform contact tracing to identify and screen individuals who may have been exposed to the patient, including family members and classmates.",
+  "raw": {
+    "vignette_id": "VIG-081",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 220,
+  "output_tokens": 420
+}

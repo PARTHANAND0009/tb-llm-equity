@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has no known drug-resistant contact and the initial diagnosis is based on a gastric aspirate positive for M. tuberculosis on molecular testing, which is highly sensitive and specific for detecting M. tuberculosis.\n\n2. I would send a mycobacterial culture on this patient after the initial diagnosis is confirmed, typically after the first 2-4 weeks of treatment, to confirm the organism's identity and to monitor for potential resistance patterns. This is because the culture result may take several weeks to become available, and it is not necessary for initiating treatment.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight (17.1 kg) and the standard pediatric dosing guidelines for anti-tuberculosis medications. For a child of this age and weight, the recommended doses would be: Isoniazid (INH) 50-100 mg/kg/day, Rifampicin (RIF) 10-20 mg/kg/day, Pyrazinamide (PZA) 20-30 mg/kg/day, and Ethambutol (EMB) 15-20 mg/kg/day.",
+  "raw": {
+    "vignette_id": "VIG-017",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 341,
+  "output_tokens": 257
+}

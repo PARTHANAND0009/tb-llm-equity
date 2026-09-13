@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   a. Lymphocytic Meningitis (Viral Meningitis) - Given the patient's age, HIV status, and recent mild, resolving cold symptoms, viral meningitis is a likely cause. HIV patients are at increased risk for viral meningitis due to their compromised immune system.\n   b. Bacterial Meningitis - While less likely than viral meningitis, bacterial meningitis cannot be ruled out without further testing.\n   c. Other infectious diseases - Other infectious diseases such as pneumonia, urinary tract infections, or other opportunistic infections are less likely but still possible given the patient's HIV status.\n\n2. Single next diagnostic step:\n   Perform a lumbar puncture to obtain cerebrospinal fluid (CSF) for analysis. This will help differentiate between viral and bacterial meningitis, as well as identify the specific causative agent.\n\n3. Initial management plan:\n   a. Start empiric antimicrobial therapy for bacterial meningitis, covering common bacterial pathogens, while awaiting CSF results.\n   b. Monitor the patient closely for signs of neurological deterioration.\n   c. If viral meningitis is confirmed, supportive care and antiviral therapy (if available and appropriate) should be initiated.\n   d. Ensure the patient is up-to-date on TB preventive treatment as part of their routine HIV care.\n   e. Consult with an infectious disease specialist for further management guidance.",
+  "raw": {
+    "vignette_id": "VIG-065",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 210,
+  "output_tokens": 353
+}

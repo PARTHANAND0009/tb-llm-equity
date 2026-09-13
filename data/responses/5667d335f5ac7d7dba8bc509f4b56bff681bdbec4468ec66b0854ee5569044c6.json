@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **1. Multidrug-resistant tuberculosis (MDR-TB)**  \n     *Reasoning:* The patient has a chronic cough, weight loss, and sputum positive for *M. tuberculosis* with resistance to rifampicin and isoniazid, which is consistent with MDR-TB. The presence of crackles on exam supports pulmonary involvement.  \n   - **2. Lung cancer**  \n     *Reasoning:* Chronic cough and weight loss are also common in lung cancer, especially in an older adult. However, the presence of acid-fast bacilli on sputum and molecular confirmation of *M. tuberculosis* makes TB more likely.  \n   - **3. Chronic obstructive pulmonary disease (COPD) with superimposed infection**  \n     *Reasoning:* The patient has a history of physical exertion and mild hypertension, which could be associated with COPD. However, the presence of TB resistance and crackles is more suggestive of an infectious process like TB.  \n   - **4. Pneumonia (non-tuberculous)**  \n     *Reasoning:* Crackles and cough could be due to bacterial pneumonia, but the sputum testing and resistance profile strongly favor TB.  \n   - **5. Pulmonary embolism**  \n     *Reasoning:* While possible, the clinical presentation and sputum findings are more consistent with an infectious process rather than a vascular cause.\n\n2. **Single Next Diagnostic Step:**  \n   **Perform a chest X-ray (CXR) to assess the extent of pulmonary involvement and identify any cavities, infiltrates, or other abnormalities suggestive of TB.**\n\n3. **Initial Management Plan:**  \n   - **Start treatment with a fluoroquinolone (e.g., moxifloxacin or levofloxacin) and a second-line injectable (e.g., amikacin or capreomycin) based on the drug susceptibility results.**  \n   - **Add a third drug such as ethambutol or prothionamide if needed to ensure adequate coverage for MDR-TB.**  \n   - **Initiate directly observed therapy (DOT) to ensure adherence to the complex regimen.**  \n   - **Order a complete blood count (CBC), liver function tests (LFTs), and renal function tests to monitor for potential drug toxicity.**  \n   - **Schedule follow-up sputum cultures and molecular testing to monitor response to treatment.**  \n   - **Educate the patient on the importance of adherence, potential side effects, and the need for regular monitoring.**  \n   - **Consider TB screening for household contacts, including the 14-year-old grandson, even though he is asymptomatic.**",
+  "raw": {
+    "vignette_id": "VIG-056",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 234,
+  "output_tokens": 574
+}

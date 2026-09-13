@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **HIV-associated immune reconstitution inflammatory syndrome (IRIS)**  \n   - *Reasoning:* The child is on antiretroviral therapy (ART), has a history of HIV, and is being evaluated for TB preventive treatment. IRIS can occur after initiation of ART and may present with symptoms that mimic an infection, even in the absence of active disease. The recent mild cold and the fact that TB disease has been ruled out make IRIS a likely consideration, especially if there is a recent immune recovery.\n\n2. **Viral illness (e.g., common cold or viral upper respiratory infection)**  \n   - *Reasoning:* The child has a recent mild cold that is resolving, and there are no acute findings on exam. This is a common and likely explanation for the current symptoms, especially in a child with a compromised immune system.\n\n3. **Mycobacterial infection (e.g., atypical mycobacteria or non-tuberculous mycobacteria)**  \n   - *Reasoning:* The child has a history of BCG vaccination and is on ART. While TB disease has been ruled out, other mycobacterial infections may be possible, especially in a child with a weakened immune system.\n\n4. **Other opportunistic infections (e.g., cytomegalovirus, cryptococcus, or fungal infections)**  \n   - *Reasoning:* The child is immunocompromised due to HIV and ART, making him susceptible to opportunistic infections. However, without specific symptoms or findings, this remains less likely than the first two options.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a complete blood count (CBC) with differential, liver function tests (LFTs), and a chest X-ray (if not already done).**  \n- *Rationale:* These tests can help assess for signs of immune reconstitution, inflammation, or other systemic involvement. A CBC can show leukocytosis or lymphopenia, which may be seen in IRIS. LFTs can help rule out hepatic involvement, and a chest X-ray can be repeated if there is any concern for evolving pathology.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Continue antiretroviral therapy (ART) as prescribed.**  \n- **Monitor for signs of IRIS (e.g., fever, rash, lymphadenopathy, or new or worsening symptoms).**  \n- **Consider starting TB preventive treatment (e.g., isoniazid or rifapentine) if the child is eligible and the risk of TB is high.**  \n- **Schedule follow-up in 1\u20132 weeks for reassessment of symptoms and lab results.**  \n- **If symptoms worsen or new symptoms develop, consider referral to an infectious disease specialist for further evaluation.**  \n- **If TST or IGRA is not available, consider repeating the test at a facility with appropriate resources.**",
+  "raw": {
+    "vignette_id": "VIG-065",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 194,
+  "output_tokens": 606
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), given the patient's symptoms of cough, progressive tiredness, and left-sided crackles, which are consistent with pulmonary TB. I would order a chest X-ray to evaluate for signs of pulmonary TB, such as upper lobe infiltrates or cavitation.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms the presence of pulmonary TB, as the culture is a definitive diagnostic test for TB and will help identify the specific strain of Mycobacterium tuberculosis. This will also guide the selection of the most effective treatment regimen.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight, which is described as mildly underweight, to estimate her body surface area (BSA). I would then use the BSA to calculate the dose of each TB medication according to the standard dosing guidelines for each drug. For example, for isoniazid, the dose is typically 5 mg/kg/day, so for a mildly underweight patient, I would estimate her BSA and calculate the dose based on the patient's weight. I would also consider the patient's renal function and any other relevant factors that may affect drug metabolism or excretion.",
+  "raw": {
+    "vignette_id": "VIG-014",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 293,
+  "output_tokens": 259
+}

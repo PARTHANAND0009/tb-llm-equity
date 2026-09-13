@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Progression of drug-sensitive pulmonary Tuberculosis (TB) - The patient's persistent positive sputum smear, weight loss, and cavitary lesion on chest imaging suggest a progression of TB, despite initial treatment.\n   2. Drug-resistant TB - The patient's persistent symptoms and positive sputum smear could potentially indicate drug-resistant TB, although this is less likely given the initial diagnosis of drug-sensitive TB.\n   3. Malnutrition-related complications - The patient's significant malnutrition may be contributing to her poor response to treatment and overall health status.\n   4. Opportunistic infections - Given her immunocompromised state due to TB and malnutrition, she may be at risk for opportunistic infections such as Pneumocystis jirovecii pneumonia or Mycobacterium avium complex (MAC).\n\n2. Single next diagnostic step:\n   Perform a culture and drug sensitivity test on the patient's sputum to confirm the strain of TB and determine the appropriate antibiotics for treatment.\n\n3. Initial management plan:\n   - Continue TB treatment with the appropriate antibiotics based on the culture and drug sensitivity results, ensuring the regimen includes second-line drugs if drug-resistant TB is confirmed.\n   - Address the patient's malnutrition with a nutritional intervention plan, including dietary counseling and supplementation as necessary.\n   - Monitor the patient's oxygen saturation levels and consider supplemental oxygen if levels remain low.\n   - Consider prophylaxis for opportunistic infections, especially if the patient's immune status does not improve with TB treatment and nutritional intervention.\n   - Regularly monitor the patient's response to treatment and adjust as necessary.",
+  "raw": {
+    "vignette_id": "VIG-072",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 226,
+  "output_tokens": 415
+}

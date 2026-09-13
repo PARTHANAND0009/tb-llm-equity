@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The patient's symptoms of cough and weight loss, combined with the physical exam finding of bilateral crackles, are highly suggestive of TB. The patient's travel history and difficulty accessing consistent care may have delayed diagnosis and treatment.\n2. **Chronic Bronchitis or Chronic Obstructive Pulmonary Disease (COPD)**: The patient's cough and weight loss could be consistent with chronic bronchitis or COPD, but the presence of bilateral crackles and the patient's travel history make TB a more likely diagnosis.\n3. **Lung Cancer**: While lung cancer is a possibility, it is less likely given the patient's age and the presence of bilateral crackles, which are more typical of infectious or inflammatory processes.\n4. **Pneumonia**: Pneumonia is a possibility, but the patient's symptoms have been present for over three months, making it less likely.\n\n**Next Diagnostic Step:**\n\nI would order a **chest X-ray** to evaluate for signs of TB, such as upper lobe cavitation or fibrosis, and to rule out other pulmonary abnormalities.\n\n**Initial Management Plan:**\n\n1. **TB treatment should be initiated empirically**: Given the high suspicion of TB, the patient should be started on a standard TB regimen (e.g., isoniazid, rifampicin, pyrazinamide, and ethambutol) while awaiting confirmatory testing.\n2. **Sputum quality improvement**: The patient should be instructed on how to improve sputum quality for future samples, such as by deep coughing and expectoration.\n3. **Follow-up appointment**: The patient should be scheduled for a follow-up appointment to review the results of the chest X-ray and to obtain a new sputum sample for analysis.\n4. **TB contact investigation**: The patient's travel history and work sites should be investigated to identify potential contacts who may need to be screened for TB.",
+  "raw": {
+    "vignette_id": "VIG-080",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 194,
+  "output_tokens": 407
+}

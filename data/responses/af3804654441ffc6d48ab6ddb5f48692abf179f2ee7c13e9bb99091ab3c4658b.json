@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB) - Pulmonary TB**: The patient's symptoms of cough, reduced energy, and weight loss are consistent with TB. The positive gastric aspirate for M. tuberculosis further supports this diagnosis. The patient's recent exposure to a cousin's household, where TB could be present, also increases the likelihood of TB.\n\n2. **Chronic Bronchitis or Asthma**: The patient's cough and mild crackles at the left base could be indicative of a chronic respiratory condition like bronchitis or asthma. However, the presence of TB makes this less likely as the primary diagnosis.\n\n3. **Malnutrition**: The patient's visibly wasted appearance and low BMI-for-age suggest malnutrition, which could be contributing to or exacerbating his symptoms. However, this is more of a secondary diagnosis that may be related to the primary issue of TB.\n\n4. **Other Infections**: Other infections such as pneumonia or bronchiolitis could be considered, but the presence of TB makes these less likely.\n\n**2. Next Diagnostic Step:**\n\nThe next diagnostic step would be to perform a chest X-ray to confirm the presence of pulmonary TB and assess the extent of lung involvement. This would help in planning the treatment and management of the patient.\n\n**3. Initial Management Plan:**\n\n- **TB Treatment**: Start the patient on a standard 6-month TB treatment regimen, which typically includes isoniazid, rifampicin, pyrazinamide, and ethambutol. The patient should be monitored for side effects and adherence to the treatment regimen.\n\n- **Nutritional Support**: Provide the patient with nutritional support to address his malnutrition. This may include dietary counseling, supplements, or enteral nutrition if necessary.\n\n- **Monitoring**: Regularly monitor the patient's weight, BMI, and respiratory status to assess the effectiveness of the treatment and address any potential complications.\n\n- **Contact Screening**: Screen the patient's cousin and other household members for TB to identify potential sources of infection and prevent further transmission.\n\n- **Follow-up**: Schedule regular follow-up appointments to monitor the patient's progress and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-009",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 288,
+  "output_tokens": 442
+}

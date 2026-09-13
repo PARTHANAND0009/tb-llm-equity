@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The patient's symptoms of chronic cough and progressive weight loss, combined with the presence of bilateral cavitary disease on chest X-ray, are highly suggestive of TB. The patient's history of reduced mobility and severe wasting also increases his risk for TB.\n2. **Pneumonia**: The patient's symptoms of cough and mild bilateral crackles could be consistent with pneumonia, but the presence of cavitary disease on chest X-ray and the patient's weight loss make TB a more likely diagnosis.\n3. **Other respiratory infections**: Other respiratory infections, such as bronchiectasis or lung abscess, could also be considered, but are less likely given the patient's symptoms and chest X-ray findings.\n4. **Malnutrition-related respiratory complications**: The patient's severe wasting and temporal wasting could contribute to respiratory complications, but this would not explain the cavitary disease on chest X-ray.\n\n**2. Next Diagnostic Step:**\nPerform an **AFB (Acid-Fast Bacillus) smear** on a sputum sample to confirm the presence of TB. This is a rapid and non-invasive test that can provide a presumptive diagnosis of TB.\n\n**3. Initial Management Plan:**\nGiven the high suspicion of TB, the patient should be started on **TB prophylaxis** with isoniazid (INH) and rifampicin (RIF) while awaiting confirmatory test results. The patient should also be isolated to prevent transmission of TB to others. Nutritional support and management of malnutrition should also be initiated, including provision of a balanced diet and consideration of nutritional supplements.",
+  "raw": {
+    "vignette_id": "VIG-047",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 239,
+  "output_tokens": 345
+}

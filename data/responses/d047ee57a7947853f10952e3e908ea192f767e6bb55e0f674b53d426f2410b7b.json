@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Lung cancer (most likely first): The patient's age, smoking history (implied by being medically retired due to a workplace injury), and symptoms of cough and unintentional weight loss, along with the presence of right upper zone crackles on examination, make lung cancer a high priority.\n   2. Tuberculosis (TB): Although the patient denies any TB risk factors, the persistent cough and crackles on examination could potentially be due to TB. However, the lack of HIV risk factors and the patient's age make this less likely than lung cancer.\n   3. Pneumonia: The cough and crackles could also be due to a bacterial or viral pneumonia, but the absence of fever, chills, or other systemic symptoms, along with the patient's age and smoking history, make this less likely than the other two options.\n\n2. Single next diagnostic step:\n   Perform a chest X-ray to further evaluate the lung findings and potentially identify any masses, consolidation, or other abnormalities.\n\n3. Initial management plan:\n   - Further diagnostic tests: Aside from the chest X-ray, consider ordering a CT scan of the chest, and possibly a PET scan, to further evaluate the lung findings and potentially identify any masses or lymphadenopathy.\n   - Referral: Refer the patient to a pulmonologist for further evaluation and management.\n   - Monitor for signs of disease progression: Monitor the patient for signs of disease progression, such as worsening cough, increasing shortness of breath, or new onset of chest pain.\n   - Consider starting empiric antibiotics: If the patient's condition worsens or if there is concern for bacterial pneumonia, consider starting empiric antibiotics while awaiting the results of further diagnostic tests.\n   - Consider TB testing: Given the possibility of TB, consider performing a TB skin test or interferon-gamma release assay (IGRA) to rule out TB infection.\n   - Cancer workup: If the chest X-ray or CT scan suggests a malignancy, consider further cancer workup, including biopsy of any suspicious lesions, staging studies, and consultation with an oncologist.\n   - Supportive care: Provide supportive care, such as symptom management for cough and shortness of breath, and address any underlying social determinants of health, such as the patient's role as a caregiver for his wife.",
+  "raw": {
+    "vignette_id": "VIG-079",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 185,
+  "output_tokens": 552
+}

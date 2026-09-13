@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the positive Xpert MTB/RIF result, the patient's symptoms of cough and the absence of other obvious causes for her symptoms, TB is the most likely diagnosis.\n   2. Type 1 diabetes complications - Although type 1 diabetes is a known condition, the new onset of cough could be a complication such as bronchitis or pneumonia, but these are less likely given the negative sputum culture for rifampicin.\n   3. Other respiratory infections - Other respiratory infections such as bacterial pneumonia or viral bronchitis are less likely due to the positive Xpert MTB/RIF result, but cannot be completely ruled out without further testing.\n\n2. Single next diagnostic step:\n   Perform a chest X-ray to confirm the presence of TB and rule out other potential causes for the cough, such as pneumonia or lung cancer.\n\n3. Initial management plan:\n   - Start the patient on a standard first-line TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) as soon as possible, while awaiting the results of the culture and drug sensitivity tests.\n   - Monitor the patient's response to treatment and adjust the regimen if necessary based on the results of drug sensitivity tests.\n   - Monitor the patient's blood glucose levels closely and adjust her insulin regimen as needed to maintain good control.\n   - Educate the patient and her family about TB, its transmission, and the importance of adherence to the treatment regimen.\n   - Monitor the patient for side effects of TB treatment and manage them as needed.\n   - Consider referring the patient to a specialist for further management and support.",
+  "raw": {
+    "vignette_id": "VIG-054",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 245,
+  "output_tokens": 409
+}

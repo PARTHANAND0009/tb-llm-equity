@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Spinal TB (Pott's disease)**: The patient's MRI findings of vertebral body destruction and paraspinal collection, combined with the positive molecular testing for M. tuberculosis, strongly support this diagnosis.\n2. **Osteoporosis with vertebral compression fractures**: The patient's history of heavy lifting and progressive mid-back pain could be consistent with osteoporosis, but the presence of a paraspinal collection and the MRI findings make this less likely.\n3. **Metastatic cancer**: Although the patient has lost weight, the primary complaint is back pain, and the MRI findings are more suggestive of an infectious process.\n4. **Osteomyelitis**: The presence of a paraspinal collection could be consistent with osteomyelitis, but the positive molecular testing for M. tuberculosis makes this less likely.\n5. **Other causes of back pain (e.g., degenerative disc disease, spondylosis)**: These are less likely given the MRI findings and the presence of a paraspinal collection.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess for pulmonary TB, which is a common source of extrapulmonary TB, including Pott's disease. This will help determine if the patient has a primary or reactivation TB infection.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a standard 6-month regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, with close monitoring of liver function and renal function.\n* **Pain management**: Continue over-the-counter analgesics as needed, with consideration for adding a nonsteroidal anti-inflammatory drug (NSAID) or a weak opioid if the pain is severe.\n* **Supportive care**: Encourage the patient to rest, avoid heavy lifting, and maintain good nutrition to help with weight gain.\n* **Follow-up**: Schedule regular follow-up appointments to monitor the patient's response to treatment, assess for any new symptoms, and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-031",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 300,
+  "output_tokens": 432
+}

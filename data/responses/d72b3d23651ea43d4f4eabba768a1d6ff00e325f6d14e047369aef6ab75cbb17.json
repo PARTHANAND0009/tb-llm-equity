@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculous Pericarditis**: The patient's symptoms of progressive breathlessness, chest discomfort, and low-grade fevers are consistent with tuberculous pericarditis. The presence of a moderate pericardial effusion and the positive molecular testing for M. tuberculosis in the pericardial fluid further support this diagnosis.\n2. **Constrictive Pericarditis**: Although the patient has a pericardial effusion, the lack of tamponade physiology and the presence of a moderate effusion suggest that constrictive pericarditis might be a consideration, especially if the patient's symptoms worsen over time.\n3. **Cardiac Amyloidosis**: The patient's history of poorly controlled diabetes and the presence of a pericardial effusion could also suggest cardiac amyloidosis, but this would be less likely given the patient's age and the presence of M. tuberculosis in the pericardial fluid.\n4. **Cardiac Metastasis**: Although the patient's symptoms could be attributed to cardiac metastasis, this would be less likely given the patient's age and the presence of M. tuberculosis in the pericardial fluid.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for any signs of pulmonary tuberculosis, such as upper lobe infiltrates or cavitation, which would support the diagnosis of tuberculous pericarditis.\n\n**3. Initial Management Plan:**\n\n- **Start antitubercular therapy**: Initiate a standard antitubercular regimen, typically isoniazid, rifampicin, pyrazinamide, and ethambutol, to treat the M. tuberculosis infection.\n- **Monitor for cardiac function**: Regularly monitor the patient's cardiac function, including echocardiogram and electrocardiogram, to assess the progression of the pericarditis and the effectiveness of the antitubercular therapy.\n- **Manage symptoms**: Manage the patient's symptoms of breathlessness and chest discomfort with oxygen therapy, diuretics, and pain management as needed.\n- **Follow-up**: Schedule regular follow-up appointments to monitor the patient's response to treatment and adjust the management plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-084",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 257,
+  "output_tokens": 463
+}

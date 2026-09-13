@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) Lymphadenitis - Given the positive M. tuberculosis molecular test results, this is the most likely diagnosis. The persistent sore on the neck, the connection to a firm lymph node, and the intermittent low-grade fevers support this diagnosis.\n   2. Pyogenic Infections - While less likely, pyogenic infections can also cause ulcers and lymphadenopathy. However, the positive M. tuberculosis test result makes this less probable.\n   3. Cutaneous T-cell lymphoma - This is a less likely diagnosis due to the absence of other systemic symptoms and the positive M. tuberculosis test result.\n   4. Eczema - Given the history of eczema, this was initially considered, but the persistence of the sore and the positive M. tuberculosis test result make this less likely.\n\n2. Single next diagnostic step:\n   A chest X-ray to assess for active pulmonary TB or other signs of extrapulmonary TB.\n\n3. Initial management plan:\n   - Start the patient on a first-line TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) under direct medical supervision.\n   - Monitor the patient for adverse effects of TB treatment and for signs of treatment response (e.g., healing of the ulcer, resolution of lymphadenopathy, and fever resolution).\n   - Consult a pediatrician or pediatric infectious disease specialist for management of TB in a child.\n   - Monitor for potential complications, such as meningitis or disseminated TB, and treat accordingly.\n   - Ensure proper nutrition and hydration, as TB can cause anorexia and dehydration.\n   - Educate the family about TB transmission and the importance of isolation during treatment.\n   - Coordinate with local public health authorities for contact tracing and preventive treatment for close contacts.",
+  "raw": {
+    "vignette_id": "VIG-041",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 295,
+  "output_tokens": 466
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis (TB). The ONE test to order right now is a sputum acid-fast bacilli (AFB) smear and culture, along with nucleic acid amplification test (NAAT) for Mycobacterium tuberculosis.  \n\n2. I would not send a mycobacterial culture at this point because the patient has no prior TB treatment, no known drug-resistant contact, and the likelihood of drug-resistant TB is low. Cultures are typically reserved for cases where drug resistance is suspected or when results from rapid tests are inconclusive.  \n\n3. Assuming drug-susceptible TB is confirmed, I would determine the dose of each drug based on the patient's weight and renal function. For isoniazid, the dose is 5 mg/kg/day, up to a maximum of 300 mg/day. For rifampin, the dose is 10 mg/kg/day, up to a maximum of 600 mg/day. For pyrazinamide, the dose is 25 mg/kg/day, up to a maximum of 1500 mg/day. For ethambutol, the dose is 15 mg/kg/day, up to a maximum of 900 mg/day. Doses should be adjusted based on creatinine clearance if renal function is impaired.",
+  "raw": {
+    "vignette_id": "VIG-078",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 248,
+  "output_tokens": 282
+}

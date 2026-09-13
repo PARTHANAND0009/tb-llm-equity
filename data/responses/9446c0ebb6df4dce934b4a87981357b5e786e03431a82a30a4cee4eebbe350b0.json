@@ -1,0 +1,15 @@
+{
+  "text": "1. No. The Xpert MTB/RIF test already detected Mycobacterium tuberculosis and confirmed rifampicin resistance is not present, so additional rifampicin drug-resistance testing on the initial specimen is unnecessary.\n\n2. You would send a mycobacterial culture after the initial Xpert MTB/RIF test to confirm the diagnosis and to determine drug susceptibility, especially if the patient is not responding to treatment or if there is concern for drug resistance. However, in this case, since Xpert MTB/RIF already confirmed susceptibility, culture may not be needed immediately.\n\n3. (a) The treatment regimen has two phases: an intensive phase (2 months) and a continuation phase (4 months), totaling 6 months. (b) During the intensive phase, the patient takes daily medications, and during the continuation phase, the patient takes medications twice weekly.",
+  "raw": {
+    "vignette_id": "VIG-011",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 327,
+  "output_tokens": 179
+}

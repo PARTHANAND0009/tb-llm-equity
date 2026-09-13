@@ -1,0 +1,15 @@
+{
+  "text": "1. No, rifampicin drug-resistance testing is not typically performed on the initial diagnostic specimen for M. tuberculosis in children, as molecular testing (such as Xpert MTB/RIF) is highly sensitive and specific for detecting rifampicin resistance. In this case, the gastric aspirate was already positive for M. tuberculosis by molecular testing, and the patient has no known exposure to drug-resistant TB, so resistance is unlikely.\n\n2. A mycobacterial culture should be sent as soon as possible after obtaining the specimen, even if molecular testing is positive. Cultures are essential for confirming the diagnosis, determining drug susceptibility, and monitoring treatment response over time, especially in children where resistance patterns may differ from adults.\n\n3. To determine the dose of each drug, I would use the child's weight (13.8 kg) and apply standard dosing guidelines for pediatric tuberculosis. For isoniazid, the dose is 10\u201315 mg/kg/day, typically 10 mg/kg. For rifampicin, it is 10\u201320 mg/kg/day, usually 10 mg/kg. For pyrazinamide, it is 20\u201330 mg/kg/day, typically 20 mg/kg. For ethambutol, it is 15\u201320 mg/kg/day, usually 15 mg/kg. These doses would be adjusted based on the child's response and renal function, and the regimen would be adjusted to a standard 6-month treatment course for pediatric tuberculosis.",
+  "raw": {
+    "vignette_id": "VIG-005",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 366,
+  "output_tokens": 316
+}

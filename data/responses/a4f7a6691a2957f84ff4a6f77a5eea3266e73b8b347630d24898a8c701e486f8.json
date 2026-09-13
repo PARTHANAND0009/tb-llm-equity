@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-resistant Tuberculosis (TB)**: The patient's sputum Xpert MTB/RIF test is positive for TB, but rifampicin resistance is detected, which is concerning for drug-resistant TB. The patient's recent weight loss and cough, combined with the positive TB test, make this the most likely diagnosis.\n2. **Latent Tuberculosis**: Although the patient has never been treated for TB, the positive TB test suggests that she may have latent TB. However, the presence of symptoms and the positive rifampicin resistance make drug-resistant TB more likely.\n3. **HIV-related opportunistic infection**: The patient's HIV status and symptoms could suggest an opportunistic infection, but the positive TB test makes this less likely.\n4. **Pneumonia**: The patient's cough and weight loss could be attributed to pneumonia, but the positive TB test makes this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess the extent of lung involvement and to look for any cavitations or other abnormalities that may suggest drug-resistant TB.\n\n**3. Initial Management Plan:**\n\n- **TB treatment**: Start the patient on a four-drug regimen for drug-resistant TB, which typically includes isoniazid, rifampicin, pyrazinamide, and ethambutol, with the addition of a fluoroquinolone (e.g., moxifloxacin) and an aminoglycoside (e.g., amikacin) to cover for rifampicin resistance.\n- **HIV management**: Continue the patient's antiretroviral therapy (ART) as prescribed, and consider adjusting the regimen if necessary to ensure optimal viral suppression.\n- **Monitoring**: Schedule regular follow-up appointments to monitor the patient's response to TB treatment, including regular sputum tests to assess for conversion to negative and to monitor for resistance patterns.",
+  "raw": {
+    "vignette_id": "VIG-052",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 229,
+  "output_tokens": 398
+}

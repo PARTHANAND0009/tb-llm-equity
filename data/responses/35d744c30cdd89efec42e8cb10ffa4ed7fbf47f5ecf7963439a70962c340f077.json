@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of cough and progressive tiredness, combined with her recent travel or exposure history (implied by her mother-in-law's comment about no known drug-resistant contact), make TB a high-priority consideration. The presence of left-sided crackles on exam also supports this diagnosis.\n2. **Pulmonary Tuberculosis (TB) in the context of pregnancy**: Although the urine pregnancy test was negative, the patient's symptoms could be attributed to early pregnancy, and TB can be a concern in pregnant women, especially if they have been exposed to TB in the past.\n3. **Pulmonary Embolism**: The patient's recent change in lifestyle and mild nausea could be related to a pulmonary embolism, but this is less likely given the absence of other risk factors (e.g., recent surgery, immobility).\n4. **Anemia**: The patient's mild underweight and tiredness could be related to anemia, but this would not explain the cough and crackles.\n5. **Other respiratory infections**: While possible, these would be less likely given the chronic nature of the symptoms and the absence of other symptoms such as fever or sore throat.\n\n**Next Diagnostic Step:**\n\nPerform a **chest X-ray** to evaluate for signs of TB, such as upper lobe consolidation or cavitation, and to rule out other pulmonary abnormalities.\n\n**Initial Management Plan:**\n\n1. **TB treatment**: Start the patient on a standard TB regimen (e.g., isoniazid, rifampicin, pyrazinamide, and ethambutol) pending TB diagnosis confirmation.\n2. **Nutritional support**: Encourage the patient to eat more and consider supplements to address her mild underweight.\n3. **Monitor for TB symptoms**: Continue to monitor the patient for signs of TB, such as fever, night sweats, and weight loss.\n4. **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and to adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-014",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 422
+}

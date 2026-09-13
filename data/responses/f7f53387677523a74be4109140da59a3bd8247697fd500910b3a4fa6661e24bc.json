@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The child's symptoms of low-grade fevers, cough, and weight loss, combined with the positive gastric aspirate for M. tuberculosis, strongly suggest TB. The mother's coworker's history of an unspecified respiratory illness also raises the possibility of TB exposure.\n2. **Respiratory Syncytial Virus (RSV) or Adenovirus**: The child's symptoms could also be consistent with a viral respiratory infection, particularly given the lack of response to amoxicillin and the presence of mild anemia.\n3. **Pneumonia**: The child's symptoms could also be consistent with pneumonia, particularly given the presence of crackles at the right base.\n4. **Other respiratory infections (e.g., pertussis, influenza)**: Although less likely given the duration and nature of the symptoms, these should be considered in the differential diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for signs of pulmonary TB, such as upper lobe consolidation or cavitation, and to rule out other causes of respiratory infection.\n\n**3. Initial Management Plan:**\n\n- **TB treatment initiation**: Start the child on a standard 4-drug regimen for TB, including isoniazid, rifampicin, pyrazinamide, and ethambutol, pending further diagnostic confirmation.\n- **Close monitoring**: Closely monitor the child's vital signs, respiratory status, and appetite, and provide supportive care as needed.\n- **Contact tracing**: Attempt to contact the mother's coworker to assess for TB exposure and potential transmission risk.\n- **TB testing for the mother and other household contacts**: Consider testing the mother and other household contacts for TB to rule out exposure and potential transmission risk.\n- **Nutritional support**: Ensure the child is receiving adequate nutrition and hydration to support recovery from TB.",
+  "raw": {
+    "vignette_id": "VIG-005",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 316,
+  "output_tokens": 391
+}

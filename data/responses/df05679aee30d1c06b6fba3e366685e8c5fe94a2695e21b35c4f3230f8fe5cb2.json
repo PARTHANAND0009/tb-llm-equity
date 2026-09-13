@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **HIV-associated TB (pulmonary TB)**: The patient's perinatally acquired HIV status, symptoms of cough and reduced playfulness, and the presence of left hilar lymphadenopathy on chest X-ray are highly suggestive of TB, particularly given the systematic TB screening program in place for children living with HIV.\n2. **Respiratory syncytial virus (RSV) or other viral respiratory infection**: The patient's symptoms of cough and mild respiratory distress could be consistent with a viral respiratory infection, but the presence of lymphadenopathy and the patient's HIV status make TB a more likely diagnosis.\n3. **Pneumonia**: While pneumonia is a possible consideration, the patient's well-appearing status and lack of respiratory distress make it less likely.\n4. **Other opportunistic infections (e.g., Pneumocystis jirovecii pneumonia)**: Given the patient's HIV status, opportunistic infections are a consideration, but the clinical presentation is less typical for these conditions.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB sputum smear and culture** to confirm the diagnosis of TB. This is the most direct and efficient way to diagnose TB, especially given the patient's symptoms and risk factors.\n\n**3. Initial Management Plan:**\n\n- **TB sputum smear and culture**: As mentioned above, this is the next diagnostic step to confirm the diagnosis of TB.\n- **TB treatment initiation**: If the diagnosis of TB is confirmed, start the patient on TB treatment according to the local guidelines, which typically involves a combination of isoniazid, rifampicin, pyrazinamide, and ethambutol for the initial phase.\n- **Monitor for TB treatment side effects**: Regularly monitor the patient for potential side effects of TB treatment, such as hepatotoxicity and peripheral neuropathy.\n- **Continue antiretroviral therapy (ART)**: Continue the patient's ART as prescribed, as TB treatment does not affect the need for HIV treatment.\n- **Follow-up and evaluation**: Schedule regular follow-up appointments to monitor the patient's response to TB treatment, adjust the treatment regimen as needed, and address any concerns or side effects.",
+  "raw": {
+    "vignette_id": "VIG-049",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 253,
+  "output_tokens": 456
+}

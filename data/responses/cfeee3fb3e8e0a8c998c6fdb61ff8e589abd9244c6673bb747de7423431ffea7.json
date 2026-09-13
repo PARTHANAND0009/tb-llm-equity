@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's sputum smear remains positive after 2 months of treatment, which is a strong indicator of treatment failure or resistance. The extensive bilateral cavitary disease on chest imaging also supports this diagnosis.\n2. **Pneumonia**: The patient's increased respiratory rate, decreased oxygen saturation, and worsening breathlessness could be indicative of a secondary infection, such as pneumonia, which may be complicating his TB treatment.\n3. **COPD exacerbation**: The patient's worsening symptoms could also be attributed to a COPD exacerbation, but this would not explain the persistent positive sputum smear.\n4. **TB relapse**: Although less likely, the patient's persistent positive sputum smear could also indicate a relapse of TB, but this would be less likely given the extensive cavitary disease.\n\n**2. Next Diagnostic Step:**\nPerform a **TB drug susceptibility testing (DST)**: This is essential to determine if the patient's TB is resistant to any of the first-line TB drugs, which would guide the treatment regimen and help explain the treatment failure.\n\n**3. Initial Management Plan:**\n- **Continue TB treatment**: Continue the current TB treatment regimen under direct observation at the camp's health post.\n- **Investigate and treat secondary infection**: Consider empiric treatment for pneumonia with antibiotics, pending further diagnostic testing.\n- **Optimize COPD management**: Ensure the patient has access to his bronchodilator inhaler and consider adding other COPD medications as needed to manage his symptoms.\n- **Monitor and adjust treatment**: Closely monitor the patient's response to treatment and adjust the TB regimen based on the DST results and clinical response.",
+  "raw": {
+    "vignette_id": "VIG-024",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 294,
+  "output_tokens": 364
+}

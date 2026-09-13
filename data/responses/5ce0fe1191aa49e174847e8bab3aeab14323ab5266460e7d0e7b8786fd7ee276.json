@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Active Pulmonary Tuberculosis (TB)**: The patient's symptoms of chronic cough, cavitary disease on chest X-ray, and recent exposure to TB in a high-risk environment (seasonal farm work) make TB a high likelihood. The patient's poorly controlled diabetes and history of running out of medication while traveling may have contributed to the development of active TB.\n2. **Diabetic Ketoacidosis**: The patient's high blood glucose (260 mg/dl), polyuria, and increased thirst are consistent with diabetic ketoacidosis, a complication of uncontrolled diabetes. However, the presence of chronic cough and cavitary disease on chest X-ray suggests that TB is a more likely diagnosis.\n3. **Pneumonia**: The patient's symptoms of cough and mild crackles bilaterally could be consistent with pneumonia, but the presence of cavitary disease on chest X-ray and the patient's recent exposure to TB make TB a more likely diagnosis.\n4. **Chronic Obstructive Pulmonary Disease (COPD)**: The patient's history of exposure to field dust and symptoms of cough could be consistent with COPD, but the presence of cavitary disease on chest X-ray and the patient's recent exposure to TB make TB a more likely diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform an **Interferon-Gamma Release Assay (IGRA) or Mantoux Tuberculin Skin Test (TST)** to confirm the diagnosis of TB. This will help determine if the patient has been infected with Mycobacterium tuberculosis and if the infection is active or latent.\n\n**3. Initial Management Plan:**\n\n* **TB Treatment**: Start the patient on a standard 4-drug regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol for the treatment of active TB.\n* **Diabetes Management**: Continue the patient's current diabetes medication and provide education on the importance of adhering to the medication regimen, especially while traveling.\n* **Monitoring**: Schedule regular follow-up appointments to monitor the patient's response to TB treatment and adjust the treatment regimen as needed.\n* **Infection Control**: Educate the patient on the importance of infection control measures, such as wearing a mask when interacting with others, to prevent the spread of TB to others.",
+  "raw": {
+    "vignette_id": "VIG-048",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 252,
+  "output_tokens": 481
+}

@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Multidrug-resistant tuberculosis (MDR-TB)**: The patient's sputum smear remains positive after 2 months of treatment, indicating a possible development of resistance to the initial treatment regimen. The patient's significant malnutrition and history of weight loss also suggest a compromised immune system, making it harder to fight off the infection.\n2. **Non-adherence to treatment**: The patient's mild improvement and positive sputum smear suggest that the patient may not be adhering to the prescribed treatment regimen, which could be due to various reasons such as lack of understanding, forgetfulness, or social issues.\n3. **Co-infection with another respiratory pathogen**: The patient's persistent symptoms and positive sputum smear could also be due to a co-infection with another respiratory pathogen, such as a viral or fungal infection.\n4. **Treatment failure due to underlying condition**: The patient's malnutrition and weight loss could be contributing to the treatment failure, as malnutrition can impair the immune system and make it harder to fight off the infection.\n\n**2. Next Diagnostic Step:**\n\nI would order a **drug susceptibility testing (DST)** to determine if the patient's TB bacteria have developed resistance to the current treatment regimen. This would help to identify the most effective treatment options for the patient.\n\n**3. Initial Management Plan:**\n\n* Continue the current treatment regimen for pulmonary TB, but with a closer monitoring of the patient's adherence and response to treatment.\n* Assess the patient's nutritional status and provide guidance on improving her diet and nutrition.\n* Consider referring the patient to a social worker or a case manager to address any social issues that may be contributing to non-adherence.\n* Order a chest X-ray or CT scan to assess the size and activity of the cavitary lesion.\n* Consider adding a second-line antitubercular medication to the treatment regimen if the patient's response to the current treatment is not satisfactory.",
+  "raw": {
+    "vignette_id": "VIG-072",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 401
+}

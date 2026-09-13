@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Pulmonary TB (PTB) with rifampicin mono-resistance**: The patient's symptoms of cough and night sweats, combined with the positive sputum test for M. tuberculosis and rifampicin resistance, strongly suggest PTB. The presence of rifampicin resistance narrows the differential diagnosis, making PTB the most likely cause.\n2. **Pulmonary TB (PTB) with isoniazid mono-susceptible and fluoroquinolone susceptible**: Although the patient's TB is resistant to rifampicin, her susceptibility to isoniazid and fluoroquinolone suggests that her TB may be a result of a single-drug resistant strain, rather than a multi-drug resistant (MDR) strain.\n3. **Other respiratory infections (e.g., pneumonia, bronchitis)**: Although less likely, other respiratory infections could present with similar symptoms, but the positive sputum test for M. tuberculosis makes PTB the more likely diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess the extent of lung involvement and to rule out other causes of respiratory symptoms. This will help confirm the diagnosis of PTB and guide further management.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a 4-drug regimen consisting of isoniazid, rifampicin, pyrazinamide, and ethambutol, with the addition of fluoroquinolone as a fourth drug to cover for rifampicin resistance.\n* **Contact tracing**: Screen the patient's 9-year-old brother for TB, as he is at risk of infection due to close contact with the patient.\n* **TB treatment for the brother**: If the brother is found to be infected, start him on a 6-month course of isoniazid and rifampicin, with close monitoring for side effects and adherence.\n* **TB treatment adherence**: Ensure the patient adheres to the treatment regimen and monitor for side effects, such as hepatotoxicity and peripheral neuropathy.\n* **Follow-up**: Schedule regular follow-up appointments to monitor the patient's response to treatment, including regular sputum tests to confirm the effectiveness of the treatment.",
+  "raw": {
+    "vignette_id": "VIG-058",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 235,
+  "output_tokens": 477
+}

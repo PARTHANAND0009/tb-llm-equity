@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Chronic Obstructive Pulmonary Disease (COPD) - Given the patient's age, history of smoking (implied), and symptoms of a persistent cough and increasing dyspnea, COPD is a likely cause. The non-cavitary right infiltrate on chest X-ray supports this diagnosis.\n   2. Bronchitis - While bronchitis can cause a persistent cough, the presence of mild crackles and the chronic nature of the symptoms suggest a more significant underlying lung disease, making COPD more likely.\n   3. Lung cancer - The symptoms and X-ray findings are not definitive for lung cancer, but it remains a possibility, especially given the patient's age and smoking history. However, the lack of significant weight loss and the chronic nature of the symptoms slightly decrease its likelihood compared to COPD.\n   4. Pneumonia - While pneumonia can cause a persistent cough and dyspnea, the chronic nature of the symptoms and the lack of fever or other acute symptoms suggest a more chronic process, making pneumonia less likely.\n   5. Heart failure - While heart failure can cause dyspnea, the lack of signs of congestive heart failure on physical exam and the presence of a lung infiltrate on X-ray make this less likely.\n\n2. The single next diagnostic step you would take right now:\nGiven the current findings, the next diagnostic step would be to perform a spirometry test to confirm the diagnosis of COPD. This test measures lung function and can help confirm the diagnosis of COPD and assess its severity.\n\n3. Initial management plan:\n   1. Confirm the diagnosis with spirometry.\n   2. If COPD is confirmed, initiate pharmacotherapy according to the Global Initiative for Chronic Obstruction Pulmonary Disease (GOLD) guidelines. This may include bronchodilators, inhaled corticosteroids, and/or combination therapy.\n   3. Encourage smoking cessation and provide resources for smoking cessation support.\n   4. Advise the patient to avoid respiratory irritants and to maintain a healthy lifestyle, including regular exercise and a balanced diet.\n   5. Monitor the patient's symptoms and lung function regularly to assess response to treatment and adjust treatment as necessary.\n   6. Consider referral to a pulmonologist for further management.",
+  "raw": {
+    "vignette_id": "VIG-028",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 522
+}

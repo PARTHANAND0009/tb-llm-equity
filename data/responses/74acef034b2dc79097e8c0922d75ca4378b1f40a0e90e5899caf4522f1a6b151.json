@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB): Given the patient's age, history of diabetes, and the presence of bilateral cavitary disease on chest X-ray, TB is the most likely diagnosis. The patient's diabetes, which is poorly controlled and may weaken her immune system, increases her risk for TB.\n   2. Lung cancer: While less likely, the presence of cavitary disease could also suggest lung cancer, especially given the patient's history of smoking (implied by her work in a factory). However, the absence of other red flags such as weight loss, hemoptysis, or a history of smoking makes TB more likely.\n   3. Fungal infections: Fungal infections such as histoplasmosis or coccidioidomycosis could be considered, but these are less common and the patient's history does not suggest exposure to the appropriate geographical areas.\n   4. Other bacterial infections: Other bacterial infections such as nontuberculous mycobacteria (NTM) or pneumonia could be considered, but they are less likely given the patient's history and the presence of cavitary disease.\n\n2. Single next diagnostic step:\n   Given the high suspicion of TB, the next diagnostic step would be to obtain a sputum sample for acid-fast bacilli (AFB) smear and culture, and if possible, a tuberculin skin test or interferon-gamma release assay (IGRA) to confirm the diagnosis.\n\n3. Initial management plan:\n   - Start the patient on a TB regimen appropriate for drug-sensitive TB, such as isoniazid, rifampin, ethambutol, and pyrazinamide, and monitor for drug interactions with her diabetes medication.\n   - Monitor the patient's glucose levels closely and adjust her diabetes medication as needed to achieve good glycemic control.\n   - Monitor the patient for side effects of TB treatment, such as hepatotoxicity, peripheral neuropathy, and optic neuritis.\n   - Monitor the patient for signs of treatment failure, such as persistent cough, fever, or worsening chest X-ray findings, and adjust the treatment regimen as necessary.\n   - Consider referring the patient to a pulmonologist or infectious disease specialist for further management.\n   - Educate the patient on the importance of adhering to the TB treatment regimen and the potential risks of non-adherence.",
+  "raw": {
+    "vignette_id": "VIG-092",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 214,
+  "output_tokens": 559
+}

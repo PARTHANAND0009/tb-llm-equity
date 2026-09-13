@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculosis (TB) lymphadenitis**: The patient's symptoms and the positive molecular testing for M. tuberculosis from the fine-needle aspiration of the axillary node strongly support this diagnosis. The gradual enlargement of the lymph node over three weeks and the lack of pain also align with TB lymphadenitis.\n2. **Cat-Scratch Disease (CSD)**: Although the patient has had low-grade fevers, the lack of overlying skin changes and the absence of other lymphadenopathy make this less likely. However, it cannot be ruled out entirely.\n3. **Hodgkin's Lymphoma**: Although lymphoma is a consideration in children with lymphadenopathy, the lack of systemic symptoms (e.g., weight loss, night sweats) and the absence of other lymphadenopathy make this less likely.\n4. **Infectious mononucleosis**: Although this condition can cause lymphadenopathy, the lack of systemic symptoms and the absence of other lymphadenopathy make this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for pulmonary TB, which is a common manifestation of extrapulmonary TB. This will help determine if the patient has primary TB or if the axillary lymph node is a site of secondary spread.\n\n**3. Initial Management Plan:**\n\n- **Isolate the patient**: To prevent transmission of TB to others, the patient should be isolated until TB treatment is initiated.\n- **TB treatment**: Start the patient on a standard 6-month regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, with or without streptomycin, based on local resistance patterns.\n- **Monitor for side effects**: Regularly monitor the patient for side effects of TB medications, such as hepatotoxicity and peripheral neuropathy.\n- **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and to assess for any signs of TB relapse or resistance.",
+  "raw": {
+    "vignette_id": "VIG-085",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 243,
+  "output_tokens": 419
+}

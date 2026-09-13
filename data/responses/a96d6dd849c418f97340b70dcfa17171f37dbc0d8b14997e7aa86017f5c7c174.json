@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's persistent positive sputum smear despite two months of directly observed therapy with standard first-line treatment suggests that the TB may be resistant to the standard drugs, making MDR-TB a high concern.\n2. **TB-Associated Diabetes Mellitus**: The patient's high random blood glucose (210 mg/dl) and mild polyuria could be related to TB itself, which can cause hyperglycemia due to the body's stress response to the infection.\n3. **Smoking-Related Chronic Obstructive Pulmonary Disease (COPD)**: The patient's long history of smoking and persistent cough could be indicative of COPD, which may be contributing to her respiratory symptoms.\n4. **TB-Associated Respiratory Failure**: The patient's increased respiratory rate (26/min) and mild hypoxemia (oxygen saturation 93% on room air) could be signs of respiratory failure, which may be related to her TB infection.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB Drug Susceptibility Testing (DST)**: Given the patient's failure to respond to standard first-line treatment, it is essential to determine the susceptibility of the TB bacteria to the standard drugs. This will help guide the treatment plan and ensure that the patient receives the most effective treatment.\n\n**3. Initial Management Plan:**\n\n- **Continue directly observed therapy (DOT) with standard first-line TB treatment**: Continue the current treatment regimen for TB, but with the understanding that the patient may require a change in treatment based on the DST results.\n- **Monitor and manage TB-Associated Diabetes Mellitus**: The patient's high blood glucose and polyuria should be managed with lifestyle modifications and possibly oral hypoglycemic agents or insulin, as needed.\n- **Smoking Cessation Counseling**: Encourage the patient to quit smoking to improve her respiratory symptoms and overall health.\n- **Chest X-ray Follow-up**: Schedule a follow-up chest X-ray in 2-3 months to assess the response to treatment and monitor for any changes in the cavitary lesion.",
+  "raw": {
+    "vignette_id": "VIG-020",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 315,
+  "output_tokens": 444
+}

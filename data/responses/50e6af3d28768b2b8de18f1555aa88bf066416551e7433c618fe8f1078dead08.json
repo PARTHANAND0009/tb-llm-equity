@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Primary Tuberculosis (TB)**: The patient's presentation of cough and reduced energy, combined with the chest X-ray showing a right hilar lymph node pattern suggestive of primary TB, makes this the most likely diagnosis. The patient's HIV status and lack of prior TB treatment or known drug-resistant contact also support this diagnosis.\n2. **Pneumonia**: The patient's symptoms of cough and reduced energy could be consistent with pneumonia, but the presence of a hilar lymph node pattern on the chest X-ray and the patient's HIV status make TB more likely.\n3. **Respiratory Syncytial Virus (RSV) or other viral infection**: The patient's symptoms could also be consistent with a viral infection, but the presence of a hilar lymph node pattern on the chest X-ray and the patient's HIV status make TB more likely.\n4. **Other opportunistic infections**: The patient's HIV status makes him susceptible to other opportunistic infections, but the presence of a hilar lymph node pattern on the chest X-ray and the patient's symptoms make TB more likely.\n\n**Next Diagnostic Step:**\n\nPerform a **TB sputum smear and culture** to confirm the diagnosis of TB. This is the most direct and efficient way to confirm the diagnosis and guide treatment.\n\n**Initial Management Plan:**\n\n1. **Start empirical TB treatment**: Begin treatment with isoniazid, rifampicin, pyrazinamide, and ethambutol, pending the results of the TB sputum smear and culture.\n2. **Monitor for side effects**: Closely monitor the patient for side effects of TB treatment, such as hepatotoxicity and peripheral neuropathy.\n3. **Continue antiretroviral therapy**: Continue the patient's antiretroviral therapy as usual.\n4. **Cotrimoxazole prophylaxis**: Consider starting cotrimoxazole prophylaxis to prevent Pneumocystis jirovecii pneumonia, a common opportunistic infection in HIV-positive patients.\n5. **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-093",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 230,
+  "output_tokens": 438
+}

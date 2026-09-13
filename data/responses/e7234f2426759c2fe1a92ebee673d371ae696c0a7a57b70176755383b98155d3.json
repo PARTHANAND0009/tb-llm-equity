@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis (TB). The ONE test to order right now is a sputum acid-fast bacilli (AFB) smear and culture, along with nucleic acid amplification test (NAAT) for rapid detection of Mycobacterium tuberculosis.  \n\n2. I would not send a mycobacterial culture at this point because the initial test (sputum AFB smear and NAAT) is more sensitive and rapid for diagnosing TB. Cultures are typically reserved if the initial tests are negative but clinical suspicion remains high, or if there is a need for drug susceptibility testing.  \n\n3. To determine the dose of each drug, I would use the patient's weight, which is likely low due to unintentional weight loss. For isoniazid, the dose is 10\u201315 mg/kg/day, typically 300 mg once daily. For rifampin, the dose is 10\u201320 mg/kg/day, usually 600 mg once daily. For pyrazinamide, the dose is 25\u201330 mg/kg/day, typically 1500\u20132000 mg once daily. For ethambutol, the dose is 15\u201320 mg/kg/day, usually 1500\u20132000 mg once daily. Doses should be adjusted based on actual weight and renal function, and the regimen should be confirmed with a physician.",
+  "raw": {
+    "vignette_id": "VIG-082",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 244,
+  "output_tokens": 309
+}

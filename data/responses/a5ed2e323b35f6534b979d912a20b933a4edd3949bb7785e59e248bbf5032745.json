@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculous pericarditis (most likely) - The patient's symptoms of progressive breathlessness, vague chest discomfort, low-grade fevers, and the positive M. tuberculosis result from pericardial fluid make this the most likely diagnosis. The patient's age, longstanding diabetes, and lack of known TB contact or drug-resistant contact do not rule out TB.\n   2. Other causes of pericardial effusion such as viral pericarditis, bacterial pericarditis, or malignancy are less likely given the positive TB result, but they should be considered in the differential diagnosis.\n\n2. Single next diagnostic step:\n   Perform a chest X-ray to confirm the presence of a mediastinal or apical infiltrate, which is common in TB pericarditis. This will help to confirm the diagnosis and rule out other causes of pericardial effusion.\n\n3. Initial management plan:\n   - Start the patient on a course of anti-tuberculosis therapy (e.g., isoniazid, rifampin, ethambutol, and pyrazinamide) as soon as possible.\n   - Monitor the patient's clinical status closely, including respiratory function, heart function, and glucose control.\n   - Monitor the patient's white blood cell count and C-reactive protein levels to assess response to treatment.\n   - Consult with an infectious disease specialist for guidance on appropriate treatment and management.\n   - Consider referral to a cardiologist for ongoing management of the pericardial effusion and potential pericardiocentesis if the effusion worsens or causes hemodynamic instability.\n   - Ensure close follow-up and monitoring of the patient's diabetes management to prevent complications.\n   - Educate the patient and her family about the importance of adhering to the anti-tuberculosis therapy and the potential risks of non-adherence.\n   - Consider referring the patient to a social worker or case manager to address any barriers to care and ensure the patient has the resources and support needed to complete the treatment course.",
+  "raw": {
+    "vignette_id": "VIG-036",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 274,
+  "output_tokens": 484
+}

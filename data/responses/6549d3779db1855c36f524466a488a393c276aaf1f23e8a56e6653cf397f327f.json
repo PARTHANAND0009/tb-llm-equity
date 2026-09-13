@@ -1,0 +1,15 @@
+{
+  "text": "1. Given the patient's symptoms, Xpert MTB/RIF results, and the presence of non-cavitary bilateral infiltrates on chest X-ray, it would be appropriate to send a mycobacterial culture to confirm the diagnosis and to test for drug susceptibility. This is important to ensure the most effective treatment and to prevent the development of drug-resistant TB.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the standard treatment regimen for a 66-year-old patient would have two phases:\n   a) Intensive phase: This phase lasts for 2 months and includes daily administration of isoniazid (INH), rifampicin (RIF), ethambutol (EMB), and pyrazinamide (PZA).\n   b) Continuation phase: This phase lasts for 4 months and includes daily administration of INH and RIF.\n\n3. To determine the dose of each drug for this specific patient, several factors would be considered, including the patient's weight, age, and any kidney or liver function issues. The doses would be adjusted based on the patient's body weight, with the typical adult doses being:\n   a) Isoniazid: 300 mg daily (adjusted for renal function if necessary)\n   b) Rifampin: 600 mg daily (adjusted for liver function if necessary)\n   c) Ethambutol: 15 mg/kg daily (maximum 1200 mg)\n   d) Pyrazinamide: 15-30 mg/kg daily (maximum 2000 mg)\n   The doses would be provided in tablet form, with the number of tablets calculated based on the patient's weight and the dosage strength of the available tablets.",
+  "raw": {
+    "vignette_id": "VIG-012",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 361,
+  "output_tokens": 421
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. I would send a mycobacterial culture on this patient after the Xpert MTB/RIF test, as it is a rapid and sensitive test for diagnosing pulmonary tuberculosis (TB), and the Xpert MTB/RIF result is already positive. This would be done to confirm the diagnosis and to identify the presence of rifampicin resistance, which is not detected in this case. The culture will also help to identify the species of Mycobacterium and to perform drug susceptibility testing.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the treatment regimen would be a 6-month regimen with two phases: the intensive phase (2 months) and the continuation phase (4 months). \n   (a) The intensive phase would involve taking isoniazid (H), rifampicin (R), pyrazinamide (Z), and ethambutol (E) for 2 months, with the patient taking 1 tablet of HREZE (isoniazid 150 mg, rifampicin 75 mg, pyrazinamide 400 mg, and ethambutol 80 mg) once daily.\n   (b) The continuation phase would involve taking isoniazid and rifampicin for 4 months, with the patient taking 1 tablet of HR (isoniazid 150 mg and rifampicin 75 mg) once daily.\n\n3. To determine the dose of each drug for this specific patient, I would use the following patient information: \n   - Age: 66 years\n   - Weight: 48 kg\n   - Renal function: not specified, but assuming normal\n   - Liver function: not specified, but assuming normal\n   - The patient's body weight is below the average weight for an adult, so I would use the lower end of the recommended dose range for each drug.\n   - For isoniazid, the recommended dose is 5 mg/kg/day, so the patient's dose would be 5 mg/kg/day * 48 kg = 240 mg/day, which is equivalent to 1 tablet of isoniazid 150 mg.\n   - For rifampicin, the recommended dose is 10 mg/kg/day, so the patient's dose would be 10 mg/kg/day * 48 kg = 480 mg/day, which is equivalent to 6 tablets of rifampicin 75 mg, but this is not a standard tablet combination, so I would use 1 tablet of rifampicin 150 mg and 1 tablet of isoniazid 150 mg (HR) once daily.",
+  "raw": {
+    "vignette_id": "VIG-012",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 336,
+  "output_tokens": 539
+}

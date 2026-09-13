@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculous Pleuritis (Tuberculosis of the pleura)**  \n   - **Reasoning:** The patient has a large right-sided pleural effusion, positive molecular testing for *M. tuberculosis* in pleural fluid, and low-grade fevers. These are classic features of tuberculous pleuritis. The absence of prior TB treatment or known exposure is not a barrier to diagnosis, as TB can be latent or reactivated. The clinical presentation aligns strongly with TB.\n\n2. **Malignant Pleural Effusion**  \n   - **Reasoning:** The presence of a large pleural effusion, progressive breathlessness, and the patient\u2019s age (70 years) raise concern for malignancy. However, the positive TB test makes this less likely at this point, though it remains a possible differential.\n\n3. **Congestive Heart Failure (CHF)**  \n   - **Reasoning:** While CHF can cause pleural effusions, the presence of fever and positive TB testing makes TB a more likely diagnosis. Additionally, the patient has no peripheral edema, which is more commonly seen in CHF.\n\n4. **Empyema or Bacterial Pneumonia with Secondary Effusion**  \n   - **Reasoning:** These can also cause pleural effusions, but the presence of TB testing positive and the patient\u2019s travel history (which may increase TB risk) make TB the more likely diagnosis.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a chest CT scan of the thorax with contrast to evaluate for underlying lung disease, such as cavitary lesions, nodules, or lymphadenopathy, which may suggest active TB or malignancy.**\n\n---\n\n3. **Initial Management Plan:**\n\n- **Start anti-tuberculosis therapy (ATT):** Begin a full regimen of first-line anti-TB drugs (e.g., isoniazid, rifampin, pyrazinamide, and ethambutol) based on the positive molecular test for *M. tuberculosis* in pleural fluid.  \n- **Monitor for adverse effects:** Regularly assess for drug toxicity (e.g., liver function, visual changes, peripheral neuropathy).  \n- **Repeat pleural fluid analysis:** Consider repeating pleural fluid analysis (e.g., ADA levels, cell count, gram stain, culture) to confirm the diagnosis and guide further management.  \n- **Pleurodesis or drainage:** If the effusion is causing significant respiratory compromise, consider thoracentesis or pleurodesis to relieve symptoms.  \n- **Monitor for complications:** Watch for signs of TB dissemination (e.g., meningitis, miliary TB) and ensure the patient is referred to a TB specialist for long-term management.  \n- **Screen for drug resistance:** If the patient has a history of TB treatment or is in a high-risk area, consider testing for drug-resistant TB.  \n- **Follow-up imaging:** Schedule a chest CT to evaluate for underlying lung disease and to monitor response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-088",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 243,
+  "output_tokens": 633
+}

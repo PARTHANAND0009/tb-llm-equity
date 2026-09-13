@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's gastric aspirate was positive for M. tuberculosis with rifampicin resistance detected, and follow-up testing confirmed isoniazid and fluoroquinolone susceptibility. This pattern of resistance is consistent with MDR-TB, which is a likely diagnosis given the patient's symptoms and the laboratory results.\n2. **Pulmonary Tuberculosis (TB)**: The patient's symptoms of cough and reduced energy, combined with the laboratory results, suggest that she may have TB. However, the presence of rifampicin resistance makes MDR-TB a more likely diagnosis.\n3. **Other respiratory infections**: The patient's symptoms could be caused by other respiratory infections, such as pneumonia or bronchiolitis, but the presence of rifampicin-resistant TB makes these diagnoses less likely.\n4. **Other conditions**: The patient's mild wasting and right-sided crackles could be caused by other conditions, such as asthma or cystic fibrosis, but the laboratory results and the patient's symptoms make these diagnoses less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess the extent of lung involvement and to look for any cavitations or other abnormalities that may be associated with MDR-TB.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a regimen of isoniazid, fluoroquinolone, and a third drug (such as pyrazinamide or ethambutol) to ensure that the patient is receiving effective treatment for MDR-TB.\n* **Infection control**: Implement infection control measures to prevent the spread of MDR-TB to the patient's brother and other family members, including:\n\t+ Isolation of the patient\n\t+ Use of N95 masks by healthcare workers and family members\n\t+ Ventilation of the patient's room\n\t+ Regular cleaning and disinfection of the patient's environment\n* **Monitoring**: Monitor the patient's response to treatment, including regular follow-up appointments and laboratory tests to assess the effectiveness of the treatment regimen.\n* **Contact tracing**: Identify and screen the patient's brother and other close contacts for TB infection, and provide them with preventive therapy if necessary.",
+  "raw": {
+    "vignette_id": "VIG-061",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 246,
+  "output_tokens": 473
+}

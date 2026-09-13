@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Latent TB infection (LTBI) - Given the exposure to an individual with active TB, her congenital heart disease, and BCG vaccination, LTBI is the most likely diagnosis. The BCG vaccination may have provided some protection against TB, but it does not eliminate the risk, especially given her congenital heart disease and exposure to an active TB case.\n   2. TB reactivation - While less likely due to her age and lack of symptoms, it's still a possibility given her congenital heart disease and exposure to TB.\n   3. Other infections - Given her age, other infections such as respiratory infections or other opportunistic infections should be considered, but they are less likely given her lack of symptoms and negative chest imaging.\n\n2. Single next diagnostic step:\n   A tuberculin skin test (TST) or interferon-gamma release assay (IGRA) to confirm LTBI.\n\n3. Initial management plan:\n   - If the TST or IGRA is positive, initiate preventive TB treatment with isoniazid for 6-9 months under direct observation.\n   - Monitor her cardiac status regularly, as TB treatment may affect her congenital heart disease.\n   - Educate the family about TB transmission and the importance of isolating the father during his treatment.\n   - Consider referring the father to a TB specialist for optimal management of his active TB disease.\n   - Consider offering preventive TB treatment to other household members if they have not been previously vaccinated or tested for TB.\n   - Monitor the child for any signs or symptoms of active TB during the course of her preventive treatment.",
+  "raw": {
+    "vignette_id": "VIG-069",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 205,
+  "output_tokens": 388
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), given the patient's symptoms of chronic cough, fatigue, night sweats, and physical exam findings of pale conjunctivae and bilateral lower-zone crackles. I would order a chest X-ray to evaluate for pulmonary TB, as it is a rapid and non-invasive test that can help confirm the presence of lung involvement.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms the presence of pulmonary TB, as it is essential to identify the specific strain of Mycobacterium tuberculosis to determine its drug susceptibility. This would typically be done after the initial diagnosis is confirmed, as the culture results may take several weeks to obtain.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight, age, and renal function to calculate the dose. For a 14-year-old patient, I would use the World Health Organization (WHO) dosing guidelines for children, which recommend the following doses for the first-line anti-TB medications: Isoniazid (INH) 10-15 mg/kg/day, Rifampicin (RIF) 10-20 mg/kg/day, Pyrazinamide (PZA) 20-30 mg/kg/day, and Ethambutol (EMB) 20-25 mg/kg/day. I would also consider the patient's renal function, as EMB and PZA require dose adjustment in patients with impaired renal function.",
+  "raw": {
+    "vignette_id": "VIG-018",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 293,
+  "output_tokens": 308
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the positive M. tuberculosis result from the gastric aspirate, TB is the most likely diagnosis. The child's symptoms of cough, reduced energy, and weight loss, combined with his low BMI-for-age and the finding of mild crackles at the left base, support this diagnosis.\n   2. Malnutrition - The child's long-standing low weight-for-age and recent weight loss suggest malnutrition, which could be a result of TB or other underlying conditions, but the other symptoms and the positive TB test make TB more likely.\n   3. Other respiratory infections - While other respiratory infections can cause cough and reduced energy, the child's low weight and TB test results make TB more likely.\n   4. Other causes of wasting - Other causes of wasting, such as chronic illnesses or malabsorption syndromes, are less likely given the acute onset of symptoms and the positive TB test.\n\n2. Single next diagnostic step:\n   Given the positive TB test, the next diagnostic step would be to confirm the diagnosis with a chest X-ray to look for signs of TB in the lungs.\n\n3. Initial management plan:\n   - Start the child on a TB treatment regimen, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, under the supervision of a healthcare provider.\n   - Monitor the child's response to treatment, including weight gain and resolution of symptoms.\n   - Ensure proper nutrition and hydration.\n   - Isolate the child to prevent spread of TB to others.\n   - Consult with a pediatrician or pediatric infectious disease specialist for further management and monitoring.\n   - Notify public health authorities to initiate contact tracing and prevent further spread of TB.\n   - Consider addressing any underlying factors contributing to the child's malnutrition, such as poor dietary habits or other health issues.",
+  "raw": {
+    "vignette_id": "VIG-009",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 295,
+  "output_tokens": 458
+}

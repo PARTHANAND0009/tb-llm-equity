@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculous arthritis (Mycobacterium tuberculosis) - Given the positive synovial fluid test for M. tuberculosis, this is the most likely diagnosis. The patient's chronic kidney disease, age, and history of a workplace injury may have predisposed him to this condition.\n   2. Septic arthritis - While this is a possibility, the positive M. tuberculosis test makes it less likely, but it's still worth considering given the symptoms and imaging findings.\n   3. Other causes of arthritis (e.g., rheumatoid arthritis, gout, psoriatic arthritis, etc.) - These are less likely given the patient's presentation, but they should still be considered as part of the differential diagnosis.\n\n2. Single next diagnostic step:\n   Start the patient on a regimen of anti-tuberculosis medications (e.g., isoniazid, rifampin, ethambutol, and pyrazinamide) and monitor for response to treatment. If the patient does not improve, consider re-evaluating the diagnosis and considering other causes of arthritis.\n\n3. Initial management plan:\n   - Start the patient on a regimen of anti-tuberculosis medications (e.g., isoniazid, rifampin, ethambutol, and pyrazinamide) and monitor for response to treatment.\n   - Monitor the patient's white blood cell count, C-reactive protein, and erythrocyte sedimentation rate to assess response to treatment.\n   - Refer the patient to a rheumatologist for further evaluation and management of the arthritis.\n   - Monitor the patient's kidney function closely, as TB treatment can affect kidney function.\n   - Consider referring the patient to an orthopedic surgeon for joint aspiration and management of the hip impairment.\n   - Educate the patient about the importance of adhering to the TB treatment regimen and the potential side effects.\n   - Consider referring the patient to a social worker or case manager to address any barriers to treatment adherence, such as housing or financial issues.\n   - Monitor the patient for signs of tuberculosis transmission to others and provide appropriate isolation and infection control measures if necessary.",
+  "raw": {
+    "vignette_id": "VIG-039",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 291,
+  "output_tokens": 531
+}

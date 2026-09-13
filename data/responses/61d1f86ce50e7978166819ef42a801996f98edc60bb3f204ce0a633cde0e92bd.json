@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB): Given the age, symptoms of persistent cough, fatigue, unintentional weight loss, and the presence of mild right-sided crackles on examination, TB is a high priority. The absence of fevers and lymphadenopathy does not rule out TB, as these symptoms can be variable.\n   2. Bronchitis: While bronchitis can cause a persistent cough, the presence of crackles and weight loss in a young individual suggests a more serious underlying condition.\n   3. Asthma: Asthma can present with cough and fatigue, but the absence of a history of asthma, the persistence of symptoms for six weeks, and the physical findings suggest a different diagnosis.\n   4. Other respiratory infections: Other respiratory infections such as pneumonia or bronchitis could be considered, but the lack of fever and the chronic nature of the symptoms make these less likely.\n\n2. Single next diagnostic step:\n   Given the high suspicion for TB, the next diagnostic step would be to obtain a sputum sample for acid-fast bacilli (AFB) smear and culture, and if possible, a tuberculin skin test or interferon-gamma release assay (IGRA) to confirm the diagnosis.\n\n3. Initial management plan:\n   - Start the patient on a regimen of TB preventative therapy (e.g., isoniazid or rifapentine) while awaiting culture results.\n   - If the patient is not already on a healthy diet, recommend a balanced diet to help with weight gain.\n   - Arrange for follow-up appointments to monitor the patient's condition and culture results.\n   - If the patient's condition worsens, consider hospitalization and further investigation for other potential causes of the symptoms.",
+  "raw": {
+    "vignette_id": "VIG-082",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 196,
+  "output_tokens": 413
+}

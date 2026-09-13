@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Multidrug-resistant tuberculosis (MDR-TB)**: The patient's sputum smear remains positive after 2 months of treatment, which suggests that the TB may not be responding to the current regimen. The patient's significant alcohol use may also contribute to poor adherence to treatment, increasing the likelihood of MDR-TB.\n2. **TB treatment failure**: The patient's slow improvement and persistent sputum smear positivity may indicate that the current treatment regimen is not effective, leading to treatment failure.\n3. **TB reactivation**: The patient's history of TB and the presence of a cavitary lesion suggest that the TB may have reactivated, requiring a change in treatment.\n4. **TB relapse**: The patient's history of TB and the presence of a cavitary lesion suggest that the TB may have relapsed, requiring a change in treatment.\n5. **Other pulmonary infections**: The patient's symptoms and imaging findings could be consistent with other pulmonary infections, such as pneumonia or bronchiectasis.\n\n**Next Diagnostic Step:**\n\nPerform a **TB drug susceptibility testing (DST)**: This test will help determine if the patient's TB is resistant to any of the first-line drugs, which will guide the treatment regimen and help identify the need for a change in treatment.\n\n**Initial Management Plan:**\n\n1. **Continue current TB treatment regimen**: Continue the current treatment regimen for TB, but with a plan to re-evaluate the patient's response in 2-4 weeks.\n2. **Counsel the patient on adherence**: Educate the patient on the importance of adherence to treatment and provide support to improve adherence, considering the patient's significant alcohol use.\n3. **Monitor for side effects**: Monitor the patient for side effects of the TB treatment regimen, such as hepatotoxicity or neuropathy.\n4. **Consider additional diagnostic testing**: Consider additional diagnostic testing, such as a chest CT scan or a bronchoscopy, to further evaluate the patient's lung disease and identify any complications.",
+  "raw": {
+    "vignette_id": "VIG-075",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 210,
+  "output_tokens": 414
+}

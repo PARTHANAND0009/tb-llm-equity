@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms (cough for more than three months, loose-fitting clothes, and Xpert MTB/RIF positive), the presence of a non-cavitary infiltrate on chest imaging, and the negative sputum smear and undetected rifampicin, this suggests drug-resistant TB (DR-TB).\n   2. Bronchitis - While bronchitis can cause a persistent cough, the patient's travel history, the non-cavitary infiltrate on chest imaging, and the Xpert MTB/RIF results make this less likely.\n   3. Other respiratory infections - Other respiratory infections such as pneumonia or bronchitis are less likely due to the patient's travel history, the non-cavitary infiltrate on chest imaging, and the Xpert MTB/RIF results.\n\n2. Single next diagnostic step:\n   Given the Xpert MTB/RIF results, the next diagnostic step would be to perform drug susceptibility testing (DST) to determine the specific drug-resistant pattern and guide the choice of appropriate treatment.\n\n3. Initial management plan:\n   - Start the patient on a regimen for drug-resistant TB, following the guidelines for the region. This will likely involve a combination of second-line TB drugs.\n   - Monitor the patient closely for side effects and treatment response.\n   - Ensure the patient is isolated to prevent the spread of the infection to others.\n   - Refer the patient to a TB specialist for further management and support.\n   - Educate the patient and her family about the importance of adherence to the treatment regimen and the risks of drug-resistant TB.\n   - Arrange for follow-up appointments to monitor the patient's progress and adjust the treatment regimen as necessary.\n   - Notify public health authorities to prevent the spread of the infection in the community.",
+  "raw": {
+    "vignette_id": "VIG-016",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 262,
+  "output_tokens": 451
+}

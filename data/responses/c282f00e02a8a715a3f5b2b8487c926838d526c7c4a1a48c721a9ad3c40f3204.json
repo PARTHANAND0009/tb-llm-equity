@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Spinal TB (Pott's disease)**: The patient's symptoms of low-back pain radiating to both legs, weight loss, and the MRI findings of vertebral body destruction and paraspinal collection are highly suggestive of spinal TB. The positive molecular testing for M. tuberculosis further supports this diagnosis.\n2. **Osteoporosis with vertebral compression fractures**: The patient's history of manual work and the MRI findings could also be consistent with osteoporosis leading to vertebral compression fractures, but the presence of a paraspinal collection and the positive TB testing make this less likely.\n3. **Osteomyelitis**: Although osteomyelitis is a possibility, the presence of a paraspinal collection and the positive TB testing make spinal TB more likely.\n4. **Metastatic disease**: The patient's history of chronic illness and the MRI findings could be consistent with metastatic disease, but the presence of a paraspinal collection and the positive TB testing make spinal TB more likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess for pulmonary TB, which is a common source of extrapulmonary TB, including spinal TB. This will help determine if the patient has a primary or reactivation TB infection.\n\n**3. Initial Management Plan:**\n\n* **Hospital admission**: The patient should be admitted to the hospital for further evaluation and treatment.\n* **TB treatment initiation**: Start the patient on a standard TB regimen, typically isoniazid, rifampicin, pyrazinamide, and ethambutol, pending culture and sensitivity results.\n* **Pain management**: Continue over-the-counter analgesics and consider adding a non-steroidal anti-inflammatory drug (NSAID) or a weak opioid for pain control.\n* **Monitoring**: Monitor the patient's vital signs, pain levels, and neurological status, including bowel and bladder function.\n* **Surgical consultation**: Consult with a neurosurgeon or orthopedic surgeon to discuss the possibility of surgical intervention, such as decompression or stabilization of the spine, if the patient's symptoms worsen or if there is significant neurological compromise.",
+  "raw": {
+    "vignette_id": "VIG-087",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 266,
+  "output_tokens": 453
+}

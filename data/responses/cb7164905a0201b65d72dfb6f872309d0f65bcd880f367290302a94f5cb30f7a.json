@@ -1,0 +1,15 @@
+{
+  "text": "1. You would send a mycobacterial culture at this point to confirm the diagnosis of tuberculosis and to identify any potential drug resistance. While the Xpert MTB/RIF test is rapid and sensitive, it does not detect all drug resistance, and culture can provide more comprehensive susceptibility results.\n\n2. (a) The treatment regimen has two phases: an initial intensive phase lasting 2 months, followed by a continuation phase lasting 4 months. (b) During the intensive phase, the patient takes medications daily, and during the continuation phase, they take them twice weekly.\n\n3. To determine the dose of each drug, you would use the patient's weight, which is approximately 55 kg (assuming a normal weight for a 55-year-old male). Based on standard dosing guidelines, the patient would receive 400 mg of isoniazid, 200 mg of rifampicin, 15 mg/kg of ethambutol (approximately 750 mg), and 5 mg/kg of pyrazinamide (approximately 275 mg) daily during the intensive phase. Doses may be adjusted based on renal function and tolerance, but no dose adjustment is typically needed for this patient.",
+  "raw": {
+    "vignette_id": "VIG-007",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 344,
+  "output_tokens": 253
+}

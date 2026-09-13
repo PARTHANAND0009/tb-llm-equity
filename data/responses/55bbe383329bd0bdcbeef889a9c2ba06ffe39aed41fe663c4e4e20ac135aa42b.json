@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculous pleural effusion**: The patient's symptoms of progressive breathlessness, right-sided chest discomfort, and large pleural effusion, combined with the positive pleural fluid molecular testing for M. tuberculosis, strongly support this diagnosis.\n2. **Malignancy-related pleural effusion**: The patient's age and progressive symptoms could suggest a malignancy, but the lack of systemic symptoms (e.g., weight loss, night sweats) and the specific finding of M. tuberculosis in the pleural fluid make this less likely.\n3. **Parapneumonic effusion**: The patient's low-grade fevers and the large pleural effusion could suggest a parapneumonic effusion, but the lack of a clear source of infection and the positive M. tuberculosis testing make this less likely.\n4. **Chylothorax**: The patient's symptoms and exam findings do not specifically suggest a chylothorax, and the pleural fluid analysis did not mention chylous characteristics.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest CT scan with contrast** to evaluate for any underlying lung parenchymal disease, such as pulmonary tuberculosis, and to assess the extent of the pleural effusion.\n\n**3. Initial Management Plan:**\n\n* **Start antitubercular therapy**: Begin treatment with a standard regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, pending further diagnostic confirmation.\n* **Monitor and manage symptoms**: Continue to monitor the patient's symptoms and adjust treatment as needed. Provide supportive care for breathlessness, such as oxygen therapy and rest.\n* **Follow-up thoracentesis**: Schedule a follow-up thoracentesis to assess the response to treatment and to monitor for any changes in the pleural fluid characteristics.\n* **TB contact investigation**: Investigate the patient's contacts for TB exposure and consider testing them for TB infection.",
+  "raw": {
+    "vignette_id": "VIG-088",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 266,
+  "output_tokens": 403
+}

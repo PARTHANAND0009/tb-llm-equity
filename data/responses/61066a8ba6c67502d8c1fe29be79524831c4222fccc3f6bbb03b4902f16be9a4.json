@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the positive M. tuberculosis result from the gastric aspirate, TB is the most likely diagnosis. The child's age, lack of chronic illnesses, and the fact that the cough persisted beyond what was initially thought to be a common cold, make TB a strong candidate.\n   2. Pneumonia - While not as likely as TB, pneumonia could also cause a persistent cough and low energy. However, the negative findings for lymphadenopathy and the specific M. tuberculosis result make this less likely.\n   3. Asthma - Asthma could potentially cause a persistent cough, but the lack of a known history of asthma and the positive TB result make this less likely.\n   4. Other respiratory infections - Other respiratory infections such as viral or bacterial bronchitis or pneumonia are less likely due to the persistence of symptoms and the positive TB result.\n\n2. Single next diagnostic step:\n   Given the positive M. tuberculosis result, the next diagnostic step would be to confirm the diagnosis with a chest X-ray or CT scan to assess the extent of the lung involvement and to rule out any complications.\n\n3. Initial management plan:\n   - Start the child on a first-line TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) under direct supervision.\n   - Monitor the child's response to treatment, including regular weight checks and monitoring for side effects.\n   - Consult a pediatrician or pediatric infectious disease specialist for further management and to ensure appropriate dosing and monitoring.\n   - Ensure proper isolation measures are in place to prevent the spread of TB to others.\n   - Consult a nutritionist to address the weight loss and ensure the child is receiving adequate nutrition during treatment.\n   - Consider psychological support for the child and family to address any anxiety or stress related to the diagnosis and treatment.",
+  "raw": {
+    "vignette_id": "VIG-013",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 277,
+  "output_tokens": 460
+}

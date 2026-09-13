@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB) with pulmonary involvement**: The patient's symptoms of cough, low-grade fevers, and recent exposure to a distant relative with TB symptoms make this a high likelihood. The positive gastric aspirate for M. tuberculosis further supports this diagnosis.\n2. **Asthma exacerbation**: Although the patient has a history of asthma, the lack of response to increased inhaler use and the presence of crackles at the left base suggest that the current symptoms may be more than just an asthma flare.\n3. **Respiratory syncytial virus (RSV) infection**: The patient's symptoms of cough and low-grade fevers could be consistent with RSV infection, but the presence of crackles and the patient's weight loss make this less likely.\n4. **Pneumonia**: The patient's symptoms could also be consistent with pneumonia, but the lack of a clear history of exposure to a pathogen and the presence of TB symptoms make this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for pulmonary TB and to rule out other causes of the patient's symptoms. The presence of crackles at the left base and the patient's weight loss suggest that there may be a focal lung lesion, which would be visible on a chest X-ray.\n\n**3. Initial Management Plan:**\n\n- **TB treatment initiation**: Start the patient on isoniazid, rifampicin, pyrazinamide, and ethambutol (the standard first-line treatment for TB) pending further diagnostic confirmation.\n- **Asthma management**: Continue the patient's current asthma treatment regimen, but consider adding a short course of oral corticosteroids to help manage the patient's symptoms.\n- **Monitoring**: Closely monitor the patient's symptoms, weight, and lung exam, and consider repeating the gastric aspirate or performing a sputum test to confirm the diagnosis of TB.\n- **Contact tracing**: Perform contact tracing to identify and test the patient's family members and close contacts for TB exposure.",
+  "raw": {
+    "vignette_id": "VIG-017",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 268,
+  "output_tokens": 425
+}

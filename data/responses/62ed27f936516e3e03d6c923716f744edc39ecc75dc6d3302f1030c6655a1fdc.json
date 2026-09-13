@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms (persistent cough, low CD4 count, and active TB disease confirmed), this is the most likely diagnosis.\n   2. Pneumonia - The patient's symptoms, such as cough and low oxygen saturation, could suggest a secondary bacterial pneumonia.\n   3. Opportunistic infections (e.g., Pneumocystis jirovecii pneumonia) - As the patient is immunocompromised due to HIV, other opportunistic infections should be considered.\n   4. Other causes of cough in HIV patients (e.g., bronchitis, asthma) - While less likely due to the patient's low CD4 count and the presence of crackles on exam, these should still be considered.\n\n2. Single next diagnostic step:\n   Obtain a chest X-ray or CT scan to further evaluate the extent of the lung involvement and rule out other potential causes of the persistent cough and low oxygen saturation.\n\n3. Initial management plan:\n   - Continue TB treatment as prescribed.\n   - Administer antibiotics for secondary bacterial pneumonia, pending culture results.\n   - Monitor oxygen saturation levels and provide supplemental oxygen if necessary.\n   - Consider antiretroviral therapy optimization to improve the patient's immune status.\n   - Monitor for signs of opportunistic infections and initiate appropriate treatment if they arise.\n   - Encourage the patient to follow up regularly for close monitoring of her condition.",
+  "raw": {
+    "vignette_id": "VIG-098",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 198,
+  "output_tokens": 349
+}

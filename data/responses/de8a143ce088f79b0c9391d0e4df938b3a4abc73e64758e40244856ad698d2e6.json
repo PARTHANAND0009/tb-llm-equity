@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **TB (Tuberculosis)**: The patient's symptoms of cough and worsening fatigue, combined with a CD4 count of 85 cells/uL, suggest an opportunistic infection. The presence of bilateral infiltrates with early cavitation on chest X-ray is highly suggestive of TB, especially in a patient with HIV.\n2. **Pneumocystis jirovecii pneumonia (PCP)**: Although less likely than TB, PCP is another opportunistic infection that can present with cough and fatigue in HIV patients. However, the presence of cavitation on chest X-ray makes TB more likely.\n3. **Respiratory viral infection**: Although possible, the chronic nature of the symptoms and the patient's immunocompromised state make this less likely.\n4. **Other opportunistic infections**: Such as cryptococcal pneumonia or histoplasmosis, but these are less likely given the clinical presentation.\n\n**2. Next Diagnostic Step:**\n\nPerform a sputum smear for acid-fast bacilli (AFB) to confirm the diagnosis of TB. This is the most direct and rapid method to diagnose TB, and it will guide further management.\n\n**3. Initial Management Plan:**\n\n- **TB diagnosis confirmed:** Start TB treatment with isoniazid, rifampicin, pyrazinamide, and ethambutol, and continue antiretroviral therapy (ART) as usual.\n- **TB diagnosis not confirmed:** Continue to monitor the patient's symptoms and perform further diagnostic tests, such as a chest CT scan or a bronchoscopy, to rule out other causes of the patient's symptoms.\n- **TB treatment:** Ensure adherence to TB treatment and monitor for side effects.\n- **ART:** Continue ART as usual, and consider adjusting the regimen if the patient's CD4 count is below 50 cells/uL.\n- **TB and HIV co-management:** Coordinate care between the TB and HIV clinics to ensure comprehensive management of both conditions.",
+  "raw": {
+    "vignette_id": "VIG-046",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 274,
+  "output_tokens": 408
+}

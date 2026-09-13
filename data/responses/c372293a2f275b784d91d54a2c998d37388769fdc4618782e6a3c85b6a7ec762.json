@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because drug-resistance testing is crucial to guide appropriate treatment and prevent the spread of drug-resistant TB.\n\n2. I would send a mycobacterial culture on this patient if the molecular testing results are positive for TB but the patient does not respond to appropriate treatment, or if there is a need to confirm the diagnosis, such as in atypical presentations or in cases where the initial test results are equivocal.\n\n3. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the dose of each drug for this specific patient would be determined based on the patient's age, weight, and any potential drug interactions. For example, the recommended pediatric dose for isoniazid is 10 mg/kg/day, for rifampin 10-15 mg/kg/day, for pyrazinamide 30-35 mg/kg/day, and for ethambutol 15-20 mg/kg/day. These doses would be given as a single daily dose or divided twice daily, depending on the specific drug and the clinician's preference. The actual dose or tablet count would be calculated based on the patient's weight and the dosage strength of the medication.",
+  "raw": {
+    "vignette_id": "VIG-081",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 306,
+  "output_tokens": 306
+}

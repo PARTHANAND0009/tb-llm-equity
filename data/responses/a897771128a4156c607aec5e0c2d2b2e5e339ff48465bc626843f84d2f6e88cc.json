@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Multi-Drug Resistant Tuberculosis (MDR-TB) - Given the positive M. tuberculosis test with rifampicin and isoniazid resistance, this is the most likely diagnosis. The absence of HIV risk factors and known contact with other drug-resistant TB cases further supports this diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray or CT scan to assess the extent of lung involvement and to rule out any complications such as cavitation or pleural effusion.\n\n3. Initial management plan:\n   - Start MDR-TB treatment as per the World Health Organization (WHO) guidelines. This typically includes a combination of second-line anti-TB drugs such as bedaquiline, linezolid, and clofazimine, along with fluoroquinolones and injectable drugs like kanamycin or amikacin.\n   - Close monitoring for adverse effects of the drugs, especially those that can affect the cardiovascular, hepatic, and neurological systems.\n   - Isolation and infection control measures to prevent spread of the disease to others, especially the 6-year-old brother.\n   - Regular follow-ups to monitor treatment response and adjust the treatment regimen as necessary.\n   - Consultation with a pediatrician experienced in managing MDR-TB in children, if available.\n   - Psychological support for the patient and her family to cope with the diagnosis and treatment.\n   - Education about the importance of adherence to the treatment regimen and the risks of non-adherence.\n   - Nutritional support to help manage fatigue and ensure adequate nutrition during treatment.",
+  "raw": {
+    "vignette_id": "VIG-062",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 247,
+  "output_tokens": 383
+}

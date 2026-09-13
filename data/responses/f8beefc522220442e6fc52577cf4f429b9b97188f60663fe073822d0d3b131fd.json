@@ -1,0 +1,15 @@
+{
+  "text": "1. I would send a mycobacterial culture to confirm the Xpert MTB/RIF results and to rule out drug-resistant TB. This is important because drug-resistant TB requires different treatment regimens and longer durations. The culture can also help in determining the minimum inhibitory concentration (MIC) of the drugs, which can guide the choice of drugs in the treatment regimen.\n\n2. Assuming the culture confirms drug-susceptible pulmonary tuberculosis, the standard treatment regimen for new cases is a 6-month treatment with two phases:\n   a) Phase 1 (2 months): Isoniazid (INH), Rifampin (RIF), Ethambutol (EMB), and Pyrazinamide (PZA). The patient takes each of these drugs daily.\n   b) Phase 2 (4 months): INH and RIF are continued daily, while EMB and PZA are discontinued.\n\n3. To determine the dose of each drug for this specific patient, I would consider the patient's weight, age, and any other relevant comorbidities. The doses are typically based on standardized weight-based dosing guidelines, such as the WHO-recommended doses for adults:\n   a) Isoniazid: 500mg daily for patients weighing 50kg or more, 300mg daily for patients weighing less than 50kg.\n   b) Rifampin: 600mg daily for patients weighing 50kg or more, 450mg daily for patients weighing 45-49kg, 400mg daily for patients weighing 40-44kg, and 300mg daily for patients weighing less than 40kg.\n   c) Ethambutol: 15mg/kg daily for patients weighing 50kg or more, 12.5mg/kg daily for patients weighing 45-49kg, 10mg/kg daily for patients weighing 40-44kg, and 7.5mg/kg daily for patients weighing less than 40kg.\n   d) Pyrazinamide: 1500mg daily for patients weighing 50kg or more, 1200mg daily for patients weighing 45-49kg, 1000mg daily for patients weighing 40-44kg, and 800mg daily for patients weighing less than 40kg.",
+  "raw": {
+    "vignette_id": "VIG-027",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 376,
+  "output_tokens": 580
+}

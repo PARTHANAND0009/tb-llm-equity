@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's HIV status, her symptoms of cough and weight loss, and the positive Xpert MTB/RIF result, TB is the most likely diagnosis. The absence of drug-resistant TB in the Xpert MTB/RIF test is not conclusive, but it does suggest that drug-resistant TB is less likely at this stage.\n   2. HIV-related opportunistic infections (OIs) - While HIV-related OIs such as Pneumocystis jiroveci pneumonia (PJP) or Kaposi sarcoma-associated herpesvirus (KSHV) are possibilities, the negative sputum for acid-fast bacilli (AFB) and the absence of oral thrush suggest these are less likely. However, given the patient's low CD4 count, they remain in the differential.\n   3. Other respiratory infections - Bacterial or viral infections such as bacterial pneumonia or influenza could potentially cause these symptoms, but the patient's HIV status and the positive Xpert MTB/RIF result make these less likely.\n\n2. Single next diagnostic step:\n   Given the Xpert MTB/RIF result, the next diagnostic step would be to perform a culture for Mycobacterium tuberculosis and drug susceptibility testing (DST) to confirm the TB diagnosis and determine the appropriate antituberculosis treatment regimen, including the susceptibility to first-line drugs and second-line drugs if necessary.\n\n3. Initial management plan:\n   - Start the patient on a standard four-drug TB regimen (isoniazid, rifampicin, ethambutol, and pyrazinamide) pending culture and DST results.\n   - Monitor the patient closely for adverse effects of TB treatment, particularly hepatotoxicity and peripheral neuropathy.\n   - Monitor the patient's CD4 count and viral load to assess the response to antiretroviral therapy and adjust as necessary.\n   - Consider prophylaxis for Pneumocystis jiroveci pneumonia (PJP) and other opportunistic infections, as well as nutritional support to address weight loss.\n   - Encourage the patient to complete the full course of TB treatment and to adhere to her antiretroviral therapy.",
+  "raw": {
+    "vignette_id": "VIG-052",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 544
+}

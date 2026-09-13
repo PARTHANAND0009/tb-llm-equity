@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the presented symptoms, the single most likely diagnosis for this 13-year-old girl is Tuberculosis (TB), given her weight loss, cough, fatigue, and bilateral mid-zone crackles on examination. To evaluate this, a Tuberculin Skin Test (TST) or Interferon-gamma release assay (IGRA) could be ordered to confirm the diagnosis.\n2. I would send a mycobacterial culture at the time of diagnosis, as it is crucial for confirming the diagnosis of TB and for determining drug susceptibility patterns, which are essential for appropriate treatment.\n3. Assuming drug-susceptible pulmonary TB is confirmed, the dose of each drug for this specific patient would be determined based on her age, weight, and the specific drug's pharmacokinetics. For instance, for isoniazid, the recommended dose for children is 10 mg/kg/day (up to a maximum of 300 mg/day), rifampin 10-15 mg/kg/day (up to a maximum of 600 mg/day), pyrazinamide 30-40 mg/kg/day (up to a maximum of 2 g/day), and ethambutol 15-25 mg/kg/day (up to a maximum of 1.5 g/day). These doses would be translated into actual doses or tablet counts based on the available formulations and the patient's weight.",
+  "raw": {
+    "vignette_id": "VIG-006",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 320,
+  "output_tokens": 336
+}

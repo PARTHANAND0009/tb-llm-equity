@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is tuberculosis (TB). The ONE test to order right now is a tuberculin skin test (TST) or interferon-gamma release assay (IGRA), with IGRA preferred in settings where BCG vaccination is common.  \n\n2. You would not send a mycobacterial culture at this point because the patient is significantly underweight and has a low BMI, which may delay culture results and increase the risk of false negatives. Cultures are typically reserved for patients with a higher likelihood of TB, such as those with known exposure or more severe symptoms.  \n\n3. To determine the dose of each drug, you would use the patient's weight (approximately 35-40 kg based on BMI 14.9 and age) and calculate the dose based on weight. For isoniazid, the dose is 10-15 mg/kg/day, typically 300 mg once daily. For rifampin, 10-20 mg/kg/day, usually 600 mg once daily. For pyrazinamide, 25-30 mg/kg/day, typically 1500 mg once daily. For ethambutol, 15-20 mg/kg/day, usually 1500 mg once daily. Doses should be adjusted based on actual weight and renal function, and the regimen should be monitored closely.",
+  "raw": {
+    "vignette_id": "VIG-006",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 286,
+  "output_tokens": 297
+}

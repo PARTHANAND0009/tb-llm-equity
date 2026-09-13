@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB): The patient's symptoms, age, and chest X-ray findings suggest a possible pulmonary TB infection. The negative gastric aspirate results are not conclusive, but the clinical presentation is consistent with TB.\n   2. Atypical Mycobacterial Infection: This could be a consideration given the negative conventional TB tests and the patient's age.\n   3. Pneumonia: While the lack of fever and weight loss makes this less likely, it's still a possibility, especially if the X-ray findings are due to a bacterial pneumonia.\n   4. Other causes of pleuritis: Pleuritis can be caused by a variety of conditions, including viral infections, autoimmune disorders, and malignancies, but the patient's symptoms and X-ray findings do not strongly support these possibilities.\n\n2. Single next diagnostic step:\n   Given the patient's age, the persistent symptoms, and the inconclusive gastric aspirate results, the next diagnostic step would be to perform a bronchoscopy with bronchoalveolar lavage (BAL) for acid-fast bacilli (AFB) smear and culture, and molecular testing for TB. This will provide a more definitive diagnosis.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen that includes isoniazid, rifampicin, ethambutol, and pyrazinamide, pending the results of the BAL culture and drug susceptibility testing.\n   - Monitor the patient closely for side effects of the TB treatment and for improvement in symptoms.\n   - If the patient's symptoms do not improve or worsen, consider re-evaluating the diagnosis and adjusting the treatment plan as necessary.\n   - Ensure the patient is adherent to the treatment regimen and has access to follow-up care.\n   - Consider referring the patient to a pediatric specialist for ongoing management.",
+  "raw": {
+    "vignette_id": "VIG-074",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 268,
+  "output_tokens": 446
+}

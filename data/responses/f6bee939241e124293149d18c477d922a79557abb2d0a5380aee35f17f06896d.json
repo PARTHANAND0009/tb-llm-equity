@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Latent Tuberculosis Infection (LTBI)**  \n   - **Reasoning:** The patient is being evaluated for TB preventive treatment, and her son has been diagnosed with fluoroquinolone-susceptible MDR-TB. Active TB has been ruled out, and she has no symptoms. Given the exposure and the fact that she is being considered for preventive treatment, LTBI is the most likely diagnosis.\n\n2. **Hypersensitivity Reaction to BCG Vaccine**  \n   - **Reasoning:** She was vaccinated with BCG as a child, and while BCG vaccination is not associated with active TB, it can cause a hypersensitivity reaction, especially in individuals with a history of TB exposure. However, this is less likely than LTBI given the context of TB preventive treatment.\n\n3. **Non-Tuberculous Mycobacterial (NTM) Infection**  \n   - **Reasoning:** NTM infections can occur in individuals with a history of TB exposure or immunocompromise, but there is no evidence of immunocompromise or symptoms suggestive of NTM. It is less likely than LTBI but remains a consideration.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA)**  \n- **Reasoning:** Since active TB has been ruled out, the next step is to determine whether she has LTBI. TST or IGRA can help confirm the presence of TB infection, which would support the need for preventive treatment.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Administer TB preventive treatment (e.g., isoniazid, rifampin, or a 12-dose regimen of rifapentine and isoniazid)**  \n  - **Reasoning:** Given the exposure to MDR-TB and the fact that active TB has been ruled out, preventive treatment is indicated to reduce the risk of progression to active TB. The choice of regimen should be based on local guidelines and patient factors (e.g., adherence, drug interactions).\n\n- **Monitor for adverse effects of preventive therapy**  \n  - **Reasoning:** Isoniazid and rifampin can cause hepatotoxicity and other side effects, so regular monitoring of liver function and symptoms is essential.\n\n- **Educate the patient on TB prevention and the importance of completing the preventive treatment**  \n  - **Reasoning:** Patient education is critical to ensure adherence and reduce the risk of TB transmission, especially in a household with a TB patient.",
+  "raw": {
+    "vignette_id": "VIG-064",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 193,
+  "output_tokens": 534
+}

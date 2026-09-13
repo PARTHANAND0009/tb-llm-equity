@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Latent Tuberculosis Infection (LTBI)**  \n   - **Reasoning:** The patient is in close contact with a person diagnosed with MDR-TB, and he has been ruled out for active TB disease. Given his exposure and lack of active disease, LTBI is the most likely diagnosis. He is a candidate for TB preventive therapy.\n\n2. **BCG Vaccination Reactivation (Mantoux Test Reaction or BCG infection)**  \n   - **Reasoning:** The patient was vaccinated with BCG as a child, which can lead to a positive tuberculin skin test (TST) or interferon-gamma release assay (IGRA) without active TB. However, this is less likely than LTBI in the context of recent exposure to MDR-TB.\n\n3. **Non-Tuberculous Mycobacterial (NTM) Infection**  \n   - **Reasoning:** While less likely, NTM infections can occur in individuals with close contact to TB patients, especially in those with immunocompromised status or environmental exposure. However, the patient has no HIV risk factors or immunocompromise, making this less likely.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA) to confirm TB infection status.**\n\n---\n\n3. **Initial Management Plan:**\n\n- **If TST or IGRA is positive:** Initiate TB preventive therapy (e.g., isoniazid [INH] for 9 months, or rifapentine + INH for 12 weeks).\n- **If TST or IGRA is negative:** No further action is needed, as active TB disease has been ruled out and no evidence of TB infection is present.\n- **Monitor for adverse effects of preventive therapy (e.g., hepatotoxicity, peripheral neuropathy).**\n- **Educate the patient on the importance of completing the full course of preventive therapy and the significance of TB prevention in the context of household exposure.**",
+  "raw": {
+    "vignette_id": "VIG-067",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 184,
+  "output_tokens": 432
+}

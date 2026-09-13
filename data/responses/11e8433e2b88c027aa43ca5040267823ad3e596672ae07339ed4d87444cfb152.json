@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's sputum test was positive for M. tuberculosis with rifampicin and isoniazid resistance, and he has a history of cough and weight loss, which are common symptoms of TB. The presence of MDR-TB is confirmed by follow-up testing.\n2. **Pulmonary Tuberculosis (TB)**: Although the patient has MDR-TB, it's essential to consider the possibility of pulmonary TB as the primary diagnosis, especially given the patient's symptoms and exam findings.\n3. **Other respiratory infections**: Although less likely, other respiratory infections such as pneumonia or bronchitis could be considered, but the patient's symptoms and exam findings are more suggestive of TB.\n4. **Lung cancer**: Although less likely, lung cancer could be considered, especially in a young patient with weight loss and cough, but the presence of MDR-TB makes this less likely.\n\n**2. The single next diagnostic step I would take right now:**\n\nPerform a **chest X-ray** to assess the extent of lung involvement and to rule out other pulmonary abnormalities that could be contributing to the patient's symptoms.\n\n**3. Initial Management Plan:**\n\n* **Start MDR-TB treatment**: The patient should be started on a regimen that includes a fluoroquinolone (due to preserved susceptibility) and at least one other effective drug, such as ethambutol or pyrazinamide.\n* **Contact tracing**: The patient's wife should be screened for TB and, if positive, treated accordingly.\n* **Monitor for side effects**: The patient should be closely monitored for side effects of the medications, such as liver enzyme elevations, hearing loss, and other adverse effects.\n* **Follow-up**: The patient should be followed up regularly to assess response to treatment and to adjust the treatment regimen as needed.",
+  "raw": {
+    "vignette_id": "VIG-059",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 236,
+  "output_tokens": 401
+}

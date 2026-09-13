@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Pneumocystis jirovecii pneumonia (PCP)**: Given the patient's immunocompromised state (HIV with CD4 count of 90 cells/uL), the presence of a persistent cough, and the mild crackles on exam, PCP is a high concern. PCP is a common opportunistic infection in HIV patients with low CD4 counts.\n2. **TB-related complications**: Although the patient has been started on TB treatment, complications such as TB-related pneumonia or TB pleurisy could still be present, especially given the patient's symptoms.\n3. **Respiratory syncytial virus (RSV) or other viral pneumonia**: Although less likely given the patient's immunocompromised state, viral pneumonia could still be a consideration.\n4. **Other opportunistic infections**: Other opportunistic infections such as cryptococcal pneumonia or histoplasmosis could also be considered, but are less likely given the patient's symptoms.\n\n**Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for signs of PCP, TB-related complications, or other pulmonary infections. This will help guide further management and diagnosis.\n\n**Initial Management Plan:**\n\n1. Continue TB treatment as prescribed.\n2. Administer oxygen therapy to maintain oxygen saturation above 95%.\n3. Consider empiric treatment for PCP with trimethoprim-sulfamethoxazole (TMP-SMX) pending the results of the chest X-ray and further diagnostic testing.\n4. Monitor the patient's respiratory rate and oxygen saturation closely and consider hospitalization if there is any deterioration.\n5. Consider a complete blood count (CBC) and blood cultures to rule out other potential infections.",
+  "raw": {
+    "vignette_id": "VIG-098",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 201,
+  "output_tokens": 349
+}

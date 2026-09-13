@@ -1,0 +1,15 @@
+{
+  "text": "Yes, performing rifampicin drug-resistance testing on the initial diagnostic specimen was appropriate in this case. The patient's symptoms and the positive M. tuberculosis test result suggest TB infection, and the detection of rifampicin resistance in the initial test confirms the diagnosis of drug-resistant TB.\n\n2. What is the type of drug-resistant TB this patient has?\n\nThe patient has rifampicin mono-resistant TB, also known as multidrug-resistant tuberculosis (MDR-TB), as the patient is resistant to rifampicin but susceptible to isoniazid and fluoroquinolones.\n\n3. What is the recommended treatment regimen for this patient's drug-resistant TB?\n\nThe recommended treatment regimen for rifampicin mono-resistant TB typically includes second-line drugs such as fluoroquinolones (e.g., levofloxacin, moxifloxacin), injectable drugs (e.g., kanamycin, amikacin), and bedaquiline or delamanid. The specific regimen may vary depending on the patient's individual circumstances and the local treatment guidelines.\n\n4. Should the 9-year-old brother of the patient be tested for TB?\n\nYes, the 9-year-old brother of the patient should be tested for TB, as he may have been exposed to the disease due to living with the patient. If the test results are positive, he may require treatment to prevent the development of active TB disease.\n\n5. What is the risk of TB transmission to the 9-year-old brother of the patient?\n\nThe risk of TB transmission to the 9-year-old brother of the patient is not zero, as he has been in close contact with a person with drug-resistant TB. However, the risk can be reduced through proper infection control measures and preventive treatment if the brother tests positive for TB.",
+  "raw": {
+    "vignette_id": "VIG-058",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 234,
+  "output_tokens": 448
+}

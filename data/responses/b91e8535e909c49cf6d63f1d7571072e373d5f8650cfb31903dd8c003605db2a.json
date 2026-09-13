@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculosis (TB) of the lymph node**: The patient's symptoms and the positive molecular testing for M. tuberculosis from the fine-needle aspiration of the inguinal node strongly support this diagnosis.\n2. **Cat-Scratch Disease (Bartonellosis)**: Although the patient initially thought the lump was related to a minor scrape, the lack of pain and the gradual enlargement of the lymph node make TB more likely. However, cat-scratch disease is still a consideration, especially given the patient's occupation as a day laborer, which may increase his exposure to cats.\n3. **Lymphoma**: Although lymphoma is a consideration in the differential diagnosis of a firm, enlarging lymph node, the patient's age and the lack of systemic symptoms make it less likely.\n4. **Other infections (e.g., abscess, fungal infection)**: These are less likely given the patient's symptoms and the positive TB testing.\n\n**2. The single next diagnostic step I would take right now:**\n\nI would order a chest X-ray to assess for pulmonary TB, which is a common site of TB infection. This will help determine if the patient has primary pulmonary TB or if the lymph node is a site of extrapulmonary TB.\n\n**3. Initial Management Plan:**\n\nGiven the positive molecular testing for M. tuberculosis, the initial management plan would be to start the patient on antitubercular therapy (ATT) with a combination of isoniazid, rifampicin, pyrazinamide, and ethambutol. The patient should be counseled on the importance of adherence to the treatment regimen and the potential side effects of the medications.",
+  "raw": {
+    "vignette_id": "VIG-043",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 259,
+  "output_tokens": 357
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Progressive Disease due to Tuberculosis (TB): The patient's persistent positive sputum smear, poor response to treatment, and cavitary lesion on chest imaging suggest that the TB may not be responding well to the current treatment.\n   - Alcohol-induced lung disease: The patient's significant alcohol use may contribute to the development of other lung diseases such as alcoholic hepatitis, pneumonia, or pulmonary fibrosis, which could be exacerbating his TB.\n   - Drug-resistant TB: While less common, the persistent positive sputum smear and poor response to treatment could suggest drug-resistant TB, although this would typically require multiple failed treatments.\n\n2. Single next diagnostic step:\n   - Sputum culture for drug-susceptibility testing: This will help determine if the TB strain is drug-resistant and guide further treatment.\n\n3. Initial management plan:\n   - Continue TB treatment: The patient should continue TB treatment, but the regimen may need to be adjusted based on the results of the drug-susceptibility testing.\n   - Address alcohol use: The patient's alcohol use should be addressed as it may be contributing to his poor response to treatment and overall health. This could involve counseling, referral to a substance abuse program, or medication-assisted treatment.\n   - Monitor oxygen saturation: Given his low oxygen saturation, the patient should be monitored for hypoxemia and may require supplemental oxygen.\n   - Close monitoring: The patient should be closely monitored for signs of complications, such as worsening cough, fever, or increased shortness of breath.\n   - Referral to a specialist: The patient may benefit from a referral to a pulmonologist or infectious disease specialist for further management.\n   - Education: The patient should be educated about the importance of adhering to the treatment regimen and the potential consequences of non-adherence.\n   - Social support: The patient may benefit from social support services to address any barriers to treatment, such as housing or employment issues.\n   - Nutritional support: Given the patient's weight loss, he may benefit from nutritional counseling or supplementation to help improve his overall health and response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-075",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 209,
+  "output_tokens": 518
+}

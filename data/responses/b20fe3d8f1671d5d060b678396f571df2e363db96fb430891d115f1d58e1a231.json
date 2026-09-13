@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked Differential Diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms (cough and weight loss), the presence of bilateral cavitary disease on chest X-ray, and the patient's history of chronic illness and reduced mobility, TB is the most likely diagnosis.\n   2. HIV - The patient's severe weight loss and malnutrition suggest a possible underlying immunocompromising condition, such as HIV. However, the absence of known TB contact and the patient's history of chronic illness make TB more likely.\n   3. Malignancy - While malignancy can cause similar symptoms, the patient's history of chronic illness and the presence of cavitary disease on chest X-ray make TB more likely.\n   4. Other causes of cavitary lung disease (e.g., fungal infections, sarcoidosis) - These are less likely given the patient's symptoms and the fact that TB is the most common cause of cavitary lung disease in this population.\n\n2. Next Diagnostic Step:\n   The next diagnostic step would be to confirm the TB diagnosis by obtaining a sputum sample for acid-fast bacilli (AFB) smear and culture, and if possible, a molecular test for Mycobacterium tuberculosis (e.g., Xpert MTB/RIF). If the patient is unable to produce sputum, a bronchoscopy may be considered.\n\n3. Initial Management Plan:\n   - Start the patient on a standard TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, pyrazinamide) under direct observation therapy (DOT) until the results of the culture and drug susceptibility testing are available.\n   - Refer the patient to a nutritionist for weight gain and malnutrition management.\n   - If the patient is HIV positive, initiate antiretroviral therapy (ART) as soon as possible.\n   - Monitor the patient closely for side effects of TB treatment and for improvement in symptoms.\n   - Consider referring the patient to a specialist for further management of the chronic illness that led to his reduced mobility.\n   - Inform the local public health department to prevent potential TB transmission.",
+  "raw": {
+    "vignette_id": "VIG-047",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 241,
+  "output_tokens": 500
+}

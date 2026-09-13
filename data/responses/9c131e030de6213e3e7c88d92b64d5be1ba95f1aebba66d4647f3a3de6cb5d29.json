@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's age, history of severe undernutrition, presentation of a persistent cough, weight loss, and bilateral cavitary disease on chest X-ray, TB is the most likely diagnosis.\n   2. HIV - The patient's severe wasting and immunocompromised state due to malnutrition increase the risk of opportunistic infections, including HIV. However, the lack of known TB contact and the specific symptoms and findings suggest TB as the more likely diagnosis.\n   3. Other causes of cavitary lung disease such as fungal infections (e.g., histoplasmosis, coccidioidomycosis) or nontuberculous mycobacteria (NTM) - These are less likely given the patient's geographical location and the typical presentation of TB, but they should be considered in the differential diagnosis.\n\n2. Single next diagnostic step:\n   Perform an HIV test and sputum acid-fast bacilli (AFB) smear and culture for TB. If the TB smear is positive, initiate TB treatment immediately while waiting for culture results. If the TB smear is negative but the clinical suspicion remains high, consider a TB molecular test (e.g., Xpert MTB/RIF).\n\n3. Initial management plan:\n   - Start empiric TB treatment (first-line TB drugs: isoniazid, rifampicin, ethambutol, and pyrazinamide) while awaiting culture results and HIV test results.\n   - Monitor the patient's weight and nutritional status closely and provide nutritional support.\n   - Monitor the patient for adverse effects of TB treatment and manage accordingly.\n   - If the HIV test is positive, initiate antiretroviral therapy (ART) and consider TB-HIV co-treatment.\n   - If the TB culture grows drug-resistant TB, adjust the treatment regimen accordingly.\n   - Monitor the patient's respiratory status and manage any complications (e.g., pneumonia, pleurisy).\n   - Educate the patient on TB transmission and the importance of adherence to treatment.\n   - Consider referring the patient to a TB specialist for further management.",
+  "raw": {
+    "vignette_id": "VIG-091",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 210,
+  "output_tokens": 523
+}

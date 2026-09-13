@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of a persistent cough and unintentional weight loss, combined with the physical finding of right upper zone crackles, the single most likely diagnosis for this 52-year-old man is pulmonary tuberculosis (TB). To evaluate this, a Sputum Acid-Fast Bacilli (AFB) test or a GeneXpert MTB/RIF test would be the initial test ordered to detect the presence of Mycobacterium tuberculosis.\n\n2. No, rifampicin drug-resistance testing would not be performed on the initial diagnostic specimen. Rifampicin resistance testing is typically done after the initial diagnosis of TB and the start of treatment, to monitor the response to therapy and detect any potential drug resistance.\n\n3. Assuming the initial test confirms drug-susceptible pulmonary TB, the standard first-line treatment for TB includes isoniazid, rifampin, ethambutol, and pyrazinamide for 2 months, followed by isoniazid and rifampin for an additional 4 months. The dose of each drug for this specific patient would be determined based on the patient's weight, kidney function, and liver function. For example, the recommended adult dose of isoniazid is 5 mg/kg/day, rifampin is 600 mg/day, ethambutol is 15 mg/kg/day, and pyrazinamide is 20-30 mg/kg/day. These doses can be translated into actual doses or tablet counts by referring to the dosage information provided on the drug packaging or a pharmacology reference.",
+  "raw": {
+    "vignette_id": "VIG-079",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 270,
+  "output_tokens": 374
+}

@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's symptoms of cough, weight loss, and night sweats, combined with a positive Xpert MTB/RIF test and the presence of non-cavitary bilateral infiltrates on chest X-ray, are highly suggestive of TB. The patient's history of working in a textile facility, where TB is more common, further supports this diagnosis. The lack of rifampicin detection in the Xpert MTB/RIF test indicates resistance to this first-line TB medication, making MDR-TB a likely diagnosis.\n\n2. **Diabetes-related complications**: The patient's poorly controlled diabetes could be contributing to her symptoms, but the presence of cough and night sweats, along with the Xpert MTB/RIF positive result, makes this a less likely explanation for her symptoms.\n\n3. **Pulmonary nontuberculous mycobacterial infection**: Although less likely, this could be considered given the patient's symptoms and the presence of non-cavitary bilateral infiltrates on chest X-ray. However, the Xpert MTB/RIF test result makes this a less likely diagnosis.\n\n4. **Lung cancer**: This is a less likely diagnosis given the patient's age and the presence of non-cavitary bilateral infiltrates on chest X-ray.\n\n**2. The next diagnostic step:**\n\nPerform a **chest CT scan** to further evaluate the extent and characteristics of the lung infiltrates. This will help to differentiate between TB and other possible diagnoses, such as pulmonary nontuberculous mycobacterial infection or lung cancer.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a four-drug regimen of isoniazid, pyrazinamide, ethambutol, and moxifloxacin, pending culture and drug susceptibility testing results.\n* **Diabetes management**: Continue to manage the patient's diabetes with her current oral medication and monitor her blood glucose levels closely.\n* **TB contact tracing**: Identify and screen the patient's family members and coworkers for TB exposure.\n* **Infection control**: Implement standard precautions to prevent the spread of TB in the patient's home and workplace.",
+  "raw": {
+    "vignette_id": "VIG-012",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 240,
+  "output_tokens": 460
+}

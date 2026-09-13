@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Multidrug-resistant tuberculosis (MDR-TB) with pre-XDR-TB characteristics**: The patient's sputum and gastric aspirate were positive for M. tuberculosis, and testing confirmed resistance to rifampicin, isoniazid, and fluoroquinolones, which are hallmarks of pre-XDR-TB. The patient's severe malnutrition and worsening lethargy may be contributing to his presentation, but the presence of M. tuberculosis is the primary concern.\n2. **Malnutrition-related complications**: The patient's severe acute malnutrition may be contributing to his lethargy and other symptoms, but this is secondary to the diagnosis of M. tuberculosis.\n3. **TB-related complications**: The patient's mild crackles and lack of lymphadenopathy may suggest TB-related complications, such as TB meningitis or TB pericarditis, but these are less likely given the patient's presentation and the lack of other symptoms.\n4. **Other infections**: The patient's cough and lethargy could be caused by other infections, such as pneumonia or malaria, but the presence of M. tuberculosis makes these less likely.\n\n**2. Next Diagnostic Step:**\n\nThe next diagnostic step would be to perform a **lumbar puncture** to rule out TB meningitis, which is a common complication of MDR-TB. This is particularly important given the patient's severe malnutrition and worsening lethargy, which may be indicative of central nervous system involvement.\n\n**3. Initial Management Plan:**\n\nThe initial management plan would be to:\n\n* **Start empirical TB treatment**: Begin treatment with a regimen that includes a combination of drugs to which the M. tuberculosis isolate is likely susceptible, such as amikacin, kanamycin, or capreomycin, and a fluoroquinolone to which the isolate is susceptible (if available). This will help to rapidly reduce the bacterial load and prevent further transmission.\n* **Nutritional support**: Provide the patient with nutritional support, including high-calorie supplements and vitamin D, to help address his severe malnutrition.\n* **Monitor for TB-related complications**: Closely monitor the patient for signs of TB-related complications, such as TB meningitis or TB pericarditis, and perform a lumbar puncture as described above to rule out TB meningitis.\n* **Contact tracing and preventive therapy**: Contact the patient's family members, particularly his older sister, and provide them with preventive therapy to prevent the transmission of M. tuberculosis.",
+  "raw": {
+    "vignette_id": "VIG-057",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 284,
+  "output_tokens": 521
+}

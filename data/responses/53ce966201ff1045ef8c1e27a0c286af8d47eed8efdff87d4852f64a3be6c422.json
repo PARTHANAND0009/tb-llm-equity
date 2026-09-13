@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Multi-Drug Resistant Tuberculosis (MDR-TB) - Given the positive M. tuberculosis test with resistance to rifampicin and isoniazid, and the patient's travel history, MDR-TB is the most likely diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray or CT scan - To confirm the presence and extent of pulmonary involvement, which will help in determining the appropriate treatment regimen.\n\n3. Initial management plan:\n   - Start MDR-TB treatment as per the guidelines of the World Health Organization (WHO) - This typically involves a combination of second-line anti-TB drugs, which may include bedaquiline, delamanid, linezolid, and clofazimine.\n   - Monitor for drug-induced hepatotoxicity and other side effects - Regular liver function tests and monitoring for side effects are essential during MDR-TB treatment.\n   - Inform local health authorities - To prevent further spread of the disease, the patient's case should be reported to local health authorities to initiate contact tracing and preventive measures.\n   - Address the patient's nutritional status - Given the weight loss, nutritional support should be provided to help the patient regain weight and improve overall health.\n   - Consider the grandson's status - Although the grandson is currently asymptomatic, he should be closely monitored for signs of TB, as he may be at risk due to close contact with the patient. If he develops symptoms, he should be tested and treated promptly.",
+  "raw": {
+    "vignette_id": "VIG-056",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 262,
+  "output_tokens": 366
+}

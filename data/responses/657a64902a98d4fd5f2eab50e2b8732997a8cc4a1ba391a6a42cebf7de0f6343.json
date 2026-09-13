@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **Tuberculosis (TB) \u2013 M. tuberculosis infection**  \n     *Reasoning:* The clinical presentation of intermittent abdominal pain, low-grade fever, reduced appetite, and mesenteric lymphadenopathy with free fluid is highly suggestive of TB. The molecular testing of the aspirated lymph node was positive for *M. tuberculosis*, which confirms the diagnosis.  \n   - **Lymphoma (e.g., non-Hodgkin lymphoma)**  \n     *Reasoning:* Mesenteric lymphadenopathy and systemic symptoms (fever, weight loss) are also seen in lymphoma. However, the presence of *M. tuberculosis* on molecular testing makes TB the more likely diagnosis.  \n   - **Infectious mononucleosis**  \n     *Reasoning:* While it can cause lymphadenopathy and mild fever, it typically presents with more pronounced pharyngitis and lymphadenopathy in the neck, not mesenteric involvement.  \n   - **Crohn\u2019s disease**  \n     *Reasoning:* Crohn\u2019s can cause abdominal pain, fever, and mesenteric lymphadenopathy, but it is less likely in a 6-year-old without a known family history or other gastrointestinal symptoms.  \n   - **Systemic Juvenile Idiopathic Arthritis (sJIA)**  \n     *Reasoning:* sJIA can present with fever, abdominal pain, and lymphadenopathy, but it is less common in this age group and typically has more pronounced joint involvement.\n\n2. **Single Next Diagnostic Step:**  \n   **Perform a chest X-ray to assess for pulmonary involvement.**  \n   *Rationale:* TB can present with extrapulmonary disease, but pulmonary involvement is common. A chest X-ray is a low-cost, non-invasive test that can help confirm or rule out pulmonary TB, which is important for determining the full extent of disease and guiding treatment.\n\n3. **Initial Management Plan:**  \n   - **Start anti-tuberculosis therapy (ATT) immediately.**  \n     *Recommended regimen:* Isoniazid, Rifampin, Pyrazinamide, and Ethambutol for 2 months, followed by Isoniazid and Rifampin for 4 months (standard 6-month regimen for pediatric TB).  \n   - **Monitor for adverse effects of ATT (e.g., hepatotoxicity, optic neuritis).**  \n   - **Order additional tests:**  \n     - Complete blood count (CBC), liver function tests (LFTs), and renal function tests.  \n     - TB skin test (TST) or interferon-gamma release assay (IGRA) to confirm TB infection.  \n     - HIV testing (if not already done).  \n   - **Refer to a pediatric infectious disease specialist for ongoing management and monitoring.**  \n   - **Admit for observation if symptoms worsen or if there is concern for complications (e.g., bowel obstruction, sepsis).**  \n   - **Provide patient and family education on TB transmission, treatment adherence, and the importance of completing the full course of therapy.**",
+  "raw": {
+    "vignette_id": "VIG-089",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 646
+}

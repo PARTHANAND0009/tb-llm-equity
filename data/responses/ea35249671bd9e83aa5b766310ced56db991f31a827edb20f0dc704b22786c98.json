@@ -1,0 +1,15 @@
+{
+  "text": "1. No. Rifampicin resistance testing is not typically performed on initial diagnostic specimens for pulmonary tuberculosis in the absence of clinical or epidemiological suspicion of drug resistance. In this case, there is no known TB contact, no prior TB treatment, and no history of drug-resistant TB, making resistance to rifampicin unlikely.\n\n2. To determine the dose of each drug, I would use the patient's weight, age, and renal function. For a 67-year-old with poorly controlled diabetes, the standard adult dose of isoniazid is 300 mg once daily, rifampicin is 10 mg/kg once daily (or 600 mg if weight is unknown), and pyrazinamide is 25 mg/kg once daily. Ethambutol is 15 mg/kg once daily. The exact dose would be calculated based on her weight, which would be estimated or measured. The total daily dose for each drug would be divided into a single daily dose, and the number of tablets would be determined based on the available formulations.",
+  "raw": {
+    "vignette_id": "VIG-092",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 243,
+  "output_tokens": 221
+}

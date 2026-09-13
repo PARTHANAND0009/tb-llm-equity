@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculous Peritonitis (most likely) - The patient's symptoms of progressive abdominal swelling, discomfort, intermittent low-grade fevers, reduced appetite, and the positive M. tuberculosis result from the ascitic fluid make this the most likely diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray or CT scan - To confirm the presence of active pulmonary TB, which is often associated with peritoneal TB. This will help in guiding the treatment plan and ruling out other potential causes of the patient's symptoms.\n\n3. Initial management plan:\n   - Start anti-tuberculosis therapy immediately - This should include a first-line TB regimen such as isoniazid, rifampicin, ethambutol, and pyrazinamide, along with a corticosteroid to help reduce inflammation in the peritoneum.\n   - Monitor the patient's response to treatment - Regularly monitor the patient's abdominal symptoms, fever, and appetite. Repeat abdominal imaging to assess the resolution of ascites and peritoneal thickening.\n   - Consult an infectious disease specialist - Given the patient's travel history and the potential for drug-resistant TB, it would be prudent to consult an infectious disease specialist for guidance on the most appropriate treatment regimen.\n   - Monitor for complications - Monitor the patient for complications such as sepsis, liver dysfunction, and bowel obstruction, which can occur in cases of tuberculous peritonitis.\n   - Educate the patient on the importance of adherence to the treatment regimen - Proper adherence to the treatment regimen is crucial for the successful treatment of TB. The patient should be educated on the importance of completing the full course of treatment and the potential consequences of non-adherence.\n   - Consider referring the patient to a TB clinic - If available, the patient may benefit from the resources and support provided by a TB clinic, such as nutritional support, psychological counseling, and social support services.\n   - Monitor for drug interactions - Given the patient's age and potential for other medications, it is important to monitor for drug interactions between the TB medications and any other medications the patient is taking.",
+  "raw": {
+    "vignette_id": "VIG-032",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 268,
+  "output_tokens": 525
+}

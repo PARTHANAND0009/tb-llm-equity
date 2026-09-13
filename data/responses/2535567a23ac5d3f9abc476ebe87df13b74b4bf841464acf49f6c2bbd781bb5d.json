@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis (LTBI) due to exposure to her son's MDR-TB**: Given the patient's close living arrangement with her son who has MDR-TB, the risk of exposure to TB bacteria is high. The fact that she has been vaccinated with BCG as a child also increases her risk of developing LTBI.\n2. **TB disease (TB disease) despite previous screening**: Although active TB disease has been ruled out, it's possible that the initial screening may not have been comprehensive or that the disease may have been missed.\n3. **TB disease due to reactivation of LTBI**: Although she has been vaccinated with BCG, there is still a risk of reactivation of LTBI, especially in older adults.\n4. **Other respiratory infections**: Although less likely, other respiratory infections such as pneumonia or bronchitis could present similarly to TB.\n\n**Next Diagnostic Step:**\n\nPerform an **Interferon-Gamma Release Assay (IGRA) test** to assess her immune response to TB antigens. This test is more specific than the Mantoux test (tuberculin skin test) and can help confirm the presence of LTBI or TB disease.\n\n**Initial Management Plan:**\n\n1. **TB preventive treatment**: Given her high-risk exposure to MDR-TB, initiate isoniazid (INH) monotherapy for 6-9 months, as per the current guidelines for LTBI treatment.\n2. **Monitor for side effects**: Regularly monitor the patient for side effects of INH, such as liver enzyme elevations, peripheral neuropathy, and other adverse effects.\n3. **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and to assess for any signs or symptoms of TB disease.",
+  "raw": {
+    "vignette_id": "VIG-064",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 216,
+  "output_tokens": 369
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. The single most likely diagnosis is pulmonary tuberculosis (TB), and the one test I would order right now to evaluate it is a chest X-ray to assess for signs of pulmonary TB, such as upper lobe cavitation or fibrosis.\n\n2. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has no known contact with drug-resistant TB and no prior TB treatment, making it less likely that she has drug-resistant TB.\n\n3. I would send a mycobacterial culture on this patient after obtaining a new, high-quality sputum specimen, ideally one that is induced with a bronchodilator or collected from a more productive cough. This is because the initial sputum sample was of poor quality, and a new sample is needed to increase the likelihood of obtaining a positive culture result.",
+  "raw": {
+    "vignette_id": "VIG-080",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 242,
+  "output_tokens": 178
+}

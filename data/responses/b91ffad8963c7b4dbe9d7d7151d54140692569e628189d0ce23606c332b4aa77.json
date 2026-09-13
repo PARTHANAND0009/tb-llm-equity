@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's age, symptoms of persistent cough, weight loss, night sweats, and right upper zone crackles on examination, TB is the most likely diagnosis. The patient's lack of recent travel and absence of HIV risk factors do not rule out TB, as it is common in the region and can affect anyone.\n   2. Lung cancer - While less likely than TB, the patient's symptoms could potentially be due to lung cancer, especially given the progressive weight loss. However, the absence of a significant smoking history and the patient's age make this less likely.\n   3. Pneumonia - While pneumonia can cause similar symptoms, the patient's symptoms persisting for over eleven weeks and the lack of recent flu-like symptoms make this less likely.\n   4. Other respiratory infections - Other respiratory infections such as bronchitis or pneumonitis could be considered, but the patient's symptoms and exam findings suggest a more chronic process.\n\n2. Single next diagnostic step:\n   The next diagnostic step would be to obtain a sputum sample for acid-fast bacilli (AFB) smear and culture, as well as a chest X-ray to confirm the presence of a lesion and its location.\n\n3. Initial management plan:\n   - Start the patient on a regimen of first-line TB treatment (isoniazid, rifampicin, ethambutol, and pyrazinamide) pending culture results.\n   - Monitor the patient closely for side effects of the TB treatment and for improvement in symptoms.\n   - Refer the patient to a TB specialist for further management and close follow-up.\n   - If the patient is not improving on TB treatment, consider re-evaluating the diagnosis and considering other possibilities.\n   - If the patient is HIV positive, initiate antiretroviral therapy (ART) as soon as possible.\n   - Ensure the patient has access to necessary medications, nutritional support, and social services to address any barriers to care.",
+  "raw": {
+    "vignette_id": "VIG-019",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 197,
+  "output_tokens": 465
+}

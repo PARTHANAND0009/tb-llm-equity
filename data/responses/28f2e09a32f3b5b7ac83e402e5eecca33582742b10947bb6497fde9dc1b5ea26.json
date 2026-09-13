@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis. The ONE test to order right now is a sputum acid-fast bacilli (AFB) smear and culture, along with nucleic acid amplification test (NAAT) for Mycobacterium tuberculosis.  \n\n2. You would not send a mycobacterial culture on this patient at this time. The patient has a low BMI and is likely undernourished, which can delay culture growth. Additionally, the sputum sample may be inadequate for culture, and NAAT is more sensitive and rapid for diagnosing TB in this setting.  \n\n3. To determine the dose of each drug, you would use the patient's weight, which can be estimated from her BMI and height. Once weight is known, standard dosing for each anti-TB drug (e.g., isoniazid, rifampin, pyrazinamide, ethambutol) is calculated based on weight (e.g., isoniazid 10\u201315 mg/kg/day, rifampin 10\u201320 mg/kg/day). If weight is not available, a standard dose based on average weight for a 15-year-old female is used, and the dose is adjusted based on clinical response and tolerability.",
+  "raw": {
+    "vignette_id": "VIG-002",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 312,
+  "output_tokens": 267
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the initial sputum sample was already tested for molecular resistance, and the results indicated rifampicin resistance, which is a key marker for multidrug-resistant tuberculosis (MDR-TB). Confirming rifampicin resistance through molecular testing is essential for guiding appropriate treatment.",
+  "raw": {
+    "vignette_id": "VIG-062",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 213,
+  "output_tokens": 62
+}

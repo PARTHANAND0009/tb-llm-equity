@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**  \n   - **Tuberculosis (TB) of the spine (Pott's disease)** \u2013 **Most likely** due to the clinical presentation of chronic low-back pain radiating to both legs, MRI findings of vertebral body destruction with paraspinal collection, and positive molecular testing for *M. tuberculosis*. The patient's weight loss and partial response to OTC analgesics also support a chronic, progressive infection.  \n   - **Metastatic cancer** \u2013 Could explain vertebral body destruction and weight loss, but the presence of a paraspinal collection and positive TB testing makes this less likely.  \n   - **Pyogenic spondylitis** \u2013 Could cause similar spinal destruction, but the presence of TB on molecular testing makes this less likely.  \n   - **Ankylosing spondylitis** \u2013 May cause chronic back pain and spinal changes, but typically does not present with weight loss or paraspinal collections.  \n   - **Spinal infection (e.g., fungal or brucellosis)** \u2013 Less likely due to the specific TB testing result and clinical context.\n\n2. **Single Next Diagnostic Step:**  \n   **Perform a complete blood count (CBC), erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), and liver function tests (LFTs)** to assess the systemic inflammatory response and organ function, which are important for guiding treatment and monitoring response to anti-tuberculosis therapy.\n\n3. **Initial Management Plan:**  \n   - **Start anti-tuberculosis therapy (ATT)** immediately with a standard regimen: isoniazid (INH), rifampin (RIF), pyrazinamide (PZA), and ethambutol (EMB) for the initial 2 months, followed by INH and RIF for at least 4 more months, as per WHO guidelines for spinal TB.  \n   - **Admit for close monitoring** due to the risk of neurological complications (e.g., cauda equina syndrome), although the patient currently has no bowel or bladder involvement.  \n   - **Pain management** with a combination of non-opioid analgesics (e.g., acetaminophen, NSAIDs if tolerated) and consider low-dose opioids if needed.  \n   - **Nutritional support** and **weight gain monitoring** due to the patient's unintentional weight loss.  \n   - **Imaging follow-up** with MRI or CT to assess response to treatment and monitor for progression or complications.  \n   - **Infectious disease consultation** for optimal management and to ensure adherence to ATT, especially considering the risk of drug resistance.",
+  "raw": {
+    "vignette_id": "VIG-087",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 243,
+  "output_tokens": 554
+}

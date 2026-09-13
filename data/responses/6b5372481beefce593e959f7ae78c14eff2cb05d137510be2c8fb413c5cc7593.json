@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB)**  \n   - **Reasoning:** The patient is a 16-year-old female with a chronic cough (\u22652 weeks), night sweats, and mild right apical crackles. These are classic symptoms of pulmonary tuberculosis. The lack of prior TB treatment and no known contact with drug-resistant TB makes it a strong consideration. The setting of a smallholding and potential exposure to dust or environmental factors may also contribute to TB risk.\n\n2. **Chronic Bronchitis or Post-Viral Bronchitis**  \n   - **Reasoning:** The patient has a cough and low energy, which could be due to chronic bronchitis or a lingering post-viral infection. However, the presence of night sweats and crackles is less typical for this condition, making it less likely than TB.\n\n3. **Lung Cancer (Less likely in a 16-year-old)**  \n   - **Reasoning:** While possible, lung cancer is extremely rare in adolescents. The presentation is more consistent with an infectious or inflammatory process.\n\n4. **Pulmonary Fibrosis or Interstitial Lung Disease**  \n   - **Reasoning:** The crackles and low energy could suggest an interstitial process, but this is less common in a young individual without a known history of autoimmune disease or environmental exposure.\n\n5. **Heart Failure (Left Ventricular Dysfunction)**  \n   - **Reasoning:** Crackles can be a sign of heart failure, but the absence of other symptoms like dyspnea, edema, or elevated BNP would make this less likely.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA), and obtain a chest X-ray.**  \n- **Reasoning:** A chest X-ray is essential to evaluate for signs of TB or other lung pathology. IGRA or TST can help assess TB exposure, though IGRA is preferred in individuals with a history of BCG vaccination (which is common in some populations).\n\n---\n\n3. **Initial Management Plan:**\n\n- **Chest X-ray:** To assess for infiltrates, nodules, or other abnormalities consistent with TB or other lung disease.\n- **IGRA (e.g., QuantiFERON-TB Gold):** To assess for TB infection, especially if the patient has a history of BCG vaccination.\n- **Sputum AFB smear and culture:** If chest X-ray is suggestive of TB, to confirm the diagnosis.\n- **Monitor symptoms:** Advise the patient to report worsening cough, fever, or weight loss.\n- **Consider TB treatment:** If TB is confirmed, initiate appropriate anti-tuberculosis therapy (e.g., isoniazid, rifampin, pyrazinamide, ethambutol) under the guidance of a physician.\n- **Follow-up:** Schedule a follow-up visit to review test results and adjust management accordingly.",
+  "raw": {
+    "vignette_id": "VIG-010",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 208,
+  "output_tokens": 616
+}

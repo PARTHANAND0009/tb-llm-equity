@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis. The ONE test to order right now is a sputum acid-fast bacilli (AFB) smear and culture, along with nucleic acid amplification test (NAAT) for Mycobacterium tuberculosis.  \n\n2. You would not send a mycobacterial culture on this patient at this time. The patient has no prior TB treatment, no known drug-resistant contact, and the clinical presentation is more consistent with drug-susceptible TB. Cultures are typically reserved for cases where drug resistance is suspected or when initial tests are inconclusive.  \n\n3. To determine the dose of each drug, you would use the patient's weight, which can be estimated based on her age and height. For a 14-year-old girl, a typical weight might be around 40-50 kg. Dosing for anti-TB drugs is generally based on weight, with standard adult doses adjusted for pediatric patients. For example, isoniazid is typically 10-15 mg/kg/day, rifampin 10-20 mg/kg/day, pyrazinamide 25-30 mg/kg/day, and ethambutol 15-20 mg/kg/day. These doses would be adjusted to the nearest available tablet strength or divided into appropriate daily doses.",
+  "raw": {
+    "vignette_id": "VIG-018",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 270,
+  "output_tokens": 282
+}

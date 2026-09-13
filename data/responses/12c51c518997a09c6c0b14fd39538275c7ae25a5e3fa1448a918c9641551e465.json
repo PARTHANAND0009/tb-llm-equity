@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has never been treated for TB and there is no known household contact with drug-resistant disease, making it unlikely that the patient's isolate would be resistant to rifampicin.\n\n2. I would send a mycobacterial culture on this patient after the initial diagnostic specimen has been confirmed positive for M. tuberculosis by molecular testing, but before starting treatment. This is because a culture will provide a definitive diagnosis and can be used to monitor for potential resistance patterns if the patient does not respond to treatment.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight (13.8 kg) and the standard pediatric dosing guidelines for TB treatment. For a child weighing 13.8 kg, the recommended doses are: Isoniazid (INH) 10-15 mg/kg/day, Rifampicin (RIF) 10-20 mg/kg/day, Pyrazinamide (PZA) 20-30 mg/kg/day, and Ethambutol (EMB) 15-20 mg/kg/day. I would calculate the dose for each medication and round to the nearest available tablet size, typically 50-100 mg for INH, 150 mg for RIF, 250 mg for PZA, and 100 mg for EMB.",
+  "raw": {
+    "vignette_id": "VIG-005",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 389,
+  "output_tokens": 295
+}

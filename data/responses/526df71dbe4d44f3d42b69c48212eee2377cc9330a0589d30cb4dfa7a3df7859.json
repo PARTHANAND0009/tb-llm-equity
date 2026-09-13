@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the patient's sputum was already confirmed to be resistant to rifampicin, isoniazid, and fluoroquinolones, which indicates pre-XDR-TB. Therefore, rifampicin resistance testing is already known from the molecular test results, and no further testing is needed.",
+  "raw": {
+    "vignette_id": "VIG-060",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 272,
+  "output_tokens": 68
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on this presentation, the single most likely diagnosis is pulmonary tuberculosis (TB). The ONE test to order right now is a nucleic acid amplification test (NAAT) for Mycobacterium tuberculosis in the sputum sample.  \n\n2. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen because the sputum sample is of poor quality, and the test requires a sufficient quantity of high-quality specimen for accurate results.  \n\n3. I would send a mycobacterial culture on this patient once a high-quality sputum sample is obtained, typically after two consecutive morning samples. This is because culture is more sensitive than NAAT for confirming TB and detecting drug resistance, but it requires adequate specimen quality for reliable results.",
+  "raw": {
+    "vignette_id": "VIG-080",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 219,
+  "output_tokens": 161
+}

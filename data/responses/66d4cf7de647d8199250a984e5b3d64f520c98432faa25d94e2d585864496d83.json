@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculous Meningitis (TBM) - Given the positive M. tuberculosis in the CSF, this is the most likely diagnosis. The symptoms of headache, low-grade fevers, and confusion, along with the CSF findings of elevated protein, low glucose, and lymphocytic pleocytosis, support this diagnosis.\n\n2. Single next diagnostic step:\n   - Start empiric antibiotic therapy for TBM immediately, while awaiting further microbiological confirmation and drug susceptibility testing results.\n\n3. Initial management plan:\n   - Hospitalization for close monitoring and management of TBM, including intravenous antibiotics (such as isoniazid, rifampin, ethambutol, and pyrazinamide), corticosteroids to reduce inflammation, and antipyretics for fever control.\n   - Close collaboration with an infectious disease specialist and a neurologist is recommended.\n   - Regular monitoring of the patient's neurological status, complete blood count, liver function tests, and kidney function tests.\n   - The patient should also be evaluated for HIV and other immunocompromising conditions.\n   - The patient's family and close contacts should be evaluated for TB infection and offered preventive treatment if necessary.\n   - The patient should be counseled about the importance of completing the full course of antibiotics and the potential for long-term complications if the treatment is not completed.\n   - The patient should also be counseled about the importance of maintaining a healthy diet, hydration, and rest during her recovery.\n   - The patient's husband and family should be educated about TB transmission and infection control measures to prevent further spread.",
+  "raw": {
+    "vignette_id": "VIG-038",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 280,
+  "output_tokens": 394
+}

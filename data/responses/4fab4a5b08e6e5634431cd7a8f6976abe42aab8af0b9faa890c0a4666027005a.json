@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's age, occupational exposure, symptoms, and chest X-ray findings, TB is the most likely diagnosis. The lack of cavitation in the chest X-ray suggests a more chronic infection, which is consistent with TB.\n   2. HIV-related opportunistic infections (e.g., Pneumocystis jirovecii pneumonia, Mycobacterium avium complex) - The patient's malnutrition, alcohol use, and irregular eating habits increase the risk of HIV infection, which would make him more susceptible to opportunistic infections.\n   3. Lung cancer - While less likely due to the patient's age and lack of smoking history, it's still a possibility given the persistent cough and weight loss.\n   4. Other infectious causes (e.g., bacterial pneumonia, fungal infections) - These are less likely given the patient's history and presentation, but they should still be considered.\n\n2. Single next diagnostic step:\n   Given the high suspicion of TB, the next diagnostic step would be to perform a TB skin test (Mantoux test) or a TB blood test (IGRA). If the patient is HIV positive, a CD4 count and viral load would also be indicated.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen (e.g., isoniazid, rifampin, ethambutol, pyrazinamide) under direct supervision.\n   - Refer the patient to a nutritionist for dietary counseling and weight management.\n   - If the patient tests positive for HIV, initiate antiretroviral therapy (ART) and refer him to an HIV specialist.\n   - Monitor the patient closely for side effects from TB treatment and for improvement in symptoms.\n   - Consider referring the patient to a psychiatrist or addiction counselor to address alcohol use.\n   - If the patient does not improve with TB treatment, consider further investigations for other causes of the symptoms (e.g., HIV-related opportunistic infections, lung cancer).",
+  "raw": {
+    "vignette_id": "VIG-003",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 245,
+  "output_tokens": 480
+}

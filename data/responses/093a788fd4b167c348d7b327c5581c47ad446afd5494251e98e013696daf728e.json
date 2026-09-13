@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Latent TB Infection (LTBI) - Given the close contact with a confirmed MDR-TB case, the patient's BCG vaccination, and the absence of active TB symptoms or findings on chest imaging, LTBI is the most likely diagnosis.\n   2. TB reactivation - While less likely due to the patient's young age and lack of significant medical history, TB reactivation could potentially occur if the patient's immune system is compromised or if he is exposed to TB again.\n   3. Other causes of Lung Infection - While less likely, other causes of lung infection such as bacterial pneumonia, viral pneumonia, or fungal infections should be considered, but they are less likely given the patient's lack of symptoms and the high likelihood of LTBI given his exposure.\n\n2. Single next diagnostic step:\n   Given the high likelihood of LTBI, the next diagnostic step would be to confirm the diagnosis through a Tuberculin Skin Test (TST) or Interferon-gamma release assays (IGRAs).\n\n3. Initial management plan:\n   - If the TST or IGRA is positive, the patient should be started on a course of isoniazid preventive therapy (IPT) for 6-12 months, depending on the specific guidelines followed.\n   - If the TST or IGRA is negative, the patient should be monitored closely for signs and symptoms of active TB disease, and retesting may be considered in the future.\n   - The patient should also be counseled on TB transmission prevention measures, such as wearing a mask when in close contact with the MDR-TB patient, improving ventilation in shared spaces, and avoiding sharing utensils or other personal items.\n   - The patient should also be offered HIV testing, as HIV co-infection increases the risk of TB disease progression.\n   - The patient should be informed about the importance of completing the full course of treatment to prevent the development of drug-resistant TB.\n   - The patient's close contacts should also be evaluated for TB infection and offered preventive treatment if necessary.",
+  "raw": {
+    "vignette_id": "VIG-067",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 200,
+  "output_tokens": 487
+}

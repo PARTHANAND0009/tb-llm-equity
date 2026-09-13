@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculosis Spinal Infection (Pott's disease) - Given the MRI findings and positive M. tuberculosis test results, this is the most likely diagnosis.\n   - Osteomyelitis - While less likely, osteomyelitis could also cause similar symptoms, but the positive M. tuberculosis test makes this less probable in this case.\n   - Degenerative disc disease - This condition can cause low-back pain, but the destruction of vertebral bodies and paraspinal collection seen on MRI are not typical features.\n\n2. Single next diagnostic step:\n   - Consultation with an infectious disease specialist - Given the diagnosis of TB, it would be crucial to involve an infectious disease specialist for guidance on appropriate treatment and management, including drug-sensitivity testing and monitoring for drug-resistant strains.\n\n3. Initial management plan:\n   - Start anti-tuberculosis treatment - The patient should be started on a standard first-line anti-tuberculosis treatment regimen, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, as soon as possible.\n   - Monitor for drug-resistant TB - Given the patient's history of no prior TB treatment and no known TB contact, there is a risk of drug-resistant TB. Drug-sensitivity testing should be performed to guide the choice of drugs and duration of treatment.\n   - Monitor for neurological complications - The patient's neurological status should be closely monitored, as spinal TB can lead to paraplegia if not treated promptly.\n   - Monitor for treatment response - The patient's symptoms and laboratory results should be monitored regularly to assess the response to treatment.\n   - Consult with a physical therapist - To help manage the leg weakness and prevent further complications, the patient should be referred to a physical therapist for rehabilitation.\n   - Consult with a nutritionist - Given the patient's weight loss, a referral to a nutritionist may be beneficial to ensure adequate nutrition during treatment.\n   - Inform close contacts - The patient's close contacts should be informed about the diagnosis and the need for TB testing and preventive treatment, if necessary.\n   - Follow-up appointments - Regular follow-up appointments should be scheduled to monitor the patient's progress and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-087",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 275,
+  "output_tokens": 544
+}

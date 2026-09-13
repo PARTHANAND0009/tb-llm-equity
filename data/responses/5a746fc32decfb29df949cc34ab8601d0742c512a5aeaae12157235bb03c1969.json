@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Primary Tuberculosis (TB)**: The presence of a hilar lymph node pattern on chest X-ray, combined with the clinical presentation of persistent cough and weight loss, strongly suggests primary TB. The lack of cavitation or miliary spread on the X-ray further supports this diagnosis.\n2. **Congenital or acquired immunodeficiency**: The child's failure to thrive and lack of response to standard diagnostic tests for TB may indicate an underlying immunodeficiency, which could be congenital or acquired.\n3. **Other respiratory infections**: Although less likely, other respiratory infections such as atypical mycobacterial infections or fungal infections could present with similar symptoms.\n4. **Nutritional deficiencies**: The child's failure to thrive could be due to nutritional deficiencies, which may be contributing to his susceptibility to infection.\n\n**2. Next Diagnostic Step:**\n\nPerform an **Interferon-gamma release assay (IGRA)**: This test measures the immune response to TB antigens and can help differentiate between latent and active TB infection. Given the child's negative sputum and gastric aspirate results, an IGRA can provide additional information to support or rule out TB.\n\n**3. Initial Management Plan:**\n\n- **TB treatment initiation**: Start the child on a standard 6-month regimen of isoniazid, rifampicin, and pyrazinamide, pending confirmation of TB diagnosis.\n- **Nutritional support**: Implement a comprehensive nutritional plan to address the child's failure to thrive.\n- **Monitoring**: Closely monitor the child's weight, respiratory status, and response to treatment.\n- **Follow-up**: Schedule follow-up appointments to assess the child's response to treatment and adjust the management plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-073",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 251,
+  "output_tokens": 356
+}

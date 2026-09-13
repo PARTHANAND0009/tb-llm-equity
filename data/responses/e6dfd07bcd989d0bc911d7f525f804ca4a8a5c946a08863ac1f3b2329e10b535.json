@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   a. Tuberculosis (TB) - Given the symptoms of persistent cough, fatigue, and mild pallor, along with the physical finding of left mid-zone crackles, this is the most likely diagnosis. The patient's age, occupation, and lack of improvement despite antihistamines suggest a more serious underlying condition.\n   b. Asthma - While asthma can present with cough and fatigue, the absence of a history of asthma symptoms outside of the harvest season, the physical finding of crackles, and the patient's age make this less likely.\n   c. Chronic bronchitis - While chronic bronchitis can cause a persistent cough, the patient's age, occupation, and physical findings make this less likely.\n   d. Lung cancer - While lung cancer can present with a persistent cough, the patient's age and lack of smoking history make this less likely.\n\n2. The single next diagnostic step you would take right now:\n   A sputum acid-fast bacilli (AFB) smear and culture for Mycobacterium tuberculosis. This test can help confirm or rule out TB, which is the most likely diagnosis based on the current information.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen, such as isoniazid, rifampin, ethambutol, and pyrazinamide, pending the results of the sputum AFB test.\n   - Monitor the patient closely for side effects of the TB medication and for improvement in symptoms.\n   - Refer the patient to a pulmonologist for further management and monitoring.\n   - If the sputum AFB test is negative, consider additional tests such as a chest X-ray or CT scan to further evaluate the lung findings.\n   - Educate the patient and her family about TB, its transmission, and the importance of adhering to the treatment regimen.\n   - Encourage the patient to follow up with her healthcare provider regularly to ensure proper treatment and monitoring.",
+  "raw": {
+    "vignette_id": "VIG-026",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 251,
+  "output_tokens": 458
+}

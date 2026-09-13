@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the Xpert MTB/RIF test has already detected rifampicin resistance, so further testing would be redundant and unnecessary.\n\n2. To determine the dose of each drug for this patient, I would use the patient's weight (61 kg) and the standard dosing guidelines for pulmonary tuberculosis treatment. For a patient with a body weight of 61 kg, the typical initial dose of isoniazid (H) is 5 mg/kg/day, which would be 305 mg/day. The typical initial dose of rifampicin (R) is 10 mg/kg/day, but since the patient's sputum Xpert MTB/RIF test detected rifampicin resistance, I would use a rifabutin (Rfb) or a rifapentine (Rpt) regimen instead. Assuming a rifabutin regimen, the typical initial dose is 10 mg/kg/day, which would be 610 mg/day. The typical initial dose of pyrazinamide (Z) is 15-20 mg/kg/day, which would be 915-1,220 mg/day. The typical initial dose of ethambutol (E) is 15-20 mg/kg/day, which would be 915-1,220 mg/day.",
+  "raw": {
+    "vignette_id": "VIG-051",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 273,
+  "output_tokens": 283
+}

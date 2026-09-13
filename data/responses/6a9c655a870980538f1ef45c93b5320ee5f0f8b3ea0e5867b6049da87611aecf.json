@@ -1,0 +1,15 @@
+{
+  "text": "1. No, rifampicin drug-resistance testing on this patient's initial diagnostic specimen is not necessary. The patient's sputum and gastric aspirate have already tested positive for M. tuberculosis, and the patient's resistance pattern is already known to be pre-XDR-TB due to resistance to rifampicin, isoniazid, and fluoroquinolones.",
+  "raw": {
+    "vignette_id": "VIG-057",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 279,
+  "output_tokens": 79
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the positive M. tuberculosis test results from the gastric aspirate, this is the most likely diagnosis. The child's symptoms of low-grade fever, cough, and weight loss, along with the crackles heard on examination, support this diagnosis.\n   2. Pneumonia - While not as likely as TB, given the child's symptoms and the positive test results, pneumonia could be a secondary infection or a complication of TB.\n   3. Anemia - The mother mentioned the child was mildly anemic a few months ago, and while this could be dietary, it could also be a result of TB or another underlying condition.\n\n2. Single next diagnostic step:\n   Given the positive M. tuberculosis test results, the next diagnostic step would be to confirm the diagnosis with a chest X-ray to assess the extent of the disease and rule out any complications.\n\n3. Initial management plan:\n   - Start the child on a first-line TB treatment regimen, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, under the supervision of a pediatrician experienced in TB management.\n   - Monitor the child's response to treatment, including regular weight checks and monitoring for side effects.\n   - Ensure proper nutrition and hydration.\n   - Isolate the child to prevent the spread of TB to others, if possible.\n   - Consult a pediatric infectious disease specialist for further management and guidance.\n   - Consider testing other household members for TB, especially if they have been in close contact with the child.\n   - Monitor the child's respiratory status and adjust treatment as necessary based on the chest X-ray results.",
+  "raw": {
+    "vignette_id": "VIG-005",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 329,
+  "output_tokens": 405
+}

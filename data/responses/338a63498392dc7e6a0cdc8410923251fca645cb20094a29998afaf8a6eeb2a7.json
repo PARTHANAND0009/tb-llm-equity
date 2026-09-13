@@ -1,0 +1,15 @@
+{
+  "text": "1. No. Rifampicin resistance testing is not typically performed on the initial diagnostic specimen in a child with confirmed pulmonary tuberculosis, as molecular tests like Xpert MTB/RIF are highly sensitive and specific for detecting rifampicin resistance. In this case, the gastric aspirate was positive for *M. tuberculosis* on molecular testing, which is sufficient to initiate treatment.\n\n2. You would not send a mycobacterial culture for this patient. Molecular testing (e.g., Xpert MTB/RIF) is preferred for rapid diagnosis and detection of rifampicin resistance in children, especially when sputum is scant. Cultures are generally reserved for cases where molecular testing is inconclusive or when drug resistance testing is required.\n\n3. To determine the dose of each drug, you would use the child's weight. For isoniazid, the dose is 10\u201315 mg/kg/day, divided into 1\u20132 doses. For rifampicin, the dose is 10\u201320 mg/kg/day, divided into 1\u20132 doses. For pyrazinamide, the dose is 15\u201325 mg/kg/day, divided into 1\u20132 doses. For ethambutol, the dose is 15\u201320 mg/kg/day, given once daily. Doses should be adjusted based on the child's weight and converted to the appropriate number of tablets or liquid dose based on the drug's strength.",
+  "raw": {
+    "vignette_id": "VIG-081",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 269,
+  "output_tokens": 302
+}

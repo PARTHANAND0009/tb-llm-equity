@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculous pyelonephritis (most likely) - The patient's symptoms of intermittent flank pain, urinary frequency, low-grade fevers, and weight loss, along with the positive M. tuberculosis urine test and imaging findings of left renal scarring and hydronephrosis, suggest tuberculous pyelonephritis. The patient's lack of prior TB treatment and known TB contact, as well as the negative bacterial cultures, further support this diagnosis.\n   2. Renal abscess - While less likely, the patient's symptoms and imaging findings could potentially suggest a renal abscess. However, the sterile pyuria and negative bacterial cultures argue against this diagnosis.\n   3. Renal stone - The patient's symptoms could potentially be due to a renal stone, but the lack of significant imaging findings and the patient's response to antibiotics (albeit briefly) make this less likely.\n\n2. Single next diagnostic step:\n   Given the positive M. tuberculosis urine test and the patient's symptoms, the next diagnostic step would be to confirm the diagnosis of tuberculous pyelonephritis with a tissue biopsy or a positive acid-fast bacilli (AFB) smear from a urine sample.\n\n3. Initial management plan:\n   - Start the patient on a course of anti-tuberculosis medication (e.g., isoniazid, rifampin, ethambutol, and pyrazinamide) for at least six months, with close monitoring for adverse effects and drug interactions.\n   - Monitor the patient's renal function and imaging to assess the response to treatment and monitor for complications such as abscess formation or progression of renal scarring.\n   - Ensure the patient is compliant with the treatment regimen and provides education on the importance of completing the full course of treatment to prevent drug resistance.\n   - Consider referring the patient to a specialist, such as a nephrologist or infectious disease specialist, for further management and monitoring.\n   - If the patient's symptoms do not improve with anti-tuberculosis therapy, consider additional imaging or further diagnostic tests to rule out other potential causes of the patient's symptoms.",
+  "raw": {
+    "vignette_id": "VIG-035",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 272,
+  "output_tokens": 520
+}

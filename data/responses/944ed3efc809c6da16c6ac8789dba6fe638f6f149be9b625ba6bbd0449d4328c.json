@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB)**  \n   - **Reasoning:** The child is HIV-positive, has a chest X-ray showing a right hilar lymph node pattern suggestive of primary TB, and has no known TB contact. The presence of a cough and reduced energy, along with the imaging findings, strongly supports TB as the most likely diagnosis. HIV-positive individuals are at high risk for TB, especially if they have a low CD4 count or are not on prophylaxis like cotrimoxazole.\n\n2. **Pneumonia (Bacterial or Viral)**  \n   - **Reasoning:** The presence of cough and mild crackles could be due to a respiratory infection. However, the chest X-ray findings are more consistent with TB than a typical viral or bacterial pneumonia, especially in the context of HIV.\n\n3. **Lymphadenopathy (Non-TB)**  \n   - **Reasoning:** Hilar lymphadenopathy can occur in HIV without TB, but the imaging pattern is more suggestive of TB. Additionally, the clinical presentation (cough, fatigue) is more aligned with TB.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a tuberculin skin test (TST) or interferon-gamma release assay (IGRA) to confirm TB infection.**  \n- **Rationale:** Given the clinical suspicion of TB and the chest X-ray findings, a TST or IGRA is the next step to confirm active TB infection. IGRA is preferred in HIV-positive individuals due to the risk of false positives with TST.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Start empiric anti-tuberculosis treatment (ATT):** Begin isoniazid, rifampin, pyrazinamide, and ethambutol (standard first-line ATT for TB).  \n- **Monitor for drug toxicity:** Especially with rifampin and ethambutol.  \n- **Initiate cotrimoxazole prophylaxis:** Since the child has not previously received it and is HIV-positive, cotrimoxazole should be started to prevent opportunistic infections.  \n- **Continue antiretroviral therapy (ART):** Ensure that the child\u2019s ART regimen is optimized and adherent.  \n- **Schedule follow-up:** Repeat chest X-ray and CD4 count to monitor response to treatment and immune status.  \n- **Provide patient and family education:** On TB treatment, adherence, and the importance of prophylaxis.",
+  "raw": {
+    "vignette_id": "VIG-093",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 206,
+  "output_tokens": 513
+}

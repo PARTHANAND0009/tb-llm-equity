@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) meningitis - Given the positive gastric aspirate for M. tuberculosis and the patient's symptoms of cough and worsening lethargy, TB meningitis is the most likely diagnosis. The fact that rifampicin was not detected in the gastric aspirate suggests drug-resistant TB, which is a concern in this case.\n   2. Bacterial meningitis - While less likely due to the negative sputum test, bacterial meningitis cannot be ruled out without further testing.\n   3. Other causes of meningitis (viral, fungal, parasitic) - These are less likely given the positive TB test, but they should still be considered in the differential diagnosis.\n\n2. Single next diagnostic step:\n   Obtain a lumbar puncture for cerebrospinal fluid (CSF) analysis to confirm the diagnosis of TB meningitis and rule out other causes of meningitis.\n\n3. Initial management plan:\n   - Start empiric anti-TB therapy (e.g., isoniazid, ethambutol, pyrazinamide, and a fluoroquinolone) while awaiting CSF results and drug-susceptibility testing.\n   - Administer dexamethasone to reduce inflammation and potential neurological damage.\n   - Monitor the patient closely for signs of treatment response (improvement in symptoms, normalization of inflammatory markers) and for adverse effects of treatment.\n   - Ensure proper nutrition and hydration to support the patient's overall health and aid in recovery.\n   - Consult a pediatrician with expertise in TB and/or a pediatric infectious disease specialist for further management guidance.",
+  "raw": {
+    "vignette_id": "VIG-053",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 239,
+  "output_tokens": 406
+}

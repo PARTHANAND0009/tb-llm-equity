@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis Infection (LTBI):** The patient's exposure to her father with MDR-TB two months ago is a significant risk factor for LTBI. The absence of TST or IGRA results does not rule out LTBI, as these tests may be false-negative in some cases. The patient's lack of symptoms and well-appearing status do not rule out LTBI, as many individuals with LTBI are asymptomatic.\n2. **Other latent infections or conditions:** Although less likely, other latent infections or conditions could be considered, such as latent syphilis or other diseases that may present with similar risk factors.\n\n**Next Diagnostic Step:**\nPerform a **Risk Assessment Questionnaire (RAQ)** to gather more information about the patient's exposure to her father and other potential sources of TB exposure. This will help to further assess the risk of LTBI.\n\n**Initial Management Plan:**\nGiven the patient's exposure to her father with MDR-TB and the unavailability of TST or IGRA, initiate **isoniazid (INH) prophylaxis** for 6-9 months, pending further diagnostic testing or the availability of TST or IGRA results. This will help prevent the progression of LTBI to active TB disease.",
+  "raw": {
+    "vignette_id": "VIG-070",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 196,
+  "output_tokens": 268
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. No, rifampicin drug-resistance testing on the initial diagnostic specimen is not typically performed, as it is not necessary for the initial diagnosis of TB. The initial diagnosis is based on clinical presentation and sputum smear or molecular testing for M. tuberculosis. Drug-resistance testing is usually performed after the diagnosis is confirmed.",
+  "raw": {
+    "vignette_id": "VIG-058",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 230,
+  "output_tokens": 68
+}

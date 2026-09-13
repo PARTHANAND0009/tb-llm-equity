@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because drug-resistant TB is a significant concern, especially in cases where the patient has no known drug-resistant contact but has a positive M. tuberculosis test. Resistance testing can help guide appropriate treatment and prevent the spread of drug-resistant TB.\n\n2. I would send a mycobacterial culture on this patient once a sputum or gastric aspirate specimen is obtained. This is because culture is the gold standard for diagnosing TB and can provide information about the strain of TB, drug susceptibility patterns, and the minimum inhibitory concentration (MIC) of the drugs, which can be crucial for determining the appropriate treatment regimen.\n\n3. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the dose of each drug for this specific patient would be determined based on the patient's age (5 years), weight (17.1 kg), and the recommended dosing guidelines for pediatric TB treatment. For example, the recommended dose of isoniazid for a child 5-10 years old is 10 mg/kg/day, which for this patient would be 171 mg/day. The dose of rifampin for a child 5-10 years old is 10 mg/kg/day, which for this patient would be 171 mg/day. The dose of ethambutol for a child 5-10 years old is 15 mg/kg/day, which for this patient would be 256.5 mg/day. The dose of pyrazinamide would depend on the duration of treatment, but for a standard 6-month regimen, the dose for a child 5-10 years old is 30-35 mg/kg/day, which for this patient would be 513-595 mg/day. It's important to note that these doses should be rounded to the nearest available tablet strength and adjusted for the specific formulation of the medication being used.",
+  "raw": {
+    "vignette_id": "VIG-017",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 361,
+  "output_tokens": 476
+}

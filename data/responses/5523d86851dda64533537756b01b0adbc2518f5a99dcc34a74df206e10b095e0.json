@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculosis (TB) of the ileocecal region**: The patient's symptoms of intermittent right lower abdominal pain, low-grade fevers, and reduced appetite are consistent with TB. The ultrasound-guided aspiration of an enlarged regional lymph node was positive for M. tuberculosis, which is a strong indicator of TB infection. The patient's history of undernutrition and short stature also increases her susceptibility to TB.\n2. **Ileocecal intussusception**: The imaging findings of ileocecal wall thickening with regional lymphadenopathy could be consistent with ileocecal intussusception, but this would not explain the positive TB culture from the lymph node.\n3. **Appendicitis**: The patient's symptoms could be consistent with appendicitis, but the imaging findings and the positive TB culture from the lymph node make this less likely.\n4. **Gastrointestinal lymphoma**: This is a less likely diagnosis given the patient's age and the imaging findings.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess for pulmonary TB, which is a common manifestation of TB infection. This will help determine if the patient has primary TB or if the infection has spread to the lungs.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on a standard 6-month regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, with close monitoring for side effects and adherence.\n* **Nutritional support**: Provide the patient with nutritional supplements and a balanced diet to address her undernutrition and short stature.\n* **Close monitoring**: Regularly monitor the patient's symptoms, weight, and height, and adjust the treatment plan as needed.\n* **TB treatment adherence**: Ensure the patient takes her medication as prescribed and monitor for any signs of non-adherence.\n* **Follow-up imaging**: Schedule follow-up imaging studies to monitor the response to treatment and assess for any complications.",
+  "raw": {
+    "vignette_id": "VIG-042",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 285,
+  "output_tokens": 413
+}

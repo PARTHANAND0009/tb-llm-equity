@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis Infection (LTBI):** The patient's exposure to her son with MDR-TB, lack of symptoms, and normal chest imaging make LTBI the most likely diagnosis. The fact that she came in on her own initiative also suggests she may be aware of her potential exposure and is taking proactive steps.\n2. **Other latent infections or conditions:** Although less likely, other latent infections or conditions could be considered, such as latent syphilis or other diseases that may not have been ruled out through the initial screening.\n3. **False negative TB test:** Although the patient's TBI testing is not available, a false negative result is possible, but this would be less likely given the patient's exposure to MDR-TB.\n\n**Next Diagnostic Step:**\nGiven the unavailability of TBI testing, the next step would be to perform a **Quantiferon Gold test** or another interferon-gamma release assay (IGRA) to assess the patient's immune response to TB antigens. This would provide an alternative method for diagnosing LTBI.\n\n**Initial Management Plan:**\nGiven the patient's exposure to MDR-TB and the high risk of developing active TB disease, the initial management plan would be to **initiate isoniazid monotherapy** for 6-9 months, pending the results of the IGRA test. This would be done under the assumption that the patient has LTBI, and the goal is to prevent the progression to active TB disease.",
+  "raw": {
+    "vignette_id": "VIG-100",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 208,
+  "output_tokens": 313
+}

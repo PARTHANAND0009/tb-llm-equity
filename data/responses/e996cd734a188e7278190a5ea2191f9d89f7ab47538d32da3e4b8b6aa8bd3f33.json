@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculous Meningitis (TB Meningitis)**: The patient's symptoms of headache, low-grade fevers, and recent lumbar puncture results (elevated protein, low glucose, and lymphocytic pleocytosis) are consistent with TB Meningitis. The positive molecular testing for M. tuberculosis in the CSF further supports this diagnosis.\n\n2. **Viral Meningitis**: Although the patient's symptoms could be consistent with viral meningitis, the presence of lymphocytic pleocytosis and the specific CSF results make TB Meningitis a more likely diagnosis.\n\n3. **Bacterial Meningitis**: Although the patient's symptoms could be consistent with bacterial meningitis, the CSF results do not show a high white blood cell count, which is more typical of bacterial meningitis.\n\n4. **Other causes of headache and fever**: These could include viral infections, but the specific CSF results and the patient's symptoms make TB Meningitis a more likely diagnosis.\n\n**2. The single next diagnostic step I would take right now:**\n\nPerform a **chest X-ray** to assess for pulmonary TB, which is a common site of TB infection. This will help determine if the patient has a primary site of infection that could be contributing to her meningitis.\n\n**3. Initial Management Plan:**\n\n- **Admit the patient to the hospital** for further observation and treatment.\n- **Start empirical TB treatment** with isoniazid, rifampicin, pyrazinamide, and ethambutol, pending the results of the chest X-ray and further diagnostic testing.\n- **Monitor the patient's neurological status** closely, including her level of consciousness, nuchal rigidity, and any signs of increased intracranial pressure.\n- **Consider administering corticosteroids** to reduce inflammation and prevent further damage to the central nervous system.",
+  "raw": {
+    "vignette_id": "VIG-038",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 267,
+  "output_tokens": 402
+}

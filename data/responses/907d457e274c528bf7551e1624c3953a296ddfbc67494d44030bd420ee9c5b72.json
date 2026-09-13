@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Cutaneous Tuberculosis (CTB)**: The presence of a persistent ulcer with undermined edges, intermittent discharge, and a firm underlying lymph node, combined with the positive molecular testing for M. tuberculosis, strongly suggests CTB. The fact that the mother initially thought it was an eczema flare, but the lesion didn't heal with antiseptic ointment, also supports this diagnosis.\n2. **Eczema or Atopic Dermatitis**: Although the child has a history of mild eczema, the presence of a persistent ulcer and a firm underlying lymph node makes this less likely.\n3. **Cellulitis or Abscess**: The presence of a shallow ulcer and intermittent discharge could be consistent with a bacterial infection, but the positive molecular testing for M. tuberculosis makes this less likely.\n4. **Other Infections (e.g., fungal, viral)**: The presence of a persistent ulcer and a firm underlying lymph node, combined with the positive molecular testing for M. tuberculosis, makes other infections less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for pulmonary tuberculosis, as CTB is often associated with pulmonary TB. This will help determine if the child has a primary or post-primary TB infection.\n\n**3. Initial Management Plan:**\n\n- **Isolate the child**: To prevent transmission of M. tuberculosis to others.\n- **Start antitubercular therapy**: Administer a standard 4-drug regimen (isoniazid, rifampicin, pyrazinamide, and ethambutol) for at least 6 months, as per local guidelines.\n- **Monitor for side effects**: Regularly monitor the child for signs of TB treatment side effects, such as liver function abnormalities, and adjust the treatment regimen as needed.\n- **Follow-up**: Schedule regular follow-up appointments to monitor the child's response to treatment, assess the skin lesion, and adjust the treatment plan as needed.\n- **Contact tracing**: Identify and screen household contacts for TB exposure and consider treating them if necessary.",
+  "raw": {
+    "vignette_id": "VIG-041",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 289,
+  "output_tokens": 425
+}

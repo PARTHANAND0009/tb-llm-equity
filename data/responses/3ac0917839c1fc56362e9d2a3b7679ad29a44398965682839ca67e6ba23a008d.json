@@ -1,0 +1,15 @@
+{
+  "text": "1. No. Rifampicin resistance testing is not typically performed on the initial diagnostic specimen for M. tuberculosis because molecular tests like Xpert MTB/RIF are highly sensitive and specific for detecting rifampicin resistance. These tests are preferred for rapid diagnosis and treatment decision-making in suspected cases.\n\n2. You would send a mycobacterial culture as soon as possible after diagnosis to confirm the presence of M. tuberculosis and to determine drug susceptibility. Cultures are essential for confirming the diagnosis and for identifying any potential drug resistance, especially in cases where molecular testing is inconclusive or when further characterization is needed.\n\n3. To determine the dose of each drug, you would use the patient's weight (19.5 kg) and age (6 years). For rifampicin, the dose is 10-15 mg/kg/day, divided into 2-3 doses. For isoniazid, the dose is 10-15 mg/kg/day, up to a maximum of 300 mg/day. For pyrazinamide, the dose is 15-25 mg/kg/day, up to a maximum of 750 mg/day. For ethambutol, the dose is 15-20 mg/kg/day, up to a maximum of 800 mg/day. Based on the weight, you would calculate the exact dose for each drug and determine the number of tablets or volume of liquid required.",
+  "raw": {
+    "vignette_id": "VIG-013",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 321,
+  "output_tokens": 300
+}

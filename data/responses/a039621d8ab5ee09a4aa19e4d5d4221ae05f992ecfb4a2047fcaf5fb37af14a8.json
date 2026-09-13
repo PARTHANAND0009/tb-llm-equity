@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis (LTBI)**: The patient is a high-risk individual (HIV-positive) and has been vaccinated with BCG, which increases her risk of developing LTBI. The patient's recent evaluation for active TB disease and lack of TBI testing also support this diagnosis.\n2. **Hypertension-related cardiovascular disease**: The patient has a history of well-controlled hypertension, which is a risk factor for cardiovascular disease. However, the patient's presentation is not suggestive of acute cardiovascular disease.\n3. **Other opportunistic infections**: As an HIV-positive individual, the patient is at risk for various opportunistic infections, but the lack of symptoms and recent evaluation for active TB disease make this less likely.\n4. **Other conditions**: The patient's presentation is not suggestive of other conditions such as cancer, diabetes, or other chronic diseases.\n\n**Next Diagnostic Step:**\nPerform a Tuberculin Skin Test (TST) or Interferon-Gamma Release Assay (IGRA) to confirm the diagnosis of LTBI. Given the patient's HIV status, an IGRA may be a better option as it is less affected by BCG vaccination.\n\n**Initial Management Plan:**\n- Continue to monitor the patient's vital signs and overall health status.\n- Administer a TST or IGRA to confirm the diagnosis of LTBI.\n- If the test is positive, initiate isoniazid (INH) for 6-9 months as part of LTBI treatment.\n- Continue the patient's antiretroviral therapy and manage her hypertension as prescribed.\n- Consider consulting an infectious disease specialist for further guidance on LTBI treatment and management.",
+  "raw": {
+    "vignette_id": "VIG-068",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 211,
+  "output_tokens": 344
+}

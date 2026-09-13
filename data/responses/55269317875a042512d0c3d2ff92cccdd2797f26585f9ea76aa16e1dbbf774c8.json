@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculous pleurisy (TB pleuritis) - Given the positive M. tuberculosis results from the pleural fluid, this is the most likely diagnosis. The patient's symptoms of chest discomfort and progressive breathlessness, along with the physical findings of decreased breath sounds and dullness to percussion at the right base, support this diagnosis.\n\n2. Single next diagnostic step:\n   - Given the positive M. tuberculosis results, the next diagnostic step would be to confirm the TB strain's drug sensitivity profile. This will help guide the choice of appropriate antituberculous therapy.\n\n3. Initial management plan:\n   - Start the patient on a standard first-line TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) while awaiting drug sensitivity results.\n   - Monitor the patient's respiratory status closely, including oxygen saturation, and manage any symptoms of respiratory distress as necessary.\n   - Arrange for follow-up thoracentesis to monitor the response to treatment and manage the pleural effusion.\n   - Ensure the patient is referred to a TB specialist and is counseled on the importance of adherence to the full treatment course to prevent drug resistance.\n   - The patient should also be evaluated for HIV and other comorbidities, as these can affect TB treatment and prognosis.\n   - The patient's contacts should be identified and screened for TB infection, as there is a risk of transmission.\n   - The patient should be educated about the importance of regular follow-up and the signs and symptoms of TB treatment failure or drug toxicity.",
+  "raw": {
+    "vignette_id": "VIG-040",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 281,
+  "output_tokens": 388
+}

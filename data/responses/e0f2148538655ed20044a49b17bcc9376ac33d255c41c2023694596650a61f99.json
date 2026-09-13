@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms, Xpert MTB/RIF results, and chest X-ray findings, TB is the most likely diagnosis. The negative sputum smear and undetected rifampicin suggest drug-resistant TB, which is a concern, but the absence of known risk factors is somewhat reassuring.\n   2. Bronchitis - While bronchitis can cause a persistent cough, the Xpert MTB/RIF results and chest X-ray findings make this less likely.\n   3. Chronic obstructive pulmonary disease (COPD) - The patient's age and persistent cough could suggest COPD, but the lack of significant weight loss and the Xpert MTB/RIF results argue against this diagnosis.\n   4. Lung cancer - While a persistent cough can be a symptom of lung cancer, the patient's age, lack of significant weight loss, and the absence of other symptoms typically associated with lung cancer (e.g., hemoptysis, chest pain) make this less likely.\n\n2. Single next diagnostic step:\n   Given the Xpert MTB/RIF results and the patient's remote location, the next diagnostic step would be to initiate drug-susceptibility testing (DST) to determine the specific drugs to which the TB strain is resistant. This will help guide the choice of appropriate treatment.\n\n3. Initial management plan:\n   - Start the patient on a regimen of second-line TB drugs based on the results of the DST. This will likely involve a combination of drugs such as ethambutol, kanamycin, ofloxacin, and cycloserine.\n   - Arrange for regular follow-ups to monitor the patient's response to treatment and for side effects.\n   - Educate the patient about the importance of adherence to the treatment regimen and the potential risks of drug-resistant TB.\n   - If possible, arrange for a family member or caregiver to check on the patient regularly, given her remote location.\n   - If the patient's condition worsens or if there are signs of drug resistance, consider hospitalization.\n   - If the DST results show susceptibility to first-line drugs, the patient can be switched to a first-line regimen if appropriate.",
+  "raw": {
+    "vignette_id": "VIG-076",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 238,
+  "output_tokens": 523
+}

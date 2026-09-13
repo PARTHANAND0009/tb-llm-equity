@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the patient's sputum was already tested and found to have rifampicin resistance, which is a key marker for multidrug-resistant tuberculosis (MDR-TB). Confirming rifampicin resistance through initial diagnostic testing is essential for guiding appropriate treatment and confirming the presence of MDR-TB.",
+  "raw": {
+    "vignette_id": "VIG-056",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 229,
+  "output_tokens": 68
+}

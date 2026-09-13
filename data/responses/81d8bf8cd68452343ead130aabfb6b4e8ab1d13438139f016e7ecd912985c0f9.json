@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) with silicosis (given Xpert MTB/RIF positive, silicosis history, and negative sputum smear)\n   2. Chronic obstructive pulmonary disease (COPD) exacerbation (given progressive breathlessness and history of occupational exposure)\n   3. Lung cancer (given progressive symptoms and silicosis, although less likely due to negative sputum smear and imaging findings)\n\n2. Single next diagnostic step:\n   Obtain a CT scan of the chest to further evaluate the extent of the nodular silicotic changes, assess for any new or enlarging nodules, and rule out other potential causes such as lung cancer.\n\n3. Initial management plan:\n   - Start the patient on a standard first-line TB treatment regimen (isoniazid, rifampicin, ethambutol, and pyrazinamide) after confirming drug susceptibility testing results.\n   - Monitor the patient's respiratory symptoms and oxygen saturation levels.\n   - Refer the patient to a pulmonologist for further management of his silicosis, including oxygen therapy if needed, and close monitoring for any signs of respiratory failure.\n   - Encourage the patient to avoid further exposure to silica dust and provide information about the importance of early detection and treatment of TB.\n   - Consider referring the patient for nutritional support to address weight loss.\n   - Monitor the patient for adverse effects of TB treatment and adjust the regimen as necessary.\n   - Consider referring the patient for a lung function test to assess the severity of his COPD, if the CT scan does not reveal any other significant findings.",
+  "raw": {
+    "vignette_id": "VIG-027",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 261,
+  "output_tokens": 387
+}

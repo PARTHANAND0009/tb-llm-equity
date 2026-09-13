@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the presented symptoms, the single most likely diagnosis is drug-susceptible pulmonary tuberculosis (TB). To confirm this, a Sputum Acid-Fast Bacilli (AFB) smear and culture would be the initial test ordered.\n2. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed:\n   a) The treatment regimen would have two phases: an initial intensive phase lasting 2 months, followed by a continuation phase lasting 4 months.\n   b) During the intensive phase, the patient would take isoniazid, rifampicin, ethambutol, and pyrazinamide daily. During the continuation phase, isoniazid and rifampicin would be taken daily, while ethambutol and pyrazinamide would be discontinued.\n3. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed:\n   a) To determine the dose of each drug for this specific patient, the body weight (52 kg) and age (34 years) would be used. The doses would be based on standardized weight-based dosing guidelines for each drug.\n   b) For example, the initial dose of isoniazid would be 5 mg/kg once daily, which for this patient would be 260 mg/day. The dose of rifampicin would be 600 mg once daily, regardless of weight. The dose of ethambutol would be 15 mg/kg once daily, which for this patient would be 780 mg/day. The dose of pyrazinamide would be 20-25 mg/kg once daily, which for this patient would be 1040-1300 mg/day. However, it's important to note that the actual dose may need to be adjusted based on the patient's renal function and any other concurrent medications.",
+  "raw": {
+    "vignette_id": "VIG-003",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 360,
+  "output_tokens": 436
+}

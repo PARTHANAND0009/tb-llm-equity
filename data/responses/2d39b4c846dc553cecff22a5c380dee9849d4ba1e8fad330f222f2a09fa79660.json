@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Multidrug-resistant tuberculosis (MDR-TB)**: The patient's sputum smear remains positive after 2 months of standard first-line treatment, which is a strong indicator of treatment failure or resistance. The presence of a cavitary lesion also suggests a more complex disease process.\n2. **TB treatment failure**: The patient's persistent symptoms and positive sputum smear despite 2 months of treatment suggest that the current regimen may not be effective.\n3. **TB reactivation**: Although less likely, the patient's persistent symptoms could be due to reactivation of a latent TB infection.\n4. **Other pulmonary infections**: Although less likely given the patient's TB diagnosis, other pulmonary infections such as pneumonia or bronchitis could be contributing to his symptoms.\n5. **Pulmonary complications of TB**: Complications such as pleural effusion or empyema could be contributing to the patient's symptoms.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray or CT scan** to assess the size and characteristics of the cavitary lesion, as well as to rule out any complications of TB. This will help guide further management and treatment decisions.\n\n**3. Initial Management Plan:**\n\n* Continue the current standard first-line TB treatment regimen for now, but with a plan to switch to a second-line regimen if the patient's sputum smear remains positive after 4-6 weeks.\n* Consider adding a corticosteroid to reduce inflammation and improve symptoms, but only if the patient's oxygen saturation is below 90% or if there are signs of respiratory distress.\n* Monitor the patient's vital signs closely, particularly oxygen saturation and respiratory rate, and adjust treatment as needed.\n* Consider consulting a TB specialist or pulmonologist for further guidance on management and treatment.",
+  "raw": {
+    "vignette_id": "VIG-023",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 283,
+  "output_tokens": 374
+}

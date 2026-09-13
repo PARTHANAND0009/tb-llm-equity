@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Pulmonary TB treatment failure or relapse**: The patient was diagnosed with rifampicin-resistant TB four months ago and is now presenting with symptoms of respiratory distress, which could indicate treatment failure or relapse of the disease.\n2. **Pneumonia**: The patient's symptoms of cough, respiratory rate of 26/min, and bilateral crackles on exam are consistent with pneumonia, which could be a complication of TB or a separate infection.\n3. **Pulmonary embolism**: The patient's respiratory rate and oxygen saturation could be indicative of a pulmonary embolism, although this would be less likely given the bilateral crackles.\n4. **Cardiac disease**: The patient's mild, well-controlled hypertension could be a contributing factor to his current symptoms, but it is less likely to be the primary cause.\n5. **Other respiratory infections**: Other respiratory infections, such as bronchitis or asthma, could be contributing to the patient's symptoms, but they are less likely given the severity of his presentation.\n\n**Next Diagnostic Step:**\n\nI would order a **chest X-ray** to assess for any changes in the patient's lung fields, such as new infiltrates or cavitation, which could indicate treatment failure or relapse of TB or a new pulmonary infection.\n\n**Initial Management Plan:**\n\n1. **Admit the patient to the hospital** for further evaluation and treatment.\n2. **Start the patient on empiric antibiotics** for pneumonia, such as a broad-spectrum antibiotic like levofloxacin or ceftriaxone.\n3. **Continue the patient's TB treatment regimen** as prescribed, and consider adjusting the regimen based on the results of the chest X-ray and further diagnostic testing.\n4. **Monitor the patient's oxygen saturation and respiratory rate** closely, and provide supplemental oxygen as needed.\n5. **Consult with a pulmonologist or infectious disease specialist** for further guidance on the patient's management.",
+  "raw": {
+    "vignette_id": "VIG-095",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 218,
+  "output_tokens": 402
+}

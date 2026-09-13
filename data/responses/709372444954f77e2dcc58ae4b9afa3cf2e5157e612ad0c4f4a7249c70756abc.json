@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient has no known drug-resistant contact, and the initial goal is to initiate treatment as soon as possible, with the assumption of drug-susceptibility. Resistance testing can be performed on a subsequent specimen if the patient does not respond to treatment.\n\n2. I would send a mycobacterial culture on this patient after the initiation of treatment, typically 2-4 weeks after the start of therapy, to confirm the diagnosis and monitor for potential resistance. This is because the culture will grow the organism, allowing for further testing, including drug susceptibility testing, and to confirm the effectiveness of the treatment regimen.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight and the standard pediatric dosing guidelines for tuberculosis treatment. For a 7-year-old patient, the recommended dose of isoniazid (INH) is 10-15 mg/kg/day, and the recommended dose of rifampicin (RMP) is 10-20 mg/kg/day. Assuming the patient weighs 30 kg, the dose of INH would be 300-450 mg/day, and the dose of RMP would be 300-600 mg/day. The patient would receive 5-6 tablets per day, with the exact number of tablets determined by the specific formulation and strength of the medication.",
+  "raw": {
+    "vignette_id": "VIG-009",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 361,
+  "output_tokens": 297
+}

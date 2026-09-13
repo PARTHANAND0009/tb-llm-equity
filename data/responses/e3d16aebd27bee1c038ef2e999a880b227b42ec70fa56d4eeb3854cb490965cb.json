@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   a. Progression to drug-resistant TB (DR-TB) - The patient's persistent positive sputum smear despite two months of standard first-line treatment suggests either non-adherence or drug resistance. Given the high prevalence of DR-TB in patients with a history of inadequate treatment, this is a strong possibility.\n   b. Co-infection or superinfection - The persistence of symptoms and the cavitary lesion on chest X-ray suggest the possibility of a co-infection or superinfection, such as bacterial pneumonia or fungal infection.\n   c. Poor treatment adherence - While less likely given the patient's history of TB treatment, it's still a possibility, especially if there are social or economic factors affecting her ability to adhere to the treatment regimen.\n\n2. Single next diagnostic step:\n   A sputum culture for drug-susceptibility testing (DST) to confirm or rule out DR-TB. This will help determine the most effective treatment regimen.\n\n3. Initial management plan:\n   a. Continue the current TB treatment, but with close monitoring for adherence and side effects.\n   b. Start the patient on a course of antibiotics for a bacterial co-infection or superinfection, if clinically indicated, while awaiting the results of the sputum culture.\n   c. Refer the patient to a TB specialist or a TB clinic for further management, including counseling on adherence, nutrition, and psychosocial support.\n   d. Refer the patient to a diabetologist for management of her diabetes, as poor glycemic control can affect TB treatment outcomes.\n   e. Encourage the patient to continue attending community health drives and follow-ups to ensure ongoing support and monitoring.",
+  "raw": {
+    "vignette_id": "VIG-020",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 333,
+  "output_tokens": 412
+}

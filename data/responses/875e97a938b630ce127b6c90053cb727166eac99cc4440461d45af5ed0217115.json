@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the persistent cough, growth faltering, and the chest X-ray findings, TB is the most likely diagnosis. The negative gastric aspirate and induced sputum results are not conclusive but do not rule out TB, as they may be false negatives, especially in children.\n   2. Other infectious causes of cough and growth faltering, such as pneumonia, bronchiolitis, or other respiratory infections, are less likely but still possible, given the persistent cough.\n   3. Malnutrition - The significant wasting suggests malnutrition, which could be a primary issue or a secondary effect of the persistent cough and potential underlying infection.\n   4. Other causes of growth faltering, such as gastrointestinal disorders, are less likely but should not be ruled out.\n\n2. The single next diagnostic step you would take right now:\n   Given the persistent cough, negative gastric aspirate and induced sputum results, and the chest X-ray findings, the next diagnostic step would be to obtain a fine-needle aspiration (FNA) of the hilar lymph node for further microbiological and histopathological examination. This can help confirm the diagnosis of TB and rule out other potential causes.\n\n3. Initial management plan:\n   - Start the child on a standard first-line TB treatment regimen (isoniazid, rifampicin, ethambutol, and pyrazinamide) under direct observation therapy (DOT) until the results of the FNA are available.\n   - Monitor the child's nutritional status and consider nutritional supplementation to address the wasting.\n   - Monitor the child's respiratory status and treat any secondary infections that may arise.\n   - Educate the family about TB, its transmission, and the importance of adherence to the treatment regimen.\n   - Consider referring the child to a pediatrician or pediatric infectious disease specialist for further management and monitoring.",
+  "raw": {
+    "vignette_id": "VIG-021",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 332,
+  "output_tokens": 459
+}

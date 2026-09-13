@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Tuberculosis (TB) of the abdomen (Abdominal TB)**: The presence of mesenteric lymphadenopathy and positive molecular testing for M. tuberculosis strongly supports this diagnosis. The symptoms of intermittent abdominal pain, low-grade fevers, and reduced appetite are also consistent with TB.\n2. **Recurrent abdominal migraine or functional abdominal pain**: The intermittent nature of the symptoms and the lack of specific abdominal tenderness or guarding make this a possible consideration, but it is less likely given the ultrasound findings.\n3. **Gastrointestinal infection (e.g., giardiasis, amoebiasis)**: Although the mother initially thought it was a recurring stomach bug, the presence of mesenteric lymphadenopathy and TB testing results make this less likely.\n4. **Other abdominal pathology (e.g., appendicitis, intussusception)**: The ultrasound findings do not strongly support these diagnoses, and the clinical presentation is not typical for these conditions.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to assess for pulmonary TB, which is a common site of TB infection. This will help determine if the patient has primary or reactivation TB.\n\n**3. Initial Management Plan:**\n\n* **Start empirical TB treatment**: Begin a 4-drug regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, pending culture confirmation.\n* **Monitor for TB treatment side effects**: Regularly monitor the patient for signs of TB treatment side effects, such as hepatotoxicity, peripheral neuropathy, and gastrointestinal upset.\n* **Closely monitor for signs of TB complications**: Watch for signs of TB complications, such as peritonitis, intestinal obstruction, or bowel perforation.\n* **Follow-up with TB culture and sensitivity testing**: Once the TB culture results are available, adjust the treatment regimen based on the sensitivity testing results.",
+  "raw": {
+    "vignette_id": "VIG-089",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 248,
+  "output_tokens": 402
+}

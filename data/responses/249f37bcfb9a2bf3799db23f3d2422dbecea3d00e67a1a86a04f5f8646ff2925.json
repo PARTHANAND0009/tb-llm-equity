@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Pulmonary TB exacerbation**: The patient has a history of MDR-TB and is on a second-line regimen, which suggests that her TB is not easily treatable. The increasing breathlessness and respiratory rate could indicate a worsening of her TB symptoms.\n2. **Heart failure exacerbation**: The patient has a history of significant heart failure and is presenting with mild peripheral edema, which is consistent with heart failure. However, the presence of bilateral crackles and increased respiratory rate may suggest a secondary pulmonary complication.\n3. **Pneumonia**: The patient's symptoms of increasing breathlessness and respiratory rate could be consistent with pneumonia, especially given the presence of bilateral crackles.\n4. **Respiratory failure**: The patient's low oxygen saturation and increased respiratory rate may indicate respiratory failure, but this would be a less likely diagnosis given the patient's known heart failure and TB.\n\n**Next Diagnostic Step:**\n\nI would order a chest X-ray to assess for any new or worsening pulmonary findings, such as consolidation or infiltrates, which could indicate pneumonia or a worsening of TB. This would provide valuable information to help guide further management.\n\n**Initial Management Plan:**\n\n1. **Oxygen therapy**: The patient's oxygen saturation is low, so I would start her on supplemental oxygen to improve her oxygenation.\n2. **Assess and optimize heart failure management**: The patient's heart failure is likely contributing to her symptoms, so I would review and optimize her heart failure management plan, including her medications and fluid status.\n3. **TB regimen adjustment**: Given the patient's worsening symptoms, I would consider adjusting her TB regimen to ensure that she is receiving the most effective treatment for her MDR-TB.\n4. **Monitor and manage respiratory status**: I would closely monitor the patient's respiratory status and manage her symptoms with bronchodilators or other respiratory medications as needed.",
+  "raw": {
+    "vignette_id": "VIG-096",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 387
+}

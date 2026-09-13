@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of cough, fatigue, night sweats, and weight loss are classic for TB, especially given her recent exposure to a family member with a similar illness. The presence of mid-zone crackles on exam is also consistent with TB.\n2. **Chronic Obstructive Pulmonary Disease (COPD)**: Although COPD is less likely in a 13-year-old, it cannot be ruled out entirely, especially given the patient's recent increase in workload and potential exposure to smoke or pollution.\n3. **Chronic Bronchitis**: This is a possible consideration, but the patient's symptoms and exam findings are more suggestive of a more serious underlying condition.\n4. **Anemia**: The patient's fatigue and weight loss could be related to anemia, but the presence of cough and respiratory findings make this less likely.\n5. **Other respiratory infections**: While possible, the patient's symptoms and exam findings are more suggestive of a chronic process rather than an acute infection.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest X-ray** to evaluate for signs of TB, such as upper lobe infiltrates or cavitation. This will help confirm or rule out TB and guide further management.\n\n**3. Initial Management Plan:**\n\n* **Isolate the patient**: To prevent transmission of TB to others, the patient should be isolated until TB is ruled out or confirmed.\n* **Nutritional support**: Ensure the patient receives adequate nutrition and calories to address her significant weight loss and malnutrition.\n* **Monitor vital signs**: Regularly monitor the patient's temperature, pulse, and respiratory rate to assess for signs of infection or other complications.\n* **TB testing**: Perform a TB skin test (Mantoux test) or interferon-gamma release assay (IGRA) to assess for latent or active TB infection.\n* **Referral to a pediatric pulmonologist**: Given the patient's symptoms and exam findings, referral to a pediatric pulmonologist for further evaluation and management is recommended.",
+  "raw": {
+    "vignette_id": "VIG-006",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 238,
+  "output_tokens": 424
+}

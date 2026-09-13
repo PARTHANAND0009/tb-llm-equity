@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Lung Cancer (Non-Small Cell Lung Cancer - NSCLC): The patient's age, smoking history (implied by the need for glasses), chronic cough, weight loss, and bilateral crackles are concerning for lung cancer, particularly NSCLC.\n   2. Tuberculosis (TB): While the patient's history does not suggest TB, the chronic cough and bilateral crackles could potentially be due to TB. However, the lack of consistent care, delayed presentation, and no known contact with drug-resistant TB make this less likely than lung cancer.\n   3. Chronic Obstructive Pulmonary Disease (COPD): While the patient's history does not suggest COPD, the chronic cough and bilateral crackles could potentially be due to this condition. However, the age, weight loss, and lack of a smoking history make this less likely than lung cancer or TB.\n\n2. Single next diagnostic step: Given the poor quality of the sputum, I would recommend obtaining a high-quality sputum sample for acid-fast bacilli (AFB) smear and culture, and a CT scan of the chest to further evaluate the lung lesions and lymph nodes.\n\n3. Initial management plan:\n   - Further diagnostic tests as mentioned above to confirm the diagnosis.\n   - If the diagnosis is confirmed as lung cancer, the management plan would depend on the histology (adenocarcinoma, squamous cell carcinoma, etc.) and the stage of the cancer. This could include surgery, radiation therapy, chemotherapy, targeted therapy, or immunotherapy.\n   - If the diagnosis is TB, the patient would be started on a standard TB treatment regimen, which typically includes isoniazid, rifampicin, ethambutol, and pyrazinamide for the first two months, followed by isoniazid and rifampicin for the next four months.\n   - If the diagnosis is COPD, the management would focus on symptom relief and slowing the progression of the disease with bronchodilators, inhaled corticosteroids, and lifestyle modifications such as smoking cessation and pulmonary rehabilitation.",
+  "raw": {
+    "vignette_id": "VIG-080",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 188,
+  "output_tokens": 490
+}

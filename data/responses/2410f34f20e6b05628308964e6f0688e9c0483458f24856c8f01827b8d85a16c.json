@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Lung Cancer (Non-Small Cell Lung Cancer - NSCLC): The patient's symptoms of persistent cough, weight loss, and temporal wasting, along with the physical findings of scattered crackles over the left upper zone, suggest a possible malignancy. The patient's age and smoking history (implied by her work stitching garments) make lung cancer a high priority.\n   2. Tuberculosis (TB): Although the patient denies any known contact with drug-resistant TB, the prolonged cough and wasting could potentially be due to TB. However, the absence of other common symptoms such as fever, night sweats, and chills, and the lack of known contact with drug-resistant TB, make TB less likely compared to lung cancer.\n   3. Other possibilities such as chronic obstructive pulmonary disease (COPD), bronchitis, or pneumonia are less likely given the patient's history and physical findings, but they should still be considered in the differential diagnosis.\n\n2. Single next diagnostic step:\n   Given the high suspicion for lung cancer, the next diagnostic step would be to obtain a chest X-ray or CT scan to further evaluate the lung lesions and lymph nodes. If a mass is identified, a biopsy would be necessary for histological confirmation.\n\n3. Initial management plan:\n   - Further diagnostic tests: As mentioned above, a chest X-ray or CT scan should be performed to evaluate the lungs and lymph nodes.\n   - Consultation: The patient should be referred to a pulmonologist for further management.\n   - Supportive care: The patient's nutritional status should be addressed, and she should be referred to a dietitian for weight gain recommendations.\n   - Symptom management: The patient's cough should be treated symptomatically with cough suppressants and expectorants as needed.\n   - Follow-up: The patient should be closely monitored for any changes in her symptoms or condition.",
+  "raw": {
+    "vignette_id": "VIG-004",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 233,
+  "output_tokens": 447
+}

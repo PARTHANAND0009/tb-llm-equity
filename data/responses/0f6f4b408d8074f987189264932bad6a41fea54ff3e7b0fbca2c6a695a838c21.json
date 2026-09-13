@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of persistent cough, fatigue, unintentional weight loss, and the presence of right-sided crackles, the single most likely diagnosis is pulmonary tuberculosis (TB). To evaluate this, a Sputum Acid-Fast Bacilli (AFB) smear would be the initial test ordered to detect the presence of Mycobacterium tuberculosis.\n\n2. A mycobacterial culture would typically be sent once the AFB smear is positive or if the clinical suspicion is high and the initial treatment is initiated, to confirm the diagnosis and determine drug susceptibility patterns.\n\n3. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed, the standard first-line treatment for a 14-year-old girl would be a 6-month regimen of four drugs: isoniazid, rifampin, ethambutol, and pyrazinamide. The doses would be determined based on the patient's weight and age. For example, the recommended dose of isoniazid for a 14-year-old is 10 mg/kg/day (up to a maximum of 300 mg/day), rifampin 10-15 mg/kg/day (up to a maximum of 600 mg/day), ethambutol 15-25 mg/kg/day (up to a maximum of 1.5 g/day), and pyrazinamide 30-35 mg/kg/day (up to a maximum of 2 g/day). The actual dose or tablet count would be calculated by multiplying the daily dose by the number of days in the treatment regimen. For example, if the calculated dose of isoniazid for this patient is 200 mg/day, you would need 200 mg/day divided by the number of isoniazid tablets in a pack to find out how many tablets to give per day.",
+  "raw": {
+    "vignette_id": "VIG-082",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 275,
+  "output_tokens": 443
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient's gastric aspirate returned positive for M. tuberculosis on molecular testing, and rifampicin not detected, indicating that the patient is likely to have drug-susceptible TB.\n\n2. To determine the dose of each drug for this specific patient, I would use the patient's weight (14 kg) and the standard pediatric dosing guidelines for TB treatment. For a child weighing 14 kg, the recommended dose of isoniazid (H) is 10-15 mg/kg/day, and the recommended dose of rifampicin (R) is 10-20 mg/kg/day. Assuming a standard tablet strength of 50 mg for both H and R, the patient would receive 1 tablet of H and 1 tablet of R per day.",
+  "raw": {
+    "vignette_id": "VIG-053",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 283,
+  "output_tokens": 184
+}

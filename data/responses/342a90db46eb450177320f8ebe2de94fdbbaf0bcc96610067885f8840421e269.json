@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen due to the patient's history of severe undernutrition, the presence of cavitary disease on chest X-ray, and the fact that the patient is enrolled in a supplemental feeding program, which could potentially indicate a higher risk for drug-resistant TB.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the dose of each drug for this specific patient would be determined based on the patient's weight (36 kg) and age (39 years). The recommended first-line TB treatment for an adult with drug-susceptible TB is a combination of isoniazid (INH), rifampicin (RIF), ethambutol (EMB), and pyrazinamide (PZA) for 2 months, followed by INH and RIF for an additional 4 months. The doses would be:\n   - Isoniazid: 300 mg daily\n   - Rifampicin: 600 mg daily\n   - Ethambutol: 15 mg/kg daily (max 1200 mg)\n   - Pyrazinamide: 25 mg/kg daily (max 2 g)\n   The doses would be given as tablets, and the number of tablets would be calculated based on the weight and the dosage per tablet. For example, if the available INH tablets are 300 mg each, the patient would need 1 tablet per day. For RIF, if the available tablets are 600 mg each, the patient would need 2 tablets per day. For EMB and PZA, the doses would be calculated based on the patient's weight and the dosage per mg, and the number of tablets would be calculated based on the available tablets and the dosage per tablet.",
+  "raw": {
+    "vignette_id": "VIG-091",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 266,
+  "output_tokens": 436
+}

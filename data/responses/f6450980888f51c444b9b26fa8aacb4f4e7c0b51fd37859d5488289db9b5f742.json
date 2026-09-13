@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB)**  \n   - **Reasoning:** The patient is a 14-year-old girl with a chronic cough (lasting > 2 weeks), unintentional weight loss, and mild right-sided crackles. These are classic symptoms of TB. The absence of fever and lack of known TB exposure may be misleading, but the presence of crackles and weight loss raises concern. Since there is no prior TB treatment or known drug-resistant TB, active TB remains a high-priority consideration.\n\n2. **Pulmonary Tuberculosis (TB) with atypical presentation**  \n   - **Reasoning:** Similar to above, but with a focus on atypical presentation, especially in adolescents. TB can present without fever, and weight loss is a common feature. The crackles may indicate bronchitis or early pulmonary involvement.\n\n3. **Chronic bronchitis or asthma**  \n   - **Reasoning:** While less likely given the duration and presence of crackles, chronic bronchitis or asthma could present with cough and fatigue. However, the weight loss and lack of fever make these less likely than TB.\n\n4. **Lung cancer (rare in adolescents)**  \n   - **Reasoning:** Uncommon, but possible in rare cases. The presence of weight loss and crackles could be concerning, though more typical in adults.\n\n5. **HIV-related pulmonary disease**  \n   - **Reasoning:** Although less likely in the absence of known risk factors, HIV can present with chronic cough, weight loss, and pulmonary symptoms. However, this is a lower priority without additional risk factors.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a chest X-ray (CXR) and obtain sputum for acid-fast bacilli (AFB) smear and culture.**  \n- **Reasoning:** A chest X-ray will help identify any infiltrates, nodules, or other abnormalities consistent with TB. Sputum testing is essential for diagnosing TB, especially in the absence of fever, which can be absent in TB.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Isolate the patient if TB is suspected** (to prevent spread).\n- **Begin empiric TB treatment** (e.g., isoniazid, rifampin, pyrazinamide, and ethambutol) **if TB is confirmed or strongly suspected**.\n- **Order TB skin test (TST) or interferon-gamma release assay (IGRA)** to confirm TB infection.\n- **Monitor for symptoms of TB progression** (e.g., worsening cough, hemoptysis, fever).\n- **Refer to infectious disease specialist** for further evaluation and management.\n- **Encourage the patient to disclose her symptoms to her parents** to ensure appropriate family support and follow-up.\n- **Consider HIV testing** if there are any risk factors or if the clinical suspicion remains high.",
+  "raw": {
+    "vignette_id": "VIG-082",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 174,
+  "output_tokens": 605
+}

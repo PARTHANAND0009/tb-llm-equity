@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-Sensitive Tuberculosis (TB)**: The patient's symptoms of cough and unintentional weight loss, combined with a positive Sputum Xpert MTB/RIF test, strongly suggest TB. The fact that rifampicin is not detected suggests that the TB is likely drug-sensitive, as the test is used to detect resistance to rifampicin.\n2. **Diabetic Ketoacidosis**: The patient's high blood glucose level (230 mg/dl) and symptoms of fatigue could be related to diabetic ketoacidosis, a complication of uncontrolled diabetes.\n3. **Pneumonia**: The patient's cough and scattered crackles on exam could be indicative of pneumonia, which could be a secondary infection in a patient with TB or a separate condition.\n4. **Diabetes-related complications**: The patient's inconsistent management of type 2 diabetes could lead to various complications, such as diabetic nephropathy, neuropathy, or retinopathy, which could present with weight loss and fatigue.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to further evaluate the extent of lung involvement and to assess for any cavitations or other abnormalities that could be indicative of TB.\n\n**3. Initial Management Plan:**\n\n- **TB Treatment**: Start the patient on a standard 4-drug regimen for drug-sensitive TB, which typically includes isoniazid, rifampicin, pyrazinamide, and ethambutol. Since rifampicin is not detected, the regimen will be adjusted to exclude rifampicin.\n- **Diabetes Management**: Improve the patient's diabetes management by adjusting his medication regimen, if necessary, and providing education on proper glucose monitoring and lifestyle changes.\n- **Supportive Care**: Provide the patient with supportive care, including rest, hydration, and nutrition, to help manage his symptoms and prevent further weight loss.\n- **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and adjust the regimen as needed.",
+  "raw": {
+    "vignette_id": "VIG-051",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 225,
+  "output_tokens": 413
+}

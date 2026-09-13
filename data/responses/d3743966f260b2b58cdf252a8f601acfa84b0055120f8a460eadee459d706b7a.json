@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Worsening heart failure (Congestive Heart Failure) - Given the patient's known history of heart failure, her symptoms of increasing breathlessness, decreased oxygen saturation, tachypnea, and physical exam findings of bilateral crackles and peripheral edema, this is the most likely diagnosis.\n   2. Pneumonia - While the patient's MDR-TB could potentially cause pulmonary symptoms, the acute onset of symptoms and the physical exam findings are more suggestive of heart failure. However, given the patient's TB status, pneumonia should still be considered.\n   3. Exacerbation of MDR-TB - While less likely, given the patient's known TB status and the recent onset of symptoms, it's possible that she could be experiencing an exacerbation of her MDR-TB.\n\n2. Single next diagnostic step:\n   Immediate oxygen therapy and repeat chest X-ray to assess for any new infiltrates or worsening heart failure signs.\n\n3. Initial management plan:\n   - Increase oxygen therapy to maintain oxygen saturation above 92%.\n   - Initiate diuretics to manage heart failure symptoms and reduce peripheral edema.\n   - Consult with a cardiologist for further management of heart failure.\n   - If the chest X-ray shows new infiltrates, consider antibiotics for possible pneumonia or TB exacerbation.\n   - Ensure adherence to TB treatment regimen and monitor for any drug-related side effects.\n   - Close monitoring of the patient's condition, with frequent follow-ups.\n   - Consider referral to a palliative care team if the patient's condition does not improve with initial management.",
+  "raw": {
+    "vignette_id": "VIG-096",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 401
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked Differential Diagnosis:\n   1. Tuberculosis (TB) - Given the symptoms (cough, fatigue, weight loss, night sweats), her role as primary caregiver, and the physical findings (BMI, crackles), TB is a high priority. The absence of known contact with drug-resistant TB does not rule out TB, as it can be airborne and spread in a household.\n   2. Malnutrition - Given her significant weight loss and BMI, malnutrition is a likely secondary diagnosis, potentially exacerbated by her role as a caregiver and possibly contributing to her susceptibility to other illnesses.\n   3. Other respiratory infections - Other respiratory infections such as pneumonia or bronchitis could also be considered, but the bilateral mid-zone crackles suggest TB is more likely.\n\n2. Next Diagnostic Step:\n   Immediate next step would be to confirm the diagnosis of TB. This can be done by performing a Tuberculin Skin Test (TST) or an Interferon-gamma release assay (IGRA), and if possible, obtaining a sputum sample for acid-fast bacilli (AFB) smear and culture.\n\n3. Initial Management Plan:\n   - Start empiric anti-TB therapy (usually a combination of isoniazid, rifampicin, ethambutol, and pyrazinamide) while awaiting culture results.\n   - Ensure proper nutrition and weight gain. This may involve dietary counseling, supplementation, or referral to a nutritionist.\n   - Monitor her response to treatment closely, including weight gain, resolution of symptoms, and culture results.\n   - Consider psychological support for the girl, given her role as a caregiver and the stress she may be under.\n   - Inform local health authorities about the case to prevent further spread of TB.",
+  "raw": {
+    "vignette_id": "VIG-006",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 241,
+  "output_tokens": 431
+}

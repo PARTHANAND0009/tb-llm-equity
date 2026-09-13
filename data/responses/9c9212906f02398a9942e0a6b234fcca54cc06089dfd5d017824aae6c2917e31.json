@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the patient's sputum sample was already sent for molecular testing, which confirmed rifampicin resistance. Since the initial specimen was used for testing, performing drug-resistance testing on it is appropriate to confirm the resistance pattern before initiating treatment.",
+  "raw": {
+    "vignette_id": "VIG-058",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 207,
+  "output_tokens": 55
+}

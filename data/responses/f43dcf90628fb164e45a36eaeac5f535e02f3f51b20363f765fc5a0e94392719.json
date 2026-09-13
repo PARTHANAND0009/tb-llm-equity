@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the Xpert MTB/RIF test did not detect rifampicin resistance, but it is still recommended to perform drug-resistance testing on the initial specimen to confirm susceptibility, especially in patients with risk factors for drug-resistant TB, even if they have no known contact with drug-resistant TB. This ensures accurate treatment planning.\n\n2. To determine the dose of each drug, I would use the patient's weight (61 kg) and renal function (if available). For isoniazid, the dose is 300 mg once daily; for rifampicin, 10 mg/kg once daily (610 mg); for pyrazinamide, 25 mg/kg once daily (1,525 mg); and for ethambutol, 15 mg/kg once daily (915 mg). These doses would be adjusted based on renal function and potential drug interactions, and the patient would be started on a 2-month intensive phase followed by a 4-month continuation phase.",
+  "raw": {
+    "vignette_id": "VIG-051",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 253,
+  "output_tokens": 213
+}

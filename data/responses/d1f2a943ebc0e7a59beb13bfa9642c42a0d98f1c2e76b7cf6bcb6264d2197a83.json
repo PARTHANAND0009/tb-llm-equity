@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB) Infection (Latent TB Infection, LTI)**  \n   - **Reasoning:** The child is at high risk due to close contact with a parent diagnosed with drug-sensitive pulmonary TB, and she has received the BCG vaccine. Active TB has been ruled out, but latent TB infection is a common outcome in such cases. The BCG vaccine does not prevent TB infection, only reduces severity of disease.\n\n2. **Congenital Heart Disease (CHD) Complications**  \n   - **Reasoning:** While not a direct infection, the child has known congenital heart disease, which may affect her immune response and could potentially lead to atypical presentations or complications related to TB or other infections. However, this is not an infection itself.\n\n3. **Other Infections (e.g., Viral or Bacterial)**  \n   - **Reasoning:** Although not strongly indicated, the child's immunocompromised state (due to CHD and possible medication use) could make her more susceptible to other infections. However, this is less likely than TB infection given the exposure history.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a TB skin test (TST) or Interferon-Gamma Release Assay (IGRA)**  \n- **Reasoning:** Given the high-risk exposure and the need for TB preventive treatment, the next step is to confirm whether the child has latent TB infection. IGRA is preferred in children with a history of BCG vaccination, as it is less affected by prior BCG exposure than TST.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Administer TB preventive treatment (e.g., isoniazid, INH) if latent TB infection is confirmed.**  \n- **Monitor for adverse effects of INH (e.g., hepatotoxicity, rash).**  \n- **Continue follow-up with the pediatric cardiologist to ensure safe management of CHD.**  \n- **Schedule a follow-up in 6\u201312 months to assess treatment response and overall health.**  \n- **Educate the family on TB prevention and the importance of completing the preventive treatment regimen.**",
+  "raw": {
+    "vignette_id": "VIG-069",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 180,
+  "output_tokens": 458
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculous (TB) bronchitis or pneumonia - Given the positive M. tuberculosis result from the gastric aspirate, this is the most likely diagnosis. The new crackles at the left base on exam suggest possible involvement of the left lung.\n   2. Asthma exacerbation - While the patient has a history of asthma, the persistent cough, low-grade fevers, and new lung findings suggest an alternative or concurrent diagnosis.\n   3. Bacterial pneumonia - The persistent cough, fever, and new lung findings could also suggest a bacterial infection, but the TB diagnosis is more likely given the positive M. tuberculosis test.\n   4. Viral respiratory infection - Less likely due to the persistence of symptoms and the positive M. tuberculosis test.\n\n2. Single next diagnostic step:\n   Obtain a chest X-ray or CT scan to further evaluate the extent of the lung involvement and to rule out any complications such as pleural effusion or cavitation.\n\n3. Initial management plan:\n   - Start the patient on a TB-directed antibiotic regimen, such as isoniazid, rifampin, ethambutol, and pyrazinamide, under the guidance of a pediatric infectious disease specialist.\n   - Monitor the patient closely for improvement in symptoms and resolution of the new lung findings.\n   - Monitor the patient for potential drug interactions and side effects of the TB treatment.\n   - Continue to manage any persistent asthma symptoms with the inhaler as needed, but consider adding a controller medication to help control inflammation.\n   - Monitor the patient for any signs of drug-resistant TB, such as lack of improvement on treatment or development of new symptoms.\n   - Ensure the patient is isolated to prevent potential spread of TB to others.\n   - Consult with public health authorities to conduct contact tracing and prevent further spread of TB in the community.",
+  "raw": {
+    "vignette_id": "VIG-017",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 276,
+  "output_tokens": 448
+}

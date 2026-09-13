@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculous Meningitis (TB-M):** The patient's symptoms of increasing irritability, poor feeding, and vomiting, combined with the lumbar puncture results showing elevated protein and lymphocytic pleocytosis, strongly suggest TB-M. The positive molecular testing for M. tuberculosis in the CSF further supports this diagnosis.\n2. **Meningitis due to other pathogens (e.g., viral, bacterial, fungal):** Although the CSF results are suggestive of TB-M, it's essential to consider other causes of meningitis, especially given the patient's severe malnutrition and immunocompromised state.\n3. **Encephalitis:** The patient's lethargy, mild nuchal rigidity, and lack of focal neurologic deficits could be consistent with encephalitis, but the CSF results and the patient's overall clinical picture make TB-M a more likely diagnosis.\n4. **Other causes of lethargy and poor feeding (e.g., metabolic disorders, electrolyte imbalances):** Although these conditions are possible, they are less likely given the patient's recent history of TB-M and the CSF results.\n\n**2. Next Diagnostic Step:**\n\nPerform a thorough review of the patient's medication regimen and adherence to ensure that the TB treatment is being administered correctly and that the patient is receiving the appropriate dose and frequency of medication. This is crucial to ensure that the TB is being effectively treated and to prevent the development of drug-resistant TB.\n\n**3. Initial Management Plan:**\n\n- **TB Treatment:** Continue the TB treatment regimen as prescribed, with close monitoring of the patient's response to treatment.\n- **Nutrition Support:** Continue the nutrition rehabilitation program, with a focus on providing adequate caloric and protein intake to support the patient's recovery.\n- **Fluid and Electrolyte Management:** Monitor the patient's fluid and electrolyte status closely, and provide replacement as needed to prevent dehydration and electrolyte imbalances.\n- **Close Monitoring:** Closely monitor the patient's clinical status, including their mental status, feeding, and overall condition, and adjust the treatment plan as needed.\n- **TB Contact Investigation:** Investigate the patient's household contacts for TB exposure and provide them with TB screening and treatment as necessary.",
+  "raw": {
+    "vignette_id": "VIG-033",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 277,
+  "output_tokens": 469
+}

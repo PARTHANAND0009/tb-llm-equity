@@ -1,0 +1,15 @@
+{
+  "text": "1. The single most likely diagnosis is pulmonary tuberculosis (TB). The initial test to evaluate it would be a sputum acid-fast bacilli (AFB) smear and culture.  \n\n2. (a) The treatment regimen has two phases: an initial intensive phase (2 months) and a continuation phase (4 months), totaling 6 months. (b) During the intensive phase, the patient takes medications daily, and during the continuation phase, they take them twice weekly.  \n\n3. To determine the dose of each drug, I would use the patient's weight (52 kg). For isoniazid, the dose is 5 mg/kg/day, which would be 260 mg/day. For rifampin, the dose is 10 mg/kg/day, which would be 520 mg/day. For pyrazinamide, the dose is 25 mg/kg/day, which would be 1,300 mg/day. For ethambutol, the dose is 15 mg/kg/day, which would be 780 mg/day. These doses would be adjusted based on availability and patient tolerance, and the patient would be monitored for adverse effects.",
+  "raw": {
+    "vignette_id": "VIG-003",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 319,
+  "output_tokens": 247
+}

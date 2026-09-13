@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the symptoms of persistent cough, fatigue, night sweats, and the physical findings of pale conjunctivae and lower-zone crackles, TB is a high priority. The low hemoglobin level may suggest anemia, which can be a complication of TB.\n   2. Malaria - While not as common in this region, malaria should be considered due to the symptoms of fatigue and night sweats. However, the absence of fever and the physical findings are less suggestive.\n   3. Chronic bronchitis - The persistent cough and lower-zone crackles could suggest chronic bronchitis, but the fatigue and low hemoglobin level are not typical.\n   4. Iron-deficiency anemia - The low hemoglobin level could be due to iron-deficiency anemia, but the other symptoms are not typical.\n\n2. Single next diagnostic step:\n   Obtain a sputum sample for acid-fast bacilli (AFB) smear and culture, and consider a chest X-ray to further evaluate the lung findings.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) pending culture results.\n   - Monitor the patient's hemoglobin levels and consider iron supplementation if anemia is confirmed.\n   - Monitor the patient for signs of drug-resistant TB, such as persistent symptoms or culture-positive results after several months of treatment.\n   - Encourage the patient to rest and avoid strenuous physical activity until her symptoms improve.\n   - Educate the patient and her family about TB transmission and the importance of completing the full treatment course.\n   - Consider referring the patient to a pediatrician or a TB specialist for further management.",
+  "raw": {
+    "vignette_id": "VIG-018",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 439
+}

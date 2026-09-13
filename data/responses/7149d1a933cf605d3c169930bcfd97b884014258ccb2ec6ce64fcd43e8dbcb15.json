@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculosis (TB) - Given the positive M. tuberculosis result from the mesenteric lymph node aspiration, this is the most likely diagnosis. The symptoms of abdominal pain, low-grade fever, reduced appetite, and less activity, along with the ultrasound findings of mesenteric lymphadenopathy and free fluid, support this diagnosis.\n\n2. Single next diagnostic step:\n   - Given the positive M. tuberculosis result, further diagnostic steps would typically involve confirming the TB infection through a more definitive test such as a culture of the aspirate or a polymerase chain reaction (PCR) test on the blood or other body fluids. However, since a PCR test has already been performed, the next step would be to confirm the TB infection through a culture, if possible, and to rule out any other potential causes for the child's symptoms, such as other infectious diseases or autoimmune conditions.\n\n3. Initial management plan:\n   - The initial management plan for a suspected case of TB would involve starting the child on appropriate anti-TB medication, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, under the supervision of a healthcare professional. The child should also be referred to a pediatrician or pediatric infectious disease specialist for further management. The child's close contacts should also be evaluated for TB infection. The child's diet should be managed to ensure adequate nutrition, and pain management should be provided as needed. The child's progress should be closely monitored, and the anti-TB medication regimen should be adjusted as necessary based on the results of culture and drug sensitivity tests.",
+  "raw": {
+    "vignette_id": "VIG-089",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 263,
+  "output_tokens": 391
+}

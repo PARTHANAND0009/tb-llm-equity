@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of a persistent cough and weight loss, and the physical finding of bilateral crackles, the single most likely diagnosis in this case is pulmonary tuberculosis (TB). To evaluate this, a more definitive diagnostic test would be a smear and culture of the sputum for acid-fast bacilli (AFB) and subsequent TB PCR or mycobacterial growth identification.\n2. Given the lack of known drug-resistant TB risk factors, rifampicin drug-resistance testing would not be ordered on the initial diagnostic specimen, as it is typically reserved for cases where drug-resistant TB is suspected or known.\n3. A mycobacterial culture would be sent on the patient once a good quality sputum specimen is obtained, as it is the gold standard for diagnosing TB and identifying drug-resistant strains. The delay in sending the culture initially was due to the patient's travel schedule and difficulty accessing consistent care. The culture is sent once the specimen quality is improved to increase the likelihood of a successful culture result.",
+  "raw": {
+    "vignette_id": "VIG-080",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 239,
+  "output_tokens": 242
+}

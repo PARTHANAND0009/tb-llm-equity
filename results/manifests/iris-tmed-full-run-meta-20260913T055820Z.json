@@ -1,0 +1,37 @@
+{
+  "run_id": "iris-tmed-full-run-meta-20260913T055820Z",
+  "model_identifiers": [
+    {
+      "family": "meta",
+      "name": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+      "version": "db1f81ad4b8c7e39777509fac66c652eb0a52f91"
+    }
+  ],
+  "temperature": 0.0,
+  "top_p": 1.0,
+  "max_tokens": {
+    "freeform": 1600,
+    "structured": 800
+  },
+  "seed": null,
+  "prompt_template_hash": "17c549bad20d672d0df5443faf67f207bd732056302839b12b388fd193117a22",
+  "vignette_set_version": "v1",
+  "rubric_version": "v1",
+  "git_commit_sha": "018bf0d345d797e4aefcf886a8e06fd6dc13bec6",
+  "utc_timestamp": "2026-09-13T05:58:22.700521+00:00",
+  "total_input_tokens": 32173,
+  "total_output_tokens": 44416,
+  "quantization": "awq-int4",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "base_model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+  "batch_size": 1,
+  "n_responses_this_run": 123,
+  "n_responses_total": 124,
+  "n_freeform_vignettes": 85,
+  "n_structured_vignettes": 39,
+  "holdout_excluded": true,
+  "excluded_models": [
+    "ibm"
+  ],
+  "notes": "IRIS TMED full run: n=1 greedy decoding, freeform (all non-holdout) + structured (subset grounding a QUESTION_BANK axis), per-arm max_tokens. Granite/ibm excluded -- see results/LIMITATIONS.md."
+}

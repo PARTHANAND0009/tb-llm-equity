@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of prolonged cough, worsening fatigue, pale conjunctivae, thin, bilateral lower-zone crackles, and a low hemoglobin level, the single most likely diagnosis is anemia due to pulmonary tuberculosis (TB). To evaluate this, a Tuberculin Skin Test (TST) or Interferon-gamma release assay (IGRA) could be ordered to confirm exposure to Mycobacterium tuberculosis.\n2. A mycobacterial culture would typically be sent when the diagnosis of TB is strongly suspected, and the patient's condition warrants further confirmation. This could be when the patient's symptoms persist or worsen despite appropriate treatment for other conditions, or when the results of TST or IGRA are positive.\n3. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed, the dose of each drug for this specific patient would be determined based on the patient's age, weight, and any other relevant factors such as renal or hepatic function. For example, the recommended initial regimen for pediatric TB is a 2-month intensive phase consisting of isoniazid (INH), rifampin (RIF), ethambutol (EMB), and pyrazinamide (PZA), followed by a 4-month continuation phase of INH and RIF. The dose would be calculated based on the patient's weight, with the dosage adjusted for the patient's age and any other relevant factors. The actual dose or tablet count would be determined by consulting a pediatric dosing chart or calculator.",
+  "raw": {
+    "vignette_id": "VIG-018",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 303,
+  "output_tokens": 371
+}

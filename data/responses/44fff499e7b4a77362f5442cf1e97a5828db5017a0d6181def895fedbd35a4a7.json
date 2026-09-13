@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Progressive Multidrug-Resistant Tuberculosis (MDR-TB) with worsening pulmonary involvement**  \n   - *Reasoning:* The patient has a known diagnosis of MDR-TB, and her symptoms (increasing breathlessness, hypoxia, crackles, and peripheral edema) suggest progressive disease. The presence of crackles and mild peripheral edema may indicate worsening pulmonary congestion and right-sided heart failure due to chronic heart disease.\n\n2. **Heart Failure Exacerbation (Worsening Congestive Heart Failure)**  \n   - *Reasoning:* The patient has a known history of significant heart failure and is now presenting with worsening dyspnea, hypoxia, and peripheral edema. These are classic signs of decompensated heart failure, which can be exacerbated by the burden of chronic illness and possibly the side effects of TB medications.\n\n3. **Pulmonary Embolism (PE)**  \n   - *Reasoning:* The presence of hypoxia, tachypnea, and crackles could also be due to a pulmonary embolism, especially in a patient with chronic heart failure and possible immobility due to her condition. However, this is less likely than the first two diagnoses given the clinical context of TB and heart failure.\n\n4. **Drug-Induced Lung Injury or Interstitial Lung Disease**  \n   - *Reasoning:* Some second-line TB medications (e.g., amikacin, kanamycin, ethionamide) can cause pulmonary toxicity, including interstitial lung disease or drug-induced pneumonitis. This is a possible but less likely cause given the patient's known TB diagnosis and worsening symptoms.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Chest X-ray or CT scan of the chest to assess for progression of TB, pleural effusion, or other pulmonary findings.**\n\n---\n\n3. **Initial Management Plan:**\n\n- **Oxygen therapy:** Administer supplemental oxygen to maintain SpO\u2082 \u2265 92%.\n- **Diuretics:** Initiate or adjust diuretic therapy (e.g., furosemide) to manage fluid overload and peripheral edema.\n- **Monitor and optimize heart failure:** Ensure adequate management of heart failure with medications (e.g., beta-blockers, ACE inhibitors, or ARBs if tolerated).\n- **Evaluate for TB progression:** Repeat sputum smear and culture for TB, and consider bronchoscopy or imaging to assess for worsening disease.\n- **Monitor for drug toxicity:** Review current TB regimen for potential pulmonary side effects and consider dose adjustments or alternatives if necessary.\n- **Pulmonary function testing and chest imaging:** As above, to assess for drug-induced lung injury or progression of TB.\n- **Consider hospitalization:** Given the severity of symptoms (hypoxia, tachypnea, peripheral edema), hospitalization may be necessary for closer monitoring and supportive care.",
+  "raw": {
+    "vignette_id": "VIG-096",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 203,
+  "output_tokens": 607
+}

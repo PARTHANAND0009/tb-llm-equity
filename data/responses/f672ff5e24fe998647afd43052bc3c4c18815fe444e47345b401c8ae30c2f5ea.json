@@ -1,0 +1,15 @@
+{
+  "text": "1. Differential Diagnosis (Ranked):\n   1. Tuberculous Pleuritis (most likely) - Given the positive M. tuberculosis result from the pleural fluid, the patient's symptoms (chest pain, breathlessness, and low-grade fevers) are consistent with this diagnosis.\n   2. Rheumatic Heart Disease Complication - While the patient's known rheumatic heart disease could be contributing to her symptoms, the onset of new symptoms and the positive TB test suggest a superimposed infection.\n   3. Other causes of pleuritis (e.g., bacterial, viral, or fungal) - Less likely given the patient's history of rheumatic heart disease and the positive TB test, but still possible.\n   4. Other causes of heart failure (e.g., hypertension, valvular heart disease) - Less likely given the patient's known rheumatic heart disease and the absence of other risk factors.\n\n2. Next Diagnostic Step:\n   Given the positive M. tuberculosis test from the pleural fluid, the next diagnostic step would be to confirm the TB infection in other body fluids (e.g., sputum, blood) to determine the extent of the infection and guide treatment.\n\n3. Initial Management Plan:\n   - Initiate anti-tuberculosis therapy (e.g., isoniazid, rifampicin, ethambutol, pyrazinamide) according to local guidelines for drug-sensitive TB.\n   - Monitor the patient's respiratory status and heart function closely.\n   - Manage any associated symptoms (e.g., pain, fever) with appropriate medications.\n   - Coordinate with a cardiologist to manage the rheumatic heart disease and monitor for any worsening of the heart condition due to the TB infection.\n   - Ensure the patient is adherent to the TB treatment and provides regular follow-ups.\n   - Consider TB prophylaxis for close contacts, if appropriate.\n   - Monitor for any drug interactions between TB medications and the patient's other medications (e.g., for her rheumatic heart disease).",
+  "raw": {
+    "vignette_id": "VIG-030",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 286,
+  "output_tokens": 491
+}

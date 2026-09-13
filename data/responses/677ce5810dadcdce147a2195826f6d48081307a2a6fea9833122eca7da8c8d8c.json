@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the patient has a positive gastric aspirate for *M. tuberculosis* and rifampicin resistance is a critical determinant for treatment regimen selection. Given the potential for drug resistance, especially in a severely malnourished child, performing rifampicin drug-resistance testing on the initial specimen is essential to guide appropriate therapy.\n\n2. To determine the dose of each drug, I would use the patient's weight (14 kg) and apply the standard WHO dosing guidelines for children with drug-susceptible tuberculosis. For isoniazid, the dose is 10 mg/kg/day, which would be 140 mg/day. For rifampicin, the dose is 10 mg/kg/day, which would be 140 mg/day. For pyrazinamide, the dose is 20 mg/kg/day, which would be 280 mg/day. For ethambutol, the dose is 15 mg/kg/day, which would be 210 mg/day. These doses would be adjusted based on availability of formulations and the child's ability to swallow tablets.",
+  "raw": {
+    "vignette_id": "VIG-053",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 260,
+  "output_tokens": 235
+}

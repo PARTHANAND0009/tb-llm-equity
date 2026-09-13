@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The patient's symptoms of chronic cough and progressive weight loss, combined with her emaciated appearance and temporal wasting, are highly suggestive of TB. The fact that she has never been treated for TB and has no known contact with drug-resistant TB makes this a likely diagnosis.\n2. **Lung Cancer**: The patient's weight loss and cough could also be indicative of lung cancer, particularly given her age and the fact that she is still working despite her symptoms.\n3. **Chronic Obstructive Pulmonary Disease (COPD)**: While COPD is a possibility, the patient's weight loss and temporal wasting make it less likely than TB or lung cancer.\n4. **Pneumonia**: Pneumonia could be a cause of her symptoms, but the chronic nature of her cough and weight loss make it less likely.\n5. **Other**: Other possibilities, such as heart failure or interstitial lung disease, are less likely given the patient's presentation.\n\n**2. Next Diagnostic Step:**\n\nI would order a **chest X-ray** to evaluate for signs of TB, such as upper lobe cavitation or fibrosis, or lung cancer, such as a mass or nodule. This would provide valuable information to help guide further testing and treatment.\n\n**3. Initial Management Plan:**\n\n* **TB:**\n\t+ Order a sputum smear for acid-fast bacilli (AFB) and a chest X-ray.\n\t+ If AFB is positive, start TB treatment with isoniazid, rifampicin, pyrazinamide, and ethambutol.\n\t+ If AFB is negative, consider further testing, such as a TB culture or interferon-gamma release assay (IGRA).\n* **Lung Cancer:**\n\t+ Order a chest CT scan to evaluate for lung masses or nodules.\n\t+ Consider a biopsy to obtain a tissue diagnosis.\n* **COPD:**\n\t+ Order a pulmonary function test (PFT) to evaluate lung function.\n\t+ Consider a chest X-ray to evaluate for lung hyperinflation or other signs of COPD.\n* **Pneumonia:**\n\t+ Order a chest X-ray to evaluate for signs of pneumonia.\n\t+ Consider a blood culture to evaluate for bacterial infection.\n* **Other:**\n\t+ Order a complete blood count (CBC) and basic metabolic panel (BMP) to evaluate for signs of infection or inflammation.\n\t+ Consider a cardiac evaluation to rule out heart failure.",
+  "raw": {
+    "vignette_id": "VIG-004",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 237,
+  "output_tokens": 526
+}

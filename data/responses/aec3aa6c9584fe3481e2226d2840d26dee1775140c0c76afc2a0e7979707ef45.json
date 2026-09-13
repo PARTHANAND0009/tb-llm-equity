@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-Sensitive Pulmonary Tuberculosis (TB)**: The patient's symptoms of cough for over three months, weight loss, and positive Xpert MTB/RIF test, which detects the presence of Mycobacterium tuberculosis, strongly suggest TB. The absence of rifampicin resistance and the non-cavitary infiltrate on chest imaging further support this diagnosis.\n2. **Non-TB Pulmonary Infection**: The patient's symptoms could also be attributed to a non-TB pulmonary infection, such as pneumonia or bronchitis, which could be caused by a variety of pathogens. However, the chronic nature of the symptoms and the positive Xpert MTB/RIF test make this less likely.\n3. **Chronic Obstructive Pulmonary Disease (COPD)**: The patient's history of cough and weight loss could also be consistent with COPD, but the absence of significant peripheral findings and the presence of a non-cavitary infiltrate on chest imaging make this less likely.\n4. **Lung Cancer**: The patient's symptoms could also be consistent with lung cancer, but the absence of significant weight loss and the presence of a non-cavitary infiltrate on chest imaging make this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a **chest CT scan** to further evaluate the extent and characteristics of the non-cavitary infiltrate. This will help to differentiate between TB and other possible causes of the patient's symptoms.\n\n**3. Initial Management Plan:**\n\n* **TB Treatment**: Start the patient on a standard 4-drug regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol, pending further diagnostic confirmation.\n* **TB Isolation**: Isolate the patient to prevent transmission of TB to others.\n* **Monitoring**: Monitor the patient's vital signs, oxygen saturation, and respiratory status closely.\n* **Follow-up**: Schedule follow-up appointments to monitor the patient's response to treatment and to obtain a sputum smear after 2 weeks of treatment to confirm the effectiveness of the treatment.",
+  "raw": {
+    "vignette_id": "VIG-016",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 260,
+  "output_tokens": 433
+}

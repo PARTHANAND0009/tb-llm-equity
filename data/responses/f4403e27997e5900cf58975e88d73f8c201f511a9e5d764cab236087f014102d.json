@@ -1,0 +1,15 @@
+{
+  "text": "1. No, because the Xpert MTB/RIF test already confirmed rifampicin susceptibility, and the patient's sputum was positive for MTB but rifampicin was not detected, indicating drug-susceptible TB. Therefore, additional rifampicin resistance testing is not necessary.\n\n2. To determine the dose of each drug, I would use the patient's weight, which can be estimated from her height and body mass index, or directly measured if possible. For a 16-year-old female, the standard adult dose of isoniazid is 300 mg once daily, rifampicin is 10 mg/kg once daily, and pyrazinamide is 25 mg/kg once daily. Ethambutol is 15 mg/kg once daily. These doses would be adjusted based on her actual weight and renal function, if available.",
+  "raw": {
+    "vignette_id": "VIG-054",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 270,
+  "output_tokens": 184
+}

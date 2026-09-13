@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the persistent cough, hemoptysis, fatigue, and low hemoglobin, TB is a high priority due to the patient's age, symptoms, and potential exposure.\n   2. Pulmonary malignancy - The persistent cough, weight loss, and hemoptysis could suggest a malignancy, but the age of the patient and lack of smoking history make this less likely.\n   3. Rheumatologic disorders - The fatigue, missed periods, and low hemoglobin could suggest an underlying rheumatologic disorder, but the cough and hemoptysis are not typical symptoms.\n   4. Infectious diseases - Other infectious diseases such as pneumonia or bronchitis could cause cough and fatigue, but the persistent symptoms and low hemoglobin suggest a more chronic condition.\n\n2. Single next diagnostic step:\n   Perform a chest X-ray to evaluate for pulmonary infiltrates, which would support a diagnosis of TB or other pulmonary conditions.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, pending confirmatory TB testing.\n   - Monitor the patient closely for side effects of the TB treatment and for improvement in symptoms.\n   - Refer the patient to a pediatrician or gynecologist to investigate the missed periods and low hemoglobin.\n   - Consider referring the patient to a hematologist if the anemia does not improve with TB treatment.\n   - Monitor the patient's weight and nutritional status, and consider referring to a dietitian if necessary.\n   - Monitor the patient for signs of drug-resistant TB, such as lack of improvement with standard treatment, and consider testing if appropriate.\n   - Educate the patient and her family about TB, its transmission, and the importance of completing the treatment regimen.",
+  "raw": {
+    "vignette_id": "VIG-002",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 276,
+  "output_tokens": 458
+}

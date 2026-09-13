@@ -1,0 +1,15 @@
+{
+  "text": "1. The single most likely diagnosis is pulmonary tuberculosis (TB), likely caused by Mycobacterium tuberculosis. I would order a chest X-ray to evaluate for signs of pulmonary TB, such as upper lobe infiltrates or cavitation.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms the presence of pulmonary TB, as the culture is a definitive diagnostic test for TB and will help identify the specific strain of M. tuberculosis. This is because the clinical presentation and exam findings are highly suggestive of TB, and the culture will provide a definitive diagnosis to guide treatment.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight and the standard dosing guidelines for pediatric TB treatment. For a 13-year-old girl with a weight of approximately 90 pounds (assuming a BMI of 14.9 corresponds to a height and weight typical for her age), I would use the pediatric dosing tables to calculate the dose of each medication. For example, for isoniazid (INH), the recommended dose for children is 10-20 mg/kg/day, so for a 90-pound patient, the dose would be approximately 900-1800 mg/day, which would be 1-2 tablets of the standard 500 mg INH tablets.",
+  "raw": {
+    "vignette_id": "VIG-006",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 308,
+  "output_tokens": 270
+}

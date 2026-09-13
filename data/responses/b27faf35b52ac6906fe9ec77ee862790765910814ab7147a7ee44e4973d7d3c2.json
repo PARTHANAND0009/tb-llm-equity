@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB)**  \n   - **Reasoning:** The gastric aspirate was positive for *Mycobacterium tuberculosis* on molecular testing, which is a definitive diagnostic finding. The presence of low-grade fever, cough, and crackles on exam, along with a history of a relative with possible TB symptoms, supports this diagnosis. The child has no prior TB treatment, and there is no known drug-resistant contact, which is consistent with a new TB infection.\n\n2. **Pertussis (Whooping Cough)**  \n   - **Reasoning:** The prolonged cough, intermittent fever, and recent decrease in activity could be consistent with pertussis. However, the presence of TB on molecular testing makes this less likely unless TB is ruled out, which it is not in this case.\n\n3. **Bronchiolitis or Viral Bronchitis**  \n   - **Reasoning:** The cough and wheeze could be due to a viral infection, but the presence of crackles and the positive TB test make this less likely as the primary diagnosis.\n\n4. **Lung Abscess or Empyema**  \n   - **Reasoning:** The crackles and fever could suggest a secondary bacterial infection, but without evidence of sepsis or localized symptoms, this is less likely than TB.\n\n5. **Cystic Fibrosis or Other Chronic Lung Disease**  \n   - **Reasoning:** While possible, the child has a history of well-controlled asthma and no other signs of chronic lung disease, making this less likely.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform a chest X-ray to assess for pulmonary infiltrates, nodules, or other findings consistent with TB.**  \n- This will help confirm the extent of pulmonary involvement and guide further management, including the need for sputum testing, chest imaging, and initiation of anti-tuberculosis therapy.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Start anti-tuberculosis therapy immediately** (e.g., isoniazid, rifampin, pyrazinamide, and ethambutol) based on the positive gastric aspirate and the child's symptoms.  \n- **Admit the child for inpatient care** to ensure adherence to treatment, monitor for adverse effects, and provide supportive care (e.g., oxygen, hydration, and nutritional support).  \n- **Obtain sputum samples (if possible)** and perform acid-fast bacilli (AFB) smear and culture, as well as nucleic acid amplification test (NAAT) for *M. tuberculosis*.  \n- **Monitor for drug interactions and side effects** (e.g., hepatotoxicity, visual changes).  \n- **Coordinate with public health authorities** to ensure proper reporting and contact tracing, especially given the potential TB exposure.  \n- **Provide education to the family** on TB transmission, treatment adherence, and the importance of completing the full course of therapy.",
+  "raw": {
+    "vignette_id": "VIG-017",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 245,
+  "output_tokens": 615
+}

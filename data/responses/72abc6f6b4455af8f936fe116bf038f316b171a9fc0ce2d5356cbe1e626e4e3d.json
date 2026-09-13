@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis** (most likely first):  \n   - **1. Latent Tuberculosis Infection (LTBI)**  \n     *Reasoning:* The patient is at high risk for LTBI due to close contact with a family member diagnosed with MDR-TB. Active TB has been ruled out, and she is being evaluated for preventive treatment.  \n   - **2. Non-tuberculous Mycobacterial (NTM) infection**  \n     *Reasoning:* While less likely, NTM infections can occur in immunocompetent individuals and may present without symptoms, especially in those with close contact to TB patients.  \n   - **3. Other mycobacterial infections or opportunistic infections**  \n     *Reasoning:* Given the lack of HIV risk factors and no acute findings, this is less likely but still a consideration in the absence of definitive TB testing.\n\n2. **Single Next Diagnostic Step**  \n   **Administer TB preventive treatment (e.g., isoniazid or rifapentine) based on the risk of exposure and the absence of active TB.**  \n   *Reasoning:* Since TBI testing is unavailable and active TB has been ruled out, initiating preventive therapy is the most appropriate next step to reduce the risk of progression to active TB.\n\n3. **Initial Management Plan**  \n   - **Start TB preventive therapy** with isoniazid (INH) 300 mg daily for 12 weeks, or a 12-dose regimen of rifapentine and isoniazid (3HP) if appropriate.  \n   - **Monitor for adverse effects** such as hepatotoxicity (e.g., elevated liver enzymes) and hypersensitivity reactions.  \n   - **Schedule a follow-up visit** in 6\u20138 weeks to assess for side effects and confirm adherence.  \n   - **Recheck TB testing** (TST or IGRA) when available to confirm LTBI status if needed for future reference.  \n   - **Educate the patient and family** on TB prevention, symptoms of active TB, and the importance of completing the preventive therapy.",
+  "raw": {
+    "vignette_id": "VIG-070",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 173,
+  "output_tokens": 435
+}

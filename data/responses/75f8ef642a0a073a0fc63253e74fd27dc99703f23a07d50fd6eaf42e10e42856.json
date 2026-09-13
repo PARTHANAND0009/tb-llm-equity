@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Tuberculosis (TB) \u2013 Pulmonary TB with rifampicin resistance (RR-TB)**  \n   - **Reasoning:** The gastric aspirate tested positive for *M. tuberculosis* with rifampicin not detected, indicating rifampicin resistance. This is a strong indicator of drug-resistant TB (DR-TB), particularly rifampicin-resistant TB (RR-TB). The presence of cough and worsening lethargy in a child with severe acute malnutrition supports TB as the most likely diagnosis. The absence of prior TB treatment and no known contact with drug-resistant TB makes RR-TB more likely than multi-drug resistant TB (MDR-TB) or other forms.\n\n2. **Severe Acute Malnutrition with Complications (e.g., sepsis, pneumonia, or other infections)**  \n   - **Reasoning:** The child has a known history of severe acute malnutrition and is currently in a rehabilitation program. His worsening lethargy and cough could be due to an opportunistic infection or worsening malnutrition. However, the positive TB test with rifampicin resistance makes TB the more specific and likely diagnosis.\n\n3. **Pneumonia (bacterial or viral)**  \n   - **Reasoning:** The presence of crackles and cough could suggest pneumonia. However, the TB test result is more specific and should take precedence unless the TB test is inconclusive or not performed.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform nucleic acid amplification test (NAAT) for rifampicin resistance (e.g., Xpert MTB/RIF Ultra) on the gastric aspirate sample.**  \n- This will confirm whether the isolate is rifampicin-resistant, which is critical for determining the appropriate treatment regimen for drug-resistant TB.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Isolate the child in a separate room with negative pressure ventilation if possible.**  \n- **Start empiric treatment for TB with a regimen that includes drugs effective against rifampicin-resistant TB (e.g., bedaquiline, linezolid, and pyrazinamide).**  \n- **Administer appropriate supportive care, including nutritional support, hydration, and monitoring for adverse effects of TB medications.**  \n- **Initiate a full TB treatment regimen based on the results of the rifampicin resistance test.**  \n- **Coordinate with a TB specialist or infectious disease team for management of drug-resistant TB.**  \n- **Monitor closely for signs of worsening respiratory status, sepsis, or drug toxicity.**  \n- **Continue the nutrition rehabilitation program and provide additional caloric support as needed.**",
+  "raw": {
+    "vignette_id": "VIG-053",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 212,
+  "output_tokens": 560
+}

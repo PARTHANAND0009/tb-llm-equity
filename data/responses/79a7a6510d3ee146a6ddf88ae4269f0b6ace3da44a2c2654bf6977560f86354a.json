@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculous Pericarditis**: The patient's symptoms of progressive breathlessness, chest discomfort, and low-grade fevers are consistent with pericarditis. The presence of a moderate pericardial effusion on echocardiogram further supports this diagnosis. The positive molecular testing for M. tuberculosis in the pericardial fluid is a strong indicator of tuberculous pericarditis.\n\n2. **Diabetic Cardiomyopathy**: The patient's poorly controlled diabetes could contribute to cardiomyopathy, which may present with symptoms of breathlessness and chest discomfort.\n\n3. **Cardiac Tamponade**: Although the echocardiogram did not show tamponade physiology, it is essential to consider this possibility given the presence of a pericardial effusion.\n\n4. **Cardiac Metabolic Myopathy**: The patient's poorly controlled diabetes may also contribute to a metabolic myopathy, which could present with muscle weakness and fatigue.\n\n**2. Next Diagnostic Step:**\n\nPerform a chest X-ray to assess for any signs of pulmonary tuberculosis, such as hilar lymphadenopathy or fibrosis, which would support the diagnosis of tuberculous pericarditis.\n\n**3. Initial Management Plan:**\n\n- **Inpatient Admission**: The patient should be admitted to the hospital for close monitoring and treatment.\n- **Anti-Tuberculosis Therapy**: Start the patient on a standard 4-drug regimen for tuberculosis, including isoniazid, rifampicin, pyrazinamide, and ethambutol.\n- **Cardiac Monitoring**: Continue to monitor the patient's cardiac function and pericardial effusion size through echocardiograms.\n- **Diabetes Management**: Continue to manage the patient's diabetes with insulin and lifestyle modifications.\n- **Pain Management**: Provide pain management for the patient's chest discomfort.\n- **Infection Control**: Implement infection control measures to prevent the spread of tuberculosis to healthcare workers.",
+  "raw": {
+    "vignette_id": "VIG-036",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 266,
+  "output_tokens": 406
+}

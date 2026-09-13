@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's HIV status, age, symptoms (cough and reduced playfulness), and the chest X-ray findings of left hilar lymphadenopathy, TB is the most likely diagnosis.\n   2. Bacterial pneumonia - While not as likely as TB, bacterial pneumonia could also cause cough and chest X-ray findings. However, the patient's HIV status and the lack of known TB contact in the household make TB more likely.\n   3. Other causes of lymphadenopathy such as fungal infections, lymphoma, or sarcoidosis - These are less likely given the patient's symptoms and HIV status, but should be considered as part of the differential diagnosis.\n\n2. Single next diagnostic step:\n   - Sputum or gastric aspirate for acid-fast bacilli (AFB) smear and culture for Mycobacterium tuberculosis. This step is crucial to confirm the diagnosis of TB and to determine the drug-sensitivity profile if TB is confirmed.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen appropriate for a child, such as INH, Rifampicin, Ethambutol, and Pyrazinamide, under direct observation therapy (DOT).\n   - Monitor the patient's response to treatment, including clinical improvement and adherence to the medication regimen.\n   - Monitor the patient's CD4 count and viral load to assess the response of the HIV infection to antiretroviral therapy.\n   - Monitor the patient for side effects of TB treatment and antiretroviral therapy, and manage accordingly.\n   - Consider referring the patient to a pediatric infectious disease specialist for further management.\n   - Ensure the patient's caregiver is educated about the importance of adherence to the medication regimen and the signs and symptoms of TB and HIV treatment side effects.\n   - Consider prophylaxis for TB in the caregiver and other household contacts, if appropriate.",
+  "raw": {
+    "vignette_id": "VIG-049",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 261,
+  "output_tokens": 476
+}

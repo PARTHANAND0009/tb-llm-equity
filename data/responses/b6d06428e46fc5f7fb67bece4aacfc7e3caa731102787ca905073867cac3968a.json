@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis (most likely first):**\n\n1. **Multidrug-Resistant Tuberculosis (MDR-TB)**: The patient's sputum test was positive for M. tuberculosis with rifampicin and isoniazid resistance, and her symptoms of cough and fatigue are consistent with TB. The presence of MDR-TB is confirmed by follow-up testing, making this the most likely diagnosis.\n2. **Common Variable Immunodeficiency (CVID)**: The patient's persistent cough and fatigue could be indicative of an underlying immunodeficiency, which might be contributing to her TB infection.\n3. **Chronic Pulmonary Aspiration**: The patient's cough and fatigue could also be related to a chronic aspiration of food or liquids into the lungs, which might be causing an infection.\n4. **Chronic Bronchitis**: The patient's cough and fatigue could be related to chronic bronchitis, which is often seen in patients with asthma or chronic obstructive pulmonary disease (COPD).\n\n**2. The single next diagnostic step I would take right now:**\n\nPerform a **chest X-ray** to assess the extent of lung involvement and to rule out any other pulmonary abnormalities that might be contributing to the patient's symptoms.\n\n**3. Initial Management Plan:**\n\n1. **TB treatment**: Start the patient on a TB regimen that includes a combination of medications that are effective against MDR-TB, such as moxifloxacin, amikacin, and ethambutol, in addition to a fluoroquinolone.\n2. **Infection control measures**: Implement infection control measures to prevent transmission of TB to her brother and other family members, including wearing masks, improving ventilation, and ensuring good hygiene practices.\n3. **Monitoring**: Schedule regular follow-up appointments to monitor the patient's response to treatment, including regular sputum tests to assess the effectiveness of the treatment and to detect any potential resistance to the medications.\n4. **TB education**: Educate the patient and her family about TB, its transmission, and the importance of adherence to the treatment regimen.\n5. **Psychological support**: Provide psychological support to the patient and her family to help them cope with the diagnosis and treatment of MDR-TB.",
+  "raw": {
+    "vignette_id": "VIG-062",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 241,
+  "output_tokens": 460
+}

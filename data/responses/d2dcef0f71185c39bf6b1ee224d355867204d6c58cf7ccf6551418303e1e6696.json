@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculosis (TB) enteritis (most likely) - The patient's symptoms, including intermittent right lower abdominal pain, low-grade fevers, loss of appetite, and the findings on imaging (ileocecal wall thickening and regional lymphadenopathy) suggest an inflammatory process, and the positive M. tuberculosis test result strongly supports a diagnosis of TB enteritis.\n   - Appendicitis - While appendicitis can cause similar symptoms, the lack of rebound or guarding, the patient's history of working long hours in the fields, and the imaging findings suggest that appendicitis is less likely in this case. However, it remains a possibility and should be considered in the differential diagnosis.\n\n2. Single next diagnostic step:\n   - Further laboratory testing to confirm the diagnosis of TB enteritis and to rule out other potential causes of the patient's symptoms. This may include complete blood count (CBC), erythrocyte sedimentation rate (ESR), C-reactive protein (CRP), and liver function tests (LFTs).\n\n3. Initial management plan:\n   - Start the patient on a course of anti-TB medication (e.g., isoniazid, rifampin, ethambutol, and pyrazinamide) under the supervision of a healthcare provider experienced in TB treatment.\n   - Monitor the patient's response to treatment, including regular follow-up appointments to assess for improvement in symptoms and to monitor for potential side effects of the medication.\n   - Address the patient's nutritional deficiencies through dietary counseling and supplementation as needed.\n   - Consider referring the patient to a pediatrician or pediatric gastroenterologist for further management of her undernutrition and short stature.\n   - Educate the patient and her family about the importance of completing the full course of TB treatment and the potential risks of not doing so.\n   - Consider screening for TB infection in close contacts to prevent further spread of the disease.\n   - Monitor the patient for complications, such as peritonitis or intestinal perforation, which may require surgical intervention.",
+  "raw": {
+    "vignette_id": "VIG-042",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 306,
+  "output_tokens": 499
+}

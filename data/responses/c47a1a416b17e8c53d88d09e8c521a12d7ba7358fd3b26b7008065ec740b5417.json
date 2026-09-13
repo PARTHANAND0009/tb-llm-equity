@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Pulmonary Tuberculosis (TB)**: The patient's long-standing cough, recent increase in breathlessness, and non-cavitary infiltrate on chest X-ray are all consistent with TB. The lack of weight loss and no known contact with drug-resistant TB or HIV risk factors slightly decrease the likelihood, but TB remains a primary concern.\n2. **Chronic Obstructive Pulmonary Disease (COPD)**: The patient's history of a manufacturing job and long-standing cough could suggest COPD, but the recent increase in breathlessness and non-cavitary infiltrate on chest X-ray make TB a more likely diagnosis.\n3. **Lung Cancer**: The patient's age, reduced appetite, and non-cavitary infiltrate on chest X-ray could suggest lung cancer, but the lack of weight loss and no prior history of smoking or other risk factors make this less likely.\n4. **Pneumonia**: The patient's symptoms could be consistent with pneumonia, but the non-cavitary infiltrate on chest X-ray and lack of fever or other systemic symptoms make this less likely.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB skin test (Mantoux test)** to assess for latent TB infection. This will help determine if the patient has been exposed to TB in the past and if she is likely to have active TB.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on isoniazid (INH) and rifampicin (RIF) for latent TB infection, pending TB skin test results.\n* **Cough management**: Encourage the patient to continue her current cough management plan, which may include expectorants and cough suppressants.\n* **Breathlessness management**: Encourage the patient to continue her regular walks, but with a gradual increase in intensity and duration to monitor her response.\n* **Follow-up**: Schedule a follow-up appointment in 2-3 weeks to reassess the patient's symptoms and review the TB skin test results.",
+  "raw": {
+    "vignette_id": "VIG-028",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 228,
+  "output_tokens": 420
+}

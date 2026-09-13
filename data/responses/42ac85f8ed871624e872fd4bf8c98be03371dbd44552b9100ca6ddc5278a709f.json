@@ -1,0 +1,15 @@
+{
+  "text": "Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient's symptoms, such as a persistent cough and weight loss, along with the positive M. tuberculosis test results, suggest a diagnosis of TB. The detection of rifampicin resistance in the initial test indicates MDR-TB, which is a significant finding that requires confirmation and further management.\n\n2. What is the recommended treatment regimen for MDR-TB in this patient?\n\nThe recommended treatment regimen for MDR-TB in this patient would be a second-line anti-TB drug regimen, which typically includes drugs such as bedaquiline, linezolid, clofazimine, and delamanid, along with fluoroquinolones and injectable drugs like kanamycin or amikacin. The specific regimen may vary depending on the patient's individual circumstances, drug susceptibility patterns, and local treatment guidelines.\n\n3. What precautions should be taken to prevent the spread of MDR-TB to the patient's 14-year-old grandson?\n\nTo prevent the spread of MDR-TB to the patient's 14-year-old grandson, it is important to implement airborne isolation precautions for the patient, such as using a private room with a negative pressure ventilation system, and ensuring the use of appropriate personal protective equipment (PPE) for healthcare workers and family members. Additionally, the grandson should be screened for TB infection, and if found negative, he should be started on preventive therapy with isoniazid or rifapentine. If the grandson is found to have active TB, he will need to be treated appropriately as well.",
+  "raw": {
+    "vignette_id": "VIG-056",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 255,
+  "output_tokens": 389
+}

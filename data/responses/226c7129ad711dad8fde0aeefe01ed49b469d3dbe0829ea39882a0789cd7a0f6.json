@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB): Given the positive finding of right paratracheal lymphadenopathy on chest X-ray, the patient's age, and the area's TB screening program, TB is a strong possibility, especially considering the negative results from other tests.\n   2. Cat-scratch disease: This is a less likely but still possible diagnosis, as it can present with lymphadenopathy and fever. However, the lack of a known cat exposure and the intermittent nature of the symptoms slightly decrease its likelihood.\n   3. Kawasaki disease: While Kawasaki disease can present with fever and lymphadenopathy, the absence of other symptoms such as rash, conjunctivitis, and mucous membrane changes makes it less likely in this case.\n   4. Lymphoma: While lymphoma can present with lymphadenopathy, the patient's age, lack of other symptoms, and negative results from other tests make it a less likely diagnosis.\n\n2. Single next diagnostic step: Given the inconclusive results from the sputum tests, the next diagnostic step would be to perform a fine-needle aspiration (FNA) of the right paratracheal lymph node for histopathological examination and acid-fast bacilli (AFB) stain. This will help confirm or rule out TB and provide more definitive evidence.\n\n3. Initial management plan: If the FNA results confirm TB, the initial management plan would involve starting the patient on a standard TB treatment regimen (usually a combination of isoniazid, rifampicin, ethambutol, and pyrazinamide for the first two months, followed by isoniazid and rifampicin for the next four months). The patient should also be referred to a pediatrician for close monitoring of his health during treatment. If the FNA results do not confirm TB, further investigations would be needed to identify the underlying cause of the lymphadenopathy. The patient should be advised to return for follow-up if symptoms persist or worsen.",
+  "raw": {
+    "vignette_id": "VIG-025",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 299,
+  "output_tokens": 479
+}

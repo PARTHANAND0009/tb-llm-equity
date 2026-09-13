@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms (cough, weight loss), positive Xpert MTB/RIF test, and the fact that he has type 2 diabetes, TB is the most likely diagnosis. The absence of drug-resistant TB risk factors and HIV risk factors further supports this diagnosis.\n   2. Diabetes complications - The patient's poor glucose control could be contributing to his fatigue and weight loss, but it is less likely to be the primary cause of his symptoms.\n   3. Other respiratory infections - While other respiratory infections are possible, the specificity of the Xpert MTB/RIF test for TB makes it less likely that another respiratory infection is the primary cause.\n\n2. Single next diagnostic step:\n   Given the positive Xpert MTB/RIF test and the absence of drug-resistant TB risk factors, the next diagnostic step would be to confirm the TB diagnosis with a culture and to determine the drug susceptibility pattern of the TB strain. This will help guide the choice of appropriate antibiotics for treatment.\n\n3. Initial management plan:\n   - Start the patient on a standard first-line TB treatment regimen (isoniazid, rifampicin, ethambutol, and pyrazinamide) while awaiting drug susceptibility test results.\n   - Monitor the patient's response to treatment, including his cough, weight, and glucose control.\n   - Refer the patient to a diabetes education program to help him manage his type 2 diabetes more effectively.\n   - Address any barriers to consistent diabetes management, such as cost, to improve the patient's overall health and help prevent further complications.\n   - Monitor the patient for side effects from TB treatment and manage them as necessary.\n   - If the patient does not respond to treatment or if drug susceptibility test results show drug-resistant TB, adjust the treatment regimen accordingly.",
+  "raw": {
+    "vignette_id": "VIG-051",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 442
+}

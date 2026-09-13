@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   a. Progression to multidrug-resistant TB (MDR-TB) - The patient's persistent positive sputum smear and cavitary lesion, despite treatment, suggest a more resistant strain of TB.\n   b. Complication of TB, such as empyema or pleural effusion - The persistent cough and low oxygen saturation could indicate a complication.\n   c. Exacerbation of hypothyroidism - The lightheadedness could be a sign of an exacerbation of his hypothyroidism, but it's less likely given the other symptoms and the response to oxygen.\n   d. Other respiratory infections - While less likely given the initial diagnosis, other infections cannot be ruled out.\n\n2. Single next diagnostic step:\n   A sputum culture for drug-susceptibility testing (DST) to confirm MDR-TB and guide further treatment.\n\n3. Initial management plan:\n   a. Continue TB treatment, but switch to a regimen appropriate for MDR-TB if DST confirms MDR-TB.\n   b. Monitor oxygen saturation levels and consider supplemental oxygen if necessary.\n   c. Refer the patient to a specialist for further evaluation of the persistent cough and low oxygen saturation, to rule out complications such as empyema or pleural effusion.\n   d. Adjust thyroid medication as necessary to manage the lightheadedness, if not related to TB or its treatment.\n   e. Close monitoring of the patient's condition, with regular follow-ups to assess response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-023",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 292,
+  "output_tokens": 365
+}

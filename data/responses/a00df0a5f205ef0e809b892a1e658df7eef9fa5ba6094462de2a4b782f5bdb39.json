@@ -1,0 +1,15 @@
+{
+  "text": "1. I would send a mycobacterial culture to confirm the strain of TB and to rule out drug-resistant TB. This is typically done after the initial diagnosis and before starting treatment, as it can take several weeks to grow the bacteria in culture. The reason for this is to ensure the most appropriate treatment regimen can be prescribed based on the drug susceptibility pattern of the isolate.\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the standard treatment regimen for this patient would be a 6-month treatment with two phases:\n   a) Phase 1 (2 months): Isoniazid, Rifampin, Ethambutol, and Pyrazinamide, taken daily.\n   b) Phase 2 (4 months): Isoniazid and Rifampin, taken daily.\n3. To determine the dose of each drug for this specific patient, I would consider the patient's weight, age, and any other relevant comorbidities. For example, the recommended initial dose of Isoniazid is 300 mg daily for adults, but this may be adjusted based on the patient's weight and kidney function. The dose of Rifampin is typically 600 mg daily, but it may be adjusted for liver function. The doses of Ethambutol and Pyrazinamide would also be determined based on the patient's weight and any other relevant factors. The actual dose or tablet count would be calculated based on the strength of the medication available and the number of tablets or milliliters needed to achieve the calculated dose.",
+  "raw": {
+    "vignette_id": "VIG-007",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 391,
+  "output_tokens": 356
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), and the one test I would order right now to evaluate it is a chest X-ray to look for signs of pulmonary TB, such as upper lobe infiltrates or cavitation.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms the presence of pulmonary TB, as the culture will help to identify the specific strain of Mycobacterium tuberculosis and its drug susceptibility pattern, which is essential for guiding treatment.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight, age, and renal function to calculate the dose. I would use the World Health Organization (WHO) or the Centers for Disease Control and Prevention (CDC) guidelines for the treatment of TB, which provide recommended dosages based on patient weight and renal function. For example, for a 16-year-old patient, I would use the pediatric dosing tables to calculate the dose of isoniazid, rifampicin, pyrazinamide, and ethambutol, and then adjust the dose based on the patient's renal function, if necessary.",
+  "raw": {
+    "vignette_id": "VIG-010",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 301,
+  "output_tokens": 237
+}

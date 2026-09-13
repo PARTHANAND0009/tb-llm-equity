@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Latent Tuberculosis (LTBI)**: The patient's exposure to a family member with drug-sensitive pulmonary TB, lack of symptoms, and negative chest imaging make LTBI the most likely diagnosis. The patient's vaccination with BCG as an infant also supports this.\n2. **Asthma exacerbation**: The patient's mild expiratory wheeze and history of asthma make an asthma exacerbation a possible consideration, but the lack of acute distress and the context of the patient's recent exposure to TB make LTBI more likely.\n3. **Other respiratory infections**: Although the patient has been screened for active TB, other respiratory infections such as pneumonia or bronchitis cannot be ruled out entirely, but are less likely given the patient's presentation and recent exposure to TB.\n4. **Asthma-related complications**: The patient's asthma is well-controlled, but complications such as bronchiectasis or chronic obstructive pulmonary disease (COPD) are unlikely given the patient's age and lack of symptoms.\n\n**Next Diagnostic Step:**\n\nPerform an **Interferon-Gamma Release Assay (IGRA) test** to confirm the presence of latent TB infection. This test is more specific and sensitive than the Mantoux tuberculin skin test (TST) and is recommended for individuals with a history of BCG vaccination.\n\n**Initial Management Plan:**\n\n1. **TB preventive treatment**: If the IGRA test is positive, initiate isoniazid (INH) monotherapy for 6-9 months, as recommended for individuals with LTBI and no HIV risk factors.\n2. **Asthma management**: Continue the patient's current asthma controller medication and monitor for any changes in symptoms or lung function.\n3. **Follow-up**: Schedule follow-up appointments to monitor the patient's response to TB preventive treatment and adjust the treatment plan as needed.\n4. **TB education**: Educate the patient and her family about TB prevention, symptoms, and the importance of completing the full course of TB preventive treatment.",
+  "raw": {
+    "vignette_id": "VIG-066",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 202,
+  "output_tokens": 417
+}

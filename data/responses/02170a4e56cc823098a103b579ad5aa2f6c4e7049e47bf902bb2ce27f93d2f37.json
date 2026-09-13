@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's presentation of chronic cough, worsening weakness, and bilateral cavitary disease on chest X-ray are highly suggestive of TB. The patient's history of severe undernutrition and recent enrollment in a supplemental feeding program may indicate a compromised immune system, making him more susceptible to TB.\n2. **Pulmonary Kaposi's Sarcoma**: Although less likely, Kaposi's Sarcoma is a consideration in severely immunocompromised patients, particularly those with a history of undernutrition. However, the patient's presentation and chest X-ray findings are more suggestive of TB.\n3. **Pulmonary Fungal Infection**: Fungal infections can cause cavitary disease, but the patient's presentation and the absence of other risk factors (e.g., immunocompromised status, recent travel to endemic areas) make this less likely.\n4. **Pulmonary Tuberculosis due to drug-resistant TB**: Although the patient has no known drug-resistant contact, the possibility of drug-resistant TB cannot be ruled out without further testing.\n\n**Next Diagnostic Step:**\n\nPerform a sputum smear for Acid-Fast Bacilli (AFB) and a sputum culture for Mycobacterium tuberculosis. This will help confirm the diagnosis of TB and guide further management.\n\n**Initial Management Plan:**\n\n1. **TB treatment initiation**: Start the patient on a standard TB regimen (e.g., Isoniazid, Rifampicin, Pyrazinamide, and Ethambutol) pending culture results.\n2. **Nutritional support**: Continue the supplemental feeding program and consider nutritional counseling to address the patient's severe undernutrition.\n3. **Supervise and monitor**: Closely monitor the patient's vital signs, weight, and symptoms, and adjust the treatment plan as needed.\n4. **TB contact tracing**: Identify and screen the patient's contacts for TB, especially those living in close proximity to the patient.\n5. **Chest X-ray follow-up**: Schedule a follow-up chest X-ray in 2-3 months to assess the response to treatment and monitor for any changes in the disease.",
+  "raw": {
+    "vignette_id": "VIG-091",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 208,
+  "output_tokens": 445
+}

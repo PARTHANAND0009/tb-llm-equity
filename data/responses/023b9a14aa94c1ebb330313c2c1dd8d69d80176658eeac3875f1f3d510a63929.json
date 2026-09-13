@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis (most likely first):**\n\n1. **TB treatment failure or relapse**: The patient was diagnosed with pre-XDR-TB two months ago and is now presenting with persistent cough, suggesting that the current treatment regimen may not be effective or the patient may have developed resistance to the current medication.\n2. **TB reactivation**: The patient's history of TB and the presence of mild residual crackles on exam suggest that the TB may have reactivated, requiring a change in treatment regimen.\n3. **New TB infection**: Although the patient was not identified through an organized screening program, it is possible that he may have contracted a new TB infection, which would require a different treatment approach.\n4. **Other respiratory infections**: The patient's persistent cough could be caused by other respiratory infections, such as pneumonia or bronchitis, which would require a different treatment approach.\n\n**Next Diagnostic Step:**\n\nI would order a **chest X-ray** to assess for any changes in lung lesions or consolidation, which could indicate treatment failure or reactivation of TB. This would also help to rule out other respiratory infections.\n\n**Initial Management Plan:**\n\n1. **Continue current TB treatment regimen** for now, but with a plan to re-evaluate the patient's response to treatment in 2-4 weeks.\n2. **Monitor the patient's vital signs, respiratory status, and weight** closely to assess for any signs of treatment failure or worsening of symptoms.\n3. **Consider adding a second-line TB medication** to the current regimen if the patient's symptoms persist or worsen, or if the chest X-ray shows signs of treatment failure.\n4. **Schedule a follow-up appointment** in 2-4 weeks to reassess the patient's response to treatment and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-097",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 193,
+  "output_tokens": 364
+}

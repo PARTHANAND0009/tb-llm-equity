@@ -1,0 +1,15 @@
+{
+  "text": "1. No, rifampicin drug-resistance testing on the initial diagnostic specimen is not typically performed. This is because the initial specimen is usually used for M. tuberculosis identification and drug-susceptibility testing for isoniazid, which is the first-line treatment. Performing rifampicin resistance testing on the initial specimen can lead to delays in diagnosis and treatment.",
+  "raw": {
+    "vignette_id": "VIG-056",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 251,
+  "output_tokens": 76
+}

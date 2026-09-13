@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the presented symptoms of persistent cough, weight loss, and temporal wasting, along with the physical examination findings of emaciation and scattered crackles over the left upper zone, the single most likely diagnosis is pulmonary tuberculosis (TB). To evaluate this, a Sputum Acid-Fast Bacilli (AFB) smear would be the initial test ordered.\n\n2. No, rifampicin drug-resistance testing would not be performed on the initial diagnostic specimen. Rifampicin resistance testing is typically done after the initial TB diagnosis is confirmed and treatment is being considered, as it requires specific culture-based methods that take several weeks to complete.\n\n3. Assuming the initial test confirms drug-susceptible pulmonary TB, the dose of each drug for this specific patient would be determined based on the patient's age (68 years), weight (41 kg), and any other relevant comorbidities. The standard first-line TB treatment regimen for drug-susceptible TB includes isoniazid, rifampicin, ethambutol, and pyrazinamide for 2 months, followed by isoniazid and rifampicin for an additional 4 months. The doses would be adjusted based on the patient's renal and hepatic function, if available, and the specific drug formulations and dosage strengths available in the local pharmacy. The actual dose or tablet count would be determined by consulting a TB treatment guideline or a pharmacist, taking into account the patient's age, weight, and the dosage strengths of the available medications.",
+  "raw": {
+    "vignette_id": "VIG-004",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 318,
+  "output_tokens": 362
+}

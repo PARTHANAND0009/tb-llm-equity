@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the symptoms of persistent cough, weight loss, night sweats, and crackles in the right upper zone, the single most likely diagnosis is pulmonary tuberculosis (TB). To evaluate it, a sputum acid-fast bacilli (AFB) smear would be ordered right now.\n2. No, rifampicin drug-resistance testing would not be performed on the initial diagnostic specimen. Rifampicin resistance testing is typically done after the initial TB diagnosis is confirmed and treatment is being considered, as it requires a specific culture-based test that takes several weeks to complete.\n3. Assuming the initial test confirms drug-susceptible pulmonary TB, the dose of each drug for this specific patient would be determined based on the patient's weight (58 kg) and the recommended dosages for first-line TB drugs. For example, isoniazid (INH) would be dosed at 300 mg daily, rifampin (RIF) at 600 mg daily, ethambutol (EMB) at 15 mg/kg daily, and pyrazinamide (PZA) at 25 mg/kg daily. These doses would be given in the form of tablets, and the exact number of tablets would be calculated based on the dosage and the strength of the tablets available. For example, if 300 mg INH tablets are available, the patient would need 3 tablets daily.",
+  "raw": {
+    "vignette_id": "VIG-019",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 282,
+  "output_tokens": 334
+}

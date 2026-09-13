@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB): Given the patient's age, recent immigration, symptoms of persistent cough, progressive fatigue, and left-sided crackles on examination, TB is a high priority. The absence of known drug-resistant contact does not rule out TB, as it can be acquired through casual contact.\n   2. Pneumonia: The persistent cough and crackles on examination suggest a respiratory infection, with pneumonia being a possibility. However, the lack of fever and the patient's age make it less likely compared to TB.\n   3. Anemia: The patient's mild weight loss and fatigue could suggest anemia, but the lack of pallor, tachycardia, or other symptoms specific to anemia make it less likely in this case.\n   4. Pregnancy complications: While the patient's symptoms could potentially be related to early pregnancy, the negative pregnancy test and the lack of other pregnancy-related symptoms make this less likely.\n\n2. Single next diagnostic step:\n   A sputum sample for acid-fast bacilli (AFB) smear and culture for Mycobacterium tuberculosis. This will help confirm or rule out TB as the cause of the patient's symptoms.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen (usually a combination of isoniazid, rifampicin, ethambutol, and pyrazinamide) pending the results of the sputum culture.\n   - Monitor the patient's weight and nutritional status, and provide nutritional counseling as needed.\n   - Monitor the patient for side effects of TB treatment and adjust as necessary.\n   - If the patient's symptoms do not improve with TB treatment, consider further investigations for other potential causes of her symptoms.",
+  "raw": {
+    "vignette_id": "VIG-014",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 224,
+  "output_tokens": 423
+}

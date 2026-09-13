@@ -1,0 +1,15 @@
+{
+  "text": "1. No, I would not perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. The Xpert MTB/RIF test has already detected rifampicin resistance, so further testing would not provide additional useful information.\n\n2. I would send a mycobacterial culture on this patient after the initial Xpert MTB/RIF test, as it is a confirmatory test for TB diagnosis and can provide additional information on drug susceptibility. This is especially important since the Xpert MTB/RIF test has a high false-positive rate for rifampicin resistance.\n\n3. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, I would start the patient on a 6-month treatment regimen with the following phases and dosing schedule:\n   (a) The treatment regimen would have two phases: an intensive phase (2 months) and a continuation phase (4 months).\n   (b) During the intensive phase, the patient would take isoniazid (H), rifampicin (R), pyrazinamide (Z), and ethambutol (E) daily for 2 months, with the following dosing schedule: H 5 mg/kg, R 10 mg/kg, Z 15-20 mg/kg, and E 15-20 mg/kg, taken once daily. During the continuation phase, the patient would take H and R daily for 4 months, with the same dosing schedule as in the intensive phase.",
+  "raw": {
+    "vignette_id": "VIG-011",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 347,
+  "output_tokens": 301
+}

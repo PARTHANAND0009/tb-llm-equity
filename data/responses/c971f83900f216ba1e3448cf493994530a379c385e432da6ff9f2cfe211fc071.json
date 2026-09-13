@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Progression of Tuberculosis (TB) - Given the patient's history of TB and current symptoms of respiratory distress, this is the most likely diagnosis.\n   2. Pneumonia - The patient's symptoms and physical examination findings suggest a possible secondary infection, such as pneumonia.\n   3. Heart failure - The patient's low oxygen saturation and tachypnea could suggest heart failure, but this is less likely given the absence of other heart failure symptoms and the patient's history of well-controlled hypertension.\n\n2. Single next diagnostic step:\n   Immediate steps should include arterial blood gas (ABG) analysis, chest X-ray, and sputum culture to confirm the diagnosis, rule out other infections, and assess the severity of the patient's condition.\n\n3. Initial management plan:\n   - Increase oxygen supplementation and monitor oxygen saturation levels closely.\n   - Adjust TB treatment regimen based on sputum culture results and drug susceptibility testing, if necessary.\n   - If pneumonia is confirmed, initiate appropriate antibiotic therapy.\n   - If heart failure is suspected, further cardiac evaluation may be necessary.\n   - Close monitoring of the patient's respiratory and cardiovascular status, with potential hospitalization if the condition worsens.\n   - Consultation with a pulmonologist and/or infectious disease specialist is recommended.\n   - Ensure the patient is counseled on the importance of adherence to the treatment plan and the need for follow-up.\n   - Notify public health authorities to initiate contact tracing and prevent further spread of TB.",
+  "raw": {
+    "vignette_id": "VIG-095",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 223,
+  "output_tokens": 375
+}

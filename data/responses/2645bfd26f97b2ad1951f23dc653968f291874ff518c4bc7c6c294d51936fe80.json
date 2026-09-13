@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the presented symptoms of persistent cough, profound fatigue, pale appearance, and left-sided crackles, the single most likely diagnosis is pulmonary tuberculosis (TB). To evaluate this, a test such as a sputum acid-fast bacilli (AFB) smear or a GeneXpert MTB/RIF test would be ordered right now to detect the presence of Mycobacterium tuberculosis.\n2. A mycobacterial culture would be sent if the initial test (AFB smear or GeneXpert) is positive, as it is necessary to confirm the diagnosis and to determine drug susceptibility patterns. The reasoning is that a positive culture provides more definitive evidence of TB and is essential for guiding appropriate treatment.\n3. Assuming the diagnosis of drug-susceptible pulmonary TB is confirmed, the dose of each drug for this specific patient would be determined based on her age, weight, and any other relevant factors such as renal or hepatic function. For example, the recommended initial regimen for drug-susceptible TB is a combination of isoniazid, rifampin, ethambutol, and pyrazinamide for 2 months, followed by isoniazid and rifampin for an additional 4 months. The dose for each drug would be calculated based on the patient's weight, typically following the dosing guidelines provided by the World Health Organization (WHO) or the Centers for Disease Control and Prevention (CDC). The actual dose or tablet count would be determined by consulting the dosing chart for each medication, which provides dosing recommendations based on weight and age. For instance, a 17-year-old woman might require 300 mg of isoniazid, 600 mg of rifampin, 15 mg/kg of ethambutol (up to a maximum of 1200 mg/day), and 15 mg/kg of pyrazinamide (up to a maximum of 2000 mg/day). The number of tablets would be calculated by dividing the total daily dose by the strength of each tablet.",
+  "raw": {
+    "vignette_id": "VIG-078",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 280,
+  "output_tokens": 477
+}

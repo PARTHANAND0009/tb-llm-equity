@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the initial diagnostic specimen was already tested for rifampicin resistance, and the result was positive for rifampicin resistance, which is critical for determining the appropriate treatment regimen for tuberculosis. This information is essential for guiding therapy and confirming the presence of rifampicin mono-resistant TB.",
+  "raw": {
+    "vignette_id": "VIG-061",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 218,
+  "output_tokens": 64
+}

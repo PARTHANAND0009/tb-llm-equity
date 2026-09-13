@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Drug-resistant Tuberculosis (TB)**: The patient's Xpert MTB/RIF test is positive for rifampicin resistance, which is a strong indicator of multi-drug resistant TB (MDR-TB). The patient's symptoms of cough and intermittent fevers, along with the non-cavitary right infiltrate on chest imaging, are consistent with TB. The patient's history of hypertension and sporadic medication adherence may have contributed to the development of drug resistance.\n\n2. **Pulmonary Nontuberculous Mycobacteriosis (NTM)**: The patient's symptoms and chest imaging could also be consistent with NTM, particularly given the non-cavitary infiltrate. However, the Xpert MTB/RIF test is more specific for TB, making this a less likely alternative diagnosis.\n\n3. **Pneumonia**: The patient's symptoms could also be consistent with pneumonia, particularly given the presence of scattered crackles on exam. However, the lack of significant weight loss and the non-cavitary infiltrate on chest imaging make this a less likely diagnosis.\n\n4. **Other respiratory infections**: Other respiratory infections, such as bronchitis or bronchiectasis, are less likely given the patient's symptoms and chest imaging.\n\n**2. Next Diagnostic Step:**\n\nThe next diagnostic step would be to perform a **sputum culture** to confirm the diagnosis of TB and to identify the specific strain of TB. This will help guide treatment decisions and ensure that the patient receives the most effective treatment regimen.\n\n**3. Initial Management Plan:**\n\nGiven the high likelihood of drug-resistant TB, the initial management plan would be to:\n\n* **Start empirical treatment for MDR-TB**: This would involve starting the patient on a regimen of isoniazid, pyrazinamide, and ethambutol, with or without other medications, pending the results of the sputum culture.\n* **Monitor the patient closely**: The patient should be closely monitored for signs of treatment response, such as improvement in symptoms and resolution of the infiltrate on chest imaging.\n* **Refer to a TB specialist**: The patient should be referred to a TB specialist for further evaluation and management, as MDR-TB requires specialized care and treatment.\n* **Address the patient's hypertension**: The patient's hypertension should be addressed, and the patient should be encouraged to adhere to their medication regimen to prevent further complications.",
+  "raw": {
+    "vignette_id": "VIG-011",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 273,
+  "output_tokens": 499
+}

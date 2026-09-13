@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Primary Tuberculosis (TB)**: The presence of a persistent cough, hilar lymph node pattern on chest X-ray, and the child's growth faltering are all consistent with primary TB. The lack of cavitation or miliary spread on the X-ray makes TB more likely than TB with complications.\n2. **Nutritional Deficiency**: The child's significant wasting and weight-for-age below expected could be a contributing factor to his symptoms, but it is unlikely to be the primary cause of his cough and chest X-ray findings.\n3. **Respiratory Infection (e.g., pneumonia)**: Although the child has a cough, the lack of respiratory distress and the specific chest X-ray findings make this less likely.\n4. **Other Infections (e.g., HIV, viral infections)**: The child has no HIV risk factors and no suspicion of drug-resistant TB, making these less likely.\n\n**2. Next Diagnostic Step:**\nPerform a Mantoux Tuberculin Skin Test (TST) to confirm the diagnosis of TB. This is a crucial step in diagnosing TB, especially when sputum tests are negative.\n\n**3. Initial Management Plan:**\n- **TB Treatment**: Start the child on a standard 6-month regimen of isoniazid (INH), rifampicin (RMP), and pyrazinamide (PZA) for the first 2 months, followed by INH and RMP for the next 4 months.\n- **Nutritional Support**: Provide the child with nutritional support to address his significant wasting, including a high-calorie diet and possibly nutritional supplements.\n- **Monitoring**: Regularly monitor the child's weight, height, and respiratory status, and perform follow-up chest X-rays to assess the effectiveness of treatment.\n- **Contact Screening**: Screen the child's family members and close contacts for TB, especially the father who works as a hospital orderly, to prevent potential transmission.",
+  "raw": {
+    "vignette_id": "VIG-021",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 314,
+  "output_tokens": 401
+}

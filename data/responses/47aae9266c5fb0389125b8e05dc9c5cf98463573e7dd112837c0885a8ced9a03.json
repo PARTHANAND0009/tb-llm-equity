@@ -1,0 +1,15 @@
+{
+  "text": "Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the patient's sputum test results have already shown resistance to rifampicin, indicating Multi-Drug Resistant TB (MDR-TB). The initial testing is crucial for confirming the resistance and guiding appropriate treatment.\n\n2. What is the recommended treatment regimen for MDR-TB in this patient?\n\nThe recommended treatment regimen for MDR-TB in this patient would typically include second-line drugs such as bedaquiline, linezolid, and delamanid, along with injectable drugs like kanamycin or amikacin, and fluoroquinolones (levofloxacin or moxifloxacin). The specific regimen may vary depending on the local guidelines and the patient's individual circumstances.\n\n3. What is the importance of contact tracing in this case?\n\nContact tracing is crucial in this case to identify and test any individuals who may have been in close contact with the patient to prevent the spread of MDR-TB. This is especially important because the patient has no known contact with any other drug-resistant TB case, suggesting potential transmission within the community.\n\n4. What is the role of HIV testing in this case?\n\nHIV testing is important in this case to rule out HIV coinfection, as it can affect the management and prognosis of TB, and also to ensure that the patient receives appropriate TB and HIV care if necessary.\n\n5. What is the significance of the patient's wife being asymptomatic on screening?\n\nThe patient's wife being asymptomatic on screening does not necessarily rule out TB infection, as latent TB infections can be asymptomatic. However, it does suggest that she may not currently be infectious, and close monitoring and testing for active TB disease may be appropriate.",
+  "raw": {
+    "vignette_id": "VIG-059",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 231,
+  "output_tokens": 421
+}

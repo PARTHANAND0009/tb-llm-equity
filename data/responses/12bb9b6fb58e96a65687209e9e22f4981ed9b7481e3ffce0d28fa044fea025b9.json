@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the patient's sputum and gastric aspirate were positive for *M. tuberculosis* and confirmed resistance to rifampicin, isoniazid, and fluoroquinolones, indicating pre-XDR-TB. Rifampicin resistance is a critical determinant of TB drug susceptibility and guides treatment decisions. Testing the initial specimen confirms resistance and helps in selecting an appropriate treatment regimen.",
+  "raw": {
+    "vignette_id": "VIG-057",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 255,
+  "output_tokens": 85
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Multi-Drug Resistant Tuberculosis (MDR-TB): Given the patient's symptoms, the positive M. tuberculosis test, the resistance to rifampicin and isoniazid, and the absence of other obvious causes for his symptoms, MDR-TB is the most likely diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray or CT scan: To confirm the location and extent of the lung involvement, which will help in determining the appropriate treatment regimen and duration.\n\n3. Initial management plan:\n   - Start MDR-TB treatment immediately: This should include second-line anti-TB drugs such as bedaquiline, linezolid, and delamanid, along with a fluoroquinolone and an injectable drug (e.g., kanamycin or amikacin).\n   - Monitor for drug-induced side effects: Regular monitoring for side effects is crucial, as the drugs used to treat MDR-TB can have severe side effects.\n   - Inform public health authorities: Given the drug-resistant nature of the TB, it's important to inform public health authorities to prevent further spread of the disease.\n   - Involve a TB specialist: Given the complexity of MDR-TB, it's advisable to involve a TB specialist in the patient's care.\n   - Address social and economic factors: Addressing the patient's living conditions, nutrition, and any other social or economic factors that may impact his ability to complete the lengthy treatment regimen.\n   - Inform the patient's wife about her potential exposure and the need for screening.",
+  "raw": {
+    "vignette_id": "VIG-059",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 238,
+  "output_tokens": 378
+}

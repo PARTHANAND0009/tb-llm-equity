@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's recent diagnosis and treatment for pre-XDR-TB, this is the most likely diagnosis. The persistent cough could be a sign of treatment failure or relapse.\n   2. Bacterial pneumonia - While less likely, given the patient's recent TB treatment, bacterial pneumonia could be a secondary infection.\n   3. Asthma - While less likely, persistent cough could be a sign of asthma, but it's less common in this age group and the patient's growth is appropriate, which is not typically seen in asthma.\n\n2. Single next diagnostic step:\n   Perform a sputum culture to confirm the presence of TB bacteria and determine drug susceptibility patterns, as this will guide further management.\n\n3. Initial management plan:\n   - Continue the current TB treatment regimen, ensuring adherence and monitoring for side effects.\n   - If the sputum culture confirms TB, and the patient is not responding to the current treatment, consider a consultation with an infectious disease specialist for further management options.\n   - If the sputum culture shows drug-susceptible TB, continue treatment as advised by the healthcare provider.\n   - Monitor the patient's respiratory symptoms and growth regularly.\n   - Consider a referral to a pediatrician for a comprehensive evaluation if other causes of the persistent cough are suspected.",
+  "raw": {
+    "vignette_id": "VIG-097",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 183,
+  "output_tokens": 330
+}

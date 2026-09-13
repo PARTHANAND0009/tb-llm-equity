@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked Differential Diagnosis:\n   1. Latent TB Infection (LTBI) - Given the patient's close contact with a MDR-TB patient, her age, and the ruling out of active TB disease, LTBI is the most likely diagnosis.\n   2. Bacillus Calmette-Gu\u00e9rin (BCG) Vaccine-induced reaction - While less likely, BCG vaccination can cause transient symptoms that might be confused with TB. However, the patient's age suggests she was likely vaccinated many years ago, and the symptoms persist beyond the expected time for a BCG reaction.\n   3. Other respiratory infections - While less likely due to the lack of symptoms suggestive of an acute respiratory infection, other respiratory infections cannot be completely ruled out.\n\n2. Next Diagnostic Step:\n   The next diagnostic step would be to perform an Interferon-gamma release assay (IGRA) test, which is available to confirm the diagnosis of LTBI.\n\n3. Initial Management Plan:\n   - If the IGRA test confirms LTB Infection: Initiate preventive treatment with isoniazid (INH) for 6-9 months, according to the guidelines for LTBI treatment.\n   - Monitor the patient's liver function regularly during treatment due to the hepatotoxic effects of INH.\n   - Educate the patient about the importance of adherence to the treatment regimen and the signs and symptoms of active TB disease.\n   - Encourage the patient to inform her healthcare provider if she develops any symptoms suggestive of active TB disease during the treatment period.\n   - If the IGRA test is negative: Repeat the test in a few months, as false negatives can occur, or consider a tuberculin skin test (TST) if IGRA testing is not available.",
+  "raw": {
+    "vignette_id": "VIG-100",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 202,
+  "output_tokens": 428
+}

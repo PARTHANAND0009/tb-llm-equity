@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Worsening asthma exacerbation: Given the patient's history of asthma, her current symptoms of expiratory wheeze, and the absence of acute distress, it is most likely that she is experiencing a worsening asthma exacerbation.\n   2. Tuberculosis (TB) reactivation: While the patient's chest imaging has ruled out active TB disease, the possibility of TB reactivation cannot be completely ruled out, especially given her recent exposure to a person with drug-sensitive pulmonary TB. However, the symptoms are more consistent with an asthma exacerbation.\n   3. Other respiratory infections: Other respiratory infections such as viral or bacterial bronchitis or pneumonia are less likely given the absence of acute distress and the patient's known history of asthma.\n\n2. Single next diagnostic step:\n   Given the current symptoms and the patient's history, the next diagnostic step would be to perform a spirometry test to objectively assess the severity of the asthma exacerbation and to monitor the response to treatment.\n\n3. Initial management plan:\n   - Adjust the asthma medication regimen to address the current exacerbation. This may involve increasing the dose of the controller medication and adding a short-acting beta-2 agonist as needed for relief of symptoms.\n   - Monitor the patient's response to treatment, including symptoms, peak expiratory flow rates, and pulmonary function tests.\n   - Consider TB preventive treatment for the patient, as per local guidelines, given her recent exposure to TB.\n   - Educate the patient and her family on the importance of adherence to the asthma medication regimen and the signs and symptoms of TB.\n   - Schedule follow-up appointments to monitor the patient's condition and adjust the treatment plan as needed.",
+  "raw": {
+    "vignette_id": "VIG-066",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 202,
+  "output_tokens": 437
+}

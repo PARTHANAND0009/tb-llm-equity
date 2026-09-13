@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculosis (TB): Given the positive M. tuberculosis in the gastric aspirate and the resistance to rifampicin, isoniazid, and fluoroquinolones, this is the most likely diagnosis. The symptoms of cough, reduced energy, and right-sided crackles on exam support this diagnosis.\n\n2. Single next diagnostic step:\n   - Chest X-ray: To confirm the presence and extent of pulmonary TB, a chest X-ray would be the next diagnostic step. This will help in determining the appropriate treatment plan and monitoring the response to therapy.\n\n3. Initial management plan:\n   - Start TB treatment: Immediately initiate TB treatment according to the World Health Organization (WHO) guidelines for drug-resistant TB, which typically includes a combination of second-line drugs such as ethambutol, pyrazinamide, and a fluoroquinolone (levofloxacin or moxifloxacin) along with a injectable drug (kanamycin or capreomycin).\n   - Monitor for drug interactions: Given the patient's age, it's important to monitor for potential drug interactions with other medications she may be taking, such as any antibiotics for secondary infections.\n   - Inform public health authorities: Given the drug-resistant TB diagnosis, it's important to inform public health authorities to prevent further spread of the disease.\n   - Monitor for adverse effects: Regularly monitor the patient for adverse effects of the TB treatment, such as hearing loss (associated with injectable drugs), peripheral neuropathy (associated with fluoroquinolones), and hepatotoxicity (associated with many TB drugs).\n   - Monitor for treatment response: Regularly monitor the patient's clinical response to treatment, including resolution of symptoms and improvement in weight.\n   - Involve a pediatric specialist: Given the patient's age, it would be beneficial to involve a pediatric specialist in her care to ensure appropriate dosing and monitoring.\n   - Inform the 10-year-old brother: The 10-year-old brother should be screened for TB infection, as he may have been exposed to the disease. If he is found to be infected, he should be started on preventive therapy to reduce the risk of developing active TB.",
+  "raw": {
+    "vignette_id": "VIG-061",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 252,
+  "output_tokens": 538
+}

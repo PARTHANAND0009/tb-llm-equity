@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, because the patient has a history of severe undernutrition and is at increased risk for drug-resistant tuberculosis, especially given the presence of cavitary disease on chest X-ray, which is more commonly associated with drug-resistant TB. Rifampicin resistance testing is recommended in such cases to guide appropriate treatment.\n\n2. To determine the dose of each drug, I would use the patient's weight of 36 kg. For isoniazid, the dose is 10 mg/kg/day, resulting in 360 mg/day, which can be given as 300 mg once daily. For rifampicin, the dose is 10 mg/kg/day, resulting in 360 mg/day, which can be given as 300 mg once daily. For pyrazinamide, the dose is 25 mg/kg/day, resulting in 900 mg/day, which can be given as 750 mg once daily. For ethambutol, the dose is 15 mg/kg/day, resulting in 540 mg/day, which can be given as 450 mg once daily. All doses should be adjusted based on the patient's response and tolerance.",
+  "raw": {
+    "vignette_id": "VIG-091",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 237,
+  "output_tokens": 254
+}

@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of productive cough, night sweats, and low-grade fevers are classic for TB. The chest X-ray showing a right upper lobe infiltrate without cavitation is also consistent with TB. The patient's history of heavy drinking and irregular eating may have contributed to his weight loss and temporal wasting, which are common in TB patients.\n2. **Pulmonary Nocardiosis**: The patient's symptoms and chest X-ray findings could also be consistent with Nocardiosis, a bacterial infection that can cause pulmonary disease, especially in immunocompromised individuals. However, the patient's history of heavy drinking and irregular eating may also be contributing to his immunocompromised state.\n3. **Pulmonary Malaria**: Although the patient's symptoms could be consistent with malaria, the patient's history of heavy drinking and irregular eating may also be contributing to his symptoms, and malaria is less likely given the patient's presentation.\n4. **Pulmonary Tuberculosis due to HIV/AIDS**: The patient's symptoms and chest X-ray findings could also be consistent with TB due to HIV/AIDS, but the patient's history of heavy drinking and irregular eating may also be contributing to his symptoms.\n\n**2. Next Diagnostic Step:**\n\nI would order a **TB skin test (Mantoux test)** to confirm the diagnosis of TB. This test is a simple and effective way to diagnose TB, and it is especially useful in patients with a high clinical suspicion of TB.\n\n**3. Initial Management Plan:**\n\nGiven the patient's symptoms and chest X-ray findings, I would start the patient on **TB treatment** with a combination of isoniazid, rifampicin, pyrazinamide, and ethambutol. I would also recommend that the patient receive a **TB education and counseling** on the importance of adherence to treatment and the potential side effects of the medications. Additionally, I would recommend that the patient receive a **nutritional assessment and counseling** to address his weight loss and temporal wasting. Finally, I would recommend that the patient receive a **screening for HIV/AIDS** to rule out any underlying HIV infection that may be contributing to his symptoms.",
+  "raw": {
+    "vignette_id": "VIG-003",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 241,
+  "output_tokens": 458
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, it would be beneficial to perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because the absence of rifampicin in the gastric aspirate suggests possible drug resistance, and confirmatory testing is necessary to guide appropriate treatment.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the dose of each drug for this specific patient would be determined based on the patient's age, weight, and the World Health Organization (WHO) recommended dosing guidelines for pediatric tuberculosis treatment. For a 7-year-old child weighing 14 kg, the recommended first-line TB treatment regimen would typically include isoniazid (INH), rifampicin (RIF), ethambutol (EMB), and pyrazinamide (PZA) for 2 months, followed by INH and RIF for an additional 4 months. The actual dose would be calculated based on the WHO-recommended doses per kilogram of body weight, which can be found in the WHO's TB treatment guidelines.",
+  "raw": {
+    "vignette_id": "VIG-053",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 295,
+  "output_tokens": 256
+}

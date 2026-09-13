@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's HIV status, symptoms of persistent cough and worsening fatigue, and the chest X-ray findings of bilateral infiltrates with early cavitation, TB is the most likely diagnosis. The patient's low CD4 count (85 cells/uL) also increases her risk for TB.\n   2. Bacterial pneumonia - While not as likely as TB, bacterial pneumonia could also cause similar symptoms, especially in a patient with a compromised immune system.\n   3. Fungal pneumonia - Fungal infections can also occur in immunocompromised patients, but they are less common than TB or bacterial pneumonia in this context.\n   4. Other causes of cough and fatigue, such as viral infections, are less likely due to the persistence of symptoms and the patient's HIV status.\n\n2. Single next diagnostic step:\n   Perform a sputum smear and culture for acid-fast bacilli (AFB) to confirm the diagnosis of TB and identify the strain for drug susceptibility testing.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen appropriate for drug-sensitive TB, such as isoniazid, rifampicin, ethambutol, and pyrazinamide, following local guidelines for HIV-positive patients.\n   - Monitor the patient's response to treatment closely, as HIV-positive patients may have atypical presentations and require more frequent monitoring.\n   - Concurrently, optimize the patient's antiretroviral therapy (ART) to improve her immune response and reduce the risk of TB progression.\n   - Address the patient's symptoms, such as cough, with appropriate cough suppressants and analgesics as needed.\n   - Monitor the patient's CD4 count and viral load regularly to assess the response to both TB and ART treatments.\n   - Educate the patient and her family about the importance of adherence to both TB and ART treatments, and provide support for any barriers to treatment.\n   - Consider referring the patient to a specialist if there are any complications or if the TB is not responding to treatment as expected.",
+  "raw": {
+    "vignette_id": "VIG-046",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 288,
+  "output_tokens": 516
+}

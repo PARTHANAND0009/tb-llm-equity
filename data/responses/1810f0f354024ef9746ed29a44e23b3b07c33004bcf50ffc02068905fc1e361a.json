@@ -1,0 +1,15 @@
+{
+  "text": "**Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms of cough and unintentional weight loss, combined with the presence of upper zone crackles on examination, are highly suggestive of TB. The patient's delayed presentation and lack of prior TB treatment or known contact with drug-resistant TB also support this diagnosis.\n2. **Pulmonary Nodule or Lung Cancer**: The patient's age, weight loss, and cough could also be indicative of a pulmonary nodule or lung cancer. However, the presence of upper zone crackles is more typical of TB.\n3. **Chronic Obstructive Pulmonary Disease (COPD)**: COPD could be a consideration, but the patient's lack of significant past medical history and the presence of upper zone crackles make this less likely.\n4. **Pneumonia**: Pneumonia could be a consideration, but the patient's weight loss and delayed presentation make this less likely.\n\n**Next Diagnostic Step:**\n\nI would order a **chest X-ray** to evaluate for signs of TB, such as upper lobe consolidation or cavitation, and to rule out other pulmonary abnormalities.\n\n**Initial Management Plan:**\n\n1. **TB testing**: Order a **TB skin test (Mantoux test)** to assess for latent TB infection.\n2. **Chest X-ray**: As mentioned above, to evaluate for signs of TB and rule out other pulmonary abnormalities.\n3. **Pulmonary function tests (PFTs)**: To assess lung function and rule out COPD.\n4. **Complete blood count (CBC)**: To evaluate for signs of infection or inflammation.\n5. **TB sputum analysis**: To evaluate for acid-fast bacilli (AFB) in the sputum, which would confirm the diagnosis of active TB.\n6. **Contact tracing**: To identify potential contacts who may need to be evaluated for TB exposure.\n7. **TB treatment**: If TB is confirmed, initiate treatment with a standard regimen of isoniazid, rifampicin, pyrazinamide, and ethambutol.",
+  "raw": {
+    "vignette_id": "VIG-079",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 191,
+  "output_tokens": 428
+}

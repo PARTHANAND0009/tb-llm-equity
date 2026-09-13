@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Tuberculosis (TB)**: The patient's symptoms (intermittent low-grade fever, mild cough, and recent fatigue) and the chest X-ray findings of right paratracheal lymphadenopathy are highly suggestive of TB. The fact that the patient was identified through a TB screening program and has no known TB contact in the household also supports this diagnosis.\n2. **Atypical Pneumonia**: The patient's symptoms could also be consistent with atypical pneumonia, such as Mycoplasma pneumonia or Chlamydophila pneumonia. However, the lack of significant respiratory distress and the absence of a clear source of infection (e.g., no recent travel or exposure to someone with a similar illness) make this less likely.\n3. **Infectious Mononucleosis (EBV)**: The patient's fatigue and low-grade fever could also be consistent with infectious mononucleosis, but the lack of significant lymphadenopathy outside the chest and the absence of a clear exposure history make this less likely.\n4. **Respiratory Syncytial Virus (RSV)**: RSV is a common cause of respiratory illness in children, but the patient's symptoms and chest X-ray findings do not strongly suggest this diagnosis.\n\n**2. Next Diagnostic Step:**\n\nPerform a **TB Quantiferon Gold test** to assess the patient's immune response to TB antigens. This test can help determine if the patient has been exposed to TB and can aid in the diagnosis of latent or active TB infection.\n\n**3. Initial Management Plan:**\n\n* **TB treatment**: Start the patient on isoniazid (INH) and rifampicin (RIF) for latent TB infection, pending the results of the TB Quantiferon Gold test and further diagnostic testing.\n* **Monitor for TB symptoms**: Continue to monitor the patient for symptoms of TB, such as fever, cough, and fatigue, and consider repeating the chest X-ray in 2-3 weeks to assess for any changes.\n* **Follow-up**: Schedule a follow-up appointment with the patient in 2-3 weeks to review the results of the TB Quantiferon Gold test and to assess the patient's response to treatment.",
+  "raw": {
+    "vignette_id": "VIG-025",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 287,
+  "output_tokens": 458
+}

@@ -1,0 +1,15 @@
+{
+  "text": "1. Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. This is because drug-resistant TB is a concern, especially in a patient with cavitary disease and a history of diabetes, which can weaken the immune system. The testing helps to guide appropriate treatment and prevent the spread of drug-resistant TB.\n\n2. Assuming the initial test confirms drug-susceptible pulmonary tuberculosis, the standard first-line treatment for TB includes isoniazid (INH), rifampin (RIF), ethambutol (EMB), and pyrazinamide (PZA). The dose of each drug for this specific patient would be determined based on the patient's weight, renal function, and liver function.\n\n   - Isoniazid: The usual adult dose is 300 mg daily, but for a 67-year-old patient, the dose may be adjusted based on renal function. For example, if the creatinine clearance is less than 30 mL/min, the dose should be reduced to 150 mg daily.\n\n   - Rifampin: The usual adult dose is 600 mg daily, but for a 67-year-old patient, the dose may be adjusted based on liver function. For example, if the patient has liver disease, the dose may need to be reduced.\n\n   - Ethambutol: The usual adult dose is 15 mg/kg daily, but for a 67-year-old patient, the dose may be adjusted based on renal function. For example, if the creatinine clearance is less than 30 mL/min, the dose should be reduced to 10 mg/kg daily.\n\n   - Pyrazinamide: The usual adult dose is 1500-2000 mg daily, but for a 67-year-old patient, the dose may be adjusted based on liver function. For example, if the patient has liver disease, the dose may need to be reduced.\n\n   The actual dose or tablet count would be determined by converting these doses into the appropriate tablet strength available. For example, if a 600 mg Rifampin tablet is available, the patient would need 1 tablet daily. If a 300 mg INH tablet is available, the patient would need 2 tablets daily, and so on. The patient's pharmacist or healthcare provider can help with this calculation.\n\n   Additionally, the treatment duration for TB is typically 6 months, with the first 2 months including INH, RIF, PZA, and EMB, and the remaining 4 months including INH and RIF.",
+  "raw": {
+    "vignette_id": "VIG-092",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 270,
+  "output_tokens": 612
+}

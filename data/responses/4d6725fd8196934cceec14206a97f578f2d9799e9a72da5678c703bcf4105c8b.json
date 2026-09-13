@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Tuberculous Pericarditis: Given the positive M. tuberculosis results from the pericardial fluid, this is the most likely diagnosis. The patient's long-standing diabetes, progressive breathlessness, and vague chest discomfort, along with the echocardiogram findings and the positive TB test, all point towards tuberculous pericarditis.\n\n2. Single next diagnostic step:\n   - Start the patient on a course of anti-tuberculosis therapy immediately. This is the most urgent step to prevent further progression of the disease and potential complications.\n\n3. Initial management plan:\n   - Immediate initiation of anti-tuberculosis therapy: A standard first-line regimen for drug-sensitive TB would include isoniazid, rifampin, ethambutol, and pyrazinamide for the first two months, followed by isoniazid and rifampin for the next four months.\n   - Close monitoring: Regular monitoring of the patient's clinical status, including respiratory function, heart function (echocardiograms), and TB sputum cultures to ensure response to treatment.\n   - Consultation with an infectious disease specialist: Given the patient's diabetes and the potential for drug interactions, it would be beneficial to consult with an infectious disease specialist to manage the TB treatment and monitor for any drug-related complications.\n   - Address the diabetes: Given the patient's long-standing poorly controlled diabetes, it is important to work with the patient's primary care provider to optimize her diabetes management, as this may impact her response to TB treatment and overall prognosis.\n   - Supportive care: Provide appropriate supportive care, including oxygen therapy if needed, to manage the patient's symptoms and prevent complications.\n   - Preventive therapy for close contacts: Given the patient's diagnosis of TB, it is important to identify and offer preventive therapy to her close contacts to prevent further spread of the disease.",
+  "raw": {
+    "vignette_id": "VIG-084",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 261,
+  "output_tokens": 451
+}

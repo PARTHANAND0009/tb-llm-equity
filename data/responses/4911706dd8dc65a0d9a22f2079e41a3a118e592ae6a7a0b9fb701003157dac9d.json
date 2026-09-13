@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the patient's symptoms (cough, night sweats, and left-sided crackles on exam), her recent move, and the possibility of undiagnosed TB in her new environment, TB is the most likely diagnosis. The bleeding disorder and anemia could potentially complicate the presentation, but they are not the primary cause of her symptoms.\n   2. Chronic obstructive pulmonary disease (COPD) - While COPD is a possibility, the absence of a significant smoking history and the presence of night sweats make this less likely than TB.\n   3. Other infectious causes (e.g., pneumonia, bronchitis) - These are less likely given the chronic nature of her symptoms and the lack of a clear infectious trigger.\n   4. Malignancy - While malignancy is always a concern in a case like this, the absence of weight loss, significant weight gain, or other symptoms that would suggest malignancy make it less likely at this stage.\n\n2. Single next diagnostic step:\n   Obtain a sputum sample for acid-fast bacilli (AFB) smear and culture, and consider a chest X-ray or CT scan to further evaluate the lung findings.\n\n3. Initial management plan:\n   - Start the patient on a TB regimen (e.g., isoniazid, rifampicin, ethambutol, pyrazinamide) pending culture results.\n   - Monitor the patient's hemoglobin levels and adjust iron supplementation as needed to manage her anemia.\n   - Consider referring the patient to a hematologist for further management of her bleeding disorder.\n   - Monitor the patient's symptoms and response to treatment closely. If there is no improvement, consider additional diagnostic tests to rule out other potential causes.",
+  "raw": {
+    "vignette_id": "VIG-078",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 201,
+  "output_tokens": 418
+}

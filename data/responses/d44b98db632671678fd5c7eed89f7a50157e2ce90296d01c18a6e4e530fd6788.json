@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **TB infection (latent TB infection, LTBI)** \u2013 Most likely due to the patient's recent exposure to a spouse with active drug-sensitive pulmonary TB, and the absence of active disease. The patient is seeking preventive treatment, which is consistent with LTBI.  \n2. **Non-tuberculous mycobacterial (NTM) infection** \u2013 Could be considered if there is a history of environmental exposure or risk factors, but no such information is provided.  \n3. **HIV-related immune suppression** \u2013 Although the patient has no HIV risk factors, it is still a consideration in the differential, especially in the context of TB prevention.  \n4. **Other bacterial infections** \u2013 Less likely without specific symptoms or risk factors.\n\n2. **Single Next Diagnostic Step:**\n\n**Administer TB preventive treatment (e.g., isoniazid, INH) with or without rifapentine, based on the patient\u2019s risk factors and ability to adhere to a 12-week regimen.**  \nSince TST and IGRA are unavailable, and active TB has been ruled out, the next step is to initiate preventive therapy as per guidelines for individuals with recent TB exposure.\n\n3. **Initial Management Plan:**\n\n- **Initiate TB preventive treatment (INH 300 mg daily for 12 weeks, or INH + rifapentine for 12 weeks if appropriate for the patient).**  \n- **Educate the patient on the importance of adherence to the regimen to prevent progression to active TB.**  \n- **Schedule a follow-up visit in 4\u20136 weeks to assess for side effects (e.g., hepatotoxicity) and to ensure adherence.**  \n- **Consider offering a shorter regimen (e.g., 12 weeks of INH + rifapentine) if the patient is at higher risk or has a history of non-adherence.**  \n- **Document the decision and rationale in the medical record.**",
+  "raw": {
+    "vignette_id": "VIG-099",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 191,
+  "output_tokens": 413
+}

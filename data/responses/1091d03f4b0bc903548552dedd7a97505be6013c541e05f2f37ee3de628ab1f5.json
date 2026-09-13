@@ -1,0 +1,15 @@
+{
+  "text": "1. Differential Diagnosis (Ranked):\n   1. Chronic Pulmonary Tuberculosis (TB): Given the age, symptoms of chronic cough, low energy, night sweats, and the presence of right apical crackles on examination, TB is a high priority. The absence of fevers and known TB exposure may lower the likelihood but does not rule it out, especially in a region with a high TB prevalence.\n   2. Bronchitis: While less specific, bronchitis could also cause a chronic cough, especially in someone exposed to dust and other irritants from farm work.\n   3. Asthma: While less likely given the chronic nature of the symptoms, asthma could be a possibility, especially if the cough is exacerbated by work-related irritants.\n   4. Other respiratory infections: Other infections such as pneumonia or bronchitis could also be considered, but the chronic nature of the symptoms and the absence of fever suggest a different etiology.\n\n2. Next Diagnostic Step:\n   Given the high suspicion of TB, the next diagnostic step would be to obtain a sputum sample for acid-fast bacilli (AFB) smear and culture, and if available, a molecular test for Mycobacterium tuberculosis (MTB) such as Xpert MTB/RIF.\n\n3. Initial Management Plan:\n   - If the patient is not already on treatment, initiate TB treatment with a first-line regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) while awaiting culture results.\n   - Monitor the patient's response to treatment, including chest X-rays to assess for resolution of infiltrates.\n   - Ensure the patient is counseled on the importance of adherence to the full treatment course, the importance of not missing doses, and the need to complete the full treatment course even if symptoms resolve.\n   - If the patient is diagnosed with drug-sensitive TB, monitor for development of drug resistance during treatment.\n   - If the patient is diagnosed with drug-resistant TB, refer to a specialist for management, as this requires a different treatment regimen and close monitoring.\n   - Address the patient's concerns about missing school and work, and work with her family and school to find a way to accommodate her treatment needs.\n   - Provide education about TB transmission and the importance of isolating when coughing and wearing a mask when around others.\n   - Offer psychological support to help manage the stress of the diagnosis and treatment.",
+  "raw": {
+    "vignette_id": "VIG-010",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 232,
+  "output_tokens": 578
+}

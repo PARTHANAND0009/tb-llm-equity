@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Latent TB infection (LTBI) - Given her exposure to her son who has MDR-TB, her BCG vaccination, and the absence of active TB symptoms or findings on imaging, LTBI is the most likely diagnosis.\n   2. TB reactivation - While less likely due to her lack of symptoms, it's still possible given her exposure to an active TB case.\n   3. Other infections or conditions - Given her lack of significant past medical history, other infections or conditions are less likely but still possible.\n\n2. The single next diagnostic step you would take right now:\n   - Tuberculin skin test (TST) or Interferon-gamma release assay (IGRA) to confirm LTBI.\n\n3. Initial management plan:\n   - If the TST or IGRA is positive, initiate preventive treatment for LTBI with isoniazid for 6-9 months, or a rifamycin-based regimen for 3-6 months if the patient is HIV-negative and has no contraindications to rifamycins.\n   - Monitor the patient for any signs or symptoms of active TB during the treatment period.\n   - Educate the patient about the importance of completing the treatment course and the potential risks of incomplete treatment.\n   - Consider offering HIV testing, as HIV co-infection is common in TB patients and can affect treatment decisions.\n   - Encourage the patient to inform her healthcare providers about her TB exposure and treatment status if she needs medical care during her travels.\n   - Advise her to maintain good ventilation and avoid close contact with others while on treatment to prevent potential transmission.",
+  "raw": {
+    "vignette_id": "VIG-064",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 209,
+  "output_tokens": 381
+}

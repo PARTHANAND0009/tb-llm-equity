@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked Differential Diagnosis:\n   1. Tuberculosis (TB) Lymphadenitis (most likely) - The patient's symptoms align with the presentation of TB lymphadenitis, which is a common manifestation of extrapulmonary TB. The positive M. tuberculosis molecular test result supports this diagnosis.\n   2. Cat-scratch disease - While less likely, cat-scratch disease can present with lymphadenopathy, but it typically presents with regional lymphadenopathy and fever, and it does not usually cause a painless, gradual swelling.\n   3. Lymphoma - While rare in a 15-year-old, lymphoma can present with painless lymphadenopathy. However, the absence of systemic symptoms and the negative M. tuberculosis test result make this less likely.\n\n2. Next Diagnostic Step:\n   Given the positive M. tuberculosis test result, the next diagnostic step would be to confirm the diagnosis with a culture of the lymph node tissue, if possible, to identify drug-sensitive or drug-resistant TB.\n\n3. Initial Management Plan:\n   - Initiate anti-TB therapy: Start the patient on a standard first-line TB treatment regimen (e.g., isoniazid, rifampicin, ethambutol, and pyrazinamide) as soon as possible.\n   - Monitor for adverse effects: Regularly monitor the patient for adverse effects of the TB treatment, such as hepatotoxicity, optic neuritis, and peripheral neuropathy.\n   - Monitor for treatment response: Monitor the patient's clinical response, including the resolution of the lymphadenopathy and the resolution of any fevers.\n   - Consult a pediatrician: Given the patient's age, it would be beneficial to consult a pediatrician to ensure appropriate dosing and monitoring of the TB treatment.\n   - Inform the patient's family and close contacts: Inform the patient's family and close contacts about the diagnosis and the need for TB testing and treatment, if necessary, to prevent further spread of the disease.\n   - Follow-up: Schedule regular follow-up appointments to monitor the patient's response to treatment and to ensure adherence to the treatment regimen.",
+  "raw": {
+    "vignette_id": "VIG-034",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 258,
+  "output_tokens": 532
+}

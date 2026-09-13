@@ -1,0 +1,15 @@
+{
+  "text": "**1. Ranked Differential Diagnosis:**\n\n1. **Latent TB Infection (LTBI)**: The patient's father has been diagnosed with drug-sensitive pulmonary TB, and the patient has been exposed to him. Given the lack of symptoms and chest imaging, it is likely that the patient has LTBI rather than active TB disease. The patient's vaccination with BCG also supports this, as BCG vaccination is known to provide some protection against TB, but does not guarantee immunity.\n2. **Cardiac Complications**: The patient has significant congenital heart disease, which may lead to complications such as endocarditis or heart failure, especially if the patient has a cardiac murmur.\n3. **Other Infections**: Although the patient has been ruled out for active TB disease, other infections such as pneumonia or urinary tract infections could be considered, but are less likely given the lack of symptoms and the patient's overall well-appearing status.\n\n**2. Next Diagnostic Step:**\n\nI would order a **Quantiferon Gold test** to assess the patient's immune response to TB antigens. This test can help differentiate between latent TB infection and TB disease, and can also help identify individuals who are at high risk of progressing to active TB disease.\n\n**3. Initial Management Plan:**\n\n* **TB Preventive Treatment**: Given the patient's exposure to her father with drug-sensitive pulmonary TB, I would recommend starting the patient on isoniazid (INH) monotherapy for 6-12 months, as per the American Academy of Pediatrics (AAP) guidelines for LTBI in children.\n* **Cardiac Monitoring**: The patient's cardiac murmur and congenital heart disease require close monitoring, and the pediatric cardiologist should be consulted to assess the patient's cardiac function and adjust treatment as needed.\n* **General Health Monitoring**: The patient should be monitored for any signs of illness or infection, and the healthcare provider should be notified if any concerns arise.",
+  "raw": {
+    "vignette_id": "VIG-069",
+    "elicitation": "freeform",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 204,
+  "output_tokens": 395
+}

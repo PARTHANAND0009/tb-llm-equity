@@ -1,0 +1,15 @@
+{
+  "text": "Yes, I would perform rifampicin drug-resistance testing on this patient's initial diagnostic specimen. The patient has been confirmed to have pre-XDR-TB, which means the strain is resistant to rifampicin, isoniazid, and fluoroquinolones. However, it's important to confirm the resistance to rifampicin in the initial specimen to ensure the accuracy of the diagnosis and to guide the treatment plan.\n\n2. What is the recommended treatment regimen for pre-XDR-TB in this patient?\n\nThe recommended treatment regimen for pre-XDR-TB typically includes second-line drugs such as bedaquiline, linezolid, and clofazimine, along with a fluoroquinolone to which the strain is susceptible (if available), and a injectable drug (amikacin or kanamycin). The treatment duration is usually 20-24 months.\n\n3. What precautions should be taken to prevent the spread of this infection to others?\n\nPrecautions to prevent the spread of pre-XDR-TB include airborne isolation of the patient, use of personal protective equipment (PPE) by healthcare workers, and respiratory protection for those in close contact with the patient. Droplet precautions should also be implemented, and the patient's room should be well-ventilated.\n\n4. What is the role of preventive therapy for the patient's sister in this case?\n\nPreventive therapy is recommended for close contacts of patients with infectious TB, including the patient's sister in this case. The recommended preventive therapy for contacts of pre-XDR-TB patients is isoniazid preventive therapy (IPT) for 6-12 months, along with a BCG vaccination if the sister has not already received it.\n\n5. What additional information would be useful to know about the patient's family history and living conditions?\n\nAdditional information that would be useful to know about the patient's family history and living conditions includes the number of other family members living in the household, their ages, and their TB status. It would also be important to know if there are any other risk factors for TB transmission, such as overcrowding, poor ventilation, or a history of TB in the household. This information can help identify other potential contacts who may need preventive therapy or monitoring.",
+  "raw": {
+    "vignette_id": "VIG-057",
+    "elicitation": "structured",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 282,
+  "output_tokens": 531
+}

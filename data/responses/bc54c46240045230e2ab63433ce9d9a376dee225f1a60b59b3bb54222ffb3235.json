@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Tuberculosis (TB) - Given the persistent cough, growth deceleration, and chest X-ray findings, TB is the most likely diagnosis, especially considering the hilar lymph node pattern and the negative results from gastric aspirate and induced sputum.\n   2. Other infectious causes such as bacterial pneumonia, viral pneumonia, or whooping cough - While these conditions can cause cough and growth deceleration, they typically do not present with the specific chest X-ray findings seen in this case.\n   3. Non-infectious causes such as asthma, foreign body aspiration, or malignancy - These conditions are less likely given the lack of respiratory distress, lymphadenopathy outside the chest, and the persistent cough and growth deceleration.\n\n2. Single next diagnostic step:\n   Given the persistent cough and negative results from gastric aspirate and induced sputum, the next diagnostic step would be to perform a bronchoscopy with bronchoalveolar lavage (BAL) for further investigation of the lung lesion and to obtain a sample for TB culture and molecular testing.\n\n3. Initial management plan:\n   - Start the patient on a TB treatment regimen appropriate for a child, such as INH, Rifampicin, Ethambutol, and Pyrazinamide, pending culture and drug-susceptibility test results.\n   - Monitor the patient's response to treatment, including clinical improvement and weight gain.\n   - Monitor for adverse effects of the TB treatment and manage accordingly.\n   - Consider referring the patient to a pediatric specialist for further management and monitoring.\n   - Consider referring the patient for nutritional support to address the growth deceleration.\n   - Consider performing an HIV test, as it is important to rule out HIV as a potential contributing factor.",
+  "raw": {
+    "vignette_id": "VIG-073",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 258,
+  "output_tokens": 422
+}

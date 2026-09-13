@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis:\n   1. Pulmonary TB (Mycobacterium tuberculosis): Given the patient's symptoms, Xpert MTB/RIF positive result, and chest imaging findings, this is the most likely diagnosis. The negative sputum smear and the absence of cavitation are not uncommon in extrapulmonary or non-cavitary pulmonary TB.\n   2. Bronchitis: While the sputum production and chest infiltrate suggest bronchitis, the weight loss, Xpert MTB/RIF result, and lack of improvement despite time suggest a more serious underlying condition.\n   3. Lung cancer: The persistent cough, weight loss, and chest infiltrate raise the possibility of lung cancer, but the patient's age and lack of smoking history make this less likely.\n   4. Other respiratory infections: Other respiratory infections such as pneumonia or bronchitis could be considered, but the Xpert MTB/RIF result makes these less likely.\n\n2. Single next diagnostic step:\n   Given the Xpert MTB/RIF result, the next diagnostic step would be to perform a culture of the sputum to identify the strain of Mycobacterium tuberculosis and determine drug sensitivity. This will help guide the choice of antibiotics for treatment.\n\n3. Initial management plan:\n   - Start the patient on a standard first-line TB treatment regimen (isoniazid, rifampicin, ethambutol, and pyrazinamide) pending culture results and drug sensitivity testing.\n   - Monitor the patient closely for side effects of the medication and for clinical response to treatment.\n   - Address the patient's nutritional status by referring him to a dietitian or providing dietary advice to improve his diet.\n   - Encourage the patient to complete the full course of treatment to ensure the TB is fully eradicated and to prevent the development of drug-resistant strains.\n   - Consider offering psychological support, as the patient has recently lost his wife and may be dealing with grief and isolation.",
+  "raw": {
+    "vignette_id": "VIG-007",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 276,
+  "output_tokens": 470
+}

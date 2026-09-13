@@ -1,0 +1,15 @@
+{
+  "text": "1. **Ranked Differential Diagnosis (Most Likely First):**\n\n1. **Multidrug-resistant tuberculosis (MDR-TB)**  \n   - **Reasoning:** The patient has been on standard TB treatment for six weeks, but sputum smear remains positive, which is not expected with effective treatment. This suggests either non-compliance, drug resistance, or a mixed infection. Given the persistent positivity and the setting of a mobile outreach clinic, drug resistance is a significant concern.\n\n2. **Progressive multifocal leukoencephalopathy (PML)**  \n   - **Reasoning:** Although less likely, the patient's worsening respiratory status and persistent sputum positivity could be due to immunocompromise, especially if he has been on immunosuppressive therapy or has an underlying condition. However, this is less likely than MDR-TB in this clinical context.\n\n3. **COPD exacerbation with superimposed infection**  \n   - **Reasoning:** The patient has a known history of COPD and has been coughing for over three months. His worsening breathlessness and lower oxygen saturation could be due to an exacerbation of COPD with a secondary bacterial infection, which may mimic TB or complicate TB treatment.\n\n4. **HIV-associated TB or opportunistic infections**  \n   - **Reasoning:** The patient is a marginalized individual with limited access to healthcare, which increases the risk of HIV. HIV can accelerate TB progression and complicate treatment, but this is less likely than MDR-TB without additional HIV testing.\n\n---\n\n2. **Single Next Diagnostic Step:**\n\n**Perform nucleic acid amplification test (NAAT) for TB and drug susceptibility testing (DST), and HIV testing.**  \n- This will help confirm the presence of drug-resistant TB and identify any underlying HIV infection, both of which are critical for guiding appropriate treatment and management.\n\n---\n\n3. **Initial Management Plan:**\n\n- **Continue TB treatment under direct observation**, but consider switching to a regimen appropriate for MDR-TB if DST confirms resistance.\n- **Initiate oxygen therapy** to maintain oxygen saturation above 92%.\n- **Monitor for signs of treatment failure or adverse effects**, including worsening breathlessness, increased sputum production, or new symptoms.\n- **Refer for HIV testing** and initiate antiretroviral therapy if positive.\n- **Provide support for adherence to TB treatment**, including education on the importance of completing the full course and access to medications.\n- **Arrange for follow-up chest imaging and sputum testing** to assess response to treatment.\n- **Address socioeconomic barriers** to medication access and consider linkage to a more stable healthcare facility for ongoing care.",
+  "raw": {
+    "vignette_id": "VIG-024",
+    "elicitation": "freeform",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 274,
+  "output_tokens": 547
+}

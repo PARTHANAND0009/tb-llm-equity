@@ -1,0 +1,15 @@
+{
+  "text": "1. Based on the patient's symptoms, chest X-ray findings, and physical exam, the single most likely diagnosis is pulmonary tuberculosis (TB). I would order a sputum smear for acid-fast bacilli (AFB) to evaluate for TB.\n\n2. Assuming the sputum smear confirms drug-susceptible pulmonary TB, the treatment regimen would be a 6-month regimen with two phases: the intensive phase (2 months) and the continuation phase (4 months). During the intensive phase, the patient would take isoniazid (H), rifampicin (R), pyrazinamide (Z), and ethambutol (E) for 2 months, with the following dosing schedule: H 5 mg/kg (max 300 mg) daily, R 10 mg/kg (max 600 mg) daily, Z 15-20 mg/kg (max 1 g) daily, and E 15-20 mg/kg (max 1 g) daily.\n\n3. To determine the dose of each drug for this specific patient, I would use the following patient information: weight (52 kg), age (34 years), and renal function (not specified). For isoniazid, the dose would be 5 mg/kg, which is 260 mg (5 mg/kg x 52 kg). For rifampicin, the dose would be 10 mg/kg, which is 520 mg (10 mg/kg x 52 kg). For pyrazinamide, the dose would be 15-20 mg/kg, which is 780-1040 mg (15-20 mg/kg x 52 kg). For ethambutol, the dose would be 15-20 mg/kg, which is 780-1040 mg (15-20 mg/kg x 52 kg).",
+  "raw": {
+    "vignette_id": "VIG-003",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 340,
+  "output_tokens": 373
+}

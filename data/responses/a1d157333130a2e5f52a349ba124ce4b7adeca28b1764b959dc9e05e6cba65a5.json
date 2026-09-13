@@ -1,0 +1,15 @@
+{
+  "text": "1. The single most likely diagnosis is pulmonary tuberculosis. The initial test to order is a sputum acid-fast bacilli (AFB) smear and culture, along with nucleic acid amplification test (NAAT) for rapid detection of Mycobacterium tuberculosis.\n\n2. No, rifampicin drug-resistance testing is not performed on the initial diagnostic specimen. Resistance testing is typically reserved for patients with known or suspected drug resistance, such as those with prior TB treatment, exposure to drug-resistant TB, or treatment failure, which is not the case here.\n\n3. To determine the dose of each drug, I would use the patient's weight, which is likely low due to unintentional weight loss. For isoniazid, the dose is 5 mg/kg once daily. For rifampicin, it is 10 mg/kg once daily. For pyrazinamide, it is 25 mg/kg once daily. For ethambutol, it is 15 mg/kg once daily. These doses would be adjusted based on the patient's actual weight and renal function, if available.",
+  "raw": {
+    "vignette_id": "VIG-079",
+    "elicitation": "structured",
+    "model": "Orion-zhen/Qwen3-8B-AWQ",
+    "model_revision": "afb67fde7957c0e416d98b86df596016d94ea882",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 244,
+  "output_tokens": 228
+}

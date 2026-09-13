@@ -1,0 +1,15 @@
+{
+  "text": "1. Ranked differential diagnosis (most likely first):\n   - Meningitis due to Mycobacterium tuberculosis (TB meningitis) - Given the positive CSF test results for M. tuberculosis, this is the most likely diagnosis. The symptoms of headache, low-grade fevers, and recent onset of confusion and altered mental status are consistent with meningitis. The patient's lack of known TB exposure or treatment makes this an unusual presentation, but the positive CSF test result confirms the diagnosis.\n\n2. Single next diagnostic step:\n   - Further microbiological testing on the CSF sample to identify the strain of M. tuberculosis and determine drug susceptibility patterns. This will guide the choice of antibiotics for treatment.\n\n3. Initial management plan:\n   - Start immediate empiric antibiotic treatment for TB meningitis, typically a combination of isoniazid, rifampin, ethambutol, and pyrazinamide.\n   - Admit the patient to the hospital for close monitoring and management of symptoms, including control of fever, headache, and confusion.\n   - Consult with an infectious disease specialist for guidance on antibiotic regimen and management of TB meningitis.\n   - Monitor the patient's neurological status closely, as TB meningitis can progress rapidly and cause significant neurological damage if not treated promptly.\n   - Consider starting corticosteroids to reduce inflammation and swelling in the brain, which may help improve the patient's neurological status and reduce the risk of complications.\n   - Monitor the patient's electrolyte levels, particularly sodium, as TB meningitis can cause hyponatremia.\n   - Provide supportive care, including adequate hydration, nutrition, and rest.\n   - Inform the patient and family about the diagnosis, the importance of adhering to the antibiotic regimen, and the potential for long-term complications.\n   - Consider testing other household members for TB infection, as they may need preventative treatment.\n   - Monitor the patient's response to treatment and adjust the treatment regimen as necessary based on the results of further microbiological testing and the patient's clinical response.",
+  "raw": {
+    "vignette_id": "VIG-086",
+    "elicitation": "freeform",
+    "model": "solidrust/Mistral-7B-Instruct-v0.3-AWQ",
+    "model_revision": "95b1295ddd1a8673117cdc7bd2a4da2a457bb3f7",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 268,
+  "output_tokens": 501
+}

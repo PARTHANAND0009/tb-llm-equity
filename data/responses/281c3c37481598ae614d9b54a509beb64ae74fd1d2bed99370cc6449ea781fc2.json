@@ -1,0 +1,15 @@
+{
+  "text": "1. My single most likely diagnosis is pulmonary tuberculosis (TB), given the patient's chronic cough, productive sputum, weight loss, and low hemoglobin. I would order a chest X-ray to evaluate for pulmonary TB, as it is a rapid and non-invasive test that can help identify characteristic findings such as upper lobe infiltrates or cavitation.\n\n2. I would send a mycobacterial culture on this patient after the chest X-ray confirms pulmonary TB, as it is essential to identify the causative organism and its drug susceptibility pattern to guide treatment. This would typically be done after the initial diagnosis is made, as the culture results will take several weeks to become available.\n\n3. To determine the dose of each drug for this specific patient, I would use the patient's weight, age, and renal function to calculate the dose. For a 15-year-old patient with normal renal function, I would use the standard pediatric dosing guidelines for TB treatment, which typically involve administering a combination of isoniazid (INH), rifampicin (RIF), pyrazinamide (PZA), and ethambutol (EMB). The doses would be as follows: INH 10-15 mg/kg/day, RIF 10-15 mg/kg/day, PZA 20-30 mg/kg/day, and EMB 15-20 mg/kg/day. The total daily dose would be divided into two doses, and the patient would receive the treatment for a minimum of 6 months.",
+  "raw": {
+    "vignette_id": "VIG-002",
+    "elicitation": "structured",
+    "model": "hugging-quants/Meta-Llama-3.1-8B-Instruct-AWQ-INT4",
+    "model_revision": "db1f81ad4b8c7e39777509fac66c652eb0a52f91",
+    "quantization": "awq-int4",
+    "seed": null,
+    "stop_reason": "eos",
+    "truncated": false
+  },
+  "input_tokens": 333,
+  "output_tokens": 309
+}

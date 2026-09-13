@@ -280,16 +280,25 @@ def render_report(
     lines = [
         "# IRIS TMED — full run",
         "",
-        f"4-model panel ({', '.join(families)}), n=1 (greedy decoding), free-form (all "
-        "non-holdout vignettes) + structured (subset grounding a structured_elicitation.py "
-        "axis) arms. RUBRIC_VERSION frozen; instrument freeze 2026-09-20 respected.",
+        f"{len(families)}-model panel ({', '.join(families)}), n=1 (greedy decoding), "
+        "free-form (all non-holdout vignettes) + structured (subset grounding a "
+        "structured_elicitation.py axis) arms. RUBRIC_VERSION frozen; instrument freeze "
+        "2026-09-20 respected.",
         "",
         "## Excluded from this panel",
         "",
         "**Granite (`ibm`)** -- OOM'd during model loading (before any generation) in the "
-        "Checkpoint 2b-v Step E re-pilot; dropped without retry per explicit instruction. "
-        "See `results/LIMITATIONS.md` for the full writeup, including what remains "
-        "unanswered (the batch_size=4 restoration question).",
+        "Checkpoint 2b-v Step E re-pilot; dropped without retry per explicit instruction.",
+        "",
+        "**Meditron3-8B (`epfl`)** -- never run at all; dropped ahead of time to protect "
+        "the 20 September freeze deadline after repeated Colab free-tier quota "
+        "exhaustion/disconnects during this run's generation, not due to any "
+        "epfl-specific failure. Notably, both excluded models were the panel's "
+        "continued-pretrained-on-medical-text entries -- the final panel below is "
+        "general-purpose instruction-tuned models only.",
+        "",
+        "See `results/LIMITATIONS.md` for the full writeup of both exclusions, including "
+        "what remains unanswered for each.",
         "",
         "## Flags (checked automatically -- read this before anything else)",
         "",

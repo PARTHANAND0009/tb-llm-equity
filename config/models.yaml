@@ -74,6 +74,15 @@ evaluation:
       quantization: awq-int4
       params_b: 7
       runtime: colab_hf
+    # EXCLUDED 2026-09-14 (IRIS TMED full run) -- record kept for provenance, not
+    # deleted. See results/LIMITATIONS.md. Reason: never actually run for the full
+    # run -- generation order was meta -> qwen -> mistral -> epfl, and by the time
+    # mistral finished, repeated Colab free-tier quota exhaustion/disconnects
+    # (already forced multiple resume cycles for qwen and meta) meant getting to
+    # epfl at all risked missing the 20 September freeze; dropped rather than
+    # risk the deadline, not because of any epfl-specific failure the way ibm's
+    # exclusion was. The final full-run panel is meta/qwen/mistral only (3 of
+    # the original 5 -- ibm and epfl both excluded, for different reasons).
     - family: epfl
       model: EPFLiGHT/Meditron3-8B
       revision: 783c241b18b84692689e0336170b345e5732e48e
@@ -83,6 +92,13 @@ evaluation:
       quantization: bitsandbytes-nf4  # quantized on the fly, no AWQ checkpoint exists
       params_b: 8
       runtime: colab_hf
+      excluded: true
+      excluded_date: "2026-09-14"
+      excluded_reason: >-
+        Never run for the full run -- dropped ahead of time to protect the 20
+        September freeze deadline after repeated Colab free-tier quota
+        exhaustion/disconnects during meta/qwen/mistral's generation, not due
+        to any epfl-specific failure.
     # Added 2026-09-10 (Stage 2, Step 3): current-generation addition to the panel.
     # Verified via the HF Hub API on 2026-09-10, not guessed. Considered
     # mistralai/Ministral-3-8B-Instruct-2512 first (Apache 2.0, AWQ-quantized

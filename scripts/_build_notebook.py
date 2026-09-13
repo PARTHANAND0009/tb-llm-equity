@@ -1356,7 +1356,7 @@ CELLS.append(code(
 
 # ---------------------------------------------------------------------------
 CELLS.append(md(
-    "## 12. IRIS TMED full run -- 4-model panel x freeform/structured, n=1",
+    "## 12. IRIS TMED full run -- 3-model panel x freeform/structured, n=1",
     "",
     "**Distinct from Task B above** (Section 10, 5-model x 400-prompt x N_SAMPLES"
     " sampled-variance design) -- this is a separate, simpler run: a single"
@@ -1369,12 +1369,16 @@ CELLS.append(md(
     " Reuses `load_hf_model`/`generate_batch`/`unload_hf_model` from Section 7"
     " unchanged.",
     "",
-    "**Granite (`ibm`) is excluded from this run** -- OOM'd during model loading in"
-    " the Checkpoint 2b-v Step E re-pilot; dropped, not retried, per explicit"
-    " instruction. `FULL_RUN_MODEL_REGISTRY` below filters out any"
-    " `config/models.yaml` entry with `excluded: true` rather than assuming a"
-    " fixed model count, so removing the flag later (should this ever be"
-    " revisited) is the only change needed to bring a model back in.",
+    "**Granite (`ibm`) and Meditron3-8B (`epfl`) are both excluded from this"
+    " run**, for different reasons -- `ibm` OOM'd during model loading in the"
+    " Checkpoint 2b-v Step E re-pilot; `epfl` was dropped ahead of time to"
+    " protect the 20 September freeze deadline after repeated Colab free-tier"
+    " quota exhaustion/disconnects during meta/qwen/mistral's generation, not"
+    " due to any epfl-specific failure. See `results/LIMITATIONS.md` for both."
+    " `FULL_RUN_MODEL_REGISTRY` below filters out any `config/models.yaml`"
+    " entry with `excluded: true` rather than assuming a fixed model count, so"
+    " removing the flag later (should either ever be revisited) is the only"
+    " change needed to bring a model back in.",
     "",
     "**Free-form generates before structured, for every model** -- not"
     " interleaved per vignette, but every free-form response across all 85"
@@ -1410,8 +1414,8 @@ CELLS.append(code(
     "FULL_RUN_STRUCTURED = FULL_RUN_MANIFEST['structured']  # 39 of those 85 -- see markdown above",
     "",
     "FULL_RUN_MODEL_REGISTRY = [m for m in MODEL_REGISTRY if not m.get('excluded')]",
-    "assert len(FULL_RUN_MODEL_REGISTRY) == 4, (",
-    "    f'expected 4 models (Granite/ibm excluded -- see results/LIMITATIONS.md), '",
+    "assert len(FULL_RUN_MODEL_REGISTRY) == 3, (",
+    "    f'expected 3 models (ibm and epfl both excluded -- see results/LIMITATIONS.md), '",
     "    f'got {len(FULL_RUN_MODEL_REGISTRY)}: {[m[\"family\"] for m in FULL_RUN_MODEL_REGISTRY]}'",
     ")",
     "",
